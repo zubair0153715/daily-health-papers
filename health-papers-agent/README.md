@@ -111,6 +111,14 @@ never five half-papers.
 
 ## Honest feasibility — read this before judging the first week
 
+**Verified 2026-11-03 (smoke test, `hidden_files/dock-smoke-2026-11-03.json`):**
+Vina 1.2.7 binary cached and runnable; Paper #1's AR docking reproduces
+almost exactly — TQ −7.25 (paper −7.27), epalrestat −6.46 (paper −6.48),
+13.2s + 27.5s = 40.7s for 2 ligands. Pure docking is minutes per paper;
+the pipeline API calls + ligand prep dominate the ~15–30 min/topic budget.
+Docking compute is NOT the bottleneck — agent drafting time and ChemRxiv
+browser drafts are.
+
 **Target: 5 papers/day. Floor: 2 complete papers/day, guaranteed.**
 The pipeline is built to attempt 5 every day and to report the real count.
 5/day at the Papers #1/#3 standard is the stretch goal, not a proven rate —
