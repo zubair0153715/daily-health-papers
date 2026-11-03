@@ -1,0 +1,80 @@
+{
+  "test": "dock-smoke-2026-11-03",
+  "paper": "#1 (2026-11-02)",
+  "pdb_id": "1US0",
+  "target": "aldose reductase",
+  "paper_values": {
+    "thymoquinone": -7.27,
+    "epalrestat": -6.48
+  },
+  "events": [
+    "PubChem thymoquinone: CID 10281 in 0.8s (cleaned NO_PROXY attempt 1)",
+    "PubChem epalrestat: CID 1549120 in 0.7s (cleaned NO_PROXY attempt 1)",
+    "Vina binary: /home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/vina (4056088 bytes, exec=True)",
+    "Grid centre (co-crystallised ligand centroid): [21.2606875, -6.12675, 27.394729166666664]",
+    "thymoquinone: {'ok': True, 'affinity_kcal_mol': -7.25, 'poses': [-7.25, -7.24, -7.16], 'pdb_id': '1US0', 'wall_seconds': 13.2, 'smiles': 'CC1=CC(=O)C(=CC1=O)C(C)C', 'cid': 10281} (13.2s)",
+    "epalrestat: {'ok': True, 'affinity_kcal_mol': -6.46, 'poses': [-6.46, -6.33, -6.16], 'pdb_id': '1US0', 'wall_seconds': 27.5, 'smiles': 'CC(=CC1=CC=CC=C1)C=C2C(=O)N(C(=S)S2)CC(=O)O', 'cid': 1549120} (27.5s)"
+  ],
+  "pubchem": {
+    "thymoquinone": {
+      "cid": 10281,
+      "smiles": "CC1=CC(=O)C(=CC1=O)C(C)C"
+    },
+    "epalrestat": {
+      "cid": 1549120,
+      "smiles": "CC(=CC1=CC=CC=C1)C=C2C(=O)N(C(=S)S2)CC(=O)O"
+    }
+  },
+  "vina": {
+    "path": "/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/vina",
+    "size_bytes": 4056088,
+    "executable": true
+  },
+  "cache": {
+    "pdb_exists": true,
+    "rec_pdbqt_exists": true,
+    "rec_pdbqt_bytes": 406207
+  },
+  "center": [
+    21.2606875,
+    -6.12675,
+    27.394729166666664
+  ],
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "n_poses": 3,
+  "results": {
+    "thymoquinone": {
+      "ok": true,
+      "affinity_kcal_mol": -7.25,
+      "poses": [
+        -7.25,
+        -7.24,
+        -7.16
+      ],
+      "pdb_id": "1US0",
+      "wall_seconds": 13.2,
+      "smiles": "CC1=CC(=O)C(=CC1=O)C(C)C",
+      "cid": 10281,
+      "delta_vs_paper": 0.02,
+      "reproduces_within_2kcal": true
+    },
+    "epalrestat": {
+      "ok": true,
+      "affinity_kcal_mol": -6.46,
+      "poses": [
+        -6.46,
+        -6.33,
+        -6.16
+      ],
+      "pdb_id": "1US0",
+      "wall_seconds": 27.5,
+      "smiles": "CC(=CC1=CC=CC=C1)C=C2C(=O)N(C(=S)S2)CC(=O)O",
+      "cid": 1549120,
+      "delta_vs_paper": 0.02,
+      "reproduces_within_2kcal": true
+    }
+  },
+  "total_wall_seconds": 40.7,
+  "ok": true
+}
