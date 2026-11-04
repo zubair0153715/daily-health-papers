@@ -1,0 +1,90 @@
+{
+ "ok": true,
+ "pdb_id": "3PP0",
+ "resolution": 2.25,
+ "pdb_title": "Crystal Structure of the Kinase domain of Human HER2 (erbB2)",
+ "co_crystallised_ligand": "03Q (TAK-285)",
+ "center": [
+  17.1,
+  16.55,
+  26.6
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Manual re-dock: pipeline auto-pick 8JYR is the HER2 extracellular domain I (antibody complex) - wrong pocket for a kinase inhibitor. Re-docked against the HER2 kinase domain 3PP0, same protocol.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.71,
+   "poses": [
+    -11.71,
+    -9.66,
+    -8.77
+   ],
+   "pdb_id": "3PP0",
+   "label": "CHEMBL4105329",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.86,
+   "poses": [
+    -10.86,
+    -10.07,
+    -9.51
+   ],
+   "pdb_id": "3PP0",
+   "label": "QUERY",
+   "rank": 16
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.59,
+   "poses": [
+    -10.59,
+    -10.45,
+    -10.19
+   ],
+   "pdb_id": "3PP0",
+   "label": "CHEMBL203599",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.4,
+   "poses": [
+    -10.4,
+    -10.12,
+    -10.04
+   ],
+   "pdb_id": "3PP0",
+   "label": "CHEMBL203661",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.29,
+   "poses": [
+    -10.29,
+    -9.56,
+    -9.03
+   ],
+   "pdb_id": "3PP0",
+   "label": "CHEMBL258282",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.29,
+   "poses": [
+    -10.29,
+    -8.73,
+    -8.4
+   ],
+   "pdb_id": "3PP0",
+   "label": "CHEMBL483332",
+   "rank": 1
+  }
+ ]
+}

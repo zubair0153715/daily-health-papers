@@ -1,0 +1,90 @@
+{
+ "ok": true,
+ "pdb_id": "3OG7",
+ "resolution": 2.45,
+ "pdb_title": "B-Raf Kinase V600E oncogenic mutant in complex with PLX4032",
+ "co_crystallised_ligand": "032 (PLX4032 / vemurafenib)",
+ "center": [
+  1.87,
+  -2.64,
+  -19.92
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Manual re-dock: pipeline auto-pick 8VSO is a 14-3-3/BRAF-phosphopeptide complex, not the kinase domain - its scores were discarded. Re-docked against the BRAF V600E kinase domain 3OG7, same protocol. Residue 600 is GLU in chain B, confirming the V600E mutant.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.52,
+   "poses": [
+    -11.52,
+    -10.82,
+    -10.71
+   ],
+   "pdb_id": "3OG7",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.17,
+   "poses": [
+    -11.17,
+    -10.11,
+    -9.88
+   ],
+   "pdb_id": "3OG7",
+   "label": "CHEMBL3752213",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.48,
+   "poses": [
+    -10.48,
+    -10.47,
+    -10.09
+   ],
+   "pdb_id": "3OG7",
+   "label": "CHEMBL2047875",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.19,
+   "poses": [
+    -10.19,
+    -8.77,
+    -8.71
+   ],
+   "pdb_id": "3OG7",
+   "label": "CHEMBL3651680",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.18,
+   "poses": [
+    -10.18,
+    -8.44,
+    -8.4
+   ],
+   "pdb_id": "3OG7",
+   "label": "CHEMBL3651664",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.8,
+   "poses": [
+    -8.8,
+    -8.8,
+    -8.66
+   ],
+   "pdb_id": "3OG7",
+   "label": "CHEMBL3651701",
+   "rank": 6
+  }
+ ]
+}

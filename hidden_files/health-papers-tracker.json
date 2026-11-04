@@ -1,1 +1,110 @@
-{"papers":[{"date":"2026-11-02","draft_url":"https://chemrxiv.org/doc/1b6e0239-f73e-4f71-83bd-cd40ac6d3a7c","field":"health","file":"files/2026-11-02-health-thymoquinone-aldose-reductase.md","platform":"ChemRxiv","status":"submitted","title":"Thymoquinone as a Putative Aldose Reductase Inhibitor for Diabetic Complications: A Computational Lead, a PAINS Caveat, and a Testable Assay Proposal","topic":"thymoquinone / aldose reductase (diabetic complications)","topic_id":null},{"date":"2026-11-02","draft_url":null,"field":"brain","file":"files/2026-11-02-brain-glp1-parkinson-bbb-gap.md","platform":"medRxiv","status":"drafted-not-submitted","title":"GLP-1 Receptor Agonists for Parkinson's Disease: The Blood-Brain Barrier Gap","topic":"GLP-1 / Parkinson's BBB gap","topic_id":null},{"date":"2026-11-02","draft_url":"https://chemrxiv.org/doc/00b82d14-10ff-443d-aaba-806cb25590f4","field":"health","file":"files/2026-11-02-health-dual-ar-sglt2.md","platform":"ChemRxiv","status":"submitted","title":"One Molecule, Two Bottlenecks: A Predicted Dual Aldose-Reductase / SGLT2 Inhibitor and the Case for Closing the Polyol Escape Route in Diabetes","topic":"dual AR+SGLT2 (CHEMBL5288495)","topic_id":null},{"date":"2026-11-03","draft_url":null,"field":"brain","file":"files/2026-11-03-brain-ptau217-alzheimer-prevention-trials.md","platform":"medRxiv","status":"drafted-not-submitted","title":"The Preclinical Window Is Now Measurable: Plasma p-Tau217 Risk Stratification and the Design of Alzheimer's Prevention Trials","topic":"p-tau217 / Alzheimer's prevention trials","topic_id":null}],"used_topic_ids":[]}
+{
+ "papers": [
+  {
+   "date": "2026-11-02",
+   "draft_url": "https://chemrxiv.org/doc/1b6e0239-f73e-4f71-83bd-cd40ac6d3a7c",
+   "field": "health",
+   "file": "files/2026-11-02-health-thymoquinone-aldose-reductase.md",
+   "platform": "ChemRxiv",
+   "status": "submitted",
+   "title": "Thymoquinone as a Putative Aldose Reductase Inhibitor for Diabetic Complications: A Computational Lead, a PAINS Caveat, and a Testable Assay Proposal",
+   "topic": "thymoquinone / aldose reductase (diabetic complications)",
+   "topic_id": null
+  },
+  {
+   "date": "2026-11-02",
+   "draft_url": null,
+   "field": "brain",
+   "file": "files/2026-11-02-brain-glp1-parkinson-bbb-gap.md",
+   "platform": "medRxiv",
+   "status": "drafted-not-submitted",
+   "title": "GLP-1 Receptor Agonists for Parkinson's Disease: The Blood-Brain Barrier Gap",
+   "topic": "GLP-1 / Parkinson's BBB gap",
+   "topic_id": null
+  },
+  {
+   "date": "2026-11-02",
+   "draft_url": "https://chemrxiv.org/doc/00b82d14-10ff-443d-aaba-806cb25590f4",
+   "field": "health",
+   "file": "files/2026-11-02-health-dual-ar-sglt2.md",
+   "platform": "ChemRxiv",
+   "status": "submitted",
+   "title": "One Molecule, Two Bottlenecks: A Predicted Dual Aldose-Reductase / SGLT2 Inhibitor and the Case for Closing the Polyol Escape Route in Diabetes",
+   "topic": "dual AR+SGLT2 (CHEMBL5288495)",
+   "topic_id": null
+  },
+  {
+   "date": "2026-11-03",
+   "draft_url": null,
+   "field": "brain",
+   "file": "files/2026-11-03-brain-ptau217-alzheimer-prevention-trials.md",
+   "platform": "medRxiv",
+   "status": "drafted-not-submitted",
+   "title": "The Preclinical Window Is Now Measurable: Plasma p-Tau217 Risk Stratification and the Design of Alzheimer's Prevention Trials",
+   "topic": "p-tau217 / Alzheimer's prevention trials",
+   "topic_id": null
+  },
+  {
+   "date": "2026-11-04",
+   "draft_url": "https://chemrxiv.org/doc/7c6d6f2d-5cfa-4bdb-a229-fd612dc8ffcf",
+   "field": "health",
+   "file": "files/2026-11-04-health-her2-lapatinib-benchmark.md",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "title": "Five Known HER2 Inhibitors Dock Within Noise of Lapatinib on the HER2 Kinase Domain: A Standardised Vina Benchmark and a Caution on Automated Structure Selection",
+   "topic": "HER2-positive breast cancer - lapatinib alternatives",
+   "topic_id": "HP-028"
+  },
+  {
+   "date": "2026-11-04",
+   "draft_url": "https://chemrxiv.org/doc/fd498d79-5175-4ede-95d9-aa2245520471",
+   "field": "health",
+   "file": "files/2026-11-04-health-cox2-celecoxib-selectivity.md",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "title": "Celecoxib Still Leads: A Dual-Isoform Vina Benchmark of Five COX-2 Inhibitors Shows Docking Selectivity Does Not Track Measured Selectivity",
+   "topic": "COX-2 selective inhibition without cardiovascular risk",
+   "topic_id": "HP-047"
+  },
+  {
+   "date": "2026-11-04",
+   "draft_url": "https://chemrxiv.org/doc/424f3d79-7768-470f-9490-7a3215603065",
+   "field": "health",
+   "file": "files/2026-11-04-health-ecoli-dhfr-trimethoprim.md",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "title": "Five Trimethoprim Analogues Dock Within Noise of Trimethoprim on E. coli DHFR \u2014 and None Addresses the dfrA Resistance Route",
+   "topic": "E. coli DHFR \u2014 trimethoprim resistance",
+   "topic_id": "HP-014"
+  },
+  {
+   "date": "2026-11-04",
+   "draft_url": "https://chemrxiv.org/doc/647f2acd-45d7-479a-b954-1e80a2d30bf6",
+   "field": "health",
+   "file": "files/2026-11-04-health-ndm1-meropenem.md",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "title": "Five Triazole-Thioether NDM-1 Inhibitors Docked With the Catalytic Zinc Retained: The Best Compound Is Found, the Ranking Is Not",
+   "topic": "NDM-1 metallo-beta-lactamase \u2014 carbapenem resistance",
+   "topic_id": "HP-011"
+  },
+  {
+   "date": "2026-11-04",
+   "draft_url": "https://chemrxiv.org/doc/2c324fdf-8a1b-437f-a5fb-d130b702bc28",
+   "field": "health",
+   "file": "files/2026-11-04-health-braf-vemurafenib.md",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "title": "Vemurafenib Still Docks Best: Five Sub-nanomolar BRAF V600E Inhibitors Dock Worse Than the Drug They Outperform by ~300-Fold",
+   "topic": "BRAF V600E melanoma \u2014 vemurafenib resistance",
+   "topic_id": "HP-029"
+  }
+ ],
+ "used_topic_ids": [
+  "HP-028",
+  "HP-047",
+  "HP-014",
+  "HP-011",
+  "HP-029"
+ ]
+}

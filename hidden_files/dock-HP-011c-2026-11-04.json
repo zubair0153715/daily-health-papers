@@ -1,0 +1,89 @@
+{
+ "ok": true,
+ "pdb_id": "5XP6",
+ "resolution": 0.95,
+ "pdb_title": "native structure of NDM-1 crystallized at pH5.5",
+ "center": [
+  -5.17,
+  -5.37,
+  -16.38
+ ],
+ "center_note": "Zn-Zn midpoint of the di-zinc active site",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "zn_note": "Two catalytic Zn2+ retained in receptor (charge +2.00, AD type Zn); bridging hydroxide OH303 removed (assumed displaced by ligand).",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.13,
+   "poses": [
+    -8.13,
+    -7.99,
+    -7.87
+   ],
+   "pdb_id": "5XP6",
+   "label": "CHEMBL3809719"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.65,
+   "poses": [
+    -7.65,
+    -7.43,
+    -7.38
+   ],
+   "pdb_id": "5XP6",
+   "label": "CHEMBL3808541"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.64,
+   "poses": [
+    -7.64,
+    -7.63,
+    -7.44
+   ],
+   "pdb_id": "5XP6",
+   "label": "CHEMBL3810122"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.59,
+   "poses": [
+    -7.59,
+    -7.38,
+    -6.79
+   ],
+   "pdb_id": "5XP6",
+   "label": "QUERY"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.42,
+   "poses": [
+    -7.42,
+    -7.4,
+    -7.0
+   ],
+   "pdb_id": "5XP6",
+   "label": "CHEMBL3808678"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.23,
+   "poses": [
+    -7.23,
+    -7.15,
+    -7.15
+   ],
+   "pdb_id": "5XP6",
+   "label": "CHEMBL3809445"
+  },
+  {
+   "ok": false,
+   "error": "vina failed: \n\nPDBQT parsing error: Atom type B is not a valid AutoDock type (atom types are case-sensitive).\n > ATOM     13  B   UNL     1       2.880  -1.246  -0.145  1.00  0.00    +0.547 B \n",
+   "label": "TANIBORBACTAM"
+  }
+ ]
+}

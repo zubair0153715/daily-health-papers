@@ -1,0 +1,90 @@
+{
+ "ok": true,
+ "pdb_id": "9PWM",
+ "resolution": 0.89,
+ "pdb_title": "Dihydrofolate Reductase Complexed with Folate and Nicotinamide Adenine Dinucleotide Phosphate (Oxidized Form)",
+ "co_crystallised_ligand": "FOL (folate)",
+ "center": [
+  -1.29,
+  3.27,
+  -7.86
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Re-dock: pipeline auto-centre was the OCS residue record, ~12 A from the folate/trimethoprim site. Re-docked at the folate centroid, same protocol. CHEMBL22 is trimethoprim itself, reported as QUERY only.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.1,
+   "poses": [
+    -8.1,
+    -7.76,
+    -7.72
+   ],
+   "pdb_id": "9PWM",
+   "label": "CHEMBL278345",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.03,
+   "poses": [
+    -8.03,
+    -7.68,
+    -7.01
+   ],
+   "pdb_id": "9PWM",
+   "label": "CHEMBL23609",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.03,
+   "poses": [
+    -8.03,
+    -7.55,
+    -7.08
+   ],
+   "pdb_id": "9PWM",
+   "label": "CHEMBL60069",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.01,
+   "poses": [
+    -8.01,
+    -7.5,
+    -7.4
+   ],
+   "pdb_id": "9PWM",
+   "label": "CHEMBL23338",
+   "rank": 7
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.87,
+   "poses": [
+    -7.87,
+    -7.83,
+    -6.83
+   ],
+   "pdb_id": "9PWM",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.69,
+   "poses": [
+    -7.69,
+    -7.62,
+    -6.97
+   ],
+   "pdb_id": "9PWM",
+   "label": "CHEMBL31891",
+   "rank": 6
+  }
+ ]
+}
