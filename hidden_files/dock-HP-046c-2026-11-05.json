@@ -1,0 +1,76 @@
+{
+ "ok": true,
+ "pdb_id": "7S5H",
+ "resolution": 1.27,
+ "center": [
+  -17.58,
+  18.25,
+  -7.63
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "re-dock at full cyclic-peptide-35 centroid (chain C, 75 atoms); pipeline centre was Z50 fragment centroid only, 4.05 A away",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.48,
+   "poses": [
+    -6.48,
+    -6.44,
+    -6.37
+   ],
+   "pdb_id": "7S5H",
+   "label": "CHEMBL4797870",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.36,
+   "poses": [
+    -6.36,
+    -6.17,
+    -5.84
+   ],
+   "pdb_id": "7S5H",
+   "label": "CHEMBL4783308",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.26,
+   "poses": [
+    -6.26,
+    -6.0,
+    -5.76
+   ],
+   "pdb_id": "7S5H",
+   "label": "CHEMBL4789986",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.12,
+   "poses": [
+    -6.12,
+    -6.12,
+    -5.97
+   ],
+   "pdb_id": "7S5H",
+   "label": "CHEMBL4780905",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.04,
+   "poses": [
+    -6.04,
+    -5.96,
+    -5.84
+   ],
+   "pdb_id": "7S5H",
+   "label": "CHEMBL4785006",
+   "rank": 1
+  }
+ ]
+}

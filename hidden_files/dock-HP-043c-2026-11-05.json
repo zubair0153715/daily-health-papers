@@ -1,0 +1,82 @@
+{
+ "ok": true,
+ "pdb_id": "6SUK",
+ "resolution": 1.75,
+ "center": [
+  21.8,
+  -46.58,
+  16.97
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Corrected centre: centroid of co-crystallised inhibitor FT8 (omapatrilat); pipeline first centred on NAG glycan 802, 37.9 A away. Sacubitrilat (LBQ657, active metabolite, PubChem CID 10430040) docked in addition to the sacubitril prodrug.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.92,
+   "poses": [
+    -9.92,
+    -9.79,
+    -9.38
+   ],
+   "pdb_id": "6SUK",
+   "label": "CHEMBL3677663"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.09,
+   "poses": [
+    -9.09,
+    -7.76,
+    -7.63
+   ],
+   "pdb_id": "6SUK",
+   "label": "CHEMBL4443138"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.76,
+   "poses": [
+    -8.76,
+    -8.67,
+    -8.52
+   ],
+   "pdb_id": "6SUK",
+   "label": "QUERY"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.72,
+   "poses": [
+    -8.72,
+    -8.62,
+    -8.04
+   ],
+   "pdb_id": "6SUK",
+   "label": "CHEMBL3703484"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.54,
+   "poses": [
+    -8.54,
+    -8.47,
+    -8.34
+   ],
+   "pdb_id": "6SUK",
+   "label": "SACUBITRILAT"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.07,
+   "poses": [
+    -7.07,
+    -6.86,
+    -6.54
+   ],
+   "pdb_id": "6SUK",
+   "label": "CHEMBL3676144"
+  }
+ ]
+}

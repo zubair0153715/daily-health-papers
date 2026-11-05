@@ -1,0 +1,1474 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL1944 (live)",
+   "status": "ok",
+   "count": 53
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 25
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 26
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Neprilysin (NEP)",
+  "uniprot": {
+   "accession": "P08473",
+   "entry": null,
+   "gene": "MME",
+   "protein": "Neprilysin",
+   "organism": "Homo sapiens",
+   "length": 750,
+   "function": "Thermolysin-like specificity, but is almost confined on acting on polypeptides of up to 30 amino acids (PubMed:15283675, PubMed:6208535, PubMed:6349683, PubMed:8168535). Biologically important in the destruction of opioid peptides such as Met- and Leu-enkephalins by cleavage of a Gly-Phe bond (PubMed:17101991, PubMed:6349683). Catalyzes cleavage of bradykinin, substance P and neurotensin peptides (PubMed:6208535). Able to cleave angiotensin-1, angiotensin-2 and angiotensin 1-9 (PubMed:15283675, PubMed:6349683). Involved in the degradation of atrial natriuretic factor (ANF) and brain natriuretic factor (BNP(1-32)) (PubMed:16254193, PubMed:2531377, PubMed:2972276). Displays UV-inducible elastase activity toward skin preelastic and elastic fibers (PubMed:20876573)",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P08473/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL1944",
+   "name": "Neprilysin",
+   "type": "SINGLE PROTEIN",
+   "organism": "Homo sapiens",
+   "components": 1
+  }
+ },
+ "ligands_found": 53,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCOC(=O)C(C)CC(CC1=CC=C(C=C1)C2=CC=CC=C2)NC(=O)CCC(=O)O",
+   "similarity": 1.0,
+   "score": 89.2,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.2
+   },
+   "descriptors": {
+    "mw": 411.5,
+    "logp": 3.84,
+    "hbd": 2,
+    "hba": 4,
+    "tpsa": 92.7,
+    "rotatable": 11,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C24H29NO5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.431,
+    "assays": {
+     "NR-AR": 0.073,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.22,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.173,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 9811834,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9811834"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL3703484",
+   "smiles": "C[C@H](C[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)NC(=O)CCC(=O)O)C(=O)O",
+   "similarity": 0.632,
+   "score": 84.9,
+   "score_detail": {
+    "similarity_40": 25.3,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.6
+   },
+   "descriptors": {
+    "mw": 417.89,
+    "logp": 4.01,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 103.7,
+    "rotatable": 10,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H24ClNO5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.072,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.072,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.071,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.52",
+    "activity": "IC50 0.3 nM"
+   }
+  },
+  {
+   "rank": 3,
+   "label": "CHEMBL4443138",
+   "smiles": "CC(C[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)NC(=O)CCC(=O)O)C(=O)O",
+   "similarity": 0.632,
+   "score": 84.9,
+   "score_detail": {
+    "similarity_40": 25.3,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.6
+   },
+   "descriptors": {
+    "mw": 417.89,
+    "logp": 4.01,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 103.7,
+    "rotatable": 10,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H24ClNO5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.072,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.072,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.071,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.10",
+    "activity": "IC50 0.8 nM"
+   }
+  },
+  {
+   "rank": 4,
+   "label": "CHEMBL3676144",
+   "smiles": "COc1ccc(Cl)cc1-c1ccc(C[C@H](CC(=O)O)NC(=O)CCC(=O)O)cc1",
+   "similarity": 0.446,
+   "score": 77.7,
+   "score_detail": {
+    "similarity_40": 17.8,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.9
+   },
+   "descriptors": {
+    "mw": 419.86,
+    "logp": 3.38,
+    "hbd": 3,
+    "hba": 4,
+    "tpsa": 112.93,
+    "rotatable": 10,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H22ClNO6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.082,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.42",
+    "activity": "IC50 0.38 nM"
+   }
+  },
+  {
+   "rank": 5,
+   "label": "CHEMBL3677663",
+   "smiles": "C[C@H](C[C@@H](Cc1ccc(-c2ccccc2)cc1)NC(=O)c1cc(C(=O)O)ncn1)C(=O)O",
+   "similarity": 0.468,
+   "score": 77.1,
+   "score_detail": {
+    "similarity_40": 18.7,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.4
+   },
+   "descriptors": {
+    "mw": 433.46,
+    "logp": 3.29,
+    "hbd": 3,
+    "hba": 5,
+    "tpsa": 129.48,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C24H23N3O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.081,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.102,
+     "NR-ER": 0.171,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.167,
+     "SR-ARE": 0.113,
+     "SR-ATAD5": 0.08,
+     "SR-HSE": 0.113,
+     "SR-MMP": 0.073,
+     "SR-p53": 0.08
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.00",
+    "activity": "IC50 1.0 nM"
+   }
+  },
+  {
+   "rank": 6,
+   "label": "CHEMBL3677674",
+   "smiles": "C[C@H](C[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)NC(=O)c1ccc(C(=O)O)o1)C(=O)O",
+   "similarity": 0.418,
+   "score": 76.2,
+   "score_detail": {
+    "similarity_40": 16.7,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 455.89,
+    "logp": 4.75,
+    "hbd": 3,
+    "hba": 4,
+    "tpsa": 116.84,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C24H22ClNO6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.068,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.063,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.066,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.079,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.52",
+    "activity": "IC50 0.3 nM"
+   }
+  },
+  {
+   "rank": 7,
+   "label": "CHEMBL3677671",
+   "smiles": "C[C@@H](C[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)NC(=O)c1cc(O)no1)C(=O)O",
+   "similarity": 0.414,
+   "score": 76.1,
+   "score_detail": {
+    "similarity_40": 16.6,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 428.87,
+    "logp": 4.15,
+    "hbd": 3,
+    "hba": 5,
+    "tpsa": 112.66,
+    "rotatable": 8,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H21ClN2O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.069,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.064,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.067,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.086,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "10.40",
+    "activity": "IC50 0.04 nM"
+   }
+  },
+  {
+   "rank": 8,
+   "label": "CHEMBL5971490",
+   "smiles": "C[C@H](C[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)NC(=O)/C(O)=C/C(N)=O)C(=O)O",
+   "similarity": 0.406,
+   "score": 75.7,
+   "score_detail": {
+    "similarity_40": 16.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 430.89,
+    "logp": 3.07,
+    "hbd": 4,
+    "hba": 4,
+    "tpsa": 129.72,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H23ClN2O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.072,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.063,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.066,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.085,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "10.40",
+    "activity": "IC50 0.04 nM"
+   }
+  },
+  {
+   "rank": 9,
+   "label": "CHEMBL257726",
+   "smiles": "CC[C@H](S)C(=O)N[C@@H](Cc1ccc(-c2ccccc2)cc1)C(=O)O",
+   "similarity": 0.397,
+   "score": 75.3,
+   "score_detail": {
+    "similarity_40": 15.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.4
+   },
+   "descriptors": {
+    "mw": 343.45,
+    "logp": 3.17,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H21NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.073,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.083,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.136,
+     "SR-ARE": 0.095,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.10",
+    "activity": "Ki 0.8 nM"
+   }
+  },
+  {
+   "rank": 10,
+   "label": "CHEMBL3677673",
+   "smiles": "C[C@H](C[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)NC(=O)c1cc(C(=O)O)n[nH]1)C(=O)O",
+   "similarity": 0.389,
+   "score": 74.8,
+   "score_detail": {
+    "similarity_40": 15.6,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.2
+   },
+   "descriptors": {
+    "mw": 455.9,
+    "logp": 3.88,
+    "hbd": 4,
+    "hba": 4,
+    "tpsa": 132.38,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C23H22ClN3O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.067,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.081,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.081,
+     "SR-ATAD5": 0.13,
+     "SR-HSE": 0.075,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.065
+    }
+   },
+   "known_activity": {
+    "pchembl": "10.52",
+    "activity": "IC50 0.03 nM"
+   }
+  },
+  {
+   "rank": 11,
+   "label": "CHEMBL271225",
+   "smiles": "CC(C)C[C@H](S)C(=O)N[C@@H](Cc1ccc(-c2ccccc2)cc1)C(=O)O",
+   "similarity": 0.407,
+   "score": 74.4,
+   "score_detail": {
+    "similarity_40": 16.3,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.1
+   },
+   "descriptors": {
+    "mw": 371.5,
+    "logp": 3.81,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 8,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H25NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.09,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.16,
+     "NR-Aromatase": 0.085,
+     "NR-ER": 0.166,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.21,
+     "SR-ARE": 0.094,
+     "SR-ATAD5": 0.134,
+     "SR-HSE": 0.086,
+     "SR-MMP": 0.077,
+     "SR-p53": 0.067
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.55",
+    "activity": "Ki 0.28 nM"
+   }
+  },
+  {
+   "rank": 12,
+   "label": "CHEMBL257270",
+   "smiles": "CCCC[C@H](S)C(=O)N[C@@H](Cc1ccc(-c2ccccc2)cc1)C(=O)O",
+   "similarity": 0.371,
+   "score": 74.2,
+   "score_detail": {
+    "similarity_40": 14.8,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.4
+   },
+   "descriptors": {
+    "mw": 371.5,
+    "logp": 3.95,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H25NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.072,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.088,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.069,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.132,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.92",
+    "activity": "Ki 1.2 nM"
+   }
+  },
+  {
+   "rank": 13,
+   "label": "CHEMBL350414",
+   "smiles": "O=C(O)[C@H](Cc1ccc(-c2ccccc2)cc1)NC(=O)[C@@H](S)Cc1ccccc1",
+   "similarity": 0.362,
+   "score": 73.8,
+   "score_detail": {
+    "similarity_40": 14.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.3
+   },
+   "descriptors": {
+    "mw": 405.52,
+    "logp": 4.01,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 8,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C24H23NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.078,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.09,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.137,
+     "SR-ARE": 0.103,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.96",
+    "activity": "Ki 1.1 nM"
+   }
+  },
+  {
+   "rank": 14,
+   "label": "CHEMBL163454",
+   "smiles": "O=C(N[C@@H](Cc1ccc(-c2ccccc2)cc1)C(=O)O)[C@H](S)Cc1ccccc1",
+   "similarity": 0.362,
+   "score": 73.8,
+   "score_detail": {
+    "similarity_40": 14.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.3
+   },
+   "descriptors": {
+    "mw": 405.52,
+    "logp": 4.01,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 8,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C24H23NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.078,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.09,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.137,
+     "SR-ARE": 0.103,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.89",
+    "activity": "Ki 1.3 nM"
+   }
+  },
+  {
+   "rank": 15,
+   "label": "CHEMBL420321",
+   "smiles": "C[C@H](NC(=O)[C@@H](Cc1ccc(-c2ccccc2)cc1)CP(=O)(O)[C@@H](C)N)C(=O)O",
+   "similarity": 0.348,
+   "score": 73.1,
+   "score_detail": {
+    "similarity_40": 13.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.2
+   },
+   "descriptors": {
+    "mw": 418.43,
+    "logp": 2.68,
+    "hbd": 4,
+    "hba": 4,
+    "tpsa": 129.72,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H27N2O5P"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.083,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.089,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.072,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.139,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.078,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.92",
+    "activity": "Ki 1.2 nM"
+   }
+  },
+  {
+   "rank": 16,
+   "label": "CHEMBL3890914",
+   "smiles": "O=C(O)C[C@@H](Cc1ccc(-c2cc(Cl)ccc2F)cc1)NC(=O)CCP(=O)(O)O",
+   "similarity": 0.338,
+   "score": 72.7,
+   "score_detail": {
+    "similarity_40": 13.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.2
+   },
+   "descriptors": {
+    "mw": 443.8,
+    "logp": 3.22,
+    "hbd": 4,
+    "hba": 3,
+    "tpsa": 123.93,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H20ClFNO6P"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.243,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.087,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.141,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.96",
+    "activity": "IC50 0.11 nM"
+   }
+  },
+  {
+   "rank": 17,
+   "label": "CHEMBL3695448",
+   "smiles": "CCOC(=O)[C@H](C)N[C@@H](Cc1ccc(-c2cccc(Cl)c2)cc1)C(=O)Nc1nnn[nH]1",
+   "similarity": 0.338,
+   "score": 72.4,
+   "score_detail": {
+    "similarity_40": 13.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.9
+   },
+   "descriptors": {
+    "mw": 442.91,
+    "logp": 2.61,
+    "hbd": 3,
+    "hba": 7,
+    "tpsa": 121.89,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H23ClN6O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.27,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.073,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.076,
+     "SR-ARE": 0.088,
+     "SR-ATAD5": 0.073,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.077,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "10.05",
+    "activity": "IC50 0.09 nM"
+   }
+  },
+  {
+   "rank": 18,
+   "label": "CHEMBL51715",
+   "smiles": "C[C@H](NC(=O)[C@@H](CS)Cc1ccccc1)C(=O)O",
+   "similarity": 0.3,
+   "score": 71.6,
+   "score_detail": {
+    "similarity_40": 12.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.6
+   },
+   "descriptors": {
+    "mw": 267.35,
+    "logp": 1.36,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 6,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C13H17NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.072,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.082,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.071,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.15",
+    "activity": "Ki 0.7 nM"
+   }
+  },
+  {
+   "rank": 19,
+   "label": "CHEMBL16779",
+   "smiles": "O=C(O)CNC(=O)C(CC(=O)NO)Cc1ccccc1",
+   "similarity": 0.274,
+   "score": 70.9,
+   "score_detail": {
+    "similarity_40": 11.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.9
+   },
+   "descriptors": {
+    "mw": 280.28,
+    "logp": -0.06,
+    "hbd": 4,
+    "hba": 4,
+    "tpsa": 115.73,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C13H16N2O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.071,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.85",
+    "activity": "IC50 1.4 nM"
+   }
+  },
+  {
+   "rank": 20,
+   "label": "CHEMBL10247",
+   "smiles": "O=C(O)CNC(=O)C(CS)Cc1ccccc1",
+   "similarity": 0.267,
+   "score": 70.6,
+   "score_detail": {
+    "similarity_40": 10.7,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.9
+   },
+   "descriptors": {
+    "mw": 253.32,
+    "logp": 0.98,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 6,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C12H15NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.068,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.00",
+    "activity": "IC50 1.0 nM"
+   }
+  },
+  {
+   "rank": 21,
+   "label": "CHEMBL298827",
+   "smiles": "O=C(O)CNC(=O)[C@@H](CS)Cc1ccccc1",
+   "similarity": 0.267,
+   "score": 70.6,
+   "score_detail": {
+    "similarity_40": 10.7,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.9
+   },
+   "descriptors": {
+    "mw": 253.32,
+    "logp": 0.98,
+    "hbd": 3,
+    "hba": 3,
+    "tpsa": 66.4,
+    "rotatable": 6,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C12H15NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.068,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.82",
+    "activity": "Ki 1.5 nM"
+   }
+  },
+  {
+   "rank": 22,
+   "label": "CHEMBL276872",
+   "smiles": "O=P(O)(O)C(Cc1ccccc1)N[C@@H](Cc1ccc(-c2ccccc2)cc1)c1nnn[nH]1",
+   "similarity": 0.271,
+   "score": 70.4,
+   "score_detail": {
+    "similarity_40": 10.8,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.6
+   },
+   "descriptors": {
+    "mw": 449.45,
+    "logp": 3.49,
+    "hbd": 4,
+    "hba": 5,
+    "tpsa": 124.02,
+    "rotatable": 9,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C23H24N5O3P"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.214,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.13",
+    "activity": "IC50 0.74 nM"
+   }
+  },
+  {
+   "rank": 23,
+   "label": "CHEMBL290698",
+   "smiles": "O=P(O)(O)CN[C@@H](Cc1ccc(-c2ccccc2)cc1)c1nn[nH]n1",
+   "similarity": 0.275,
+   "score": 69.8,
+   "score_detail": {
+    "similarity_40": 11.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.8
+   },
+   "descriptors": {
+    "mw": 359.33,
+    "logp": 1.88,
+    "hbd": 4,
+    "hba": 5,
+    "tpsa": 124.02,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C16H18N5O3P"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.085,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.216,
+     "NR-ER-LBD": 0.067,
+     "NR-PPAR-gamma": 0.158,
+     "SR-ARE": 0.085,
+     "SR-ATAD5": 0.133,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.05",
+    "activity": "IC50 0.9 nM"
+   }
+  },
+  {
+   "rank": 24,
+   "label": "CHEMBL1829584",
+   "smiles": "O=C(O)CCNC(=O)[C@H](Cc1ccc(-c2ccccc2)cc1)N[C@@H](CCc1ccccc1)C(=O)O",
+   "similarity": 0.375,
+   "score": 64.6,
+   "score_detail": {
+    "similarity_40": 15.0,
+    "lipinski_20": 20,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.6
+   },
+   "descriptors": {
+    "mw": 474.56,
+    "logp": 3.53,
+    "hbd": 4,
+    "hba": 4,
+    "tpsa": 115.73,
+    "rotatable": 13,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C28H30N2O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.072,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.086,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.078,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.44",
+    "activity": "IC50 0.36 nM"
+   }
+  },
+  {
+   "rank": 25,
+   "label": "CHEMBL1829585",
+   "smiles": "C[C@@H](CNC(=O)[C@H](Cc1ccc(-c2ccccc2)cc1)N[C@@H](CCc1ccccc1)C(=O)O)C(=O)O",
+   "similarity": 0.369,
+   "score": 64.3,
+   "score_detail": {
+    "similarity_40": 14.8,
+    "lipinski_20": 20,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 488.58,
+    "logp": 3.78,
+    "hbd": 4,
+    "hba": 4,
+    "tpsa": 115.73,
+    "rotatable": 13,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C29H32N2O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.079,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.086,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.145,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.29",
+    "activity": "IC50 0.51 nM"
+   }
+  },
+  {
+   "rank": 26,
+   "label": "CHEMBL34541",
+   "smiles": "O=C(O)Cc1csc(NC(=O)[C@H](Cc2ccc(-c3ccccc3)cc2)C[C@@H](COc2ccccc2)C(=O)O)n1",
+   "similarity": 0.316,
+   "score": 40.7,
+   "score_detail": {
+    "similarity_40": 12.6,
+    "lipinski_20": 0,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.1
+   },
+   "descriptors": {
+    "mw": 544.63,
+    "logp": 5.4,
+    "hbd": 3,
+    "hba": 6,
+    "tpsa": 125.82,
+    "rotatable": 13,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C30H28N2O6S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.064,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.163,
+     "NR-Aromatase": 0.071,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.354,
+     "SR-ARE": 0.083,
+     "SR-ATAD5": 0.066,
+     "SR-HSE": 0.173,
+     "SR-MMP": 0.081,
+     "SR-p53": 0.071
+    }
+   },
+   "known_activity": {
+    "pchembl": "9.16",
+    "activity": "IC50 0.69 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "6SUK",
+  "resolution": 1.75,
+  "center": [
+   33.33,
+   -14.69,
+   33.89
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.96,
+    "poses": [
+     -5.96,
+     -5.86,
+     -5.85
+    ],
+    "pdb_id": "6SUK",
+    "label": "CHEMBL3677663",
+    "rank": 5
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.7,
+    "poses": [
+     -5.7,
+     -5.22,
+     -0.53
+    ],
+    "pdb_id": "6SUK",
+    "label": "CHEMBL4443138",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.5,
+    "poses": [
+     -5.5,
+     -5.26,
+     -5.21
+    ],
+    "pdb_id": "6SUK",
+    "label": "CHEMBL3703484",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.3,
+    "poses": [
+     -5.3,
+     -5.29,
+     -5.07
+    ],
+    "pdb_id": "6SUK",
+    "label": "QUERY",
+    "rank": 1
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.0,
+    "poses": [
+     -5.0,
+     -4.97,
+     -4.86
+    ],
+    "pdb_id": "6SUK",
+    "label": "CHEMBL3676144",
+    "rank": 4
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Neprilysin (NEP)",
+  "reference": "sacubitril"
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "ok": true,
+ "pdb_id": "6T95",
+ "resolution": 2.5,
+ "center": [
+  24.84,
+  -2.29,
+  -69.97
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Corrected centre: centroid of co-crystallised inhibitor MWT (compound 4a, de Lucio 2022); pipeline first centred on FAD cofactor, 18.33 A away. Leads desalted (largest fragment kept: iodide/trifluoroacetate/triflate counterions removed). Giant peptidic leads (rot 32-58) excluded as undockable; sodium stibogluconate not docked (13-fragment Sb polymer, RDKit cannot prepare it).",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.79,
+   "poses": [
+    -7.79,
+    -7.33,
+    -7.28
+   ],
+   "pdb_id": "6T95",
+   "label": "CHEMBL5414105",
+   "rank": 2,
+   "desalted_smiles": "C[N+]1(CCCc2ccccc2)CCN(C(=O)N(Cc2ccc(C(=O)NCCc3ccc(F)cc3)o2)c2ccc(F)cc2)CC1"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.18,
+   "poses": [
+    -7.18,
+    -7.04,
+    -5.37
+   ],
+   "pdb_id": "6T95",
+   "label": "CHEMBL5402846",
+   "rank": 21,
+   "desalted_smiles": "O=C(NCCc1ccc(F)cc1)c1ccc(CN(C(=O)N2CC[N+](CCCc3ccccc3)(Cc3ccc(Cl)c(Cl)c3)CC2)c2ccc(F)cc2)o1"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.96,
+   "poses": [
+    -6.96,
+    -6.8,
+    -6.8
+   ],
+   "pdb_id": "6T95",
+   "label": "CHEMBL5284653",
+   "rank": 3,
+   "desalted_smiles": "C[n+]1nn(-c2ccc(-c3nc(CCc4ccccc4)cs3)c(OCCN3CCNC3=O)c2)cc1CCCCN"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.87,
+   "poses": [
+    -6.87,
+    -6.81,
+    -6.78
+   ],
+   "pdb_id": "6T95",
+   "label": "CHEMBL5266073",
+   "rank": 25,
+   "desalted_smiles": "C[n+]1nn(-c2ccc(-c3nc(CCc4ccccc4)cs3)c(OCC3CCNCC3)c2)cc1CCCCN"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.34,
+   "poses": [
+    -6.34,
+    -6.11,
+    -6.03
+   ],
+   "pdb_id": "6T95",
+   "label": "CHEMBL5282990",
+   "rank": 23,
+   "desalted_smiles": "C[n+]1nn(-c2ccc(-c3nc(CCc4ccccc4)cs3)c(OCCC3CCNCC3)c2)cc1CCCCN"
+  }
+ ]
+}

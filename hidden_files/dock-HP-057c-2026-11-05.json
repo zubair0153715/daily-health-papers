@@ -1,0 +1,78 @@
+{
+ "ok": true,
+ "pdb_id": "7B7R",
+ "resolution": 1.7,
+ "pdb_title": "Structure of the enoyl-ACP reductase of Mycobacterium tuberculosis InhA, inhibited with the active metabolite of isoniazid",
+ "co_crystallised_ligand": "ZID (isonicotinic-acetyl-NAD, the INH-NAD adduct)",
+ "center": [
+  -28.04,
+  -12.97,
+  13.32
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Corrected centre: centroid of co-crystallised ZID adduct; pipeline first centred on NAD cofactor, 1.82 A away.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.52,
+   "poses": [
+    -9.52,
+    -8.9,
+    -8.25
+   ],
+   "pdb_id": "7B7R",
+   "label": "CHEMBL2103875",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.02,
+   "poses": [
+    -8.02,
+    -7.82,
+    -7.6
+   ],
+   "pdb_id": "7B7R",
+   "label": "CHEMBL5433950",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.94,
+   "poses": [
+    -7.94,
+    -7.69,
+    -7.43
+   ],
+   "pdb_id": "7B7R",
+   "label": "CHEMBL1615025",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.77,
+   "poses": [
+    -7.77,
+    -7.71,
+    -7.42
+   ],
+   "pdb_id": "7B7R",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.13,
+   "poses": [
+    -7.13,
+    -7.13,
+    -6.32
+   ],
+   "pdb_id": "7B7R",
+   "label": "CHEMBL507361",
+   "rank": 5
+  }
+ ]
+}

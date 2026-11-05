@@ -1,0 +1,274 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL1938215 (live)",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 2
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "MEK1/2 (MAP2K1/2)",
+  "uniprot": {
+   "accession": "Q8IVT5",
+   "entry": null,
+   "gene": "KSR1",
+   "protein": "Kinase suppressor of Ras 1",
+   "organism": "Homo sapiens",
+   "length": 923,
+   "function": "Part of a multiprotein signaling complex which promotes phosphorylation of Raf family members and activation of downstream MAP kinases (By similarity). Independently of its kinase activity, acts as MAP2K1/MEK1 and MAP2K2/MEK2-dependent allosteric activator of BRAF; upon binding to MAP2K1/MEK1 or MAP2K2/MEK2, dimerizes with BRAF and promotes BRAF-mediated phosphorylation of MAP2K1/MEK1 and/or MAP2K2/MEK2 (PubMed:29433126). Promotes activation of MAPK1 and/or MAPK3, both in response to EGF and to cAMP (By similarity). Its kinase activity is unsure (By similarity). Some protein kinase activity has been detected in vitro, however the physiological relevance of this activity is unknown (By similarity)",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q8IVT5/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL1938215",
+   "name": "Kinase suppressor of Ras 1",
+   "type": "SINGLE PROTEIN",
+   "organism": "Homo sapiens",
+   "components": 1
+  }
+ },
+ "ligands_found": 1,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CC1=C2C(=C(N(C1=O)C)NC3=C(C=C(C=C3)I)F)C(=O)N(C(=O)N2C4=CC=CC(=C4)NC(=O)C)C5CC5",
+   "similarity": 1.0,
+   "score": 98.3,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.3
+   },
+   "descriptors": {
+    "mw": 615.4,
+    "logp": 3.94,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 107.13,
+    "rotatable": 5,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C26H23FIN5O4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.286,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.162,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.338,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.081,
+     "SR-ATAD5": 0.074,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.265,
+     "SR-p53": 0.073
+    }
+   },
+   "pubchem": {
+    "cid": 11707110,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11707110"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL388978",
+   "smiles": "CN[C@@H]1C[C@H]2O[C@@](C)([C@@H]1OC)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4",
+   "similarity": 0.133,
+   "score": 63.6,
+   "score_detail": {
+    "similarity_40": 5.3,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.3
+   },
+   "descriptors": {
+    "mw": 466.54,
+    "logp": 4.35,
+    "hbd": 2,
+    "hba": 4,
+    "tpsa": 69.45,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C28H26N4O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.258,
+     "NR-Aromatase": 0.224,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.279,
+     "SR-p53": 0.256
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.34",
+    "activity": "IC50 4590.0 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "7JUW",
+  "resolution": 2.88,
+  "center": [
+   -5.92,
+   63.82,
+   -6.71
+  ],
+  "results": [
+   {
+    "ok": false,
+    "error": "pdb parse failed",
+    "label": "QUERY",
+    "rank": 1
+   },
+   {
+    "ok": false,
+    "error": "pdb parse failed",
+    "label": "CHEMBL388978",
+    "rank": 2
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "MEK1/2 (MAP2K1/2)",
+  "reference": "trametinib"
+ }
+}
