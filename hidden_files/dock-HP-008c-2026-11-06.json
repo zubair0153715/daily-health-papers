@@ -1,0 +1,72 @@
+{
+ "pdb_id": "4C7K",
+ "resolution": 1.91,
+ "center": [
+  -21.3,
+  -6.46,
+  34.49
+ ],
+ "note": "Re-dock on 4C7K; 1XU9 receptor parse failed, 1XU7 centre is CHAPS detergent",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.32,
+   "poses": [
+    -11.32,
+    -11.29,
+    -10.83
+   ],
+   "pdb_id": "4C7K",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.27,
+   "poses": [
+    -10.27,
+    -9.93,
+    -9.82
+   ],
+   "pdb_id": "4C7K",
+   "label": "CHEMBL3664636",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.69,
+   "poses": [
+    -9.69,
+    -9.68,
+    -8.75
+   ],
+   "pdb_id": "4C7K",
+   "label": "CHEMBL4075869",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.36,
+   "poses": [
+    -9.36,
+    -8.77,
+    -8.65
+   ],
+   "pdb_id": "4C7K",
+   "label": "CHEMBL4101787",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.55,
+   "poses": [
+    -8.55,
+    -8.44,
+    -8.33
+   ],
+   "pdb_id": "4C7K",
+   "label": "CHEMBL557417",
+   "rank": 2
+  }
+ ]
+}

@@ -73,8 +73,8 @@
    "file": "files/2026-11-04-health-ecoli-dhfr-trimethoprim.md",
    "platform": "ChemRxiv",
    "status": "draft-ready",
-   "title": "Five Trimethoprim Analogues Dock Within Noise of Trimethoprim on E. coli DHFR \u2014 and None Addresses the dfrA Resistance Route",
-   "topic": "E. coli DHFR \u2014 trimethoprim resistance",
+   "title": "Five Trimethoprim Analogues Dock Within Noise of Trimethoprim on E. coli DHFR — and None Addresses the dfrA Resistance Route",
+   "topic": "E. coli DHFR — trimethoprim resistance",
    "topic_id": "HP-014"
   },
   {
@@ -85,7 +85,7 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "Five Triazole-Thioether NDM-1 Inhibitors Docked With the Catalytic Zinc Retained: The Best Compound Is Found, the Ranking Is Not",
-   "topic": "NDM-1 metallo-beta-lactamase \u2014 carbapenem resistance",
+   "topic": "NDM-1 metallo-beta-lactamase — carbapenem resistance",
    "topic_id": "HP-011"
   },
   {
@@ -96,27 +96,26 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "Vemurafenib Still Docks Best: Five Sub-nanomolar BRAF V600E Inhibitors Dock Worse Than the Drug They Outperform by ~300-Fold",
-   "topic": "BRAF V600E melanoma \u2014 vemurafenib resistance",
+   "topic": "BRAF V600E melanoma — vemurafenib resistance",
    "topic_id": "HP-029"
   },
   {
    "date": "2026-11-05",
    "topic_id": "HP-018",
-   "topic": "InhA \u2014 isoniazid resistance in Mycobacterium tuberculosis",
-   "title": "Direct InhA Inhibitors Dock 3.5\u20134.4 kcal/mol Better Than Free Isoniazid on Mycobacterium tuberculosis InhA: A Standardised Vina Benchmark at the INH\u2013NAD Adduct Site",
+   "topic": "InhA — isoniazid resistance in Mycobacterium tuberculosis",
+   "title": "Direct InhA Inhibitors Dock 3.5–4.4 kcal/mol Better Than Free Isoniazid on Mycobacterium tuberculosis InhA: A Standardised Vina Benchmark at the INH–NAD Adduct Site",
    "file": "files/2026-11-05-health-inha-isoniazid-direct-inhibitors.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null,
-   "draft_note": "ChemRxiv draft FAILED 2026-11-05 15:31-15:44 PKT: Cloudflare verify-then-reset loop (Ray IDs a55b3031488af8b7, a55b41b09b41eb7b); site never loaded, no sign-in/upload. Retry tomorrow per rule; never loop same run.",
-   "draft_failed": "2026-11-05"
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/a69151db-c067-4006-87ec-01e8b968e728",
+   "draft_note": "RETRY SUCCEEDED 2026-11-06 16:26-16:35 PKT: PDF uploaded, title+abstract verbatim, all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No, affiliation incl. Faculty of Pharmacy. Stopped at Summary, NOT submitted. Cloudflare loop cleared after browser environment replacement."
   },
   {
    "date": "2026-11-05",
    "topic_id": "HP-052",
-   "topic": "Cutaneous leishmaniasis \u2014 oral alternatives to antimonials (L. infantum TR surrogate; no L. major ChEMBL target/structure)",
-   "title": "Five Triazolium Trypanothione Reductase Inhibitors Dock at \u22126.3 to \u22127.8 kcal/mol on Leishmania infantum TR: A Vina Benchmark, a Species Surrogate, and Two Pipeline Faults Caught",
+   "topic": "Cutaneous leishmaniasis — oral alternatives to antimonials (L. infantum TR surrogate; no L. major ChEMBL target/structure)",
+   "title": "Five Triazolium Trypanothione Reductase Inhibitors Dock at −6.3 to −7.8 kcal/mol on Leishmania infantum TR: A Vina Benchmark, a Species Surrogate, and Two Pipeline Faults Caught",
    "file": "files/2026-11-05-health-trypanothione-reductase-leishmania.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -126,7 +125,7 @@
   {
    "date": "2026-11-05",
    "topic_id": "HP-057",
-   "topic": "MEK1/2 \u2014 BRAF-mutant combination therapy (MAP2K1)",
+   "topic": "MEK1/2 — BRAF-mutant combination therapy (MAP2K1)",
    "title": "Trametinib Beats Itself by 1.75 kcal/mol: A Vina Benchmark of MEK1 Inhibitors on 7B7R and the Conformer-Sampling Error Hiding Inside Every Docking Score",
    "file": "files/2026-11-05-health-mek1-trametinib-benchmark.md",
    "field": "health",
@@ -138,23 +137,86 @@
    "date": "2026-11-05",
    "topic_id": "HP-043",
    "topic": "Neprilysin inhibition for heart failure (sacubitrilat)",
-   "title": "Four Known Neprilysin Inhibitors Dock at \u22127.1 to \u22129.9 kcal/mol on the Omapatrilat Site: A Vina Benchmark, a 37.9 \u00c5 Grid Error, and the Zinc That Vina Cannot See",
+   "title": "Four Known Neprilysin Inhibitors Dock at −7.1 to −9.9 kcal/mol on the Omapatrilat Site: A Vina Benchmark, a 37.9 Å Grid Error, and the Zinc That Vina Cannot See",
    "file": "files/2026-11-05-health-neprilysin-sacubitrilat-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-partial",
    "draft_url": "https://chemrxiv.authorea-prod.literatumonline.com/doc/08763671-39e5-45c2-bf5f-a9217b648abe",
-   "draft_note": "PARTIAL 2026-11-05 17:12-17:26 PKT: PDF uploaded, draft V1 created, title+abstract auto-extracted (6 pp). Metadata NOT filled: Cloudflare loop blocked the submission form + editor 404. Keywords/subject/licence/type/ethics/conflicts/affiliation still to complete \u2014 retry tomorrow."
+   "draft_note": "PARTIAL 2026-11-05 17:12-17:26 PKT: PDF uploaded, draft V1 created, title+abstract auto-extracted (6 pp). Metadata NOT filled: Cloudflare loop blocked the submission form + editor 404. Keywords/subject/licence/type/ethics/conflicts/affiliation still to complete. RETRY FAILED 2026-11-06 16:36-16:38 PKT: Cloudflare verify-then-reset loop again (Ray IDs a563ce42de00da2f, a563cf3d18a809f7); draft page never reached. Retry tomorrow."
   },
   {
    "topic_id": "HP-046",
    "date": "2026-11-05",
    "title": "Five Sub-Nanomolar PCSK9 Expression Modulators Dock Only Weakly at the LDLR-Interface Site: A Vina Benchmark on 7S5H, Two Target-Resolution Faults, and the Binder-versus-Modulator Distinction",
    "file": "files/2026-11-05-health-pcsk9-evolocumab-expression-modulators.md",
-   "status": "draft-partial",
+   "status": "draft-ready",
    "draft_url": "https://chemrxiv.org/doc/9a7b5d17-6c85-4621-ab09-1cd6bb455285",
    "notes": "First run discarded: target resolved to A8T677 monkey + CHEMBL2074 maltase. Corrected: Q8NBP7/CHEMBL2929, 7S5H 1.27A. Centre re-docked at full cyclic-peptide centroid (4.05A from Z50 fragment centre, shifts <=0.28). Scores -6.04 to -6.48; EC50s are cellular expression (HepG2 ELISA), not binding. 20 macrocyclic peptides undockable (MW 894-1738). Evolocumab antibody not dockable.",
-   "draft_note": "PARTIAL 2026-11-05 17:36-17:45 PKT: PDF uploaded, draft V1 created, title+abstract auto-extracted verbatim (6 pp). Metadata NOT filled: Authorea editor iframe blocked by Cloudflare (Unable to connect). Keywords/subject/licence/type/ethics/conflicts/affiliation still to complete \u2014 retry tomorrow."
+   "draft_note": "COMPLETED 2026-11-06 16:38-16:51 PKT (retry): title+abstract verified verbatim, all 8 keywords, subject Biological and Medicinal Chemistry set in editor, Working Paper, CC BY 4.0, Ethics Not relevant, Conflicts No — all confirmed on Summary page via submit wizard (Cancel clicked, NOT submitted). Affiliation auto-extracted (Affiliations menu greyed out, Faculty of Pharmacy not added). Cloudflare loop cleared after browser environment replacement."
+  },
+  {
+   "date": "2026-11-06",
+   "topic_id": "HP-033",
+   "topic": "ALK-positive NSCLC — next-generation inhibitors (alectinib)",
+   "title": "No ALK Inhibitor in This Set Beats Alectinib Beyond Vina Noise: A Benchmark Docking of Known ALK Inhibitors on PDB 4Z55",
+   "file": "files/2026-11-06-health-alk-alectinib-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "draft_failed": "2026-11-06",
+   "draft_note": "ChemRxiv draft FAILED 2026-11-06 15:51-15:53 PKT: Cloudflare verify-then-reset loop (Ray ID a5638cbe494b7c32); site never loaded, no sign-in/upload. Retry tomorrow per rule; never loop same run."
+  },
+  {
+   "date": "2026-11-06",
+   "topic_id": "HP-019",
+   "topic": "DprE1 — next-generation TB drugs (macozinone)",
+   "title": "Two Leads \"Beat\" Macozinone by Docking and Lose by 1.23 kcal/mol of Noise: A Vina Benchmark of DprE1 Inhibitors on 4P8N and the Covalent Binding Vina Cannot See",
+   "file": "files/2026-11-06-health-dpre1-macozinone-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/b743d900-ca5f-43cf-9661-2542ec344643",
+   "draft_note": "DRAFT-READY 2026-11-06 15:53-16:06 PKT: PDF uploaded, title+abstract verbatim, all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Stopped at Summary, NOT submitted. Cloudflare loop cleared after browser environment replacement."
+  },
+  {
+   "date": "2026-11-06",
+   "topic_id": "HP-009",
+   "topic": "Xanthine oxidase inhibition for gout — safer than allopurinol in CKD (febuxostat)",
+   "title": "Febuxostat Beats Itself by 0.03 kcal/mol: A Vina Benchmark of Xanthine Oxidase Inhibitors on 2E1Q, and the Selenium Ligands the Pipeline Cannot Dock",
+   "file": "files/2026-11-06-health-xanthine-oxidase-febuxostat-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "draft_failed": "2026-11-06",
+   "draft_note": "ChemRxiv draft FAILED 2026-11-06 16:06-16:09 PKT: Cloudflare verify-then-reset loop (Ray ID a563a3d1dd5df176); site never loaded, no sign-in/upload. Retry tomorrow per rule; never loop same run."
+  },
+  {
+   "date": "2026-11-06",
+   "topic_id": "HP-008",
+   "topic": "11beta-HSD1 inhibition for metabolic syndrome (INCB13739)",
+   "title": "INCB13739 Still Leads by 1.05 kcal/mol — Inside the Noise: A Vina Benchmark of 11β-HSD1 Inhibitors on 4C7K and the Wrong-Target Run That Had to Be Discarded",
+   "file": "files/2026-11-06-health-hsd11b1-incb13739-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "draft_failed": "2026-11-06",
+   "draft_note": "ChemRxiv draft FAILED 2026-11-06 16:09-16:12 PKT: Cloudflare verify-then-reset loop (Ray ID a563a87b687af176); site never loaded, no sign-in/upload. Retry tomorrow per rule; never loop same run."
+  },
+  {
+   "date": "2026-11-06",
+   "topic_id": "HP-045",
+   "topic": "HIF prolyl-hydroxylase — anaemia of chronic kidney disease (roxadustat)",
+   "title": "No Lead Beats Roxadustat Beyond Noise: A Vina Benchmark of PHD2/EGLN1 Inhibitors on 6QGV and the Missing Metal Ion",
+   "file": "files/2026-11-06-health-hif-ph-roxadustat-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "draft-partial",
+   "draft_url": "https://chemrxiv.org/doc/b1a205ee-90f5-4722-bb54-195d1b8328e4",
+   "draft_note": "PARTIAL 2026-11-06 16:12-16:26 PKT: PDF uploaded, draft V1 created, title+abstract auto-extracted verbatim (abstract rendering note: \"scored-7.54\" missing space), all 8 keywords present. Metadata NOT filled: editor iframe blocked by Cloudflare loop (Ray IDs a563ba3d2900436f, a563bba7ee95436f, a563bc9c9e6e436f). Subject/licence/type/ethics/conflicts still to complete — retry tomorrow."
   }
  ],
  "used_topic_ids": [
@@ -167,6 +229,11 @@
   "HP-052",
   "HP-057",
   "HP-043",
-  "HP-046"
+  "HP-046",
+  "HP-033",
+  "HP-019",
+  "HP-009",
+  "HP-008",
+  "HP-045"
  ]
 }

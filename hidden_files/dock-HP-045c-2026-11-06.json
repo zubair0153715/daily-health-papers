@@ -1,0 +1,72 @@
+{
+ "pdb_id": "6QGV",
+ "resolution": 1.4,
+ "center": [
+  20.93,
+  -0.43,
+  33.59
+ ],
+ "note": "Re-dock on 6QGV; 7Q5V contains HIF peptide in pocket (+17..+30 kcal/mol clash scores)",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.38,
+   "poses": [
+    -8.38,
+    -8.31,
+    -8.25
+   ],
+   "pdb_id": "6QGV",
+   "label": "CHEMBL5572635",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.96,
+   "poses": [
+    -7.96,
+    -7.95,
+    -7.82
+   ],
+   "pdb_id": "6QGV",
+   "label": "CHEMBL3115302",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.54,
+   "poses": [
+    -7.54,
+    -7.32,
+    -7.06
+   ],
+   "pdb_id": "6QGV",
+   "label": "CHEMBL3115307",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.5,
+   "poses": [
+    -7.5,
+    -7.48,
+    -7.18
+   ],
+   "pdb_id": "6QGV",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.37,
+   "poses": [
+    -6.37,
+    -6.18,
+    -6.09
+   ],
+   "pdb_id": "6QGV",
+   "label": "CHEMBL4127286",
+   "rank": 2
+  }
+ ]
+}
