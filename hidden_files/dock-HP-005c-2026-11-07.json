@@ -1,0 +1,209 @@
+{
+ "ok": true,
+ "pdb_id": "1XCX",
+ "resolution": 1.9,
+ "pdb_title": "Acarbose rearrangement mechanism implied by the kinetic and structural analysis of human pancreatic alpha-amylase in complex with analogues and their elongated counterparts",
+ "co_crystallised_ligand": "chain B pseudo-pentasaccharide (AC1 + BGC + GLC)",
+ "center": [
+  5.01,
+  16.45,
+  41.56
+ ],
+ "center_basis": "centroid of the full co-crystallised ligand (44 atoms); AC1 core centroid [9.96, 17.05, 43.65] is 4.01 A from the catalytic triad centroid (Asp197/Glu233/Asp300); combined centre is 7.23 A from the triad; 22.5 A box covers subsites -3 to +2",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "fault": "Pipeline auto-pick 5U3A (apo) centred on N-terminal PCA [5.86, 82.81, 131.04], 19.5 A from the catalytic triad \u2014 _ligand_center fallback re-picked an excluded modified residue. Run killed before any Vina output; no wrong-centre scores exist. Root cause: fallback ignores _CENTRE_EXCLUDE; fix owed in dock.py.",
+ "not_docked": [
+  {
+   "label": "CHEMBL3616594",
+   "rank": 3,
+   "mw": 1901,
+   "rotatable": 31,
+   "known_activity": "Ki 14.3 nM",
+   "reason": "MW 1901 Da / 31 rotatable bonds \u2014 beyond Vina's reliable sampling range at exhaustiveness 8"
+  },
+  {
+   "label": "CHEMBL3616595",
+   "rank": 5,
+   "mw": 2366,
+   "rotatable": 39,
+   "known_activity": "Ki 41.6 nM",
+   "reason": "MW 2366 Da / 39 rotatable bonds \u2014 exceeds Vina's 32-torsion handling"
+  }
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.42,
+   "poses": [
+    -8.42,
+    -8.03,
+    -7.89
+   ],
+   "pdb_id": "1XCX",
+   "label": "LUTEOLIN",
+   "rank": null,
+   "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+   "known_activity": null,
+   "descriptors": {
+    "mw": 286.24,
+    "logp": 2.28,
+    "hbd": 4,
+    "hba": 6,
+    "tpsa": 111.13,
+    "rotatable": 1,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C15H10O6"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "note": "flavonoid; PubChem CID 5280445; Martinez-Gonzalez et al. 2019 found luteolin the best flavonoid inhibitor of pancreatic alpha-amylase in vitro, better than acarbose"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.31,
+   "poses": [
+    -8.31,
+    -7.81,
+    -7.62
+   ],
+   "pdb_id": "1XCX",
+   "label": "QUERCETIN",
+   "rank": null,
+   "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+   "known_activity": null,
+   "descriptors": {
+    "mw": 302.24,
+    "logp": 1.99,
+    "hbd": 5,
+    "hba": 7,
+    "tpsa": 131.36,
+    "rotatable": 1,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C15H10O7"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "note": "flavonoid; PubChem CID 5280343; oral bioavailability <10%, free aglycone plasma levels in the low nanomolar range"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.14,
+   "poses": [
+    -8.14,
+    -7.81,
+    -7.61
+   ],
+   "pdb_id": "1XCX",
+   "label": "CHEMBL1233515",
+   "rank": 6,
+   "smiles": "C[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](OC[C@H]3O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]3O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1N[C@H]1C=C(CO)[C@@H](O)[C@H](O)[C@H]1O",
+   "known_activity": {
+    "pchembl": "7.92",
+    "activity": "Ki 12.0 nM"
+   },
+   "descriptors": {
+    "mw": 645.61,
+    "logp": -8.56,
+    "hbd": 14,
+    "hba": 19,
+    "tpsa": 321.17,
+    "rotatable": 9,
+    "lipinski_violations": 3,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C25H43NO18"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.47,
+   "poses": [
+    -7.47,
+    -7.33,
+    -6.83
+   ],
+   "pdb_id": "1XCX",
+   "label": "CHEMBL1230193",
+   "rank": 2,
+   "smiles": "C[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1N[C@H]1C=C(CO)[C@@H](O)[C@H](O)[C@H]1O",
+   "known_activity": {
+    "pchembl": "7.12",
+    "activity": "Ki 75.0 nM"
+   },
+   "descriptors": {
+    "mw": 483.47,
+    "logp": -6.39,
+    "hbd": 11,
+    "hba": 14,
+    "tpsa": 242.02,
+    "rotatable": 6,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C19H33NO13"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.35,
+   "poses": [
+    -7.35,
+    -7.14,
+    -7.06
+   ],
+   "pdb_id": "1XCX",
+   "label": "QUERY",
+   "rank": 1,
+   "smiles": "CC1C(C(C(C(O1)OC2C(OC(C(C2O)O)OC(C(CO)O)C(C(C=O)O)O)CO)O)O)NC3C=C(C(C(C3O)O)O)CO",
+   "known_activity": null,
+   "descriptors": {
+    "mw": 645.61,
+    "logp": -8.72,
+    "hbd": 14,
+    "hba": 19,
+    "tpsa": 329.01,
+    "rotatable": 13,
+    "lipinski_violations": 3,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C25H43NO18"
+   },
+   "pains": []
+  },
+  {
+   "ok": false,
+   "error": "conformer_failed",
+   "label": "CHEMBL3618489",
+   "rank": 4,
+   "smiles": "C[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](O[C@H]3[C@H](O)[C@@H](O)[C@@H](O[C@H]4[C@H](O)[C@@H](O)[C@@H](O[C@H]5[C@H](O)[C@@H](O)[C@@H](O)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1N[C@H]1C=C(CO)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O[C@H]3O[C@H](C)[C@@H](N[C@H]4C=C(CO)[C@@H](O)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)[C@H](O)[C@H]2O)[C@H](O)[C@H]1O",
+   "known_activity": {
+    "pchembl": "7.83",
+    "activity": "Ki 14.7 nM"
+   },
+   "descriptors": {
+    "mw": 1435.34,
+    "logp": -18.26,
+    "hbd": 29,
+    "hba": 42,
+    "tpsa": 690.26,
+    "rotatable": 23,
+    "lipinski_violations": 3,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C56H94N2O40"
+   },
+   "pains": []
+  }
+ ],
+ "acarbose_retry": "Second attempt on a quiet machine, identical protocol; first attempt hit Vina's 900 s cap under CPU contention from concurrent sibling runs."
+}

@@ -1,0 +1,87 @@
+[
+ {
+  "id": "HP-045",
+  "file": "files/2026-11-06-health-hif-ph-roxadustat-benchmark.md",
+  "title": "No Lead Beats Roxadustat Beyond Noise: A Vina Benchmark of PHD2/EGLN1 Inhibitors on 6QGV and the Missing Metal Ion",
+  "abstract": "Anaemia of chronic kidney disease is treated with erythropoiesis-stimulating agents that require injection and iron supplementation, and hypoxia-inducible factor prolyl-hydroxylase inhibitors (HIF-PHIs) offer an oral alternative that raises endogenous erythropoietin and improves iron mobilisation. Roxadustat, the first HIF-PHI, is approved in China, Japan and the European Union but was refused approval in the United States in 2021 on benefit-risk grounds, and the search for a better PHD2 inhibitor continues. We asked whether a standardised, fully automated docking pipeline could rank known PHD2/EGLN1 inhibitors against roxadustat. The LeadForge pipeline was run live on 6 November 2026; its first target query resolved to the wrong enzyme entirely (P4HTM, not PHD2) and was discarded, and its first structure contained the HIF peptide sitting in the binding pocket, so every ligand scored positive and that run was discarded too. On the corrected target (UniProt Q9GZT9, ChEMBL CHEMBL5697, 57 bioactivities) and the corrected structure \u2014 PDB 6QGV (1.40 \u00c5), grid centred exactly on the co-crystallised inhibitor J2H centroid [20.93, -0.43, 33.59] \u2014 five ligands were docked with AutoDock Vina 1.2.7. The best-scoring lead, CHEMBL5572635, scored -8.38 kcal/mol against roxadustat's -7.50 kcal/mol, a margin of 0.88 kcal/mol that lies inside Vina's \u00b11-2 kcal/mol scoring noise. The most potent compound by measured IC50, CHEMBL3115307 (0.65 nM), scored -7.54 kcal/mol, effectively tied with roxadustat. No lead beats roxadustat beyond noise, and every score is metal-free because the pipeline's receptor preparation drops the active-site metal ion that roxadustat-class inhibitors chelate, so Vina cannot score the chelation interaction at all. The falsifiable next step is a head-to-head PHD2 enzyme inhibition assay of CHEMBL5572635 against roxadustat under identical conditions, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable potency advantage \u2014 a measured potency advantage greater than 2-fold for either compound, or a Fe-chelation-aware rescoring that reverses the ranking, would refute the claim that no lead here beats roxadustat.",
+  "keywords": [
+   "PHD2",
+   "EGLN1",
+   "roxadustat",
+   "molecular docking",
+   "AutoDock Vina",
+   "anaemia",
+   "chronic kidney disease",
+   "HIF prolyl hydroxylase"
+  ],
+  "abstract_len": 2185
+ },
+ {
+  "id": "HP-043",
+  "file": "files/2026-11-05-health-neprilysin-sacubitrilat-benchmark.md",
+  "title": "Four Known Neprilysin Inhibitors Dock at \u22127.1 to \u22129.9 kcal/mol on the Omapatrilat Site: A Vina Benchmark, a 37.9 \u00c5 Grid Error, and the Zinc That Vina Cannot See",
+  "abstract": "Sacubitril/valsartan, the first angiotensin receptor\u2013neprilysin inhibitor, cut cardiovascular death or heart-failure hospitalisation by 20% versus enalapril in the 8,442-patient PARADIGM-HF trial, yet no standardised Vina benchmark for neprilysin inhibitors existed. We asked whether a standardised, fully automated docking pipeline could rank known neprilysin inhibitors against the active metabolite sacubitrilat on the neprilysin catalytic site. The LeadForge pipeline was run live on 5 November 2026 (UniProtKB P08473 \u2192 ChEMBL CHEMBL1944, 53 bioactivities \u2192 26 ranked leads) and docked the top leads with AutoDock Vina 1.2.7 into neprilysin (PDB 6SUK, 1.75 \u00c5). The pipeline's first grid centre was a surface glycan, 37.9 \u00c5 from the inhibitor site, and its scores (\u22125.0 to \u22126.0 kcal/mol) were discarded; all ligands were re-docked at the centroid of the co-crystallised inhibitor omapatrilat. At the corrected centre the four known inhibitors scored \u22127.07 to \u22129.92 kcal/mol: CHEMBL3677663 best at \u22129.92 kcal/mol (ChEMBL IC50 1.0 nM), against \u22128.54 kcal/mol for sacubitrilat (LBQ657, the active metabolite) and \u22128.76 kcal/mol for the sacubitril prodrug. The 1.38 kcal/mol margin over sacubitrilat is inside Vina's \u00b11\u20132 kcal/mol noise, and the ranking is again inverted against potency \u2014 the most potent compound (CHEMBL3703484, IC50 0.3 nM) scores third at \u22128.72 kcal/mol. Neprilysin is a zinc metallopeptidase and its inhibitors chelate the catalytic Zn\u00b2\u207a, which Vina's scoring function cannot model, so every score here is a shape-and-hydrogen-bond estimate that omits the dominant metal interaction. The falsifiable next step is a direct neprilysin enzyme inhibition assay of CHEMBL3677663 against sacubitrilat under identical conditions, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable potency advantage.",
+  "keywords": [
+   "neprilysin",
+   "sacubitril",
+   "sacubitrilat",
+   "molecular docking",
+   "AutoDock Vina",
+   "heart failure",
+   "zinc metallopeptidase",
+   "ChEMBL"
+  ],
+  "abstract_len": 1851
+ },
+ {
+  "id": "HP-033",
+  "file": "files/2026-11-06-health-alk-alectinib-benchmark.md",
+  "title": "No ALK Inhibitor in This Set Beats Alectinib Beyond Vina Noise: A Benchmark Docking of Known ALK Inhibitors on PDB 4Z55",
+  "abstract": "Anaplastic lymphoma kinase (ALK) rearrangements drive about 3\u20137% of non-small cell lung cancers, and alectinib is the standard first-line inhibitor: in the ALEX phase III trial it gave median progression-free survival of 34.8 months versus 10.9 months for crizotinib. Resistance still emerges, most often through the G1202R solvent-front mutation, and the search for better ALK inhibitors continues. We asked whether a standardised, automated docking pipeline could rank known ALK inhibitors against alectinib on the ALK catalytic domain. The LeadForge pipeline was run live on 6 November 2026 (UniProtKB \u2192 ChEMBL \u2192 PubChem \u2192 RDKit \u2192 PAINS/ADMET \u2192 Vina): target UniProt Q9UM73, ChEMBL CHEMBL4247, 50 bioactivities retrieved, 25 compounds passed the similarity screen and 26 were ranked. Five ligands were docked with AutoDock Vina 1.2.7 on PDB 4Z55 (1.55 \u00c5), grid centred exactly on the co-crystallised ligand 4LO centroid [\u221221.06, 9.75, \u22127.5], box 22.5 \u00c5, exhaustiveness 8, three poses, best of three reported. Two leads scored above alectinib: CHEMBL3946496 at \u221210.16 kcal/mol (IC50 0.32 nM) and CHEMBL3929615 at \u221210.10 kcal/mol (IC50 0.3 nM), versus alectinib at \u22129.48 kcal/mol \u2014 margins of 0.62\u20130.68 kcal/mol, inside Vina's \u00b11\u20132 kcal/mol scoring noise, so no lead beats alectinib beyond noise. The most potent compound by measured IC50, CHEMBL3892880 (0.168 nM), scored only \u22129.54 kcal/mol, 0.06 kcal/mol above alectinib \u2014 docking cannot separate these compounds. All five ligands were PAINS-clean. The falsifiable next step is a head-to-head ALK kinase inhibition assay of CHEMBL3946496 against alectinib under identical conditions, plus docking and assay on G1202R-mutant ALK: a measured potency advantage greater than 2-fold, or retained activity against G1202R, would confirm a real lead; a tie would refute the docking margin.",
+  "keywords": [
+   "ALK",
+   "alectinib",
+   "molecular docking",
+   "AutoDock Vina",
+   "non-small cell lung cancer",
+   "tyrosine kinase inhibitor",
+   "G1202R",
+   "ChEMBL"
+  ],
+  "abstract_len": 1835
+ },
+ {
+  "id": "HP-009",
+  "file": "files/2026-11-06-health-xanthine-oxidase-febuxostat-benchmark.md",
+  "title": "Febuxostat Beats Itself by 0.03 kcal/mol: A Vina Benchmark of Xanthine Oxidase Inhibitors on 2E1Q, and the Selenium Ligands the Pipeline Cannot Dock",
+  "abstract": "Gout is driven by hyperuricaemia, and xanthine oxidase catalyses the final steps of uric-acid formation while also generating reactive oxygen species, making it the established target for urate-lowering therapy. Febuxostat, a non-purine xanthine oxidase inhibitor, is effective but carries a contested cardiovascular safety record: the FDA-mandated CARES trial found higher all-cause and cardiovascular mortality with febuxostat than with allopurinol despite no difference in the primary composite endpoint, leading to a boxed warning, while the later FAST trial found no excess mortality, and a 2025 Japanese nationwide claims cohort of patients with chronic kidney disease found no significant difference in composite cardiovascular outcomes (hazard ratio 0.93). We asked whether a standardised automated docking pipeline could find a xanthine oxidase inhibitor that binds more tightly than febuxostat. The LeadForge pipeline was run live on 6 November 2026 on human xanthine dehydrogenase/oxidase (UniProt P47989, ChEMBL CHEMBL1929, 53 bioactivities); 25 compounds passed the similarity screen and 26 were ranked. Five leads were docked with AutoDock Vina 1.2.7 on PDB 2E1Q (2.6 \u00c5), the grid centred exactly on the co-crystallised ligand \u2014 febuxostat itself \u2014 at [35.35, 15.17, 152.43]. No lead beats febuxostat: the best-scoring \"lead\", CHEMBL1164729 at \u22127.53 kcal/mol, is febuxostat itself entered under a second ChEMBL ID, scoring 0.03 kcal/mol from the query entry (\u22127.50). The best genuine lead, CHEMBL5436777 (IC50 1.0 nM), scored \u22127.42 kcal/mol, 0.08 kcal/mol from febuxostat \u2014 a tie inside Vina's \u00b11\u20132 kcal/mol noise. Two of the five leads, both selenium-containing analogues, could not be docked at all because the pipeline cannot prepare selenium ligands. Febuxostat's own Tox21 read-across panel returns probability 1.0 on three assays, an identity artifact, not a toxicity signal. The falsifiable next step is a head-to-head xanthine oxidase enzyme inhibition assay of CHEMBL5436777 against febuxostat under identical conditions, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable potency advantage; a measured potency advantage greater than 2-fold for CHEMBL5436777, or a successful docking of the selenium analogues after the ligand-preparation fault is fixed, would refute the claim that no lead in this set improves on febuxostat.",
+  "keywords": [
+   "xanthine oxidase",
+   "febuxostat",
+   "molecular docking",
+   "AutoDock Vina",
+   "gout",
+   "hyperuricaemia",
+   "ChEMBL",
+   "selenium"
+  ],
+  "abstract_len": 2387
+ },
+ {
+  "id": "HP-008",
+  "file": "files/2026-11-06-health-hsd11b1-incb13739-benchmark.md",
+  "title": "INCB13739 Still Leads by 1.05 kcal/mol \u2014 Inside the Noise: A Vina Benchmark of 11\u03b2-HSD1 Inhibitors on 4C7K and the Wrong-Target Run That Had to Be Discarded",
+  "abstract": "Type 2 diabetes affected about 537 million adults worldwide in 2021, including about 33 million in Pakistan, and intracellular glucocorticoid excess is one of the metabolic drivers that existing therapies do not directly target. The enzyme 11-beta-hydroxysteroid dehydrogenase type 1 (11beta-HSD1) converts inactive cortisone into active cortisol inside liver and adipose tissue, amplifying intracellular glucocorticoid action; its activity is elevated in the adipose tissue of obese rodents and humans and is linked to metabolic syndrome and type 2 diabetes. INCB13739, a selective 11beta-HSD1 inhibitor, showed a positive phase 2 result \u2014 200 mg daily for 12 weeks lowered A1C by 0.6 percent, fasting glucose by 24 mg per decilitre and HOMA-IR by 24 percent versus placebo in 302 patients inadequately controlled on metformin \u2014 yet it was never approved, and no 11beta-HSD1 inhibitor has reached approval. We asked whether a standardised automated docking pipeline could rank known sub-nanomolar 11beta-HSD1 inhibitors against INCB13739. The LeadForge pipeline was run live on 6 November 2026; its first target query resolved to the wrong enzyme entirely (AKR1C3, not 11beta-HSD1) and was discarded, and its first structures failed receptor preparation or centred on a detergent molecule. On the corrected target (UniProt P28845, ChEMBL CHEMBL4235, 58 bioactivities) and the corrected centre \u2014 the centroid of the co-crystallised inhibitor DZL in PDB 4C7K (1.91 angstrom) \u2014 five ligands were docked with AutoDock Vina 1.2.7. INCB13739 scored minus 11.32 kcal per mol; the best lead, CHEMBL3664636 (IC50 0.31 nM), scored minus 10.27 kcal per mol, with the remaining leads at minus 9.69, minus 9.36 and minus 8.55 kcal per mol. INCB13739 still leads on docking by 1.05 kcal per mol, inside Vina's plus-minus 1 to 2 kcal per mol noise, and all four leads are sub-nanomolar by measured IC50, so docking cannot separate them from the reference and the ranking is not a discovery. The falsifiable next step is a head-to-head 11beta-HSD1 enzyme inhibition assay of CHEMBL3664636 versus INCB13739 under identical conditions, with a pre-registered rule that a docking margin under 2 kcal per mol predicts no measurable potency advantage; a measured potency difference larger than two-fold would refute that prediction.",
+  "keywords": [
+   "11beta-HSD1",
+   "INCB13739",
+   "molecular docking",
+   "AutoDock Vina",
+   "type 2 diabetes",
+   "glucocorticoid",
+   "metabolic syndrome",
+   "ChEMBL"
+  ],
+  "abstract_len": 2311
+ }
+]

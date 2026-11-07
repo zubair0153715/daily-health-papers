@@ -1,0 +1,87 @@
+[
+ {
+  "id": "HP-005",
+  "file": "files/2026-11-07-health-alpha-amylase-acarbose-benchmark.md",
+  "title": "Two Dietary Flavonoids \"Beat\" Acarbose by Docking and Lose by ~1 kcal/mol of Noise: A Vina Benchmark of Human Pancreatic Alpha-Amylase Inhibitors on 1XCX",
+  "abstract": "Diabetes affected an estimated 828 million adults in 2022, including 36 million in Pakistan, where the prevalence among women rose from 9.0% in 1990 to 30.9% in 2022, the largest increase of any country, and most post-meal glucose control still depends on slowing starch digestion. Acarbose, the standard alpha-amylase and alpha-glucosidase inhibitor, blunts postprandial glucose but causes flatulence in 74% of patients, diarrhoea in 31% and abdominal pain in 19%, which limits adherence; dietary flavonoids are proposed as gentler adjuncts, but their published enzyme inhibition has rarely been benchmarked against acarbose in the same protocol. We ran the LeadForge pipeline live on 7 November 2026 (UniProtKB \u2192 ChEMBL \u2192 PubChem \u2192 RDKit \u2192 PAINS/ADMET \u2192 Vina docking): target human pancreatic alpha-amylase (UniProt P04746, AMY2A; ChEMBL CHEMBL2045, 23 bioactivities), structure PDB 1XCX at 1.9 \u00c5, grid centred on the co-crystallised acarbose-derived ligand ([5.01, 16.45, 41.56]), and six ligands docked with AutoDock Vina 1.2.7 under an identical protocol. Luteolin scored \u22128.42 kcal/mol and quercetin \u22128.31 kcal/mol against acarbose at \u22127.35 kcal/mol, margins of 1.07 and 0.96 kcal/mol, inside Vina's \u00b11\u20132 kcal/mol noise, while both flavonoids carry PAINS catechol alerts and quercetin's oral bioavailability is under 10%. A ChEMBL acarbose isomer with a measured Ki of 12 nM scored \u22128.14 kcal/mol, and a second analogue (Ki 75 nM) scored \u22127.47 kcal/mol, ranking in the same order as their measured potency. The falsifiable next step is a head-to-head in vitro alpha-amylase inhibition assay of luteolin against acarbose under identical conditions with redox controls, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable advantage; a measured IC50 for luteolin better than acarbose's under those controls would refute the noise interpretation.",
+  "keywords": [
+   "alpha-amylase",
+   "acarbose",
+   "luteolin",
+   "quercetin",
+   "flavonoids",
+   "molecular docking",
+   "AutoDock Vina",
+   "type 2 diabetes"
+  ],
+  "abstract_len": 1885
+ },
+ {
+  "id": "HP-059",
+  "file": "files/2026-11-07-health-hbv-capsid-assembly-modulators.md",
+  "title": "Vebicorvir \"Beats\" Bersacapavir by Docking and Loses by 1.10 kcal/mol of Noise: A Vina Benchmark of HBV Capsid Assembly Modulators on 5WRE and the Functional-Cure Gap",
+  "abstract": "Chronic hepatitis B affected about 240 million people and caused about 1.1 million deaths in 2024, yet no approved drug clears the virus: nucleos(t)ide analogues suppress replication indefinitely and functional cure \u2014 sustained hepatitis B surface antigen (HBsAg) loss off treatment \u2014 remains rare. Capsid assembly modulators (CAMs) that bind the core protein dimer-dimer interface are the most advanced new mechanism, but no CAM is approved, and the most advanced, bersacapavir, reached phase 2b without a single functional cure in the REEF-2 trial. We benchmarked four CAMs against the same HBV core-protein pocket with AutoDock Vina 1.2.7 on PDB 5WRE (1.95 \u00c5, HAP-bound): the investigational comparator bersacapavir, the phase 2 heteroaryldihydropyrimidine GLS4 (morphothiadin), the discontinued vebicorvir, and the co-crystallised HAP_R01 as a re-dock control. Vebicorvir scored best at \u22128.03 kcal/mol, beating bersacapavir (\u22126.93 kcal/mol) by 1.10 kcal/mol, with HAP_R01 at \u22126.76 and GLS4 last at \u22126.53 kcal/mol \u2014 but the ranking is inverted against measured potency: vebicorvir is the weakest by experiment (EC50 173\u2013250 nM), while GLS4 is the most potent (IC50 12 nM) and bersacapavir sits between them (EC50 45 nM). The 1.10 kcal/mol margin is inside Vina's \u00b11\u20132 kcal/mol noise, so the docking \"win\" is not a discovery. The falsifiable next step is a head-to-head HBV replication assay of vebicorvir against bersacapavir under identical conditions, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable potency advantage; a measured advantage for vebicorvir would refute the noise interpretation.",
+  "keywords": [
+   "hepatitis B virus",
+   "capsid assembly modulator",
+   "bersacapavir",
+   "molecular docking",
+   "AutoDock Vina",
+   "core protein",
+   "functional cure",
+   "GLS4"
+  ],
+  "abstract_len": 1639
+ },
+ {
+  "id": "HP-055",
+  "file": "files/2026-11-07-health-bcl11a-hbf-thalassaemia.md",
+  "title": "No Pocket to Dock: A Negative Computational Result for Small-Molecule Targeting of BCL11A in Beta-Thalassaemia",
+  "abstract": "Beta-thalassaemia affects about 5-8% of Pakistan's population as carriers, roughly 9.8 million people, with an estimated 5,000 to 9,000 children born with thalassaemia major each year, and raising fetal haemoglobin (HbF) is the best-validated way to soften the disease. BCL11A is the master repressor of the fetal gamma-globin genes, and genetic disruption of its erythroid enhancer made 91% of patients transfusion-independent in the CLIMB THAL-111 trial, yet that therapy is a one-time ex vivo gene edit far beyond the reach of most Pakistani patients, while the cheap oral HbF inducer hydroxyurea works indirectly, variably, and not by binding BCL11A. We ran the LeadForge pipeline live on 7 November 2026 (UniProtKB to ChEMBL to PubChem to RDKit to PAINS/ADMET to Vina docking) asking whether any small molecule could be docked against BCL11A as a first triage step. The pipeline correctly identified human BCL11A (UniProt Q9H165) but found zero known ligands for it in ChEMBL and only the reference drug itself, hydroxyurea, to dock. Docking did produce a number, minus 4.26 kcal/mol on PDB 8DTN, but a centre audit refutes it: the grid was centred on a single selenomethionine residue (MSE A34) of the co-crystallised nanobody, not on BCL11A and not on any binding pocket, because 8DTN contains no small-molecule ligand at all, and no ligand-bound BCL11A structure exists in the Protein Data Bank. The score is therefore discarded, docking is skipped as a method on this target, and the durable results are the negative ones: no ChEMBL ligand, no druggable pocket in any deposited structure, and a pipeline fault in which the centre picker falls back to a modified residue when no ligand exists. The falsifiable next step is a cellular assay, not more docking: a K562 or primary erythroid gamma-globin reporter screen of a focused library, with a pre-registered rule that a compound must raise gamma-globin mRNA at least two-fold without cytotoxicity, and a direct BCL11A binding test for any hit, since a docking score on this target cannot be the evidence.",
+  "keywords": [
+   "BCL11A",
+   "fetal haemoglobin",
+   "beta-thalassaemia",
+   "hydroxyurea",
+   "molecular docking",
+   "zinc finger",
+   "HbF induction",
+   "Pakistan"
+  ],
+  "abstract_len": 2064
+ },
+ {
+  "id": "HP-020",
+  "file": "files/2026-11-07-health-mtb-atp-synthase-bedaquiline.md",
+  "title": "No Lead Beats Bedaquiline on Its Own Site: A Vina Benchmark of Five ATP Synthase Inhibitors on the M. tuberculosis Fo Structure 8J57",
+  "abstract": "Tuberculosis made about 10.8 million people ill in 2023 and killed about 1.25 million, and Pakistan alone accounted for about 686,000 cases and 47,000 deaths. Bedaquiline, the first diarylquinoline, blocks the Mycobacterium tuberculosis ATP synthase by binding its c-ring subunit AtpE, but it carries boxed warnings for QT prolongation and increased mortality, and resistance is already emerging through atpE target mutations and mmpR5 efflux derepression. We ran the LeadForge pipeline live on 7 November 2026 (UniProtKB \u2192 ChEMBL \u2192 PubChem \u2192 RDKit \u2192 PAINS/ADMET \u2192 Vina docking) against the M. tuberculosis ATP synthase Fo structure in complex with bedaquiline (PDB 8J57, 2.85 \u00c5 cryo-EM), with the grid centred on the co-crystallised bedaquiline copy at the a\u2013c interface, and docked bedaquiline plus five known ATP synthase inhibitors with measured on-target IC50 values of 1\u201370 nM, all under an identical AutoDock Vina 1.2.7 protocol. No lead beat bedaquiline: bedaquiline scored best at \u22128.13 kcal/mol, the closest lead (CHEMBL3754231, IC50 10 nM) trailed by 0.55 kcal/mol, and the most potent measured inhibitor (CHEMBL3754673, IC50 1 nM) scored only \u22127.37 kcal/mol \u2014 every margin inside Vina's \u00b11\u20132 kcal/mol noise, and the docking order disagrees with the measured potency order. The falsifiable next step is a head-to-head ATP synthesis inhibition assay of the best-docking lead against bedaquiline on wild-type and Glu61Asp AtpE enzyme, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable advantage; a lead that keeps potency on the Glu61Asp mutant, or a measured IC50 advantage over bedaquiline, would refute the claim that the docking ranking is only a measurement of Vina's limits.",
+  "keywords": [
+   "bedaquiline",
+   "ATP synthase",
+   "AtpE",
+   "tuberculosis",
+   "molecular docking",
+   "AutoDock Vina",
+   "diarylquinoline",
+   "drug resistance"
+  ],
+  "abstract_len": 1728
+ },
+ {
+  "id": "HP-021",
+  "file": "files/2026-11-07-health-mtb-cyp51-posaconazole.md",
+  "title": "Posaconazole \"Beats\" Four CYP51 Binders by Docking but the Target Itself Is in Doubt: A Vina Benchmark of Mycobacterium tuberculosis CYP51 on 2CIB and the Repurposing Limits of Azole Anti-TB Activity",
+  "abstract": "Tuberculosis made about 10.8 million people ill in 2023 and killed about 1.25 million, and azole antifungals have shown real antimycobacterial activity \u2014 econazole and clotrimazole kill Mycobacterium tuberculosis H37Rv at 0.12 micrograms per millilitre \u2014 yet the target usually named for that activity, the sterol 14alpha-demethylase CYP51 (Rv0764c), sits in a bacterium that makes no sterols and lacks the rest of the sterol biosynthetic pathway, so whether CYP51 inhibition explains the killing is unproven. We ran the LeadForge pipeline live on 7 November 2026 (UniProtKB \u2192 ChEMBL \u2192 PubChem \u2192 RDKit \u2192 PAINS/ADMET \u2192 Vina docking): target M. tuberculosis CYP51 (UniProt P9WPP9, ChEMBL CHEMBL5090, 12 bioactivities), structure PDB 2CIB at 1.50 angstrom, grid centred exactly on the co-crystallised inhibitor CM6 ([\u221216.89, \u22122.19, 69.32], 6.7 angstrom from the haem centroid), and five ligands docked with AutoDock Vina 1.2.7 under an identical protocol. Posaconazole, the repurposed triazole comparator, scored \u22127.99 kcal/mol, beating every lead by 1.30\u20132.13 kcal/mol \u2014 fluconazole \u22126.44, CHEMBL521787 \u22126.69, CHEMBL507264 \u22126.64, CHEMBL491289 \u22125.86 \u2014 but the ranking among the leads is inverted against measured binding: fluconazole, the tightest binder by ChEMBL Kd (200 nM), scores third, behind two 5,000 nM binders, and all margins sit inside Vina's \u00b11\u20132 kcal/mol noise. The decisive limit is mechanistic, not numerical: azoles inhibit CYP51 by coordinating the haem iron, an interaction Vina cannot model, and posaconazole has no measured M. tuberculosis CYP51 affinity and no anti-TB MIC at all, so its docking win cannot be read as anti-TB activity. The falsifiable next step is a head-to-head CYP51 binding assay (spectral Kd) for posaconazole against fluconazole, with a pre-registered rule that a docking margin under 2 kcal/mol predicts no measurable affinity advantage; a measured posaconazole Kd tighter than fluconazole's 200 nM, or a CYP51-knockout strain that stays azole-sensitive, would refute the claim that the docking win is only a measurement of Vina's limits and of a target whose essentiality is unproven.",
+  "keywords": [
+   "tuberculosis",
+   "CYP51",
+   "posaconazole",
+   "molecular docking",
+   "AutoDock Vina",
+   "azole",
+   "drug repurposing",
+   "Mycobacterium tuberculosis"
+  ],
+  "abstract_len": 2127
+ }
+]

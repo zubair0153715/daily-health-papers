@@ -1,0 +1,94 @@
+{
+ "ok": true,
+ "pdb_id": "8J57",
+ "resolution": 2.85,
+ "method": "cryo-EM",
+ "pdb_title": "Cryo-EM structure of Mycobacterium tuberculosis ATP synthase Fo in complex with bedaquiline (BDQ)",
+ "citation": "Zhang et al., Nature 631, 409-414 (2024), DOI 10.1038/s41586-024-07605-8, PMID 38961288",
+ "co_crystallised_ligand": "BQ1 (bedaquiline), chain 1 copy at the a-c interface",
+ "center": [
+  162.46,
+  186.93,
+  275.26
+ ],
+ "center_note": "Centroid of co-crystallised BQ1 on chain 1 (a-c interface site); closest atom contact to subunit a chain 3.04 A. Other BQ1 copies (chains 4-9) are lagging/c-only sites 6-43 A from subunit a.",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "target_correction": "Pipeline resolved UniProt P9WPV1 (ATP synthase epsilon chain, gene atpC) for query 'ATP synthase subunit c AtpE'; correct AtpE/subunit-c entry is P9WPS1 (gene atpE, Rv1305, 81 aa). ChEMBL target CHEMBL2364166 (Mtb ATP synthase complex) was correct. Docking used 8J57, whose chains 1-9 ARE subunit c (P9WPS1).",
+ "note": "Manual dock: pipeline PDB auto-pick accepts X-ray <3.0 A only, so cryo-EM 8J57 was skipped (no_pdb_found).",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.13,
+   "poses": [
+    -8.13,
+    -7.91,
+    -7.45
+   ],
+   "pdb_id": "8J57",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.58,
+   "poses": [
+    -7.58,
+    -7.35,
+    -7.31
+   ],
+   "pdb_id": "8J57",
+   "label": "CHEMBL3754231",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.37,
+   "poses": [
+    -7.37,
+    -7.11,
+    -7.1
+   ],
+   "pdb_id": "8J57",
+   "label": "CHEMBL3754673",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.03,
+   "poses": [
+    -7.03,
+    -6.84,
+    -6.84
+   ],
+   "pdb_id": "8J57",
+   "label": "CHEMBL3751877",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.85,
+   "poses": [
+    -6.85,
+    -6.53,
+    -6.41
+   ],
+   "pdb_id": "8J57",
+   "label": "CHEMBL3752792",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.14,
+   "poses": [
+    -6.14,
+    -5.86,
+    -5.68
+   ],
+   "pdb_id": "8J57",
+   "label": "CHEMBL4101131",
+   "rank": 6
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "ok": true,
+ "pdb_id": "5WRE",
+ "resolution": null,
+ "center": [
+  -44.94,
+  9.56,
+  28.99
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Manual 5WRE re-dock: pipeline PDB auto-pick failed (no P03146 xref); centre = chain-A co-crystallised HAP_R01 (7TL) centroid, verified vs PDB file.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.03,
+   "poses": [
+    -8.03,
+    -7.93,
+    -7.79
+   ],
+   "pdb_id": "5WRE",
+   "label": "VEBICORVIR"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.93,
+   "poses": [
+    -6.93,
+    -6.91,
+    -6.89
+   ],
+   "pdb_id": "5WRE",
+   "label": "BERSACAPAVIR"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.76,
+   "poses": [
+    -6.76,
+    -6.39,
+    -6.32
+   ],
+   "pdb_id": "5WRE",
+   "label": "HAP_R01"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.53,
+   "poses": [
+    -6.53,
+    -6.51,
+    -6.43
+   ],
+   "pdb_id": "5WRE",
+   "label": "GLS4"
+  }
+ ]
+}
