@@ -23,7 +23,7 @@ Excluded by design (already covered by Papers #1–#4): thymoquinone/aldose-redu
 ## antimicrobial-resistance (7)
 
 - **HP-011** — NDM-1 metallo-beta-lactamase — carbapenem resistance · Target: New Delhi metallo-beta-lactamase 1 (NDM-1) · Ref: meropenem (failing drug — shows the gap) · Angle: Screen metal-chelating / non-chelating leads vs NDM-1; compare with meropenem binding as the negative control · *unused*
-- **HP-012** — KPC carbapenemase in Klebsiella pneumoniae · Target: Klebsiella pneumoniae carbapenemase (KPC-2) · Ref: ceftazidime-avibactam · Angle: Dock leads vs KPC-2; compare vs avibactam acylation site · *unused*
+- **HP-012** — KPC carbapenemase in Klebsiella pneumoniae · Target: Klebsiella pneumoniae carbapenemase (KPC-2) · Ref: ceftazidime-avibactam · Angle: Dock leads vs KPC-2; compare vs avibactam acylation site · *used 2026-11-08*
 - **HP-013** — MRSA PBP2a — beta-lactam resistance · Target: Penicillin-binding protein 2a (PBP2a) · Ref: ceftaroline · Angle: Dock leads vs PBP2a allosteric site; compare vs ceftaroline · *unused*
 - **HP-014** — E. coli DHFR — trimethoprim resistance · Target: Escherichia coli dihydrofolate reductase (DHFR) · Ref: trimethoprim · Angle: Dock leads vs wild-type and trimethoprim-resistant DHFR mutants; state resistance-mutation limits · *unused*
 - **HP-015** — DNA gyrase — fluoroquinolone resistance in Gram-negatives · Target: DNA gyrase (GyrB subunit) · Ref: ciprofloxacin · Angle: Dock leads vs GyrB ATP site; compare vs ciprofloxacin (different site — state this honestly) · *unused*

@@ -278,6 +278,72 @@
    "topic": "HBV capsid assembly \u2014 functional cure angle",
    "topic_id": "HP-059",
    "draft_note": "DRAFT-READY 2026-11-07 17:13-17:50 PKT: PDF uploaded, title+abstract verbatim (non-ASCII auto-extract chars corrected to ASCII), all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Stopped at Summary, NOT submitted. Cloudflare loop on sign-in cleared after browser environment replacement + re-sign-in. Affiliation auto-extracted (Faculty of Pharmacy not shown)."
+  },
+  {
+   "date": "2026-11-08",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-08-health-kpc2-avibactam-benchmark.md",
+   "platform": "ChemRxiv",
+   "status": "draft-ready",
+   "title": "Three Diazabicyclooctanes \"Beat\" Avibactam by Docking and Lose by Less Than 1 kcal/mol of Noise: A Vina Benchmark of KPC-2 Inhibitors on 6TD0 \u2014 and the Boronate Blind Spot",
+   "topic": "KPC-2 carbapenemase \u2014 avibactam alternatives",
+   "topic_id": "HP-012"
+  },
+  {
+   "date": "2026-11-08",
+   "topic_id": "HP-056",
+   "topic": "Aromatase inhibition \u2014 breast cancer endocrine therapy",
+   "title": "No Lead Beats Letrozole Beyond Noise: A Vina Benchmark of Five Aromatase Inhibitors on the Human CYP19A1 Structure 3S79",
+   "file": "files/2026-11-08-health-aromatase-letrozole-benchmark.md",
+   "platform": "ChemRxiv",
+   "field": "health",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-08",
+   "topic_id": "HP-053",
+   "topic": "Hepatitis C \u2014 affordable NS5A inhibition",
+   "title": "Daclatasvir-Class NS5A Inhibitors Are All Picomolar and All Beyond the Rule of Five: A Corrected Ligand Screen, and Why Docking Was Skipped",
+   "file": "files/2026-11-08-health-hcv-ns5a-daclatasvir.md",
+   "platform": "ChemRxiv",
+   "field": "health",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-08",
+   "topic_id": "HP-010",
+   "topic": "HMG-CoA reductase \u2014 statin alternatives for statin-intolerant patients",
+   "title": "No Statin Beats Atorvastatin Beyond Noise: A Vina Benchmark of Four HMG-CoA Reductase Inhibitors on 2R4F, and the Non-Statin Scaffold the Screen Did Not Find",
+   "file": "files/2026-11-08-health-hmgcr-atorvastatin-benchmark.md",
+   "platform": "ChemRxiv",
+   "field": "health",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-08",
+   "topic_id": "HP-026",
+   "topic": "Schistosomiasis \u2014 new targets beyond praziquantel",
+   "title": "Two Furoxan Analogues Out-Dock Praziquantel on Schistosoma TGR \u2014 But Praziquantel Does Not Target TGR: A Corrected Vina Benchmark on 8PDD",
+   "file": "files/2026-11-08-health-schistosoma-tgr-praziquantel.md",
+   "platform": "ChemRxiv",
+   "field": "health",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-08",
+   "topic_id": "HP-038",
+   "topic": "Influenza \u2014 neuraminidase inhibitors and resistance",
+   "title": "Oseltamivir Scores Worst on Its Own Wildtype Site \u2014 and Better on the Resistant Mutant: A Vina Benchmark on 3TI6 and 3CL0 That Fails to Reproduce H274Y Resistance",
+   "file": "files/2026-11-08-health-influenza-na-oseltamivir-h274y.md",
+   "platform": "ChemRxiv",
+   "field": "health",
+   "status": "drafted",
+   "draft_url": null
   }
  ],
  "used_topic_ids": [
@@ -300,6 +366,11 @@
   "HP-059",
   "HP-055",
   "HP-020",
-  "HP-021"
+  "HP-021",
+  "HP-026",
+  "HP-038",
+  "HP-053",
+  "HP-056",
+  "HP-010"
  ]
 }

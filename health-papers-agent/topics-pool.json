@@ -1,1 +1,558 @@
-{"areas":["diabetes-metabolic","antimicrobial-resistance","tuberculosis","malaria-parasitic","oncology","antiviral","cardiovascular-renal","inflammation-pain","pakistan-burden"],"notes":"Seed pool for the daily Health Papers Agent (5/day). Each topic = one health problem with a druggable target, a reference drug, and a computational angle. Topics already used by Papers #1-#4 are EXCLUDED here (thymoquinone/aldose-reductase, dual AR+SGLT2, GLP-1/Parkinson BBB, p-tau217). The picker must also check the tracker before selecting. PDB is auto-picked by the LeadForge pipeline at run time — do not hard-code a PDB here unless verified.","topics":[{"angle":"Screen natural-product / repurposed leads against DPP-4; compare vs sitagliptin under the standardised protocol","area":"diabetes-metabolic","id":"HP-001","problem":"DPP-4 inhibition for type 2 diabetes — new scaffolds beyond gliptins","reference_drug":"sitagliptin","status":"unused","target":"Dipeptidyl peptidase-4 (DPP-4)"},{"angle":"Test partial-agonist scaffolds (including thymoquinone analogues on this NEW target) vs pioglitazone; PAINS screen mandatory","area":"diabetes-metabolic","id":"HP-002","problem":"PPAR-gamma agonism without weight gain / oedema","reference_drug":"pioglitazone","status":"unused","target":"Peroxisome proliferator-activated receptor gamma (PPAR-gamma)"},{"angle":"Dock candidate leads vs PTP1B; honest note that no approved PTP1B drug exists, so the comparator is a literature inhibitor","area":"diabetes-metabolic","id":"HP-003","problem":"PTP1B inhibition for insulin resistance — no approved drug yet","reference_drug":"ertiprotafib (failed, reference only)","status":"unused","target":"Protein tyrosine phosphatase 1B (PTP1B)"},{"angle":"Screen plant-derived leads (e.g. berberine analogues) vs acarbose","area":"diabetes-metabolic","id":"HP-004","problem":"Alpha-glucosidase inhibition for postprandial glucose control","reference_drug":"acarbose","status":"unused","target":"Alpha-glucosidase (maltase-glucoamylase)"},{"angle":"Test polyphenol / flavonoid leads vs acarbose; state bioavailability limits honestly","area":"diabetes-metabolic","id":"HP-005","problem":"Pancreatic alpha-amylase inhibition — dietary adjuncts for diabetes","reference_drug":"acarbose","status":"unused","target":"Human pancreatic alpha-amylase"},{"angle":"Dock a novel ChEMBL scaffold vs dapagliflozin on SGLT2 only; must state the Paper #3 polyol-escape caveat","area":"diabetes-metabolic","id":"HP-006","problem":"SGLT2 inhibition with a novel scaffold (SGLT2-only, not the dual AR+SGLT2 angle of Paper #3)","reference_drug":"dapagliflozin","status":"unused","target":"Sodium-glucose cotransporter 2 (SGLT2)"},{"angle":"Test glucokinase activator leads vs dorzagliatin; note hypoglycaemia risk class-wide","area":"diabetes-metabolic","id":"HP-007","problem":"Glucokinase activation for type 2 diabetes","reference_drug":"dorzagliatin","status":"unused","target":"Glucokinase (GCK)"},{"angle":"Dock leads vs 11beta-HSD1; honest note: no approved drug in class","area":"diabetes-metabolic","id":"HP-008","problem":"11beta-HSD1 inhibition for metabolic syndrome","reference_drug":"INCB13739 (investigational, reference only)","status":"unused","target":"11beta-hydroxysteroid dehydrogenase type 1"},{"angle":"Screen leads vs febuxostat; note cardiovascular warning on febuxostat","area":"diabetes-metabolic","id":"HP-009","problem":"Xanthine oxidase inhibition for gout — safer than allopurinol in CKD","reference_drug":"febuxostat","status":"unused","target":"Xanthine oxidase"},{"angle":"Dock non-statin scaffolds vs atorvastatin; state that LDL-lowering needs clinical data, docking is only triage","area":"diabetes-metabolic","id":"HP-010","problem":"HMG-CoA reductase — statin alternatives for statin-intolerant patients","reference_drug":"atorvastatin","status":"unused","target":"HMG-CoA reductase"},{"angle":"Screen metal-chelating / non-chelating leads vs NDM-1; compare with meropenem binding as the negative control","area":"antimicrobial-resistance","id":"HP-011","problem":"NDM-1 metallo-beta-lactamase — carbapenem resistance","reference_drug":"meropenem (failing drug — shows the gap)","status":"unused","target":"New Delhi metallo-beta-lactamase 1 (NDM-1)"},{"angle":"Dock leads vs KPC-2; compare vs avibactam acylation site","area":"antimicrobial-resistance","id":"HP-012","problem":"KPC carbapenemase in Klebsiella pneumoniae","reference_drug":"ceftazidime-avibactam","status":"unused","target":"Klebsiella pneumoniae carbapenemase (KPC-2)"},{"angle":"Dock leads vs PBP2a allosteric site; compare vs ceftaroline","area":"antimicrobial-resistance","id":"HP-013","problem":"MRSA PBP2a — beta-lactam resistance","reference_drug":"ceftaroline","status":"unused","target":"Penicillin-binding protein 2a (PBP2a)"},{"angle":"Dock leads vs wild-type and trimethoprim-resistant DHFR mutants; state resistance-mutation limits","area":"antimicrobial-resistance","id":"HP-014","problem":"E. coli DHFR — trimethoprim resistance","reference_drug":"trimethoprim","status":"unused","target":"Escherichia coli dihydrofolate reductase (DHFR)"},{"angle":"Dock leads vs GyrB ATP site; compare vs ciprofloxacin (different site — state this honestly)","area":"antimicrobial-resistance","id":"HP-015","problem":"DNA gyrase — fluoroquinolone resistance in Gram-negatives","reference_drug":"ciprofloxacin","status":"unused","target":"DNA gyrase (GyrB subunit)"},{"angle":"Screen leads vs AmpC; compare vs ceftazidime hydrolysis","area":"antimicrobial-resistance","id":"HP-016","problem":"AmpC beta-lactamase — cephalosporin resistance","reference_drug":"ceftazidime","status":"unused","target":"AmpC beta-lactamase (Enterobacter)"},{"angle":"Dock urease inhibitors vs the nickel active site; honest note that eradication needs clinical regimens","area":"antimicrobial-resistance","id":"HP-017","problem":"H. pylori urease — antibiotic-free eradication angle","reference_drug":"clarithromycin (regimen drug, not a urease inhibitor — state this)","status":"unused","target":"Helicobacter pylori urease"},{"angle":"Dock direct InhA inhibitors (no KatG activation needed) vs isoniazid; note KatG-mutant resistance bypass","area":"tuberculosis","id":"HP-018","problem":"InhA — isoniazid resistance in Mycobacterium tuberculosis","reference_drug":"isoniazid","status":"unused","target":"M. tuberculosis enoyl-ACP reductase (InhA)"},{"angle":"Dock leads vs DprE1; compare vs macozinone; honest note: investigational comparator","area":"tuberculosis","id":"HP-019","problem":"DprE1 — next-generation TB drugs","reference_drug":"macozinone (BTZ043, investigational)","status":"unused","target":"M. tuberculosis DprE1"},{"angle":"Dock leads vs AtpE; compare vs bedaquiline; note QT-prolongation class warning","area":"tuberculosis","id":"HP-020","problem":"Mtb ATP synthase — bedaquiline resistance","reference_drug":"bedaquiline","status":"unused","target":"M. tuberculosis ATP synthase (AtpE)"},{"angle":"Dock azole / non-azole leads vs CYP51; state repurposing limits","area":"tuberculosis","id":"HP-021","problem":"Mtb CYP51 — sterol biosynthesis as a TB target","reference_drug":"posaconazole (repurposed comparator)","status":"unused","target":"M. tuberculosis CYP51 (sterol 14alpha-demethylase)"},{"angle":"Dock leads vs PfATP4; note: no experimental PfATP4 structure existed at last check — honest 'no structure' handling if still true","area":"malaria-parasitic","id":"HP-022","problem":"PfATP4 — next-generation antimalarials beyond artemisinin","reference_drug":"cipargamin (KAE609, investigational)","status":"unused","target":"Plasmodium falciparum PfATP4"},{"angle":"Dock leads vs wild-type and quadruple-mutant PfDHFR; state mutation panel used","area":"malaria-parasitic","id":"HP-023","problem":"PfDHFR — pyrimethamine resistance","reference_drug":"pyrimethamine","status":"unused","target":"Plasmodium falciparum dihydrofolate reductase (DHFR)"},{"angle":"Dock leads vs trypanothione reductase; compare vs miltefosine (different mechanism — state this)","area":"malaria-parasitic","id":"HP-024","problem":"Trypanothione reductase — leishmaniasis drug target","reference_drug":"miltefosine","status":"unused","target":"Leishmania trypanothione reductase"},{"angle":"Dock leads vs T. cruzi CYP51; note clinical failure of posaconazole in Chagas — the target itself is questioned","area":"malaria-parasitic","id":"HP-025","problem":"T. cruzi CYP51 — Chagas disease","reference_drug":"posaconazole","status":"unused","target":"Trypanosoma cruzi CYP51"},{"angle":"Dock leads vs TGR; compare vs praziquantel (different target — state this honestly)","area":"malaria-parasitic","id":"HP-026","problem":"Schistosoma TGR — praziquantel alternatives","reference_drug":"praziquantel","status":"unused","target":"Schistosoma mansoni thioredoxin glutathione reductase (TGR)"},{"angle":"Dock leads vs EGFR C797S mutant; compare vs osimertinib; state covalent-vs-reversible difference","area":"oncology","id":"HP-027","problem":"EGFR T790M/C797S — osimertinib resistance in NSCLC","reference_drug":"osimertinib","status":"unused","target":"Epidermal growth factor receptor (EGFR, mutant)"},{"angle":"Dock leads vs HER2 kinase domain; compare vs lapatinib","area":"oncology","id":"HP-028","problem":"HER2-positive breast cancer — lapatinib alternatives","reference_drug":"lapatinib","status":"unused","target":"Human epidermal growth factor receptor 2 (HER2)"},{"angle":"Dock leads vs BRAF V600E; compare vs vemurafenib; note paradoxical activation risk","area":"oncology","id":"HP-029","problem":"BRAF V600E melanoma — vemurafenib resistance","reference_drug":"vemurafenib","status":"unused","target":"BRAF V600E"},{"angle":"Dock leads vs FLT3-ITD; compare vs gilteritinib","area":"oncology","id":"HP-030","problem":"FLT3-ITD acute myeloid leukaemia","reference_drug":"gilteritinib","status":"unused","target":"FMS-like tyrosine kinase 3 (FLT3)"},{"angle":"Dock leads vs VEGFR2; compare vs sorafenib","area":"oncology","id":"HP-031","problem":"VEGFR2 — anti-angiogenic scaffolds","reference_drug":"sorafenib","status":"unused","target":"Vascular endothelial growth factor receptor 2 (VEGFR2)"},{"angle":"Dock leads vs T315I gatekeeper mutant; compare vs ponatinib; note cardiovascular warning on ponatinib","area":"oncology","id":"HP-032","problem":"BCR-ABL T315I — imatinib resistance in CML","reference_drug":"ponatinib","status":"unused","target":"BCR-ABL1 T315I"},{"angle":"Dock leads vs ALK; compare vs alectinib","area":"oncology","id":"HP-033","problem":"ALK-positive NSCLC — next-generation inhibitors","reference_drug":"alectinib","status":"unused","target":"Anaplastic lymphoma kinase (ALK)"},{"angle":"Dock leads vs CDK6; compare vs palbociclib; note neutropenia class effect","area":"oncology","id":"HP-034","problem":"CDK4/6 — breast cancer cell-cycle inhibition","reference_drug":"palbociclib","status":"unused","target":"Cyclin-dependent kinases 4/6 (CDK4/6)"},{"angle":"Dock leads vs PARP1; compare vs olaparib; note PARP-trapping vs catalytic inhibition","area":"oncology","id":"HP-035","problem":"PARP1 — synthetic lethality in BRCA-mutant cancers","reference_drug":"olaparib","status":"unused","target":"Poly(ADP-ribose) polymerase 1 (PARP1)"},{"angle":"Dock leads vs AR-LBD including F876L mutant; compare vs enzalutamide","area":"oncology","id":"HP-036","problem":"Androgen receptor — enzalutamide resistance in prostate cancer","reference_drug":"enzalutamide","status":"unused","target":"Androgen receptor (ligand-binding domain)"},{"angle":"Dock leads vs Mpro; compare vs nirmatrelvir; note ritonavir-boosting is a PK fix, not a target fix","area":"antiviral","id":"HP-037","problem":"SARS-CoV-2 main protease — nirmatrelvir alternatives","reference_drug":"nirmatrelvir","status":"unused","target":"SARS-CoV-2 main protease (Mpro / 3CLpro)"},{"angle":"Dock leads vs N1 including H274Y mutant; compare vs oseltamivir","area":"antiviral","id":"HP-038","problem":"Influenza neuraminidase — oseltamivir resistance","reference_drug":"oseltamivir","status":"unused","target":"Influenza A neuraminidase (N1)"},{"angle":"Dock leads vs integrase strand-transfer site; compare vs dolutegravir","area":"antiviral","id":"HP-039","problem":"HIV-1 integrase — dolutegravir resistance","reference_drug":"dolutegravir","status":"unused","target":"HIV-1 integrase"},{"angle":"Dock leads vs NS5B palm site; compare vs sofosbuvir (nucleotide — different site, state this)","area":"antiviral","id":"HP-040","problem":"HCV NS5B polymerase — sofosbuvir alternatives","reference_drug":"sofosbuvir","status":"unused","target":"Hepatitis C virus NS5B polymerase"},{"angle":"Dock leads vs NS2B-NS3; state plainly there is no approved reference drug","area":"antiviral","id":"HP-041","problem":"Dengue NS2B-NS3 protease — no approved dengue drug","reference_drug":"none approved (honest — compare vs literature inhibitors)","status":"unused","target":"Dengue virus NS2B-NS3 protease"},{"angle":"Dock leads vs ACE zinc site; compare vs lisinopril; note cough is bradykinin-mediated, class-wide","area":"cardiovascular-renal","id":"HP-042","problem":"ACE inhibition — cough-free alternatives","reference_drug":"lisinopril","status":"unused","target":"Angiotensin-converting enzyme (ACE)"},{"angle":"Dock leads vs neprilysin; compare vs sacubitril (prodrug — dock the active sacubitrilat, state this)","area":"cardiovascular-renal","id":"HP-043","problem":"Neprilysin inhibition for heart failure","reference_drug":"sacubitril","status":"unused","target":"Neprilysin (NEP)"},{"angle":"Dock leads vs factor Xa; compare vs rivaroxaban; note bleeding is the class risk","area":"cardiovascular-renal","id":"HP-044","problem":"Factor Xa — oral anticoagulation without routine monitoring","reference_drug":"rivaroxaban","status":"unused","target":"Coagulation factor Xa"},{"angle":"Dock leads vs HIF-PH; compare vs roxadustat; note cardiovascular safety debate","area":"cardiovascular-renal","id":"HP-045","problem":"HIF prolyl-hydroxylase — anaemia of chronic kidney disease","reference_drug":"roxadustat","status":"unused","target":"Hypoxia-inducible factor prolyl hydroxylase (HIF-PH)"},{"angle":"Dock small molecules vs the PCSK9-LDLR interface; compare vs known small-molecule binders, not vs the antibody","area":"cardiovascular-renal","id":"HP-046","problem":"PCSK9 — small-molecule LDL lowering (beyond antibodies)","reference_drug":"evolocumab (antibody — state docking a small molecule vs an antibody target honestly)","status":"unused","target":"Proprotein convertase subtilisin/kexin type 9 (PCSK9)"},{"angle":"Dock leads vs COX-2 selectivity pocket; compare vs celecoxib and vs COX-1 (selectivity ratio is the point)","area":"inflammation-pain","id":"HP-047","problem":"COX-2 selective inhibition without cardiovascular risk","reference_drug":"celecoxib","status":"unused","target":"Cyclooxygenase-2 (COX-2)"},{"angle":"Dock small molecules vs the TNF trimer interface; honest note on biologic comparator","area":"inflammation-pain","id":"HP-048","problem":"TNF-alpha — oral small-molecule alternatives to biologics","reference_drug":"etanercept (biologic — state this; compare vs small-molecule TNF inhibitors in literature)","status":"unused","target":"Tumour necrosis factor alpha (TNF-alpha)"},{"angle":"Dock leads vs JAK2; compare vs ruxolitinib; note JAK selectivity (JAK1 vs JAK2) matters","area":"inflammation-pain","id":"HP-049","problem":"JAK2 — myelofibrosis and inflammatory disease","reference_drug":"ruxolitinib","status":"unused","target":"Janus kinase 2 (JAK2)"},{"angle":"Dock leads vs PDE5; compare vs sildenafil; note PDE selectivity (PDE6 vision effects)","area":"inflammation-pain","id":"HP-050","problem":"PDE5 — pulmonary hypertension","reference_drug":"sildenafil","status":"unused","target":"Phosphodiesterase 5 (PDE5)"},{"angle":"Dock leads vs S. Typhi gyrase; Pakistan-burden framing; compare vs azithromycin target (different — state this)","area":"pakistan-burden","id":"HP-051","problem":"XDR typhoid — ceftriaxone-resistant Salmonella Typhi","reference_drug":"azithromycin (current fallback — state resistance is rising)","status":"unused","target":"Salmonella Typhi DNA gyrase / topoisomerase IV"},{"angle":"Dock leads vs trypanothione reductase; compare vs antimonial (different mechanism — state this)","area":"pakistan-burden","id":"HP-052","problem":"Cutaneous leishmaniasis — oral alternatives to antimonials","reference_drug":"sodium stibogluconate","status":"unused","target":"Leishmania major trypanothione reductase"},{"angle":"Dock leads vs NS5A domain I; compare vs daclatasvir; Pakistan HCV-burden framing","area":"pakistan-burden","id":"HP-053","problem":"Hepatitis C — affordable NS5A inhibition","reference_drug":"daclatasvir","status":"unused","target":"Hepatitis C virus NS5A"},{"angle":"Dock leads vs sorbitol dehydrogenase, the second polyol-pathway step; explicitly distinct from Papers #1/#3 (AR, not SORD)","area":"pakistan-burden","id":"HP-054","problem":"Diabetic kidney disease — aldose-reductase-independent polyol control (NOT the Paper #1/#3 AR angle)","reference_drug":"none approved (honest — compare vs literature SORD inhibitors)","status":"unused","target":"Sorbitol dehydrogenase (SORD)"},{"angle":"Dock leads vs BCL11A; honest note: HbF induction is transcriptional, docking is only a first triage","area":"pakistan-burden","id":"HP-055","problem":"Beta-thalassaemia — fetal haemoglobin induction","reference_drug":"hydroxyurea","status":"unused","target":"BCL11A / gamma-globin repression pathway (target: BCL11A zinc finger)"},{"angle":"Dock leads vs aromatase haem site; compare vs letrozole","area":"oncology","id":"HP-056","problem":"Aromatase inhibition — breast cancer endocrine therapy","reference_drug":"letrozole","status":"unused","target":"Aromatase (CYP19A1)"},{"angle":"Dock leads vs MEK1 allosteric pocket; compare vs trametinib","area":"oncology","id":"HP-057","problem":"MEK1/2 — BRAF-mutant combination therapy","reference_drug":"trametinib","status":"unused","target":"MEK1/2 (MAP2K1/2)"},{"angle":"Dock ATP-competitive leads vs mTOR kinase domain; compare vs everolimus (allosteric — different site, state this)","area":"oncology","id":"HP-058","problem":"mTOR — rapalog alternatives","reference_drug":"everolimus","status":"unused","target":"Mechanistic target of rapamycin (mTOR, kinase domain)"},{"angle":"Dock leads vs HBV capsid dimer interface; state plainly no approved reference drug exists","area":"antiviral","id":"HP-059","problem":"HBV capsid assembly — functional cure angle","reference_drug":"none approved (compare vs literature capsid modulators)","status":"unused","target":"Hepatitis B virus core protein (capsid)"},{"angle":"Dock leads vs thrombin active site; compare vs dabigatran; note bleeding risk class-wide","area":"cardiovascular-renal","id":"HP-060","problem":"Thrombin — direct oral anticoagulation","reference_drug":"dabigatran","status":"unused","target":"Thrombin (factor IIa)"}],"updated":"2026-11-03","version":1}
+{
+ "areas": [
+  "diabetes-metabolic",
+  "antimicrobial-resistance",
+  "tuberculosis",
+  "malaria-parasitic",
+  "oncology",
+  "antiviral",
+  "cardiovascular-renal",
+  "inflammation-pain",
+  "pakistan-burden"
+ ],
+ "notes": "Seed pool for the daily Health Papers Agent (5/day). Each topic = one health problem with a druggable target, a reference drug, and a computational angle. Topics already used by Papers #1-#4 are EXCLUDED here (thymoquinone/aldose-reductase, dual AR+SGLT2, GLP-1/Parkinson BBB, p-tau217). The picker must also check the tracker before selecting. PDB is auto-picked by the LeadForge pipeline at run time \u2014 do not hard-code a PDB here unless verified.",
+ "topics": [
+  {
+   "angle": "Screen natural-product / repurposed leads against DPP-4; compare vs sitagliptin under the standardised protocol",
+   "area": "diabetes-metabolic",
+   "id": "HP-001",
+   "problem": "DPP-4 inhibition for type 2 diabetes \u2014 new scaffolds beyond gliptins",
+   "reference_drug": "sitagliptin",
+   "status": "unused",
+   "target": "Dipeptidyl peptidase-4 (DPP-4)"
+  },
+  {
+   "angle": "Test partial-agonist scaffolds (including thymoquinone analogues on this NEW target) vs pioglitazone; PAINS screen mandatory",
+   "area": "diabetes-metabolic",
+   "id": "HP-002",
+   "problem": "PPAR-gamma agonism without weight gain / oedema",
+   "reference_drug": "pioglitazone",
+   "status": "unused",
+   "target": "Peroxisome proliferator-activated receptor gamma (PPAR-gamma)"
+  },
+  {
+   "angle": "Dock candidate leads vs PTP1B; honest note that no approved PTP1B drug exists, so the comparator is a literature inhibitor",
+   "area": "diabetes-metabolic",
+   "id": "HP-003",
+   "problem": "PTP1B inhibition for insulin resistance \u2014 no approved drug yet",
+   "reference_drug": "ertiprotafib (failed, reference only)",
+   "status": "unused",
+   "target": "Protein tyrosine phosphatase 1B (PTP1B)"
+  },
+  {
+   "angle": "Screen plant-derived leads (e.g. berberine analogues) vs acarbose",
+   "area": "diabetes-metabolic",
+   "id": "HP-004",
+   "problem": "Alpha-glucosidase inhibition for postprandial glucose control",
+   "reference_drug": "acarbose",
+   "status": "unused",
+   "target": "Alpha-glucosidase (maltase-glucoamylase)"
+  },
+  {
+   "angle": "Test polyphenol / flavonoid leads vs acarbose; state bioavailability limits honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-005",
+   "problem": "Pancreatic alpha-amylase inhibition \u2014 dietary adjuncts for diabetes",
+   "reference_drug": "acarbose",
+   "status": "unused",
+   "target": "Human pancreatic alpha-amylase"
+  },
+  {
+   "angle": "Dock a novel ChEMBL scaffold vs dapagliflozin on SGLT2 only; must state the Paper #3 polyol-escape caveat",
+   "area": "diabetes-metabolic",
+   "id": "HP-006",
+   "problem": "SGLT2 inhibition with a novel scaffold (SGLT2-only, not the dual AR+SGLT2 angle of Paper #3)",
+   "reference_drug": "dapagliflozin",
+   "status": "unused",
+   "target": "Sodium-glucose cotransporter 2 (SGLT2)"
+  },
+  {
+   "angle": "Test glucokinase activator leads vs dorzagliatin; note hypoglycaemia risk class-wide",
+   "area": "diabetes-metabolic",
+   "id": "HP-007",
+   "problem": "Glucokinase activation for type 2 diabetes",
+   "reference_drug": "dorzagliatin",
+   "status": "unused",
+   "target": "Glucokinase (GCK)"
+  },
+  {
+   "angle": "Dock leads vs 11beta-HSD1; honest note: no approved drug in class",
+   "area": "diabetes-metabolic",
+   "id": "HP-008",
+   "problem": "11beta-HSD1 inhibition for metabolic syndrome",
+   "reference_drug": "INCB13739 (investigational, reference only)",
+   "status": "unused",
+   "target": "11beta-hydroxysteroid dehydrogenase type 1"
+  },
+  {
+   "angle": "Screen leads vs febuxostat; note cardiovascular warning on febuxostat",
+   "area": "diabetes-metabolic",
+   "id": "HP-009",
+   "problem": "Xanthine oxidase inhibition for gout \u2014 safer than allopurinol in CKD",
+   "reference_drug": "febuxostat",
+   "status": "unused",
+   "target": "Xanthine oxidase"
+  },
+  {
+   "angle": "Dock non-statin scaffolds vs atorvastatin; state that LDL-lowering needs clinical data, docking is only triage",
+   "area": "diabetes-metabolic",
+   "id": "HP-010",
+   "problem": "HMG-CoA reductase \u2014 statin alternatives for statin-intolerant patients",
+   "reference_drug": "atorvastatin",
+   "status": "unused",
+   "target": "HMG-CoA reductase"
+  },
+  {
+   "angle": "Screen metal-chelating / non-chelating leads vs NDM-1; compare with meropenem binding as the negative control",
+   "area": "antimicrobial-resistance",
+   "id": "HP-011",
+   "problem": "NDM-1 metallo-beta-lactamase \u2014 carbapenem resistance",
+   "reference_drug": "meropenem (failing drug \u2014 shows the gap)",
+   "status": "unused",
+   "target": "New Delhi metallo-beta-lactamase 1 (NDM-1)"
+  },
+  {
+   "angle": "Dock leads vs KPC-2; compare vs avibactam acylation site",
+   "area": "antimicrobial-resistance",
+   "id": "HP-012",
+   "problem": "KPC carbapenemase in Klebsiella pneumoniae",
+   "reference_drug": "ceftazidime-avibactam",
+   "status": "used",
+   "target": "Klebsiella pneumoniae carbapenemase (KPC-2)"
+  },
+  {
+   "angle": "Dock leads vs PBP2a allosteric site; compare vs ceftaroline",
+   "area": "antimicrobial-resistance",
+   "id": "HP-013",
+   "problem": "MRSA PBP2a \u2014 beta-lactam resistance",
+   "reference_drug": "ceftaroline",
+   "status": "unused",
+   "target": "Penicillin-binding protein 2a (PBP2a)"
+  },
+  {
+   "angle": "Dock leads vs wild-type and trimethoprim-resistant DHFR mutants; state resistance-mutation limits",
+   "area": "antimicrobial-resistance",
+   "id": "HP-014",
+   "problem": "E. coli DHFR \u2014 trimethoprim resistance",
+   "reference_drug": "trimethoprim",
+   "status": "unused",
+   "target": "Escherichia coli dihydrofolate reductase (DHFR)"
+  },
+  {
+   "angle": "Dock leads vs GyrB ATP site; compare vs ciprofloxacin (different site \u2014 state this honestly)",
+   "area": "antimicrobial-resistance",
+   "id": "HP-015",
+   "problem": "DNA gyrase \u2014 fluoroquinolone resistance in Gram-negatives",
+   "reference_drug": "ciprofloxacin",
+   "status": "unused",
+   "target": "DNA gyrase (GyrB subunit)"
+  },
+  {
+   "angle": "Screen leads vs AmpC; compare vs ceftazidime hydrolysis",
+   "area": "antimicrobial-resistance",
+   "id": "HP-016",
+   "problem": "AmpC beta-lactamase \u2014 cephalosporin resistance",
+   "reference_drug": "ceftazidime",
+   "status": "unused",
+   "target": "AmpC beta-lactamase (Enterobacter)"
+  },
+  {
+   "angle": "Dock urease inhibitors vs the nickel active site; honest note that eradication needs clinical regimens",
+   "area": "antimicrobial-resistance",
+   "id": "HP-017",
+   "problem": "H. pylori urease \u2014 antibiotic-free eradication angle",
+   "reference_drug": "clarithromycin (regimen drug, not a urease inhibitor \u2014 state this)",
+   "status": "unused",
+   "target": "Helicobacter pylori urease"
+  },
+  {
+   "angle": "Dock direct InhA inhibitors (no KatG activation needed) vs isoniazid; note KatG-mutant resistance bypass",
+   "area": "tuberculosis",
+   "id": "HP-018",
+   "problem": "InhA \u2014 isoniazid resistance in Mycobacterium tuberculosis",
+   "reference_drug": "isoniazid",
+   "status": "unused",
+   "target": "M. tuberculosis enoyl-ACP reductase (InhA)"
+  },
+  {
+   "angle": "Dock leads vs DprE1; compare vs macozinone; honest note: investigational comparator",
+   "area": "tuberculosis",
+   "id": "HP-019",
+   "problem": "DprE1 \u2014 next-generation TB drugs",
+   "reference_drug": "macozinone (BTZ043, investigational)",
+   "status": "unused",
+   "target": "M. tuberculosis DprE1"
+  },
+  {
+   "angle": "Dock leads vs AtpE; compare vs bedaquiline; note QT-prolongation class warning",
+   "area": "tuberculosis",
+   "id": "HP-020",
+   "problem": "Mtb ATP synthase \u2014 bedaquiline resistance",
+   "reference_drug": "bedaquiline",
+   "status": "unused",
+   "target": "M. tuberculosis ATP synthase (AtpE)"
+  },
+  {
+   "angle": "Dock azole / non-azole leads vs CYP51; state repurposing limits",
+   "area": "tuberculosis",
+   "id": "HP-021",
+   "problem": "Mtb CYP51 \u2014 sterol biosynthesis as a TB target",
+   "reference_drug": "posaconazole (repurposed comparator)",
+   "status": "unused",
+   "target": "M. tuberculosis CYP51 (sterol 14alpha-demethylase)"
+  },
+  {
+   "angle": "Dock leads vs PfATP4; note: no experimental PfATP4 structure existed at last check \u2014 honest 'no structure' handling if still true",
+   "area": "malaria-parasitic",
+   "id": "HP-022",
+   "problem": "PfATP4 \u2014 next-generation antimalarials beyond artemisinin",
+   "reference_drug": "cipargamin (KAE609, investigational)",
+   "status": "unused",
+   "target": "Plasmodium falciparum PfATP4"
+  },
+  {
+   "angle": "Dock leads vs wild-type and quadruple-mutant PfDHFR; state mutation panel used",
+   "area": "malaria-parasitic",
+   "id": "HP-023",
+   "problem": "PfDHFR \u2014 pyrimethamine resistance",
+   "reference_drug": "pyrimethamine",
+   "status": "unused",
+   "target": "Plasmodium falciparum dihydrofolate reductase (DHFR)"
+  },
+  {
+   "angle": "Dock leads vs trypanothione reductase; compare vs miltefosine (different mechanism \u2014 state this)",
+   "area": "malaria-parasitic",
+   "id": "HP-024",
+   "problem": "Trypanothione reductase \u2014 leishmaniasis drug target",
+   "reference_drug": "miltefosine",
+   "status": "unused",
+   "target": "Leishmania trypanothione reductase"
+  },
+  {
+   "angle": "Dock leads vs T. cruzi CYP51; note clinical failure of posaconazole in Chagas \u2014 the target itself is questioned",
+   "area": "malaria-parasitic",
+   "id": "HP-025",
+   "problem": "T. cruzi CYP51 \u2014 Chagas disease",
+   "reference_drug": "posaconazole",
+   "status": "unused",
+   "target": "Trypanosoma cruzi CYP51"
+  },
+  {
+   "angle": "Dock leads vs TGR; compare vs praziquantel (different target \u2014 state this honestly)",
+   "area": "malaria-parasitic",
+   "id": "HP-026",
+   "problem": "Schistosoma TGR \u2014 praziquantel alternatives",
+   "reference_drug": "praziquantel",
+   "status": "unused",
+   "target": "Schistosoma mansoni thioredoxin glutathione reductase (TGR)"
+  },
+  {
+   "angle": "Dock leads vs EGFR C797S mutant; compare vs osimertinib; state covalent-vs-reversible difference",
+   "area": "oncology",
+   "id": "HP-027",
+   "problem": "EGFR T790M/C797S \u2014 osimertinib resistance in NSCLC",
+   "reference_drug": "osimertinib",
+   "status": "unused",
+   "target": "Epidermal growth factor receptor (EGFR, mutant)"
+  },
+  {
+   "angle": "Dock leads vs HER2 kinase domain; compare vs lapatinib",
+   "area": "oncology",
+   "id": "HP-028",
+   "problem": "HER2-positive breast cancer \u2014 lapatinib alternatives",
+   "reference_drug": "lapatinib",
+   "status": "unused",
+   "target": "Human epidermal growth factor receptor 2 (HER2)"
+  },
+  {
+   "angle": "Dock leads vs BRAF V600E; compare vs vemurafenib; note paradoxical activation risk",
+   "area": "oncology",
+   "id": "HP-029",
+   "problem": "BRAF V600E melanoma \u2014 vemurafenib resistance",
+   "reference_drug": "vemurafenib",
+   "status": "unused",
+   "target": "BRAF V600E"
+  },
+  {
+   "angle": "Dock leads vs FLT3-ITD; compare vs gilteritinib",
+   "area": "oncology",
+   "id": "HP-030",
+   "problem": "FLT3-ITD acute myeloid leukaemia",
+   "reference_drug": "gilteritinib",
+   "status": "unused",
+   "target": "FMS-like tyrosine kinase 3 (FLT3)"
+  },
+  {
+   "angle": "Dock leads vs VEGFR2; compare vs sorafenib",
+   "area": "oncology",
+   "id": "HP-031",
+   "problem": "VEGFR2 \u2014 anti-angiogenic scaffolds",
+   "reference_drug": "sorafenib",
+   "status": "unused",
+   "target": "Vascular endothelial growth factor receptor 2 (VEGFR2)"
+  },
+  {
+   "angle": "Dock leads vs T315I gatekeeper mutant; compare vs ponatinib; note cardiovascular warning on ponatinib",
+   "area": "oncology",
+   "id": "HP-032",
+   "problem": "BCR-ABL T315I \u2014 imatinib resistance in CML",
+   "reference_drug": "ponatinib",
+   "status": "unused",
+   "target": "BCR-ABL1 T315I"
+  },
+  {
+   "angle": "Dock leads vs ALK; compare vs alectinib",
+   "area": "oncology",
+   "id": "HP-033",
+   "problem": "ALK-positive NSCLC \u2014 next-generation inhibitors",
+   "reference_drug": "alectinib",
+   "status": "unused",
+   "target": "Anaplastic lymphoma kinase (ALK)"
+  },
+  {
+   "angle": "Dock leads vs CDK6; compare vs palbociclib; note neutropenia class effect",
+   "area": "oncology",
+   "id": "HP-034",
+   "problem": "CDK4/6 \u2014 breast cancer cell-cycle inhibition",
+   "reference_drug": "palbociclib",
+   "status": "unused",
+   "target": "Cyclin-dependent kinases 4/6 (CDK4/6)"
+  },
+  {
+   "angle": "Dock leads vs PARP1; compare vs olaparib; note PARP-trapping vs catalytic inhibition",
+   "area": "oncology",
+   "id": "HP-035",
+   "problem": "PARP1 \u2014 synthetic lethality in BRCA-mutant cancers",
+   "reference_drug": "olaparib",
+   "status": "unused",
+   "target": "Poly(ADP-ribose) polymerase 1 (PARP1)"
+  },
+  {
+   "angle": "Dock leads vs AR-LBD including F876L mutant; compare vs enzalutamide",
+   "area": "oncology",
+   "id": "HP-036",
+   "problem": "Androgen receptor \u2014 enzalutamide resistance in prostate cancer",
+   "reference_drug": "enzalutamide",
+   "status": "unused",
+   "target": "Androgen receptor (ligand-binding domain)"
+  },
+  {
+   "angle": "Dock leads vs Mpro; compare vs nirmatrelvir; note ritonavir-boosting is a PK fix, not a target fix",
+   "area": "antiviral",
+   "id": "HP-037",
+   "problem": "SARS-CoV-2 main protease \u2014 nirmatrelvir alternatives",
+   "reference_drug": "nirmatrelvir",
+   "status": "unused",
+   "target": "SARS-CoV-2 main protease (Mpro / 3CLpro)"
+  },
+  {
+   "angle": "Dock leads vs N1 including H274Y mutant; compare vs oseltamivir",
+   "area": "antiviral",
+   "id": "HP-038",
+   "problem": "Influenza neuraminidase \u2014 oseltamivir resistance",
+   "reference_drug": "oseltamivir",
+   "status": "unused",
+   "target": "Influenza A neuraminidase (N1)"
+  },
+  {
+   "angle": "Dock leads vs integrase strand-transfer site; compare vs dolutegravir",
+   "area": "antiviral",
+   "id": "HP-039",
+   "problem": "HIV-1 integrase \u2014 dolutegravir resistance",
+   "reference_drug": "dolutegravir",
+   "status": "unused",
+   "target": "HIV-1 integrase"
+  },
+  {
+   "angle": "Dock leads vs NS5B palm site; compare vs sofosbuvir (nucleotide \u2014 different site, state this)",
+   "area": "antiviral",
+   "id": "HP-040",
+   "problem": "HCV NS5B polymerase \u2014 sofosbuvir alternatives",
+   "reference_drug": "sofosbuvir",
+   "status": "unused",
+   "target": "Hepatitis C virus NS5B polymerase"
+  },
+  {
+   "angle": "Dock leads vs NS2B-NS3; state plainly there is no approved reference drug",
+   "area": "antiviral",
+   "id": "HP-041",
+   "problem": "Dengue NS2B-NS3 protease \u2014 no approved dengue drug",
+   "reference_drug": "none approved (honest \u2014 compare vs literature inhibitors)",
+   "status": "unused",
+   "target": "Dengue virus NS2B-NS3 protease"
+  },
+  {
+   "angle": "Dock leads vs ACE zinc site; compare vs lisinopril; note cough is bradykinin-mediated, class-wide",
+   "area": "cardiovascular-renal",
+   "id": "HP-042",
+   "problem": "ACE inhibition \u2014 cough-free alternatives",
+   "reference_drug": "lisinopril",
+   "status": "unused",
+   "target": "Angiotensin-converting enzyme (ACE)"
+  },
+  {
+   "angle": "Dock leads vs neprilysin; compare vs sacubitril (prodrug \u2014 dock the active sacubitrilat, state this)",
+   "area": "cardiovascular-renal",
+   "id": "HP-043",
+   "problem": "Neprilysin inhibition for heart failure",
+   "reference_drug": "sacubitril",
+   "status": "unused",
+   "target": "Neprilysin (NEP)"
+  },
+  {
+   "angle": "Dock leads vs factor Xa; compare vs rivaroxaban; note bleeding is the class risk",
+   "area": "cardiovascular-renal",
+   "id": "HP-044",
+   "problem": "Factor Xa \u2014 oral anticoagulation without routine monitoring",
+   "reference_drug": "rivaroxaban",
+   "status": "unused",
+   "target": "Coagulation factor Xa"
+  },
+  {
+   "angle": "Dock leads vs HIF-PH; compare vs roxadustat; note cardiovascular safety debate",
+   "area": "cardiovascular-renal",
+   "id": "HP-045",
+   "problem": "HIF prolyl-hydroxylase \u2014 anaemia of chronic kidney disease",
+   "reference_drug": "roxadustat",
+   "status": "unused",
+   "target": "Hypoxia-inducible factor prolyl hydroxylase (HIF-PH)"
+  },
+  {
+   "angle": "Dock small molecules vs the PCSK9-LDLR interface; compare vs known small-molecule binders, not vs the antibody",
+   "area": "cardiovascular-renal",
+   "id": "HP-046",
+   "problem": "PCSK9 \u2014 small-molecule LDL lowering (beyond antibodies)",
+   "reference_drug": "evolocumab (antibody \u2014 state docking a small molecule vs an antibody target honestly)",
+   "status": "unused",
+   "target": "Proprotein convertase subtilisin/kexin type 9 (PCSK9)"
+  },
+  {
+   "angle": "Dock leads vs COX-2 selectivity pocket; compare vs celecoxib and vs COX-1 (selectivity ratio is the point)",
+   "area": "inflammation-pain",
+   "id": "HP-047",
+   "problem": "COX-2 selective inhibition without cardiovascular risk",
+   "reference_drug": "celecoxib",
+   "status": "unused",
+   "target": "Cyclooxygenase-2 (COX-2)"
+  },
+  {
+   "angle": "Dock small molecules vs the TNF trimer interface; honest note on biologic comparator",
+   "area": "inflammation-pain",
+   "id": "HP-048",
+   "problem": "TNF-alpha \u2014 oral small-molecule alternatives to biologics",
+   "reference_drug": "etanercept (biologic \u2014 state this; compare vs small-molecule TNF inhibitors in literature)",
+   "status": "unused",
+   "target": "Tumour necrosis factor alpha (TNF-alpha)"
+  },
+  {
+   "angle": "Dock leads vs JAK2; compare vs ruxolitinib; note JAK selectivity (JAK1 vs JAK2) matters",
+   "area": "inflammation-pain",
+   "id": "HP-049",
+   "problem": "JAK2 \u2014 myelofibrosis and inflammatory disease",
+   "reference_drug": "ruxolitinib",
+   "status": "unused",
+   "target": "Janus kinase 2 (JAK2)"
+  },
+  {
+   "angle": "Dock leads vs PDE5; compare vs sildenafil; note PDE selectivity (PDE6 vision effects)",
+   "area": "inflammation-pain",
+   "id": "HP-050",
+   "problem": "PDE5 \u2014 pulmonary hypertension",
+   "reference_drug": "sildenafil",
+   "status": "unused",
+   "target": "Phosphodiesterase 5 (PDE5)"
+  },
+  {
+   "angle": "Dock leads vs S. Typhi gyrase; Pakistan-burden framing; compare vs azithromycin target (different \u2014 state this)",
+   "area": "pakistan-burden",
+   "id": "HP-051",
+   "problem": "XDR typhoid \u2014 ceftriaxone-resistant Salmonella Typhi",
+   "reference_drug": "azithromycin (current fallback \u2014 state resistance is rising)",
+   "status": "unused",
+   "target": "Salmonella Typhi DNA gyrase / topoisomerase IV"
+  },
+  {
+   "angle": "Dock leads vs trypanothione reductase; compare vs antimonial (different mechanism \u2014 state this)",
+   "area": "pakistan-burden",
+   "id": "HP-052",
+   "problem": "Cutaneous leishmaniasis \u2014 oral alternatives to antimonials",
+   "reference_drug": "sodium stibogluconate",
+   "status": "unused",
+   "target": "Leishmania major trypanothione reductase"
+  },
+  {
+   "angle": "Dock leads vs NS5A domain I; compare vs daclatasvir; Pakistan HCV-burden framing",
+   "area": "pakistan-burden",
+   "id": "HP-053",
+   "problem": "Hepatitis C \u2014 affordable NS5A inhibition",
+   "reference_drug": "daclatasvir",
+   "status": "unused",
+   "target": "Hepatitis C virus NS5A"
+  },
+  {
+   "angle": "Dock leads vs sorbitol dehydrogenase, the second polyol-pathway step; explicitly distinct from Papers #1/#3 (AR, not SORD)",
+   "area": "pakistan-burden",
+   "id": "HP-054",
+   "problem": "Diabetic kidney disease \u2014 aldose-reductase-independent polyol control (NOT the Paper #1/#3 AR angle)",
+   "reference_drug": "none approved (honest \u2014 compare vs literature SORD inhibitors)",
+   "status": "unused",
+   "target": "Sorbitol dehydrogenase (SORD)"
+  },
+  {
+   "angle": "Dock leads vs BCL11A; honest note: HbF induction is transcriptional, docking is only a first triage",
+   "area": "pakistan-burden",
+   "id": "HP-055",
+   "problem": "Beta-thalassaemia \u2014 fetal haemoglobin induction",
+   "reference_drug": "hydroxyurea",
+   "status": "unused",
+   "target": "BCL11A / gamma-globin repression pathway (target: BCL11A zinc finger)"
+  },
+  {
+   "angle": "Dock leads vs aromatase haem site; compare vs letrozole",
+   "area": "oncology",
+   "id": "HP-056",
+   "problem": "Aromatase inhibition \u2014 breast cancer endocrine therapy",
+   "reference_drug": "letrozole",
+   "status": "unused",
+   "target": "Aromatase (CYP19A1)"
+  },
+  {
+   "angle": "Dock leads vs MEK1 allosteric pocket; compare vs trametinib",
+   "area": "oncology",
+   "id": "HP-057",
+   "problem": "MEK1/2 \u2014 BRAF-mutant combination therapy",
+   "reference_drug": "trametinib",
+   "status": "unused",
+   "target": "MEK1/2 (MAP2K1/2)"
+  },
+  {
+   "angle": "Dock ATP-competitive leads vs mTOR kinase domain; compare vs everolimus (allosteric \u2014 different site, state this)",
+   "area": "oncology",
+   "id": "HP-058",
+   "problem": "mTOR \u2014 rapalog alternatives",
+   "reference_drug": "everolimus",
+   "status": "unused",
+   "target": "Mechanistic target of rapamycin (mTOR, kinase domain)"
+  },
+  {
+   "angle": "Dock leads vs HBV capsid dimer interface; state plainly no approved reference drug exists",
+   "area": "antiviral",
+   "id": "HP-059",
+   "problem": "HBV capsid assembly \u2014 functional cure angle",
+   "reference_drug": "none approved (compare vs literature capsid modulators)",
+   "status": "unused",
+   "target": "Hepatitis B virus core protein (capsid)"
+  },
+  {
+   "angle": "Dock leads vs thrombin active site; compare vs dabigatran; note bleeding risk class-wide",
+   "area": "cardiovascular-renal",
+   "id": "HP-060",
+   "problem": "Thrombin \u2014 direct oral anticoagulation",
+   "reference_drug": "dabigatran",
+   "status": "unused",
+   "target": "Thrombin (factor IIa)"
+  }
+ ],
+ "updated": "2026-11-03",
+ "version": 1
+}

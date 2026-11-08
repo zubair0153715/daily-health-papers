@@ -1,1 +1,10 @@
-{"count":{"brain":2,"health":2,"space":1},"last_date":"2026-11-05","last_field":"health","last_file":"files/2026-11-05-health-lpxh-metal-aware-reranking.md"}
+{
+ "count": {
+  "brain": 3,
+  "health": 3,
+  "space": 2
+ },
+ "last_date": "2026-11-08",
+ "last_field": "health",
+ "last_file": "files/2026-11-08-health-kpc2-avibactam-benchmark.md"
+}

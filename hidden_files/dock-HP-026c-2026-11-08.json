@@ -1,0 +1,1570 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL6110 (live)",
+   "status": "ok",
+   "count": 58
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 25
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 26
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Schistosoma mansoni thioredoxin glutathione reductase (TGR)",
+  "uniprot": {
+   "accession": "Q962Y6",
+   "entry": null,
+   "gene": "TGR",
+   "protein": "thioredoxin-disulfide reductase (NADPH)",
+   "organism": "Schistosoma mansoni",
+   "length": 598,
+   "function": "Has a glutathione-disulfide oxidoreductase activity in the presence of NADPH and glutathione reductase. Reduces low molecular weight disulfides and proteins",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q962Y6/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL6110",
+   "name": "Thioredoxin glutathione reductase",
+   "type": "SINGLE PROTEIN",
+   "organism": "Schistosoma mansoni",
+   "components": 1
+  }
+ },
+ "ligands_found": 58,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "C1CCC(CC1)C(=O)N2CC3C4=CC=CC=C4CCN3C(=O)C2",
+   "similarity": 1.0,
+   "score": 98.3,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.3
+   },
+   "descriptors": {
+    "mw": 312.41,
+    "logp": 2.53,
+    "hbd": 0,
+    "hba": 2,
+    "tpsa": 40.62,
+    "rotatable": 1,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H24N2O2"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "measured",
+    "max_similarity": 1.0,
+    "assays": {
+     "NR-AR": 0,
+     "NR-AR-LBD": 0,
+     "NR-AhR": 0,
+     "NR-Aromatase": 0,
+     "NR-ER": 1,
+     "NR-ER-LBD": 0,
+     "NR-PPAR-gamma": 0,
+     "SR-ARE": 0,
+     "SR-ATAD5": 0,
+     "SR-HSE": 0,
+     "SR-MMP": 0,
+     "SR-p53": 0
+    }
+   },
+   "pubchem": {
+    "cid": 4891,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/4891"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL3322287",
+   "smiles": "NC(=O)c1c(C(=O)N2CC(=O)N3CCc4ccccc4C3C2)no[n+]1[O-]",
+   "similarity": 0.524,
+   "score": 79.9,
+   "score_detail": {
+    "similarity_40": 21.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.9
+   },
+   "descriptors": {
+    "mw": 357.33,
+    "logp": -1.01,
+    "hbd": 1,
+    "hba": 6,
+    "tpsa": 136.68,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C16H15N5O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.169,
+     "NR-Aromatase": 0.082,
+     "NR-ER": 0.162,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.07,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.102,
+     "SR-p53": 0.08
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.00",
+    "activity": "IC50 10.0 nM"
+   }
+  },
+  {
+   "rank": 3,
+   "label": "CHEMBL3322292",
+   "smiles": "NC(=O)c1c(COc2ccc3c(c2)C2CN(C(=O)C4CCCCC4)CC(=O)N2CC3)no[n+]1[O-]",
+   "similarity": 0.514,
+   "score": 68.8,
+   "score_detail": {
+    "similarity_40": 20.6,
+    "lipinski_20": 20,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.2
+   },
+   "descriptors": {
+    "mw": 469.5,
+    "logp": 0.83,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 145.91,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C23H27N5O6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.095,
+     "NR-ER": 0.413,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.164,
+     "SR-ATAD5": 0.153,
+     "SR-HSE": 0.059,
+     "SR-MMP": 0.115,
+     "SR-p53": 0.086
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.08",
+    "activity": "IC50 83.0 nM"
+   }
+  },
+  {
+   "rank": 4,
+   "label": "CHEMBL1535744",
+   "smiles": "CCC(=O)Nc1ccccc1C(=O)NC1CCCCC1",
+   "similarity": 0.231,
+   "score": 68.7,
+   "score_detail": {
+    "similarity_40": 9.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 274.36,
+    "logp": 3.1,
+    "hbd": 2,
+    "hba": 2,
+    "tpsa": 58.2,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C16H22N2O2"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.074,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.074,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.155,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 5,
+   "label": "CHEMBL1365586",
+   "smiles": "CCC1CCc2sc(C(=O)N3CCCN(C)CC3)cc2C1",
+   "similarity": 0.189,
+   "score": 67.5,
+   "score_detail": {
+    "similarity_40": 7.6,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.9
+   },
+   "descriptors": {
+    "mw": 306.48,
+    "logp": 3.04,
+    "hbd": 0,
+    "hba": 3,
+    "tpsa": 23.55,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C17H26N2OS"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.07,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 6,
+   "label": "CHEMBL1456339",
+   "smiles": "O=C(Cc1ccc(Br)cc1)NC1CCCCC1",
+   "similarity": 0.197,
+   "score": 67.4,
+   "score_detail": {
+    "similarity_40": 7.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 296.21,
+    "logp": 3.44,
+    "hbd": 1,
+    "hba": 1,
+    "tpsa": 29.1,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C14H18BrNO"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.094,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.068,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.068,
+     "SR-MMP": 0.091,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 7,
+   "label": "CHEMBL1334693",
+   "smiles": "Cl.O=C(CCN1CCC(c2ccccc2)C1)c1ccc2c(c1)OCCO2",
+   "similarity": 0.187,
+   "score": 65.8,
+   "score_detail": {
+    "similarity_40": 7.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.3
+   },
+   "descriptors": {
+    "mw": 373.88,
+    "logp": 3.94,
+    "hbd": 0,
+    "hba": 4,
+    "tpsa": 38.77,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H24ClNO3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.375,
+     "NR-Aromatase": 0.083,
+     "NR-ER": 0.072,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.517,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 8,
+   "label": "CHEMBL1556526",
+   "smiles": "COc1ccc(CCN(C)C2CCCN(S(C)(=O)=O)C2)cc1OC",
+   "similarity": 0.154,
+   "score": 65.5,
+   "score_detail": {
+    "similarity_40": 6.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.3
+   },
+   "descriptors": {
+    "mw": 356.49,
+    "logp": 1.6,
+    "hbd": 0,
+    "hba": 5,
+    "tpsa": 59.08,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C17H28N2O4S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.163,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.155,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.09,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 9,
+   "label": "CHEMBL1413569",
+   "smiles": "CCOc1ccc(S(=O)(=O)N(C)C2CCCCC2)cc1",
+   "similarity": 0.164,
+   "score": 65.4,
+   "score_detail": {
+    "similarity_40": 6.6,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.8
+   },
+   "descriptors": {
+    "mw": 297.42,
+    "logp": 3.04,
+    "hbd": 0,
+    "hba": 3,
+    "tpsa": 46.61,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C15H23NO3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.14,
+     "NR-Aromatase": 0.095,
+     "NR-ER": 0.102,
+     "NR-ER-LBD": 0.086,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.066,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.251,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 10,
+   "label": "CHEMBL1446781",
+   "smiles": "COc1ccccc1N(CC(=O)N1CCN(c2ccccc2)CC1)S(=O)(=O)c1ccc(C)cc1",
+   "similarity": 0.163,
+   "score": 65.4,
+   "score_detail": {
+    "similarity_40": 6.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.9
+   },
+   "descriptors": {
+    "mw": 479.6,
+    "logp": 3.55,
+    "hbd": 0,
+    "hba": 5,
+    "tpsa": 70.16,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C26H29N3O4S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.112,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.088,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.09,
+     "SR-ARE": 0.277,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.091,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 11,
+   "label": "CHEMBL1424070",
+   "smiles": "COc1ccccc1N1CCN(CC(=O)NCc2ccc(Cl)cc2)CC1",
+   "similarity": 0.156,
+   "score": 65.3,
+   "score_detail": {
+    "similarity_40": 6.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.1
+   },
+   "descriptors": {
+    "mw": 373.88,
+    "logp": 2.79,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 44.81,
+    "rotatable": 6,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C20H24ClN3O2"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.076,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.29,
+     "NR-Aromatase": 0.082,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.078,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 12,
+   "label": "CHEMBL1391890",
+   "smiles": "O=C(C1=C(O)C(=O)N(Cc2cccnc2)C1c1ccccn1)c1ccc(Br)cc1",
+   "similarity": 0.146,
+   "score": 65.3,
+   "score_detail": {
+    "similarity_40": 5.8,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 450.29,
+    "logp": 4.02,
+    "hbd": 1,
+    "hba": 5,
+    "tpsa": 83.39,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H16BrN3O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.149,
+     "NR-Aromatase": 0.08,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.08,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.10",
+    "activity": "Potency 79.4 nM"
+   }
+  },
+  {
+   "rank": 13,
+   "label": "CHEMBL1562827",
+   "smiles": "Cn1ncc(Cl)c1C(=O)N1CCN(S(=O)(=O)c2ccc(Cl)s2)CC1",
+   "similarity": 0.145,
+   "score": 65.3,
+   "score_detail": {
+    "similarity_40": 5.8,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 409.32,
+    "logp": 1.94,
+    "hbd": 0,
+    "hba": 5,
+    "tpsa": 75.51,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C13H14Cl2N4O3S2"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.196,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.123
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 14,
+   "label": "CHEMBL1556391",
+   "smiles": "COC(=O)c1ccc(-c2noc(CN(C)CCC3CCCCO3)n2)cc1",
+   "similarity": 0.143,
+   "score": 65.1,
+   "score_detail": {
+    "similarity_40": 5.7,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.4
+   },
+   "descriptors": {
+    "mw": 359.43,
+    "logp": 2.91,
+    "hbd": 0,
+    "hba": 7,
+    "tpsa": 77.69,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H25N3O4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.085,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.073,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.139,
+     "SR-ATAD5": 0.073,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 15,
+   "label": "CHEMBL1390840",
+   "smiles": "CCn1c(O)nc(CS(=O)(=O)c2ccccc2)c1C",
+   "similarity": 0.129,
+   "score": 65.1,
+   "score_detail": {
+    "similarity_40": 5.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.9
+   },
+   "descriptors": {
+    "mw": 280.35,
+    "logp": 1.89,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 72.19,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C13H16N2O3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.068,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.55",
+    "activity": "Potency 28.2 nM"
+   }
+  },
+  {
+   "rank": 16,
+   "label": "CHEMBL1531496",
+   "smiles": "COC(=O)C(CCSC)NC(=O)c1cc2c(n(-c3ccc(C)cc3)c1=O)CCCC2=O",
+   "similarity": 0.148,
+   "score": 65.0,
+   "score_detail": {
+    "similarity_40": 5.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.1
+   },
+   "descriptors": {
+    "mw": 442.54,
+    "logp": 2.69,
+    "hbd": 1,
+    "hba": 6,
+    "tpsa": 94.47,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C23H26N2O5S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.177,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.194,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.091,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.064,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.05",
+    "activity": "Potency 89.1 nM"
+   }
+  },
+  {
+   "rank": 17,
+   "label": "CHEMBL1536843",
+   "smiles": "COc1ccc(S(=O)(=O)N2CCN3CCCC3C2)cc1",
+   "similarity": 0.157,
+   "score": 64.9,
+   "score_detail": {
+    "similarity_40": 6.3,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.6
+   },
+   "descriptors": {
+    "mw": 296.39,
+    "logp": 1.16,
+    "hbd": 0,
+    "hba": 4,
+    "tpsa": 49.85,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C14H20N2O3S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.068,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.198,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.221,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.088,
+     "SR-ATAD5": 0.139,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.116,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 18,
+   "label": "CHEMBL3189249",
+   "smiles": "NC(=S)N/N=C1\\CC(n2nnnc2-c2ccccc2)C2COC1O2",
+   "similarity": 0.133,
+   "score": 64.4,
+   "score_detail": {
+    "similarity_40": 5.3,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.1
+   },
+   "descriptors": {
+    "mw": 345.39,
+    "logp": 0.22,
+    "hbd": 2,
+    "hba": 7,
+    "tpsa": 112.47,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C14H15N7O2S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.066,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.175,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.163,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.065,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.089,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.55",
+    "activity": "Potency 28.2 nM"
+   }
+  },
+  {
+   "rank": 19,
+   "label": "CHEMBL2373618",
+   "smiles": "CC1(C)CC(=O)C2=C(C1)O[C@@]1(CCCCN3C(=O)c4ccccc4C3=O)Cc3cc(C#N)ccc3[C@@H]2O1",
+   "similarity": 0.129,
+   "score": 64.4,
+   "score_detail": {
+    "similarity_40": 5.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.2
+   },
+   "descriptors": {
+    "mw": 496.56,
+    "logp": 5.01,
+    "hbd": 0,
+    "hba": 6,
+    "tpsa": 96.7,
+    "rotatable": 5,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C30H28N2O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.061,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.076,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.077,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.066,
+     "SR-MMP": 0.091,
+     "SR-p53": 0.081
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.20",
+    "activity": "Potency 63.1 nM"
+   }
+  },
+  {
+   "rank": 20,
+   "label": "CHEMBL1418833",
+   "smiles": "O=C(O)CSc1nc2ccccc2n1Cc1ccccc1",
+   "similarity": 0.129,
+   "score": 64.1,
+   "score_detail": {
+    "similarity_40": 5.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.9
+   },
+   "descriptors": {
+    "mw": 298.37,
+    "logp": 3.26,
+    "hbd": 1,
+    "hba": 3,
+    "tpsa": 55.12,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C16H14N2O2S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.093,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.158,
+     "SR-ARE": 0.205,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.09,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.085
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.05",
+    "activity": "Potency 89.1 nM"
+   }
+  },
+  {
+   "rank": 21,
+   "label": "CHEMBL1443946",
+   "smiles": "Oc1ccc(CN2CCCc3ccccc32)c2cccnc12",
+   "similarity": 0.181,
+   "score": 62.2,
+   "score_detail": {
+    "similarity_40": 7.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 15.0
+   },
+   "descriptors": {
+    "mw": 290.37,
+    "logp": 3.89,
+    "hbd": 1,
+    "hba": 3,
+    "tpsa": 36.36,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H18N2O"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.464,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.094,
+     "NR-ER-LBD": 0.149,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.677,
+     "SR-ATAD5": 0.062,
+     "SR-HSE": 0.626,
+     "SR-MMP": 0.349,
+     "SR-p53": 0.55
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 22,
+   "label": "CHEMBL1511800",
+   "smiles": "O=C(Nc1cc(O)nc2ncnn12)c1ccccc1Cl",
+   "similarity": 0.135,
+   "score": 61.3,
+   "score_detail": {
+    "similarity_40": 5.4,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 15.9
+   },
+   "descriptors": {
+    "mw": 289.68,
+    "logp": 1.74,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 92.41,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C12H8ClN5O2"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.704,
+     "NR-Aromatase": 0.129,
+     "NR-ER": 0.121,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.099,
+     "SR-ARE": 0.57,
+     "SR-ATAD5": 0.065,
+     "SR-HSE": 0.114,
+     "SR-MMP": 0.561,
+     "SR-p53": 0.102
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 23,
+   "label": "CHEMBL1469531",
+   "smiles": "CN1CCN(C(=O)CCN2C(=O)/C(=C\\c3ccccc3F)SC2=S)CC1",
+   "similarity": 0.177,
+   "score": 56.6,
+   "score_detail": {
+    "similarity_40": 7.1,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 19.5
+   },
+   "descriptors": {
+    "mw": 393.51,
+    "logp": 2.19,
+    "hbd": 0,
+    "hba": 5,
+    "tpsa": 43.86,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C18H20FN3O2S2"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.072,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.117,
+     "SR-ATAD5": 0.102,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.10",
+    "activity": "Potency 79.4 nM"
+   }
+  },
+  {
+   "rank": 24,
+   "label": "CHEMBL1570587",
+   "smiles": "O=C1C(Cl)=C(NC(=O)c2ccccc2)C(=O)C(Cl)=C1NC(=O)c1ccccc1",
+   "similarity": 0.15,
+   "score": 53.9,
+   "score_detail": {
+    "similarity_40": 6.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 17.9
+   },
+   "descriptors": {
+    "mw": 415.23,
+    "logp": 2.9,
+    "hbd": 2,
+    "hba": 4,
+    "tpsa": 92.34,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C20H12Cl2N2O4"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.063,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.211,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.385,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.073,
+     "SR-ARE": 0.149,
+     "SR-ATAD5": 0.064,
+     "SR-HSE": 0.073,
+     "SR-MMP": 0.229,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.00",
+    "activity": "Potency 100.0 nM"
+   }
+  },
+  {
+   "rank": 25,
+   "label": "CHEMBL1441968",
+   "smiles": "COc1ccc(N2CCN(C(=O)COC(=O)c3cnccn3)CC2)cc1",
+   "similarity": 0.139,
+   "score": 53.7,
+   "score_detail": {
+    "similarity_40": 5.6,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 18.1
+   },
+   "descriptors": {
+    "mw": 356.38,
+    "logp": 0.99,
+    "hbd": 0,
+    "hba": 7,
+    "tpsa": 84.86,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C18H20N4O4"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.205,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.31,
+     "NR-ER-LBD": 0.079,
+     "NR-PPAR-gamma": 0.086,
+     "SR-ARE": 0.217,
+     "SR-ATAD5": 0.093,
+     "SR-HSE": 0.068,
+     "SR-MMP": 0.086,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.70",
+    "activity": "Potency 20.0 nM"
+   }
+  },
+  {
+   "rank": 26,
+   "label": "CHEMBL1443072",
+   "smiles": "Cc1c(C)n(Cc2ccccc2)c2ccc(C(=O)NCCN3CCOCC3)cc12",
+   "similarity": 0.129,
+   "score": 53.0,
+   "score_detail": {
+    "similarity_40": 5.2,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 17.8
+   },
+   "descriptors": {
+    "mw": 391.52,
+    "logp": 3.37,
+    "hbd": 1,
+    "hba": 3,
+    "tpsa": 46.5,
+    "rotatable": 6,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C24H29N3O2"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.163,
+     "NR-AR-LBD": 0.107,
+     "NR-AhR": 0.23,
+     "NR-Aromatase": 0.09,
+     "NR-ER": 0.126,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.291,
+     "SR-ATAD5": 0.061,
+     "SR-HSE": 0.069,
+     "SR-MMP": 0.102,
+     "SR-p53": 0.067
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.15",
+    "activity": "Potency 70.8 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "8PDD",
+  "resolution": 1.25,
+  "center": [
+   7.3,
+   -2.84,
+   57.31
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.24,
+    "poses": [
+     -11.24,
+     -9.18,
+     -8.97
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL3322292",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.16,
+    "poses": [
+     -10.16,
+     -10.04,
+     -9.33
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL3322287",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.31,
+    "poses": [
+     -9.31,
+     -8.24,
+     -8.07
+    ],
+    "pdb_id": "8PDD",
+    "label": "QUERY",
+    "rank": 1
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.4,
+    "poses": [
+     -8.4,
+     -8.05,
+     -7.85
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL1535744",
+    "rank": 4
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.33,
+    "poses": [
+     -6.33,
+     -6.26,
+     -5.98
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL1365586",
+    "rank": 5
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Schistosoma mansoni thioredoxin glutathione reductase (TGR)",
+  "reference": "praziquantel"
+ },
+ "docking_corrected": {
+  "ok": true,
+  "pdb_id": "8PDD",
+  "center": [
+   8.28,
+   -4.52,
+   51.6
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.93,
+    "poses": [
+     -10.93,
+     -9.29,
+     -9.16
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL3322292",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.27,
+    "poses": [
+     -10.27,
+     -9.68,
+     -8.67
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL3322287",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.59,
+    "poses": [
+     -9.59,
+     -9.31,
+     -8.22
+    ],
+    "pdb_id": "8PDD",
+    "label": "QUERY",
+    "rank": 1
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.74,
+    "poses": [
+     -7.74,
+     -7.19,
+     -6.28
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL1535744",
+    "rank": 4
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.33,
+    "poses": [
+     -7.33,
+     -7.11,
+     -7.09
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL1456339",
+    "rank": 6
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.51,
+    "poses": [
+     -6.51,
+     -6.09,
+     -6.01
+    ],
+    "pdb_id": "8PDD",
+    "label": "CHEMBL1365586",
+    "rank": 5
+   }
+  ]
+ },
+ "correction": {
+  "fault": "first run centred the grid on the FAD cofactor centroid [7.30, -2.84, 57.31] (8PDD has no drug-like ligand; _ligand_center fallback picked FAD)",
+  "fix": "re-docked identical ligand set at the catalytic redox site [8.28, -4.52, 51.60], midpoint of FAD isoalloxazine centroid and Cys154-Cys159 disulfide, both verified in the 8PDD file",
+  "original_docking_kept_for_audit": "docking field in dock-HP-026-2026-11-08.json"
+ }
+}
