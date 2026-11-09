@@ -1,0 +1,106 @@
+{
+ "ok": true,
+ "pdb_id": "6TD0",
+ "resolution": 0.99,
+ "pdb_title": "Crystal structure of vaborbactam bound to KPC-2",
+ "co_crystallised_ligand": "4D6 (vaborbactam), centroid [15.45, 8.23, 21.26]; altloc A/B centroids within 0.08 A",
+ "center": [
+  15.45,
+  8.23,
+  21.26
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Named clinical comparators docked at the verified vaborbactam centroid; avibactam re-docked as a reproducibility check on the pipeline result.",
+ "results": [
+  {
+   "ok": false,
+   "error": "vina failed: \n\nPDBQT parsing error: Atom type B is not a valid AutoDock type (atom types are case-sensitive).\n > ATOM      1  B   UNL     1       0.484  -0.910  -0",
+   "label": "vaborbactam",
+   "smiles": "B1(C(CCC(O1)CC(=O)O)NC(=O)CC2=CC=CS2)O",
+   "descriptors": {
+    "mw": 297.14,
+    "logp": 0.45,
+    "hbd": 3,
+    "hba": 5,
+    "tpsa": 95.86,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C12H16BNO5S"
+   },
+   "pains": null
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.35,
+   "poses": [
+    -7.35,
+    -7.11,
+    -6.8
+   ],
+   "pdb_id": "6TD0",
+   "label": "relebactam",
+   "smiles": "C1CC(N2CC1N(C2=O)OS(=O)(=O)O)C(=O)NC3CCNCC3",
+   "descriptors": {
+    "mw": 348.38,
+    "logp": -1.14,
+    "hbd": 3,
+    "hba": 6,
+    "tpsa": 128.28,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C12H20N4O6S"
+   },
+   "pains": null
+  },
+  {
+   "ok": false,
+   "error": "vina failed: \n\nPDBQT parsing error: Atom type B is not a valid AutoDock type (atom types are case-sensitive).\n > ATOM     13  B   UNL     1       3.908   0.732   1",
+   "label": "taniborbactam",
+   "smiles": "B1(C(CC2=C(O1)C(=CC=C2)C(=O)O)NC(=O)CC3CCC(CC3)NCCN)O",
+   "descriptors": {
+    "mw": 389.26,
+    "logp": 0.32,
+    "hbd": 5,
+    "hba": 6,
+    "tpsa": 133.91,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H28BN3O5"
+   },
+   "pains": null
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.15,
+   "poses": [
+    -7.15,
+    -6.42,
+    -6.21
+   ],
+   "pdb_id": "6TD0",
+   "label": "avibactam-redock",
+   "smiles": "C1CC(N2CC1N(C2=O)OS(=O)(=O)O)C(=O)N",
+   "descriptors": {
+    "mw": 265.25,
+    "logp": -1.53,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 130.24,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C7H11N3O6S"
+   },
+   "pains": null
+  }
+ ]
+}
