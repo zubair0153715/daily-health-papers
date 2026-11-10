@@ -436,9 +436,9 @@
       "file": "files/2026-11-10-health-pde5-sildenafil-benchmark.md",
       "field": "health",
       "platform": "ChemRxiv",
-      "status": "drafted",
-      "draft_url": null,
-      "notes": "Target O76074/CHEMBL1827 verified; 55 bioactivities, 26 leads. PDB 1TBF 1.3 A (sildenafil-bound); grid centre exactly on VIA centroid (0.00 A). CHEMBL4759667 -9.71 (pChEMBL 10.60) leads both rankings; sildenafil -9.35 but last by measured potency (pChEMBL 9.00); vardenafil CHEMBL1520 -9.30. Spearman rho +0.30 (n=5). Sildenafil ChEMBL top record fetched separately (CHEMBL192, pChEMBL 9.00, IC50 1.0 nM). Correction during drafting: Ballard 1998 citation fixed to J Urol 159:2164-2171 after a wrong PMID (9846238) was caught by PubMed check. Pack entry was appended twice by a re-run; duplicate removed."
+      "status": "draft-ready",
+      "draft_url": "https://chemrxiv.org/doc/8926d496-e625-4086-9d71-bfbb3a850718",
+      "notes": "Target O76074/CHEMBL1827 verified; 55 bioactivities, 26 leads. PDB 1TBF 1.3 A (sildenafil-bound); grid centre exactly on VIA centroid (0.00 A). CHEMBL4759667 -9.71 (pChEMBL 10.60) leads both rankings; sildenafil -9.35 but last by measured potency (pChEMBL 9.00); vardenafil CHEMBL1520 -9.30. Spearman rho +0.30 (n=5). Sildenafil ChEMBL top record fetched separately (CHEMBL192, pChEMBL 9.00, IC50 1.0 nM). Correction during drafting: Ballard 1998 citation fixed to J Urol 159:2164-2171 after a wrong PMID (9846238) was caught by PubMed check. Pack entry was appended twice by a re-run; duplicate removed. ChemRxiv DRAFT created 2026-11-10 ~16:18 PKT, stopped at Summary page, NOT submitted. Subject Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Affiliation auto-extracted (missing closing paren, no Faculty of Pharmacy dept - editor offers no department field). Cloudflare verify-then-reset loop x3 (Ray a5849783aa8e6e08 etc.) forced a fresh browser; sign-in redone via ORCID, then draft completed."
     },
     {
       "date": "2026-11-10",
@@ -449,8 +449,8 @@
       "field": "health",
       "platform": "ChemRxiv",
       "status": "drafted",
-      "draft_url": null,
-      "notes": "Target O43451/CHEMBL2074 verified; 55 bioactivities, 26 leads. PDB 3L4Y 1.8 A (ntMGAM + Salacia inhibitor NR4); grid centre exactly on NR4 centroid (0.00 A). Acarbose -6.55 best by Vina yet ~1e5-fold weakest by measurement (IC50 456-750 uM vs best lead Ki 2.3 nM); leads rho +0.50 (n=3). CHEMBL3815109 (kotalanol-class sulfonium salt, IC50 470 nM) FAILED to dock: multi-fragment salt SMILES rejected by ligand prep. No ChEMBL MGAM record for acarbose met pChEMBL>=5; literature IC50 used."
+      "draft_url": "https://chemrxiv.org/doc/dcc62a55-9a35-4c7f-8cc5-e259f432a8c4",
+      "notes": "Target O43451/CHEMBL2074 verified; 55 bioactivities, 26 leads. PDB 3L4Y 1.8 A (ntMGAM + Salacia inhibitor NR4); grid centre exactly on NR4 centroid (0.00 A). Acarbose -6.55 best by Vina yet ~1e5-fold weakest by measurement (IC50 456-750 uM vs best lead Ki 2.3 nM); leads rho +0.50 (n=3). CHEMBL3815109 (kotalanol-class sulfonium salt, IC50 470 nM) FAILED to dock: multi-fragment salt SMILES rejected by ligand prep. No ChEMBL MGAM record for acarbose met pChEMBL>=5; literature IC50 used. PARTIAL DRAFT 2026-11-10 ~16:48 PKT: draft created, PDF uploaded, title/abstract/8 keywords verified verbatim, author/ORCID verified. Metadata NOT set (subject, CC BY 4.0, Working Paper, Ethics, Conflicts) - editor iframe blocked by Cloudflare Turnstile verify-then-reset loop (7 Ray IDs, incl. a584c1a048f915ae). Editor URL: https://chemrxiv.org/doc/editor/dcc62a55-9a35-4c7f-8cc5-e259f432a8c4 - author can finish metadata in his own browser, or retry tomorrow. NOT submitted."
     },
     {
       "date": "2026-11-10",
@@ -460,9 +460,9 @@
       "file": "files/2026-11-10-health-hiv-integrase-dolutegravir.md",
       "field": "health",
       "platform": "ChemRxiv",
-      "status": "drafted",
-      "draft_url": null,
-      "notes": "Docking SKIPPED: pipeline default PDB pick was HIV-1 protease 6DV4 (wrong enzyme, Gag-Pol polyprotein P04585); corrected to true integrase target CHEMBL3471, 48 bioactivities, 26 leads. No X-ray INSTI-bound HIV-1 integrase structure exists; DTG structures are cryo-EM intasomes (8FNG). Cabotegravir most potent (IC50 0.22 nM), DTG 0.5 nM, BMS-707035 series 2.0 nM (single assay). All sub-3 nM; similarity-dominated composite score obscures equality. Refs verified: Cook 2020 PMID 32001525, Li 2023 PMID 37478179, Taiwan 2026 PMID 41574657, Naidu 2018 PMID 29779976."
+      "status": "draft-ready",
+      "draft_url": "https://chemrxiv.org/doc/3cee616d-a18e-4901-a65d-7a25b5b3ad87",
+      "notes": "Docking SKIPPED: pipeline default PDB pick was HIV-1 protease 6DV4 (wrong enzyme, Gag-Pol polyprotein P04585); corrected to true integrase target CHEMBL3471, 48 bioactivities, 26 leads. No X-ray INSTI-bound HIV-1 integrase structure exists; DTG structures are cryo-EM intasomes (8FNG). Cabotegravir most potent (IC50 0.22 nM), DTG 0.5 nM, BMS-707035 series 2.0 nM (single assay). All sub-3 nM; similarity-dominated composite score obscures equality. Refs verified: Cook 2020 PMID 32001525, Li 2023 PMID 37478179, Taiwan 2026 PMID 41574657, Naidu 2018 PMID 29779976. ChemRxiv DRAFT created 2026-11-10 ~17:02 PKT, stopped at Summary page, NOT submitted. Subject Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Affiliation auto-extracted (missing closing paren, no Faculty of Pharmacy dept - editor menu greyed out). Minor: auto-extraction dropped 2 em dashes in abstract (author can re-add in editor). Cloudflare loop on first browser, fresh browser cleared it."
     },
     {
       "date": "2026-11-10",
@@ -473,8 +473,8 @@
       "field": "health",
       "platform": "ChemRxiv",
       "status": "drafted",
-      "draft_url": null,
-      "notes": "Target P27487/CHEMBL284 verified; 47 bioactivities, 26 leads. PDB 4A5S 1.62 A (human DPP-4 + N7F); grid centre exactly on N7F centroid (0.00 A). Not 1X70 (2.5 A) - picker takes best resolution; sitagliptin Vina -8.95 on 4A5S vs -9.181 on 1X70 in 2026 preprint, consistent. CHEMBL5870057 -9.47 (IC50 0.21 nM) best by Vina; sitagliptin -8.95 yet ~100x weakest by measurement (18 nM vs 0.18-0.27 nM); Spearman rho 0.0 (n=4). CHEMBL1203953 (sim 0.563, IC50 0.18 nM) FAILED to dock: HCl salt, 2 fragments. CHEMBL98869 (Ki 0.082 nM, pChEMBL 10.09) most potent in set, never docked - pipeline docks top 5 by similarity-dominated composite score only. Refs verified: Kim 2005 PMID 15634008 DOI 10.1021/jm0493156."
+      "draft_url": "https://chemrxiv.org/doc/3600959c-bbd4-47f8-8d6b-ad858436d241",
+      "notes": "Target P27487/CHEMBL284 verified; 47 bioactivities, 26 leads. PDB 4A5S 1.62 A (human DPP-4 + N7F); grid centre exactly on N7F centroid (0.00 A). Not 1X70 (2.5 A) - picker takes best resolution; sitagliptin Vina -8.95 on 4A5S vs -9.181 on 1X70 in 2026 preprint, consistent. CHEMBL5870057 -9.47 (IC50 0.21 nM) best by Vina; sitagliptin -8.95 yet ~100x weakest by measurement (18 nM vs 0.18-0.27 nM); Spearman rho 0.0 (n=4). CHEMBL1203953 (sim 0.563, IC50 0.18 nM) FAILED to dock: HCl salt, 2 fragments. CHEMBL98869 (Ki 0.082 nM, pChEMBL 10.09) most potent in set, never docked - pipeline docks top 5 by similarity-dominated composite score only. Refs verified: Kim 2005 PMID 15634008 DOI 10.1021/jm0493156. PARTIAL DRAFT 2026-11-10 ~17:13 PKT: draft created, PDF uploaded, title/abstract/8 keywords verified verbatim, author/ORCID verified. Metadata NOT set (subject, CC BY 4.0, Working Paper, Ethics, Conflicts) - editor iframe blank, would not load (Cloudflare). Editor URL: https://chemrxiv.org/doc/editor/3600959c-bbd4-47f8-8d6b-ad858436d241 - author can finish metadata in his own browser, or retry tomorrow. NOT submitted."
     }
   ],
   "used_topic_ids": [
