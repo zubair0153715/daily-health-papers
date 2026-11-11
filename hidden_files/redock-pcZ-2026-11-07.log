@@ -1,0 +1,11 @@
+{
+ "ok": true,
+ "affinity_kcal_mol": -7.99,
+ "poses": [
+  -7.99,
+  -7.8,
+  -7.76
+ ],
+ "pdb_id": "2CIB",
+ "label": "QUERY-posaconazole"
+}

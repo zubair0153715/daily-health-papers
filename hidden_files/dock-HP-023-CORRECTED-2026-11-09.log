@@ -1,0 +1,21 @@
+[11:30:17] WARNING: not removing hydrogen atom without neighbors
+[11:30:17] Explicit valence for atom # 8 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 3 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 4 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 4 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 9 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 5 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 16 Al, 6, is greater than permitted
+[11:30:18] Explicit valence for atom # 20 Al, 6, is greater than permitted
+PIPELINE OK: True
+STEP: {'step': 1, 'name': 'Target identification', 'source': 'UniProtKB + ChEMBL (live)', 'status': 'ok'}
+STEP: {'step': 2, 'name': 'Known ligand retrieval', 'source': 'ChEMBL bioactivities for CHEMBL4296323 (live)', 'status': 'ok', 'count': 2}
+STEP: {'step': 3, 'name': 'Query compound verification', 'source': 'PubChem PUG REST (live)', 'status': 'ok'}
+STEP: {'step': 4, 'name': 'Similarity screen vs known actives', 'source': 'RDKit Morgan fingerprints, Tanimoto', 'status': 'ok', 'count': 2}
+STEP: {'step': 5, 'name': 'ADMET + safety panel', 'source': 'RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)', 'status': 'ok'}
+STEP: {'step': 6, 'name': 'Lead ranking', 'source': 'composite score: similarity×40 + Lipinski×20 + Veber×10 + PAINS×10 + tox×20', 'status': 'ok', 'count': 3}
+STEP: {'step': 7, 'name': 'Molecular docking', 'source': 'AutoDock Vina vs PDB structure (RCSB, live)', 'status': 'skipped', 'pdb_id': None}
+UNIPROT: Q8I1R6 None 
+LEADS: 3
+DOCK_LEADS: False None no_pdb_found
+RAW_SAVED: ../hidden_files/dock-HP-023-CORRECTED-2026-11-09.json

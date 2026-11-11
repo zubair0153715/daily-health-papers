@@ -1,0 +1,150 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "FMS-like tyrosine kinase 3 (FLT3)",
+  "uniprot": {
+   "accession": "P36888",
+   "entry": null,
+   "gene": "FLT3",
+   "protein": "Receptor-type tyrosine-protein kinase FLT3",
+   "organism": "Homo sapiens",
+   "length": 993,
+   "function": "Tyrosine-protein kinase that acts as a cell-surface receptor for the cytokine FLT3LG and regulates differentiation, proliferation and survival of hematopoietic progenitor cells and of dendritic cells. Promotes phosphorylation of SHC1 and AKT1, and activation of the downstream effector MTOR. Promotes activation of RAS signaling and phosphorylation of downstream kinases, including MAPK1/ERK2 and/or MAPK3/ERK1. Promotes phosphorylation of FES, FER, PTPN6/SHP, PTPN11/SHP-2, PLCG1, and STAT5A and/or STAT5B. Activation of wild-type FLT3 causes only marginal activation of STAT5A or STAT5B. Mutations that cause constitutive kinase activity promote cell proliferation and resistance to apoptosis via the activation of multiple signaling pathways",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P36888/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCC1=C(N=C(C(=N1)C(=O)N)NC2=CC(=C(C=C2)N3CCC(CC3)N4CCN(CC4)C)OC)NC5CCOCC5",
+   "similarity": 1.0,
+   "score": 86.5,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 16.5
+   },
+   "descriptors": {
+    "mw": 552.72,
+    "logp": 2.7,
+    "hbd": 3,
+    "hba": 10,
+    "tpsa": 121.11,
+    "rotatable": 9,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C29H44N8O3"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.284,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.116,
+     "NR-AhR": 0.336,
+     "NR-Aromatase": 0.135,
+     "NR-ER": 0.213,
+     "NR-ER-LBD": 0.085,
+     "NR-PPAR-gamma": 0.088,
+     "SR-ARE": 0.495,
+     "SR-ATAD5": 0.204,
+     "SR-HSE": 0.181,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.223
+    }
+   },
+   "pubchem": {
+    "cid": 49803313,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/49803313"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "6JQR",
+  "resolution": 2.2,
+  "center": [
+   -28.04,
+   -10.36,
+   -28.99
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.01,
+    "poses": [
+     -8.01,
+     -7.69,
+     -7.68
+    ],
+    "pdb_id": "6JQR",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "FMS-like tyrosine kinase 3 (FLT3)",
+  "reference": "gilteritinib"
+ }
+}

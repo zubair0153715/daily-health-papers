@@ -1,0 +1,38 @@
+{
+ "vaborbactam": {
+  "pains": [],
+  "tox": {
+   "error": "module 'app.discovery.tox' has no attribute 'tox_panel'"
+  },
+  "tanimoto_vs_avibactam": [
+   [
+    "C1CC(N2CC1N(C2=O)OS(=O)(=O)O)C(=O)N",
+    0.099
+   ]
+  ]
+ },
+ "relebactam": {
+  "pains": [],
+  "tox": {
+   "error": "module 'app.discovery.tox' has no attribute 'tox_panel'"
+  },
+  "tanimoto_vs_avibactam": [
+   [
+    "C1CC(N2CC1N(C2=O)OS(=O)(=O)O)C(=O)N",
+    0.612
+   ]
+  ]
+ },
+ "taniborbactam": {
+  "pains": [],
+  "tox": {
+   "error": "module 'app.discovery.tox' has no attribute 'tox_panel'"
+  },
+  "tanimoto_vs_avibactam": [
+   [
+    "C1CC(N2CC1N(C2=O)OS(=O)(=O)O)C(=O)N",
+    0.098
+   ]
+  ]
+ }
+}

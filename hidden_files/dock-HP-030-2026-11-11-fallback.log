@@ -1,0 +1,13 @@
+DOCK GILTERITINIB-REF: -7.83 ok=True pains=['PAINS alert']
+DOCK QUIZARTINIB: -7.7 ok=True pains=[]
+DOCK MIDOSTAURIN: -10.42 ok=True pains=[]
+DOCK CRENOLANIB: -9.55 ok=True pains=[]
+DOCK SORAFENIB: -8.28 ok=True pains=[]
+DOCK PUBCHEM-66642864: -7.76 ok=True pains=['PAINS alert']
+DOCK PUBCHEM-124086185: -7.83 ok=True pains=['PAINS alert']
+DOCK PUBCHEM-166626288: -7.75 ok=True pains=['PAINS alert']
+DOCK PUBCHEM-138319679: -8.12 ok=True pains=['PAINS alert']
+DOCK PUBCHEM-155533199: -7.48 ok=True pains=['PAINS alert']
+DOCK PUBCHEM-66642725: -8.05 ok=True pains=[]
+DOCK PUBCHEM-150967523: -8.91 ok=True pains=[]
+SAVED: /home/hatch/workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/hidden_files/dock-HP-030-2026-11-11.json

@@ -1,0 +1,59 @@
+{
+ "pdb_id": "1RGZ",
+ "center": [
+  15.51,
+  20.21,
+  7.63
+ ],
+ "box_size": 22.5,
+ "results": [
+  {
+   "ok": false,
+   "error": "RDKit molecule has 2 fragments. Must have 1.",
+   "label": "CHEMBL212760",
+   "pchembl": 9.0,
+   "measured": "IC50 1.0 nM"
+  },
+  {
+   "ok": false,
+   "error": "RDKit molecule has 2 fragments. Must have 1.",
+   "label": "CHEMBL222758",
+   "pchembl": 9.0,
+   "measured": "IC50 1.0 nM"
+  },
+  {
+   "ok": false,
+   "error": "RDKit molecule has 2 fragments. Must have 1.",
+   "label": "CHEMBL222375",
+   "pchembl": 9.0,
+   "measured": "IC50 1.0 nM"
+  },
+  {
+   "ok": false,
+   "error": "RDKit molecule has 2 fragments. Must have 1.",
+   "label": "CHEMBL378119",
+   "pchembl": 8.7,
+   "measured": "IC50 2.0 nM"
+  },
+  {
+   "ok": false,
+   "error": "RDKit molecule has 2 fragments. Must have 1.",
+   "label": "CHEMBL425963",
+   "pchembl": 8.7,
+   "measured": "IC50 2.0 nM"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -5.82,
+   "poses": [
+    -5.82,
+    -5.69,
+    -5.57
+   ],
+   "pdb_id": "1RGZ",
+   "label": "AVIBACTAM",
+   "pchembl": null,
+   "measured": "known AmpC inhibitor; PubChem CID 9835049"
+  }
+ ]
+}

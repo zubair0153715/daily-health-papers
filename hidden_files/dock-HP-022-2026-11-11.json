@@ -1,0 +1,334 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL6066156 (live)",
+   "status": "ok",
+   "count": 4
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 4
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 5
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Plasmodium falciparum PfATP4",
+  "uniprot": {
+   "accession": "A0A143ZZK9",
+   "entry": null,
+   "gene": "ATP4",
+   "protein": "P-type sodium-transporting ATPase4",
+   "organism": "Plasmodium falciparum (isolate 3D7)",
+   "length": 1264,
+   "function": "Sodium-exporting ATPase (PubMed:23414762, PubMed:29986883, PubMed:31311978, PubMed:36180431). Required for the extrusion of Na(+) from the intraerythrocytic parasites to maintain a low cytosolic concentration of Na(+) (PubMed:23414762, PubMed:25322084, PubMed:25453091, PubMed:29555632, PubMed:36180431)",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/A0A143ZZK9/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [],
+  "chembl_target": {
+   "chembl_id": "CHEMBL6066156",
+   "name": "P-type sodium-transporting ATPase4",
+   "type": "SINGLE PROTEIN",
+   "organism": "Plasmodium falciparum (isolate 3D7)",
+   "components": 1
+  }
+ },
+ "ligands_found": 4,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CC1CC2=C(C3(N1)C4=C(C=CC(=C4)Cl)NC3=O)NC5=CC(=C(C=C25)F)Cl",
+   "similarity": 1.0,
+   "score": 98.5,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.5
+   },
+   "descriptors": {
+    "mw": 390.25,
+    "logp": 4.34,
+    "hbd": 3,
+    "hba": 2,
+    "tpsa": 56.92,
+    "rotatable": 0,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H14Cl2FN3O"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.324,
+    "assays": {
+     "NR-AR": 0.118,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.138,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.407,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.087,
+     "SR-MMP": 0.168,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 44469321,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/44469321"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL5591927",
+   "smiles": "CN1C(=O)c2c(F)cc(-c3cnn(C)c3)cc2N2C(=O)CC[C@@]12C(=O)Nc1cncc(Cl)c1",
+   "similarity": 0.173,
+   "score": 64.7,
+   "score_detail": {
+    "similarity_40": 6.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.8
+   },
+   "descriptors": {
+    "mw": 468.88,
+    "logp": 2.82,
+    "hbd": 1,
+    "hba": 5,
+    "tpsa": 100.43,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H18ClFN6O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.065,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.505,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.201,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.075,
+     "SR-ATAD5": 0.267,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.233,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "8.34",
+    "activity": "EC50 4.6 nM"
+   }
+  },
+  {
+   "rank": 3,
+   "label": "CHEMBL5594154",
+   "smiles": "CN1C(=O)c2c(F)cc(-c3cnn(C)c3)cc2N2C(=O)CC[C@]12C(=O)Nc1cncc(Cl)c1",
+   "similarity": 0.173,
+   "score": 64.7,
+   "score_detail": {
+    "similarity_40": 6.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.8
+   },
+   "descriptors": {
+    "mw": 468.88,
+    "logp": 2.82,
+    "hbd": 1,
+    "hba": 5,
+    "tpsa": 100.43,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H18ClFN6O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.065,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.505,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.201,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.075,
+     "SR-ATAD5": 0.267,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.233,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "7.74",
+    "activity": "EC50 18.2 nM"
+   }
+  },
+  {
+   "rank": 4,
+   "label": "CHEMBL6174048",
+   "smiles": "Cn1cc(-c2ccc3c(C#N)cn(CC(=O)Nc4ccccc4Cl)c3c2)cn1",
+   "similarity": 0.135,
+   "score": 53.0,
+   "score_detail": {
+    "similarity_40": 5.4,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 17.6
+   },
+   "descriptors": {
+    "mw": 389.85,
+    "logp": 4.21,
+    "hbd": 1,
+    "hba": 3,
+    "tpsa": 75.64,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C21H16ClN5O"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.266,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.154,
+     "NR-ER-LBD": 0.076,
+     "NR-PPAR-gamma": 0.176,
+     "SR-ARE": 0.356,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.183,
+     "SR-p53": 0.217
+    }
+   },
+   "known_activity": {
+    "pchembl": "6.82",
+    "activity": "IC50 150.0 nM"
+   }
+  },
+  {
+   "rank": 5,
+   "label": "CHEMBL6175630",
+   "smiles": "Cn1cc(-c2ccc3ccn(CC(=O)Nc4ccccc4Cl)c3c2)cn1",
+   "similarity": 0.12,
+   "score": 52.5,
+   "score_detail": {
+    "similarity_40": 4.8,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 17.7
+   },
+   "descriptors": {
+    "mw": 364.84,
+    "logp": 4.33,
+    "hbd": 1,
+    "hba": 2,
+    "tpsa": 51.85,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C20H17ClN4O"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.383,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.146,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.216,
+     "SR-ARE": 0.338,
+     "SR-ATAD5": 0.067,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.11,
+     "SR-p53": 0.145
+    }
+   },
+   "known_activity": {
+    "pchembl": "6.10",
+    "activity": "IC50 790.0 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": false,
+  "skipped": true,
+  "reason": "No X-ray structure of PfATP4 exists; the pipeline's structure picker is X-ray-only by design. The only experimental structure is the 3.7 A cryo-EM apo structure PDB 9N10 (Haile et al., Nat Commun 2025, PMID 41115914), with no co-crystallised ligand and no ligand-derived grid centre; rigid Vina docking on it would be a hand-rolled centre pick (cf. TYK2 lesson 2026-11-11). Pipeline default picked CHEMBL2074 (human maltase-glucoamylase) as the ChEMBL target; that run's step-2 zero is discarded and the true target CHEMBL6066156 was used instead.",
+  "pdb_id": null
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Plasmodium falciparum PfATP4",
+  "reference": "cipargamin"
+ },
+ "corrections": "ChEMBL target corrected: pipeline default CHEMBL2074 (human maltase-glucoamylase) -> CHEMBL6066156 (P-type sodium-transporting ATPase4, P. falciparum 3D7); docking skipped (see docking.reason); first run_docking.py attempt's step-2 zero is discarded, its UniProt/PubChem steps were correct."
+}

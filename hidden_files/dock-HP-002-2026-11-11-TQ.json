@@ -1,0 +1,26 @@
+{
+ "compound": "thymoquinone",
+ "pubchem_cid": 10281,
+ "smiles": "CC(C)C1=CC(=O)C(C)=CC1=O",
+ "pdb_id": "9F7W",
+ "center": [
+  47.1,
+  6.91,
+  1.39
+ ],
+ "box_size": 22.5,
+ "dock": {
+  "ok": true,
+  "affinity_kcal_mol": -6.25,
+  "poses": [
+   -6.25,
+   -6.21,
+   -6.16
+  ],
+  "pdb_id": "9F7W",
+  "label": "THYMOQUINONE"
+ },
+ "pains": [
+  "PAINS alert"
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "topic": {
+  "target": "FMS-like tyrosine kinase 3 (FLT3)",
+  "reference": "gilteritinib"
+ },
+ "target": {
+  "uniprot": {
+   "accession": "P36888",
+   "gene": "FLT3",
+   "protein": "Receptor-type tyrosine-protein kinase FLT3",
+   "organism": "Homo sapiens"
+  },
+  "chembl_target": "CHEMBL1974"
+ },
+ "chembl_status": "activity endpoint HTTP 500 on 2026-11-11 (verified by direct curl); fallback = PubChem fastsimilarity_2d analogues + known FLT3 inhibitors",
+ "docking": {
+  "ok": true,
+  "pdb_id": "6JQR",
+  "resolution": 2.2,
+  "center": [
+   -28.04,
+   -10.36,
+   -28.99
+  ],
+  "center_note": "co-crystallised gilteritinib (C6F) centroid via dock._ligand_center; 6JQR is the FLT3 kinase domain bound to gilteritinib itself",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.42,
+    "poses": [
+     -10.42,
+     -8.73,
+     -8.33
+    ],
+    "pdb_id": "6JQR",
+    "label": "MIDOSTAURIN",
+    "source": "PubChem CID 9829523",
+    "measured_potency": "FLT3 Kd 7.9 nM (2020 selectivity panel)",
+    "descriptors": {
+     "mw": 570.65,
+     "logp": 5.91,
+     "hbd": 1,
+     "hba": 4,
+     "tpsa": 77.73,
+     "rotatable": 3
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.55,
+    "poses": [
+     -9.55,
+     -9.45,
+     -9.31
+    ],
+    "pdb_id": "6JQR",
+    "label": "CRENOLANIB",
+    "source": "PubChem CID 10366136",
+    "measured_potency": "FLT3 Kd 0.74 nM (Galanis 2014)",
+    "descriptors": {
+     "mw": 443.55,
+     "logp": 3.92,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 78.43,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.91,
+    "poses": [
+     -8.91,
+     -8.74,
+     -8.16
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-150967523",
+    "source": "PubChem CID 150967523, acrylamide scaffold analogue",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 542.68,
+     "logp": 5.49,
+     "hbd": 2,
+     "hba": 8,
+     "tpsa": 82.2,
+     "rotatable": 9
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.28,
+    "poses": [
+     -8.28,
+     -8.06,
+     -8.01
+    ],
+    "pdb_id": "6JQR",
+    "label": "SORAFENIB",
+    "source": "PubChem CID 216239",
+    "measured_potency": "FLT3 IC50 59 nM (Wilhelm 2004)",
+    "descriptors": {
+     "mw": 464.83,
+     "logp": 5.55,
+     "hbd": 3,
+     "hba": 4,
+     "tpsa": 92.35,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.12,
+    "poses": [
+     -8.12,
+     -7.97,
+     -7.91
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-138319679",
+    "source": "PubChem CID 138319679, 4-methoxycyclohexyl analogue",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 580.78,
+     "logp": 3.48,
+     "hbd": 3,
+     "hba": 10,
+     "tpsa": 121.11,
+     "rotatable": 10
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.05,
+    "poses": [
+     -8.05,
+     -7.94,
+     -7.5
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-66642725",
+    "source": "PubChem CID 66642725, 2-methoxy regioisomer analogue",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 566.75,
+     "logp": 2.82,
+     "hbd": 4,
+     "hba": 10,
+     "tpsa": 132.11,
+     "rotatable": 9
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.83,
+    "poses": [
+     -7.83,
+     -7.6,
+     -7.5
+    ],
+    "pdb_id": "6JQR",
+    "label": "GILTERITINIB-REF",
+    "source": "PubChem CID 49803313 (reference drug)",
+    "measured_potency": "FLT3 IC50 0.29 nM (Mori 2017)",
+    "descriptors": {
+     "mw": 552.72,
+     "logp": 2.7,
+     "hbd": 3,
+     "hba": 10,
+     "tpsa": 121.11,
+     "rotatable": 9
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.83,
+    "poses": [
+     -7.83,
+     -7.65,
+     -7.63
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-124086185",
+    "source": "PubChem CID 124086185",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 551.74,
+     "logp": 3.3,
+     "hbd": 3,
+     "hba": 9,
+     "tpsa": 108.22,
+     "rotatable": 9
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.76,
+    "poses": [
+     -7.76,
+     -7.64,
+     -7.63
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-66642864",
+    "source": "PubChem CID 66642864, 4-hydroxycyclohexyl analogue",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 566.75,
+     "logp": 2.82,
+     "hbd": 4,
+     "hba": 10,
+     "tpsa": 132.11,
+     "rotatable": 9
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.75,
+    "poses": [
+     -7.75,
+     -7.68,
+     -7.59
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-166626288",
+    "source": "PubChem CID 166626288, N-desmethyl-piperazine analogue",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 538.7,
+     "logp": 2.36,
+     "hbd": 4,
+     "hba": 10,
+     "tpsa": 129.9,
+     "rotatable": 9
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.7,
+    "poses": [
+     -7.7,
+     -7.07,
+     -6.85
+    ],
+    "pdb_id": "6JQR",
+    "label": "QUIZARTINIB",
+    "source": "PubChem CID 24889392",
+    "measured_potency": "FLT3-ITD autophosphorylation IC50 1.1 nM (Zarrinkar 2009)",
+    "descriptors": {
+     "mw": 560.68,
+     "logp": 5.86,
+     "hbd": 2,
+     "hba": 8,
+     "tpsa": 106.16,
+     "rotatable": 7
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.48,
+    "poses": [
+     -7.48,
+     -7.44,
+     -7.26
+    ],
+    "pdb_id": "6JQR",
+    "label": "PUBCHEM-155533199",
+    "source": "PubChem CID 155533199, isopropylamino analogue",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 510.69,
+     "logp": 2.93,
+     "hbd": 3,
+     "hba": 9,
+     "tpsa": 111.88,
+     "rotatable": 9
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   }
+  ]
+ },
+ "pipeline_run1": "hidden_files/dock-HP-030-2026-11-11-RUN1-QUERY-ONLY.json (gilteritinib re-dock -8.01 on 6JQR; ChEMBL target lookup failed then)"
+}

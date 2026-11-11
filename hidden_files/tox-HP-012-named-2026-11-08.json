@@ -1,0 +1,128 @@
+{
+ "vaborbactam": {
+  "ok": true,
+  "mode": "knn_readacross",
+  "k": 15,
+  "max_similarity": 0.342,
+  "neighbors": [
+   {
+    "smiles": "CC(=O)OCC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)Cc3cccs3)[C@H]2SC1",
+    "similarity": 0.342
+   },
+   {
+    "smiles": "CCC(=O)N(c1ccccc1)C1CCN(Cc2cccs2)CC1",
+    "similarity": 0.318
+   },
+   {
+    "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CCc2cccs2)CC1",
+    "similarity": 0.309
+   },
+   {
+    "smiles": "CO[C@@]1(NC(=O)Cc2cccs2)C(=O)N2C(C(=O)O)=C(COC(N)=O)CS[C@@H]21",
+    "similarity": 0.3
+   },
+   {
+    "smiles": "CCC(=O)N(c1ccccc1)C1CCN(C(C)Cc2cccs2)CC1",
+    "similarity": 0.3
+   }
+  ],
+  "assays": {
+   "NR-AR": 0.0,
+   "NR-AR-LBD": 0.0,
+   "NR-AhR": 0.0,
+   "NR-Aromatase": 0.0,
+   "NR-ER": 0.0,
+   "NR-ER-LBD": 0.0,
+   "NR-PPAR-gamma": 0.0,
+   "SR-ARE": 0.319,
+   "SR-ATAD5": 0.0,
+   "SR-HSE": 0.101,
+   "SR-MMP": 0.0,
+   "SR-p53": 0.0
+  }
+ },
+ "relebactam": {
+  "ok": true,
+  "mode": "knn_readacross",
+  "k": 15,
+  "max_similarity": 0.276,
+  "neighbors": [
+   {
+    "smiles": "O=C(CN1CCNCC1)NC1CCCCC1",
+    "similarity": 0.276
+   },
+   {
+    "smiles": "O=S(=O)(O)NC1CCCCC1",
+    "similarity": 0.212
+   },
+   {
+    "smiles": "CN1[C@H]2CC[C@@H]1C[C@H](NC(=O)n1c(=O)[nH]c3ccccc31)C2",
+    "similarity": 0.211
+   },
+   {
+    "smiles": "CCCCS(=O)(=O)N[C@@H](Cc1ccc(OCCCCC2CCNCC2)cc1)C(=O)O",
+    "similarity": 0.21
+   },
+   {
+    "smiles": "O=c1[nH]c2ccccc2n1C1CCNCC1",
+    "similarity": 0.21
+   }
+  ],
+  "assays": {
+   "NR-AR": 0.0,
+   "NR-AR-LBD": 0.0,
+   "NR-AhR": 0.0,
+   "NR-Aromatase": 0.0,
+   "NR-ER": 0.081,
+   "NR-ER-LBD": 0.081,
+   "NR-PPAR-gamma": 0.0,
+   "SR-ARE": 0.0,
+   "SR-ATAD5": 0.0,
+   "SR-HSE": 0.0,
+   "SR-MMP": 0.0,
+   "SR-p53": 0.0
+  }
+ },
+ "taniborbactam": {
+  "ok": true,
+  "mode": "knn_readacross",
+  "k": 15,
+  "max_similarity": 0.23,
+  "neighbors": [
+   {
+    "smiles": "CC(CNC1CCCCC1)OC(=O)c1ccccc1",
+    "similarity": 0.23
+   },
+   {
+    "smiles": "O=C(O)c1ccccc1NCCc1ccccc1",
+    "similarity": 0.221
+   },
+   {
+    "smiles": "O=C(O)c1cccc(C(=O)O)c1C(=O)O",
+    "similarity": 0.22
+   },
+   {
+    "smiles": "O=C(O)CCCCCCNC1c2ccccc2CCc2ccccc21",
+    "similarity": 0.216
+   },
+   {
+    "smiles": "O=C1CC[C@@]2(O)[C@H]3Cc4ccc(O)c5c4[C@@]2(CCN3CC2CC2)[C@H]1O5",
+    "similarity": 0.213
+   }
+  ],
+  "assays": {
+   "NR-AR": 0.07,
+   "NR-AR-LBD": 0.0,
+   "NR-AhR": 0.154,
+   "NR-Aromatase": 0.078,
+   "NR-ER": 0.0,
+   "NR-ER-LBD": 0.0,
+   "NR-PPAR-gamma": 0.069,
+   "SR-ARE": 0.0,
+   "SR-ATAD5": 0.071,
+   "SR-HSE": 0.0,
+   "SR-MMP": 0.091,
+   "SR-p53": 0.0
+  }
+ }
+}
