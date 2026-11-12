@@ -1,0 +1,509 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL614448 (live)",
+   "status": "ok",
+   "count": 5
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 5
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 6
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "P0A2I4",
+  "uniprot": {
+   "accession": "P0A2I4",
+   "entry": null,
+   "gene": "gyrB",
+   "protein": "DNA gyrase subunit B",
+   "organism": "Salmonella typhi",
+   "length": 804,
+   "function": "A type II topoisomerase that negatively supercoils closed circular double-stranded (ds) DNA in an ATP-dependent manner to modulate DNA topology and maintain chromosomes in an underwound state. Negative supercoiling favors strand separation, and DNA replication, transcription, recombination and repair, all of which involve strand separation. Also able to catalyze the interconversion of other topological isomers of dsDNA rings, including catenanes and knotted rings. Type II topoisomerases break and join 2 DNA strands simultaneously in an ATP-dependent manner",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P0A2I4/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL614448",
+   "name": "Salmonella typhi",
+   "type": "ORGANISM",
+   "organism": "Salmonella enterica subsp. enterica serovar Typhi",
+   "components": 0
+  }
+ },
+ "ligands_found": 5,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCC1C(C(C(N(CC(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)C)O)(C)O",
+   "similarity": 1.0,
+   "score": 70.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 0,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 20.0
+   },
+   "descriptors": {
+    "mw": 749.0,
+    "logp": 1.9,
+    "hbd": 5,
+    "hba": 14,
+    "tpsa": 180.08,
+    "rotatable": 7,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C38H72N2O12"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "measured",
+    "max_similarity": 1.0,
+    "assays": {
+     "NR-AR": 0,
+     "NR-AR-LBD": 0,
+     "NR-AhR": 0,
+     "NR-Aromatase": 0,
+     "NR-ER": 0,
+     "NR-ER-LBD": 0,
+     "NR-PPAR-gamma": 0,
+     "SR-ARE": null,
+     "SR-ATAD5": 0,
+     "SR-HSE": 0,
+     "SR-MMP": 0,
+     "SR-p53": 0
+    }
+   },
+   "pubchem": {
+    "cid": 447043,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/447043"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL5171589",
+   "smiles": "Clc1ccc2c(c1)C(NCCN1CCNCC1)=Nc1ccccc1O2",
+   "similarity": 0.076,
+   "score": 61.9,
+   "score_detail": {
+    "similarity_40": 3.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.9
+   },
+   "descriptors": {
+    "mw": 356.86,
+    "logp": 3.02,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 48.89,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H21ClN4O"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.073,
+     "NR-AR-LBD": 0.073,
+     "NR-AhR": 0.08,
+     "NR-Aromatase": 0.169,
+     "NR-ER": 0.102,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.165,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "known_activity": {
+    "pchembl": "6.55",
+    "activity": "EC50 280.0 nM"
+   }
+  },
+  {
+   "rank": 3,
+   "label": "CHEMBL3585716",
+   "smiles": "O=C1O/C(=C\\c2ccc(O)c(Br)c2)C(c2ccc(O)c(Br)c2)=C1C(=O)c1ccco1",
+   "similarity": 0.041,
+   "score": 39.9,
+   "score_detail": {
+    "similarity_40": 1.6,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.3
+   },
+   "descriptors": {
+    "mw": 532.14,
+    "logp": 5.45,
+    "hbd": 2,
+    "hba": 6,
+    "tpsa": 96.97,
+    "rotatable": 4,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C22H12Br2O6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.136,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.143,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.07,
+     "SR-ARE": 0.227,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.194,
+     "SR-MMP": 0.154,
+     "SR-p53": 0.075
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.44",
+    "activity": "IC50 3660.0 nM"
+   }
+  },
+  {
+   "rank": 4,
+   "label": "CHEMBL3585717",
+   "smiles": "O=C1O/C(=C\\c2ccc(O)c(Br)c2)C(c2cc(Br)c(O)c(Br)c2)=C1C(=O)c1ccco1",
+   "similarity": 0.04,
+   "score": 39.2,
+   "score_detail": {
+    "similarity_40": 1.6,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.6
+   },
+   "descriptors": {
+    "mw": 611.04,
+    "logp": 6.21,
+    "hbd": 2,
+    "hba": 6,
+    "tpsa": 96.97,
+    "rotatable": 4,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C22H11Br3O6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.067,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.081,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.094,
+     "SR-ARE": 0.34,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.225,
+     "SR-MMP": 0.36,
+     "SR-p53": 0.291
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.50",
+    "activity": "IC50 3190.0 nM"
+   }
+  },
+  {
+   "rank": 5,
+   "label": "CHEMBL3585709",
+   "smiles": "O=C1O/C(=C\\c2ccc(O)c(Br)c2)C(c2ccc(O)c(Br)c2)=C1C(=O)c1ccc(O)c(Br)c1",
+   "similarity": 0.042,
+   "score": 38.2,
+   "score_detail": {
+    "similarity_40": 1.7,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 16.5
+   },
+   "descriptors": {
+    "mw": 637.07,
+    "logp": 6.33,
+    "hbd": 3,
+    "hba": 6,
+    "tpsa": 104.06,
+    "rotatable": 4,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C24H13Br3O6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.137,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.238,
+     "NR-Aromatase": 0.217,
+     "NR-ER": 0.294,
+     "NR-ER-LBD": 0.273,
+     "NR-PPAR-gamma": 0.073,
+     "SR-ARE": 0.099,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.217,
+     "SR-MMP": 0.484,
+     "SR-p53": 0.078
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.51",
+    "activity": "IC50 3060.0 nM"
+   }
+  },
+  {
+   "rank": 6,
+   "label": "CHEMBL3585711",
+   "smiles": "O=C1O/C(=C\\c2ccc(O)c(Br)c2)C(c2cc(Br)c(O)c(Br)c2)=C1C(=O)c1ccc(O)c(Br)c1",
+   "similarity": 0.041,
+   "score": 37.8,
+   "score_detail": {
+    "similarity_40": 1.6,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 16.2
+   },
+   "descriptors": {
+    "mw": 715.97,
+    "logp": 7.09,
+    "hbd": 3,
+    "hba": 6,
+    "tpsa": 104.06,
+    "rotatable": 4,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C24H12Br4O6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.062,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.218,
+     "NR-Aromatase": 0.082,
+     "NR-ER": 0.255,
+     "NR-ER-LBD": 0.236,
+     "NR-PPAR-gamma": 0.113,
+     "SR-ARE": 0.24,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.241,
+     "SR-MMP": 0.599,
+     "SR-p53": 0.206
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.57",
+    "activity": "IC50 2720.0 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "6J90",
+  "resolution": 2.2,
+  "center": [
+   -12.65,
+   51.02,
+   28.42
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.41,
+    "poses": [
+     -9.41,
+     -8.72,
+     -8.63
+    ],
+    "pdb_id": "6J90",
+    "label": "CHEMBL3585716",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.28,
+    "poses": [
+     -9.28,
+     -8.9,
+     -8.66
+    ],
+    "pdb_id": "6J90",
+    "label": "CHEMBL5171589",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.27,
+    "poses": [
+     -9.27,
+     -8.77,
+     -8.73
+    ],
+    "pdb_id": "6J90",
+    "label": "CHEMBL3585709",
+    "rank": 5
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.39,
+    "poses": [
+     -8.39,
+     -8.39,
+     -7.8
+    ],
+    "pdb_id": "6J90",
+    "label": "CHEMBL3585717",
+    "rank": 4
+   },
+   {
+    "ok": false,
+    "error": "Command '['/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/vina', '--receptor', '/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/6J90_rec.pdbqt', '--ligand', '/home/hatch",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Salmonella Typhi DNA gyrase subunit B (gyrB)",
+  "reference": "azithromycin"
+ },
+ "correction": "First run resolved ChEMBL to CHEMBL2074 maltase-glucoamylase and docked iminosugars; that run's numbers are discarded (kept in dock-HP-051-2026-11-12.json for audit). Corrected run: target by UniProt accession P0A2I4 (gyrB) and ChEMBL target CHEMBL614448 'Salmonella typhi' (ORGANISM, verified on the ChEMBL website 2026-11-12) \u2014 no S. Typhi DNA gyrase protein target exists in ChEMBL, so the bioactivities are phenotypic whole-cell data, not gyrase binding data. Bioactivities are the verbatim ChEMBL API response saved to hidden_files/chembl-activities-CHEMBL614448-2026-11-12.json (complete set: 5 activities with pChEMBL >= 5) because the live activity endpoint timed out / returned HTTP 500 pages throughout 2026-11-12."
+}

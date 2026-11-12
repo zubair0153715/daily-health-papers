@@ -532,6 +532,61 @@
    "title": "No Approved Dengue Drug, No Docking Winner: NSC135618 and ARDP0006 Are Indistinguishable by Vina on the DENV NS2B\u2013NS3 Protease Allosteric and Active-Site Structures",
    "topic": "Dengue NS2B-NS3 protease \u2014 no approved dengue drug",
    "topic_id": "HP-041"
+  },
+  {
+   "date": "2026-11-12",
+   "topic_id": "HP-036",
+   "topic": "Androgen receptor \u2014 enzalutamide resistance in prostate cancer",
+   "title": "Four Sub-Nanomolar Androgen Receptor Ligands Dock in Exact Measured-Potency Order on 8E1A \u2014 While Enzalutamide Itself Fails to Dock",
+   "file": "files/2026-11-12-health-ar-enzalutamide-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-12",
+   "topic_id": "HP-042",
+   "topic": "ACE inhibition \u2014 cough-free alternatives",
+   "title": "Vina Ranks Lisinopril Last on ACE: A Centre-Audited Benchmark of Enalaprilat and Two ChEMBL Leads Against Lisinopril on the C-Domain Structure 6H5W",
+   "file": "files/2026-11-12-health-ace-lisinopril-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-12",
+   "topic_id": "HP-003",
+   "topic": "PTP1B inhibition for insulin resistance \u2014 no approved drug yet",
+   "title": "No Rank Correlation on the True PTP1B Active Site: A Centre-Audited Re-Dock of Four ChEMBL Leads Against Ertiprotafib on 2F71, After the Pipeline Docked the Wrong Protein",
+   "file": "files/2026-11-12-health-ptp1b-ertiprotafib-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-12",
+   "topic_id": "HP-034",
+   "topic": "CDK4/6 inhibition in breast cancer \u2014 palbociclib benchmark",
+   "title": "The Weakest Measured Binder Docks Best on CDK6: A Centre-Audited Benchmark of Four ChEMBL Leads Against Palbociclib on 6OQO",
+   "file": "files/2026-11-12-health-cdk6-palbociclib-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-12",
+   "topic_id": "HP-051",
+   "topic": "XDR typhoid \u2014 S. Typhi DNA gyrase vs azithromycin",
+   "title": "Four Whole-Cell-Active Compounds Dock Into S. Typhi GyrB at \u22128.39 to \u22129.41 kcal/mol, But Azithromycin Cannot Be Docked and the Potencies Are Phenotypic, Not Gyrase Binding",
+   "file": "files/2026-11-12-health-typhoid-gyrase-azithromycin-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
   }
  ],
  "used_topic_ids": [
@@ -575,6 +630,11 @@
   "HP-030",
   "HP-016",
   "HP-002",
-  "HP-041"
+  "HP-041",
+  "HP-034",
+  "HP-051",
+  "HP-042",
+  "HP-036",
+  "HP-003"
  ]
 }

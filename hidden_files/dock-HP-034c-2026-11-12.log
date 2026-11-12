@@ -1,0 +1,27 @@
+[11:23:30] WARNING: not removing hydrogen atom without neighbors
+[11:23:30] Explicit valence for atom # 8 Al, 6, is greater than permitted
+[11:23:30] Explicit valence for atom # 3 Al, 6, is greater than permitted
+[11:23:30] Explicit valence for atom # 4 Al, 6, is greater than permitted
+[11:23:30] Explicit valence for atom # 4 Al, 6, is greater than permitted
+[11:23:30] Explicit valence for atom # 9 Al, 6, is greater than permitted
+[11:23:30] Explicit valence for atom # 5 Al, 6, is greater than permitted
+[11:23:31] Explicit valence for atom # 16 Al, 6, is greater than permitted
+[11:23:31] Explicit valence for atom # 20 Al, 6, is greater than permitted
+PIPELINE OK: True
+STEP: {'step': 1, 'name': 'Target identification', 'source': 'UniProtKB + ChEMBL (live)', 'status': 'ok'}
+STEP: {'step': 2, 'name': 'Known ligand retrieval', 'source': 'ChEMBL bioactivities for CHEMBL2508 (live)', 'status': 'ok', 'count': 21}
+STEP: {'step': 3, 'name': 'Query compound verification', 'source': 'PubChem PUG REST (live)', 'status': 'ok'}
+STEP: {'step': 4, 'name': 'Similarity screen vs known actives', 'source': 'RDKit Morgan fingerprints, Tanimoto', 'status': 'ok', 'count': 21}
+STEP: {'step': 5, 'name': 'ADMET + safety panel', 'source': 'RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)', 'status': 'ok'}
+STEP: {'step': 6, 'name': 'Lead ranking', 'source': 'composite score: similarity×40 + Lipinski×20 + Veber×10 + PAINS×10 + tox×20', 'status': 'ok', 'count': 22}
+STEP: {'step': 7, 'name': 'Molecular docking', 'source': 'AutoDock Vina vs PDB structure (RCSB, live)', 'status': 'skipped', 'pdb_id': None}
+UNIPROT: Q00534 None Homo sapiens
+CHEMBL TARGET (corrected): CHEMBL2508 Cyclin-dependent kinase 6
+LEADS: 22
+DOCK_LEADS: True 6OQO None
+  DOCK: CHEMBL3237704 -11.18 True
+  DOCK: CHEMBL5751717 -10.24 True
+  DOCK: QUERY -10.19 True
+  DOCK: CHEMBL5280928 -9.98 True
+  DOCK: CHEMBL5892046 -9.78 True
+RAW_SAVED: ../hidden_files/dock-HP-034c-2026-11-12.json

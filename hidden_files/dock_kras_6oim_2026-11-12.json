@@ -1,0 +1,147 @@
+{
+ "ok": true,
+ "pdb_id": "6OIM",
+ "resolution": 1.65,
+ "center": [
+  1.87,
+  -8.26,
+  -1.36
+ ],
+ "center_audit": "MOV centroid via dock._ligand_center; GDP excluded as cofactor",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Non-covalent Vina: cannot model the covalent Cys12 bond. Scores are shape/complementarity only.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.14,
+   "poses": [
+    -8.14,
+    -8.06,
+    -7.45
+   ],
+   "pdb_id": "6OIM",
+   "label": "sotorasib",
+   "smiles": "C[C@H]1CN(CCN1C2=NC(=O)N(C3=NC(=C(C=C32)F)C4=C(C=CC=C4F)O)C5=C(C=CN=C5C(C)C)C)C(=O)C=C",
+   "measured_potency": "Ki 11 nM (GDP-KRAS G12C); pERK IC50 68 nM; H358 IC50 0.03 uM (Lanman 2020)",
+   "descriptors": {
+    "mw": 560.61,
+    "logp": 4.48,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 104.45,
+    "rotatable": 5,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C30H30F2N6O3"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.06,
+   "poses": [
+    -8.06,
+    -7.6,
+    -7.34
+   ],
+   "pdb_id": "6OIM",
+   "label": "divarasib",
+   "smiles": "C[C@H]1CN(CCN1C2=NC(=NC3=C(C(=C(C=C32)Cl)C4=C(C(=CC(=N4)N)C)C(F)(F)F)F)OC[C@@H]5CCCN5C)C(=O)C=C",
+   "measured_potency": "nucleotide-exchange IC50 2.4 +/- 0.2 nM (Sci Rep 2025); HCC1171 EC50 2 nM",
+   "descriptors": {
+    "mw": 622.07,
+    "logp": 5.09,
+    "hbd": 1,
+    "hba": 8,
+    "tpsa": 100.71,
+    "rotatable": 6,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C29H32ClF4N7O2"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.58,
+   "poses": [
+    -7.58,
+    -7.56,
+    -7.55
+   ],
+   "pdb_id": "6OIM",
+   "label": "adagrasib",
+   "smiles": "CN1CCC[C@H]1COC2=NC3=C(CCN(C3)C4=CC=CC5=C4C(=CC=C5)Cl)C(=N2)N6CCN([C@H](C6)CC#N)C(=O)C(=C)F",
+   "measured_potency": "cellular signalling IC50 ~5 nM; viability 10-973 nM (Hallin 2020)",
+   "descriptors": {
+    "mw": 604.13,
+    "logp": 4.73,
+    "hbd": 0,
+    "hba": 8,
+    "tpsa": 88.83,
+    "rotatable": 7,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C32H35ClFN7O2"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.03,
+   "poses": [
+    -6.03,
+    -5.99,
+    -5.65
+   ],
+   "pdb_id": "6OIM",
+   "label": "CHEMBL4855521",
+   "smiles": "[2H]C1([2H])Oc2ccc(F)c(F)c2-c2nc3c(cc2Cl)c(N2C[C@@H](C)N(C(=O)C=C)C[C@@H]2C)nc(=O)n3-c2c(ccnc2C(C)C)OC1([2H])[2H]",
+   "measured_potency": "ChEMBL IC50 0.51 nM vs KRAS G12C/C51S/C80L/C118S (pChEMBL 9.29); deuterated",
+   "descriptors": {
+    "mw": 641.11,
+    "logp": 5.28,
+    "hbd": 0,
+    "hba": 8,
+    "tpsa": 102.68,
+    "rotatable": 3,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C32H31ClF2N6O4"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -5.51,
+   "poses": [
+    -5.51,
+    -5.46,
+    -5.4
+   ],
+   "pdb_id": "6OIM",
+   "label": "CHEMBL4856277",
+   "smiles": "C=CC(=O)N1CCN(c2nc(=O)n3c4nc(c(Cl)cc24)-c2c(F)cccc2OCC(F)(F)CCc2ccnc(C(C)C)c2-3)[C@@H](C)C1",
+   "measured_potency": "ChEMBL IC50 0.56 nM vs KRAS G12C/C51S/C80L/C118S (pChEMBL 9.25)",
+   "descriptors": {
+    "mw": 653.11,
+    "logp": 5.94,
+    "hbd": 0,
+    "hba": 7,
+    "tpsa": 93.45,
+    "rotatable": 3,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C33H32ClF3N6O3"
+   },
+   "pains": []
+  }
+ ]
+}
