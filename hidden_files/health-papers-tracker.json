@@ -587,6 +587,61 @@
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null
+  },
+  {
+   "date": "2026-11-13",
+   "topic_id": "HP-013",
+   "topic": "MRSA PBP2a vs ceftaroline",
+   "title": "Vina Ranks the Weakest Measured PBP2a Binder First: Zero Rank Correlation on Two MRSA Acyl-Enzyme Structures",
+   "file": "files/2026-11-13-health-pbp2a-ceftaroline-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-13",
+   "topic_id": "HP-027",
+   "topic": "EGFR T790M/C797S triple mutant vs osimertinib",
+   "title": "CH7233163 Re-Docks Best and Osimertinib Near Worst on Triple-Mutant EGFR (6LUB): a Directional Signal, Not a Ranking",
+   "file": "files/2026-11-13-health-egfr-triple-mutant-ch7233163.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-13",
+   "topic_id": "HP-044",
+   "topic": "Factor Xa vs rivaroxaban",
+   "title": "Rivaroxaban Docks Worst on Its Own Factor Xa Structure (2W26): a Negative Rank Correlation for Three Direct Oral Anticoagulants",
+   "file": "files/2026-11-13-health-factor-xa-rivaroxaban-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-13",
+   "topic_id": "HP-049",
+   "topic": "JAK2 vs ruxolitinib",
+   "title": "Momelotinib Re-Docks Best on JAK2 (8BXH) With a PAINS Alert, and the Rank Correlation Flips Sign Between Kd and IC50",
+   "file": "files/2026-11-13-health-jak2-ruxolitinib-benchmark.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-13",
+   "topic_id": "HP-017",
+   "topic": "H. pylori urease vs clarithromycin regimen",
+   "title": "Urease Inhibitors Dock Weakly Without Ni2+ on H. pylori Urease (1E9Z), and Clarithromycin Is Rejected at +45.73 kcal/mol",
+   "file": "files/2026-11-13-health-h-pylori-urease-flurofamide.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
   }
  ],
  "used_topic_ids": [
@@ -635,6 +690,11 @@
   "HP-051",
   "HP-042",
   "HP-036",
-  "HP-003"
+  "HP-003",
+  "HP-013",
+  "HP-027",
+  "HP-044",
+  "HP-017",
+  "HP-049"
  ]
 }

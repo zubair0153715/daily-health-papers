@@ -1,0 +1,148 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Epidermal growth factor receptor (EGFR, mutant)",
+  "uniprot": {
+   "accession": "P00533",
+   "entry": null,
+   "gene": "EGFR",
+   "protein": "Epidermal growth factor receptor",
+   "organism": "Homo sapiens",
+   "length": 1210,
+   "function": "Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses (PubMed:10805725, PubMed:12297050, PubMed:12620237, PubMed:12873986, PubMed:15374980, PubMed:15590694, PubMed:17115032, PubMed:19560417, PubMed:21258366, PubMed:27153536, PubMed:2790960, PubMed:35538033, PubMed:9488479). Known ligands include EGF, TGFA/TGF-alpha, AREG, epigen/EPGN, BTC/betacellulin, epiregulin/EREG and HBEGF/heparin-binding EGF (PubMed:12297049, PubMed:15611079, PubMed:17909029, PubMed:20837704, PubMed:27153536, PubMed:2790960, PubMed:7679104, PubMed:8144591, PubMed:9419975). Ligand binding triggers receptor homo- and/or heterodimerization and autophosphorylation on key cytoplasmic residues (PubMed:10026169, ",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P00533/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CN1C=C(C2=CC=CC=C21)C3=NC(=NC=C3)NC4=C(C=C(C(=C4)NC(=O)C=C)N(C)CCN(C)C)OC",
+   "similarity": 1.0,
+   "score": 97.6,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.6
+   },
+   "descriptors": {
+    "mw": 499.62,
+    "logp": 4.51,
+    "hbd": 2,
+    "hba": 7,
+    "tpsa": 87.55,
+    "rotatable": 10,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C28H33N7O2"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.262,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.274,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.144,
+     "NR-ER-LBD": 0.075,
+     "NR-PPAR-gamma": 0.077,
+     "SR-ARE": 0.274,
+     "SR-ATAD5": 0.083,
+     "SR-HSE": 0.088,
+     "SR-MMP": 0.256,
+     "SR-p53": 0.157
+    }
+   },
+   "pubchem": {
+    "cid": 71496458,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71496458"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "8A27",
+  "resolution": 1.07,
+  "center": [
+   23.81,
+   -10.62,
+   -11.55
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.56,
+    "poses": [
+     -8.56,
+     -8.04,
+     -7.93
+    ],
+    "pdb_id": "8A27",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Epidermal growth factor receptor (EGFR, mutant)",
+  "reference": "osimertinib"
+ }
+}

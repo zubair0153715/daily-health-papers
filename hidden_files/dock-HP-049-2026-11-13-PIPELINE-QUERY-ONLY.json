@@ -1,0 +1,148 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Janus kinase 2 (JAK2)",
+  "uniprot": {
+   "accession": "O60674",
+   "entry": null,
+   "gene": "JAK2",
+   "protein": "Tyrosine-protein kinase JAK2",
+   "organism": "Homo sapiens",
+   "length": 1132,
+   "function": "Non-membrane spanning protein tyrosine kinase that phosphorylates type I receptors such as growth hormone (GHR), prolactin (PRLR), leptin (LEPR), erythropoietin (EPOR), thrombopoietin receptor (MPL/TPOR); or type II receptors including IFN-alpha, IFN-beta, IFN-gamma and multiple interleukins (PubMed:15690087, PubMed:15899890, PubMed:7615558, PubMed:9188471, PubMed:9657743). Functionally, plays a pivotal role in signal transduction and is involved in various processes such as cell growth, development, differentiation or histone modifications. Mediates essential signaling events in both innate and adaptive immunity. Mechanistically, following ligand-binding to cell surface receptors, phosphorylates specific tyrosine residues on the cytoplasmic tails of the receptor, creating docking sites fo",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/O60674/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "C1CCC(C1)C(CC#N)N2C=C(C=N2)C3=C4C=CNC4=NC=N3",
+   "similarity": 1.0,
+   "score": 98.6,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.6
+   },
+   "descriptors": {
+    "mw": 306.37,
+    "logp": 3.47,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 83.18,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C17H18N6"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.192,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.159,
+     "NR-Aromatase": 0.182,
+     "NR-ER": 0.085,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.073,
+     "SR-ARE": 0.084,
+     "SR-ATAD5": 0.079,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.12,
+     "SR-p53": 0.068
+    }
+   },
+   "pubchem": {
+    "cid": 25126798,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/25126798"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "8BXH",
+  "resolution": 1.3,
+  "center": [
+   -11.91,
+   15.38,
+   20.25
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.71,
+    "poses": [
+     -8.71,
+     -8.45,
+     -8.39
+    ],
+    "pdb_id": "8BXH",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Janus kinase 2 (JAK2)",
+  "reference": "ruxolitinib"
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "topic": {
+  "target": "Janus kinase 2 (JAK2)",
+  "reference": "ruxolitinib",
+  "topic_id": "HP-049",
+  "date": "2026-11-13"
+ },
+ "target": {
+  "uniprot": {
+   "accession": "O60674",
+   "gene": "JAK2",
+   "protein": "Tyrosine-protein kinase JAK2",
+   "organism": "Homo sapiens"
+  },
+  "chembl_target": "not retrieved: ChEMBL API HTTP 500, 2026-11-13 (target ID not asserted)",
+  "chembl_status": "ChEMBL API HTTP 500 on all endpoints 2026-11-13; fallback = PubChem-verified compounds + Miao 2024 Table 1 potencies"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "8BXH",
+  "resolution": 1.3,
+  "center": [
+   -11.913905660377358,
+   15.375679245283019,
+   20.246905660377358
+  ],
+  "center_note": "co-crystallised momelotinib centroid via dock._ligand_center; distance to largest HETATM group centroid 0.0 A (ATP site)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.73,
+    "poses": [
+     -9.73,
+     -9.64,
+     -9.53
+    ],
+    "pdb_id": "8BXH",
+    "label": "MOMELOTINIB",
+    "source": "PubChem CID 25062766 (co-crystallised ligand of 8BXH; re-dock control)",
+    "measured_potency": "JAK2 Kd 6.7 nM, IC50 11 nM (Miao 2024 Table 1)",
+    "descriptors": {
+     "mw": 414.47,
+     "logp": 2.98,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 103.17,
+     "rotatable": 6
+    },
+    "pains": [
+     "PAINS alert"
+    ]
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.82,
+    "poses": [
+     -8.82,
+     -8.77,
+     -8.5
+    ],
+    "pdb_id": "8BXH",
+    "label": "FEDRATINIB",
+    "source": "PubChem CID 16722836",
+    "measured_potency": "JAK2 Kd 4.3 nM, IC50 10 nM (Miao 2024 Table 1)",
+    "descriptors": {
+     "mw": 524.69,
+     "logp": 4.82,
+     "hbd": 3,
+     "hba": 8,
+     "tpsa": 108.48,
+     "rotatable": 10
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.73,
+    "poses": [
+     -8.73,
+     -8.57,
+     -8.24
+    ],
+    "pdb_id": "8BXH",
+    "label": "RUXOLITINIB-REF",
+    "source": "PubChem CID 25126798 (reference drug)",
+    "measured_potency": "JAK2 Kd 0.8 nM, IC50 3.2 nM (Miao 2024 Table 1)",
+    "descriptors": {
+     "mw": 306.37,
+     "logp": 3.47,
+     "hbd": 1,
+     "hba": 4,
+     "tpsa": 83.18,
+     "rotatable": 4
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.64,
+    "poses": [
+     -8.64,
+     -8.5,
+     -8.01
+    ],
+    "pdb_id": "8BXH",
+    "label": "BARICITINIB",
+    "source": "PubChem CID 44205240 (JAK1/JAK2 comparator)",
+    "measured_potency": "no head-to-head JAK2 value from Miao 2024 Table 1",
+    "descriptors": {
+     "mw": 371.43,
+     "logp": 1.1,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 120.56,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.22,
+    "poses": [
+     -8.22,
+     -8.0,
+     -7.88
+    ],
+    "pdb_id": "8BXH",
+    "label": "TOFACITINIB",
+    "source": "PubChem CID 9926791 (JAK1/JAK3-leaning comparator)",
+    "measured_potency": "no head-to-head JAK2 value from Miao 2024 Table 1",
+    "descriptors": {
+     "mw": 312.38,
+     "logp": 1.54,
+     "hbd": 1,
+     "hba": 5,
+     "tpsa": 88.91,
+     "rotatable": 3
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.67,
+    "poses": [
+     -7.67,
+     -7.39,
+     -7.07
+    ],
+    "pdb_id": "8BXH",
+    "label": "PACRITINIB",
+    "source": "PubChem CID 46216796",
+    "measured_potency": "JAK2 Kd 6.6 nM, IC50 14 nM (Miao 2024 Table 1)",
+    "descriptors": {
+     "mw": 472.59,
+     "logp": 4.96,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 68.74,
+     "rotatable": 4
+    },
+    "pains": []
+   }
+  ]
+ },
+ "pipeline_note": "Pipeline run dock-HP-049-2026-11-13-PIPELINE-QUERY-ONLY.json docked ruxolitinib alone (-8.71) on the same structure/centre; re-docked here under the same protocol with comparators."
+}

@@ -1,0 +1,129 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Penicillin-binding protein 2a (PBP2a)",
+  "uniprot": {
+   "accession": "Q8DNB6",
+   "entry": null,
+   "gene": "pbp2a",
+   "protein": "Penicillin-binding protein 2a",
+   "organism": "Streptococcus pneumoniae (strain ATCC BAA-255 / R6)",
+   "length": 731,
+   "function": "Cell wall formation. Synthesis of cross-linked peptidoglycan (PG) from the lipid intermediates (By similarity). Binds dansylated lipid II and catalyzes the polymerization of glycan chains (PubMed:12867450, PubMed:22487093). Hydrolyzes S2d (N-benzoyl-D-alanylmercaptoacetic acid) molecule, a synthetic thiolester analog of cell wall stem peptide (PubMed:10217767, PubMed:22487093). Active against bocillin, a fluorescent penicillin. No transpeptidase activity with non-fluorescent lysine-containing lipid II as substrate (PubMed:22487093)",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q8DNB6/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCON=C(C1=NSC(=N1)NP(=O)(O)O)C(=O)NC2C3N(C2=O)C(=C(CS3)SC4=NC(=CS4)C5=CC=[N+](C=C5)C)C(=O)[O-]",
+   "similarity": 1.0,
+   "score": 70.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 0,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 20.0
+   },
+   "descriptors": {
+    "mw": 684.7,
+    "logp": -0.12,
+    "hbd": 4,
+    "hba": 14,
+    "tpsa": 223.24,
+    "rotatable": 11,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C22H21N8O8PS4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.419,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 9852981,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9852981"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": false,
+  "error": "no_pdb_found",
+  "results": []
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Penicillin-binding protein 2a (PBP2a)",
+  "reference": "ceftaroline"
+ }
+}

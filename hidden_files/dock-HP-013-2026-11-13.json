@@ -1,0 +1,399 @@
+{
+ "topic": {
+  "target": "Penicillin-binding protein 2a (PBP2a), MRSA",
+  "reference": "ceftaroline",
+  "topic_id": "HP-013",
+  "date": "2026-11-13"
+ },
+ "target": {
+  "uniprot": {
+   "accession": "Q53707",
+   "gene": "mecA",
+   "protein": "MecA PBP2' (penicillin binding protein 2')",
+   "organism": "Staphylococcus aureus"
+  },
+  "chembl_target": "CHEMBL6187 (MecA, Staphylococcus aureus)",
+  "chembl_status": "ChEMBL API HTTP 500 on all endpoints 2026-11-13; ligand potencies from the 2026-10-29 ChEMBL retrieval (run_pbp2a_corrected_raw.json); docking re-run today"
+ },
+ "structures": {
+  "1MWS_chainA": {
+   "pdb_id": "1MWS_chainA",
+   "center": [
+    28.54851219512195,
+    29.220829268292686,
+    87.48758536585366
+   ],
+   "center_note": "nitrocefin NC1 active-site centroid via dock._ligand_center; distance to chain-A NC1 centroid 0.0 A; chain A only (full 1MWS is two chains and Vina-crawls on this VM)",
+   "box_size": 22.5,
+   "exhaustiveness": 8,
+   "results": [
+    {
+     "ok": true,
+     "affinity_kcal_mol": -10.3,
+     "poses": [
+      -10.3,
+      -9.22,
+      -9.21
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CEFTOBIPROLE",
+     "source": "PubChem CID 135413542 (verified 2026-11-13)",
+     "measured_potency": "MRSA MIC50/90 1/2 mg/L (Sader et al. 2025, AAC 69:e01402-24)",
+     "descriptors": {
+      "mw": 534.58,
+      "logp": -1.44,
+      "hbd": 5,
+      "hba": 12,
+      "tpsa": 203.44,
+      "rotatable": 6
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.69,
+     "poses": [
+      -9.69,
+      -9.53,
+      -9.34
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CHEMBL4862632",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "Kd 264 nM, pChEMBL 6.58",
+     "descriptors": {
+      "mw": 542.54,
+      "logp": 4.15,
+      "hbd": 4,
+      "hba": 7,
+      "tpsa": 151.09,
+      "rotatable": 9
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.62,
+     "poses": [
+      -9.62,
+      -9.32,
+      -9.22
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "L-695256",
+     "source": "PubChem CID 9890833 (verified 2026-11-13)",
+     "measured_potency": "PBP2a-binding carbapenem analogue; no head-to-head MIC attached",
+     "descriptors": {
+      "mw": 469.5,
+      "logp": 0.64,
+      "hbd": 1,
+      "hba": 5,
+      "tpsa": 106.55,
+      "rotatable": 5
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.38,
+     "poses": [
+      -9.38,
+      -9.05,
+      -9.0
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CHEMBL4847813",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "Kd 129 nM, pChEMBL 6.89",
+     "descriptors": {
+      "mw": 561.68,
+      "logp": 3.91,
+      "hbd": 4,
+      "hba": 5,
+      "tpsa": 132.63,
+      "rotatable": 8
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.32,
+     "poses": [
+      -9.32,
+      -8.61,
+      -8.51
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CHEMBL520642",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "IC50 1900 nM, pChEMBL 5.72",
+     "descriptors": {
+      "mw": 534.58,
+      "logp": -1.44,
+      "hbd": 5,
+      "hba": 12,
+      "tpsa": 203.44,
+      "rotatable": 6
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -8.84,
+     "poses": [
+      -8.84,
+      -8.22,
+      -8.06
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CEFTAROLINE-ACTIVE",
+     "source": "PubChem CID 74316801 (active, dephosphorylated species)",
+     "measured_potency": "MRSA MIC90 1 mg/L (Sader et al. 2025, AAC 69:e01402-24, Table 2)",
+     "descriptors": {
+      "mw": 604.72,
+      "logp": -0.04,
+      "hbd": 2,
+      "hba": 14,
+      "tpsa": 179.7,
+      "rotatable": 9
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -8.26,
+     "poses": [
+      -8.26,
+      -8.24,
+      -7.99
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CEFTAROLINE-FOSAMIL",
+     "source": "PubChem CID 9852981 (pipeline-verified 2026-11-13; administered prodrug)",
+     "measured_potency": "MRSA MIC90 1 mg/L (Sader et al. 2025, AAC 69:e01402-24, Table 2)",
+     "descriptors": {
+      "mw": 684.7,
+      "logp": -0.12,
+      "hbd": 4,
+      "hba": 14,
+      "tpsa": 223.24,
+      "rotatable": 11
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -7.3,
+     "poses": [
+      -7.3,
+      -7.2,
+      -7.05
+     ],
+     "pdb_id": "1MWS_chainA",
+     "label": "CHEMBL4879273",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "Kd 168 nM, pChEMBL 6.78",
+     "descriptors": {
+      "mw": 584.67,
+      "logp": 4.12,
+      "hbd": 4,
+      "hba": 7,
+      "tpsa": 130.78,
+      "rotatable": 10
+     },
+     "pains": []
+    }
+   ]
+  },
+  "3ZG0_chainB": {
+   "pdb_id": "3ZG0",
+   "center": [
+    -35.986666666666665,
+    44.38805128205128,
+    66.8235641025641
+   ],
+   "center_note": "chain-B AI8 (ceftaroline, bound form) centroid (39 atoms); chain A excluded (RDKit sanitization failure, 1.81 A Gly402 O...Ser403 N)",
+   "box_size": 22.5,
+   "exhaustiveness": 8,
+   "results": [
+    {
+     "ok": true,
+     "affinity_kcal_mol": -10.08,
+     "poses": [
+      -10.08,
+      -10.05,
+      -9.62
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CHEMBL4862632",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "Kd 264 nM, pChEMBL 6.58",
+     "descriptors": {
+      "mw": 542.54,
+      "logp": 4.15,
+      "hbd": 4,
+      "hba": 7,
+      "tpsa": 151.09,
+      "rotatable": 9
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.84,
+     "poses": [
+      -9.84,
+      -9.71,
+      -9.45
+     ],
+     "pdb_id": "3ZG0",
+     "label": "L-695256",
+     "source": "PubChem CID 9890833 (verified 2026-11-13)",
+     "measured_potency": "PBP2a-binding carbapenem analogue; no head-to-head MIC attached",
+     "descriptors": {
+      "mw": 469.5,
+      "logp": 0.64,
+      "hbd": 1,
+      "hba": 5,
+      "tpsa": 106.55,
+      "rotatable": 5
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.73,
+     "poses": [
+      -9.73,
+      -9.61,
+      -9.52
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CHEMBL4847813",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "Kd 129 nM, pChEMBL 6.89",
+     "descriptors": {
+      "mw": 561.68,
+      "logp": 3.91,
+      "hbd": 4,
+      "hba": 5,
+      "tpsa": 132.63,
+      "rotatable": 8
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -9.58,
+     "poses": [
+      -9.58,
+      -9.38,
+      -9.33
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CHEMBL520642",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "IC50 1900 nM, pChEMBL 5.72",
+     "descriptors": {
+      "mw": 534.58,
+      "logp": -1.44,
+      "hbd": 5,
+      "hba": 12,
+      "tpsa": 203.44,
+      "rotatable": 6
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -8.86,
+     "poses": [
+      -8.86,
+      -8.33,
+      -7.83
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CEFTOBIPROLE",
+     "source": "PubChem CID 135413542 (verified 2026-11-13)",
+     "measured_potency": "MRSA MIC50/90 1/2 mg/L (Sader et al. 2025, AAC 69:e01402-24)",
+     "descriptors": {
+      "mw": 534.58,
+      "logp": -1.44,
+      "hbd": 5,
+      "hba": 12,
+      "tpsa": 203.44,
+      "rotatable": 6
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -8.62,
+     "poses": [
+      -8.62,
+      -7.88,
+      -7.47
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CEFTAROLINE-FOSAMIL",
+     "source": "PubChem CID 9852981 (pipeline-verified 2026-11-13; administered prodrug)",
+     "measured_potency": "MRSA MIC90 1 mg/L (Sader et al. 2025, AAC 69:e01402-24, Table 2)",
+     "descriptors": {
+      "mw": 684.7,
+      "logp": -0.12,
+      "hbd": 4,
+      "hba": 14,
+      "tpsa": 223.24,
+      "rotatable": 11
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -7.64,
+     "poses": [
+      -7.64,
+      -7.22,
+      -7.21
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CEFTAROLINE-ACTIVE",
+     "source": "PubChem CID 74316801 (active, dephosphorylated species)",
+     "measured_potency": "MRSA MIC90 1 mg/L (Sader et al. 2025, AAC 69:e01402-24, Table 2)",
+     "descriptors": {
+      "mw": 604.72,
+      "logp": -0.04,
+      "hbd": 2,
+      "hba": 14,
+      "tpsa": 179.7,
+      "rotatable": 9
+     },
+     "pains": []
+    },
+    {
+     "ok": true,
+     "affinity_kcal_mol": -7.62,
+     "poses": [
+      -7.62,
+      -7.57,
+      -7.37
+     ],
+     "pdb_id": "3ZG0",
+     "label": "CHEMBL4879273",
+     "source": "ChEMBL CHEMBL6187 (MecA), retrieved 2026-10-29",
+     "measured_potency": "Kd 168 nM, pChEMBL 6.78",
+     "descriptors": {
+      "mw": 584.67,
+      "logp": 4.12,
+      "hbd": 4,
+      "hba": 7,
+      "tpsa": 130.78,
+      "rotatable": 10
+     },
+     "pains": []
+    }
+   ]
+  }
+ },
+ "caveat": "Vina scores are NON-COVALENT pose scores in acyl-enzyme structures; they do not model the covalent acylation step of beta-lactam action."
+}

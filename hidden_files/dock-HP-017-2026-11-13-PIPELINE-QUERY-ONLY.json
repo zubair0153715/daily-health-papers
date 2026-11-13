@@ -1,0 +1,129 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Helicobacter pylori urease",
+  "uniprot": {
+   "accession": "Q09068",
+   "entry": null,
+   "gene": "ureI",
+   "protein": "Acid-activated urea channel",
+   "organism": "Helicobacter pylori (strain ATCC 700392 / 26695)",
+   "length": 195,
+   "function": "Functions as a specific, H(+)-activated urea channel that increases the rate of urea entry into the cytoplasm, resulting in activation of cytoplasmic urease at acidic medium pH. Is essential for H.pylori gastric survival and colonization. Is necessary for the adaptation of urease activity to the extracellular pH, as in the presence of urea, UreI rapidly enhances the production of ammonia in the extracellular medium when the pH of the medium was decreased to pH5 or below",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q09068/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)OC)C)C)O)(C)O",
+   "similarity": 1.0,
+   "score": 70.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 0,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 20.0
+   },
+   "descriptors": {
+    "mw": 747.96,
+    "logp": 2.44,
+    "hbd": 4,
+    "hba": 14,
+    "tpsa": 182.91,
+    "rotatable": 8,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": false,
+    "formula": "C38H69NO13"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "measured",
+    "max_similarity": 1.0,
+    "assays": {
+     "NR-AR": 0,
+     "NR-AR-LBD": 0,
+     "NR-AhR": 0,
+     "NR-Aromatase": 0,
+     "NR-ER": 0,
+     "NR-ER-LBD": 0,
+     "NR-PPAR-gamma": 0,
+     "SR-ARE": 0,
+     "SR-ATAD5": 0,
+     "SR-HSE": 0,
+     "SR-MMP": 0,
+     "SR-p53": 0
+    }
+   },
+   "pubchem": {
+    "cid": 84029,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/84029"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": false,
+  "error": "no_pdb_found",
+  "results": []
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Helicobacter pylori urease",
+  "reference": "clarithromycin"
+ }
+}

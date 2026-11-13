@@ -1,0 +1,255 @@
+{
+ "topic": {
+  "target": "Epidermal growth factor receptor (EGFR), L858R/T790M/C797S triple mutant",
+  "reference": "osimertinib",
+  "topic_id": "HP-027",
+  "date": "2026-11-13"
+ },
+ "target": {
+  "uniprot": {
+   "accession": "P00533",
+   "gene": "EGFR",
+   "protein": "Epidermal growth factor receptor",
+   "organism": "Homo sapiens"
+  },
+  "chembl_target": "CHEMBL203 (not retrieved: ChEMBL API HTTP 500, 2026-11-13)",
+  "chembl_status": "ChEMBL API HTTP 500 on all endpoints 2026-11-13; fallback = PubChem-verified compounds + literature potencies"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "6LUB",
+  "resolution": 2.315,
+  "center": [
+   -50.86823404255319,
+   -0.3485957446808511,
+   -19.761702127659575
+  ],
+  "center_note": "co-crystallised CH7233163 centroid via dock._ligand_center; Ser797 CA distance 6.17 A (ATP site)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.53,
+    "poses": [
+     -9.53,
+     -9.33,
+     -9.04
+    ],
+    "pdb_id": "6LUB",
+    "label": "CH7233163",
+    "source": "PubChem CID 154701097 (co-crystallised ligand of 6LUB; re-dock control)",
+    "measured_potency": "Del19/T790M/C797S biochemical IC50 0.28 nM; cellular IC50 20 nM vs Del19/T790M/C797S NIH3T3, 1200 nM vs WT A431 (Kashima 2020)",
+    "descriptors": {
+     "mw": 669.73,
+     "logp": 5.2,
+     "hbd": 1,
+     "hba": 10,
+     "tpsa": 123.3,
+     "rotatable": 9
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.15,
+    "poses": [
+     -8.15,
+     -8.06,
+     -7.7
+    ],
+    "pdb_id": "6LUB",
+    "label": "BRIGATINIB",
+    "source": "PubChem CID 68165256 (bound to T790M/C797S in 8H7X)",
+    "measured_potency": "bound to T790M/C797S in 8H7X (Suzuki et al. 2024, NPJ Precis Oncol); no head-to-head triple-mutant IC50 attached",
+    "descriptors": {
+     "mw": 584.11,
+     "logp": 5.09,
+     "hbd": 2,
+     "hba": 9,
+     "tpsa": 85.86,
+     "rotatable": 8
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.01,
+    "poses": [
+     -8.01,
+     -7.75,
+     -7.49
+    ],
+    "pdb_id": "6LUB",
+    "label": "PUBCHEM-121280087",
+    "source": "PubChem CID 121280087, fastsimilarity_2d analogue of osimertinib (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 525.66,
+     "logp": 5.31,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 87.55,
+     "rotatable": 11
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.92,
+    "poses": [
+     -7.92,
+     -7.74,
+     -7.71
+    ],
+    "pdb_id": "6LUB",
+    "label": "PUBCHEM-121269225",
+    "source": "PubChem CID 121269225, fastsimilarity_2d analogue of osimertinib (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 554.66,
+     "logp": 4.1,
+     "hbd": 2,
+     "hba": 9,
+     "tpsa": 109.67,
+     "rotatable": 10
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.77,
+    "poses": [
+     -7.77,
+     -7.65,
+     -7.56
+    ],
+    "pdb_id": "6LUB",
+    "label": "PUBCHEM-139377809",
+    "source": "PubChem CID 139377809, fastsimilarity_2d analogue of osimertinib (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 584.1,
+     "logp": 5.26,
+     "hbd": 4,
+     "hba": 9,
+     "tpsa": 114.88,
+     "rotatable": 10
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.54,
+    "poses": [
+     -7.54,
+     -7.53,
+     -7.31
+    ],
+    "pdb_id": "6LUB",
+    "label": "AFATINIB",
+    "source": "PubChem CID 10184653 (second-generation, covalent Cys797)",
+    "measured_potency": "Covalent anchor lost on C797S; no triple-mutant IC50 attached",
+    "descriptors": {
+     "mw": 485.95,
+     "logp": 4.39,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 88.61,
+     "rotatable": 8
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.5,
+    "poses": [
+     -7.5,
+     -7.29,
+     -7.26
+    ],
+    "pdb_id": "6LUB",
+    "label": "OSIMERTINIB-REF",
+    "source": "PubChem CID 71496458 (reference drug)",
+    "measured_potency": "BaF3 antiproliferative IC50 1.42 uM (Del19/T790M/C797S) / 1.44 uM (L858R/T790M/C797S) (Xi et al. 2023, Eur J Med Chem 261:115865, PMID 37839342)",
+    "descriptors": {
+     "mw": 499.62,
+     "logp": 4.51,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 87.55,
+     "rotatable": 10
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.47,
+    "poses": [
+     -7.47,
+     -7.45,
+     -7.31
+    ],
+    "pdb_id": "6LUB",
+    "label": "PUBCHEM-118607832",
+    "source": "PubChem CID 118607832, fastsimilarity_2d analogue of osimertinib (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 585.71,
+     "logp": 5.08,
+     "hbd": 2,
+     "hba": 9,
+     "tpsa": 113.85,
+     "rotatable": 12
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.27,
+    "poses": [
+     -7.27,
+     -7.22,
+     -5.65
+    ],
+    "pdb_id": "6LUB",
+    "label": "GEFITINIB",
+    "source": "PubChem CID 123631 (first-generation, reversible)",
+    "measured_potency": "HTRF IC50 185 \u00b1 98 nM vs L858R/T790M double mutant (Chem Sci 2019, DOI 10.1039/C9SC03445E); no triple-mutant IC50 attached",
+    "descriptors": {
+     "mw": 446.91,
+     "logp": 4.28,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 68.74,
+     "rotatable": 8
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.27,
+    "poses": [
+     -7.27,
+     -7.17,
+     -7.01
+    ],
+    "pdb_id": "6LUB",
+    "label": "PUBCHEM-71496460",
+    "source": "PubChem CID 71496460, fastsimilarity_2d analogue of osimertinib (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 485.59,
+     "logp": 4.5,
+     "hbd": 3,
+     "hba": 7,
+     "tpsa": 98.41,
+     "rotatable": 10
+    },
+    "pains": []
+   }
+  ]
+ },
+ "discarded": "Pipeline run dock-HP-027-2026-11-13-PIPELINE-QUERY-ONLY.json: osimertinib -8.56 on 8A27 (allosteric-site structure) -- wrong site, discarded.",
+ "caveat": "Osimertinib/afatinib are covalent Cys797 binders; C797S removes the covalent anchor, so Vina non-covalent scores cannot capture their mechanism."
+}

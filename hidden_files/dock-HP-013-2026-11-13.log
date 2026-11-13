@@ -1,0 +1,17 @@
+1MWS full-file _ligand_center: [28.54851219512195, 29.220829268292686, 87.48758536585366]; NC1 centroid (47 atoms): [21.12259574468085, 31.47323404255319, 84.98531914893617]; precedent chain-A centre [28.54851219512195, 29.220829268292686, 87.48758536585366]; distance to full-file centre 0.0 A, to NC1 centroid 8.15 A
+DOCK 1MWS_chainA CEFTAROLINE-FOSAMIL: -8.26 ok=True pains=[]
+DOCK 1MWS_chainA CEFTAROLINE-ACTIVE: -8.81 ok=True pains=[]
+DOCK 1MWS_chainA CHEMBL4847813: -9.37 ok=True pains=[]
+DOCK 1MWS_chainA CHEMBL4879273: -7.21 ok=True pains=[]
+DOCK 1MWS_chainA CHEMBL4862632: -10.47 ok=True pains=[]
+DOCK 1MWS_chainA CHEMBL520642: -9.26 ok=True pains=[]
+DOCK 1MWS_chainA CEFTOBIPROLE: -10.32 ok=True pains=[]
+DOCK 1MWS_chainA L-695256: -9.63 ok=True pains=[]
+3ZG0 chainB receptor prepped: /home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/3ZG0_rec.pdbqt 826597
+3ZG0 chain-B AI8 centroid (39 atoms): [-35.986666666666665, 44.38805128205128, 66.8235641025641]
+DOCK 3ZG0 CEFTAROLINE-FOSAMIL: -8.72 ok=True pains=[]
+DOCK 3ZG0 CEFTAROLINE-ACTIVE: -8.78 ok=True pains=[]
+DOCK 3ZG0 CHEMBL4847813: -9.38 ok=True pains=[]
+DOCK 3ZG0 CHEMBL4879273: -8.14 ok=True pains=[]
+DOCK 3ZG0 CHEMBL4862632: -9.51 ok=True pains=[]
+DOCK 3ZG0 CHEMBL520642: -9.59 ok=True pains=[]

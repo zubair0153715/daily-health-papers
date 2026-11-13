@@ -1,0 +1,208 @@
+{
+ "topic": {
+  "target": "Coagulation factor Xa",
+  "reference": "rivaroxaban",
+  "topic_id": "HP-044",
+  "date": "2026-11-13"
+ },
+ "target": {
+  "uniprot": {
+   "accession": "P00742",
+   "gene": "F10",
+   "protein": "Coagulation factor X",
+   "organism": "Homo sapiens"
+  },
+  "chembl_target": "not retrieved: ChEMBL API HTTP 500, 2026-11-13 (target ID not asserted)",
+  "chembl_status": "ChEMBL API HTTP 500 on all endpoints 2026-11-13; fallback = PubChem-verified compounds + literature Ki values"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "2W26",
+  "center": [
+   7.9608275862068965,
+   5.317448275862069,
+   21.77193103448276
+  ],
+  "center_note": "co-crystallised rivaroxaban (BAY 59-7939) centroid via dock._ligand_center; Ser195 CA distance 9.04 A (active site)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.48,
+    "poses": [
+     -9.48,
+     -8.87,
+     -8.65
+    ],
+    "pdb_id": "2W26",
+    "label": "PUBCHEM-10202260",
+    "source": "PubChem CID 10202260, fastsimilarity_2d analogue of rivaroxaban (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 419.89,
+     "logp": 3.28,
+     "hbd": 1,
+     "hba": 5,
+     "tpsa": 78.95,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.28,
+    "poses": [
+     -9.28,
+     -8.59,
+     -8.28
+    ],
+    "pdb_id": "2W26",
+    "label": "PUBCHEM-11711363",
+    "source": "PubChem CID 11711363, fastsimilarity_2d analogue of rivaroxaban (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 415.47,
+     "logp": 2.17,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 88.18,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.03,
+    "poses": [
+     -9.03,
+     -8.82
+    ],
+    "pdb_id": "2W26",
+    "label": "BETRIXABAN",
+    "source": "PubChem CID 10275777",
+    "measured_potency": "no head-to-head Ki attached in this run",
+    "descriptors": {
+     "mw": 451.91,
+     "logp": 4.14,
+     "hbd": 3,
+     "hba": 5,
+     "tpsa": 107.41,
+     "rotatable": 6
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.79,
+    "poses": [
+     -8.79,
+     -8.69,
+     -8.54
+    ],
+    "pdb_id": "2W26",
+    "label": "EDOXABAN",
+    "source": "PubChem CID 10280735",
+    "measured_potency": "Ki 0.56 nM free fXa (Furugohri et al. 2008, J Thromb Haemost 6:1542-1549)",
+    "descriptors": {
+     "mw": 548.07,
+     "logp": 1.29,
+     "hbd": 3,
+     "hba": 8,
+     "tpsa": 136.63,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.75,
+    "poses": [
+     -8.75,
+     -7.47,
+     -7.44
+    ],
+    "pdb_id": "2W26",
+    "label": "APIXABAN",
+    "source": "PubChem CID 10182969",
+    "measured_potency": "Ki 0.08 nM human fXa (Pinto et al. 2007, J Med Chem 50:5339-5356, PMID 17914785)",
+    "descriptors": {
+     "mw": 459.51,
+     "logp": 2.7,
+     "hbd": 1,
+     "hba": 5,
+     "tpsa": 110.76,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.72,
+    "poses": [
+     -8.72,
+     -8.3,
+     -8.18
+    ],
+    "pdb_id": "2W26",
+    "label": "PUBCHEM-11569203",
+    "source": "PubChem CID 11569203, fastsimilarity_2d analogue of rivaroxaban (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 480.34,
+     "logp": 2.63,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 88.18,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.41,
+    "poses": [
+     -8.41,
+     -8.18,
+     -7.9
+    ],
+    "pdb_id": "2W26",
+    "label": "PUBCHEM-11525292",
+    "source": "PubChem CID 11525292, fastsimilarity_2d analogue of rivaroxaban (threshold 85)",
+    "measured_potency": "no measured potency (PubChem similarity analogue)",
+    "descriptors": {
+     "mw": 453.88,
+     "logp": 2.66,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 88.18,
+     "rotatable": 5
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.97,
+    "poses": [
+     -7.97,
+     -7.82,
+     -7.79
+    ],
+    "pdb_id": "2W26",
+    "label": "RIVAROXABAN-REF",
+    "source": "PubChem CID 9875401 (reference drug; co-crystallised ligand of 2W26)",
+    "measured_potency": "Ki 0.4 nM, IC50 0.7 nM, prothrombinase IC50 2.1 nM (Perzborn et al. 2005, J Thromb Haemost 3:514-521, PMID 15748242)",
+    "descriptors": {
+     "mw": 435.89,
+     "logp": 2.52,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 88.18,
+     "rotatable": 5
+    },
+    "pains": []
+   }
+  ]
+ },
+ "discarded": "Pipeline run dock-HP-044-2026-11-13-PIPELINE-QUERY-ONLY.json: rivaroxaban -5.7 on 9I24 (covalently blocked active site) -- wrong structure, discarded."
+}

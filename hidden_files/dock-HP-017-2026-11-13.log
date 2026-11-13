@@ -1,0 +1,13 @@
+Ni ions: [('B', '3001', 128.052, 126.975, 88.147), ('B', '3002', 127.227, 125.695, 86.661)]; Ni-pair centroid (centre): [127.64, 126.33, 87.4]
+ANALOGUE CID 75743: CCC(=O)NO
+ANALOGUE CID 138591: CC(=O)NOC
+ANALOGUE CID 12010866: CC(=O)N[O-]
+DOCK ACETOHYDROXAMIC-ACID: -4.84 ok=True pains=[]
+DOCK FLUROFAMIDE: -5.19 ok=True pains=[]
+DOCK THIOUREA: -3.47 ok=True pains=[]
+DOCK HYDROXYUREA: -4.67 ok=True pains=[]
+DOCK CLARITHROMYCIN-REGIMEN: 45.73 ok=True pains=[]
+DOCK PUBCHEM-75743: -5.35 ok=True pains=[]
+DOCK PUBCHEM-138591: -4.47 ok=True pains=[]
+DOCK PUBCHEM-12010866: -4.95 ok=True pains=[]
+SAVED: /home/hatch/workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/hidden_files/dock-HP-017-2026-11-13.json

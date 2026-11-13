@@ -1,0 +1,148 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Coagulation factor Xa",
+  "uniprot": {
+   "accession": "P00742",
+   "entry": null,
+   "gene": "F10",
+   "protein": "Coagulation factor X",
+   "organism": "Homo sapiens",
+   "length": 488,
+   "function": "Factor Xa is a vitamin K-dependent glycoprotein that converts prothrombin to thrombin in the presence of factor Va, calcium and phospholipid during blood clotting (PubMed:22409427, PubMed:39880037). Factor Xa activates pro-inflammatory signaling pathways in a protease-activated receptor (PAR)-dependent manner (PubMed:24041930, PubMed:30568593, PubMed:34831181, PubMed:18202198). Up-regulates expression of protease-activated receptors (PARs) F2R, F2RL1 and F2RL2 in dermal microvascular endothelial cells (PubMed:35738824). Triggers the production of pro-inflammatory cytokines, such as MCP-1/CCL2 and IL6, in cardiac fibroblasts and umbilical vein endothelial cells in PAR-1/F2R-dependent manner (PubMed:30568593, PubMed:34831181). Triggers the production of pro-inflammatory cytokines, such as MC",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P00742/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "C1COCC(=O)N1C2=CC=C(C=C2)N3CC(OC3=O)CNC(=O)C4=CC=C(S4)Cl",
+   "similarity": 1.0,
+   "score": 100.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 20.0
+   },
+   "descriptors": {
+    "mw": 435.89,
+    "logp": 2.52,
+    "hbd": 1,
+    "hba": 6,
+    "tpsa": 88.18,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H18ClN3O5S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "measured",
+    "max_similarity": 1.0,
+    "assays": {
+     "NR-AR": null,
+     "NR-AR-LBD": null,
+     "NR-AhR": null,
+     "NR-Aromatase": null,
+     "NR-ER": null,
+     "NR-ER-LBD": null,
+     "NR-PPAR-gamma": null,
+     "SR-ARE": 0,
+     "SR-ATAD5": null,
+     "SR-HSE": 0,
+     "SR-MMP": null,
+     "SR-p53": null
+    }
+   },
+   "pubchem": {
+    "cid": 9875401,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9875401"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "9I24",
+  "resolution": 1.2,
+  "center": [
+   27.65,
+   -7.28,
+   -19.97
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.7,
+    "poses": [
+     -5.7,
+     -5.65,
+     -5.3
+    ],
+    "pdb_id": "9I24",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Coagulation factor Xa",
+  "reference": "rivaroxaban"
+ }
+}
