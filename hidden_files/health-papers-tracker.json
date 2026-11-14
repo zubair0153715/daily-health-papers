@@ -651,8 +651,8 @@
    "file": "files/2026-11-14-health-bcr-abl-t315i-ponatinib.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/5b2cb1d5-1d15-486c-a091-e886b7de6214"
   },
   {
    "date": "2026-11-14",
@@ -662,8 +662,8 @@
    "file": "files/2026-11-14-health-sorbitol-dehydrogenase-sord.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/6a05a925-6fd3-4c4c-b85f-b6f7a28e2a6e"
   },
   {
    "date": "2026-11-14",
@@ -673,8 +673,8 @@
    "file": "files/2026-11-14-health-leishmania-trypanothione-reductase.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/206939f4-f6a4-462d-96e3-7d4b219af622"
   },
   {
    "date": "2026-11-14",
@@ -684,8 +684,8 @@
    "file": "files/2026-11-14-health-mtor-kinase-inhibitors.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/563b4fe5-d95e-4814-9a55-57ca4d7f61e2"
   },
   {
    "date": "2026-11-14",
@@ -695,8 +695,8 @@
    "file": "files/2026-11-14-health-sars-cov-2-mpro-nirmatrelvir.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/1fafc324-3ea9-42bc-becf-ff1091659421"
   }
  ],
  "used_topic_ids": [
