@@ -111,3 +111,7 @@ Read `../files/method-brief-policy-shaping-professors.md` before drafting. The 1
 10. One clean figure or number the reader remembers.
 
 What does NOT count: untested frameworks (the exact reason ChemRxiv rejected Papers #1/#3 v1), cherry-picked examples, a literature review dressed as a discovery, claims without a falsifier. These scholars are the STANDARD, never co-authors — never claim their endorsement.
+
+## Islamic thought — literature sweep (2026-11-14 order)
+
+Read `../files/islamic-thought-literature-map.md` before drafting. Every paper's literature sweep checks the relevant Islamic canon (named works, every era) ALONGSIDE the modern literature — medicine: Ibn Sina / Al-Razi / Ibn al-Nafis; astronomy/optics: Al-Biruni / Ibn al-Haytham; society/history: Ibn Khaldun; economics: Chapra / Siddiqi / Usmani; and the modern reformers where relevant. The Policy implications section states the Islamic principle behind the recommendation (maqasid, maslaha, adl, shura, khilafah) with a REAL reference to the primary source — never paraphrased from memory, never an invented quote. Limitations must NAME any canonical work that was not available (untranslated / undigitised). Honest limit: no paper can claim to have read every book ever written — the sweep covers the full available digitised canon + every canonical work relevant to the question, and says so.
