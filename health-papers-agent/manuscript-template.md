@@ -93,3 +93,21 @@
 ## Data availability
 
 [Where the raw numbers live: docking raw JSON file name in hidden_files/, ChEMBL/PubChem IDs, PDB IDs. "All docking scores reported here are in [file]; no additional data were generated."]
+
+---
+
+## Method standard — Harvard / MIT / Oxford policy-shaping professors (2026-11-14 order)
+
+Read `../files/method-brief-policy-shaping-professors.md` before drafting. The 10-point checklist applies to every paper:
+1. One falsifiable question + named falsifier (in the Abstract).
+2. Causal identification named explicitly (RCT / natural experiment / IV / diff-in-diff / regression discontinuity / validated-control re-docking) — or "association only" in bold.
+3. Mechanism section (WHY, with a test for each link).
+4. Effect size + uncertainty, never p-values alone.
+5. Analysis plan stated BEFORE the results; post-hoc work labelled exploratory.
+6. Replication & data availability (data, code, parameters, negative results published with the paper).
+7. Limitations that bite (three biggest threats + any null replications that exist).
+8. **Policy implications section** (add as §7, before Conclusion): name the decision-maker, the decision, and the exact change — "The health ministry should do X instead of Y; if evidence Z appears, reverse this." No vague "policymakers should consider". If the evidence is thin, the recommendation is "run the trial", not "do the policy".
+9. Comparison against the best alternative (strongest incumbent, never nothing).
+10. One clean figure or number the reader remembers.
+
+What does NOT count: untested frameworks (the exact reason ChemRxiv rejected Papers #1/#3 v1), cherry-picked examples, a literature review dressed as a discovery, claims without a falsifier. These scholars are the STANDARD, never co-authors — never claim their endorsement.

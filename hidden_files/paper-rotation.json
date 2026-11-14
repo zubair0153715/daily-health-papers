@@ -1,1 +1,12 @@
-{"count":{"brain":5,"health":5,"space":4},"last_date":"2026-11-14","last_field":"space","last_file":"files/2026-11-14-space-cosmic-shoreline-ltt1445-lhs1140.md"}
+{
+ "count": {
+  "brain": 5,
+  "health": 5,
+  "space": 4,
+  "natural": 0,
+  "social": 0
+ },
+ "last_date": "2026-11-14",
+ "last_field": "space",
+ "last_file": "files/2026-11-14-space-cosmic-shoreline-ltt1445-lhs1140.md"
+}

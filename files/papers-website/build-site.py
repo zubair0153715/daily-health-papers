@@ -40,7 +40,10 @@ READY = {
     "2026-11-04-health-thymoquinone-aldose-reductase-v2.md": "v2 — ready to submit",
     "2026-11-04-health-dual-ar-sglt2-v2.md": "v2 — ready to submit",
 }
-TRACK_LABEL = {"health": "Health", "brain": "Brain", "space": "Space"}
+TRACK_LABEL = {"health": "Health", "brain": "Brain", "space": "Space",
+               "natural": "Natural Science", "social": "Social Science",
+               "drugdiscovery": "Drug Discovery"}
+FIELDS = ("health", "brain", "space", "natural", "social", "drugdiscovery")
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code"])
 
@@ -106,7 +109,7 @@ def collect():
                 tracker[Path(f).name] = p
     papers = []
     for path in sorted(FILES.glob("2026-*.md"), reverse=True):
-        m = re.match(r"(2026-\d\d-\d\d)-(health|brain|space)-", path.name)
+        m = re.match(r"(2026-\d\d-\d\d)-(health|brain|space|natural|social|drugdiscovery)-", path.name)
         if not m:
             continue
         date, track = m.group(1), m.group(2)
@@ -162,7 +165,7 @@ def main():
         (out_dir / "papers").mkdir(exist_ok=True)
         html_name = "index.html"
     papers = collect()
-    counts = {t: sum(1 for p in papers if p["field"] == t) for t in ("health", "brain", "space")}
+    counts = {t: sum(1 for p in papers if p["field"] == t) for t in FIELDS}
     total = len(papers)
     manifest = [{k: v for k, v in p.items() if k != "body_html"} | {"summary": summary_of(p["abstract"])} for p in papers]
     (out_dir / "papers-data.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False), encoding="utf-8")
@@ -175,8 +178,10 @@ def main():
         print(f"copied {total} md + pdf pairs into {out_dir / 'papers'}")
 
     sections = []
-    for field in ("health", "brain", "space"):
+    for field in FIELDS:
         group = [p for p in papers if p["field"] == field]
+        if not group:
+            continue
         group.sort(key=lambda p: p["date"], reverse=True)
         cards = "\n".join(card(p, i) for i, p in enumerate(group))
         sections.append(
@@ -227,7 +232,7 @@ footer{{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;p
 <body>
 <h1>Research Papers</h1>
 <p class="sub">Zubair Ali — Pharm-D student, SMBBMU Larkana, Pakistan · ORCID 0009-0001-5921-7509 · <a href="https://github.com/zubair0153715/daily-health-papers">daily-health-papers on GitHub</a></p>
-<div class="counts"><b>{total} manuscripts</b><b>Health: {counts['health']}</b><b>Brain: {counts['brain']}</b><b>Space: {counts['space']}</b></div>
+<div class="counts"><b>{total} manuscripts</b><b>Health: {counts['health']}</b><b>Brain: {counts['brain']}</b><b>Space: {counts['space']}</b><b>Natural Science: {counts['natural']}</b><b>Social Science: {counts['social']}</b><b>Drug Discovery: {counts['drugdiscovery']}</b></div>
 <p class="note"><b>AI-assisted drafts — NOT peer-reviewed, NOT published.</b> All claims require independent verification. Two early manuscripts were submitted to ChemRxiv and rejected (framework/hypothesis without new data); their reworked v2 versions are marked "ready to submit". Nothing here is submitted anywhere — submission is the author's own click after he approves a paper. New manuscripts are added daily.</p>
 <div class="controls">
 <input type="search" id="q" placeholder="Search titles…" aria-label="Search papers"/>
@@ -235,6 +240,9 @@ footer{{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;p
 <button data-f="health">Health</button>
 <button data-f="brain">Brain</button>
 <button data-f="space">Space</button>
+<button data-f="natural">Natural Science</button>
+<button data-f="social">Social Science</button>
+<button data-f="drugdiscovery">Drug Discovery</button>
 </div>
 {body}
 <footer>Updated {date.today().strftime('%d %b %Y')} · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>

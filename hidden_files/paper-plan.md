@@ -6,9 +6,11 @@ their best use — write ONE full research paper per day, NEW research,
 in three fields: **Health** (his Pharm-D field), **Brain** (neuroscience),
 **Space** (asmaan — astronomy/space).
 
-## Rotation (3-day cycle)
-- Mon → Health · Tue → Brain · Wed → Space · Thu → Health · Fri → Brain · Sat → Space · Sun → Health …
-- **Space track scope (user's words, 2026-11-02 ~19:42): "asmaan upper" — everything about what's above: physics, maths, cosmology, time travel, black holes, wormholes, galaxies, finding other worlds (exoplanets), routes to go up (space travel). Neuroscience stays in the Brain track, not Space.**
+## Rotation (5-day cycle — EXPANDED 2026-11-14, his order)
+- **Health → Brain → Space → Natural Science → Social Science → Health …**
+- Natural Science scope: physics, chemistry, climate, energy, environment, materials, water — quantitative results a ministry or engineer can use (a budget, a rate, a threshold).
+- Social Science scope: economics, education, health policy, institutions — causal claims about people, identified by RCT / natural experiment / quasi-experimental design, with an effect size and a named policy lever.
+- **Method standard (2026-11-14): Harvard / MIT / Oxford policy-shaping professors.** Every run reads `files/method-brief-policy-shaping-professors.md` FIRST: Banerjee & Duflo (RCTs), Acemoglu/Johnson/Robinson (institutions), Raj Chetty (Opportunity Atlas), Thaler & Sunstein (nudges), Heckman (Perry Preschool), Hanushek (teacher value-added), Rodrik (growth diagnostics), Deaton (measurement), Haynes & Gawande (surgical checklist), Pacala & Socolow (climate wedges), Myles Allen (carbon budget). The 10-point checklist applies to EVERY paper: one falsifiable question + named falsifier; causal identification named; mechanism section; effect size + uncertainty (never p-values alone); analysis plan stated before results; replication + data availability; limitations that bite; **Policy implications section naming the decision-maker and the exact change**; comparison vs the strongest incumbent; one clean memorable number. What does NOT count: untested frameworks (the exact reason ChemRxiv rejected Papers #1/#3 v1), cherry-picked examples, claims without a falsifier. These scholars are the STANDARD, never co-authors — never claim their endorsement.
 - Tracker: `hidden_files/paper-rotation.json` — `{"last_date": ..., "last_field": ..., "count": {...}}`. The daily run reads it, picks the next field, writes the paper, updates it.
 - Today: Mon 2026-11-02 = Health #1 (thymoquinone / aldose reductase).
 
@@ -22,7 +24,10 @@ Every paper, every field, same complete pattern — nothing partial, nothing lef
 ## Health track — sharpened focus (user's order 2026-11-03 ~08:23 PKT)
 - Health papers focus FIRST on: finding cures for diseases, discovering new drugs, improving existing medicines/drugs — plus tracking world-level research happening now.
 - Quality bar: Harvard-level / professor-level PATTERN — top-tier structure and rigor: structured abstract, clear falsifiable hypothesis, methods reproducible from the text, honest limitations, real references only. The STANDARD is Harvard-level; the content stays honest: AI-assisted drafts, computational leads only, lab validation still required before any claim. Never present a draft as a published Harvard-level paper.
-- Brain and Space tracks continue on rotation as before.
+- Brain and Space tracks continue on rotation as before. **From 2026-11-14 the rotation is 5 fields (Health → Brain → Space → Natural Science → Social Science) — see Rotation above.**
+
+## LeadForge drug-discovery papers — on the website (user's order 2026-11-14)
+- Every LeadForge weekly paper draft (`leadforge-weekly-paper-YYYY-MM-DD.md`) is copied into `files/YYYY-MM-DD-drugdiscovery-leadforge-weekly-N.md` with a proper title + AI-assisted header, PDF generated via `hidden_files/md2pdf.py`, and shown on the papers website under the **Drug Discovery** section. New weekly papers are added the same way by the daily website-refresh run. The daily LeadForge run reports stay in the LeadForge goal folder (they are run logs, not manuscripts).
 
 ## What a paper is
 - Full manuscript in English: Title, Abstract, Keywords, Introduction,
