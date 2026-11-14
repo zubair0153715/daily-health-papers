@@ -26,7 +26,7 @@
   "abstract": "Nirmatrelvir, the active component of Paxlovid, is a covalent inhibitor of the SARS-CoV-2 main protease (Mpro, nsp5). We benchmarked rigid AutoDock Vina docking against measured inhibition data for nirmatrelvir and four analogues (Ki 0.04–3.1 nM), docked into the nirmatrelvir-bound structure 7SI9 (2.0 Å). This is the first positive rank correlation in this series: Spearman ρ = +0.48 (n = 5). The most potent analogue (Ki 0.04 nM) scored best (−8.79 kcal/mol), nirmatrelvir itself (Ki 3.1 nM, consensus of ten ChEMBL records) tied for last (−8.22 kcal/mol), and the re-dock control worked — nirmatrelvir re-docked into its own crystal structure with tight poses (−8.22, −8.21, −7.93 kcal/mol). But the method compresses the differences: the measured potencies span 77-fold (~2.6 kcal/mol) while the docking scores span only 0.57 kcal/mol, so the middle of the ranking is noise. Two pipeline lessons are recorded: the first automated run used the wrong ChEMBL target (maltase-glucoamylase) and the wrong structure (the NSP3 macrodomain), with every dock failing; and the pipeline's top activity record for nirmatrelvir (Ki 0.26 nM) is an outlier against ten records at 3.0–3.11 nM. Rigid docking can rank Mpro analogues at the extremes, but not in the middle — and it cannot score the covalent bond that does much of the work. Keywords: SARS-CoV-2; main protease; Mpro; nirmatrelvir; Paxlovid; molecular docking; AutoDock Vina; covalent inhibitor",
   "md": "2026-11-14-health-sars-cov-2-mpro-nirmatrelvir.md",
   "pdf": "2026-11-14-health-sars-cov-2-mpro-nirmatrelvir.pdf",
-  "status": "Draft — not submitted",
+  "status": "Draft ready",
   "summary": "Nirmatrelvir, the active component of Paxlovid, is a covalent inhibitor of the SARS-CoV-2 main protease (Mpro, nsp5). We benchmarked rigid AutoDock Vina docking against measured inhibition data for nirmatrelvir and four analogues (Ki 0.04–3.1 nM), docked into the nirmatrelvir-bound structure 7SI9 (2.0 Å)."
  },
  {
@@ -420,6 +420,16 @@
   "summary": "Breast cancer was diagnosed in about 2.4 million women in 2024 and killed about 694,000; in Pakistan it is the commonest female cancer, with about 30,682 new cases and 15,552 deaths in 2022 and the highest incidence rate in Asia."
  },
  {
+  "date": "2026-11-08",
+  "field": "drugdiscovery",
+  "title": "Multi-target computational triage of known bioactive chemical space against seven disease targets (week of 2-8 Nov 2026)",
+  "abstract": "We screened the bioactive chemical space of ChEMBL against seven therapeutically relevant targets in one week of automated LeadForge runs (2–8 Nov 2026): FLT3, Plasmodium falciparum ATP4, Pseudomonas aeruginosa LpxC, acetylcholinesterase (AChE), isocitrate dehydrogenase 1 (IDH1), Bruton's tyrosine kinase (BTK) and menin (MEN1). For each target, the reference drug was recovered from live ChEMBL data (rediscovery check), 19–53 known ligands were similarity-screened, leads were ranked on a composite of similarity, Lipinski/Veber drug-likeness, PAINS and kNN toxicity read-across, and the top five leads were docked with AutoDock Vina against the best available X-ray structure, with the reference drug re-docked as control. Two runs produced leads that docked clearly better than their reference drug: CHEMBL5816906 against menin (−10.10 vs −8.37 kcal/mol for revumenib) and three scaffold-distinct leads against LpxC (best −10.85 vs −9.34 for ACHN-975). Three runs were effective ties (FLT3, AChE, IDH1) and one was an honest negative (BTK: no lead beat ibrutinib). One run (PfATP4) had no structure for docking but identified CHEMBL5591927, the strongest measured PfATP4 active in ChEMBL (EC50 4.6 nM), as a scaffold-distinct backup to cipargamin. All findings are computational triage; no compound is claimed as a drug, and wet-lab validation is required.",
+  "md": "2026-11-08-drugdiscovery-leadforge-weekly-4.md",
+  "pdf": "2026-11-08-drugdiscovery-leadforge-weekly-4.pdf",
+  "status": "Draft — not submitted",
+  "summary": "We screened the bioactive chemical space of ChEMBL against seven therapeutically relevant targets in one week of automated LeadForge runs (2–8 Nov 2026): FLT3, Plasmodium falciparum ATP4, Pseudomonas aeruginosa LpxC, acetylcholinesterase (AChE), isocitrate dehydrogenase 1 (IDH1), Bruton's tyrosine kinase (BTK) and meni…"
+ },
+ {
   "date": "2026-11-07",
   "field": "space",
   "title": "The Archive Is the Telescope: What Physics-Based PSF Subtraction Predicts for Hidden Worlds in the JWST Archive — and the Cold Census It Unlocks",
@@ -718,6 +728,36 @@
   "pdf": "2026-11-02-brain-glp1-parkinson-bbb-gap.pdf",
   "status": "Draft — not submitted",
   "summary": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs) entered Parkinson's disease (PD) trials on a strong mechanistic rationale — brain insulin resistance, neuroinflammation, mitochondrial dysfunction and impaired proteostasis — and early-phase signals were encouraging."
+ },
+ {
+  "date": "2026-11-01",
+  "field": "drugdiscovery",
+  "title": "Computational small-molecule triage against seven high-burden disease targets (week of 26 Oct-1 Nov 2026)",
+  "abstract": "We describe a reproducible, fully automated computational triage pipeline that runs daily against one high-burden disease target, using only live public data sources (UniProtKB, ChEMBL, PubChem, the RCSB Protein Data Bank). Each daily run executes seven steps: (1) target identification from UniProtKB, (2) known-ligand retrieval from ChEMBL, (3) query-drug verification from PubChem, (4) Morgan-fingerprint / Tanimoto similarity screening with RDKit, (5) ADMET screening (Lipinski, Veber, PAINS, ToxGuard Tox21 kNN read-across), (6) composite-score lead ranking, and (7) AutoDock Vina docking (meeko ligand preparation) against the best available experimental structure. Across the week of 2026-10-26 to 2026-11-01 we screened seven targets spanning antifungal (Candida CYP51), antiviral (SARS-CoV-2 Mpro, influenza neuraminidase, HIV-1 integrase — attempted), antimicrobial resistance (MRSA PBP2a) and tuberculosis (MmpL3) and Alzheimer's disease (BACE1). Each run included a rediscovery control (verifying the pipeline recovers the reference drug or its scaffold from ChEMBL) and a head-to-head docking comparison between ranked leads and the reference therapy. Honest interpretation is enforced at every step: docking margins within ±1 kcal/mol are reported as noise-equivalent, failed or wrong-target runs are reported as failures rather than re-labelled, and all candidates are presented as computational starting points requiring wet-lab validation. No efficacy or therapeutic claims are made. Two runs this week produced above-noise docking margins (CYP51, PBP2a); two runs were invalid or corrected mid-run (HIV-1 integrase, MmpL3) and are reported as such. Keywords: virtual screening; AutoDock Vina; ChEMBL; target triage; CYP51; Mpro; PBP2a; MmpL3; BACE1; neuraminidase; HIV-1 integrase",
+  "md": "2026-11-01-drugdiscovery-leadforge-weekly-3.md",
+  "pdf": "2026-11-01-drugdiscovery-leadforge-weekly-3.pdf",
+  "status": "Draft — not submitted",
+  "summary": "We describe a reproducible, fully automated computational triage pipeline that runs daily against one high-burden disease target, using only live public data sources (UniProtKB, ChEMBL, PubChem, the RCSB Protein Data Bank)."
+ },
+ {
+  "date": "2026-10-25",
+  "field": "drugdiscovery",
+  "title": "Computational small-molecule triage against seven high-burden disease targets (week of 19-25 Oct 2026)",
+  "abstract": "We describe a reproducible, fully automated computational triage pipeline that runs daily against one high-burden disease target, using only live public data sources (UniProtKB, ChEMBL, PubChem, the RCSB Protein Data Bank). Each daily run executes seven steps: (1) target identification from UniProtKB, (2) known-ligand retrieval from ChEMBL, (3) query-drug verification from PubChem, (4) Morgan-fingerprint / Tanimoto similarity screening with RDKit, (5) ADMET screening (Lipinski, Veber, PAINS, ToxGuard Tox21 kNN read-across), (6) composite-score lead ranking, and (7) AutoDock Vina docking (meeko ligand preparation) against the best available experimental structure. Across the week of 2026-10-19 to 2026-10-25 we screened seven targets spanning oncology (KRAS G12C, VEGFR2, ALK, JAK2), tuberculosis (DprE1) and antimicrobial resistance (NDM-1, KPC-2). Each run included a rediscovery control (verifying the pipeline recovers the reference drug or its scaffold from ChEMBL) and a head-to-head docking comparison between ranked leads and the reference therapy. Honest interpretation is enforced at every step: docking margins within ±1 kcal/mol are reported as noise-equivalent, boron-containing references that Vina cannot dock are reported as non-comparable rather than as losses, and all candidates are presented as computational starting points requiring wet-lab validation. No efficacy or therapeutic claims are made. Keywords: virtual screening; AutoDock Vina; ChEMBL; target triage; KRAS; VEGFR2; DprE1; NDM-1; KPC; ALK; JAK2",
+  "md": "2026-10-25-drugdiscovery-leadforge-weekly-2.md",
+  "pdf": "2026-10-25-drugdiscovery-leadforge-weekly-2.pdf",
+  "status": "Draft — not submitted",
+  "summary": "We describe a reproducible, fully automated computational triage pipeline that runs daily against one high-burden disease target, using only live public data sources (UniProtKB, ChEMBL, PubChem, the RCSB Protein Data Bank)."
+ },
+ {
+  "date": "2026-10-18",
+  "field": "drugdiscovery",
+  "title": "Computational small-molecule triage against seven high-burden disease targets (week of 12-18 Oct 2026)",
+  "abstract": "We describe a reproducible, fully automated computational triage pipeline that runs daily against one high-burden disease target, using only live public data sources (UniProtKB, ChEMBL, PubChem, the RCSB Protein Data Bank). Each daily run executes seven steps: (1) target identification from UniProtKB, (2) known-ligand retrieval from ChEMBL, (3) query-drug verification from PubChem, (4) Morgan-fingerprint / Tanimoto similarity screening with RDKit, (5) ADMET screening (Lipinski, Veber, PAINS, ToxGuard Tox21 kNN read-across), (6) composite-score lead ranking, and (7) AutoDock Vina docking (meeko ligand preparation) against the best available experimental structure. Across the week of 2026-10-12 to 2026-10-18 we screened seven targets spanning antimicrobial resistance (S. aureus DHFR, P. falciparum DHFR-TS), oncology (CDK4, PARP1), and cardiometabolic disease (HMGCR, GLP1R, PCSK9). Each run included a rediscovery control (verifying the pipeline recovers the reference drug or its scaffold from ChEMBL) and a head-to-head docking comparison between ranked leads and the reference therapy. [TODO: add final tallies once PCSK9 completes.] Honest interpretation is enforced at every step: docking margins within ±1 kcal/mol are reported as noise-equivalent, resistant-allele strain effects are flagged, and all candidates are presented as computational starting points requiring wet-lab validation. No efficacy or therapeutic claims are made. Keywords: virtual screening; AutoDock Vina; ChEMBL; target triage; DHFR; CDK4; PARP1; HMGCR; GLP1R; PCSK9",
+  "md": "2026-10-18-drugdiscovery-leadforge-weekly-1.md",
+  "pdf": "2026-10-18-drugdiscovery-leadforge-weekly-1.pdf",
+  "status": "Draft — not submitted",
+  "summary": "We describe a reproducible, fully automated computational triage pipeline that runs daily against one high-burden disease target, using only live public data sources (UniProtKB, ChEMBL, PubChem, the RCSB Protein Data Bank)."
  },
  {
   "date": "2026-10-07",
