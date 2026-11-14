@@ -12,3 +12,43 @@ Abstract ≤ 2,500 characters; keywords 3–10.
 - **Licence:** CC BY 4.0 · **Author:** Zubair Ali, ORCID 0009-0001-5921-7509 · **Affiliation:** SMBBMU, Larkana, Pakistan
 - **AI-assistance disclosure:** included in the manuscript text.
 - **Status:** AI-assisted draft — NOT peer-reviewed, NOT published. NOT submitted anywhere.
+
+## Ponatinib Scores −14.36 kcal/mol on BCR-ABL1 T315I and Imatinib Scores the Same on Wild Type and Mutant: Rigid Docking Fails the Gatekeeper Negative Control
+
+- **File:** `2026-11-14-health-bcr-abl-t315i-ponatinib.md`
+- **Abstract:** 1900 characters (limit 2,500)
+- **Keywords (8):** BCR-ABL1; T315I; ponatinib; imatinib; chronic myeloid leukemia; molecular docking; AutoDock Vina; gatekeeper mutation
+- **Subject area:** Medicinal Chemistry / Chemical Biology
+- **Licence:** CC BY 4.0 · **Author:** Zubair Ali, ORCID 0009-0001-5921-7509 · **Affiliation:** SMBBMU, Larkana, Pakistan
+
+## Sorbitol Dehydrogenase Inhibitors Show No Rank Correlation on Three Docking Centres — and SORD Inhibition Already Failed to Help Diabetic Nerves in Rats
+
+- **File:** `2026-11-14-health-sorbitol-dehydrogenase-sord.md`
+- **Abstract:** 2095 characters (limit 2,500)
+- **Keywords (8):** sorbitol dehydrogenase; SORD; polyol pathway; diabetic neuropathy; molecular docking; AutoDock Vina; CP-166572; Pakistan
+- **Subject area:** Medicinal Chemistry / Chemical Biology
+- **Licence:** CC BY 4.0 · **Author:** Zubair Ali, ORCID 0009-0001-5921-7509 · **Affiliation:** SMBBMU, Larkana, Pakistan
+
+## Rigid Docking Separates Genuine Trypanothione Reductase Inhibitors from Miltefosine but Ranks the Series Backwards
+
+- **File:** `2026-11-14-health-leishmania-trypanothione-reductase.md`
+- **Abstract:** 1665 characters (limit 2,500)
+- **Keywords (8):** trypanothione reductase; Leishmania donovani; Leishmania infantum; visceral leishmaniasis; molecular docking; AutoDock Vina; miltefosine; β-carboline
+- **Subject area:** Medicinal Chemistry / Chemical Biology
+- **Licence:** CC BY 4.0 · **Author:** Zubair Ali, ORCID 0009-0001-5921-7509 · **Affiliation:** SMBBMU, Larkana, Pakistan
+
+## ATP-Competitive mTOR Inhibitors Are All Sub-Nanomolar but Docking Spreads Them Over 1.78 kcal/mol — and Ranks Them Backwards
+
+- **File:** `2026-11-14-health-mtor-kinase-inhibitors.md`
+- **Abstract:** 1696 characters (limit 2,500)
+- **Keywords (8):** mTOR; kinase inhibitor; everolimus; Torin2; molecular docking; AutoDock Vina; ATP-competitive; cancer
+- **Subject area:** Medicinal Chemistry / Chemical Biology
+- **Licence:** CC BY 4.0 · **Author:** Zubair Ali, ORCID 0009-0001-5921-7509 · **Affiliation:** SMBBMU, Larkana, Pakistan
+
+## Rigid Docking Gets the Extremes Right on SARS-CoV-2 Mpro: the 0.04 nM Analogue Scores Best and Nirmatrelvir Ties for Last
+
+- **File:** `2026-11-14-health-sars-cov-2-mpro-nirmatrelvir.md`
+- **Abstract:** 1447 characters (limit 2,500)
+- **Keywords (8):** SARS-CoV-2; main protease; Mpro; nirmatrelvir; Paxlovid; molecular docking; AutoDock Vina; covalent inhibitor
+- **Subject area:** Medicinal Chemistry / Chemical Biology
+- **Licence:** CC BY 4.0 · **Author:** Zubair Ali, ORCID 0009-0001-5921-7509 · **Affiliation:** SMBBMU, Larkana, Pakistan

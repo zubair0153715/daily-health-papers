@@ -1,0 +1,495 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL2176840 (live)",
+   "status": "ok",
+   "count": 6
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 6
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 7
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Trypanothione reductase Leishmania",
+  "uniprot": {
+   "accession": "P39050",
+   "entry": null,
+   "gene": "TPR",
+   "protein": "Trypanothione reductase",
+   "organism": "Leishmania donovani",
+   "length": 491,
+   "function": "Trypanothione is the parasite analog of glutathione; this enzyme is the equivalent of glutathione reductase",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P39050/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL2176840",
+   "name": "Trypanothione reductase",
+   "type": "SINGLE PROTEIN",
+   "organism": "Leishmania donovani",
+   "components": 1
+  }
+ },
+ "ligands_found": 6,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCCCCCCCCCCCCCCCOP(=O)([O-])OCC[N+](C)(C)C",
+   "similarity": 1.0,
+   "score": 90.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 20.0
+   },
+   "descriptors": {
+    "mw": 407.58,
+    "logp": 5.68,
+    "hbd": 0,
+    "hba": 4,
+    "tpsa": 58.59,
+    "rotatable": 20,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C21H46NO4P"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "measured",
+    "max_similarity": 1.0,
+    "assays": {
+     "NR-AR": 0,
+     "NR-AR-LBD": 0,
+     "NR-AhR": 0,
+     "NR-Aromatase": 0,
+     "NR-ER": 0,
+     "NR-ER-LBD": 0,
+     "NR-PPAR-gamma": 0,
+     "SR-ARE": null,
+     "SR-ATAD5": 0,
+     "SR-HSE": 0,
+     "SR-MMP": null,
+     "SR-p53": 0
+    }
+   },
+   "pubchem": {
+    "cid": 3599,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3599"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL3735035",
+   "smiles": "CCCCCN1C(=O)c2ccccc2NC1c1nc(C(=O)OC)cc2c1[nH]c1ccccc12",
+   "similarity": 0.113,
+   "score": 62.3,
+   "score_detail": {
+    "similarity_40": 4.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.8
+   },
+   "descriptors": {
+    "mw": 442.52,
+    "logp": 5.26,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 87.32,
+    "rotatable": 6,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C26H26N4O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.069,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.33,
+     "NR-Aromatase": 0.078,
+     "NR-ER": 0.079,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.168,
+     "SR-ATAD5": 0.201,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.146,
+     "SR-p53": 0.229
+    }
+   },
+   "known_activity": {
+    "pchembl": "6.10",
+    "activity": "Ki 800.0 nM"
+   }
+  },
+  {
+   "rank": 3,
+   "label": "CHEMBL3735110",
+   "smiles": "CCN1C(=O)c2ccccc2NC1c1nc(C(=O)OC)cc2c1[nH]c1ccccc12",
+   "similarity": 0.063,
+   "score": 60.1,
+   "score_detail": {
+    "similarity_40": 2.5,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.6
+   },
+   "descriptors": {
+    "mw": 400.44,
+    "logp": 4.09,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 87.32,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C23H20N4O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.382,
+     "NR-Aromatase": 0.079,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.305,
+     "SR-ATAD5": 0.2,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.265,
+     "SR-p53": 0.232
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.19",
+    "activity": "Ki 6500.0 nM"
+   }
+  },
+  {
+   "rank": 4,
+   "label": "CHEMBL3736154",
+   "smiles": "COC(=O)c1cc2c([nH]c3ccccc32)c(C2Nc3ccccc3C(=O)N2c2ccc(Cl)cc2)n1",
+   "similarity": 0.035,
+   "score": 59.9,
+   "score_detail": {
+    "similarity_40": 1.4,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.5
+   },
+   "descriptors": {
+    "mw": 482.93,
+    "logp": 5.93,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 87.32,
+    "rotatable": 3,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C27H19ClN4O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.168,
+     "NR-Aromatase": 0.091,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.166,
+     "SR-ATAD5": 0.077,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.245,
+     "SR-p53": 0.181
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.14",
+    "activity": "Ki 7200.0 nM"
+   }
+  },
+  {
+   "rank": 5,
+   "label": "CHEMBL3735109",
+   "smiles": "COC(=O)c1cc2c([nH]c3ccccc32)c(C2Nc3ccccc3C(=O)N2Cc2ccc(OC)cc2)n1",
+   "similarity": 0.047,
+   "score": 59.7,
+   "score_detail": {
+    "similarity_40": 1.9,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.8
+   },
+   "descriptors": {
+    "mw": 492.54,
+    "logp": 5.28,
+    "hbd": 2,
+    "hba": 6,
+    "tpsa": 96.55,
+    "rotatable": 5,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C29H24N4O4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.451,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.204,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.249,
+     "SR-ATAD5": 0.183,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.118,
+     "SR-p53": 0.108
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.04",
+    "activity": "Ki 9200.0 nM"
+   }
+  },
+  {
+   "rank": 6,
+   "label": "CHEMBL3735942",
+   "smiles": "COC(=O)c1cc2c([nH]c3ccccc32)c(C2Nc3ccccc3C(=O)N2c2ccc(F)cc2)n1",
+   "similarity": 0.035,
+   "score": 59.0,
+   "score_detail": {
+    "similarity_40": 1.4,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.6
+   },
+   "descriptors": {
+    "mw": 466.47,
+    "logp": 5.41,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 87.32,
+    "rotatable": 3,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C27H19FN4O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.573,
+     "NR-Aromatase": 0.085,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.113,
+     "SR-ATAD5": 0.144,
+     "SR-HSE": 0.098,
+     "SR-MMP": 0.304,
+     "SR-p53": 0.103
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.41",
+    "activity": "Ki 3900.0 nM"
+   }
+  },
+  {
+   "rank": 7,
+   "label": "CHEMBL3736017",
+   "smiles": "COC(=O)c1cc2c([nH]c3ccccc32)c(C2Nc3ccccc3C(=O)N2Cc2ccc(Cl)c(Cl)c2)n1",
+   "similarity": 0.045,
+   "score": 39.5,
+   "score_detail": {
+    "similarity_40": 1.8,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.7
+   },
+   "descriptors": {
+    "mw": 531.4,
+    "logp": 6.58,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 87.32,
+    "rotatable": 4,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C28H20Cl2N4O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.466,
+     "NR-Aromatase": 0.084,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.248,
+     "SR-ATAD5": 0.132,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.283,
+     "SR-p53": 0.164
+    }
+   },
+   "known_activity": {
+    "pchembl": "5.43",
+    "activity": "Ki 3700.0 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": false,
+  "error": "no_pdb_found",
+  "results": []
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Trypanothione reductase Leishmania",
+  "reference": "miltefosine"
+ }
+}

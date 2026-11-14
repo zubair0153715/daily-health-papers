@@ -1,0 +1,18 @@
+{
+ "label": "PONATINIB-REDOCK-3OXZ",
+ "source": "co-crystallised ponatinib (0LI) in 3OXZ, WT murine Abl1, 2.2 A; re-dock control",
+ "pdb_id": "3OXZ",
+ "resolution": 2.2,
+ "center": [
+  15.33,
+  -7.55,
+  16.58
+ ],
+ "affinity_kcal_mol": -14.33,
+ "poses": [
+  -14.33,
+  -10.48,
+  -10.12
+ ],
+ "ok": true
+}

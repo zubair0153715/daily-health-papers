@@ -1,0 +1,102 @@
+{
+ "topic": {
+  "target": "mTOR kinase domain",
+  "reference": "everolimus",
+  "topic_id": "HP-058",
+  "date": "2026-11-14"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "4JSX",
+  "resolution": 3.5,
+  "center": [
+   49.98,
+   -1.37,
+   -47.78
+  ],
+  "center_note": "co-crystallised Torin2 (17G) centroid, chain A \u2014 the ATP-binding pocket",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "dock_leads hung on PDB lookup; resolution filter (<3.0 A) excludes all kinase-domain structures. 4JSX (Torin2-bound, 3.5 A) is the correct structure for ATP-competitive leads. Everolimus is an allosteric FRB binder \u2014 its ATP-site dock is a negative control. HETATM (incl. Mg2+) dropped by receptor prep.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.45,
+    "poses": [
+     -9.45,
+     -9.27,
+     -9.24
+    ],
+    "pdb_id": "4JSX",
+    "label": "CHEMBL576090",
+    "rank": 3,
+    "measured_potency": "IC50 0.2 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.32,
+    "poses": [
+     -9.32,
+     -8.73,
+     -8.49
+    ],
+    "pdb_id": "4JSX",
+    "label": "CHEMBL1091714",
+    "rank": 1,
+    "measured_potency": "IC50 0.1 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.06,
+    "poses": [
+     -9.06,
+     -9.0,
+     -8.49
+    ],
+    "pdb_id": "4JSX",
+    "label": "CHEMBL606423",
+    "rank": 5,
+    "measured_potency": "IC50 0.19 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.94,
+    "poses": [
+     -7.94,
+     -7.85,
+     -7.77
+    ],
+    "pdb_id": "4JSX",
+    "label": "CHEMBL3693444",
+    "rank": 2,
+    "measured_potency": "IC50 0.15 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.67,
+    "poses": [
+     -7.67,
+     -7.56,
+     -7.51
+    ],
+    "pdb_id": "4JSX",
+    "label": "CHEMBL1801204",
+    "rank": 4,
+    "measured_potency": "IC50 0.13 nM",
+    "pains": []
+   },
+   {
+    "ok": false,
+    "error": "Command '['/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/vina', '--receptor', '/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/4JSX_rec.pdbqt', '--ligand', '/home/hatch",
+    "label": "QUERY",
+    "rank": 14,
+    "measured_potency": null,
+    "pains": []
+   }
+  ]
+ }
+}

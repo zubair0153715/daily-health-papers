@@ -642,6 +642,61 @@
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null
+  },
+  {
+   "date": "2026-11-14",
+   "topic_id": "HP-032",
+   "topic": "BCR-ABL T315I \u2014 imatinib resistance in CML",
+   "title": "Ponatinib Scores \u221214.36 kcal/mol on BCR-ABL1 T315I and Imatinib Scores the Same on Wild Type and Mutant: Rigid Docking Fails the Gatekeeper Negative Control",
+   "file": "files/2026-11-14-health-bcr-abl-t315i-ponatinib.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-14",
+   "topic_id": "HP-054",
+   "topic": "Sorbitol dehydrogenase (SORD) \u2014 second polyol-pathway step, diabetic neuropathy",
+   "title": "Sorbitol Dehydrogenase Inhibitors Show No Rank Correlation on Three Docking Centres \u2014 and SORD Inhibition Already Failed to Help Diabetic Nerves in Rats",
+   "file": "files/2026-11-14-health-sorbitol-dehydrogenase-sord.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-14",
+   "topic_id": "HP-024",
+   "topic": "Leishmania trypanothione reductase \u2014 visceral leishmaniasis",
+   "title": "Rigid Docking Separates Genuine Trypanothione Reductase Inhibitors from Miltefosine but Ranks the Series Backwards",
+   "file": "files/2026-11-14-health-leishmania-trypanothione-reductase.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-14",
+   "topic_id": "HP-058",
+   "topic": "mTOR kinase domain \u2014 ATP-competitive inhibitors vs everolimus",
+   "title": "ATP-Competitive mTOR Inhibitors Are All Sub-Nanomolar but Docking Spreads Them Over 1.78 kcal/mol \u2014 and Ranks Them Backwards",
+   "file": "files/2026-11-14-health-mtor-kinase-inhibitors.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-14",
+   "topic_id": "HP-037",
+   "topic": "SARS-CoV-2 main protease Mpro \u2014 nirmatrelvir analogues",
+   "title": "Rigid Docking Gets the Extremes Right on SARS-CoV-2 Mpro: the 0.04 nM Analogue Scores Best and Nirmatrelvir Ties for Last",
+   "file": "files/2026-11-14-health-sars-cov-2-mpro-nirmatrelvir.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
   }
  ],
  "used_topic_ids": [
@@ -695,6 +750,11 @@
   "HP-027",
   "HP-044",
   "HP-017",
-  "HP-049"
+  "HP-049",
+  "HP-032",
+  "HP-054",
+  "HP-024",
+  "HP-058",
+  "HP-037"
  ]
 }

@@ -1,0 +1,94 @@
+{
+ "topic": {
+  "target": "SARS-CoV-2 main protease Mpro (nsp5)",
+  "reference": "nirmatrelvir",
+  "topic_id": "HP-037",
+  "date": "2026-11-14"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "7SI9",
+  "resolution": 2.0,
+  "center": [
+   -10.4,
+   39.82,
+   -17.96
+  ],
+  "center_note": "co-crystallised nirmatrelvir adduct (4WI) centroid, chain A \u2014 the active site, Cys145",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "First run used the wrong ChEMBL target (CHEMBL2074 maltase-glucoamylase) and the wrong structure (8AZC, NSP3 macrodomain); all docks failed. Correct target is CHEMBL4523582 via UniProt P0DTD1; correct structure is 7SI9 (nirmatrelvir-bound). CHEMBL4802135 is nirmatrelvir itself \u2014 excluded as a duplicate of the QUERY. Rigid docking cannot model the covalent Cys145 bond.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.79,
+    "poses": [
+     -8.79,
+     -8.21,
+     -7.7
+    ],
+    "pdb_id": "7SI9",
+    "label": "CHEMBL5574604",
+    "rank": 3,
+    "measured_potency": "Ki 0.04 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.52,
+    "poses": [
+     -8.52,
+     -7.8,
+     -7.32
+    ],
+    "pdb_id": "7SI9",
+    "label": "CHEMBL5590149",
+    "rank": 6,
+    "measured_potency": "Ki 1.1 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.32,
+    "poses": [
+     -8.32,
+     -7.53,
+     -7.3
+    ],
+    "pdb_id": "7SI9",
+    "label": "CHEMBL5178656",
+    "rank": 5,
+    "measured_potency": "Ki 0.44 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.22,
+    "poses": [
+     -8.22,
+     -8.21,
+     -7.93
+    ],
+    "pdb_id": "7SI9",
+    "label": "QUERY",
+    "rank": 1,
+    "measured_potency": null,
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.22,
+    "poses": [
+     -8.22,
+     -7.24,
+     -7.17
+    ],
+    "pdb_id": "7SI9",
+    "label": "CHEMBL5589941",
+    "rank": 4,
+    "measured_potency": "Ki 0.2 nM",
+    "pains": []
+   }
+  ]
+ }
+}

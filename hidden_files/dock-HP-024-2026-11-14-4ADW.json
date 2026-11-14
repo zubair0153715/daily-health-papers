@@ -1,0 +1,94 @@
+{
+ "topic": {
+  "target": "Trypanothione reductase (Leishmania donovani)",
+  "reference": "miltefosine",
+  "topic_id": "HP-024",
+  "date": "2026-11-14"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "4ADW",
+  "resolution": 3.61,
+  "center": [
+   21.56,
+   41.03,
+   -18.76
+  ],
+  "center_note": "trypanothione (GCG) centroid, chain A \u2014 the physiological substrate in the active site",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "homologue_note": "No L. donovani TR structure exists in the PDB. Homologue: L. infantum TR (UniProt A4HSF7, 87.2% ungapped identity to P39050, both 491 aa). FAD/NADPH dropped by receptor prep. Miltefosine is a negative control \u2014 not a TR inhibitor.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.56,
+    "poses": [
+     -8.56,
+     -8.31,
+     -8.06
+    ],
+    "pdb_id": "4ADW",
+    "label": "CHEMBL3736154",
+    "rank": 4,
+    "measured_potency": "Ki 7200.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.4,
+    "poses": [
+     -8.4,
+     -8.32,
+     -7.72
+    ],
+    "pdb_id": "4ADW",
+    "label": "CHEMBL3735109",
+    "rank": 5,
+    "measured_potency": "Ki 9200.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.13,
+    "poses": [
+     -8.13,
+     -7.55,
+     -7.16
+    ],
+    "pdb_id": "4ADW",
+    "label": "CHEMBL3735035",
+    "rank": 2,
+    "measured_potency": "Ki 800.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.75,
+    "poses": [
+     -7.75,
+     -7.54,
+     -7.22
+    ],
+    "pdb_id": "4ADW",
+    "label": "CHEMBL3735110",
+    "rank": 3,
+    "measured_potency": "Ki 6500.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -4.54,
+    "poses": [
+     -4.54,
+     -4.47,
+     -4.26
+    ],
+    "pdb_id": "4ADW",
+    "label": "QUERY",
+    "rank": 1,
+    "measured_potency": null,
+    "pains": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "topic": {
+  "target": "BCR-ABL1 T315I",
+  "reference": "ponatinib",
+  "topic_id": "HP-032",
+  "date": "2026-11-14"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "3OY3",
+  "resolution": 1.95,
+  "center": [
+   15.64,
+   7.23,
+   3.76
+  ],
+  "center_note": "co-crystallised AP24589 centroid via dock._ligand_center; T315I mutant kinase domain",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "run_docking.py auto-picked wild-type 3KFA; this is the corrected T315I-mutant docking. 3OY3 is murine Abl1 kinase domain residues 229-511, T315I, bound to AP24589. Ponatinib was docked twice on 3OY3 in independent Vina runs: -14.36 and -14.29 kcal/mol (delta 0.07); the -14.36 run is tabulated, the repeat is a protocol-stability check.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -14.36,
+    "poses": [
+     -14.36,
+     -10.81,
+     -10.5
+    ],
+    "pdb_id": "3OY3",
+    "label": "QUERY",
+    "rank": 1,
+    "measured_potency": null,
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.81,
+    "poses": [
+     -9.81,
+     -9.09,
+     -8.77
+    ],
+    "pdb_id": "3OY3",
+    "label": "CHEMBL1213976",
+    "rank": 5,
+    "measured_potency": null,
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.78,
+    "poses": [
+     -9.78,
+     -9.61,
+     -9.23
+    ],
+    "pdb_id": "3OY3",
+    "label": "CHEMBL459850",
+    "rank": 3,
+    "measured_potency": null,
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.6,
+    "poses": [
+     -9.6,
+     -8.96,
+     -8.9
+    ],
+    "pdb_id": "3OY3",
+    "label": "CHEMBL941",
+    "rank": 2,
+    "measured_potency": null,
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.29,
+    "poses": [
+     -9.29,
+     -8.98,
+     -8.66
+    ],
+    "pdb_id": "3OY3",
+    "label": "CHEMBL1213975",
+    "rank": 4,
+    "measured_potency": null,
+    "pains": []
+   }
+  ]
+ }
+}

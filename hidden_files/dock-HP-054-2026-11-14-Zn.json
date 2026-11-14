@@ -1,0 +1,94 @@
+{
+ "topic": {
+  "target": "Sorbitol dehydrogenase (SORD)",
+  "reference": "CP-166572",
+  "topic_id": "HP-054",
+  "date": "2026-11-14"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "1PL8",
+  "resolution": 1.9,
+  "center": [
+   94.58,
+   35.23,
+   36.71
+  ],
+  "center_note": "catalytic Zn2+, chain A (HETATM ZN A 402); nicotinamide ring within 8 A; substrate pocket",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "run_docking.py auto-pick centred on the NAD+ cofactor centroid (11.62 A from Zn); this is the corrected Zn-centred docking. Receptor prep drops HETATM, so Zn2+ is NOT in the docked receptor (no metal coordination modelled). No inhibitor-bound SORD structure exists in the PDB.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.04,
+    "poses": [
+     -7.04,
+     -6.67,
+     -6.62
+    ],
+    "pdb_id": "1PL8",
+    "label": "CHEMBL423753",
+    "rank": 5,
+    "measured_potency": "IC50 140.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.78,
+    "poses": [
+     -6.78,
+     -6.71,
+     -6.65
+    ],
+    "pdb_id": "1PL8",
+    "label": "CHEMBL151268",
+    "rank": 4,
+    "measured_potency": "IC50 93.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.48,
+    "poses": [
+     -6.48,
+     -6.34,
+     -6.08
+    ],
+    "pdb_id": "1PL8",
+    "label": "CHEMBL90344",
+    "rank": 2,
+    "measured_potency": "IC50 27.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.43,
+    "poses": [
+     -6.43,
+     -6.4,
+     -6.32
+    ],
+    "pdb_id": "1PL8",
+    "label": "CHEMBL91846",
+    "rank": 3,
+    "measured_potency": "IC50 173.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.25,
+    "poses": [
+     -6.25,
+     -6.01,
+     -5.98
+    ],
+    "pdb_id": "1PL8",
+    "label": "QUERY",
+    "rank": 1,
+    "measured_potency": null,
+    "pains": []
+   }
+  ]
+ }
+}

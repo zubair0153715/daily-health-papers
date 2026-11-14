@@ -1,0 +1,94 @@
+{
+ "topic": {
+  "target": "Sorbitol dehydrogenase (SORD)",
+  "reference": "CP-166572",
+  "topic_id": "HP-054",
+  "date": "2026-11-14"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "1PL6",
+  "resolution": 2.0,
+  "center": [
+   102.75,
+   37.0,
+   35.25
+  ],
+  "center_note": "co-crystallised ligand 572 centroid, chain A; ligand 572 IS CP-166572 (C11H19N5O3S), 6.28 A from catalytic Zn2+ (chain A)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "run_docking.py auto-picked 1PL8 (1.90 A, best resolution) \u2014 an NAD+ complex with no inhibitor. 1PL6 is the inhibitor-bound structure and the correct choice; the QUERY dock is the CP-166572 re-dock control. Receptor prep drops HETATM, so Zn2+ is NOT in the docked receptor.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.95,
+    "poses": [
+     -6.95,
+     -6.9,
+     -6.87
+    ],
+    "pdb_id": "1PL6",
+    "label": "CHEMBL151268",
+    "rank": 4,
+    "measured_potency": "IC50 93.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.95,
+    "poses": [
+     -6.95,
+     -6.82,
+     -6.67
+    ],
+    "pdb_id": "1PL6",
+    "label": "CHEMBL423753",
+    "rank": 5,
+    "measured_potency": "IC50 140.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.54,
+    "poses": [
+     -6.54,
+     -6.18,
+     -6.12
+    ],
+    "pdb_id": "1PL6",
+    "label": "CHEMBL90344",
+    "rank": 2,
+    "measured_potency": "IC50 27.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.37,
+    "poses": [
+     -6.37,
+     -6.27,
+     -6.24
+    ],
+    "pdb_id": "1PL6",
+    "label": "CHEMBL91846",
+    "rank": 3,
+    "measured_potency": "IC50 173.0 nM",
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.2,
+    "poses": [
+     -6.2,
+     -6.17,
+     -6.14
+    ],
+    "pdb_id": "1PL6",
+    "label": "QUERY",
+    "rank": 1,
+    "measured_potency": null,
+    "pains": []
+   }
+  ]
+ }
+}
