@@ -1,0 +1,143 @@
+{
+ "ok": true,
+ "pdb_id": "3G4L",
+ "resolution": 2.5,
+ "center": [
+  21.53,
+  -4.02,
+  30.58
+ ],
+ "centre_audit": {
+  "centre": [
+   21.53,
+   -4.02,
+   30.58
+  ],
+  "metals": [
+   {
+    "element": "ZN",
+    "centre_distance_A": 8.17
+   },
+   {
+    "element": "MG",
+    "centre_distance_A": 9.14
+   },
+   {
+    "element": "ZN",
+    "centre_distance_A": 40.36
+   },
+   {
+    "element": "MG",
+    "centre_distance_A": 36.78
+   },
+   {
+    "element": "ZN",
+    "centre_distance_A": 36.89
+   },
+   {
+    "element": "MG",
+    "centre_distance_A": 36.52
+   },
+   {
+    "element": "ZN",
+    "centre_distance_A": 54.63
+   },
+   {
+    "element": "MG",
+    "centre_distance_A": 51.8
+   }
+  ]
+ },
+ "compounds": [
+  {
+   "label": "ROFLUMILAST",
+   "smiles": "C1CC1COC2=C(C=CC(=C2)C(=O)NC3=C(C=NC=C3Cl)Cl)OC(F)F",
+   "pubchem_cid": 449193,
+   "descriptors": {
+    "mw": 403.21,
+    "logp": 5.03,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 60.45,
+    "rotatable": 7,
+    "formula": "C17H14Cl2F2N2O3"
+   },
+   "pains": [],
+   "measured_PDE4_IC50_nM": 0.7,
+   "notes": "Wang 2025 JID comparison set: 0.7 nM; Hatzelmann & Schudt 2001: 0.8 nM. Re-dock control on its own structure 3G4L."
+  },
+  {
+   "label": "APREMILAST",
+   "smiles": "CCOC1=C(C=CC(=C1)C(CS(=O)(=O)C)N2C(=O)C3=C(C2=O)C(=CC=C3)NC(=O)C)OC",
+   "pubchem_cid": 11561674,
+   "descriptors": {
+    "mw": 460.51,
+    "logp": 2.43,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 119.08,
+    "rotatable": 8,
+    "formula": "C22H24N2O7S"
+   },
+   "pains": [],
+   "measured_PDE4_IC50_nM": 140,
+   "notes": "Wang 2025 JID comparison set: 0.14 uM. Schafer 2010 measured 74 nM -- range 74-140 nM; ranking unaffected."
+  },
+  {
+   "label": "CILOMILAST",
+   "smiles": "COC1=C(C=C(C=C1)C2(CCC(CC2)C(=O)O)C#N)OC3CCCC3",
+   "pubchem_cid": 151170,
+   "descriptors": {
+    "mw": 343.42,
+    "logp": 4.05,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 79.55,
+    "rotatable": 5,
+    "formula": "C20H25NO4"
+   },
+   "pains": [],
+   "measured_PDE4_IC50_nM": 120,
+   "notes": "Hatzelmann & Schudt 2001: 120 nM (human PDE4). Card et al.: PDE4D 11 nM, PDE4B 25 nM -- subtype-dependent; range 11-120 nM; ranking unaffected."
+  }
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.62,
+   "poses": [
+    -9.62,
+    -9.35,
+    -9.22
+   ],
+   "pdb_id": "3G4L",
+   "label": "CILOMILAST",
+   "measured_PDE4_IC50_nM": 120
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.14,
+   "poses": [
+    -9.14,
+    -9.02
+   ],
+   "pdb_id": "3G4L",
+   "label": "ROFLUMILAST",
+   "measured_PDE4_IC50_nM": 0.7
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.93,
+   "poses": [
+    -8.93,
+    -8.92,
+    -8.7
+   ],
+   "pdb_id": "3G4L",
+   "label": "APREMILAST",
+   "measured_PDE4_IC50_nM": 140
+  }
+ ],
+ "crisaborole_reference": "NOT docked: benzoxaborole, contains boron; Vina PDBQT parser rejects atom type B (proven by the pipeline run on HP-064 taniborbactam). Measured reference only: 0.24 uM (Wang 2025 JID abstract); 0.75 uM in the same paper's text and in J Clin Aesthet Dermatol 2025;18(7):18-21. Either value leaves it last by a wide margin.",
+ "correction_note": "Pipeline run dock-HP-077-2026-11-15.json is DISCARDED (UniProt Q86H13 Dictyostelium PDE; ChEMBL CHEMBL2074 maltase-glucoamylase; no_pdb_found). This file is the corrected docking on 3G4L (human PDE4D + roflumilast)."
+}

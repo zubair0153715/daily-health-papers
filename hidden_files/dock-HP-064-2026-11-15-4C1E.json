@@ -1,0 +1,169 @@
+{
+ "ok": true,
+ "pdb_id": "4C1E",
+ "resolution": 1.4,
+ "center": [
+  75.98,
+  6.89,
+  58.12
+ ],
+ "centre_audit": {
+  "centre": [
+   75.98,
+   6.89,
+   58.12
+  ],
+  "zn_count": 6,
+  "centre_to_Zn_distances_A": [
+   5.41,
+   4.28,
+   28.65,
+   21.5,
+   20.08,
+   44.67
+  ],
+  "zn_zn_distance_A": 3.71
+ },
+ "compounds": [
+  {
+   "label": "D-CAPTOPRIL",
+   "smiles": "C[C@H](CS)C(=O)N1CCC[C@@H]1C(=O)O",
+   "cip": [
+    "S",
+    "R"
+   ],
+   "pubchem_cid": 447055,
+   "pubchem_title": "1-((2S)-3-Mercapto-2-methyl-1-oxopropyl)-D-proline",
+   "descriptors": {
+    "mw": 217.29,
+    "logp": 0.63,
+    "hbd": 2,
+    "hba": 3,
+    "tpsa": 57.61,
+    "rotatable": 3,
+    "formula": "C9H15NO3S"
+   },
+   "pains": [],
+   "measured_VIM2_IC50_uM": 0.072,
+   "notes": "Brem 2016 Table 1: VIM-2 IC50 0.072 +/- 0.010 uM; re-dock control on its own structure 4C1E"
+  },
+  {
+   "label": "L-CAPTOPRIL",
+   "smiles": "C[C@H](CS)C(=O)N1CCC[C@H]1C(=O)O",
+   "cip": [
+    "S",
+    "S"
+   ],
+   "pubchem_cid": 44093,
+   "pubchem_title": "Captopril",
+   "descriptors": {
+    "mw": 217.29,
+    "logp": 0.63,
+    "hbd": 2,
+    "hba": 3,
+    "tpsa": 57.61,
+    "rotatable": 3,
+    "formula": "C9H15NO3S"
+   },
+   "pains": [],
+   "measured_VIM2_IC50_uM": 4.4,
+   "notes": "Brem 2016 Table 1: VIM-2 IC50 4.4 +/- 0.8 uM; co-crystal 4C1D (1.20 A)"
+  },
+  {
+   "label": "EPI-D-CAPTOPRIL",
+   "smiles": "C[C@@H](CS)C(=O)N1CCC[C@@H]1C(=O)O",
+   "cip": [
+    "R",
+    "R"
+   ],
+   "pubchem_cid": 446549,
+   "pubchem_title": "(2R)-1-[(2R)-2-methyl-3-sulfanylpropanoyl]pyrrolidine-2-carboxylic acid",
+   "descriptors": {
+    "mw": 217.29,
+    "logp": 0.63,
+    "hbd": 2,
+    "hba": 3,
+    "tpsa": 57.61,
+    "rotatable": 3,
+    "formula": "C9H15NO3S"
+   },
+   "pains": [],
+   "measured_VIM2_IC50_uM": 5.5,
+   "notes": "Brem 2016 Table 1: VIM-2 IC50 5.5 +/- 0.7 uM"
+  },
+  {
+   "label": "EPI-L-CAPTOPRIL",
+   "smiles": "C[C@@H](CS)C(=O)N1CCC[C@H]1C(=O)O",
+   "cip": [
+    "R",
+    "S"
+   ],
+   "pubchem_cid": 688267,
+   "pubchem_title": "Epicaptopril",
+   "descriptors": {
+    "mw": 217.29,
+    "logp": 0.63,
+    "hbd": 2,
+    "hba": 3,
+    "tpsa": 57.61,
+    "rotatable": 3,
+    "formula": "C9H15NO3S"
+   },
+   "pains": [],
+   "measured_VIM2_IC50_uM": 5.5,
+   "notes": "Brem 2016 Table 1: VIM-2 IC50 5.5 +/- 1.5 uM"
+  }
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.19,
+   "poses": [
+    -6.19,
+    -5.19,
+    -5.16
+   ],
+   "pdb_id": "4C1E",
+   "label": "L-CAPTOPRIL",
+   "measured_VIM2_IC50_uM": 4.4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.19,
+   "poses": [
+    -6.19,
+    -5.67,
+    -5.06
+   ],
+   "pdb_id": "4C1E",
+   "label": "EPI-L-CAPTOPRIL",
+   "measured_VIM2_IC50_uM": 5.5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.16,
+   "poses": [
+    -6.16,
+    -6.15,
+    -5.29
+   ],
+   "pdb_id": "4C1E",
+   "label": "D-CAPTOPRIL",
+   "measured_VIM2_IC50_uM": 0.072
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.12,
+   "poses": [
+    -6.12,
+    -5.88,
+    -5.62
+   ],
+   "pdb_id": "4C1E",
+   "label": "EPI-D-CAPTOPRIL",
+   "measured_VIM2_IC50_uM": 5.5
+  }
+ ],
+ "taniborbactam_reference": "NOT docked: boronate; Vina PDBQT parser rejects atom type B (proven by the pipeline run on 9CV3). Measured reference only: Ki 0.02 uM vs VIM-2 (Le Terrier et al. AAC 2024, 68:e00991-23).",
+ "correction_note": "Pipeline run dock-HP-064-2026-11-15.json is DISCARDED (0 ChEMBL ligands; taniborbactam boron rejected by Vina; structure 9CV3 is VIM-20, not VIM-2). This file is the corrected docking on 4C1E (true VIM-2)."
+}

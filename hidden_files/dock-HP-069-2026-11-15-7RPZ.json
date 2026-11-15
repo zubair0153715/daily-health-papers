@@ -1,0 +1,169 @@
+{
+ "ok": true,
+ "pdb_id": "7RPZ",
+ "resolution": 1.3,
+ "center": [
+  1.71,
+  4.93,
+  -23.16
+ ],
+ "centre_audit": {
+  "centre": [
+   1.71,
+   4.93,
+   -23.16
+  ],
+  "asp12_CA_distance_A": 9.55,
+  "gdp_centroid_distance_A": 17.81
+ },
+ "compounds": [
+  {
+   "label": "MRTX1133-REF",
+   "smiles": "C#CC1=C(C=CC2=CC(=CC(=C21)C3=NC=C4C(=C3F)N=C(N=C4N5CC6CCC(C5)N6)OCC78CCCN7CC(C8)F)O)F",
+   "formula_check": "C33H31F3N6O2",
+   "descriptors": {
+    "mw": 600.65,
+    "logp": 4.71,
+    "hbd": 2,
+    "hba": 8,
+    "tpsa": 86.64,
+    "rotatable": 5,
+    "formula": "C33H31F3N6O2"
+   },
+   "pains": [],
+   "measured_pERK_AGs_IC50_nM": 2.0,
+   "notes": "PubChem-verified MRTX1133 (reference drug); Wang 2022 Table 4: pERK AGS IC50 2 nM; KD ~0.0002 nM; 2D viability AGS 6 nM; MKN1 >3000 nM"
+  },
+  {
+   "label": "WANG-25",
+   "smiles": "Oc1cc(-c2ncc3c(N4C[C@H]5CC[C@@H](C4)N5)nc(OC[C@@]45CCCN4C[C@H](F)C5)nc3c2F)c2ccccc2c1",
+   "formula_check": "C31 H32 F2 N6 O2",
+   "descriptors": {
+    "mw": 558.63,
+    "logp": 4.59,
+    "hbd": 2,
+    "hba": 8,
+    "tpsa": 86.64,
+    "rotatable": 5,
+    "formula": "C31H32F2N6O2"
+   },
+   "pains": [],
+   "measured_pERK_AGs_IC50_nM": 24.0,
+   "notes": "Wang 2022 compound 25 (eutomer of the 24/25 pair); pERK IC50 24 nM; co-crystal 7RT2; SMILES from RCSB chemcomp 7NL InChI"
+  },
+  {
+   "label": "WANG-36",
+   "smiles": "C#Cc1c(F)ccc2cccc(-c3ncc4c(N5C[C@H]6CC[C@@H](C5)N6)nc(OCC56CCCN5CCC6)nc4c3F)c12",
+   "formula_check": "C33 H32 F2 N6 O",
+   "descriptors": {
+    "mw": 566.66,
+    "logp": 5.05,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 66.41,
+    "rotatable": 5,
+    "formula": "C33H32F2N6O"
+   },
+   "pains": [],
+   "measured_pERK_AGs_IC50_nM": 24.0,
+   "notes": "Wang 2022 compound 36; biochemical activity <2 nM; pERK IC50 24 nM; co-crystal 7RT5; SMILES from RCSB chemcomp 7OE InChI"
+  },
+  {
+   "label": "WANG-15",
+   "smiles": "CN1CCC[C@H]1COc1nc(N2C[C@H]3CC[C@@H](C2)N3)c2cnc(-c3cc(O)cc4ccccc34)c(F)c2n1",
+   "formula_check": "C29 H31 F N6 O2",
+   "descriptors": {
+    "mw": 514.61,
+    "logp": 4.1,
+    "hbd": 2,
+    "hba": 8,
+    "tpsa": 86.64,
+    "rotatable": 5,
+    "formula": "C29H31FN6O2"
+   },
+   "pains": [],
+   "measured_pERK_AGs_IC50_nM": 530.0,
+   "notes": "Wang 2022 compound 15; SPR KD 0.8 nM, >200-fold selective vs KRAS WT (KD 182 nM); pERK IC50 0.530 uM; co-crystal 7RT1; SMILES from RCSB chemcomp 7L8 InChI"
+  },
+  {
+   "label": "SOTORASIB-NEG",
+   "smiles": "CC1CN(CCN1C2=NC(=O)N(C3=NC(=C(C=C32)F)C4=C(C=CC=C4F)O)C5=C(C=CN=C5C(C)C)C)C(=O)C=C",
+   "formula_check": "C30H30F2N6O3",
+   "descriptors": {
+    "mw": 560.61,
+    "logp": 4.48,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 104.45,
+    "rotatable": 5,
+    "formula": "C30H30F2N6O3"
+   },
+   "pains": [],
+   "measured_pERK_AGs_IC50_nM": null,
+   "notes": "G12C covalent inhibitor (negative control): no Cys12 in G12D, no measurable G12D activity reported; excluded from rank correlation"
+  }
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.71,
+   "poses": [
+    -12.71,
+    -10.19,
+    -10.03
+   ],
+   "pdb_id": "7RPZ",
+   "label": "MRTX1133-REF",
+   "measured_pERK_AGs_IC50_nM": 2.0
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.62,
+   "poses": [
+    -11.62,
+    -10.74,
+    -9.89
+   ],
+   "pdb_id": "7RPZ",
+   "label": "WANG-36",
+   "measured_pERK_AGs_IC50_nM": 24.0
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.13,
+   "poses": [
+    -11.13,
+    -9.82,
+    -9.13
+   ],
+   "pdb_id": "7RPZ",
+   "label": "WANG-15",
+   "measured_pERK_AGs_IC50_nM": 530.0
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.34,
+   "poses": [
+    -9.34,
+    -9.27,
+    -9.0
+   ],
+   "pdb_id": "7RPZ",
+   "label": "WANG-25",
+   "measured_pERK_AGs_IC50_nM": 24.0
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.74,
+   "poses": [
+    -7.74,
+    -7.63,
+    -7.49
+   ],
+   "pdb_id": "7RPZ",
+   "label": "SOTORASIB-NEG",
+   "measured_pERK_AGs_IC50_nM": null
+  }
+ ],
+ "correction_note": "Pipeline run dock-HP-069-2026-11-15.json is DISCARDED (wrong ChEMBL target CHEMBL2074 maltase-glucoamylase; GDP-pocket centre on 9S84). This file is the corrected docking on 7RPZ switch-II pocket."
+}

@@ -1,0 +1,220 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL1255147 (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Verona integron-encoded metallo-beta-lactamase 2 (VIM-2)",
+  "uniprot": {
+   "accession": "Q5U7L7",
+   "entry": null,
+   "gene": "VIM-2",
+   "protein": "Metallo-beta-lactamase VIM-2",
+   "organism": "Escherichia coli",
+   "length": 266,
+   "function": "Class B beta-lactamase which confers resistance to the beta-lactam antibiotics, including penicillins, cephalosporins and carbapenems (PubMed:20498317, PubMed:31744917). Acts via hydrolysis of the beta-lactam ring (PubMed:20498317, PubMed:24965651). Has penicillin-, cephalosporin- and carbapenem-hydrolyzing activities (PubMed:20498317, PubMed:24965651)",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q5U7L7/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL1255147",
+   "name": "Metallo-beta-lactamase",
+   "type": "SINGLE PROTEIN",
+   "organism": "Escherichia coli",
+   "components": 1
+  }
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "B1(C(CC2=C(O1)C(=CC=C2)C(=O)O)NC(=O)CC3CCC(CC3)NCCN)O",
+   "similarity": 1.0,
+   "score": 99.1,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.1
+   },
+   "descriptors": {
+    "mw": 389.26,
+    "logp": 0.32,
+    "hbd": 5,
+    "hba": 6,
+    "tpsa": 133.91,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H28BN3O5"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.23,
+    "assays": {
+     "NR-AR": 0.07,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.154,
+     "NR-Aromatase": 0.078,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.069,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.071,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.091,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 76902493,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/76902493"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "9CV3",
+  "resolution": 1.51,
+  "center": [
+   -3.79,
+   -16.8,
+   -7.76
+  ],
+  "results": [
+   {
+    "ok": false,
+    "error": "vina failed: \n\nPDBQT parsing error: Atom type B is not a valid AutoDock type (atom types are case-sensitive).\n > ATOM     13  B   UNL     1       3.908   0.732   1",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Verona integron-encoded metallo-beta-lactamase 2 (VIM-2)",
+  "reference": "taniborbactam"
+ }
+}
