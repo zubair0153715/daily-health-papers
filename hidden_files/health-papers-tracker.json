@@ -706,8 +706,8 @@
    "file": "files/2026-11-15-health-btk-ibrutinib-covalent-docking.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/bf7eac68-f47c-40dd-b806-639d3db1be52"
   },
   {
    "date": "2026-11-15",
@@ -717,8 +717,8 @@
    "file": "files/2026-11-15-health-kras-g12d-mrtx1133.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/c40fbdc8-bddc-4193-9e33-dd292d08ef1c"
   },
   {
    "date": "2026-11-15",
@@ -751,7 +751,8 @@
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
-   "draft_url": null
+   "draft_url": "https://chemrxiv.org/doc/5e74dbca-999e-45fd-ae3a-bb7ae3b6175a",
+   "note": "Draft created (DRAFT V1, PDF+title+abstract uploaded) but metadata editor loaded blank — keywords/subject area/licence NOT set, Summary page not reached. Complete metadata in EDIT before submitting; do not re-create the draft."
   }
  ],
  "used_topic_ids": [
