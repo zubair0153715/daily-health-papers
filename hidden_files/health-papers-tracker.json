@@ -753,6 +753,61 @@
    "status": "drafted",
    "draft_url": "https://chemrxiv.org/doc/5e74dbca-999e-45fd-ae3a-bb7ae3b6175a",
    "note": "Draft created (DRAFT V1, PDF+title+abstract uploaded) but metadata editor loaded blank — keywords/subject area/licence NOT set, Summary page not reached. Complete metadata in EDIT before submitting; do not re-create the draft."
+  },
+  {
+   "date": "2026-11-16",
+   "topic_id": "HP-035",
+   "topic": "PARP1 — synthetic lethality in BRCA-mutant cancers",
+   "title": "Olaparib Re-Docks at −11.24 kcal/mol on PARP1, but Rigid Docking Ranks Rucaparib Last and Cannot Reproduce the PARP-Trapping Order",
+   "file": "files/2026-11-16-health-parp1-olaparib-trapping.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-16",
+   "topic_id": "HP-061",
+   "topic": "GLP-1 receptor small-molecule agonism for type 2 diabetes and obesity — beyond peptides",
+   "title": "Orforglipron Re-Docks at −10.8 kcal/mol in Its Own GLP-1R Pocket but Only −7.66 on the Pipeline's Extracellular-Domain Structure — and a ChEMBL Lead Out-Scores It There",
+   "file": "files/2026-11-16-health-glp1r-orforglipron-small-molecule.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-16",
+   "topic_id": "HP-070",
+   "topic": "Mutant IDH1 (R132H) inhibition in glioma and AML",
+   "title": "Ivosidenib Scores −8.25 kcal/mol on Wild-Type IDH1 but −9.35 on the R132H Mutant — and the Pipeline Picked the Wild Type",
+   "file": "files/2026-11-16-health-idh1-r132h-ivosidenib.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-16",
+   "topic_id": "HP-074",
+   "topic": "Mineralocorticoid receptor antagonism in diabetic kidney disease",
+   "title": "Finerenone Scores −3.41 kcal/mol on the Pipeline’s 1.1 Å MR Structure but −6.83 on a 3.0 Å One — and Eplerenone Out-Scores It on Both",
+   "file": "files/2026-11-16-health-mr-finerenone-steroidal-nonsteroidal.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-16",
+   "topic_id": "HP-006",
+   "topic": "SGLT2 inhibition in diabetes and kidney disease",
+   "title": "Dapagliflozin Re-Docks at −11.00 kcal/mol on Its Own Cryo-EM Structure — but the Screen Ranks the Most Potent Lead Last",
+   "file": "files/2026-11-16-health-sglt2-dapagliflozin-novel-scaffold.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null
   }
  ],
  "used_topic_ids": [
@@ -816,6 +871,11 @@
   "HP-069",
   "HP-064",
   "HP-077",
-  "HP-079"
+  "HP-079",
+  "HP-035",
+  "HP-061",
+  "HP-070",
+  "HP-074",
+  "HP-006"
  ]
 }

@@ -1,0 +1,77 @@
+{
+ "pdb_id": "6NRH",
+ "center": [
+  24.89,
+  -8.82,
+  8.7
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.69,
+   "poses": [
+    -10.69,
+    -9.96,
+    -9.44
+   ],
+   "pdb_id": "6NRH",
+   "label": "talazoparib",
+   "pubchem_cid": 135565082,
+   "smiles": "CN1C(=NC=N1)[C@@H]2[C@H](NC3=CC(=CC4=C3C2=NNC4=O)F)C5=CC=C(C=C5)F"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.07,
+   "poses": [
+    -10.07,
+    -9.51,
+    -9.13
+   ],
+   "pdb_id": "6NRH",
+   "label": "niraparib",
+   "pubchem_cid": 24958200,
+   "smiles": "C1C[C@H](CNC1)C2=CC=C(C=C2)N3C=C4C=CC=C(C4=N3)C(=O)N"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.87,
+   "poses": [
+    -7.87,
+    -7.64,
+    -7.43
+   ],
+   "pdb_id": "6NRH",
+   "label": "rucaparib",
+   "pubchem_cid": 9931954,
+   "smiles": "CNCC1=CC=C(C=C1)C2=C3CCNC(=O)C4=C3C(=CC(=C4)F)N2"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.86,
+   "poses": [
+    -8.86,
+    -8.66,
+    -7.57
+   ],
+   "pdb_id": "6NRH",
+   "label": "veliparib",
+   "pubchem_cid": 11960529,
+   "smiles": "C[C@@]1(CCCN1)C2=NC3=C(C=CC=C3N2)C(=O)N"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.33,
+   "poses": [
+    -10.33,
+    -9.8,
+    -8.96
+   ],
+   "pdb_id": "6NRH",
+   "label": "saruparib",
+   "pubchem_cid": 155586901,
+   "smiles": "CCC1=CC2=C(C=C(C=N2)CN3CCN(CC3)C4=CN=C(C=C4)C(=O)NC)NC1=O"
+  }
+ ]
+}

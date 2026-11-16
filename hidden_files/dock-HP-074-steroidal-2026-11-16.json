@@ -1,0 +1,36 @@
+{
+ "pdb_id": "4PF3",
+ "center": [
+  -0.09,
+  30.97,
+  41.11
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.16,
+   "poses": [
+    -10.16,
+    1.68,
+    1.84
+   ],
+   "pdb_id": "4PF3",
+   "label": "spironolactone",
+   "cid": 5833
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.82,
+   "poses": [
+    -8.82,
+    -2.09,
+    1.73
+   ],
+   "pdb_id": "4PF3",
+   "label": "eplerenone",
+   "cid": 443872
+  }
+ ]
+}

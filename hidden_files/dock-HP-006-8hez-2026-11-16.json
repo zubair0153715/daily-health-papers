@@ -1,0 +1,78 @@
+{
+ "pdb_id": "8HEZ",
+ "center": [
+  66.85921428571429,
+  66.86178571428572,
+  76.14978571428571
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.0,
+   "poses": [
+    -11.0,
+    -10.09,
+    -8.42
+   ],
+   "pdb_id": "8HEZ",
+   "label": "QUERY"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.61,
+   "poses": [
+    -11.61,
+    -10.07,
+    -8.4
+   ],
+   "pdb_id": "8HEZ",
+   "label": "CHEMBL429910"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.34,
+   "poses": [
+    -12.34,
+    -9.34,
+    -8.78
+   ],
+   "pdb_id": "8HEZ",
+   "label": "CHEMBL3703792"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.76,
+   "poses": [
+    -9.76,
+    -8.81,
+    -8.49
+   ],
+   "pdb_id": "8HEZ",
+   "label": "CHEMBL3703868"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.48,
+   "poses": [
+    -11.48,
+    -9.45,
+    -8.46
+   ],
+   "pdb_id": "8HEZ",
+   "label": "CHEMBL5288495"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.03,
+   "poses": [
+    -12.03,
+    -9.74,
+    -9.38
+   ],
+   "pdb_id": "8HEZ",
+   "label": "empagliflozin"
+  }
+ ]
+}
