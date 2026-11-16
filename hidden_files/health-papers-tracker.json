@@ -762,8 +762,8 @@
    "file": "files/2026-11-16-health-parp1-olaparib-trapping.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/ea745819-cbea-4d30-ac78-fc7ea5814944"
   },
   {
    "date": "2026-11-16",
@@ -773,8 +773,9 @@
    "file": "files/2026-11-16-health-glp1r-orforglipron-small-molecule.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/c0325794-88ce-4dc2-a981-357243678e45",
+   "note": "draft created; metadata editor failed to load — keywords/subject area/licence/type/ethics/conflicts/department not set; author to fill in EDIT before submit"
   },
   {
    "date": "2026-11-16",
@@ -784,8 +785,8 @@
    "file": "files/2026-11-16-health-idh1-r132h-ivosidenib.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/d4c22aa6-420f-4438-89c6-6ddaceda257d"
   },
   {
    "date": "2026-11-16",
@@ -795,8 +796,8 @@
    "file": "files/2026-11-16-health-mr-finerenone-steroidal-nonsteroidal.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/ecf40818-2a24-4802-aeb1-77f4761e7659"
   },
   {
    "date": "2026-11-16",
@@ -806,8 +807,9 @@
    "file": "files/2026-11-16-health-sglt2-dapagliflozin-novel-scaffold.md",
    "field": "health",
    "platform": "ChemRxiv",
-   "status": "drafted",
-   "draft_url": null
+   "status": "draft-ready",
+   "draft_url": "https://chemrxiv.org/doc/6497da26-dbcb-428f-a69d-42f717ca46a4",
+   "note": "draft created; metadata editor failed to load (Cloudflare on editor subdomain, no control to click) — keywords/subject area/licence/type/ethics/conflicts not set; author to fill in EDIT before submit; retry tomorrow if still blocked"
   }
  ],
  "used_topic_ids": [
