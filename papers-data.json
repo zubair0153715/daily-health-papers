@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-16",
+  "field": "social",
+  "title": "The Ten-Percent Ceiling: Ibn Khaldun's Fiscal Curve and Pakistan's Tax Record, 2001–2025",
+  "abstract": "Question. Pakistan has raised its statutory tax rates repeatedly for a quarter of a century — general sales tax from 16% to 18%, a new super tax up to 10%, a 29% corporate rate stacked with surcharges — yet its tax-to-GDP ratio has not durably risen. Is the country on the wrong side of the fiscal curve Ibn Khaldun described in 1377, where higher rates shrink the base faster than they raise the yield? Claim. Yes — on the evidence available, Pakistan sits past the peak of its Khaldunian curve. Over 2001–2024 the tax-to-GDP ratio moved only inside a 7.9–11.4% band (mean 9.7%), and the Federal Board of Revenue's own ratio stayed in single digits for 24 consecutive fiscal years (2000-01 to 2023-24), while statutory rates rose at every margin. The binding constraint is the base, not the rate: about 5.9 million returns were filed for tax year 2025 in a country of 241.5 million people, and only about 3 million taxpayers show any taxable income at all. Falsifier. The claim is refuted if either (i) the FBR-only tax-to-GDP ratio rises above 12% and holds there for three consecutive fiscal years with no new statutory rate increase, or (ii) a legislated cut in a major rate — general sales tax back to 16%, or super-tax relief — is followed within two fiscal years by a fall, rather than a rise, in the FBR tax-to-GDP ratio. The fiscal year 2025-26 outturn (target Rs 14.131 trillion) is the first scheduled test. Identification. Association only. This is a descriptive time-series test on published aggregates, with no control group and no randomised or quasi-experimental variation in rates. Confounders — GDP growth, inflation, IMF programme conditions, enforcement drives — are named, not controlled. The paper falsifies the claim that \"rate rises raise the ratio\"; it does not estimate a causal effect of any single rate. A regression-discontinuity design on the February 2023 GST rise (17% → 18%) and a randomised rate pilot are proposed as the causal tests. One clean number: 24 years below 10% — the number of consecutive fiscal years the FBR's tax-to-GDP ratio stayed in single digits while rates rose. The stakes number is 3 million: the people in a country of 241.5 million who show any taxable income. Keywords: Ibn Khaldun; Laffer curve; tax-to-GDP ratio; Pakistan; FBR; fiscal policy; tax base; super tax; maqasid; 'adl.",
+  "md": "2026-11-16-social-ibn-khaldun-fiscal-curve-pakistan-tax.md",
+  "pdf": "2026-11-16-social-ibn-khaldun-fiscal-curve-pakistan-tax.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Question. Pakistan has raised its statutory tax rates repeatedly for a quarter of a century — general sales tax from 16% to 18%, a new super tax up to 10%, a 29% corporate rate stacked with surcharges — yet its tax-to-GDP ratio has not durably risen."
+ },
+ {
   "date": "2026-11-15",
   "field": "natural",
   "title": "The 260-Metre Ceiling: A Falsifiable Attribution of Lahore's November Smog Peak to Domestic Sources and Seasonal Meteorology, with a Smog-Budget Policy for Punjab",
@@ -8,6 +18,56 @@
   "pdf": "2026-11-15-natural-lahore-smog-260-metre-ceiling.pdf",
   "status": "Draft — not submitted",
   "summary": "Question. Is Lahore's November smog peak driven mainly by polluted air crossing the border from India, or by domestic emissions amplified by the seasonal collapse of the atmosphere's mixing height? Claim."
+ },
+ {
+  "date": "2026-11-15",
+  "field": "health",
+  "title": "Four Captopril Stereoisomers Dock Within 0.07 kcal/mol on VIM-2 While Their Measured Potencies Span 76-Fold: Rigid Docking Is Blind to the Stereochemistry That Defines MBL Inhibition",
+  "abstract": "VIM-2 is a B1 metallo-beta-lactamase that hydrolyses almost all beta-lactams including carbapenems, and no clinically useful inhibitor exists for it. The best measured inhibitor in the reference set, taniborbactam (Ki 0.02 µM), cannot be docked by AutoDock Vina at all because it contains boron, which Vina's PDBQT parser rejects — a tool limit the standard pipeline run for this paper hit and could not pass. The testable question that remains is whether rigid docking can resolve the potency gap between stereoisomers of the same molecule: D-captopril inhibits VIM-2 at 0.072 µM, L-captopril at 4.4 µM, and the two epi-isomers at 5.5 µM each, a 76-fold range from a single stereocentre flip, with crystal structures showing different binding modes. We docked all four stereoisomers with AutoDock Vina 1.2.7 on 4C1E, the 1.40 angstrom VIM-2 structure co-crystallised with D-captopril. The scores are minus 6.16, minus 6.19, minus 6.12 and minus 6.19 kcal/mol — a total span of 0.07 kcal/mol, thirty times smaller than Vina noise, with rank correlation against measured potency of 0.15. The screen cannot see the stereochemistry that defines this inhibition. The falsifiable next step is a single-assay IC50 comparison of the four stereoisomers on VIM-2 with a metal-aware rescoring of the same poses: if the measured 76-fold gap reproduces while every rescoring still ties them, the failure is confirmed as a scoring-function limit, not a pose-sampling error.",
+  "md": "2026-11-15-health-vim2-captopril-stereoisomers.md",
+  "pdf": "2026-11-15-health-vim2-captopril-stereoisomers.pdf",
+  "status": "Draft — not submitted",
+  "summary": "VIM-2 is a B1 metallo-beta-lactamase that hydrolyses almost all beta-lactams including carbapenems, and no clinically useful inhibitor exists for it."
+ },
+ {
+  "date": "2026-11-15",
+  "field": "health",
+  "title": "Nintedanib Tops a PknB Docking Rank That Matches Measured Potency Exactly: Two Approved Cancer Kinase Inhibitors and the Mitoxantrone Caveat",
+  "abstract": "PknB is an essential serine/threonine kinase of Mycobacterium tuberculosis, and no PknB inhibitor has reached the clinic: the best published inhibitors are nanomolar in vitro and only micromolar against whole cells. We docked five compounds with AutoDock Vina 1.2.7 on 3ORK, the 1.60 angstrom structure of the PknB kinase domain (L33D mutant) with an ATP-gamma-S analogue in the ATP site: nintedanib, two matched-pair aminopyrimidine/pyrazole inhibitors from the same series, sunitinib, and mitoxantrone, the literature PknB inhibitor. The docking rank matches the measured potency rank exactly (Spearman rho 1.0, n = 4): nintedanib, Kd 3.6 nM, docks at minus 9.70 kcal/mol; the matched pair, Ki 13 and 17 nM, at minus 8.66 and minus 8.30; sunitinib, Kd 87 nM, at minus 8.24. Mitoxantrone, which has no attached PknB potency number and is excluded from the correlation, docks worst at minus 7.19 and carries a PAINS alert with the maximum Tox21 read-across for the DNA-damage assays SR-ATAD5 and SR-p53. Two approved cancer kinase inhibitors top a tuberculosis kinase ranking, and the literature inhibitor is the weakest and the most toxic — a clean repurposing signal and a warning in the same table. The falsifiable next step is a single-assay PknB kinase comparison of the four ranked compounds with a whole-cell assay on Mycobacterium tuberculosis H37Rv: if nintedanib again measures most potent on the enzyme but fails on whole cells, the gap is confirmed as permeability, not potency.",
+  "md": "2026-11-15-health-pknb-nintedanib-sunitinib.md",
+  "pdf": "2026-11-15-health-pknb-nintedanib-sunitinib.pdf",
+  "status": "Draft — not submitted",
+  "summary": "PknB is an essential serine/threonine kinase of Mycobacterium tuberculosis, and no PknB inhibitor has reached the clinic: the best published inhibitors are nanomolar in vitro and only micromolar against whole cells."
+ },
+ {
+  "date": "2026-11-15",
+  "field": "health",
+  "title": "Cilomilast Out-Scores Roflumilast on PDE4D Despite a 171-Fold Potency Gap, and Crisaborole Cannot Be Docked at All: Rigid Docking Misses the Contact Points That Define PDE4 Inhibition",
+  "abstract": "Phosphodiesterase 4 (PDE4) is the target of four approved drugs — roflumilast, apremilast, crisaborole and difamilast — and a 2025 structural study proposed a simple rule for their potency: roflumilast preserves all three active-site contact points (metal-ion site, conserved glutamine, water network), apremilast two, crisaborole one, and the measured IC50s follow the rule (0.7 nM, 0.14 µM, 0.24 µM). We docked the three dockable drugs with AutoDock Vina 1.2.7 on 3G4L, the 2.5 angstrom human PDE4D structure co-crystallised with roflumilast. Cilomilast, the weakest of the three docked by 171-fold, scores best at minus 9.62 kcal/mol; roflumilast scores minus 9.14 and apremilast minus 8.93. The 171-fold potency gap between roflumilast and cilomilast is 0.48 kcal/mol in the wrong direction, and the rank correlation against measured potency is 0.5 (n = 3). Crisaborole, the third drug in the comparison set, cannot be docked at all: it is a benzoxaborole, and Vina rejects boron — the second boronate this run has failed to dock, after taniborbactam on VIM-2. The screen cannot see the contact points that define PDE4 potency, and it cannot see the boronate that defines the class's newest chemistry. The falsifiable next step is a single-assay PDE4D IC50 comparison of the four drugs with a metal-aware rescoring of the same poses: if the measured 200-fold range reproduces while every rescoring still ties them, the failure is confirmed as a scoring-function limit, not a pose-sampling error.",
+  "md": "2026-11-15-health-pde4-roflumilast-cilomilast.md",
+  "pdf": "2026-11-15-health-pde4-roflumilast-cilomilast.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Phosphodiesterase 4 (PDE4) is the target of four approved drugs — roflumilast, apremilast, crisaborole and difamilast — and a 2025 structural study proposed a simple rule for their potency: roflumilast preserves all three active-site contact points (metal-ion site, conserved glutamine, water network), apremilast two, c…"
+ },
+ {
+  "date": "2026-11-15",
+  "field": "health",
+  "title": "MRTX1133 Re-Docks at −12.71 kcal/mol on the KRAS G12D Switch-II Pocket and Sotorasib Scores Worst: A Corrected Docking Benchmark After a Wrong-Target Pipeline Run",
+  "abstract": "KRAS G12D is the commonest KRAS allele, driving about 42% of KRAS-mutant pancreatic cancers, and it has no approved inhibitor: the covalent KRAS G12C drugs cannot work because G12D has no cysteine to bind. MRTX1133 is the first non-covalent, selective KRAS G12D inhibitor, with a pERK IC50 of 2 nM in AGS cells, but the standard pipeline run for this paper resolved the target to the wrong enzyme and docked it into the wrong pocket, so both numbers from that run are discarded here and the correction is documented in full. We docked MRTX1133, three analogues from the same discovery paper, and the G12C inhibitor sotorasib as a negative control with AutoDock Vina 1.2.7 on 7RPZ, the 1.3 angstrom KRAS G12D structure co-crystallised with MRTX1133 in the switch-II pocket. MRTX1133 re-docked at minus 12.71 kcal/mol; the analogues scored minus 11.62, minus 11.13 and minus 9.34 against measured pERK IC50s of 24, 530 and 24 nM; sotorasib scored worst at minus 7.74, as a G12C drug should on G12D. Rank correlation against measured potency is moderate (Spearman rho 0.65, n = 4), but two compounds with identical measured potency differ by 2.28 kcal/mol in docking, and the re-dock sits 2.52 kcal/mol clear of its own second pose. The screen ranks the series roughly right and cannot resolve equal potencies. The falsifiable next step is a single-assay pERK comparison of the four Wang-series compounds in one KRAS G12D cell line: if compounds 25 and 36 again measure identically while docking differs by more than 2 kcal/mol, the gap is confirmed as a scoring artefact, not a potency signal.",
+  "md": "2026-11-15-health-kras-g12d-mrtx1133.md",
+  "pdf": "2026-11-15-health-kras-g12d-mrtx1133.pdf",
+  "status": "Draft ready",
+  "summary": "KRAS G12D is the commonest KRAS allele, driving about 42% of KRAS-mutant pancreatic cancers, and it has no approved inhibitor: the covalent KRAS G12C drugs cannot work because G12D has no cysteine to bind."
+ },
+ {
+  "date": "2026-11-15",
+  "field": "health",
+  "title": "Ibrutinib Re-Docks at −10.86 kcal/mol on Its Own BTK Structure, but Four Sub-Nanomolar Covalent Inhibitors Score Worse: Rigid Docking Cannot Price the Cys481 Bond",
+  "abstract": "Ibrutinib, the first covalent Bruton's tyrosine kinase (BTK) inhibitor, binds irreversibly to Cys481 in the ATP pocket, and the C481S mutation — cysteine replaced by serine — removes that bond and is the commonest cause of acquired resistance in chronic lymphocytic leukaemia (CLL). The question this paper tests is whether a standard rigid-docking screen can rank covalent BTK inhibitors at all, given that the scoring function cannot price a covalent bond. We docked ibrutinib and four ChEMBL BTK ligands with AutoDock Vina 1.2.7 on 5P9J, the 1.08 angstrom BTK kinase domain co-crystallised with ibrutinib itself. Ibrutinib re-docked at minus 10.86 kcal/mol. All four test compounds carry the same acrylamide warhead and are measured at 0.04 to 0.05 nM against BTK in ChEMBL — roughly ten times more potent than ibrutinib's 0.5 nM — yet they docked worse: minus 10.13, minus 9.47, minus 8.64 and minus 8.43 kcal/mol. Rank correlation between docking score and measured potency is inverted (Spearman rho minus 0.63, n = 5): the most potent compound measured docks worst. The screen validates the protocol (the reference drug re-docks well on its own structure) and fails as a ranking tool for covalent inhibitors in the same run. The falsifiable next step is a single-assay kinase comparison of the four compounds against wild-type and C481S BTK: if their C481S IC50s collapse like ibrutinib's while pirtobrutinib's holds, the warhead series is covalent-only and the docking inversion is confirmed as a scoring artefact, not a potency signal.",
+  "md": "2026-11-15-health-btk-ibrutinib-covalent-docking.md",
+  "pdf": "2026-11-15-health-btk-ibrutinib-covalent-docking.pdf",
+  "status": "Draft ready",
+  "summary": "Ibrutinib, the first covalent Bruton's tyrosine kinase (BTK) inhibitor, binds irreversibly to Cys481 in the ATP pocket, and the C481S mutation — cysteine replaced by serine — removes that bond and is the commonest cause of acquired resistance in chronic lymphocytic leukaemia (CLL)."
  },
  {
   "date": "2026-11-15",
