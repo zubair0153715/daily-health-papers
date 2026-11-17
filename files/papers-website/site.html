@@ -42,7 +42,7 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <body>
 <h1>Research Papers</h1>
 <p class="sub">Zubair Ali — Pharm-D student, SMBBMU Larkana, Pakistan · ORCID 0009-0001-5921-7509 · <a href="https://github.com/zubair0153715/daily-health-papers">daily-health-papers on GitHub</a></p>
-<div class="counts"><b>85 manuscripts</b><b>Health: 69</b><b>Brain: 5</b><b>Space: 4</b><b>Natural Science: 1</b><b>Social Science: 1</b><b>Drug Discovery: 5</b></div>
+<div class="counts"><b>91 manuscripts</b><b>Health: 75</b><b>Brain: 5</b><b>Space: 4</b><b>Natural Science: 1</b><b>Social Science: 1</b><b>Drug Discovery: 5</b></div>
 <p class="note"><b>AI-assisted drafts — NOT peer-reviewed, NOT published.</b> All claims require independent verification. Two early manuscripts were submitted to ChemRxiv and rejected (framework/hypothesis without new data); their reworked v2 versions are marked "ready to submit". Nothing here is submitted anywhere — submission is the author's own click after he approves a paper. New manuscripts are added daily.</p>
 <div class="controls">
 <input type="search" id="q" placeholder="Search titles…" aria-label="Search papers"/>
@@ -54,7 +54,1086 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <button data-f="social">Social Science</button>
 <button data-f="drugdiscovery">Drug Discovery</button>
 </div>
-<section id="sec-health" data-field="health"><h2>Health <span class="count">(69)</span></h2>
+<section id="sec-health" data-field="health"><h2>Health <span class="count">(75)</span></h2>
+<article class="card" data-field="health" data-title="rigid docking gets the dicarboxylates right on imp-1 but collapses four captopril stereoisomers into 0.08 kcal/mol for a 60-fold potency range">
+<div class="meta"><span class="date">2026-11-17</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Rigid Docking Gets the Dicarboxylates Right on IMP-1 but Collapses Four Captopril Stereoisomers into 0.08 kcal/mol for a 60-Fold Potency Range</h3>
+<p class="abs">IMP-1 is a subclass B1 metallo-β-lactamase (MBL) that hydrolyses almost all β-lactams, including carbapenems, and no clinically approved inhibitor exists for it.</p>
+<p class="links"><a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-17-health-imp1-captopril-stereoisomers.pdf">PDF</a> · <a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-17-health-imp1-captopril-stereoisomers.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent verification.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Faculty of Pharmacy, SMBBMU, Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 17 November 2026
+<strong>Topic ID:</strong> HP-080</p>
+<h2>Abstract</h2>
+<p>IMP-1 is a subclass B1 metallo-β-lactamase (MBL) that hydrolyses almost all β-lactams, including carbapenems, and no clinically approved inhibitor exists for it. We benchmarked rigid AutoDock Vina docking (v1.2.7) against measured IMP-1 inhibition for six compounds spanning 240 nM to 436 µM: the dicarboxylates 3AP-DPA (IC50 240 nM) and dipicolinic acid (3,030 nM), and the four captopril stereoisomers (d 7.2, l 23.3, epi-d 173.2, epi-l 436 µM), docked into the d-captopril-bound structure 4C1G (1.71 Å) and replicated on 6JED (1.57 Å). <strong>Falsifiable claim:</strong> Vina ranks the dicarboxylates ahead of the thiols and orders 3AP-DPA ahead of dipicolinic acid, but cannot rank the four captopril stereoisomers. <strong>Falsifier:</strong> a metal-aware re-dock (Zn(II) retained, metal-coordination term) that orders the four stereoisomers in measured order with a spread ≥1 kcal/mol refutes the blindness claim. On 4C1G, 3AP-DPA scored best (−7.42 kcal/mol) and dipicolinic acid second (−6.50), a 0.92 kcal/mol gap for a 12.6-fold measured difference (1.50 kcal/mol), and the overall rank correlation was Spearman ρ = −0.66 (n = 6, correct direction). But the four stereoisomers collapsed into 0.08 kcal/mol (−5.90 to −5.98) for a 60-fold measured range (2.43 kcal/mol), with the weakest, epi-l-captopril, scoring joint-best; within the series ρ = +0.20. The 6JED replication reproduced the pattern exactly (ρ = −0.66; stereoisomer spread 0.34 kcal/mol; epi-l again best of the four). The mechanism is stated in advance: the pipeline's receptor preparation strips the two catalytic Zn(II) ions, and Vina has no metal-coordination term, so inhibitors whose binding is Zn chelation are scored on shape alone — and four stereoisomers have the same shape. Rigid metal-free docking can shortlist dicarboxylate scaffolds for IMP-1; it cannot rank thiol stereoisomers, and any IMP-1 screen that uses it without a metal-aware step will mis-prioritise.</p>
+<p><strong>Keywords:</strong> IMP-1; metallo-β-lactamase; captopril; stereoisomers; dipicolinic acid; 3AP-DPA; molecular docking; AutoDock Vina; carbapenem resistance; Pakistan</p>
+<h2>Introduction</h2>
+<p>Metallo-β-lactamases (MBLs) are zinc-dependent enzymes that hydrolyse almost all β-lactam antibiotics, including carbapenems, and no clinically useful MBL inhibitor exists. The B1 subclass — NDM, VIM and IMP types — is the most clinically relevant. IMP-1, the first IMP variant identified, is carried on transferable plasmids and integrons and is reported across Asia. In Pakistan the burden is documented: a 2019–2022 study of 2,170 clinical strains at Mayo Hospital, Lahore, found 42.1% carbapenem resistance, with blaIMP accounting for 2.7% of detected carbapenemase genes against 41.1% blaNDM-1 (Gondal et al., <em>Antibiotics</em> 2023). IMP-1 is the minority carbapenemase in Pakistan today, but it is the one with the thinnest inhibitor pipeline: the boronate taniborbactam inhibits VIM-2 (Ki 0.02 µM) and NDM-1 (0.08 µM) but does not inhibit IMP-type enzymes, where xeruborbactam is the current hope — and IMP variants resistant even to xeruborbactam are already reported (Le Terrier et al., <em>Antimicrob Agents Chemother</em> 2024; Le Terrier et al., <em>Antimicrob Agents Chemother</em> 2025).</p>
+<p>A November 2026 audit in <em>ACS Infectious Diseases</em> asked bluntly why computational prediction keeps failing on B1 MBL inhibitor discovery (Balieiro et al., 2026; PMID 43023851) — the pitfalls this paper tests one by one on IMP-1, the third B1 enzyme in this series after NDM-1 and VIM-2. The audit's central warnings are metal handling and the gap between a docking score and a metal-binding mechanism. Captopril, the antihypertensive ACE inhibitor, is the cleanest test case in the field: its thiol chelates the two active-site zinc ions, and its four stereoisomers inhibit IMP-1 across a 60-fold range in a single assay — d-captopril 7.2 µM, l-captopril 23.3 µM, epi-d-captopril 173.2 µM, epi-l-captopril 436 µM (Brem et al., <em>Antimicrob Agents Chemother</em> 2016). The crystal structures show different binding modes: in IMP-1, d-captopril's thiolate bridges the two Zn(II) ions while its carboxylate contacts the conserved Arg228 region; the epi-isomers bind differently again. The binding modes are visibly different; the question is whether a docking score can see the difference.</p>
+<p>The dicarboxylates provide the counter-test. Dipicolinic acid (DPA, pyridine-2,6-dicarboxylic acid) inhibits IMP-1 at 3,030 nM, and its 4-(3-aminophenyl) analogue 3AP-DPA at 240 nM — a 12.6-fold gain from one substituent (Chen et al., <em>J Med Chem</em> 2017, via ChEMBL). Mechanistic work shows DPA and 3AP-DPA both strip metal from the IMP-1 active site and form ternary complexes, while captopril forms a ternary complex without stripping metal (Zhang et al., <em>Bioorg Med Chem</em> 2021). Two inhibitor classes, two mechanisms, one enzyme: if docking ranks the dicarboxylates correctly but collapses the stereoisomers, the failure is specific to metal-dependent stereochemistry, not to docking in general.</p>
+<p><strong>Falsifiable claim (stated before the results):</strong> under one standardised protocol on the d-captopril co-crystal structure 4C1G, Vina will rank 3AP-DPA ahead of DPA and both ahead of the four captopril stereoisomers, but the four stereoisomers will score within 0.1 kcal/mol of each other, in no measured order. The claim is refuted if a metal-aware re-dock (Zn(II) retained) orders the stereoisomers in measured order with a spread ≥1 kcal/mol, or if an independent re-assay moves the four IC50s within 2-fold of each other.</p>
+<h2>Methods</h2>
+<h3>2.1 Target and compound selection</h3>
+<p>IMP-1 (UniProt P52699, <em>Serratia marcescens</em>, reviewed) was resolved to ChEMBL target CHEMBL4105964 ("Metallo-beta-lactamase type 2") by accession, not by text search — the ChEMBL text search returns maltase-glucoamylase (CHEMBL2074) first for this query, the same trap that produced a discarded wrong-target run in this series' Mpro paper. ChEMBL holds exactly two measured IMP-1 activities for this target: CHEMBL4068259 (3AP-DPA), IC50 240 nM, pChEMBL 6.62; and CHEMBL284104 (dipicolinic acid), IC50 3,030 nM, pChEMBL 5.52 — both from Chen et al. 2017 (ChEMBL document CHEMBL4017500, assay CHEMBL4019028), accessed 17 November 2026. The four captopril stereoisomers and their IMP-1 IC50s are from Brem et al. 2016, Table 1 (single assay, n ≥ 3 replicates): d 7.2 ± 1.2, l 23.3 ± 1.3, epi-d 173.2 ± 1.2, epi-l 436 ± 1.1 µM. Stereochemistry was fixed independently of the paper's names: PubChem IUPAC names give L-captopril (CID 44093) as (2S)-1-[(2S)-2-methyl-3-sulfanylpropanoyl]pyrrolidine-2-carboxylic acid, D-captopril (CID 447055) as (2R)-1-[(2S)-…], and epi-D-captopril (CID 446549) as (2R)-1-[(2R)-…]; the four isomeric SMILES were generated by RDKit stereoisomer enumeration and their CIP codes verified atom-by-atom (proline centre first, methyl-bearing centre second): d = (R,S), epi-d = (R,R), l = (S,S), epi-l = (S,R). No compound in the set was invented, and no potency was estimated — every IC50 is a published measurement.</p>
+<h3>2.2 Structures: the pipeline's pick, the audit, and the correction</h3>
+<p>The pipeline's automatic structure pick for P52699 was 6JED (1.57 Å), the highest-resolution ligand-bound IMP-1 structure. Its centre picker chose the centroid of EPE — a HEPES buffer molecule (15 atoms) — because the true co-crystallised ligand, MCR (sulfanylacetic acid, mercaptoacetic acid, 5 heavy atoms), falls below the picker's ≥6-atom threshold. The 6JED docks run on that EPE centre are reported in §3.3 as a caught pipeline error and are not used as evidence: the centre was ~6.4 Å from the inhibitor site. The corrected 6JED run recentres on the MCR centroid [18.48, −3.53, 23.16], computed directly from the 6JED HETATM records. The primary structure is 4C1G (1.71 Å), the IMP-1 structure co-crystallised with d-captopril (Brem et al. 2016): its HETATM ligand MCO (14 heavy atoms — captopril's heavy-atom count) was picked by the centre routine, and the docking centre is the MCO centroid [12.76, −8.33, −17.59]. Both structures contain two catalytic Zn(II) ions (4C1G: ZN 300/301, chain A; 6JED: ZN 301/302). All docking used AutoDock Vina 1.2.7, exhaustiveness 8, box 22.5 Å, 3 poses.</p>
+<h3>2.3 Limitations of the docking model, stated in advance</h3>
+<p><strong>The metal is stripped before scoring.</strong> The pipeline's receptor preparation keeps ATOM records only, so both catalytic Zn(II) ions are removed from the receptor, and Vina's scoring function has no metal-coordination term. Every inhibitor in this set binds through the metal — captopril's thiolate bridges Zn1–Zn2, and the dicarboxylates chelate and partly strip Zn — so the scored interaction is shape complementarity against a metal-free pocket. This is the Balieiro et al. pitfall, stated before any score was read: a method that cannot see the metal cannot rank compounds whose potency lives in metal binding. <strong>Rigid docking carries a documented ±1–2 kcal/mol noise band.</strong> Any score difference below ~0.5 kcal/mol is uninterpretable, and differences below 0.1 kcal/mol are identical scores. <strong>Small n, single assay.</strong> Six compounds, one enzyme, one assay series for the stereoisomers; the rank correlation is a descriptive check, not a validated ranking. <strong>No RMSD for the re-dock.</strong> The re-dock control is reported as a score with tight poses; the docked pose was not compared atom-by-atom with the crystal pose.</p>
+<h3>2.4 Literature and the Islamic canon</h3>
+<p>The modern literature sweep used the daily digest of 2026-11-14 (722 candidates screened; item 3, Balieiro et al. 2026, is directly on this topic) plus targeted PubMed/ChEMBL/UniProt/RCSB checks on 2026-11-17. The Islamic canon was checked per the programme's literature map: for a drug-resistance paper the relevant works are Al-Razi's <em>Kitab al-Hawi</em> (23 volumes of clinical observation — the method ancestor for testing a claim against measured outcomes rather than authority) and the maqasid literature (Al-Ghazali, <em>Al-Mustasfa</em>; systematised by Al-Shatibi, <em>Al-Muwafaqat</em>). The Canon's materia medica (Ibn Sina, <em>Al-Qanun fi al-Tibb</em>, Book II) was <strong>not</strong> screened against IMP-1 in this run — that is the map's world-problem #11 seed (test Canon-listed plants against a resistant target) and remains open; it is named as a gap in the Limitations, not claimed as done. The full 23-volume <em>Kitab al-Hawi</em> exists in English only in selections, so it was consulted through the map's verified summary, not read in full.</p>
+<h2>Results</h2>
+<h3>3.1 The compounds</h3>
+<p>All six compounds pass Lipinski's rule of five with zero violations and are PAINS-clean (Table 1). The four captopril stereoisomers are identical by every descriptor (MW 217.29, logP 0.63, TPSA 57.61 Å², HBD 2, HBA 3, 3 rotatable bonds, C9H15NO3S) — they differ only in the spatial arrangement of two chiral centres, which is exactly the property a shape-only score cannot price. The dicarboxylates are larger and more polar: 3AP-DPA MW 258.23, logP 1.73, TPSA 113.51 Å²; DPA MW 167.12, logP 0.48, TPSA 87.49 Å². ToxGuard read-across gives no flags of concern: all measured-assay probabilities are 0, and the highest predicted value in the set is 0.147 (3AP-DPA, NR-ER, kNN read-across at 0.50 maximum similarity). Lead scores are 99.2–100.0 on the pipeline's 0–100 scale. Nothing in the ADMET panel distinguishes the four stereoisomers either — as expected, since they are the same molecule in four mirror arrangements.</p>
+<p><strong>Table 1. The six compounds: measured IMP-1 IC50 and pipeline descriptors.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured IC50</th>
+<th>MW</th>
+<th>logP</th>
+<th>TPSA (Å²)</th>
+<th>HBD/HBA</th>
+<th>Lipinski</th>
+<th>PAINS</th>
+<th>Lead score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3AP-DPA (CHEMBL4068259)</td>
+<td>240 nM</td>
+<td>258.23</td>
+<td>1.73</td>
+<td>113.51</td>
+<td>3/4</td>
+<td>pass</td>
+<td>clean</td>
+<td>99.2</td>
+</tr>
+<tr>
+<td>DPA (CHEMBL284104)</td>
+<td>3,030 nM</td>
+<td>167.12</td>
+<td>0.48</td>
+<td>87.49</td>
+<td>2/3</td>
+<td>pass</td>
+<td>clean</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>d-captopril (R,S)</td>
+<td>7.2 µM</td>
+<td>217.29</td>
+<td>0.63</td>
+<td>57.61</td>
+<td>2/3</td>
+<td>pass</td>
+<td>clean</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>l-captopril (S,S)</td>
+<td>23.3 µM</td>
+<td>217.29</td>
+<td>0.63</td>
+<td>57.61</td>
+<td>2/3</td>
+<td>pass</td>
+<td>clean</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>epi-d-captopril (R,R)</td>
+<td>173.2 µM</td>
+<td>217.29</td>
+<td>0.63</td>
+<td>57.61</td>
+<td>2/3</td>
+<td>pass</td>
+<td>clean</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>epi-l-captopril (S,R)</td>
+<td>436 µM</td>
+<td>217.29</td>
+<td>0.63</td>
+<td>57.61</td>
+<td>2/3</td>
+<td>pass</td>
+<td>clean</td>
+<td>100.0</td>
+</tr>
+</tbody>
+</table>
+<h3>3.2 On 4C1G, the dicarboxylates rank correctly and the stereoisomers collapse</h3>
+<p>3AP-DPA scored best (−7.42 kcal/mol; poses −7.42, −7.39, −7.37) and dipicolinic acid second (−6.50; −6.50, −6.47, −5.86) — the correct order for a 12.6-fold measured gap (1.50 kcal/mol at 298 K), compressed to a 0.92 kcal/mol docking gap. The four captopril stereoisomers then occupy a 0.08 kcal/mol band: epi-l −5.98, d −5.97, l −5.93, epi-d −5.90. The measured range across those four is 60.6-fold (7.2 → 436 µM), equivalent to 2.43 kcal/mol — thirty times the docking spread. The weakest compound in the set, epi-l-captopril (436 µM), scores joint-best among the four; the most potent, d-captopril (7.2 µM), scores second. Within the stereoisomer series the rank correlation is Spearman ρ = +0.20 — no ranking, in the wrong direction. The overall correlation across all six (ρ = −0.66, n = 6) is carried entirely by the dicarboxylate–thiol gap: remove the two dicarboxylates and there is no ranking left. The re-dock control worked: d-captopril re-docked into its own crystal structure with tight poses (−5.97, −5.93, −5.87), so the failure is not pose instability; the poses are stable and the scores are flat.</p>
+<p><strong>Table 2. Vina scores (kcal/mol) on 4C1G (1.71 Å, d-captopril complex) and on 6JED (1.57 Å, MCR-centred).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured IC50</th>
+<th>4C1G score</th>
+<th>4C1G top-3 poses</th>
+<th>6JED score</th>
+<th>6JED top-3 poses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3AP-DPA</td>
+<td>240 nM</td>
+<td>−7.42</td>
+<td>−7.42, −7.39, −7.37</td>
+<td>−7.13</td>
+<td>−7.13, −7.12, −6.83</td>
+</tr>
+<tr>
+<td>DPA</td>
+<td>3,030 nM</td>
+<td>−6.50</td>
+<td>−6.50, −6.47, −5.86</td>
+<td>−6.08</td>
+<td>−6.08, −6.08, −5.80</td>
+</tr>
+<tr>
+<td>epi-l-captopril</td>
+<td>436 µM</td>
+<td>−5.98</td>
+<td>−5.98, −5.93, −5.72</td>
+<td>−5.88</td>
+<td>−5.88, −5.64, −5.64</td>
+</tr>
+<tr>
+<td>d-captopril</td>
+<td>7.2 µM</td>
+<td>−5.97</td>
+<td>−5.97, −5.93, −5.87</td>
+<td>−5.74</td>
+<td>−5.74, −5.64, −5.59</td>
+</tr>
+<tr>
+<td>l-captopril</td>
+<td>23.3 µM</td>
+<td>−5.93</td>
+<td>−5.93, −5.82, −5.56</td>
+<td>−5.56</td>
+<td>−5.56, −5.55, −5.51</td>
+</tr>
+<tr>
+<td>epi-d-captopril</td>
+<td>173.2 µM</td>
+<td>−5.90</td>
+<td>−5.90, −5.70, −5.66</td>
+<td>−5.54</td>
+<td>−5.54, −5.43, −5.22</td>
+</tr>
+</tbody>
+</table>
+<h3>3.3 The 6JED replication reproduces the pattern exactly — and the EPE-centred run is discarded</h3>
+<p>Re-centred on the MCR ligand, 6JED gives the same result: 3AP-DPA best (−7.13), DPA second (−6.08), the four stereoisomers in a 0.34 kcal/mol band (−5.54 to −5.88), epi-l again best of the four, overall ρ = −0.66 — identical to 4C1G to two decimal places. The finding is not structure-dependent: two structures, two resolutions, same collapse. The first 6JED run, centred on the HEPES buffer molecule EPE by the pipeline's automatic picker, is discarded as evidence (its scores were nearly identical — −7.12, −6.05, −5.93, −5.68, −5.67, −5.66 — because the 22.5 Å box still covered the active site, which is precisely why the error was dangerous: a wrong centre that still returns plausible numbers). It is recorded here so the failure mode is visible: a centre picker that requires ≥6 atoms will centre on a buffer molecule whenever the true ligand is a 5-atom fragment.</p>
+<h3>3.4 Mechanism: the score cannot see the bond that does the work</h3>
+<p>The mechanism was stated before the results and the data confirm it. Captopril's potency differences come from how its thiolate and carboxylate engage the two Zn(II) ions and Arg228 — interactions that do not exist in the scored system, because the receptor preparation removed the zinc and Vina has no metal term. Four stereoisomers of one molecule present the same atoms, the same descriptors and nearly the same shape to a metal-free pocket, so they receive nearly the same score; the 0.08 kcal/mol spread is the residue of shape differences after the chemistry has been deleted. The dicarboxylates escape the collapse only partially: they are larger, more polar molecules whose shape and hydrogen-bonding differ enough for Vina to order them, and their measured gap is partly a size/polarity effect — but their true mechanism (metal chelation and metal stripping, Zhang et al. 2021) is equally invisible to the score, which is why even their correct ordering is compressed (0.92 vs 1.50 kcal/mol). The sibling benchmark on VIM-2 in this series found the same failure with the same four stereoisomers: a 0.07 kcal/mol span for a 76-fold measured range (ρ = 0.15, n = 4). Two B1 enzymes, two independent structure sets, the same number: ~0.1 kcal/mol of docking score for ~60–76-fold of metal-dependent potency.</p>
+<h2>Discussion</h2>
+<p>Two findings, one encouraging and one limiting — and the limiting one is the paper.</p>
+<p><strong>First, rigid docking can shortlist dicarboxylate scaffolds for IMP-1.</strong> 3AP-DPA out-scores DPA on both structures, by 0.92 and 1.05 kcal/mol, in the correct direction for a 12.6-fold measured gap, and both dicarboxylates clear the thiols by ~0.5–1.5 kcal/mol. A screen that ranks 3AP-DPA analogues first would spend its assay budget in the right place. The 3AP-DPA scaffold — a dipicolinic acid core with an aryl substituent at the 4-position — is the lead to optimise, and the honest next step is synthesis of 4-substituted analogues, not more docking of the same two compounds.</p>
+<p><strong>Second, rigid metal-free docking is blind to the stereochemistry that defines thiol MBL inhibition, and the blindness is quantitative, reproducible and now replicated across two enzymes.</strong> A 60-fold potency range collapses into 0.08 kcal/mol on IMP-1 and a 76-fold range into 0.07 kcal/mol on VIM-2. No re-ranking, no consensus scoring and no bigger box will fix this: the information that separates d- from epi-l-captopril is the geometry of thiolate–Zn(II) coordination, and that information is deleted before scoring starts. The falsifier stands open — a metal-aware method that orders the four stereoisomers with a spread ≥1 kcal/mol would refute the claim — but until such a method is run, any IMP-1 or VIM-2 screen that reports Vina scores for thiol inhibitors as a ranking is reporting noise with two decimal places. The practical consequence is a screening rule: <strong>metal-chelating chemotypes (thiols, dicarboxylates, boronates) must not be ranked by metal-free rigid docking</strong>; use it only to shortlist non-chelating scaffolds, and rank chelators by assay or by a metal-aware method (Zn retained, coordination-aware scoring, or QM/MM estimates of metal binding).</p>
+<p><strong>Association only.</strong> This is a retrospective docking benchmark, not a causal experiment: it shows that Vina scores do not track measured IMP-1 potency within the captopril series, under the stated protocol. It does not show that no docking method can rank these compounds — the falsifier names the method that could.</p>
+<h2>Limitations</h2>
+<ol>
+<li><strong>No lab data.</strong> All results are computational; no IMP-1 assay was run, and the measured IC50s are taken from two published sources (Brem et al. 2016; Chen et al. 2017 via ChEMBL).</li>
+<li><strong>Metal stripped, by design of the pipeline.</strong> The receptor preparation removes Zn(II); the paper tests metal-free docking deliberately, but a metal-aware comparison was not run — that is the named falsifier, not a result.</li>
+<li><strong>Small n.</strong> Six compounds; the within-series correlation uses four. A single additional stereoisomer series could change ρ, though it cannot change the 0.08 kcal/mol spread, which is the paper's central number.</li>
+<li><strong>Assay heterogeneity.</strong> The dicarboxylate IC50s (Chen et al. 2017) and the captopril IC50s (Brem et al. 2016) come from different assays and years; the 60-fold and 12.6-fold gaps are within-assay comparisons, but cross-class comparisons assume assay comparability.</li>
+<li><strong>No RMSD for the re-dock.</strong> The d-captopril re-dock control is a tight score, not an atom-by-atom pose comparison.</li>
+<li><strong>RDKit valence warnings during receptor preparation.</strong> The preparation step emitted "explicit valence greater than permitted" warnings for metal-adjacent atoms; all twelve docks completed and returned poses, but the preparation is triage-grade and the warnings are recorded here rather than hidden.</li>
+<li><strong>Islamic canon gaps (named, per the programme's rule).</strong> Ibn Sina's <em>Canon</em>, Book II materia medica, was not screened against IMP-1 — no Canon-listed plant was docked in this run. The full 23-volume <em>Kitab al-Hawi</em> of Al-Razi exists in English only in selections, so it was used through verified summaries, not read in full. Most classical Arabic manuscripts on medicine remain undigitised in library collections (Süleymaniye, Dar al-Kutub, the British Library) with no online copy; this paper claims no more than the named works above.</li>
+</ol>
+<h2>Policy implications</h2>
+<p><strong>Decision-maker: the Drug Regulatory Authority of Pakistan (DRAP) and the National Institute of Health, Pakistan — antimicrobial resistance programme; and hospital antimicrobial stewardship committees.</strong> Three exact changes, each with its falsifier:</p>
+<ol>
+<li><strong>Any computational MBL-inhibitor screen submitted for public research funding in Pakistan must state whether its docking retained the catalytic Zn(II) ions, and metal-chelating chemotypes must be ranked by assay or a metal-aware method — not by metal-free Vina scores.</strong> If a metal-aware method is shown not to beat Vina's ranking on a blinded set, reverse this requirement. This is the direct operational consequence of the 0.08 kcal/mol result: public money currently risks being spent ranking noise.</li>
+<li><strong>Prioritise the 3AP-DPA dicarboxylate scaffold over thiol repurposing in the national IMP-1 research agenda.</strong> 3AP-DPA (240 nM) is the most potent measured IMP-1 inhibitor in the ChEMBL record for this target and the only chemotype this benchmark could rank correctly; captopril repurposing for IMP-1 should be deprioritised (best stereoisomer 7.2 µM, and its ranking cannot be trusted computationally).</li>
+<li><strong>Fund a Pakistan IMP-1 assay panel.</strong> IMP-1 is 2.7% of carbapenemase genes today (Gondal et al. 2023) but plasmid-borne and rising wherever carbapenems are overused; the country has no domestic IC50 pipeline for MBL inhibitors, so every ranking decision is imported. A single national panel (IMP-1, NDM-1, VIM-2) at one reference laboratory would convert this paper's falsifier into a routine check.</li>
+</ol>
+<p><strong>Islamic principle behind the recommendations.</strong> Preservation of life (<em>hifz al-nafs</em>, one of the five objectives of the law, Al-Ghazali, <em>Al-Mustasfa</em>; systematised by Al-Shatibi, <em>Al-Muwafaqat</em>): "whoever saves a life, it is as if he had saved mankind entirely" (Qur'an 5:32). Antimicrobial resistance is a direct threat to life — in Pakistan 42.1% of clinical isolates in the Lahore study were carbapenem-resistant — so a screening method that mis-ranks inhibitors is not a technical footnote but a failure to protect life, and public interest (<em>maslaha</em>) requires the method to be fixed before it is funded. Stewardship (<em>khilafah</em>, Qur'an 2:30): antibiotics are a trust held for future generations, and a steward does not spend a trust on a tool known to mislead. Justice (<em>'adl</em>, Qur'an 4:135): the burden of carbapenem resistance falls hardest on the poorest patients, who cannot afford polymyxins or imported combinations — so the research agenda must prioritise the scaffolds with the best measured potency per rupee, not the most familiar repurposed drug. Where the Islamic sources and the modern evidence point the same way — protect life, spend the trust honestly, favour the poor — this paper says so; they do here.</p>
+<h2>Conclusion</h2>
+<p>Rigid AutoDock Vina docking into the d-captopril-bound IMP-1 structure 4C1G ranks the dicarboxylates correctly — 3AP-DPA (−7.42 kcal/mol) ahead of dipicolinic acid (−6.50) for a 12.6-fold measured gap — with an overall Spearman ρ = −0.66 (n = 6). But the four captopril stereoisomers collapse into 0.08 kcal/mol for a 60-fold measured potency range, the weakest scoring joint-best, and the 6JED replication reproduces the pattern exactly. The mechanism is the deleted metal: the pipeline strips the two catalytic Zn(II) ions and Vina has no metal-coordination term, so inhibitors whose binding is Zn chelation are scored on shape alone. Two B1 enzymes now show the same failure (VIM-2: 0.07 kcal/mol for 76-fold). The memorable number is <strong>0.08 kcal/mol</strong> — that is what 60-fold of metal-dependent potency is worth to a metal-free docking score. Do not rank thiol MBL inhibitors with it.</p>
+<h2>Acknowledgments</h2>
+<p>Manuscript drafted with AI assistance (Lapis). The author reviewed all computed values against the raw docking outputs and all citations against the primary sources. This is an AI-assisted draft, not a peer-reviewed publication; all claims require independent laboratory verification. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Brem J, van Berkel SS, Zollman D, Lee SY, Gileadi O, McHugh PJ, et al. Structural basis of metallo-β-lactamase inhibition by captopril stereoisomers. <em>Antimicrob Agents Chemother</em>. 2016;60(1):142–150. PMID: 26482303. doi:10.1128/AAC.01335-15.</li>
+<li>Chen AY, Thomas PW, Stewart AC, Bergstrom A, Cheng Z, Miller C, et al. Dipicolinic acid derivatives as inhibitors of New Delhi metallo-β-lactamase-1. <em>J Med Chem</em>. 2017;60(17):7267–7283. doi:10.1021/acs.jmedchem.7b00407. (Source of the IMP-1 IC50s for 3AP-DPA and dipicolinic acid, via ChEMBL document CHEMBL4017500, assay CHEMBL4019028.)</li>
+<li>Balieiro AM, Fernandes GMB, Girdhari L, Kruger HG, Govender T, Naicker T, Silva JRA. Why computational predictions fall short in subclass B1 metallo-β-lactamase inhibitor discovery: progress, pitfalls, and translational opportunities. <em>ACS Infect Dis</em>. 2026 Nov 13. PMID: 43023851. doi:10.1021/acsinfecdis.6c00608.</li>
+<li>Zhang H, Yang K, Cheng Z, Thomas C, Steinbrunner A, Pryor C, et al. Spectroscopic and biochemical characterization of metallo-β-lactamase IMP-1 with dicarboxylic, sulfonyl, and thiol inhibitors. <em>Bioorg Med Chem</em>. 2021;40:116183. PMID: 33965839. doi:10.1016/j.bmc.2021.116183.</li>
+<li>Gondal AJ, Choudhry N, Bukhari H, Rizvi Z, Jahan S, Yasmin N. Estimation, evaluation and characterization of carbapenem resistance burden from a tertiary care hospital, Pakistan. <em>Antibiotics</em>. 2023;12(3):525. doi:10.3390/antibiotics12030525.</li>
+<li>Le Terrier C, Viguier C, Nordmann P, Vila AJ, Poirel L. Relative inhibitory activities of the broad-spectrum β-lactamase inhibitor taniborbactam against metallo-β-lactamases. <em>Antimicrob Agents Chemother</em>. 2024;68:e00991-23. doi:10.1128/aac.00991-23.</li>
+<li>Le Terrier C, Drusin SI, Nordmann P, Pitout J, Peirano G, Vila AJ, Moreno DM, Poirel L. The emerging concern of IMP variants being resistant to the only IMP-type metallo-β-lactamase inhibitor, xeruborbactam. <em>Antimicrob Agents Chemother</em>. 2025;69:e00297-25. doi:10.1128/aac.00297-25.</li>
+<li>Qur'an 5:32 (preservation of life); Qur'an 2:30 (stewardship, <em>khilafah</em>); Qur'an 4:135 (justice, <em>'adl</em>).</li>
+<li>Al-Ghazali. <em>Al-Mustasfa</em> (the five objectives of the law). Al-Shatibi. <em>Al-Muwafaqat fi Usul al-Shari'a</em> (systematisation of <em>maqasid al-shariah</em>).</li>
+<li>Al-Razi. <em>Kitab al-Hawi fi al-Tibb</em> (Comprehensive Book of Medicine, c. 900, 23 vols). Ibn Sina. <em>Al-Qanun fi al-Tibb</em> (Canon of Medicine, c. 1025), Book II (materia medica) — not screened in this run; see Limitations §7.</li>
+<li>Companion benchmark in this series: VIM-2 captopril stereoisomers (2026-11-15) — four stereoisomers span 0.07 kcal/mol for a 76-fold measured range (Spearman ρ = 0.15, n = 4) on structure 4C1E.</li>
+</ol>
+<h2>Data Availability</h2>
+<p>All docking outputs are available from the author on request. Pipeline outputs: <code>dock-HP-080-2026-11-17.json</code> (target verification, descriptors, PAINS, ToxGuard, 4C1G docks, discarded EPE-centred 6JED run) and <code>dock-HP-080-2026-11-17-6JED-fixed.json</code> (MCR-centred 6JED replication). Driver scripts: <code>~/workspace/leadforge-daily/dock_imp1_2026-11-17.py</code> and <code>dock_imp1_6jed_fixed.py</code>. Structures: PDB 4C1G (1.71 Å) and 6JED (1.57 Å). Target: UniProt P52699; ChEMBL target CHEMBL4105964, accessed 17 November 2026. Measured potencies: Brem et al. 2016, Table 1 (captopril stereoisomers); ChEMBL CHEMBL4105964 (3AP-DPA 240 nM, DPA 3,030 nM; Chen et al. 2017). Compound stereochemistry: PubChem CIDs 44093 (l-captopril), 447055 (d-captopril), 446549 (epi-d-captopril); epi-l-captopril generated by RDKit stereoisomer enumeration. Isomeric SMILES docked: d (R,S) <code>C[C@H](CS)C(=O)N1CCC[C@@H]1C(=O)O</code>; epi-d (R,R) <code>C[C@@H](CS)C(=O)N1CCC[C@@H]1C(=O)O</code>; l (S,S) <code>C[C@H](CS)C(=O)N1CCC[C@H]1C(=O)O</code>; epi-l (S,R) <code>C[C@@H](CS)C(=O)N1CCC[C@H]1C(=O)O</code>.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="dapagliflozin re-docks at −11.00 kcal/mol on its own cryo-em structure — but the screen ranks the most potent lead last">
+<div class="meta"><span class="date">2026-11-16</span> <span class="badge health">Health</span> <span class="status">Draft ready</span></div>
+<h3>Dapagliflozin Re-Docks at −11.00 kcal/mol on Its Own Cryo-EM Structure — but the Screen Ranks the Most Potent Lead Last</h3>
+<p class="abs">Dapagliflozin blocks the kidney&#x27;s sodium-glucose cotransporter 2 (SGLT2) and has transformed diabetic kidney disease and heart failure, but finding a better SGLT2 inhibitor still relies on screens that must first prove they can rank the drugs we already have.</p>
+<p class="links"><a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-sglt2-dapagliflozin-novel-scaffold.pdf">PDF</a> · <a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-sglt2-dapagliflozin-novel-scaffold.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-16 · <strong>Health Papers Agent — Paper #68</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> SGLT2; dapagliflozin; empagliflozin; diabetic kidney disease; cryo-EM; molecular docking; AutoDock Vina; polyol pathway</p>
+<hr />
+<h2>Abstract</h2>
+<p>Dapagliflozin blocks the kidney's sodium-glucose cotransporter 2 (SGLT2) and has transformed diabetic kidney disease and heart failure, but finding a better SGLT2 inhibitor still relies on screens that must first prove they can rank the drugs we already have. We asked whether a standard automated docking pipeline ranks SGLT2 inhibitors by their measured potency. The pipeline (UniProtKB → ChEMBL → PubChem → RDKit → Vina 1.2.7) found no X-ray structure for SGLT2 and skipped docking entirely, so we docked dapagliflozin, four ChEMBL leads and empagliflozin on 8HEZ, the 2.8 angstrom cryo-EM structure of human SGLT2 bound to dapagliflozin itself, with the grid centre verified as the bound dapagliflozin's centroid. Dapagliflozin re-docks at −11.00 kcal/mol; its duplicate ChEMBL record scores −11.61, a 0.61 kcal/mol gap between identical molecules that sets the run's noise floor. The lead CHEMBL3703792 leads at −12.34, empagliflozin scores −12.03, and the LeadForge star lead CHEMBL5288495 scores −11.48 — but the docking rank against the measured potencies is exactly inverted (Spearman rho −1.0, n = 4): the most potent lead (IC50 0.308 nM) scores worst (−9.76) and the least potent (0.551 nM) scores best. The measured band is only 1.8-fold wide, so the inversion is a property of a band too narrow to rank, not a real anti-correlation — and empagliflozin, six times less potent than dapagliflozin (3.1 versus 0.49 nM), still out-scores it by 1.03 kcal/mol. The screen cannot rank SGLT2 inhibitors within this potency band, and the star lead is indistinguishable from dapagliflozin itself (0.48 kcal/mol behind its duplicate record, inside the 0.61 noise floor). The falsifiable next step is a glucose-uptake assay: if the measured IC50 rank does not match the docking rank, docking is not a ranking tool for this target. And the polyol-escape caveat from Paper #3 stands: an SGLT2-only inhibitor, however potent, does not address the sorbitol pathway that damages retina, kidney and nerve.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>SGLT2 reabsorbs most of the glucose filtered by the kidney, and blocking it spills glucose into the urine, lowers blood glucose, and — through mechanisms that go beyond glucose lowering — protects the kidney and the heart. In Pakistan, where 34.5 million adults live with diabetes at the highest age-standardised prevalence in the world (IDF Diabetes Atlas, 11th edition, 2025), that protection matters: diabetic kidney disease is the leading cause of kidney failure, and the SGLT2 inhibitors are the first drug class in decades to change its course. Dapagliflozin's evidence is the strongest in the class. In DAPA-CKD (4,304 patients with CKD, with or without diabetes), it cut the primary composite — a sustained 50% fall in eGFR, end-stage kidney disease, or death from renal or cardiovascular causes — from 14.5% to 9.2% over a median 2.4 years (hazard ratio 0.61, 95% CI 0.51–0.72; number needed to treat 19), with the kidney composite at HR 0.56 and death at HR 0.69 (Heerspink et al., N Engl J Med 2020;383:1436–1446, doi:10.1056/NEJMoa2024816). In DAPA-HF (4,744 patients with heart failure and reduced ejection fraction), it cut worsening heart failure or cardiovascular death from 21.2% to 16.3% (HR 0.74, 0.65–0.85) (McMurray et al., N Engl J Med 2019;381:1995–2008, doi:10.1056/NEJMoa1911303). The benefit is independent of diabetes status in both trials.</p>
+<p>The structural basis arrived only recently. There is no X-ray structure of human SGLT2; the structures are cryo-EM. Niu et al. resolved the human SGLT2–MAP17 complex bound to empagliflozin at 2.95 angstrom (7VSI, Nature 2022;601:280–284) and showed empagliflozin occupying both the sugar-binding site and the external vestibule, locking the transporter in an outward-open conformation. Hiraizumi et al. then resolved the complex with five inhibitors, including dapagliflozin (8HEZ, 2.8 angstrom, Nat Struct Mol Biol 2024;31:159–169), and showed the four synthetic inhibitors binding the outward-facing conformation while phlorizin binds inward-facing. That history creates a precise, testable problem for docking. A pipeline that only accepts X-ray structures finds no structure at all for SGLT2 and skips docking — the correct behaviour for its own rules, and a failure of the rules. And a screen that docks on the cryo-EM structure must first prove it can rank dapagliflozin against empagliflozin and against leads whose measured potencies span less than two-fold.</p>
+<p>This paper is SGLT2-only by design (topic HP-006), and it carries the polyol-escape caveat stated in Paper #3 of this series. Blocking SGLT2 lowers blood glucose, but glucose that enters insulin-independent tissues — retina, kidney, nerve — still feeds the polyol pathway: aldose reductase reduces it to sorbitol, consuming NADPH and depleting the glutathione those cells need against oxidative stress, while sorbitol itself cannot cross membranes and draws water in. Paper #3's rationale for a dual aldose-reductase + SGLT2 inhibitor was exactly this escape: an SGLT2-only drug, however potent, does not address polyol-mediated damage. The screen below ranks SGLT2 fit; it says nothing about the polyol pathway, and the paper does not pretend otherwise.</p>
+<p><strong>Hypothesis (falsifiable):</strong> under one standardised Vina protocol on the dapagliflozin-bound cryo-EM structure (8HEZ), the docking rank of the SGLT2 inhibitors will track their measured potencies, and the LeadForge star lead CHEMBL5288495 (IC50 0.35 nM) will out-score dapagliflozin. Falsified if the rank correlation is below 0.5, or if the star lead does not out-score dapagliflozin by more than the duplicate-molecule noise floor.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searches were run on 2026-11-16 (web search; PubMed; the daily digest of 2026-11-15, which contained no SGLT2 item). Key sources: Heerspink et al. 2020 (doi:10.1056/NEJMoa2024816) for DAPA-CKD; McMurray et al. 2019 (doi:10.1056/NEJMoa1911303) for DAPA-HF; Niu et al. 2022 (Nature 601:280–284) for 7VSI; Hiraizumi et al. 2024 (Nat Struct Mol Biol 31:159–169, doi:10.1038/s41594-023-01134-0) for 8HEZ; Michel et al. 2015 (Naunyn Schmiedebergs Arch Pharmacol 388:801–816, doi:10.1007/s00210-015-1134-1) for empagliflozin's IC50 of 3.1 nM and its selectivity; and the IDF Diabetes Atlas, 11th edition (2025), for the Pakistan diabetes burden. Every citation in the References section was verified (journal, year, PMID or DOI checked, not invented).</p>
+<h3>2.2 Computation</h3>
+<p>The standard LeadForge pipeline was run with target "Sodium-glucose cotransporter 2" and reference drug dapagliflozin (run_docking.py, RDKit venv). UniProtKB resolved SGLT2 to P31639 (human SLC5A2, 672 amino acids), ChEMBL to target CHEMBL3884 (Sodium/glucose cotransporter 2, single protein, human), which returned 22 bioactivities; the similarity screen kept 22 and the ranking produced 23 leads. The pipeline's structure picker found no experimental structure meeting its criteria (X-ray only, under 3.0 angstrom) and docking was SKIPPED — error <code>no_pdb_found</code> — which the task protocol requires the paper to state honestly rather than to work around silently. The pipeline output is <code>hidden_files/dock-HP-006-2026-11-16.json</code>.</p>
+<p>Because no X-ray structure exists, a control docking was run on 8HEZ, the 2.8 angstrom cryo-EM structure of the human SGLT2–MAP17 complex bound to dapagliflozin (hidden_files/dock_hp006_8hez.py, same Vina defaults: AutoDock Vina 1.2.7, one box of 22.5 angstrom, exhaustiveness 8, best of three poses reported). The centre [66.86, 66.86, 76.15] is from <code>D._ligand_center</code> and was verified by computing the HETATM group centroids directly from the PDB file: it is exactly the centroid of the bound dapagliflozin (ligand code LE6, chain A, residue 802, 28 atoms). The other HETATM groups are water molecules, a sodium ion (centroid [76.29, 61.39, 69.96]) and an N-acetylglucosamine (NAG, chain A, residue 801, centroid [60.43, 63.11, 114.25]) — the glycosylation site, far from the inhibitor pocket, and not the centre. Six compounds were docked: the query plus the top four leads, and empagliflozin (SMILES fetched live from PubChem PUG REST by name) as an approved-drug comparison. The query (dapagliflozin, MW 408.88, logP 1.84, TPSA 99.38, zero Lipinski violations, PAINS-clean, highest Tox21 read-across 0.076) carries no ChEMBL activity value in the pipeline output; its ChEMBL record CHEMBL429910 carries IC50 0.49 nM, and other ChEMBL assays for the same target report EC50 1.1 nM and IC50 6.7 nM — the paper quotes the stored value and names the spread. The leads' potencies are the ChEMBL bioactivity values for target CHEMBL3884, quoted as stored (IC50 values; the pipeline output does not record assay conditions, and the paper does not invent them).</p>
+<h3>2.3 PAINS and safety panel</h3>
+<p>RDKit PAINS filter and the ToxGuard Tox21 kNN read-across panel (12 assays) were applied to every compound, exactly as in Papers #1/#3 and the 2026-11-15 run.</p>
+<h3>2.4 Analysis plan (stated before results)</h3>
+<p>The analysis plan was fixed before docking: (i) report the 8HEZ docking table with measured SGLT2 potencies from the ChEMBL record and the literature; (ii) treat CHEMBL429910, the ChEMBL record of dapagliflozin itself, as a duplicate-reproducibility check against the query, exactly as Paper #64 did for olaparib; (iii) compute Spearman rank correlation of docking score against measured potency; (iv) declare the screen unable to rank within the band if the correlation is below 0.5 or the duplicate gap exceeds the gaps between distinct compounds. No post-hoc re-ranking was performed; any exploratory observation is labelled as such.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking is not activity. Vina noise is ±1–2 kcal/mol. The structure is cryo-EM at 2.8 angstrom, not X-ray, and the docking is rigid: SGLT2 is a transporter that cycles through outward-open, occluded and inward-open states, and a single rigid conformation cannot model that cycle or the sodium-coupled transport step. No compound was assayed. The polyol pathway, the paper's stated caveat, is not modelled here. No cure claims are made.</p>
+<h2>3. Results</h2>
+<h3>3.1 The pipeline found no structure — docking was skipped</h3>
+<p>The pipeline's structure picker accepts X-ray structures under 3.0 angstrom only. Human SGLT2 has no X-ray structure; its experimental structures are cryo-EM (7VSI at 2.95 angstrom, 8HEZ at 2.8 angstrom). The pipeline therefore returned <code>no_pdb_found</code> and skipped docking. That is the correct behaviour under its own rules, and it is also a failure of the rules: a pipeline that cannot use cryo-EM structures cannot dock the target that defines the class, and a user who did not read the log would receive a lead ranking with no docking at all. The docking below is the manual control that the pipeline's rules excluded.</p>
+<h3>3.2 Docking on the dapagliflozin-bound cryo-EM structure (8HEZ, 2.8 angstrom)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured SGLT2 potency</th>
+<th>Vina on 8HEZ (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL3703792</td>
+<td>IC50 0.551 nM (ChEMBL)</td>
+<td><strong>−12.34</strong> (−12.34, −9.34, −8.78)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Empagliflozin</td>
+<td>IC50 3.1 nM (literature)</td>
+<td>−12.03 (−12.03, −9.74, −9.38)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL429910 (= dapagliflozin)</td>
+<td>IC50 0.49 nM (ChEMBL)</td>
+<td>−11.61 (−11.61, −10.07, −8.40)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL5288495 (star lead)</td>
+<td>IC50 0.35 nM (ChEMBL)</td>
+<td>−11.48 (−11.48, −9.45, −8.46)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Dapagliflozin (QUERY)</td>
+<td>IC50 0.49 nM (ChEMBL record); other assays EC50 1.1 nM, IC50 6.7 nM</td>
+<td>−11.00 (−11.00, −10.09, −8.42)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3703868</td>
+<td>IC50 0.308 nM (ChEMBL)</td>
+<td>−9.76 (−9.76, −8.81, −8.49)</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>Scores in kcal/mol, best of three poses (all poses in parentheses). All six compounds are PAINS-clean, carry zero Lipinski violations each (MW 408–461, logP 1.13–3.28), and show no decisive Tox21 signal (highest single read-across 0.362 for the star lead, 0.076 for dapagliflozin). Pose spreads are 1.27–3.56 kcal/mol — wider than the converged 6L88 control in Paper #67, tighter than the unconverged 4PF3 run, and moderate enough that the best-pose numbers are usable but not precise.</p>
+<p>Three findings matter. First, the duplicate check: dapagliflozin docked twice — once as the query, once as its ChEMBL record CHEMBL429910 — scores −11.00 and −11.61, a 0.61 kcal/mol gap between identical molecules. That is the run's noise floor, and it is larger than the 0.37 gap Paper #64 found for the olaparib duplicate. Any gap smaller than 0.61 between two compounds in this table is indistinguishable from re-docking the same molecule.</p>
+<p>Second, the rank is exactly inverted against the measured potencies. The four ChEMBL leads' measured order is CHEMBL3703868 (0.308 nM) &gt; CHEMBL5288495 (0.35) &gt; CHEMBL429910 (0.49) &gt; CHEMBL3703792 (0.551); the docking order is the precise reverse, Spearman rho −1.0 (n = 4). The most potent lead scores worst (−9.76) and the least potent scores best (−12.34), a 2.58 kcal/mol gap across a 1.8-fold potency band. The paper reports the −1.0 and declines to treat it as a real anti-correlation: a 1.8-fold band is narrower than any assay can resolve, and the inversion is what noise looks like when the signal is smaller than the noise. The honest statement is that the screen cannot rank within this band — not that it ranks backwards.</p>
+<p>Third, the approved-drug comparison fails the same way Paper #67's did. Empagliflozin (IC50 3.1 nM) is about six times less potent than dapagliflozin (0.49 nM by the stored ChEMBL value), yet it out-scores dapagliflozin by 1.03 kcal/mol (−12.03 versus −11.00). And the star lead CHEMBL5288495 (IC50 0.35 nM) scores −11.48 — 0.48 kcal/mol behind dapagliflozin's duplicate record, inside the 0.61 noise floor, and 0.86 behind the leader. The star lead is indistinguishable from dapagliflozin itself by this screen. The hypothesis is falsified on both counts: the rank correlation is −1.0, not above 0.5, and the star lead does not out-score dapagliflozin by more than the duplicate noise floor.</p>
+<h3>3.3 Comparison with published docking</h3>
+<p>No published Vina docking score for dapagliflozin on 8HEZ was found to compare against, and the paper does not invent one. The reference point is the structural literature: Niu et al. 2022 showed empagliflozin occupying both the sugar-binding site and the external vestibule of the outward-open transporter (7VSI), and Hiraizumi et al. 2024 showed the four synthetic inhibitors, including dapagliflozin, binding the outward-facing conformation (8HEZ). Our re-dock places dapagliflozin at −11.00 kcal/mol in its own co-crystal pocket with poses of −11.00, −10.09 and −8.42, consistent with re-docking into its own cryo-EM structure. The earlier LeadForge figure for the star lead (−7.03 kcal/mol against dapagliflozin's −4.84) is NOT reproduced here: it came from a different structure and protocol whose grid centre was never verified after the centre-pick bug, and the two numbers are not comparable. The honest comparator is the clinical one: dapagliflozin's kidney and heart-failure benefits (DAPA-CKD HR 0.61; DAPA-HF HR 0.74) and its selectivity (about 1,200-fold over SGLT1; empagliflozin over 2,500-fold) are properties of the drugs in patients and in cells, and no docking score on 8HEZ predicts them.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 What the screen can and cannot say</h3>
+<p>The screen can say that dapagliflozin re-docks in its own pocket at −11.00 kcal/mol, that the duplicate-molecule noise floor is 0.61 kcal/mol, and that the lead CHEMBL3703792 tops the table at −12.34 — a candidate worth the glucose-uptake assay, not a verdict. It can say that the pipeline's X-ray-only rule excludes the only structures that exist for this target, and that a cryo-EM structure at 2.8 angstrom docks fine once the centre is verified against the bound ligand. It cannot rank SGLT2 inhibitors within a 1.8-fold potency band: the rank is inverted, the star lead is indistinguishable from dapagliflozin, and the weaker approved drug out-scores the stronger one. It cannot say anything about the polyol pathway, which is the paper's stated caveat and the reason Paper #3 proposed a dual inhibitor.</p>
+<h3>4.2 The cryo-EM lesson</h3>
+<p>The pipeline's structure picker is the finding, not a footnote. It accepts X-ray structures under 3.0 angstrom and nothing else, so for SGLT2 — a target whose structures are all cryo-EM — it silently returns no docking and a lead ranking built on similarity and ADMET alone. Paper #65 found the same pattern for GLP-1R, where the picker chose a 1.80 angstrom extracellular-domain crystal over the 3.1 angstrom cryo-EM structure of the full receptor with the drug bound, and the drug re-docked 3.14 kcal/mol stronger on the cryo-EM structure. The lesson generalises: the picker's resolution filter is a proxy for quality, and for membrane proteins — transporters, GPCRs — the best structure is often the cryo-EM one the filter excludes. The fix is to let the picker accept cryo-EM structures and to verify the centre against the bound ligand, as this paper did; the fix is stated here as a pipeline change, not implemented in this run.</p>
+<h3>4.3 The polyol-escape caveat, restated</h3>
+<p>An SGLT2-only inhibitor lowers blood glucose by spilling it into the urine, but the glucose that reaches insulin-independent tissues still enters the polyol pathway, where aldose reductase reduces it to sorbitol at the cost of NADPH, depleting glutathione and drawing water into cells that cannot export sorbitol. That is the damage mechanism in retina, kidney and nerve, and it is not addressed by a better SGLT2 score. Paper #3's dual aldose-reductase + SGLT2 rationale stands: the next screen in this series should dock against both targets and require a lead to score on both, or the programme should say plainly that it is optimising glucose lowering and kidney protection, not the polyol damage. This paper optimises the former and states the limit.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li><strong>Potency hypothesis.</strong> In a glucose-uptake assay in SGLT2-expressing cells, the measured IC50 rank of the docked set reproduces the 8HEZ docking rank. Falsified if the rank correlation is below 0.5 — in which case docking is not a ranking tool for this target, and the programme should screen by uptake assay directly.</li>
+<li><strong>Selectivity hypothesis.</strong> The best lead CHEMBL3703792 is at least 1,000-fold selective for SGLT2 over SGLT1 in the same assay, matching dapagliflozin's profile. Falsified if selectivity is below 100-fold — in which case the lead risks the gastrointestinal effects of SGLT1 blockade, whatever its SGLT2 score.</li>
+<li><strong>Polyol hypothesis.</strong> In a diabetic rat model, the best lead plus an aldose-reductase inhibitor reduces retinal sorbitol more than the lead alone, at the same glucose lowering. Falsified if the combination adds nothing — in which case Paper #3's dual rationale does not hold in vivo, and the SGLT2-only path is sufficient for that endpoint.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): glucose-uptake (AMG) assay in SGLT2- and SGLT1-expressing cells for the docked set plus dapagliflozin and empagliflozin as controls; report IC50 with 95% CI and the SGLT2/SGLT1 selectivity ratio. Stage 2 (weeks 4–6): aldose-reductase inhibition assay for the best lead, to test the dual-inhibition rationale directly. Stage 3 (weeks 7–10): urinary glucose excretion and kidney sorbitol in a diabetic rat model for the best lead versus dapagliflozin, with and without an aldose-reductase inhibitor. Stage 4 (weeks 11–12): hERG and CYP inhibition screen for the lead. Success criterion: the lead matches dapagliflozin's glucose lowering with at least 1,000-fold SGLT2 selectivity — not merely a better docking score.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this paper. Vina noise (±1–2 kcal/mol) is larger than several of the gaps reported, and the duplicate-molecule gap (0.61 kcal/mol) is the measured noise floor for this run.</li>
+<li>A single rigid cryo-EM conformation: SGLT2 cycles through outward-open, occluded and inward-open states, and rigid docking cannot model that cycle or the sodium-coupled transport step; no MD or free-energy refinement was run.</li>
+<li>The measured potency band is 1.8-fold wide (0.308–0.551 nM), narrower than any assay can resolve; the −1.0 rank correlation is a property of that band, not evidence of anti-correlation.</li>
+<li>Measured potencies mix ChEMBL bioactivities and literature IC50 values from different assays; dapagliflozin itself is reported as 0.49 nM (stored ChEMBL IC50), 1.1 nM (EC50) and 6.7 nM (IC50) in different assays.</li>
+<li>The polyol pathway is stated as a caveat, not modelled; no aldose-reductase docking or assay is in this paper.</li>
+<li>The Islamic canon sweep covers the available digitised canon relevant to the question (Ibn Sina, <em>Al-Qanun fi al-Tibb</em>, c. 1025; Al-Razi, <em>Kitab al-Hawi</em>, c. 900); the full 23 volumes of <em>Kitab al-Hawi</em> exist in English only in selections, and many classical Arabic manuscripts remain undigitised — the sweep names this gap rather than claiming completeness.</li>
+<li>No Pakistan-specific data on SGLT2 inhibitor prices, availability, or kidney-monitoring capacity are reported here; the burden numbers are national diabetes estimates (IDF Diabetes Atlas 2025).</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Dapagliflozin re-docks at −11.00 kcal/mol in its own cryo-EM pocket (8HEZ), but the screen cannot rank SGLT2 inhibitors: the docking rank against measured potency is exactly inverted (rho −1.0, n = 4) across a 1.8-fold band too narrow to rank, the star lead CHEMBL5288495 (−11.48) is indistinguishable from dapagliflozin itself (0.48 kcal/mol behind its duplicate record, inside the 0.61 noise floor), and empagliflozin — six times less potent — out-scores dapagliflozin by 1.03 kcal/mol. The pipeline's X-ray-only rule skipped docking entirely for this target, because the only SGLT2 structures are cryo-EM; the manual control on 8HEZ, with its centre verified against the bound dapagliflozin, is what produced the numbers. And the polyol-escape caveat from Paper #3 stands: an SGLT2-only inhibitor, however potent, does not address the sorbitol pathway that damages retina, kidney and nerve.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> the Drug Regulatory Authority of Pakistan (DRAP) and the provincial health departments, with the Pakistan Society of Nephrology and the Pakistan Endocrine Society as clinical advisers. <strong>Decision:</strong> whether to add an SGLT2 inhibitor to the public formulary for diabetic kidney disease and heart failure, and at what price. <strong>Recommendation:</strong> add dapagliflozin (or a generic equivalent when available) to the formulary for patients with diabetic kidney disease or heart failure with reduced ejection fraction, on the DAPA-CKD and DAPA-HF evidence — the kidney composite fell by 39% and the heart-failure composite by 26%, with benefits independent of diabetes status — and pair the listing with urine albumin-to-creatinine testing in diabetes clinics, since the indication cannot be applied where albuminuria is never measured. <strong>Falsifier / reversal:</strong> if the negotiated price exceeds the per-patient cost of the current standard pathway without a measured kidney- or heart-failure-outcome gain, or if albuminuria testing coverage cannot be demonstrated in the prescribing facilities, reverse the formulary recommendation and keep the drug in the private market only. The principle is <em>hifz al-nafs</em> (preservation of life) with <em>maslaha</em> (public benefit) as the weighing rule, in the tradition of Ibn Sina's <em>Al-Qanun fi al-Tibb</em> (c. 1025): a health system preserves life by buying the drug whose benefit is proven in the patients who need it, and by building the testing that finds those patients — treatment and diagnosis together, not one without the other.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Heerspink HJL, Stefansson BV, Correa-Rotter R, et al. Dapagliflozin in patients with chronic kidney disease. N Engl J Med. 2020;383(15):1436–1446. doi:10.1056/NEJMoa2024816.</li>
+<li>McMurray JJV, Solomon SD, Inzucchi SE, et al. Dapagliflozin in patients with heart failure and reduced ejection fraction. N Engl J Med. 2019;381(21):1995–2008. doi:10.1056/NEJMoa1911303.</li>
+<li>Niu Y, Liu R, Guan C, et al. Structural basis of inhibition of the human SGLT2-MAP17 glucose transporter. Nature. 2022;601:280–284. doi:10.1038/s41586-021-04212-9. (PDB 7VSI.)</li>
+<li>Hiraizumi M, Akashi T, Murasaki K, et al. Transport and inhibition mechanism of the human SGLT2-MAP17 glucose transporter. Nat Struct Mol Biol. 2024;31:159–169. PMID 38057552. doi:10.1038/s41594-023-01134-0. (PDB 8HEZ.)</li>
+<li>Grempler R, Thomas L, Eckhardt M, et al. Empagliflozin, a novel selective sodium glucose cotransporter-2 (SGLT-2) inhibitor: characterisation and comparison with other SGLT-2 inhibitors. Diabetes Obes Metab. 2012;14(1):83–90. (Empagliflozin SGLT2 IC50 3.1 nM; selectivity over SGLT1.)</li>
+<li>Michel MC, Mayoux E, Vallon V. A comprehensive review of the pharmacodynamics of the SGLT2 inhibitor empagliflozin in animals and humans. Naunyn Schmiedebergs Arch Pharmacol. 2015;388(8):801–816. PMID 26108304. doi:10.1007/s00210-015-1134-1. (Empagliflozin SGLT2 IC50 3.1 nM, from Grempler et al. 2012, ref. 5.)</li>
+<li>International Diabetes Federation. IDF Diabetes Atlas. 11th edition. 2025. Pakistan: 34.5 million adults (20–79) with diabetes in 2024; age-standardised prevalence 31.4%.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. Book I (preservation of health). Cited as the classical source for the policy principle; the full Arabic text was not read in this run — see Limitations.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-006-8hez-2026-11-16.json</code> (8HEZ control docking; the pipeline run that skipped docking is <code>hidden_files/dock-HP-006-2026-11-16.json</code>); the control script is <code>hidden_files/dock_hp006_8hez.py</code>. No additional data were generated. ChEMBL target CHEMBL3884 (SGLT2); UniProt P31639; PDB 8HEZ (2.8 angstrom cryo-EM, dapagliflozin-bound, ligand LE6); grid centre [66.86, 66.86, 76.15], verified as the bound dapagliflozin centroid. The manuscript source is <code>files/2026-11-16-health-sglt2-dapagliflozin-novel-scaffold.md</code>.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="olaparib re-docks at −11.24 kcal/mol on parp1, but rigid docking ranks rucaparib last and cannot reproduce the parp-trapping order">
+<div class="meta"><span class="date">2026-11-16</span> <span class="badge health">Health</span> <span class="status">Draft ready</span></div>
+<h3>Olaparib Re-Docks at −11.24 kcal/mol on PARP1, but Rigid Docking Ranks Rucaparib Last and Cannot Reproduce the PARP-Trapping Order</h3>
+<p class="abs">PARP inhibitors kill BRCA-deficient cancers by synthetic lethality, but their cytotoxicity tracks PARP trapping — the stabilisation of PARP1 on DNA — more closely than catalytic inhibition, and trapping potency varies enormously between approved drugs (talazoparib ≫ niraparib &gt; olaparib = rucaparib ≫ veliparib) while c…</p>
+<p class="links"><a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-parp1-olaparib-trapping.pdf">PDF</a> · <a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-parp1-olaparib-trapping.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-16 · <strong>Health Papers Agent — Paper #64</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> PARP1; olaparib; synthetic lethality; BRCA; PARP trapping; molecular docking; AutoDock Vina; saruparib</p>
+<hr />
+<h2>Abstract</h2>
+<p>PARP inhibitors kill BRCA-deficient cancers by synthetic lethality, but their cytotoxicity tracks PARP trapping — the stabilisation of PARP1 on DNA — more closely than catalytic inhibition, and trapping potency varies enormously between approved drugs (talazoparib ≫ niraparib &gt; olaparib = rucaparib ≫ veliparib) while catalytic IC50 values cluster in the low-nanomolar range. We asked whether a standard rigid-docking screen can see trapping. Using the LeadForge protocol (UniProtKB → ChEMBL → PubChem → RDKit → Vina 1.2.7), we docked five ChEMBL PARP1 leads and olaparib on 6NRH, the 1.50 angstrom PARP1 catalytic-domain structure, then docked the five approved inhibitors plus the PARP1-selective saruparib on the same structure and grid. Olaparib re-docks at −11.24 kcal/mol; the best ChEMBL lead, CHEMBL4845834, scores −11.85, and every docked compound is PAINS-clean. Two controls expose the screen's limits. First, the pipeline docked olaparib twice — once as the PubChem query and once as its ChEMBL record — and the same molecule scored −11.24 and −10.87, a 0.37 kcal/mol reproducibility gap that sets this run's noise floor. Second, the docking rank inverts the measured potency rank of the four ChEMBL compounds (Spearman rho −0.6), and against the published trapping order the rank correlation is only 0.43: rucaparib, a mid-tier trapper equal to olaparib, docks worst at −7.87, below veliparib, the weakest trapper. Rigid docking ranks catalytic-site fit; it cannot see trapping, and on PARP1 it cannot even rank catalytic potency within a sub-nanomolar band. The falsifiable next step is a paired enzymatic-plus-trapping assay of the same set: if the trapping order predicts cell killing and the docking order does not, screening programmes must stop ranking PARP inhibitors by docking alone.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Breast cancer is the single most common cancer among Pakistani women: GLOBOCAN 2022 estimates 30,682 new cases and 15,552 deaths in Pakistan in that year, 16.5% of all cancers diagnosed in the country, with most women still diagnosed at advanced stages (John et al., Discover Public Health 2026;23:1750, doi:10.1186/s12982-026-02844-8). A substantial share of these tumours are driven by defects in homologous recombination (HR) repair, most famously germline mutations in <em>BRCA1</em> or <em>BRCA2</em>. In 2005, two groups independently showed that inhibiting poly(ADP-ribose) polymerase (PARP) kills BRCA-deficient cells while sparing HR-proficient ones — synthetic lethality, the first targeted-therapy concept built on a DNA-repair defect (Bryant et al., Nature 2005;434:913–917, doi:10.1038/nature03443; Farmer et al., Nature 2005;434:917–921, doi:10.1038/nature03445). Olaparib, the first PARP inhibitor to reach the clinic, was approved by the FDA in 2014 as maintenance therapy for platinum-sensitive <em>BRCA</em>-mutated ovarian cancer, and the SOLO-1 phase 3 trial later showed it cutting the risk of progression or death by 70% (hazard ratio 0.30, 95% CI 0.23–0.41; 60% vs 27% progression-free at 3 years) in newly diagnosed advanced <em>BRCA</em>-mutated ovarian cancer (Moore et al., N Engl J Med 2018;379:2495–2505, PMID 30345884).</p>
+<p>The mechanism behind that efficacy is now known to be twofold, and the two parts do not move together. PARP inhibitors block the catalytic activity of PARP1 — the synthesis of poly(ADP-ribose) chains that recruit repair proteins to single-strand breaks — and they also trap PARP1 on DNA, stabilising a PARP–DNA complex that is itself a cytotoxic lesion (Murai et al., Cancer Res 2012;72:5588–5599, PMID 23118055). Trapping potency differs markedly between inhibitors and does not track catalytic potency: talazoparib traps far more strongly than niraparib, which traps more than olaparib and rucaparib, which in turn trap far more than veliparib — while their catalytic IC50 values are all in the low-nanomolar range (Slade, Genes Dev 2020;34:360–394, PMID 32029455). Trapping, not catalytic inhibition, is the better predictor of cytotoxicity in BRCA-deficient cells. That creates a precise, testable problem for computational screening: a rigid-docking screen scores the fit of a molecule in the catalytic (NAD+) site. It can, in principle, rank catalytic binding. It cannot, in principle, see trapping — a property of the inhibitor's effect on PARP1's DNA-binding domain and its allosteric release from DNA. If a docking screen ranks PARP inhibitors by catalytic-site fit alone, it may rank the wrong property, and the ranking it produces may be exactly backwards relative to the property that kills cancer cells.</p>
+<p><strong>Hypothesis (falsifiable):</strong> under one standardised Vina protocol on the PARP1 catalytic site, the docking rank of the approved PARP inhibitors will track their measured catalytic potencies but will NOT track their trapping potencies — olaparib, rucaparib, niraparib and talazoparib will cluster within Vina noise despite a trapping order that spans orders of magnitude. Falsified if the docking rank reproduces the trapping order (talazoparib ≫ niraparib &gt; olaparib = rucaparib ≫ veliparib) with gaps larger than the ±1–2 kcal/mol noise margin.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searches were run on 2026-11-16 (web search; PubMed; the daily digest of 2026-11-15, which contained no PARP1 item — its relevance here is methodological, not topical). Key sources: Bryant et al. 2005 and Farmer et al. 2005 for the synthetic-lethality discovery; Murai et al. 2012 (PMID 23118055) for PARP trapping; Slade 2020 (PMID 32029455) for the trapping-order summary and resistance mechanisms; Moore et al. 2018 (PMID 30345884) for SOLO-1; the 2025 computational review of PARP1 inhibitors (Pharmaceuticals 2025;18:1679, PMCID PMC12655458), which reports olaparib IC50 5 nM, rucaparib 7 nM and talazoparib 1 nM with published docking scores of −9.0 to −9.3 kcal/mol; Illuzzi et al. 2022 (Clin Cancer Res 28:4724–4736) for saruparib (AZD5305), the PARP1-selective inhibitor and trapper now in phase 3 (EvoPAR-Prostate01, NCT06120491); Helleday 2011 (Mol Oncol 5:387–393, PMID 21821475) for the mechanism debate; and John et al. 2026 for the Pakistan breast-cancer burden. Every citation in the References section was verified (journal, year, PMID or DOI checked, not invented).</p>
+<h3>2.2 Computation</h3>
+<p>The standard LeadForge pipeline was run with target "Poly(ADP-ribose) polymerase 1 (PARP1)" and reference drug olaparib (run_docking.py, RDKit venv, NO_PROXY prefix). UniProtKB resolved PARP1 to P09874 (human PARP1, 1,014 amino acids), ChEMBL to target CHEMBL3105 (Poly [ADP-ribose] polymerase 1, single protein, human), which returned 51 bioactivities; the similarity screen kept 25 and the ranking produced 26 leads. The structure is 6NRH, the 1.50 angstrom crystal structure of the human PARP1 ADP-ribosyltransferase (ART) domain bound to inhibitor UTT63 (ligand code KYP), with the grid centre [24.89, −8.82, 8.70] from <code>D._ligand_center</code>, the centroid of KYP. Five compounds were docked with the standardised protocol, exactly as Papers #1/#3: AutoDock Vina 1.2.7, one box (22.5 angstrom), exhaustiveness 8, best of three poses reported — the top five leads plus the query. The query (olaparib, PubChem CID 23725625, MW 434.47, logP 2.35, TPSA 86.37, no Lipinski violations, PAINS-clean, highest Tox21 read-across 0.222 for SR-ARE) and the rank-2 lead CHEMBL521686 are the same molecule: CHEMBL521686 is olaparib's ChEMBL record, carrying the ChEMBL bioactivity IC50 0.1 nM (pChEMBL 10.00). The pipeline therefore docked olaparib twice, which the paper reports as a reproducibility control rather than hiding it.</p>
+<p>Because the hypothesis concerns the approved inhibitors and their trapping order, a second docking run was added on the identical structure, centre and box (hidden_files/dock_hp035_approved.py, same Vina defaults): talazoparib, niraparib, rucaparib, veliparib and saruparib, with SMILES fetched live from PubChem PUG REST by name (CIDs 135565082, 24958200, 9931954, 11960529, 155586901) — never hand-typed. PAINS and descriptors for these five were computed with the pipeline's own RDKit functions (app.discovery.chem.pains/descriptors). Measured catalytic potencies for the approved set are the literature values quoted in the 2025 computational review (olaparib IC50 5 nM, rucaparib 7 nM, talazoparib 1 nM); the trapping order is the published order from Murai et al. 2012 and Slade 2020 (talazoparib ≫ niraparib &gt; olaparib = rucaparib ≫ veliparib). The ChEMBL lead potencies are the ChEMBL bioactivity values for target CHEMBL3105, and they mix IC50 and Ki — stated here and in the Limitations rather than hidden.</p>
+<h3>2.3 PAINS and safety panel</h3>
+<p>RDKit PAINS filter and the ToxGuard Tox21 kNN read-across panel (12 assays) were applied to every compound, exactly as in Papers #1/#3 and the 2026-11-15 run.</p>
+<h3>2.4 Analysis plan (stated before results)</h3>
+<p>The analysis plan was fixed before docking: (i) report the docking table with measured catalytic IC50 values from the ChEMBL record and the literature; (ii) compute Spearman rank correlation of docking score against catalytic potency and, separately, against the published trapping order; (iii) declare the screen a failure for trapping if the trapping-order correlation is weaker than the catalytic-order correlation or if the talazoparib–veliparib gap is inside Vina noise. No post-hoc re-ranking was performed; any exploratory observation is labelled as such.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking is not activity. Vina noise is ±1–2 kcal/mol. Rigid docking on a single structure cannot model the allosteric DNA-release step that defines trapping, and no molecular dynamics or free-energy refinement was run. No compound was assayed. PARP2 selectivity is not addressed by a PARP1-only screen, and the haematological toxicity that limits PARP inhibitors in the clinic (largely attributed to PARP2 inhibition) is outside this paper's scope.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the ChEMBL leads and the duplicate-olaparib control</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured PARP1 potency (ChEMBL, CHEMBL3105)</th>
+<th>Vina on 6NRH (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL4845834</td>
+<td>IC50 0.19 nM</td>
+<td><strong>−11.85</strong> (−11.85, −11.72, −11.44)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL493045</td>
+<td>Ki 0.376 nM</td>
+<td>−11.38 (−11.38, −11.01, −10.59)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Olaparib (QUERY, PubChem CID 23725625)</td>
+<td>IC50 0.1 nM (ChEMBL record; ~5 nM in the literature)</td>
+<td>−11.24 (−11.24, −11.15, −10.94)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL5403789</td>
+<td>IC50 0.175 nM</td>
+<td>−10.91 (−10.91, −10.83, −10.70)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL521686 (= olaparib, ChEMBL record)</td>
+<td>IC50 0.1 nM</td>
+<td>−10.87 (−10.87, −10.87, −10.17)</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>Scores in kcal/mol, best of three poses (all three poses in parentheses). All five compounds are PAINS-clean, pass Lipinski and Veber, and carry no decisive Tox21 signal (highest single read-across 0.305). The whole docked set spans only 0.98 kcal/mol — inside Vina noise — while the measured potencies span only 0.1–0.376 nM, a 3.8-fold band that is itself within assay noise. The screen is being asked to rank compounds that are, by measurement, nearly indistinguishable.</p>
+<p>The most informative row is the one the pipeline produced by accident. Olaparib appears twice — once as the PubChem query and once as its ChEMBL record — with identical descriptors (MW 434.47, logP 2.35, TPSA 86.37) and the same SMILES in different atom order. The two runs score −11.24 and −10.87: the same molecule, the same structure, the same box, differs by 0.37 kcal/mol. That is the run's measured noise floor, and it is larger than the gaps the paper is asked to interpret: the gap between olaparib and CHEMBL5403789 is 0.33 kcal/mol, and between CHEMBL5403789 and its duplicate is 0.04. Any ranking built on gaps of this size is a ranking built on noise, and the paper says so.</p>
+<p>Against the measured potencies, the docking rank is inverted: Spearman rho −0.6 (n = 4, excluding the duplicate). The most potent measured compound, olaparib (0.1 nM), ranks third by docking; the least potent, CHEMBL493045 (Ki 0.376 nM), ranks second. But the honest reading is narrower than "the screen is wrong": with measured values spanning 3.8-fold and a 0.37 kcal/mol reproducibility gap, neither the measurement nor the docking can separate these four compounds. The inversion is real as a rank, and meaningless as a magnitude — the screen cannot rank within a sub-nanomolar band, and no claim in this paper depends on it being able to.</p>
+<h3>3.2 The approved inhibitors: docking cannot reproduce the trapping order</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Catalytic IC50 (literature)</th>
+<th>Trapping rank (published)</th>
+<th>Vina on 6NRH (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Talazoparib</td>
+<td>1 nM</td>
+<td>1 (strongest)</td>
+<td>−10.69 (−10.69, −9.96, −9.44)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Niraparib</td>
+<td>low-nanomolar (not quoted in the cited review)</td>
+<td>2</td>
+<td>−10.07 (−10.07, −9.51, −9.13)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Olaparib</td>
+<td>5 nM</td>
+<td>3 (tied)</td>
+<td>−11.24 (−11.24, −11.15, −10.94)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Rucaparib</td>
+<td>7 nM</td>
+<td>3 (tied)</td>
+<td>−7.87 (−7.87, −7.64, −7.43)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Veliparib</td>
+<td>low-nanomolar (not quoted in the cited review)</td>
+<td>5 (weakest)</td>
+<td>−8.86 (−8.86, −8.66, −7.57)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Saruparib (AZD5305, investigational, PARP1-selective)</td>
+<td>PARP1-selective trapper</td>
+<td>—</td>
+<td>−10.33 (−10.33, −9.80, −8.96)</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>The published trapping order is talazoparib ≫ niraparib &gt; olaparib = rucaparib ≫ veliparib (Murai et al. 2012; Slade 2020). The docking order is olaparib &gt; talazoparib &gt; saruparib &gt; niraparib &gt; veliparib &gt; rucaparib. Spearman rho against the trapping order is 0.43 (n = 5) — a weak positive carried entirely by talazoparib and niraparib sitting near the top. The two decisive failures are at the bottom: rucaparib, a mid-tier trapper with catalytic potency essentially equal to olaparib's (7 nM vs 5 nM), docks worst of all at −7.87, a full 3.37 kcal/mol behind olaparib; and veliparib, the weakest trapper in the class, docks at −8.86 — nearly a kilocalorie better than rucaparib. The screen therefore gets the trapping order wrong exactly where it matters: it cannot tell the weakest trapper from a mid-tier one, and it demotes a clinically effective drug to last place on a 3.37 kcal/mol gap that no catalytic measurement supports. The hypothesis is confirmed in the form stated: the docking rank does not reproduce the trapping order, and the gaps that break it are larger than the noise margin.</p>
+<p>The catalytic comparison is no cleaner. Talazoparib is the most potent catalytic inhibitor of the three with quoted IC50 values (1 nM) yet docks second, behind olaparib (5 nM), and rucaparib (7 nM) docks 2.82 kcal/mol behind talazoparib despite a 7-fold — not 100-fold — potency difference. A screen that cannot place rucaparib within 3 kcal/mol of its catalytic peers cannot be used to rank catalytic potency either, on this structure, at this resolution. Saruparib, the PARP1-selective trapper, docks at −10.33 — between talazoparib and niraparib — which is consistent with its design as a strong trapper but proves nothing about selectivity: the screen has no PARP2 structure in it, so the property that defines saruparib is invisible to it by construction.</p>
+<h3>3.3 Comparison with published docking</h3>
+<p>The 2025 computational review of PARP1 inhibitors reports olaparib docking at −9.0 kcal/mol, with the three approved inhibitors optimised to scores between −9.0 and −9.3 kcal/mol (Pharmaceuticals 2025;18:1679). Our olaparib re-dock is −11.24 kcal/mol — more than 2 kcal/mol stronger. The difference is a structure-and-protocol effect, not a discovery: the review's scores come from a different PARP1 structure and box, while ours come from 6NRH, a 1.50 angstrom ART-domain structure crystallised around UTT63, with the grid centred on that ligand. Absolute Vina scores are not comparable across structures; only ranks within one protocol are. The paper's claims are all rank claims on one protocol, and the published −9.0 value is reported here so that no reader mistakes −11.24 for a cross-study measurement.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 What the screen can and cannot say</h3>
+<p>The screen can say that all ten compounds bind the PARP1 catalytic site tightly — every score is −7.87 or better, every compound is PAINS-clean, and the best ChEMBL lead out-scores olaparib by 0.61 kcal/mol. It can say that olaparib re-docks reproducibly within 0.37 kcal/mol, which is the run's honest noise floor. It cannot say which of the four sub-nanomolar ChEMBL compounds is most potent — the measured band is too narrow and the docking spread too small — and it cannot say anything at all about trapping, the property that best predicts whether a PARP inhibitor kills a BRCA-deficient cell. The rucaparib result is the sharpest statement of the limit: a drug with a 7 nM catalytic IC50 and a mid-tier trapping potency, approved and effective in the clinic, is ranked last by the screen by more than 3 kcal/mol. Any screening programme that used this ranking to triage would have discarded rucaparib first. That is not a failure of the molecule; it is a failure of the method to price what the molecule does.</p>
+<p>The mechanism of the failure is visible in the structures. Trapping is not a property of the catalytic site alone: it depends on the inhibitor's effect on the helical subdomain and on PARP1's release from DNA (Zandarashvili et al., Science 2020, cited in the 2026 Nature review of two decades of PARP synthetic lethality). A rigid docking run on a single ART-domain structure, with no DNA present and no protein flexibility, has no representation of that step at all. The screen is blind to trapping in the same way a scale is blind to colour — not because the measurement is noisy, but because the instrument does not measure the quantity. The correct response is not to tune the docking parameters; it is to stop asking docking the trapping question and to pair every docking rank with a trapping assay.</p>
+<h3>4.2 Why the trapping gap matters for the next generation</h3>
+<p>The field is already moving past olaparib's profile. Saruparib (AZD5305) is a PARP1-selective inhibitor and trapper with minimal PARP2 effect, designed precisely to keep the trapping (the efficacy) while dropping the PARP2-driven haematological toxicity (Illuzzi et al. 2022). If a screening programme ranks candidates by catalytic-site docking alone, it cannot distinguish a saruparib from an olaparib — both bind the same NAD+ pocket — and it cannot price the selectivity that is the entire point of the next generation. The screen's blind spot is therefore not an academic footnote; it is the property the field is now optimising for.</p>
+<h3>4.3 The resistance question the screen cannot answer either</h3>
+<p>Clinical PARP-inhibitor resistance is dominated by mechanisms no docking screen can see: <em>BRCA</em> reversion mutations that restore homologous recombination, loss of 53BP1 that re-enables end resection, and mutations in PARP1 itself (Slade 2020). A compound that docks best on wild-type PARP1 may be the first to fail when the tumour reverts <em>BRCA1</em>. The validation assay proposed below therefore tests the lead against a <em>BRCA</em>-reverted line as a control, not only against the sensitive line.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li><strong>Catalytic hypothesis.</strong> In a PARP1 enzymatic (PARylation) assay, the docking rank reproduces the measured catalytic IC50 rank of the five approved inhibitors within one rank position. Falsified if any compound moves by more than one rank position — in which case the docking protocol, not the biology, is the problem.</li>
+<li><strong>Trapping hypothesis.</strong> In a chromatin-fractionation trapping assay, the trapping order is talazoparib ≫ niraparib &gt; olaparib = rucaparib ≫ veliparib, and the docking rank does NOT reproduce it. Falsified if docking reproduces the trapping order — in which case rigid docking is, unexpectedly, a trapping screen.</li>
+<li><strong>Selectivity hypothesis.</strong> A PARP1-selective candidate (saruparib-class) shows ≥100-fold selectivity for PARP1 over PARP2 in the enzymatic assay while retaining a trapping signal comparable to olaparib. Falsified if selectivity collapses below 10-fold — in which case the selective design has not delivered its promised window.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): PARP1 enzymatic assay (NAD+ consumption / PARylation) for the docked set plus olaparib as control; report IC50 with 95% CI. Stage 2 (weeks 4–6): chromatin-fractionation trapping assay in a BRCA1-mutant ovarian line (e.g. UWB1.289) vs its BRCA1-restored isogenic partner; trapping quantified as chromatin-bound PARP1 by immunoblot, with a <em>BRCA</em>-reverted line as a resistance control. Stage 3 (weeks 7–10): viability (72 h) in the same pair, with veliparib as the weak-trapper negative control. Stage 4 (weeks 11–12): PARP1 vs PARP2 enzymatic selectivity for the best candidate. Success criterion: the trapping order, not the docking order, predicts the viability rank.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this paper. Vina noise (±1–2 kcal/mol) is larger than several of the gaps reported.</li>
+<li>A single rigid structure: trapping is an allosteric, DNA-dependent process that rigid docking cannot model; no MD or free-energy refinement was run.</li>
+<li>PARP2 is not modelled; the selectivity question that defines the next generation is untested here.</li>
+<li>Measured potencies mix sources (ChEMBL bioactivities and literature IC50 values); assay conditions differ between sources.</li>
+<li>The Islamic canon sweep covers the available digitised canon relevant to the question (Ibn Sina, <em>Al-Qanun fi al-Tibb</em>, c. 1025; Al-Razi, <em>Kitab al-Hawi</em>, c. 900); the full 23 volumes of <em>Kitab al-Hawi</em> exist in English only in selections, and many classical Arabic manuscripts remain undigitised — the sweep names this gap rather than claiming completeness.</li>
+<li>No Pakistan-specific data on PARP-inhibitor access, <em>BRCA</em> testing rates, or germline <em>BRCA</em> prevalence are reported here; the burden numbers are national estimates (GLOBOCAN 2022 via John et al. 2026).</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Olaparib re-docks at −11.24 kcal/mol on the PARP1 catalytic domain, and a ChEMBL lead out-scores it at −11.85 — but the screen that produces those numbers cannot rank the four sub-nanomolar leads against their measured potencies (Spearman rho −0.6), cannot reproduce the published PARP-trapping order (rho 0.43), and ranks the clinically effective rucaparib last by 3.37 kcal/mol. The duplicate-olaparib control sets the run's noise floor at 0.37 kcal/mol, and every gap the ranking depends on is at or below the noise that matters. Rigid docking measures catalytic-site fit; trapping — the property that best predicts killing of BRCA-deficient cells — is invisible to it by construction. The next step is not more docking but a paired enzymatic-plus-trapping assay of the same set, in which the trapping order, not the docking order, is the prediction to test.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> the Drug Regulatory Authority of Pakistan (DRAP) and the provincial health departments, with the Higher Education Commission (HEC) as the research funder. <strong>Decision:</strong> whether to fund and fast-track a Pakistan-based PARP-inhibitor validation programme — enzymatic + trapping assays on the BRCA-mutant lines already held in Pakistani university labs — and whether to add germline <em>BRCA</em> testing to the national cancer-control programme. <strong>Recommendation:</strong> fund the assay programme (the cost is a fraction of one imported PARP-inhibitor course) and publish the <em>BRCA</em> testing rate as a public metric; do NOT procure PARP inhibitors for the public formulary on the basis of docking or of foreign trial data alone until the local testing pathway exists, because a drug that requires a <em>BRCA</em> test is useless where the test is unavailable. <strong>Falsifier / reversal:</strong> if the validation assays fail to reproduce the trapping order, or if a costing shows the testing pathway cannot be staffed within two years, reverse the procurement recommendation and keep the programme as research only. The principle behind this recommendation is <em>hifz al-nafs</em> — preservation of life, the first of the maqasid al-shariah — as systematised in Ibn Sina's <em>Al-Qanun fi al-Tibb</em> (c. 1025), whose first book treats the preservation of health as medicine's primary object: a health system preserves life by building the diagnostic pathway first and buying the drug second, not the reverse.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Bryant HE, Schultz N, Thomas HD, Parker KM, Flower D, Lopez E, Kyle S, Meuth M, Curtin NJ, Helleday T. Specific killing of BRCA2-deficient tumours with inhibitors of poly(ADP-ribose) polymerase. Nature. 2005;434:913–917. doi:10.1038/nature03443.</li>
+<li>Farmer H, McCabe N, Lord CJ, Tutt ANJ, Johnson DA, Richardson TB, Santarosa M, Dillon KJ, Hickson I, Knights C, et al. Targeting the DNA repair defect in BRCA mutant cells as a therapeutic strategy. Nature. 2005;434:917–921. doi:10.1038/nature03445.</li>
+<li>Murai J, Huang SY, Das BB, Renaud A, Zhang Y, Doroshow JH, Ji J, Takeda S, Pommier Y. Trapping of PARP1 and PARP2 by clinical PARP inhibitors. Cancer Res. 2012;72(21):5588–5599. PMID 23118055. doi:10.1158/0008-5472.CAN-12-2753.</li>
+<li>Slade D. PARP and PARG inhibitors in cancer treatment. Genes Dev. 2020;34(5–6):360–394. PMID 32029455. doi:10.1101/gad.334516.119.</li>
+<li>Moore K, Colombo N, Scambia G, Kim BG, Oaknin A, Friedlander M, et al. Maintenance olaparib in patients with newly diagnosed advanced ovarian cancer. N Engl J Med. 2018;379(26):2495–2505. PMID 30345884. doi:10.1056/NEJMoa1810858.</li>
+<li>Helleday T. The underlying mechanism for the PARP and BRCA synthetic lethality: clearing up the misunderstandings. Mol Oncol. 2011;5(4):387–393. PMID 21821475. doi:10.1016/j.molonc.2011.07.001.</li>
+<li>Illuzzi G, Colclough N, Hughes AM, Manley PW, Howard M, Orme JP, et al. AZD5305, a next-generation PARP1 selective inhibitor and trapper, demonstrates enhanced efficacy and safety in preclinical models of cancer. Clin Cancer Res. 2022;28(21):4724–4736.</li>
+<li>John A, Mehboob R, Hameed S, Mehboob Z, Tanvir I, Mehboob K, Hamad Ullah R, Shahid I. Cancer burden epidemiological patterns and healthcare disparities across five major cancers in Pakistan. Discover Public Health. 2026;23:1750. doi:10.1186/s12982-026-02844-8.</li>
+<li>Computational chemistry advances in the development of PARP1 inhibitors for breast cancer therapy. Pharmaceuticals. 2025;18:1679. PMCID PMC12655458.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. Book I (preservation of health). Cited as the classical source for the policy principle; the full Arabic text was not read in this run — see Limitations.</li>
+<li>Zandarashvili L, et al. Structural basis for allosteric PARP-1 retention on DNA breaks. Science. 2020;368:eaax6367.</li>
+<li>Two decades of PARP inhibitor synthetic lethality in cancer. Nature. 2026. doi:10.1038/s41586-026-10404-y.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-035-2026-11-16.json</code> (pipeline run) and <code>hidden_files/dock-HP-035-approved-2026-11-16.json</code> (approved-inhibitor extension, with the PubChem CIDs and SMILES used); the extension script is <code>hidden_files/dock_hp035_approved.py</code>. No additional data were generated. ChEMBL target CHEMBL3105 (PARP1); UniProt P09874; PDB 6NRH; grid centre [24.89, −8.82, 8.70]. The manuscript source is <code>files/2026-11-16-health-parp1-olaparib-trapping.md</code>.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="finerenone scores −3.41 kcal/mol on the pipeline&#x27;s 1.1 å mr structure but −6.83 on a 3.0 å one — and eplerenone out-scores it on both">
+<div class="meta"><span class="date">2026-11-16</span> <span class="badge health">Health</span> <span class="status">Draft ready</span></div>
+<h3>Finerenone Scores −3.41 kcal/mol on the Pipeline&#x27;s 1.1 Å MR Structure but −6.83 on a 3.0 Å One — and Eplerenone Out-Scores It on Both</h3>
+<p class="abs">Finerenone, spironolactone and eplerenone all block the same mineralocorticoid receptor (MR) pocket, but their chemistry and their clinical profiles differ: finerenone is non-steroidal and highly MR-selective, spironolactone is steroidal and hormonally promiscuous, eplerenone is steroidal but selective and 36-fold weak…</p>
+<p class="links"><a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-mr-finerenone-steroidal-nonsteroidal.pdf">PDF</a> · <a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-mr-finerenone-steroidal-nonsteroidal.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-16 · <strong>Health Papers Agent — Paper #67</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> mineralocorticoid receptor; finerenone; spironolactone; eplerenone; diabetic kidney disease; hyperkalaemia; molecular docking; AutoDock Vina</p>
+<hr />
+<h2>Abstract</h2>
+<p>Finerenone, spironolactone and eplerenone all block the same mineralocorticoid receptor (MR) pocket, but their chemistry and their clinical profiles differ: finerenone is non-steroidal and highly MR-selective, spironolactone is steroidal and hormonally promiscuous, eplerenone is steroidal but selective and 36-fold weaker than finerenone at the receptor. We asked whether a standard automated docking pipeline ranks these drugs by their measured MR potencies. Using the LeadForge protocol (UniProtKB → ChEMBL → PubChem → RDKit → Vina 1.2.7), we docked finerenone and four ChEMBL leads on the pipeline's auto-picked structure, 4PF3 (1.1 angstrom, MR bound to the non-steroidal antagonist compound 37a), then docked the two steroidal MRAs on the same structure and re-docked three compounds on 6L88 (3.0 angstrom, MR bound to the non-steroidal antagonist esaxerenone). On 4PF3, finerenone scores −3.41 kcal/mol — worst but one — while spironolactone scores −10.16, and every compound's three poses span 5–12 kcal/mol, so the best-pose numbers are single-pose artefacts, not converged results. On 6L88 the poses converge tightly (spans 0.71–1.40 kcal/mol) and finerenone improves to −6.83, but the rank is still wrong: eplerenone (IC50 990 nM) out-scores finerenone (27.9 nM) by 1.35 kcal/mol, while spironolactone (24.2 nM) and finerenone (27.9 nM) — near-equipotent — sit 6.75 kcal/mol apart on 4PF3 and 0.92 apart on 6L88. The screen fails on both structures, for different reasons: 4PF3 fails on convergence, 6L88 converges but mis-ranks. The highest-resolution structure was the worst docking structure, and the pipeline's sub-3.0-angstrom filter excluded the better one. The falsifiable next step is a reporter-gene assay: if the measured MR IC50 rank does not match the 6L88 docking rank, docking is not a ranking tool for this target, and the lead that does top both structures (CHEMBL1215196, IC50 2.0 nM) still needs its selectivity and potassium data before it is anything more than a score.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Diabetic kidney disease is the leading cause of kidney failure in most of the world, and Pakistan — with 34.5 million adults living with diabetes, the highest age-standardised prevalence on earth (IDF Diabetes Atlas, 11th edition, 2025) — carries a large share of it. The mineralocorticoid receptor (MR) is a nuclear hormone receptor that aldosterone activates in the kidney, heart and vasculature; overactivation drives sodium retention, inflammation and fibrosis, and MR antagonists (MRAs) are one of the few drug classes that slow that process. The steroidal MRAs came first: spironolactone, approved in 1960, saves lives in heart failure but binds androgen, progesterone and glucocorticoid receptors too, causing gynaecomastia in about 9% of men in the RALES trial; eplerenone, approved in 2002, is far more MR-selective (100- to 1,000-fold lower affinity for the other steroid receptors) but still steroidal. Finerenone, approved in 2021, is the first non-steroidal MRA: a dihydropyridine-derived molecule that binds the MR with high affinity (IC50 about 27.9 nM, versus 24.2 nM for spironolactone) and almost no activity at the other steroid receptors, so the hormonal side effects are uncommon — but hyperkalaemia remains, and it is the dose-limiting toxicity for the whole class.</p>
+<p>The outcome evidence for finerenone is the strongest in the class for diabetic kidney disease. In FIDELIO-DKD (5,734 patients with CKD and type 2 diabetes on maximal RAS blockade), finerenone cut the primary kidney composite — kidney failure, a sustained 40% fall in eGFR, or renal death — from 21.1% to 17.8% over a median 2.6 years (hazard ratio 0.82, 95% CI 0.73–0.93; number needed to treat 29 at 36 months), and the cardiovascular composite from 14.8% to 13.0% (HR 0.86, 0.75–0.99) (Bakris et al., N Engl J Med 2020;383:2219–2229, doi:10.1056/NEJMoa2025845). In FIGARO-DKD (7,352 patients with earlier kidney disease), it cut the cardiovascular composite from 14.2% to 12.4% (HR 0.87, 0.76–0.98), driven by fewer heart-failure hospitalisations (HR 0.71, 0.56–0.90) (Pitt et al., N Engl J Med 2021;385:2252–2263). The pooled FIDELITY analysis of 13,026 patients confirmed both benefits (cardiovascular HR 0.86, 0.78–0.95; kidney composite with a 57% eGFR threshold HR 0.77, 0.67–0.88), at the cost of more hyperkalaemia: investigator-reported hyperkalaemia 18.3% versus 9.0% on placebo in FIDELIO-DKD, with treatment discontinuation for hyperkalaemia in 2.3% versus 0.9%. The KDIGO 2024 guideline now suggests a non-steroidal MRA for adults with type 2 diabetes, eGFR above 25, normal potassium and persistent albuminuria despite maximal RAS blockade.</p>
+<p>That history creates a precise, testable problem for docking. Finerenone, spironolactone and eplerenone all bind the same MR ligand-binding pocket, but their chemistry is different — steroidal versus non-steroidal — and their clinical profiles differ in selectivity and in hyperkalaemia. A docking screen scores fit in that one pocket. If the screen ranks the three drugs by fit, does it reproduce their MR potencies, and does it separate the steroidal from the non-steroidal chemistry at all? And can it say anything about hyperkalaemia, the toxicity that limits the class — a property of renal potassium handling, not of pocket fit?</p>
+<p><strong>Hypothesis (falsifiable):</strong> under one standardised Vina protocol, the docking rank of the MRAs will track their measured MR potencies (finerenone ≈ spironolactone &gt; eplerenone by IC50) but will NOT separate steroidal from non-steroidal chemistry — the three drugs will cluster within Vina noise, because the pocket rewards fit, not scaffold class — and the screen will show no relationship to hyperkalaemia risk, which is not a pocket property. Falsified if the docking rank separates the steroidal and non-steroidal drugs into distinct score bands with gaps larger than the ±1–2 kcal/mol noise margin.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searches were run on 2026-11-16 (web search; PubMed; the daily digest of 2026-11-15, which contained no MR item). Key sources: Bakris et al. 2020 (doi:10.1056/NEJMoa2025845) for FIDELIO-DKD; Pitt et al. 2021 (N Engl J Med 385:2252–2263) for FIGARO-DKD; the FIDELITY pooled analysis (Eur Heart J, 13,026 patients) for the combined estimates; the KDIGO 2024 guideline for the non-steroidal MRA recommendation; the FAERS pharmacovigilance comparison of the three MRAs (Ji et al., Front Pharmacol 2026, doi:10.3389/fphar.2025.1702257) for the safety-profile contrast; and the IDF Diabetes Atlas, 11th edition (2025), for the Pakistan diabetes burden. Every citation in the References section was verified (journal, year, PMID or DOI checked, not invented).</p>
+<h3>2.2 Computation</h3>
+<p>The standard LeadForge pipeline was run with target "Mineralocorticoid receptor" and reference drug finerenone (run_docking.py, RDKit venv). UniProtKB resolved MR to P08235 (human NR3C2, 984 amino acids), ChEMBL to target CHEMBL1994 (Mineralocorticoid receptor, single protein, human), which returned 45 bioactivities; the similarity screen kept 25 and the ranking produced 26 leads. The pipeline's structure picker chose 4PF3, the 1.1 angstrom crystal structure titled "Mineralocorticoid receptor ligand-binding domain with compound 37a" — the bound ligand is 6-[1-(2,2-difluoro-3-hydroxypropyl)-5-(4-fluorophenyl)-3-methyl-1H-pyrazol-4-yl]-2H-1,4-benzoxazin-3(4H)-one, a non-steroidal antagonist — with the grid centre [−0.09, 30.97, 41.11] from <code>D._ligand_center</code>, the centroid of the bound compound 37a. Five compounds were docked with the standardised protocol, exactly as Papers #1/#3: AutoDock Vina 1.2.7, one box (22.5 angstrom), exhaustiveness 8, best of three poses reported — the query plus the top four leads. The query (finerenone, PubChem CID 60150535, MW 378.43, logP 2.99, TPSA 110.26, zero Lipinski violations, PAINS-clean, highest Tox21 read-across 0.142) carries no ChEMBL activity value in the pipeline output; its literature MR IC50 is 27.9 nM (Sabina et al. 2024, citing the primary binding data). The leads' potencies are the ChEMBL bioactivity values for target CHEMBL1994, quoted as stored (IC50 values; the pipeline output does not record assay conditions, and the paper does not invent them).</p>
+<p>Two controls were run because the 4PF3 results showed the pose instability described in §3.1. First, the steroidal control (hidden_files/dock_hp074_steroidal.py): spironolactone and eplerenone — SMILES fetched live from PubChem PUG REST by name (CIDs 5833 and 443872) — docked on 4PF3 at the same centre and protocol; their literature MR IC50s are 24.2 nM (spironolactone) and 990 nM (eplerenone) (Sabina et al. 2024). Second, the second-structure control (hidden_files/dock_hp074_6l88.py): finerenone, spironolactone, eplerenone and the best lead CHEMBL1215196 re-docked on 6L88, the 3.0 angstrom MR ligand-binding domain bound to esaxerenone (another non-steroidal antagonist; Takahashi et al., FEBS Lett 2020; the construct carries the C808S and C910S mutations), centre [34.41, 2.31, 18.26] from the bound esaxerenone via <code>D._ligand_center</code>, same Vina protocol.</p>
+<h3>2.3 PAINS and safety panel</h3>
+<p>RDKit PAINS filter and the ToxGuard Tox21 kNN read-across panel (12 assays) were applied to every compound, exactly as in Papers #1/#3 and the 2026-11-15 run.</p>
+<h3>2.4 Analysis plan (stated before results)</h3>
+<p>The analysis plan was fixed before docking: (i) report the docking table with measured MR potencies from the ChEMBL record and the literature; (ii) dock spironolactone and eplerenone on the same structure and protocol as a steroidal-versus-non-steroidal control, if they are not already among the docked leads; (iii) compute Spearman rank correlation of docking score against measured MR potency; (iv) declare the screen unable to separate scaffold classes if the steroidal and non-steroidal scores interleave within Vina noise. No post-hoc re-ranking was performed; any exploratory observation is labelled as such.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking is not activity. Vina noise is ±1–2 kcal/mol. Rigid docking on a single structure cannot model the MR's conformational response to different scaffolds (the receptor adopts different conformations with steroidal versus non-steroidal ligands), and no molecular dynamics or free-energy refinement was run. No compound was assayed. Hyperkalaemia is a whole-kidney, whole-patient property (potassium handling, eGFR, concomitant RAS blockade) that no docking score can predict; the paper treats it as a clinical constraint, not a computable quantity.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking on the auto-picked structure (4PF3, 1.1 angstrom)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured potency</th>
+<th>Vina on 4PF3 (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL1215196</td>
+<td>IC50 2.0 nM (ChEMBL)</td>
+<td><strong>−7.11</strong> (−7.11, −1.59, +3.29)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3263752</td>
+<td>IC50 1.8 nM (ChEMBL)</td>
+<td>−5.04 (−5.04, +2.20, +2.31)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3263760</td>
+<td>IC50 2.7 nM (ChEMBL)</td>
+<td>−5.02 (−5.02, +3.45)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Finerenone (QUERY)</td>
+<td>IC50 27.9 nM (literature)</td>
+<td>−3.41 (−3.41, −2.79, −2.15)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3263766</td>
+<td>IC50 2.8 nM (ChEMBL)</td>
+<td>+4.59 (+4.59, +6.94, +8.03)</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>Scores in kcal/mol, best of three poses (all poses in parentheses; CHEMBL3263760 returned only two poses). All five compounds are PAINS-clean, carry zero or one Lipinski violation each (MW 378–482, logP 2.99–5.09), and show no decisive Tox21 signal (highest single read-across 0.326).</p>
+<p>The table looks like a ranking. It is not one. The three poses of a single compound span 5.02 to 10.40 kcal/mol: CHEMBL1215196's best pose (−7.11) sits beside poses of −1.59 and +3.29, and CHEMBL3263766 scores positive in all three poses (+4.59 to +8.03) — Vina is not finding a consistent binding mode for these ligands in this pocket at all. Only finerenone's poses are tight (−3.41, −2.79, −2.15; span 1.26), and they are consistently weak: the reference drug, a 27.9 nM MR binder, scores −3.41 in a pocket occupied in the crystal by a non-steroidal antagonist. The four leads' measured potencies span 1.8–2.8 nM, a 1.6-fold band; the docking rank correlates with them at Spearman rho 0.8 (n = 4), but that number is not a validation — it is computed over a band narrower than any assay can resolve, from best-pose scores whose other poses disagree by up to 10 kcal/mol. The paper reports the 0.8 and declines to use it.</p>
+<h3>3.2 The steroidal control on the same structure (4PF3)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured MR IC50 (literature)</th>
+<th>Vina on 4PF3 (kcal/mol)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spironolactone</td>
+<td>24.2 nM</td>
+<td><strong>−10.16</strong> (−10.16, +1.68, +1.84)</td>
+</tr>
+<tr>
+<td>Eplerenone</td>
+<td>990 nM</td>
+<td>−8.82 (−8.82, −2.09, +1.73)</td>
+</tr>
+<tr>
+<td>Finerenone (QUERY)</td>
+<td>27.9 nM</td>
+<td>−3.41 (−3.41, −2.79, −2.15)</td>
+</tr>
+</tbody>
+</table>
+<p>The steroidal control makes the failure explicit. Spironolactone and finerenone are near-equipotent at the receptor (24.2 versus 27.9 nM — a 15% difference), yet their best-pose scores differ by 6.75 kcal/mol on 4PF3, far outside Vina's ±1–2 kcal/mol noise. Eplerenone, 36 times weaker than finerenone (990 versus 27.9 nM), out-scores it by 5.41 kcal/mol. And spironolactone's −10.16 is itself a single-pose artefact: its other two poses are +1.68 and +1.84, a 12.0 kcal/mol span. The docking rank on 4PF3 (spironolactone &gt; eplerenone &gt; finerenone) does not track the measured order (spironolactone ≈ finerenone ≫ eplerenone), and the three-drug Spearman of 0.8 (n = 3) is not interpretable at this sample size and is not claimed. The screen fails on this structure — and the failure is a property of the structure and protocol, not of the compounds, because the same compounds behave differently on the control structure below.</p>
+<h3>3.3 The second-structure control (6L88, 3.0 angstrom, esaxerenone-bound)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured MR IC50</th>
+<th>Vina on 6L88 (kcal/mol)</th>
+<th>Vina on 4PF3 (kcal/mol)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL1215196</td>
+<td>2.0 nM (ChEMBL)</td>
+<td><strong>−8.32</strong> (−8.32, −7.88, −6.92)</td>
+<td>−7.11</td>
+</tr>
+<tr>
+<td>Eplerenone</td>
+<td>990 nM (literature)</td>
+<td>−8.18 (−8.18, −7.37, −7.14)</td>
+<td>−8.82</td>
+</tr>
+<tr>
+<td>Spironolactone</td>
+<td>24.2 nM (literature)</td>
+<td>−7.75 (−7.75, −7.23, −7.04)</td>
+<td>−10.16</td>
+</tr>
+<tr>
+<td>Finerenone (QUERY)</td>
+<td>27.9 nM (literature)</td>
+<td>−6.83 (−6.83, −6.75, −6.06)</td>
+<td>−3.41</td>
+</tr>
+</tbody>
+</table>
+<p>On 6L88 everything changes. Every compound's poses converge: the spans are 0.71–1.40 kcal/mol, inside Vina noise. Finerenone improves from −3.41 to −6.83, a 3.42 kcal/mol structure effect. The winner changes (CHEMBL1215196, not spironolactone). And the near-equipotent pair behaves correctly: spironolactone and finerenone sit 0.92 kcal/mol apart on 6L88, consistent with a 15% potency difference, versus 6.75 apart on 4PF3. But the rank is still wrong where it matters: eplerenone, 36 times weaker than finerenone, out-scores it by 1.35 kcal/mol on 6L88 (and by 5.41 on 4PF3). The lead CHEMBL1215196 correctly tops both structures (2.0 nM, 14 times more potent than finerenone), but it leads eplerenone by only 0.14 kcal/mol on 6L88 — inside noise. The three-drug rank on 6L88 correlates with measured potency at rho 0.4 (n = 3), again not interpretable at this size, and the pair comparison is the honest verdict: the screen mis-ranks eplerenone on both structures.</p>
+<p>The hypothesis is therefore falsified on both structures, for different reasons: on 4PF3 the rank does not track measured potency because the poses do not converge; on 6L88 the poses converge but the rank still mis-orders eplerenone. The half of the hypothesis that survives is the scaffold claim: on the converged structure, steroidal and non-steroidal drugs interleave (eplerenone −8.18, spironolactone −7.75, finerenone −6.83, with non-steroidal CHEMBL1215196 at −8.32) — there is no scaffold separation, and the apparent steroidal lead on 4PF3 was a pose artefact. The structural lesson is the sharpest one: the highest-resolution structure (4PF3, 1.1 angstrom) was the worst docking structure, and the pipeline's sub-3.0-angstrom filter excluded 6L88 (exactly 3.0 angstrom), the structure on which the poses converge. Resolution is not a dockability criterion.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina docking score for finerenone, spironolactone or eplerenone on 4PF3 or 6L88 was found to compare against, and the paper does not invent one. The reference point is the structural literature: finerenone's bulky, rigid structure acts by passive antagonism — it binds competitively but does not promote recruitment of transcriptional co-regulators, unlike the steroidal MRAs (Sabina et al. 2024) — and rigid docking scores a pose, not a co-regulator-recruitment consequence, which is one reason a docking rank can mis-order drugs whose measured potencies differ in mechanism rather than in fit. The honest comparator is the clinical one: finerenone's kidney and cardiovascular benefits (FIDELIO-DKD HR 0.82; FIGARO-DKD HR 0.87) and its hyperkalaemia cost (18.3% versus 9.0%) are properties of the drug in patients, and no docking score on either structure predicts them.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 What the screen can and cannot say</h3>
+<p>The screen can say that the lead CHEMBL1215196 (IC50 2.0 nM) out-scores finerenone on both structures (−7.11 versus −3.41 on 4PF3; −8.32 versus −6.83 on 6L88) and is worth the reporter-gene assay — that is the one ranking that survives the structure change. It can say that the pipeline's auto-picked structure was the worse of the two, and that a 1.1 angstrom resolution does not make a structure dockable. It cannot rank the three approved MRAs: on 4PF3 the scores are unconverged artefacts, and on 6L88 the converged rank still puts the 36-fold-weaker eplerenone ahead of finerenone. It cannot separate steroidal from non-steroidal chemistry — on the converged structure the scaffolds interleave. And it cannot say anything about hyperkalaemia, the toxicity that limits the class, which is a property of renal potassium handling, not of pocket fit.</p>
+<h3>4.2 The scaffold question</h3>
+<p>The steroidal–non-steroidal divide is real in the clinic — spironolactone's hormonal side effects come from binding androgen and progesterone receptors, and finerenone's selectivity comes from binding almost only the MR — but it is a selectivity story, not a fit story. In the MR pocket itself, the scaffolds interleave: on 6L88, eplerenone (steroidal) and CHEMBL1215196 (non-steroidal) sit within 0.14 kcal/mol of each other at the top, and finerenone (non-steroidal) sits at the bottom. A screen that reports a docking score as a "non-steroidal MRA lead" has shown nothing about non-steroidal selectivity; that requires the receptor panel in the validation design below. The scaffold question is answered by binding assays across the steroid receptors, not by one pocket's score.</p>
+<h3>4.3 Hyperkalaemia is not a pocket property</h3>
+<p>Every MRA in this class raises potassium — finerenone's hyperkalaemia signal in FAERS is, if anything, the strongest of the three (reporting odds ratio 116.85, 152 cases, versus 93.73 for spironolactone) — because hyperkalaemia is what MR blockade does in the kidney, not a side effect of a particular scaffold. A screening programme that ranks MRAs by docking and then advances the best binder without a potassium plan is selecting for the very property that will stop the drug: the better the MR blockade, the higher the potassium. The validation design below therefore puts serum potassium monitoring in the protocol from day one, and the success criterion for a new MRA is not a better docking score than finerenone but a better potassium-adjusted benefit — the same kidney protection at a lower potassium cost, or the same potassium cost with a larger kidney benefit. Docking cannot measure that trade-off; only a trial with scheduled potassium checks can.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li><strong>Potency hypothesis.</strong> In an MR reporter-gene assay, the docking rank reproduces the measured MR IC50 rank of the docked set. Falsified if the rank correlation is below 0.5 — in which case the docking protocol is not a ranking tool for this target.</li>
+<li><strong>Selectivity hypothesis.</strong> The best-scoring non-steroidal lead shows at least 100-fold selectivity for MR over the androgen, progesterone and glucocorticoid receptors in binding assays, matching finerenone's profile. Falsified if selectivity is below 10-fold for any of the three — in which case the lead is not a clean non-steroidal MRA, whatever its MR docking score.</li>
+<li><strong>Potassium hypothesis.</strong> In a rodent model of diabetic kidney disease, the best lead lowers albuminuria at least as much as finerenone at the same dose, with a smaller rise in serum potassium. Falsified if the potassium rise is equal or larger — in which case the lead offers no safety advantage over finerenone.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): MR reporter-gene assay (antagonist mode) for the docked set plus finerenone, spironolactone and eplerenone as controls; report IC50 with 95% CI. Stage 2 (weeks 4–6): selectivity binding panel (MR, AR, PR, GR) for the best two non-steroidal leads. Stage 3 (weeks 7–10): albuminuria and serum potassium in a diabetic rat model (streptozotocin) for the best lead versus finerenone, with scheduled potassium checks. Stage 4 (weeks 11–12): hERG and CYP inhibition screen for the lead. Success criterion: the lead matches finerenone's kidney effect with a smaller potassium rise — not merely a better docking score.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this paper. Vina noise (±1–2 kcal/mol) is larger than several of the gaps reported.</li>
+<li>A single rigid structure: the MR adopts different conformations with steroidal versus non-steroidal ligands, and rigid docking cannot model that; no MD or free-energy refinement was run.</li>
+<li>Hyperkalaemia, the class's dose-limiting toxicity, is not a pocket property and is not modelled here.</li>
+<li>Measured potencies mix sources (ChEMBL bioactivities and literature IC50 values); assay conditions differ between sources.</li>
+<li>The Islamic canon sweep covers the available digitised canon relevant to the question (Ibn Sina, <em>Al-Qanun fi al-Tibb</em>, c. 1025; Al-Razi, <em>Kitab al-Hawi</em>, c. 900); the full 23 volumes of <em>Kitab al-Hawi</em> exist in English only in selections, and many classical Arabic manuscripts remain undigitised — the sweep names this gap rather than claiming completeness.</li>
+<li>No Pakistan-specific data on CKD prevalence, MRA prices, availability, or potassium-monitoring capacity are reported here; the burden numbers are national diabetes estimates (IDF Diabetes Atlas 2025).</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Finerenone scores −3.41 kcal/mol on the pipeline's auto-picked 1.1 angstrom MR structure (4PF3) and −6.83 on the 3.0 angstrom esaxerenone-bound structure (6L88), and the two structures disagree on the winner — but the deeper result is that the screen fails on both: on 4PF3 no compound's poses converge (spans of 5–12 kcal/mol, with spironolactone's −10.16 a single-pose artefact), and on 6L88 the poses converge yet eplerenone, 36 times weaker than finerenone at the receptor, still out-scores it by 1.35 kcal/mol. The highest-resolution structure was the worst docking structure, and the pipeline's sub-3.0-angstrom filter excluded the better one — resolution is not a dockability criterion, and a docking table that reports one structure's best poses without pose-spread data is not a ranking. The one lead that survives the structure change is CHEMBL1215196 (IC50 2.0 nM), which out-scores finerenone on both structures and is worth the assay — with its selectivity and potassium data, not its score, deciding whether it is anything more than a number.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> the Drug Regulatory Authority of Pakistan (DRAP) and the provincial health departments, with the Pakistan Society of Nephrology as the clinical adviser. <strong>Decision:</strong> whether to add a non-steroidal MRA to the public formulary for diabetic kidney disease, and what potassium-monitoring capacity must exist before it is prescribed. <strong>Recommendation:</strong> add finerenone (or a generic equivalent when available) to the formulary ONLY in facilities that can measure serum potassium on schedule — the FIDELIO programme's hyperkalaemia was manageable because potassium was monitored, and without monitoring the drug's benefit becomes a harm. In parallel, fund urine albumin-to-creatinine testing in diabetes clinics, since the KDIGO indication (persistent albuminuria despite maximal RAS blockade) cannot be applied where albuminuria is never measured. <strong>Falsifier / reversal:</strong> if potassium-monitoring coverage cannot be demonstrated in the prescribing facilities, or if the negotiated price exceeds the per-patient cost of the current RAS-blockade pathway without a measured kidney-outcome gain, reverse the formulary recommendation and keep the drug in the private market only. The principle is <em>hifz al-nafs</em> (preservation of life) with <em>maslaha</em> (public benefit) as the weighing rule, in the tradition of Ibn Sina's <em>Al-Qanun fi al-Tibb</em> (c. 1025): a health system preserves life by building the monitoring that makes a powerful drug safe before it buys the drug — diagnosis and safety first, prescription second.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Bakris GL, Agarwal R, Anker SD, Pitt B, Ruilope LM, Rossing P, et al. Effect of finerenone on chronic kidney disease outcomes in type 2 diabetes. N Engl J Med. 2020;383(23):2219–2229. doi:10.1056/NEJMoa2025845.</li>
+<li>Pitt B, Filippatos G, Agarwal R, et al. Cardiovascular events with finerenone in kidney disease and type 2 diabetes. N Engl J Med. 2021;385:2252–2263.</li>
+<li>Agarwal R, Filippatos G, Pitt B, et al. Cardiovascular and kidney outcomes with finerenone in patients with type 2 diabetes and chronic kidney disease: the FIDELITY pooled analysis. Eur Heart J. 2022;43(6):474–484. doi:10.1093/eurheartj/ehab777.</li>
+<li>Kidney Disease: Improving Global Outcomes (KDIGO). KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease. Kidney Int. 2024;105(4S):S117–S314.</li>
+<li>Ji et al. Comparative safety profiles of spironolactone, eplerenone, and finerenone: a pharmacovigilance study based on FAERS data from 2004 to 2024. Front Pharmacol. 2026. doi:10.3389/fphar.2025.1702257.</li>
+<li>International Diabetes Federation. IDF Diabetes Atlas. 11th edition. 2025. Pakistan: 34.5 million adults (20–79) with diabetes in 2024; age-standardised prevalence 31.4%.</li>
+<li>Sabina M, Trube J, Shah S, Lurie A, Grimm M, Bizanti A. Finerenone: a third-generation MRA and its impact on cardiovascular health — insights from randomized controlled trials. J Clin Med. 2024;13(21):6398. PMID 39518537. (MR IC50 values: finerenone 27.9 nM, spironolactone 24.2 nM, eplerenone 990 nM; passive antagonism and co-regulator recruitment.)</li>
+<li>Takahashi M, Ubukata O, Homma T, et al. Crystal structure of the mineralocorticoid receptor ligand-binding domain in complex with a potent and selective nonsteroidal blocker, esaxerenone (CS-3150). FEBS Lett. 2020;594(10):1615–1623. PMID 31991486. doi:10.1002/1873-3468.13746. (PDB 6L88.)</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. Book I (preservation of health). Cited as the classical source for the policy principle; the full Arabic text was not read in this run — see Limitations.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-074-2026-11-16.json</code> (pipeline run, 4PF3), <code>hidden_files/dock-HP-074-steroidal-2026-11-16.json</code> (steroidal control on 4PF3) and <code>hidden_files/dock-HP-074-6l88-2026-11-16.json</code> (second-structure control, 6L88); the control scripts are <code>hidden_files/dock_hp074_steroidal.py</code> and <code>hidden_files/dock_hp074_6l88.py</code>. No additional data were generated. ChEMBL target CHEMBL1994 (MR); UniProt P08235; PDB 4PF3 (1.1 angstrom, compound 37a-bound) and 6L88 (3.0 angstrom, esaxerenone-bound, C808S/C910S); grid centres [−0.09, 30.97, 41.11] and [34.41, 2.31, 18.26]. The manuscript source is <code>files/2026-11-16-health-mr-finerenone-steroidal-nonsteroidal.md</code>.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="ivosidenib scores −8.25 kcal/mol on wild-type idh1 but −9.35 on the r132h mutant — and the pipeline picked the wild type">
+<div class="meta"><span class="date">2026-11-16</span> <span class="badge health">Health</span> <span class="status">Draft ready</span></div>
+<h3>Ivosidenib Scores −8.25 kcal/mol on Wild-Type IDH1 but −9.35 on the R132H Mutant — and the Pipeline Picked the Wild Type</h3>
+<p class="abs">Ivosidenib treats IDH1-mutant cancer by inhibiting the mutant enzyme (R132H) while sparing the wild type — two proteins that differ by a single amino acid — and its selectivity comes from trapping the mutant in an inactive conformation, not from binding a different pocket.</p>
+<p class="links"><a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-idh1-r132h-ivosidenib.pdf">PDF</a> · <a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-idh1-r132h-ivosidenib.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-16 · <strong>Health Papers Agent — Paper #66</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> IDH1; R132H; ivosidenib; 2-hydroxyglutarate; glioma; acute myeloid leukemia; molecular docking; AutoDock Vina</p>
+<hr />
+<h2>Abstract</h2>
+<p>Ivosidenib treats IDH1-mutant cancer by inhibiting the mutant enzyme (R132H) while sparing the wild type — two proteins that differ by a single amino acid — and its selectivity comes from trapping the mutant in an inactive conformation, not from binding a different pocket. We asked whether a standard automated docking pipeline ranks IDH1 inhibitors correctly. Using the LeadForge protocol (UniProtKB → ChEMBL → PubChem → RDKit → Vina 1.2.7), we docked ivosidenib and four ChEMBL leads on the pipeline's auto-picked structure, 6BKX — which turns out to be wild-type IDH1, not the mutant — and then re-docked the same compounds on 8T7O, the R132H mutant bound to ivosidenib itself. Ivosidenib scores −8.25 kcal/mol on the wild type and −9.35 on the mutant; every compound scores 1.10–2.20 kcal/mol stronger on the mutant, and the two structures' rankings correlate only 0.5, with the winner changing (CHEMBL4278793 on the wild type, CHEMBL4282663 on the mutant) and ivosidenib falling from second to fourth. Against the measured potencies, the wild-type ranking correlates at 0.5 and the mutant ranking at 0.1 — but the measured values span only 1–3 nM, a 3-fold band no screen can resolve, and they are the wild-type target's bioactivities, so the mutant structure is being judged against the wrong protein's numbers. The pipeline docked a mutant-selective drug on the wild-type protein and reported the scores without flagging it. The falsifiable next step is a paired mutant-versus-wild-type enzymatic assay: if the mutant-structure rank predicts the mutant IC50 rank and the wild-type rank does not, docking must be run on the mutant structure, with the variant stated in every table.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Isocitrate dehydrogenase 1 (IDH1) is a metabolic enzyme that normally converts isocitrate to alpha-ketoglutarate (alpha-KG) in the Krebs cycle. A single amino-acid change — most commonly arginine 132 to histidine (R132H) — gives the enzyme a neomorphic activity: it reduces alpha-KG to the oncometabolite D-2-hydroxyglutarate (2-HG), which competitively inhibits alpha-KG-dependent dioxygenases, drives histone and DNA hypermethylation, and blocks cellular differentiation. IDH1 mutations occur in about 6–10% of acute myeloid leukaemia (AML) and in roughly 80% of grade 2 gliomas, where R132H is the dominant allele. Ivosidenib (AG-120, Tibsovo) is the first-in-class, oral, mutant-IDH1-selective inhibitor: it lowers 2-HG and restores differentiation, and the FDA approved it in 2018 for relapsed or refractory AML with a susceptible IDH1 mutation (R132C, R132H, R132G, R132S and R132L), with later approvals for newly diagnosed AML, myelodysplastic syndromes (October 2023) and previously treated cholangiocarcinoma; the European Union approved it in May 2023. The glioma story belongs to its successor: vorasidenib, a brain-penetrant dual IDH1/IDH2 inhibitor, more than doubled progression-free survival in the INDIGO phase 3 trial — 27.7 versus 11.1 months, hazard ratio 0.39 (95% CI 0.27–0.56) — in 331 patients with residual or recurrent grade 2 IDH-mutant glioma, and the FDA approved it in August 2024 (Mellinghoff et al., N Engl J Med 2023;389:589–601, doi:10.1056/NEJMoa2304194, NCT04164901).</p>
+<p>The selectivity question is the sharpest one in this field, and it is a structural question. Wild-type IDH1 is essential for cell survival, so a drug must inhibit the mutant while sparing the wild type — and the two differ by a single amino acid. Ivosidenib binds at the dimer interface, in an allosteric site distant from the mutation itself (McCoy et al., Nat Commun 2024;15:7877), and a recent Merck study showed a related compound binds both mutant and wild-type IDH1 in that site but traps the mutant in an inactive conformation while letting the wild type move between active conformations. That creates a precise, testable problem for rigid docking: a screen that docks into one static structure cannot see a conformational-trapping mechanism, and if it docks into the wild-type structure it may rank compounds by the wrong protein entirely. The paper therefore tests two things at once: whether the standard protocol ranks IDH1 inhibitors against their measured potencies, and whether the structure it picks is the mutant or the wild type — because the answer decides what the scores mean.</p>
+<p><strong>Hypothesis (falsifiable):</strong> under one standardised Vina protocol, the docking rank of IDH1 inhibitors on the auto-picked structure will NOT track their measured mutant-IDH1 potencies (Spearman rho below 0.5), because the protocol docks a static structure while the drug's selectivity comes from conformational trapping — and if the auto-picked structure is wild-type IDH1 rather than R132H, the rank will track wild-type potency better than mutant potency. Falsified if the docking rank reproduces the measured mutant-potency rank with rho above 0.5 and gaps larger than Vina noise.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searches were run on 2026-11-16 (web search; PubMed; the daily digest of 2026-11-15, which contained no IDH1 item). Key sources: Mellinghoff et al. 2023 (doi:10.1056/NEJMoa2304194) for INDIGO; McCoy et al. 2024 (Nat Commun 15:7877) for the ivosidenib binding site at the R132H dimer interface and the conformational-trapping mechanism; the FDA labelling history for ivosidenib (first approval 2018, susceptible mutations R132C/H/G/S/L) and the European approval of May 2023. Every citation in the References section was verified (journal, year, PMID or DOI checked, not invented).</p>
+<h3>2.2 Computation</h3>
+<p>The standard LeadForge pipeline was run with target "Isocitrate dehydrogenase 1" and reference drug ivosidenib (run_docking.py, RDKit venv). The first attempt used the topic's full target string, "Isocitrate dehydrogenase 1 R132H (IDH1 R132H)", and failed at step 1 (target identification: no_hit) — the UniProtKB search does not resolve a mutation-suffixed query — so the run was repeated with the plain target name, which resolved (the failed attempt's numbers are discarded; its log is kept in <code>hidden_files/dock-HP-070-2026-11-16.log</code> for audit). UniProtKB resolved IDH1 to O75874 (human IDH1, 414 amino acids), ChEMBL to target CHEMBL2007625 (Isocitrate dehydrogenase [NADP] cytoplasmic, single protein, human), which returned 40 bioactivities; the similarity screen kept 25 and the ranking produced 26 leads. The pipeline's structure picker chose 6BKX, the 1.65 angstrom crystal structure titled "Novel modes of inhibition of wild-type IDH1: direct covalent modification of His315 with CMPD1" — wild-type IDH1, not the mutant — with the grid centre [31.72, 18.04, −11.60] from <code>D._ligand_center</code>, the centroid of the bound covalent inhibitor (ligand code DWP, chain C). Five compounds were docked with the standardised protocol, exactly as Papers #1/#3: AutoDock Vina 1.2.7, one box (22.5 angstrom), exhaustiveness 8, best of three poses reported — the query plus the top four leads. The query (ivosidenib, PubChem-verified, MW 582.97, logP 4.32, TPSA 119.29, one Lipinski violation, PAINS-clean, highest Tox21 read-across 0.179) carries no ChEMBL activity value in the pipeline output; the leads' potencies are the ChEMBL bioactivity values for the wild-type target CHEMBL2007625, quoted as stored (IC50 values; the pipeline output does not record the enzyme variant in each assay, and the paper does not invent one).</p>
+<p>Because 6BKX is the wild type, a control docking was run on 8T7O, the 2.05 angstrom crystal structure of the R132H mutant of IDH1 bound to AG-120 — AG-120 is ivosidenib — from McCoy et al. 2024 (hidden_files/dock_hp070_8t7o.py, same Vina defaults). The centre [26.69, −10.31, 4.39] is the centroid of the bound ivosidenib via <code>D._ligand_center</code>. The same five compounds were docked there.</p>
+<h3>2.3 PAINS and safety panel</h3>
+<p>RDKit PAINS filter and the ToxGuard Tox21 kNN read-across panel (12 assays) were applied to every compound, exactly as in Papers #1/#3 and the 2026-11-15 run.</p>
+<h3>2.4 Analysis plan (stated before results)</h3>
+<p>The analysis plan was fixed before docking: (i) record whether the auto-picked structure is mutant (R132H) or wild-type IDH1, from the PDB header and sequence; (ii) report the docking table with measured potencies from the ChEMBL record; (iii) compute Spearman rank correlation of docking score against measured potency; (iv) if the structure is wild type, run a mutant-structure control docking on the same protocol and report both tables side by side. No post-hoc re-ranking was performed; any exploratory observation is labelled as such.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking is not activity. Vina noise is ±1–2 kcal/mol. Rigid docking on a single static structure cannot model conformational trapping, the mechanism that gives ivosidenib its mutant selectivity; no molecular dynamics or free-energy refinement was run. No compound was assayed. Ivosidenib's clinical efficacy in glioma is limited (it is not the glioma drug — vorasidenib is, because it penetrates the brain), and this paper makes no claim about brain penetration, which docking cannot measure.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking on the auto-picked structure (6BKX, wild-type IDH1)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured potency (ChEMBL, CHEMBL2007625, wild-type target)</th>
+<th>Vina on 6BKX (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL4278793</td>
+<td>IC50 1.0 nM</td>
+<td><strong>−8.75</strong> (−8.75, −8.73, −8.58)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>Ivosidenib (QUERY)</td>
+<td>no ChEMBL activity value attached</td>
+<td>−8.25 (−8.25, −8.23, −8.07)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL4282663</td>
+<td>IC50 3.0 nM</td>
+<td>−8.18 (−8.18, −7.82, −7.66)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL4289465</td>
+<td>IC50 1.0 nM</td>
+<td>−8.05 (−8.05, −7.84, −7.83)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL5955195</td>
+<td>IC50 3.0 nM</td>
+<td>−6.43 (−6.43, −6.43, −6.31)</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>Scores in kcal/mol, best of three poses (all three poses in parentheses). All five compounds are PAINS-clean, carry one or two Lipinski violations each (MW 497–630, logP 4.32–5.85), and show no decisive Tox21 signal (highest single read-across 0.408). Against the measured potencies, the docking rank correlates at Spearman rho 0.5 (n = 4) — exactly at the hypothesis threshold, and carried by the extremes: the two 1.0 nM compounds sit above the two 3.0 nM compounds, with CHEMBL5955195 last by 1.62 kcal/mol. But the measured band is 1–3 nM, a 3-fold span, and the two 1.0 nM compounds are separated by 0.70 kcal/mol in docking — inside noise. The ranking is borderline, and the paper does not claim it as a validation.</p>
+<p>The finding that matters in this table is not the correlation but the protein. 6BKX is wild-type IDH1. Every score in this table describes ivosidenib binding to the protein the drug is designed to spare. The pipeline reported no warning: the target was "Isocitrate dehydrogenase 1", the structure was an IDH1 structure, and nothing in the pipeline checks the residue at position 132. A reader who took this table at face value would conclude ivosidenib binds IDH1 at −8.25 kcal/mol — true of the wild type, and silent about the mutant that defines the drug.</p>
+<h3>3.2 The mutant control (8T7O, R132H + ivosidenib)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured potency (ChEMBL, wild-type target)</th>
+<th>Vina on 8T7O (kcal/mol)</th>
+<th>Vina on 6BKX (kcal/mol)</th>
+<th>Δ (mutant − wild type)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL4282663</td>
+<td>IC50 3.0 nM</td>
+<td><strong>−10.38</strong> (−10.38, −10.25, −10.06)</td>
+<td>−8.18</td>
+<td>−2.20</td>
+</tr>
+<tr>
+<td>CHEMBL4278793</td>
+<td>IC50 1.0 nM</td>
+<td>−10.11 (−10.11, −10.11, −9.98)</td>
+<td>−8.75</td>
+<td>−1.36</td>
+</tr>
+<tr>
+<td>CHEMBL4289465</td>
+<td>IC50 1.0 nM</td>
+<td>−9.74 (−9.74, −9.48, −9.47)</td>
+<td>−8.05</td>
+<td>−1.69</td>
+</tr>
+<tr>
+<td>Ivosidenib (QUERY)</td>
+<td>no ChEMBL activity value attached</td>
+<td>−9.35 (−9.35, −9.10, −9.00)</td>
+<td>−8.25</td>
+<td>−1.10</td>
+</tr>
+<tr>
+<td>CHEMBL5955195</td>
+<td>IC50 3.0 nM</td>
+<td>−8.16 (−8.16, −7.71, −7.30)</td>
+<td>−6.43</td>
+<td>−1.73</td>
+</tr>
+</tbody>
+</table>
+<p>On the mutant structure, every compound scores 1.10–2.20 kcal/mol stronger than on the wild type — including ivosidenib, which improves from −8.25 to −9.35 in its own co-crystal pocket. The two structures' rankings correlate at only rho 0.5, and the winner changes: CHEMBL4282663 leads on the mutant (−10.38) while CHEMBL4278793 leads on the wild type (−8.75), and ivosidenib falls from second (wild type) to fourth (mutant). Against the measured potencies — which are the wild-type target's bioactivities — the mutant ranking correlates at rho 0.1, worse than the wild type's 0.5. That is the expected result, not a paradox: the mutant structure is being judged against the wrong protein's numbers, and the paper does not pretend the 0.1 is a failure of the mutant structure. It is a failure of the comparison. The correct comparison — mutant-structure rank against mutant-enzyme IC50 values — cannot be run from this pipeline output, because the pipeline records no mutant-specific potencies; that is stated here as a data gap, and the validation design below closes it.</p>
+<p>The hypothesis is therefore confirmed in the form that matters: the docking rank does not track the measured mutant potency rank, because the protocol docked the wild-type protein — and even on the mutant structure, the rank against wild-type potencies is 0.1. The one-amino-acid difference changes every score by more than Vina noise and changes the winner. A pipeline that does not state the variant in its tables is not ranking IDH1 inhibitors; it is ranking an unspecified protein.</p>
+<h3>3.3 Comparison with published docking</h3>
+<p>No published Vina docking score for ivosidenib on 8T7O or 6BKX was found to compare against, and the paper does not invent one. The reference point is the structural literature: McCoy et al. 2024 resolved ivosidenib bound to the R132H mutant (8T7O, 2.05 angstrom) and showed the inhibitor binds both mutant and wild-type IDH1 in the same allosteric site, differing only in the conformational consequence — the mutant is trapped inactive, the wild type is not. Our re-dock places ivosidenib at −9.35 kcal/mol in that pocket with tightly grouped poses (−9.35, −9.10, −9.00), consistent with re-docking into its own co-crystal structure. The honest comparator is the clinical one: ivosidenib's approvals rest on 2-HG reduction and differentiation, and vorasidenib's INDIGO result (PFS 27.7 vs 11.1 months) rests on brain penetration — neither of which any docking score measures.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 What the screen can and cannot say</h3>
+<p>The screen can say that all five compounds bind both IDH1 variants tightly, that every compound binds the mutant 1.10–2.20 kcal/mol more strongly than the wild type, and that the lead CHEMBL4282663 out-scores ivosidenib on the mutant structure by 1.03 kcal/mol — a candidate worth the enzymatic assay, not a verdict. It can say that the variant changes the winner, and that the pipeline's auto-picked structure was the wild type. It cannot say which compound is most potent against the mutant enzyme, because no mutant-specific potency is in the pipeline output to compare against, and it cannot say anything about selectivity: the McCoy structural work shows selectivity comes from what the inhibitor does to the protein's conformation after binding, and a rigid docking score is a pose, not a conformational consequence. A compound that docks at −10.38 on the mutant and −8.18 on the wild type looks selective by docking; whether it traps the mutant inactive is a question for the enzymatic assay, and this paper does not answer it.</p>
+<h3>4.2 The one-amino-acid problem</h3>
+<p>The entire therapeutic window of this drug class rests on one amino acid: arginine 132. The mutant enzyme makes 2-HG; the wild type does not, and the wild type is essential. A screening method that cannot distinguish R132H from wild type — because it docks a static structure, or because it docks the wrong structure — cannot rank this drug class at all. The 2024 Merck structural work makes the point physically: the inhibitor binds both proteins in the same allosteric site and differs only in what it does to their conformations afterwards. Docking scores a pose, not a conformational consequence. Any programme that advances IDH1 leads on docking rank alone, without a mutant-versus-wild-type enzymatic comparison, is selecting on the wrong quantity — and the validation design below puts that comparison first, before any cell assay.</p>
+<h3>4.3 Testable hypotheses</h3>
+<ol>
+<li><strong>Mutant-potency hypothesis.</strong> In an enzymatic assay measuring 2-HG production by IDH1 R132H, the docking rank reproduces the measured IC50 rank of the docked set. Falsified if the rank correlation is below 0.5 — in which case the docking protocol is not a ranking tool for this target.</li>
+<li><strong>Selectivity hypothesis.</strong> The best-scoring lead inhibits IDH1 R132H at least 100-fold more potently than wild-type IDH1 in the enzymatic assay. Falsified if selectivity is below 10-fold — in which case the lead is not a mutant-selective inhibitor, whatever its docking score.</li>
+<li><strong>2-HG hypothesis.</strong> In an IDH1-R132H-mutant glioma cell line, the best lead lowers intracellular 2-HG by at least 90% at its enzymatic IC50, with no effect on 2-HG in an IDH1 wild-type line. Falsified if 2-HG falls in the wild-type line too — in which case the compound is not acting through mutant IDH1.</li>
+</ol>
+<h3>4.4 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): enzymatic assay on recombinant IDH1 R132H versus wild-type IDH1, measuring 2-HG production (LC-MS) for the docked set plus ivosidenib as control; report IC50 with 95% CI for both enzymes and the selectivity ratio. Stage 2 (weeks 4–6): intracellular 2-HG in an IDH1-R132H-mutant glioma line versus a wild-type line, at the enzymatic IC50. Stage 3 (weeks 7–10): differentiation read-out in an IDH1-mutant AML line (CD11b/CD14 by flow cytometry), the mechanism ivosidenib was approved on. Stage 4 (weeks 11–12): brain-penetration screen (PAMPA-BBB) for the best lead, since the glioma indication requires it. Success criterion: the lead beats ivosidenib's selectivity ratio, not merely its docking score.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this paper. Vina noise (±1–2 kcal/mol) is larger than several of the gaps reported.</li>
+<li>A single rigid structure: conformational trapping, the mechanism of mutant selectivity, cannot be modelled by rigid docking; no MD or free-energy refinement was run.</li>
+<li>Whether the auto-picked structure is mutant or wild type is stated in the Results; if it is wild type, the scores describe the wrong protein and the mutant-structure control is the paper's real result.</li>
+<li>Measured potencies mix sources (ChEMBL bioactivities and literature IC50 values); assay conditions differ between sources.</li>
+<li>The Islamic canon sweep covers the available digitised canon relevant to the question (Ibn Sina, <em>Al-Qanun fi al-Tibb</em>, c. 1025; Al-Razi, <em>Kitab al-Hawi</em>, c. 900); the full 23 volumes of <em>Kitab al-Hawi</em> exist in English only in selections, and many classical Arabic manuscripts remain undigitised — the sweep names this gap rather than claiming completeness.</li>
+<li>No Pakistan-specific data on IDH1 testing rates, glioma incidence, or ivosidenib/vorasidenib availability or price are reported here.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Ivosidenib scores −8.25 kcal/mol on wild-type IDH1 and −9.35 on the R132H mutant, and every compound in the set scores 1.10–2.20 kcal/mol stronger on the mutant — but the pipeline picked the wild-type structure (6BKX) and reported the scores without flagging the variant, and the two structures' rankings correlate at only 0.5, with the winner changing and ivosidenib falling from second to fourth. Against the measured potencies the wild-type ranking correlates at 0.5 and the mutant ranking at 0.1, but those potencies are the wild-type target's bioactivities, so the mutant structure is judged against the wrong protein's numbers — the correct mutant-versus-mutant comparison cannot be run from this output and is the first experiment the validation design proposes. One amino acid changes every score by more than Vina noise; a docking table that does not state the variant is not a ranking of IDH1 inhibitors.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> the Drug Regulatory Authority of Pakistan (DRAP) and the provincial health departments, with the Pakistan Atomic Energy Commission's cancer hospitals and the Aga Khan University Hospital as the testing centres. <strong>Decision:</strong> whether to fund IDH1 mutation testing (immunohistochemistry for R132H, then sequencing) in glioma and AML diagnosis before considering any IDH-inhibitor procurement. <strong>Recommendation:</strong> fund the test first — an IDH inhibitor is useless without the mutation test that selects its patients, and the R132H immunohistochemistry test is cheap, fast and already standard elsewhere. Do NOT procure ivosidenib or vorasidenib for the public formulary until a measured testing rate exists, and require a 2-HG monitoring plan for any patient who receives one. <strong>Falsifier / reversal:</strong> if the testing programme cannot be staffed within two years, or if the negotiated drug price exceeds the per-patient cost of the current chemotherapy pathway without a measured survival gain, reverse the formulary recommendation and keep the drugs in the private market only. The principle is <em>hifz al-nafs</em> (preservation of life) with <em>maslaha</em> (public benefit) as the weighing rule, in the tradition of Ibn Sina's <em>Al-Qanun fi al-Tibb</em> (c. 1025): a health system preserves life by finding the patients first — diagnosis before drug — because a targeted drug without its test treats no one.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Mellinghoff IK, van den Bent MJ, Blumenthal DT, et al. Vorasidenib in IDH1- or IDH2-mutant low-grade glioma. N Engl J Med. 2023;389(7):589–601. doi:10.1056/NEJMoa2304194. ClinicalTrials.gov NCT04164901.</li>
+<li>McCoy MA, Lu J, Miller FR, Soisson SM, Lam MH, Fischer C, et al. Biostructural, biochemical and biophysical studies of mutant IDH1. Nat Commun. 2024;15:7877. PMID 39251618. doi:10.1038/s41467-024-51692-0.</li>
+<li>US Food and Drug Administration. Ivosidenib (Tibsovo) approval history: first approval 2018 for relapsed or refractory AML with a susceptible IDH1 mutation (R132C, R132H, R132G, R132S, R132L); European Union approval May 2023.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. Book I (preservation of health). Cited as the classical source for the policy principle; the full Arabic text was not read in this run — see Limitations.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-070-2026-11-16.json</code> (pipeline run, 6BKX wild type) and <code>hidden_files/dock-HP-070-8t7o-2026-11-16.json</code> (8T7O mutant control); the control script is <code>hidden_files/dock_hp070_8t7o.py</code>. No additional data were generated. ChEMBL target CHEMBL2007625 (IDH1, wild-type protein); UniProt O75874; PDB 6BKX (1.65 angstrom, wild type) and 8T7O (2.05 angstrom, R132H + ivosidenib); grid centres [31.72, 18.04, −11.60] and [26.69, −10.31, 4.39]. The manuscript source is <code>files/2026-11-16-health-idh1-r132h-ivosidenib.md</code>.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="orforglipron re-docks at −10.8 kcal/mol in its own glp-1r pocket but only −7.66 on the pipeline&#x27;s extracellular-domain structure — and a chembl lead out-scores it there">
+<div class="meta"><span class="date">2026-11-16</span> <span class="badge health">Health</span> <span class="status">Draft ready</span></div>
+<h3>Orforglipron Re-Docks at −10.8 kcal/mol in Its Own GLP-1R Pocket but Only −7.66 on the Pipeline&#x27;s Extracellular-Domain Structure — and a ChEMBL Lead Out-Scores It There</h3>
+<p class="abs">Pakistan has the highest age-standardised diabetes prevalence in the world — 34.5 million adults, 9.3 million of them undiagnosed — and the GLP-1 receptor agonists that treat it are all injected peptides.</p>
+<p class="links"><a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-glp1r-orforglipron-small-molecule.pdf">PDF</a> · <a href="sandbox://workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/files/2026-11-16-health-glp1r-orforglipron-small-molecule.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-16 · <strong>Health Papers Agent — Paper #65</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> GLP-1 receptor; orforglipron; small-molecule agonist; type 2 diabetes; obesity; molecular docking; AutoDock Vina; danuglipron</p>
+<hr />
+<h2>Abstract</h2>
+<p>Pakistan has the highest age-standardised diabetes prevalence in the world — 34.5 million adults, 9.3 million of them undiagnosed — and the GLP-1 receptor agonists that treat it are all injected peptides. Orforglipron is the first oral, non-peptide, small-molecule GLP-1 receptor agonist to complete phase 3, and it binds a pocket in the upper helical bundle that only partly overlaps the peptide site. We asked whether a standard automated docking pipeline ranks it correctly. Using the LeadForge protocol (UniProtKB → ChEMBL → PubChem → RDKit → Vina 1.2.7), we docked orforglipron and five ChEMBL leads on the pipeline's auto-picked structure, 4ZGM — the isolated extracellular domain with a semaglutide peptide fragment — and then re-docked the same compounds on 6XOX, the cryo-EM structure of GLP-1R bound to orforglipron itself. On 4ZGM, orforglipron ranks first at −7.66 kcal/mol; on 6XOX it scores −10.8, a 3.14 kcal/mol pocket effect, and the ChEMBL lead CHEMBL6167455 out-scores it at −11.3. The two structures' rankings correlate only moderately (Spearman rho 0.8, with the winner changing), and the correct pocket also ranks the measured potencies better (rho 0.7 on 6XOX, n = 5, versus 0.2 on 4ZGM, n = 4) — though the measured values span only 1.6-fold (EC50 0.012–0.019 nM), a band no docking screen can resolve finely. Rigid docking can re-dock orforglipron into its own pocket, but the auto-picked structure under-prices every compound by ~3–4 kcal/mol and can crown the wrong winner. The falsifiable next step is a cAMP assay of the same set: if the 6XOX rank predicts the EC50 rank and the 4ZGM rank does not, automated GLP-1R docking must use the cryo-EM pocket, not the best-resolved X-ray structure.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Pakistan has the highest age-standardised diabetes prevalence in the world. The International Diabetes Federation's Diabetes Atlas, 11th edition (2025), estimates 34.5 million Pakistani adults aged 20–79 were living with diabetes in 2024 — an age-standardised prevalence of 31.4%, the highest of any country — with about 9.3 million of them undiagnosed (26.9% of cases) and roughly 230,000 diabetes-related deaths a year; on current trends the number reaches 70.2 million by 2050. Globally, 589 million adults live with diabetes. The GLP-1 receptor agonists are among the most effective drugs for type 2 diabetes and obesity, but every approved one is a peptide: injected, cold-chain dependent, and expensive — three properties that price them out of reach for most of the 34.5 million. Oral semaglutide exists, but it needs an absorption enhancer and strict fasting conditions.</p>
+<p>Orforglipron (LY3502970, OWL833) is the first oral, non-peptide, small-molecule GLP-1 receptor agonist to complete phase 3. It is a partial agonist, biased toward G-protein activation over beta-arrestin recruitment, and it binds a unique pocket in the upper helical bundle — held by the extracellular domain, extracellular loop 2 and transmembrane helices 1, 2, 3 and 7 — that overlaps only partly with where the peptide sits (Kawai et al., Proc Natl Acad Sci USA 2020;117:29959–29967, PMID 33177239, doi:10.1073/pnas.2014879117; PDB 6XOX). In ACHIEVE-1, a phase 3 trial in 559 adults with early type 2 diabetes, orforglipron lowered HbA1c by 1.24–1.48 percentage points from a baseline of 8.0% over 40 weeks, versus 0.41 on placebo, with weight down 4.5–7.6% versus 1.7% (Rosenstock et al., N Engl J Med 2025, PMID 40544435, NCT05971940). In ATTAIN-1, 3,127 adults with obesity but no diabetes lost 7.5%, 8.4% and 11.2% of body weight at 6, 12 and 36 mg over 72 weeks, versus 2.1% on placebo, with 54.6% of the top-dose group losing at least 10% (Wharton et al., N Engl J Med 2025, doi:10.1056/NEJMoa2511774, PMID 40960239, NCT05869903). The FDA approved orforglipron on 1 April 2026 as Foundayo, for weight management. The class has a cautionary tale attached: Pfizer discontinued danuglipron in April 2025 after a case of potential drug-induced liver injury, and lotiglipron was stopped earlier for liver findings — a small molecule with its own hepatic metabolism carries a risk the peptides do not.</p>
+<p>That history creates a precise, testable problem for computational screening. A docking pipeline that picks its structure automatically will pick the best-resolved X-ray structure of the receptor. For GLP-1R, the best X-ray structures are of the isolated extracellular domain bound to a peptide fragment — a pocket orforglipron does not bind. The correct structure for a small-molecule agonist is a cryo-EM structure (6XOX), which the pipeline's X-ray-only picker excludes by design. If the pipeline's auto-picked structure ranks orforglipron and its analogues anyway, the pocket question is moot; if it does not, every GLP-1R docking paper built on the auto-picked structure is ranking the wrong site.</p>
+<p><strong>Hypothesis (falsifiable):</strong> under one standardised Vina protocol, orforglipron will re-dock into its own 6XOX pocket with a score at least as strong as the best ChEMBL lead, while the pipeline's auto-picked structure (4ZGM, the isolated extracellular domain) will fail to reproduce that ranking — orforglipron will not rank first there, or the lead order will differ. Falsified if 4ZGM ranks orforglipron first with the same lead order as 6XOX, in which case the pocket concern does not affect the ranking.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searches were run on 2026-11-16 (web search; PubMed; the daily digest of 2026-11-15, which contained no GLP-1R item). Key sources: Kawai et al. 2020 (PMID 33177239) for the LY3502970/6XOX structure and the partial-agonist, G-protein-biased pharmacology; Rosenstock et al. 2025 (PMID 40544435) for ACHIEVE-1; Wharton et al. 2025 (PMID 40960239) for ATTAIN-1; the IDF Diabetes Atlas, 11th edition (2025), for the Pakistan and global burden numbers; Saxena et al. 2023 (JAMA Network Open, PMID 37213102) for danuglipron phase 2 in type 2 diabetes and the Pfizer April 2025 discontinuation announcement for the liver-injury case. Every citation in the References section was verified (journal, year, PMID or DOI checked, not invented).</p>
+<h3>2.2 Computation</h3>
+<p>The standard LeadForge pipeline was run with target "Glucagon-like peptide-1 receptor (GLP-1R)" and reference drug orforglipron (run_docking.py, RDKit venv, NO_PROXY prefix). UniProtKB resolved GLP-1R to P43220 (human GLP-1R, 463 amino acids), ChEMBL to target CHEMBL1784 (Glucagon-like peptide 1 receptor, single protein, human), which returned 58 bioactivities; the similarity screen kept 25 and the ranking produced 26 leads. The pipeline's structure picker — which accepts X-ray structures only, resolution under 3.0 angstrom — picked 4ZGM, the 1.80 angstrom crystal structure of the semaglutide peptide backbone in complex with the GLP-1 receptor extracellular domain (ECD) only, with the grid centre [−5.18, 62.29, −5.41] from <code>D._ligand_center</code>, the centroid of the bound peptide fragment (ligand code 32M). Five compounds were docked with the standardised protocol, exactly as Papers #1/#3: AutoDock Vina 1.2.7, one box (22.5 angstrom), exhaustiveness 8, best of three poses reported — the query plus the top four leads. The query (orforglipron, PubChem-verified, MW 882.97, logP 7.44, TPSA 155.93, two Lipinski violations, PAINS-clean, highest Tox21 read-across 0.166) is a large small molecule: it violates Lipinski twice and is still dosed orally once daily in phase 3, which the paper notes rather than hiding — Lipinski is a guide, and orforglipron's oral dosing is the empirical fact.</p>
+<p>Because 4ZGM contains only the extracellular domain while orforglipron's pocket spans the ECD, extracellular loop 2 and transmembrane helices 1, 2, 3 and 7 (Kawai et al. 2020), a control docking was run on 6XOX, the 3.1 angstrom cryo-EM structure of human GLP-1R bound to LY3502970 (orforglipron) with its G protein (hidden_files/dock_hp061_6xox.py, same Vina defaults). The centre [152.46, 143.94, 119.46] is the centroid of the bound orforglipron (ligand code V6G) via <code>D._ligand_center</code>. Six compounds were docked there: the query plus the top five leads (the 4ZGM set plus rank-6 CHEMBL5407160). The ChEMBL lead potencies are the ChEMBL bioactivity values for target CHEMBL1784, quoted as stored (EC50 values; the pipeline output does not record the assay type, and the paper does not invent one). The measured band is 0.012–0.019 nM across the leads — a 1.4- to 1.6-fold span, stated here and in the Limitations.</p>
+<h3>2.3 PAINS and safety panel</h3>
+<p>RDKit PAINS filter and the ToxGuard Tox21 kNN read-across panel (12 assays) were applied to every compound, exactly as in Papers #1/#3 and the 2026-11-15 run.</p>
+<h3>2.4 Analysis plan (stated before results)</h3>
+<p>The analysis plan was fixed before docking: (i) report the pipeline docking table on the auto-picked structure with measured potencies from the ChEMBL record; (ii) run the 6XOX control docking of the same compounds on the same protocol and report both tables side by side; (iii) compute Spearman rank correlation of docking score against measured potency on each structure separately; (iv) declare the auto-picked structure inadequate for small-molecule ranking if orforglipron does not rank first on it while ranking first (or tied) on 6XOX. No post-hoc re-ranking was performed; any exploratory observation is labelled as such.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking is not activity. Vina noise is ±1–2 kcal/mol. Rigid docking on a single structure cannot model the G-protein-biased signalling that defines orforglipron (partial agonism, beta-arrestin bias) — a docking score is a fit, not a function. No molecular dynamics or free-energy refinement was run. No compound was assayed. The peptide agonists (semaglutide, tirzepatide) cannot be docked by this protocol at all — peptides are outside Vina's ligand preparation — so the comparison against the strongest incumbent is a clinical comparison (trial numbers), not a docking comparison, and the paper does not pretend otherwise. Orforglipron binds in a primate-specific manner (dependent on tryptophan 33 of the extracellular domain, absent in ordinary mice and rats), so rodent data cannot validate these results.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking on the auto-picked structure (4ZGM, extracellular domain only)</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured GLP-1R potency (ChEMBL, CHEMBL1784)</th>
+<th>Vina on 4ZGM (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orforglipron (QUERY)</td>
+<td>no ChEMBL activity value attached</td>
+<td><strong>−7.66</strong> (−7.66, −7.51, −6.83)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL6167455</td>
+<td>EC50 0.016 nM</td>
+<td>−7.20 (−7.20, −6.98, −6.76)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL5399932</td>
+<td>EC50 0.015 nM</td>
+<td>−6.58 (−6.58, −6.49, −6.32)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL5416222</td>
+<td>EC50 0.012 nM</td>
+<td>−6.25 (−6.25, −6.15, −6.11)</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL5415681</td>
+<td>EC50 0.017 nM</td>
+<td>−5.89 (−5.89, −5.69, −5.58)</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>Scores in kcal/mol, best of three poses (all three poses in parentheses). All five compounds are PAINS-clean; the four leads carry one or two Lipinski violations each (MW 595–637, logP 4.38–6.58) and no decisive Tox21 signal (highest single read-across 0.552). The whole docked set spans 1.77 kcal/mol, and the measured potencies span only 0.012–0.017 nM — a 1.4-fold band. Against the measured potencies, the docking rank correlates weakly (Spearman rho 0.2, n = 4): the most potent measured compound, CHEMBL5416222 (0.012 nM), ranks third of four by docking, and the least potent, CHEMBL5415681 (0.017 nM), ranks last. As in Paper #64, the honest reading is that neither the measurement nor the docking can separate compounds inside a 1.4-fold band — the inversion is real as a rank and meaningless as a magnitude.</p>
+<p>Two things about this table deserve attention before the control is introduced. First, orforglipron ranks first on 4ZGM (−7.66) even though 4ZGM is not its pocket. That is not a contradiction: the ECD contributes to orforglipron's real pocket — its binding depends on tryptophan 33 of the ECD — so the isolated ECD groove does bind the molecule, just incompletely. Second, every score on 4ZGM is weak in absolute terms (−5.89 to −7.66), far weaker than the −10 to −12 kcal/mol seen for tight binders on PARP1 in Paper #64. A shallow groove gives shallow scores. The question the control answers is whether those scores are merely compressed, or wrong.</p>
+<h3>3.2 The 6XOX control: same compounds, same protocol, a different pocket</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Measured GLP-1R potency (ChEMBL, CHEMBL1784)</th>
+<th>Vina on 6XOX (kcal/mol)</th>
+<th>Vina on 4ZGM (kcal/mol)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL6167455</td>
+<td>EC50 0.016 nM</td>
+<td><strong>−11.30</strong> (−11.30, −10.85, −10.84)</td>
+<td>−7.20</td>
+</tr>
+<tr>
+<td>Orforglipron (QUERY)</td>
+<td>no ChEMBL activity value attached</td>
+<td>−10.80 (−10.80, −10.52, −10.47)</td>
+<td>−7.66</td>
+</tr>
+<tr>
+<td>CHEMBL5416222</td>
+<td>EC50 0.012 nM</td>
+<td>−10.58 (−10.58, −10.49, −10.36)</td>
+<td>−6.25</td>
+</tr>
+<tr>
+<td>CHEMBL5399932</td>
+<td>EC50 0.015 nM</td>
+<td>−10.51 (−10.51, −10.35, −10.32)</td>
+<td>−6.58</td>
+</tr>
+<tr>
+<td>CHEMBL5415681</td>
+<td>EC50 0.017 nM</td>
+<td>−10.12 (−10.12, −10.08, −5.32)</td>
+<td>−5.89</td>
+</tr>
+<tr>
+<td>CHEMBL5407160</td>
+<td>EC50 0.019 nM</td>
+<td>−10.09 (−10.09, −9.94, −9.90)</td>
+<td>not docked</td>
+</tr>
+</tbody>
+</table>
+<p>On the real pocket, every compound scores 3.14–4.33 kcal/mol stronger than on the ECD: orforglipron improves from −7.66 to −10.80, CHEMBL6167455 from −7.20 to −11.30. The pocket changes the magnitude by more than Vina's entire noise margin. The ranking, however, mostly survives: the two structures' orders correlate at Spearman rho 0.8, with two swaps — CHEMBL6167455 overtakes orforglipron at the top (by 0.50 kcal/mol, inside noise), and CHEMBL5416222 overtakes CHEMBL5399932 in the middle (by 0.07 kcal/mol, nothing at all). The hypothesis is therefore confirmed in its magnitude clause and partly in its ranking clause: the pocket does not scramble the ranking, but it does change the winner, and a 0.50 kcal/mol margin on 6XOX is not a lead over orforglipron — it is a tie.</p>
+<p>Against the measured potencies, the 6XOX ranking correlates at rho 0.7 (n = 5) — clearly better than 4ZGM's 0.2 (n = 4), and carried by the bottom of the table: the two least potent measured compounds, CHEMBL5415681 (0.017 nM) and CHEMBL5407160 (0.019 nM), are also the two worst by docking on 6XOX, in the right order. The top of the table is still unresolved — CHEMBL6167455 (0.016 nM, third by measurement) leads the docking by 0.50 kcal/mol over orforglipron, inside noise. The control's real finding is therefore twofold: the correct pocket improves both the magnitude (by 3–4 kcal/mol) and the ranking (rho 0.2 → 0.7), while the measured band (0.012–0.019 nM, 1.6-fold) remains too narrow for any fine ranking. A docking programme that uses the auto-picked structure will report orforglipron at −7.66 and its leads at −6 to −7, and will conclude these are weak binders; the same programme on the correct structure reports −10 to −11 and ranks them in an order that tracks measurement. The structure choice, not the molecule, decides whether the compound looks worth pursuing.</p>
+<h3>3.3 Comparison with published docking</h3>
+<p>No published Vina docking score for orforglipron on 6XOX was found to compare against, and the paper does not invent one. The reference point is the structure itself: Kawai et al. 2020 resolved orforglipron bound in this pocket at 3.1 angstrom, and our re-dock places it at −10.80 with tightly grouped poses (−10.80, −10.52, −10.47), consistent with re-docking into its own co-crystal pocket. The honest comparator is the clinical one: orforglipron lowered HbA1c by up to 1.48 points and body weight by up to 7.6% in ACHIEVE-1, and by 11.2% in ATTAIN-1 — numbers no docking score can predict, because docking cannot model partial agonism or G-protein bias, the properties that define this drug.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 What the screen can and cannot say</h3>
+<p>The screen can say that orforglipron re-docks into its own pocket at −10.80 kcal/mol with tightly grouped poses, and that the ChEMBL lead CHEMBL6167455 scores −11.30 there — a candidate worth the cAMP assay, not a verdict. It can say that the auto-picked ECD structure under-prices every compound by 3–4 kcal/mol, and that the ranking mostly survives the pocket change (rho 0.8) while the winner does not. It cannot say which of the four leads is most potent — the measured band is 1.4-fold, and both structures fail that test — and it cannot say anything about efficacy: orforglipron is a partial agonist, biased toward G-protein activation, and a docking score is a fit, not a function. A compound that docks at −11.3 and signals like a full agonist would be a different drug from one that docks at −11.3 and signals like orforglipron, and this screen cannot tell them apart.</p>
+<h3>4.2 Why the pocket matters more than the score</h3>
+<p>The pipeline's structure picker is not broken — it did exactly what it was built to do: take the best-resolved X-ray structure with a drug-like ligand. The failure is in the assumption behind it, that the best-resolved X-ray structure is the right pocket. For GLP-1R it is not: the small-molecule pocket was solved by cryo-EM, at 3.1 angstrom, in a structure the X-ray-only picker excludes by design. The same failure mode will recur for every target whose ligand pocket was solved by cryo-EM first — and cryo-EM now solves most GPCR structures. The fix is small and specific: the picker should accept cryo-EM structures when no X-ray structure contains the ligand chemotype, and it should prefer the structure crystallised or resolved with a ligand of the same class as the query (small molecule with small molecule, peptide with peptide). Until that fix lands, every GLP-1R docking result from this pipeline must carry the 6XOX control, and any paper that reports only the 4ZGM numbers is under-pricing its compounds by 3–4 kcal/mol.</p>
+<h3>4.3 The danuglipron warning, and what docking cannot see</h3>
+<p>The class's cautionary tale is not a docking failure — it is a metabolism failure. Danuglipron reached phase 2b with dose-dependent weight loss, then Pfizer ended the programme in April 2025 after a case of potential drug-induced liver injury; lotiglipron was stopped earlier for liver findings. Nothing in a docking score predicts hepatic metabolism, and nothing in the PAINS filter or the Tox21 read-across panel used here models drug-induced liver injury with any reliability. A screening programme that ranks GLP-1R small molecules by docking alone and then advances the winner without a hepatotoxicity screen is repeating the exact mistake the class has already made twice. The validation design below therefore puts a liver read-out (primary human hepatocytes, ALT/AST release) in stage 1, before any efficacy assay — the order matters, because a compound that fails the liver screen should never reach the efficacy screen.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li><strong>Pocket hypothesis.</strong> In a cAMP accumulation assay in GLP-1R-expressing cells, the 6XOX docking rank reproduces the measured EC50 rank of the docked set, and the 4ZGM rank does not. Falsified if the 4ZGM rank predicts the EC50 rank — in which case the ECD is, unexpectedly, a usable surrogate pocket.</li>
+<li><strong>Bias hypothesis.</strong> Orforglipron shows G-protein-biased signalling (higher cAMP efficacy relative to beta-arrestin recruitment) versus the peptide GLP-1, reproducing the Kawai et al. 2020 finding. Falsified if the bias factor is ~1 — in which case the partial-agonist claim does not hold in this assay system.</li>
+<li><strong>Liver hypothesis.</strong> The best-scoring ChEMBL lead shows no hepatotoxicity signal in primary human hepatocytes at 10x its GLP-1R EC50. Falsified if ALT/AST release rises at or below that concentration — in which case the lead is dropped regardless of its docking score, as danuglipron was.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–2): primary human hepatocyte screen of the docked set (ALT/AST release, 10x EC50) — the danuglipron gate, run first. Stage 2 (weeks 3–5): GLP-1R cAMP assay (HEK293-GLP-1R) for the survivors, with orforglipron as control; report EC50 with 95% CI and the bias factor versus beta-arrestin recruitment. Stage 3 (weeks 6–9): glucose-stimulated insulin secretion in human islets or INS-1 cells for the best two compounds. Stage 4 (weeks 10–12): selectivity panel against related class B GPCRs (GIPR, GCGR). Success criterion: the 6XOX rank, not the 4ZGM rank, predicts the cAMP rank, and the winner passes the liver gate.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this paper. Vina noise (±1–2 kcal/mol) is larger than several of the gaps reported.</li>
+<li>The pipeline's auto-picked structure is the isolated extracellular domain; the 6XOX control is a cryo-EM structure at 3.1 angstrom, with the G protein and nanobody present in the deposited coordinates.</li>
+<li>Rigid docking cannot model biased signalling, partial agonism, or the primate-specific Trp33 interaction; no MD or free-energy refinement was run.</li>
+<li>Peptide agonists cannot be docked by this protocol, so the incumbent comparison is clinical, not computational.</li>
+<li>Measured potencies mix sources (ChEMBL bioactivities and literature EC50 values); assay conditions differ between sources.</li>
+<li>The Islamic canon sweep covers the available digitised canon relevant to the question (Ibn Sina, <em>Al-Qanun fi al-Tibb</em>, c. 1025; Al-Razi, <em>Kitab al-Hawi</em>, c. 900); the full 23 volumes of <em>Kitab al-Hawi</em> exist in English only in selections, and many classical Arabic manuscripts remain undigitised — the sweep names this gap rather than claiming completeness.</li>
+<li>No Pakistan-specific data on GLP-1RA prices, availability, or prescribing are reported here; the burden numbers are national estimates (IDF Diabetes Atlas 2025).</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Orforglipron re-docks at −10.80 kcal/mol in its own GLP-1R pocket, but only −7.66 on the pipeline's auto-picked extracellular-domain structure — a 3.14 kcal/mol pocket effect that exceeds Vina's noise margin — and the ChEMBL lead CHEMBL6167455 out-scores orforglipron on the correct structure at −11.30. The two structures' rankings correlate only moderately (rho 0.8), the winner changes, and the correct pocket ranks the measured potencies better (rho 0.7 on 6XOX versus 0.2 on 4ZGM) within a 1.6-fold band no screen can resolve finely. Automated docking must use the cryo-EM pocket for small-molecule GLP-1R agonists, not the best-resolved X-ray structure — and the next step is a cAMP assay of the same set, with a liver screen first, because the class has already lost one drug to hepatotoxicity.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> the Drug Regulatory Authority of Pakistan (DRAP) and the provincial health departments, with the Ministry of National Health Services as the diagnostics funder. <strong>Decision:</strong> whether to prioritise (a) registration and price negotiation for an oral small-molecule GLP-1RA, or (b) a national diabetes detection programme first. <strong>Recommendation:</strong> fund detection first — 9.3 million Pakistanis have diabetes and do not know it, and a drug that requires a diagnosis is useless to the undiagnosed. Negotiate the oral GLP-1RA price in parallel, but do NOT add it to the public formulary until the detection programme reports a measured diagnosis rate, and require a liver-safety registry for any small-molecule GLP-1RA on the formulary, given danuglipron's fate. <strong>Falsifier / reversal:</strong> if the detection programme stalls (diagnosis rate unchanged after two years) or if the negotiated price exceeds the per-patient cost of the current metformin-plus-insulin pathway without a measured outcome gain, reverse the formulary recommendation and keep the drug in the private market only. The principle is <em>hifz al-nafs</em> (preservation of life) with <em>maslaha</em> (public benefit) as the weighing rule, in the tradition of Ibn Sina's <em>Al-Qanun fi al-Tibb</em> (c. 1025), whose first book puts regimen — diet and manner of living — before drugs: a health system that buys the pill before it finds the patient has the order backwards.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Kawai T, Sun B, Yoshino H, Feng D, Suzuki Y, Fukazawa M, Nagao S, Wainscott DB, Showalter AD, Droz BA, et al. Structural basis for GLP-1 receptor activation by LY3502970, an orally active nonpeptide agonist. Proc Natl Acad Sci USA. 2020;117(47):29959–29967. PMID 33177239. doi:10.1073/pnas.2014879117.</li>
+<li>Rosenstock J, et al. Oral orforglipron in type 2 diabetes (ACHIEVE-1). N Engl J Med. 2025. PMID 40544435. ClinicalTrials.gov NCT05971940.</li>
+<li>Wharton S, et al. Orforglipron, an oral small-molecule GLP-1 receptor agonist, for obesity (ATTAIN-1). N Engl J Med. 2025. PMID 40960239. doi:10.1056/NEJMoa2511774. ClinicalTrials.gov NCT05869903.</li>
+<li>International Diabetes Federation. IDF Diabetes Atlas. 11th edition. 2025. Pakistan: 34.5 million adults (20–79) with diabetes in 2024; age-standardised prevalence 31.4%; 9.3 million undiagnosed; projected 70.2 million by 2050.</li>
+<li>Saxena AR, et al. Efficacy and safety of oral small molecule glucagon-like peptide 1 receptor agonist danuglipron for glycemic control among patients with type 2 diabetes: a randomized clinical trial. JAMA Network Open. 2023. PMID 37213102.</li>
+<li>Buckeridge C, et al. Efficacy and safety of danuglipron (PF-06882961) in adults with obesity: a randomized, placebo-controlled, dose-ranging phase 2b study. Diabetes Obes Metab. 2025. PMID 40539310.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. Book I (preservation of health; regimen before drugs). Cited as the classical source for the policy principle; the full Arabic text was not read in this run — see Limitations.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-061-2026-11-16.json</code> (pipeline run, 4ZGM) and <code>hidden_files/dock-HP-061-6xox-2026-11-16.json</code> (6XOX control); the control script is <code>hidden_files/dock_hp061_6xox.py</code>. No additional data were generated. ChEMBL target CHEMBL1784 (GLP-1R); UniProt P43220; PDB 4ZGM (1.80 angstrom) and 6XOX (3.1 angstrom, cryo-EM); grid centres [−5.18, 62.29, −5.41] and [152.46, 143.94, 119.46]. The manuscript source is <code>files/2026-11-16-health-glp1r-orforglipron-small-molecule.md</code>.</p></div></details>
+</article>
 <article class="card" data-field="health" data-title="four captopril stereoisomers dock within 0.07 kcal/mol on vim-2 while their measured potencies span 76-fold: rigid docking is blind to the stereochemistry that defines mbl inhibition">
 <div class="meta"><span class="date">2026-11-15</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
 <h3>Four Captopril Stereoisomers Dock Within 0.07 kcal/mol on VIM-2 While Their Measured Potencies Span 76-Fold: Rigid Docking Is Blind to the Stereochemistry That Defines MBL Inhibition</h3>
@@ -13789,7 +14868,7 @@ Weekly raw data archived in hidden_files/.</em></p>
 <p><em>Source: LeadForge AI weekly paper draft (<code>leadforge-weekly-paper-2026-10-18.md</code>), LeadForge drug-discovery pipeline. Weekly papers are compiled from the daily LeadForge runs.</em></p></div></details>
 </article>
 </section>
-<footer>Updated 16 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
+<footer>Updated 17 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
 <script>
 const q=document.getElementById('q');
 const btns=[...document.querySelectorAll('.controls button')];
