@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "pdb_id": "6JED",
+  "resolution": 1.57,
+  "center": [
+    18.48,
+    -3.53,
+    23.16
+  ],
+  "center_note": "MCR co-crystallised ligand centroid; pipeline pick had centred on EPE (HEPES buffer)",
+  "results": [
+    {
+      "ok": true,
+      "affinity_kcal_mol": -7.13,
+      "poses": [
+        -7.13,
+        -7.12,
+        -6.83
+      ],
+      "pdb_id": "6JED",
+      "label": "CHEMBL4068259 (3AP-DPA)"
+    },
+    {
+      "ok": true,
+      "affinity_kcal_mol": -6.08,
+      "poses": [
+        -6.08,
+        -6.08,
+        -5.8
+      ],
+      "pdb_id": "6JED",
+      "label": "CHEMBL284104 (DPA)"
+    },
+    {
+      "ok": true,
+      "affinity_kcal_mol": -5.88,
+      "poses": [
+        -5.88,
+        -5.64,
+        -5.64
+      ],
+      "pdb_id": "6JED",
+      "label": "epi-l-captopril"
+    },
+    {
+      "ok": true,
+      "affinity_kcal_mol": -5.74,
+      "poses": [
+        -5.74,
+        -5.64,
+        -5.59
+      ],
+      "pdb_id": "6JED",
+      "label": "d-captopril"
+    },
+    {
+      "ok": true,
+      "affinity_kcal_mol": -5.56,
+      "poses": [
+        -5.56,
+        -5.55,
+        -5.51
+      ],
+      "pdb_id": "6JED",
+      "label": "l-captopril"
+    },
+    {
+      "ok": true,
+      "affinity_kcal_mol": -5.54,
+      "poses": [
+        -5.54,
+        -5.43,
+        -5.22
+      ],
+      "pdb_id": "6JED",
+      "label": "epi-d-captopril"
+    }
+  ],
+  "spearman_rho": -0.6571428571428571
+}

@@ -1,0 +1,80 @@
+[
+ {
+  "ok": true,
+  "affinity_kcal_mol": -9.96,
+  "poses": [
+   -9.96,
+   -9.95,
+   -9.9
+  ],
+  "pdb_id": "7D9R",
+  "label": "QUERY",
+  "pchembl": null,
+  "measured": null
+ },
+ {
+  "ok": true,
+  "affinity_kcal_mol": -10.86,
+  "poses": [
+   -10.86,
+   -10.02,
+   -9.06
+  ],
+  "pdb_id": "7D9R",
+  "label": "CHEMBL3892047",
+  "pchembl": "9.00",
+  "measured": "EC50 1.0 nM"
+ },
+ {
+  "ok": true,
+  "affinity_kcal_mol": -10.97,
+  "poses": [
+   -10.97,
+   -10.16,
+   13.09
+  ],
+  "pdb_id": "7D9R",
+  "label": "CHEMBL3976666",
+  "pchembl": "8.52",
+  "measured": "EC50 3.0 nM"
+ },
+ {
+  "ok": true,
+  "affinity_kcal_mol": -9.97,
+  "poses": [
+   -9.97,
+   -9.88,
+   -9.12
+  ],
+  "pdb_id": "7D9R",
+  "label": "CHEMBL3939276",
+  "pchembl": "8.70",
+  "measured": "EC50 2.0 nM"
+ },
+ {
+  "ok": true,
+  "affinity_kcal_mol": -9.12,
+  "poses": [
+   -9.12,
+   -7.6,
+   -7.6
+  ],
+  "pdb_id": "7D9R",
+  "label": "CHEMBL4113635",
+  "pchembl": "8.40",
+  "measured": "EC50 4.0 nM"
+ },
+ {
+  "ok": true,
+  "affinity_kcal_mol": -8.59,
+  "poses": [
+   -8.59,
+   -7.96,
+   -7.31
+  ],
+  "pdb_id": "7D9R",
+  "label": "CHEMBL3906941",
+  "pchembl": "8.52",
+  "measured": "EC50 3.0 nM"
+ }
+]

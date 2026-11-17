@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "errors": [],
+ "title": "Rigid Docking Cannot Rank the GRL0617 Series on SARS-CoV-2 PLpro: the 2.67 µM Reference Scores Best and the 42 µM Compound Beats Both Leads",
+ "abstract_chars": 1817,
+ "abstract": "SARS-CoV-2 papain-like protease (PLpro) cleaves the viral polyprotein and strips ubiquitin and ISG15 from host proteins, suppressing type-I interferon — a second viral protease with no approved inhibitor, unlike the main protease (Mpro), which has nirmatrelvir. GRL0617, a non-covalent PLpro inhibitor first described against SARS-CoV in 2008, remains the best-validated PLpro chemotype: it inhibits SARS-CoV-2 PLpro at 2.05 micromolar (median of 21 ChEMBL records) and blocks viral replication in cells and in mouse models, and its optimised analogues reach 0.11–0.67 micromolar. We benchmarked rigid AutoDock Vina docking on the GRL0617-bound structure 7JRN (2.48 angstrom) against five compounds from a single FRET assay (Ma et al. 2021): GRL0617 (2.67 micromolar in this assay) plus four analogues spanning 0.11–42 micromolar. The re-dock control worked — GRL0617 scored −9.90 kcal/mol in its own pocket — but the ranking failed: Spearman rho = −0.15 (n = 5). The weakest compound (42 micromolar) scored third-best (−9.14), beating both named leads Jun9-72-2 (−7.74) and Jun9-84-3 (−8.21), while the most potent analogue (0.11 micromolar) scored second (−9.74). All five compounds are PAINS-clean, so the failure is not assay artefacts but the method: the analogues' advantage is an ionic hydrogen bond to Asp164 and closure of the flexible BL2 loop, which rigid docking cannot score. Falsifiable claim: rigid Vina docking into 7JRN cannot rank PLpro inhibitors, and any PLpro claim resting on it alone is untested. The falsifier is a head-to-head test — run induced-fit docking or MM-GBSA on the same five compounds in the same pocket: if it recovers rho above +0.5 where rigid Vina gives −0.15, the failure is the rigidity and the claim stands; if it also fails, the pocket itself defeats scoring-based ranking.",
+ "keywords": [
+  "SARS-CoV-2",
+  "papain-like protease",
+  "PLpro",
+  "GRL0617",
+  "molecular docking",
+  "AutoDock Vina",
+  "BL2 loop",
+  "antiviral drug discovery"
+ ],
+ "keyword_count": 8,
+ "subject_area": "Medicinal Chemistry / Chemical Biology",
+ "licence": "CC BY 4.0",
+ "author": "Zubair Ali",
+ "orcid": "0009-0001-5921-7509",
+ "affiliation": "SMBBMU, Larkana, Pakistan",
+ "email": "za0153715@gmail.com"
+}

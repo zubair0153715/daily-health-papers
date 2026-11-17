@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "errors": [],
+ "title": "Presatovir Scores −6.15 kcal/mol on Prefusion RSV F (5KWW), but Rigid Docking Cannot Rank RSV Fusion Inhibitors",
+ "abstract_chars": 1698,
+ "abstract": "Respiratory syncytial virus (RSV) caused an estimated 33.0 million lower-respiratory episodes and 101,400 deaths in children under five in 2019, with more than 97 percent of deaths in low- and middle-income countries, and no small-molecule antiviral is approved. Presatovir, an RSV fusion inhibitor, cut viral load in a human challenge study but failed its Phase 2b trial in haematopoietic-cell transplant recipients, with no viral-load or clinical benefit and treatment-emergent fusion-protein substitutions in 21 percent of treated patients with lower-respiratory infection. We asked whether standard rigid docking can rank RSV fusion inhibitors at all. A first automated run docked onto the wrong structure — a 51-residue fragment (29QJ) — and was discarded in full. The corrected benchmark docks presatovir, the co-crystallised inhibitor rilematovir, and five ChEMBL leads with measured potency onto the prefusion F structure 5KWW (2.5 angstrom), at the verified rilematovir-pocket centre. Presatovir scores −6.15 kcal/mol and rilematovir −5.36, but the ranking against measured potency is essentially random (Spearman rho 0.1, n = 5): the most potent measured compound (EC50 0.47 nM) scores −4.94, while presatovir's own ChEMBL record scores best at −6.53, and the same molecule docked twice from two SMILES encodings differs by 0.38 kcal/mol. Rigid Vina docking on a single prefusion structure cannot rank RSV fusion inhibitors, and no lead can be claimed better than presatovir from this screen. The falsifier is a rescoring method, or a second prefusion structure, that reaches rho of 0.5 or above against the same five measured potencies, or a cell assay that reproduces the docking order.",
+ "keywords": [
+  "RSV",
+  "fusion protein",
+  "presatovir",
+  "rilematovir",
+  "molecular docking",
+  "AutoDock Vina",
+  "prefusion F",
+  "antiviral",
+  "ChEMBL"
+ ],
+ "keyword_count": 9,
+ "subject_area": "Medicinal Chemistry / Chemical Biology",
+ "licence": "CC BY 4.0",
+ "author": "Zubair Ali",
+ "orcid": "0009-0001-5921-7509",
+ "affiliation": "SMBBMU, Larkana, Pakistan",
+ "email": "za0153715@gmail.com"
+}

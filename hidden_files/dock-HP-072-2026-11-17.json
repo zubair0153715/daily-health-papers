@@ -1,0 +1,286 @@
+{
+ "ok": true,
+ "topic": "HP-072",
+ "date": "2026-11-17",
+ "target": {
+  "uniprot": "P03420",
+  "protein": "Fusion glycoprotein F0",
+  "organism": "Human respiratory syncytial virus A (strain A2)",
+  "pdb_xrefs": 92,
+  "chembl_target": "CHEMBL3856166",
+  "chembl_target_name": "Fusion glycoprotein F0",
+  "chembl_note": "Exactly 1 ChEMBL target carries component P03420 (verified live 2026-11-17). A text search for 'respiratory syncytial virus fusion' returns CHEMBL2074 (human maltase-glucoamylase) first \u2014 the trap is named, not fallen into."
+ },
+ "structure": {
+  "pdb_id": "5KWW",
+  "title": "Crystal Structure of Inhibitor JNJ-53718678 In Complex with Prefusion RSV F Glycoprotein",
+  "resolution": 2.5,
+  "conformation": "prefusion trimer",
+  "ligand": "6YA = JNJ-53718678 (rilematovir), C21H20ClF3N4O3S, MW 500.9 (PubChem CID 118892432)",
+  "center": [
+   20.6,
+   18.96,
+   19.21
+  ],
+  "center_audit": "dock._ligand_center on the 5KWW PDB file; largest drug-like HETATM group is 6YA (33 atoms), centroid (20.60, 18.96, 19.21). Other groups: NAG glycan (excluded), NHE buffer (13 atoms, smaller), SO4/HOH (junk). Centre verified against the hand-computed 6YA centroid, not hand-rolled.",
+  "source_paper": "Roymans et al. 2017 Nat Commun, PMID 28761099"
+ },
+ "docking": {
+  "status": "completed",
+  "pdb_id": "5KWW",
+  "resolution": 2.5,
+  "center": [
+   20.6,
+   18.96,
+   19.21
+  ],
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "n_poses": 3,
+  "vina": "1.2.7 (LeadForge cached binary)",
+  "protocol": "same as Papers #1/#3",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.53,
+    "poses": [
+     -6.53,
+     -6.44,
+     -6.29
+    ],
+    "pdb_id": "5KWW",
+    "label": "CHEMBL3410450",
+    "role": "ChEMBL lead (RSV F, measured EC50)",
+    "known_activity": {
+     "pchembl": "5.92",
+     "activity": "EC50 1193.0 nM"
+    },
+    "descriptors": {
+     "mw": 532.07,
+     "logp": 2.97,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 125.93,
+     "rotatable": 5,
+     "lipinski_violations": 1,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C24H30ClN7O3S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.15,
+    "poses": [
+     -6.15,
+     -6.09,
+     -5.8
+    ],
+    "pdb_id": "5KWW",
+    "label": "QUERY-presatovir",
+    "role": "reference drug (investigational)",
+    "known_activity": null,
+    "descriptors": {
+     "mw": 532.07,
+     "logp": 2.97,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 125.93,
+     "rotatable": 5,
+     "lipinski_violations": 1,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C24H30ClN7O3S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -5.36,
+    "poses": [
+     -5.36,
+     -5.36,
+     -5.31
+    ],
+    "pdb_id": "5KWW",
+    "label": "CONTROL-rilematovir",
+    "role": "positive control \u2014 co-crystallised ligand of 5KWW",
+    "known_activity": {
+     "pchembl": null,
+     "note": "nanomolar activity (Roymans 2017, PMID 28761099); no single EC50 quoted from the abstract"
+    },
+    "descriptors": {
+     "mw": 500.93,
+     "logp": 3.85,
+     "hbd": 0,
+     "hba": 4,
+     "tpsa": 78.89,
+     "rotatable": 7,
+     "lipinski_violations": 1,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C21H20ClF3N4O3S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -4.94,
+    "poses": [
+     -4.94,
+     -4.89,
+     -4.47
+    ],
+    "pdb_id": "5KWW",
+    "label": "CHEMBL4747540",
+    "role": "ChEMBL lead (RSV F, measured EC50)",
+    "known_activity": {
+     "pchembl": "9.33",
+     "activity": "EC50 0.47 nM"
+    },
+    "descriptors": {
+     "mw": 524.03,
+     "logp": 2.91,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 95.31,
+     "rotatable": 1,
+     "lipinski_violations": 1,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C26H30ClN7O3"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -4.59,
+    "poses": [
+     -4.59,
+     -4.43,
+     -4.27
+    ],
+    "pdb_id": "5KWW",
+    "label": "CHEMBL4779491",
+    "role": "ChEMBL lead (RSV F, measured EC50)",
+    "known_activity": {
+     "pchembl": "8.68",
+     "activity": "EC50 2.1 nM"
+    },
+    "descriptors": {
+     "mw": 536.61,
+     "logp": 1.72,
+     "hbd": 2,
+     "hba": 8,
+     "tpsa": 121.33,
+     "rotatable": 1,
+     "lipinski_violations": 1,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C27H33FN8O3"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -4.55,
+    "poses": [
+     -4.55,
+     -4.54,
+     -4.52
+    ],
+    "pdb_id": "5KWW",
+    "label": "CHEMBL4640616",
+    "role": "ChEMBL lead (RSV F, measured EC50)",
+    "known_activity": {
+     "pchembl": "8.70",
+     "activity": "EC50 2.0 nM"
+    },
+    "descriptors": {
+     "mw": 503.65,
+     "logp": 3.55,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 92.23,
+     "rotatable": 1,
+     "lipinski_violations": 1,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C28H37N7O2"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -4.25,
+    "poses": [
+     -4.25,
+     -4.06,
+     -4.06
+    ],
+    "pdb_id": "5KWW",
+    "label": "CHEMBL4647328",
+    "role": "ChEMBL lead (RSV F, measured EC50)",
+    "known_activity": {
+     "pchembl": "6.36",
+     "activity": "EC50 440.0 nM"
+    },
+    "descriptors": {
+     "mw": 491.64,
+     "logp": 3.41,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 92.23,
+     "rotatable": 2,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "veber_pass": true,
+     "formula": "C27H37N7O2"
+    },
+    "pains": []
+   }
+  ],
+  "spearman_affinity_vs_pchembl": 0.1,
+  "spearman_n": 5
+ },
+ "discarded_run": "dock-HP-072-2026-11-17-WRONG-STRUCTURE.json \u2014 pipeline picked 29QJ (1.32 A), a 51-residue heptad-repeat fragment bound to a double-stapled peptide (MK8), and docked onto the peptide centroid (6.04, 12.10, 85.20). The fragment is not the prefusion trimer and has no presatovir pocket; all its docking scores are discarded. Its leads list (ChEMBL CHEMBL3856166 actives) was verified correct by accession and reused here.",
+ "literature_values": [
+  {
+   "claim": "RSV: 33.0M ALRI episodes, 3.6M hospital admissions, 101,400 deaths in children 0-60 months globally in 2019; >97% of deaths in LMICs",
+   "source": "Li et al. 2022 Lancet, PMID 35598608"
+  },
+  {
+   "claim": "RSV in adults >=60y in high-income countries, 2019: ~5.2M cases, 470,000 hospitalisations, 33,000 in-hospital deaths",
+   "source": "Savic et al. 2023 Influenza Other Respir Viruses, PMID 36369772"
+  },
+  {
+   "claim": "Presatovir Phase 2b LRTI in HCT recipients (NCT02254421): viral-load difference -0.02 log10 copies/mL (95% CI -0.62, 0.57; P = .94); no effect on oxygen-free days, respiratory failure or mortality",
+   "source": "Marty et al. 2020 Clin Infect Dis, PMID 31915807"
+  },
+  {
+   "claim": "Presatovir Phase 2 URTI in HCT recipients: viral-load difference -0.33 log10 (95% CI -0.64, -0.02; P = .040; prespecified alpha 0.01, not significant); LRTC 11.2% vs 19.5% (OR 0.50, P = .11); lymphopenia subgroup LRTC 13.3% vs 64.3% (post hoc, P = .008)",
+   "source": "Chemaly et al. 2020 Clin Infect Dis, PMID 31793991"
+  },
+  {
+   "claim": "Treatment-emergent RSV F substitutions: 6/29 (20.7%) LRTI and 10/89 (11.2%) URTI HCT recipients; V127A present at baseline in 8 subjects; resistance linked to smaller viral-load decreases",
+   "source": "Porter et al. 2020 Antimicrob Agents Chemother, PMID 32071058"
+  },
+  {
+   "claim": "GS-5806 human challenge: viral load 250.7 vs 757.7 log10 PFUe*h/mL (P < .001); mucus 6.9 vs 15.1 g (P = .03)",
+   "source": "DeVincenzo et al. 2014 N Engl J Med, PMID 25140957"
+  },
+  {
+   "claim": "JNJ-53718678 bound to prefusion F (5KWW); nanomolar activity; oral treatment of neonatal lambs inhibits established ALRI even when delayed until visible illness",
+   "source": "Roymans et al. 2017 Nat Commun, PMID 28761099"
+  },
+  {
+   "claim": "Nirsevimab MELODY: 74.5% efficacy (95% CI 49.6-87.1) vs medically attended RSV LRTI; hospitalisation efficacy 62.1% (95% CI -8.6-86.8)",
+   "source": "Hammitt et al. 2022 N Engl J Med, PMID 35235726"
+  },
+  {
+   "claim": "Rilematovir pilot Phase 2a (NCT03379675, n = 66 confirmed RSV): early initiation suggests potential clinical benefit; no clear dose-response (500 mg vs 80 mg)",
+   "source": "Clin Microbiol Infect 2023, PMID 37422079"
+  }
+ ]
+}

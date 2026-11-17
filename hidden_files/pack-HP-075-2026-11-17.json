@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "errors": [],
+ "title": "Riociguat Re-Docks at −9.96 kcal/mol on the Cryo-EM sGC Structure 7D9R, but Two 3 nM Stimulators Score 2.38 kcal/mol Apart",
+ "abstract_chars": 1683,
+ "abstract": "Pulmonary hypertension affects about 1% of the global population, and its treatment rests on the NO–sGC–cGMP pathway: riociguat, the first soluble guanylate cyclase stimulator, sensitises the enzyme to nitric oxide and stimulates it directly, and improved the 6-minute walk distance by 36 m in pulmonary arterial hypertension (PATENT-1) and 46 m in chronic thromboembolic pulmonary hypertension (CHEST-1). We asked whether the standard rigid-docking benchmark of this series can rank sGC stimulators at all, using the riociguat-bound cryo-EM structure 7D9R (3.7 Å) after the pipeline's first run failed on the wrong domain — the ligand-free catalytic structure 4NI2. Riociguat re-docked into its own H-NOX pocket at −9.96 kcal/mol with three poses within 0.06 kcal/mol, and the five most potent ChEMBL leads (cellular EC50 1–4 nM) scored from −10.97 to −8.59. The rank correlation against measured potency was Spearman rho −0.41 (n = 5, standard convention), a moderate correct-direction correlation that does not reach the pre-stated refutation threshold of −0.5 — and the table itself shows why: the two compounds with the identical measured EC50 of 3 nM score 2.38 kcal/mol apart, the best and the worst of the five. Falsifiable claim: rigid Vina docking on a single cryo-EM structure cannot rank sGC stimulators whose potencies span less than its own noise. Falsifier: a rescoring method, or a second structure, that reaches rho −0.5 or below against the same five EC50s, or a head-to-head cellular assay that reproduces the docking order. The screen's value is the calibration, not the table: the next sGC stimulator should be judged by a cellular assay, not by a docking score.",
+ "keywords": [
+  "soluble guanylate cyclase",
+  "riociguat",
+  "pulmonary hypertension",
+  "vericiguat",
+  "molecular docking",
+  "AutoDock Vina",
+  "cryo-EM",
+  "heart failure",
+  "ChEMBL"
+ ],
+ "keyword_count": 9,
+ "subject_area": "Medicinal Chemistry / Chemical Biology",
+ "licence": "CC BY 4.0",
+ "author": "Zubair Ali",
+ "orcid": "0009-0001-5921-7509",
+ "affiliation": "SMBBMU, Larkana, Pakistan",
+ "email": "za0153715@gmail.com"
+}

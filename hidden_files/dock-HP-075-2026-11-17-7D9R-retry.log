@@ -1,0 +1,27 @@
+7D9R HETATM groups: {'G2P': 32, 'MG': 2, 'HEM': 43, 'GZO': 31}
+GZO (riociguat) centroid: [110.71, 116.48, 123.08]
+HEM centroid: [101.84, 115.59, 114.22]
+G2P (GTP analogue) centroid: [179.35, 125.6, 124.65]
+GZO-HEM distance (A): 12.57
+GZO-G2P distance (A): 69.26
+PIPELINE _ligand_center would pick: [179.35, 125.6, 124.65] -> distance to GZO centroid: 69.26 A (WRONG SITE if > 5 A)
+QUERY: QUERY MW 422.42 SMILES: CN(C1=C(N=C(N=C1N)C2=NN(C3=C2C=CC=N3)CC4=CC=CC=C4F)N)C(=O)OC
+  lead: CHEMBL3892047 pChEMBL 9.00 EC50 1.0 nM
+  lead: CHEMBL3976666 pChEMBL 8.52 EC50 3.0 nM
+  lead: CHEMBL4113635 pChEMBL 8.40 EC50 4.0 nM
+  lead: CHEMBL3906941 pChEMBL 8.52 EC50 3.0 nM
+  lead: CHEMBL3939276 pChEMBL 8.70 EC50 2.0 nM
+RESUMED from partial: /home/hatch/workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/hidden_files/dock-HP-075-2026-11-17-7D9R-partial.json already docked: ['QUERY', 'CHEMBL3892047', 'CHEMBL3976666', 'CHEMBL3939276']
+  skip (already docked): QUERY
+  skip (already docked): CHEMBL3892047
+  skip (already docked): CHEMBL3976666
+  dock 7D9R CHEMBL4113635 -> -9.12 [-9.12, -7.6, -7.6] ok: True
+  CHECKPOINT saved: /home/hatch/workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/hidden_files/dock-HP-075-2026-11-17-7D9R-partial.json
+  dock 7D9R CHEMBL3906941 -> -8.59 [-8.59, -7.96, -7.31] ok: True
+  CHECKPOINT saved: /home/hatch/workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/hidden_files/dock-HP-075-2026-11-17-7D9R-partial.json
+  skip (already docked): CHEMBL3939276
+SPEARMAN rho (standard, n=5, ChEMBL leads only): -0.41
+  vina order: ['CHEMBL3976666', 'CHEMBL3892047', 'CHEMBL3939276', 'CHEMBL4113635', 'CHEMBL3906941']
+  measured order: ['CHEMBL3892047', 'CHEMBL3939276', 'CHEMBL3976666', 'CHEMBL3906941', 'CHEMBL4113635']
+  paired (affinity, pChEMBL): [('CHEMBL3976666', -10.97, '8.52'), ('CHEMBL3892047', -10.86, '9.00'), ('CHEMBL3939276', -9.97, '8.70'), ('CHEMBL4113635', -9.12, '8.40'), ('CHEMBL3906941', -8.59, '8.52')]
+RAW_SAVED: /home/hatch/workspace/goals/pharmacy-research-paper-team-daily-digest-and-manuscripts/hidden_files/dock-HP-075-2026-11-17-7D9R.json

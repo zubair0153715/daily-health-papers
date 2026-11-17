@@ -1,0 +1,509 @@
+{
+ "ok": true,
+ "topic": "HP-067",
+ "date": "2026-11-17",
+ "target": {
+  "uniprot": "Q8I406",
+  "protein": "1-phosphatidylinositol 4-kinase",
+  "organism": "Plasmodium falciparum (isolate 3D7)",
+  "pdb_xrefs": 0,
+  "chembl_target": null,
+  "chembl_targets_by_accession": {
+   "ok": true,
+   "data": []
+  },
+  "chembl_note": "No ChEMBL target carries component Q8I406 (verified live 2026-11-17); the 7 PI4K targets in ChEMBL are human/bovine."
+ },
+ "docking": {
+  "status": "skipped",
+  "pdb_id": null,
+  "reason": "No experimental structure for PfPI4K (Q8I406): no PDB cross-reference in UniProt, no RCSB entry. Docking a homology model was not done; the paper says so honestly."
+ },
+ "discarded_run": "dock-HP-067-2026-11-17-WRONG-TARGET.json \u2014 pipeline resolved the target to CHEMBL2074 (human maltase-glucoamylase) and returned maltase ligands; discarded.",
+ "human_pi4k_selectivity_context": {
+  "human PI4KA": {
+   "chembl_target": "CHEMBL3667",
+   "bioactivities_pchembl_ge5": 48,
+   "top": [
+    {
+     "chembl": "CHEMBL3121323",
+     "pchembl": "9.50",
+     "type": "IC50",
+     "value": "0.3162",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL3121314",
+     "pchembl": "9.10",
+     "type": "IC50",
+     "value": "0.7943",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL3121322",
+     "pchembl": "9.00",
+     "type": "IC50",
+     "value": "1.0",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL3121319",
+     "pchembl": "9.00",
+     "type": "IC50",
+     "value": "1.0",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL3600785",
+     "pchembl": "9.00",
+     "type": "IC50",
+     "value": "1.0",
+     "units": "nM"
+    }
+   ]
+  },
+  "human PI4KB": {
+   "chembl_target": "CHEMBL3268",
+   "bioactivities_pchembl_ge5": 45,
+   "top": [
+    {
+     "chembl": "CHEMBL3923414",
+     "pchembl": "9.01",
+     "type": "IC50",
+     "value": "0.98",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL4205416",
+     "pchembl": "8.70",
+     "type": "IC50",
+     "value": "2.0",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL3930509",
+     "pchembl": "8.62",
+     "type": "IC50",
+     "value": "2.4",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL3936684",
+     "pchembl": "8.43",
+     "type": "Kd",
+     "value": "3.7",
+     "units": "nM"
+    },
+    {
+     "chembl": "CHEMBL5618321",
+     "pchembl": "8.40",
+     "type": "IC50",
+     "value": "4.0",
+     "units": "nM"
+    }
+   ]
+  }
+ },
+ "query_compound": {
+  "label": "MMV390048",
+  "pubchem_cid": 53311393,
+  "smiles": "CS(=O)(=O)C1=CC=C(C=C1)C2=CC(=C(N=C2)N)C3=CN=C(C=C3)C(F)(F)F",
+  "descriptors": {
+   "mw": 393.39,
+   "logp": 3.82,
+   "hbd": 1,
+   "hba": 5,
+   "tpsa": 85.94,
+   "rotatable": 3,
+   "lipinski_violations": 0,
+   "lipinski_pass": true,
+   "veber_pass": true,
+   "formula": "C18H14F3N3O2S"
+  },
+  "pains": [],
+  "tox": {
+   "ok": true,
+   "mode": "knn_readacross",
+   "k": 15,
+   "max_similarity": 0.382,
+   "neighbors": [
+    {
+     "smiles": "Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1",
+     "similarity": 0.382
+    },
+    {
+     "smiles": "Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+     "similarity": 0.322
+    },
+    {
+     "smiles": "CS(=O)(=O)c1ccc(Cl)cc1",
+     "similarity": 0.302
+    },
+    {
+     "smiles": "CS(=O)(=O)c1ccc(-c2cn3ccccc3n2)cc1",
+     "similarity": 0.286
+    },
+    {
+     "smiles": "Cc1cnc(NS(=O)(=O)c2ccc(N)cc2)nc1",
+     "similarity": 0.283
+    }
+   ],
+   "assays": {
+    "NR-AR": 0.0,
+    "NR-AR-LBD": 0.0,
+    "NR-AhR": 0.0,
+    "NR-Aromatase": 0.0,
+    "NR-ER": 0.172,
+    "NR-ER-LBD": 0.094,
+    "NR-PPAR-gamma": 0.0,
+    "SR-ARE": 0.093,
+    "SR-ATAD5": 0.0,
+    "SR-HSE": 0.0,
+    "SR-MMP": 0.0,
+    "SR-p53": 0.0
+   }
+  }
+ },
+ "analogues_top5": [
+  {
+   "pubchem_cid": 53311393,
+   "smiles": "CS(=O)(=O)C1=CC=C(C=C1)C2=CC(=C(N=C2)N)C3=CN=C(C=C3)C(F)(F)F",
+   "iupac_name": "5-(4-methylsulfonylphenyl)-3-[6-(trifluoromethyl)-3-pyridinyl]pyridin-2-amine",
+   "tanimoto_vs_mmv390048": 1.0,
+   "descriptors": {
+    "mw": 393.39,
+    "logp": 3.82,
+    "hbd": 1,
+    "hba": 5,
+    "tpsa": 85.94,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C18H14F3N3O2S"
+   },
+   "pains": [],
+   "tox": {
+    "ok": true,
+    "mode": "knn_readacross",
+    "k": 15,
+    "max_similarity": 0.382,
+    "neighbors": [
+     {
+      "smiles": "Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1",
+      "similarity": 0.382
+     },
+     {
+      "smiles": "Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+      "similarity": 0.322
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(Cl)cc1",
+      "similarity": 0.302
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(-c2cn3ccccc3n2)cc1",
+      "similarity": 0.286
+     },
+     {
+      "smiles": "Cc1cnc(NS(=O)(=O)c2ccc(N)cc2)nc1",
+      "similarity": 0.283
+     }
+    ],
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.172,
+     "NR-ER-LBD": 0.094,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.093,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pfpi4k_activity": "UNKNOWN - no published PfPI4K measurement found; do not treat as a lead"
+  },
+  {
+   "pubchem_cid": 53311566,
+   "smiles": "CS(=O)(=O)C1=CC=C(C=C1)C2=CC(=C(N=C2)N)C3=CC=C(C=C3)C(F)(F)F",
+   "iupac_name": "5-(4-methylsulfonylphenyl)-3-[4-(trifluoromethyl)phenyl]pyridin-2-amine",
+   "tanimoto_vs_mmv390048": 0.791,
+   "descriptors": {
+    "mw": 392.4,
+    "logp": 4.42,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 73.05,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H15F3N2O2S"
+   },
+   "pains": [],
+   "tox": {
+    "ok": true,
+    "mode": "knn_readacross",
+    "k": 15,
+    "max_similarity": 0.4,
+    "neighbors": [
+     {
+      "smiles": "Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1",
+      "similarity": 0.4
+     },
+     {
+      "smiles": "O=C(O)c1ccccc1-c1ccc(C(F)(F)F)cc1",
+      "similarity": 0.314
+     },
+     {
+      "smiles": "CS(=O)(=O)c1cc(C(F)(F)F)ccc1C(=O)c1cnoc1C1CC1",
+      "similarity": 0.297
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(Cl)cc1",
+      "similarity": 0.295
+     },
+     {
+      "smiles": "Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+      "similarity": 0.295
+     }
+    ],
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.162,
+     "NR-ER-LBD": 0.086,
+     "NR-PPAR-gamma": 0.099,
+     "SR-ARE": 0.085,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.075,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pfpi4k_activity": "UNKNOWN - no published PfPI4K measurement found; do not treat as a lead"
+  },
+  {
+   "pubchem_cid": 53312146,
+   "smiles": "CS(=O)(=O)C1=CC=C(C=C1)C2=CC(=C(N=C2)N)C3=CC=C(C=C3)S(=O)(=O)C",
+   "iupac_name": "3,5-bis(4-methylsulfonylphenyl)pyridin-2-amine",
+   "tanimoto_vs_mmv390048": 0.769,
+   "descriptors": {
+    "mw": 402.5,
+    "logp": 2.8,
+    "hbd": 1,
+    "hba": 6,
+    "tpsa": 107.19,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H18N2O4S2"
+   },
+   "pains": [],
+   "tox": {
+    "ok": true,
+    "mode": "knn_readacross",
+    "k": 15,
+    "max_similarity": 0.468,
+    "neighbors": [
+     {
+      "smiles": "Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1",
+      "similarity": 0.468
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(Cl)cc1",
+      "similarity": 0.361
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(-c2cn3ccccc3n2)cc1",
+      "similarity": 0.327
+     },
+     {
+      "smiles": "Cc1cnc(NS(=O)(=O)c2ccc(N)cc2)nc1",
+      "similarity": 0.326
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(C2=C(c3ccccc3)C(=O)OC2)cc1",
+      "similarity": 0.312
+     }
+    ],
+    "assays": {
+     "NR-AR": 0.07,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.075,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pfpi4k_activity": "UNKNOWN - no published PfPI4K measurement found; do not treat as a lead"
+  },
+  {
+   "pubchem_cid": 53259031,
+   "smiles": "CS(=O)(=O)C1=CC=C(C=C1)C2=CC(=C(N=C2)N)C3=CC(=CC=C3)C(F)(F)F",
+   "iupac_name": "5-(4-methylsulfonylphenyl)-3-[3-(trifluoromethyl)phenyl]pyridin-2-amine",
+   "tanimoto_vs_mmv390048": 0.723,
+   "descriptors": {
+    "mw": 392.4,
+    "logp": 4.42,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 73.05,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C19H15F3N2O2S"
+   },
+   "pains": [],
+   "tox": {
+    "ok": true,
+    "mode": "knn_readacross",
+    "k": 15,
+    "max_similarity": 0.375,
+    "neighbors": [
+     {
+      "smiles": "Cn1cc(-c2ccccc2)c(=O)c(-c2cccc(C(F)(F)F)c2)c1",
+      "similarity": 0.375
+     },
+     {
+      "smiles": "Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1",
+      "similarity": 0.35
+     },
+     {
+      "smiles": "Nc1cccc(C(F)(F)F)c1",
+      "similarity": 0.34
+     },
+     {
+      "smiles": "O=C(O)c1cccc(C(F)(F)F)c1",
+      "similarity": 0.314
+     },
+     {
+      "smiles": "O=[N+]([O-])c1cccc(C(F)(F)F)c1",
+      "similarity": 0.308
+     }
+    ],
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.142,
+     "NR-Aromatase": 0.084,
+     "NR-ER": 0.142,
+     "NR-ER-LBD": 0.072,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.077,
+     "SR-ATAD5": 0.071,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.084,
+     "SR-p53": 0.0
+    }
+   },
+   "pfpi4k_activity": "UNKNOWN - no published PfPI4K measurement found; do not treat as a lead"
+  },
+  {
+   "pubchem_cid": 57384535,
+   "smiles": "CC1=C(C=C(C=C1)C2=C(N=CC(=C2)C3=CC=C(C=C3)S(=O)(=O)C)N)C(F)(F)F",
+   "iupac_name": "5-(4-methylsulfonylphenyl)-3-[4-methyl-3-(trifluoromethyl)phenyl]pyridin-2-amine",
+   "tanimoto_vs_mmv390048": 0.723,
+   "descriptors": {
+    "mw": 406.43,
+    "logp": 4.73,
+    "hbd": 1,
+    "hba": 4,
+    "tpsa": 73.05,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C20H17F3N2O2S"
+   },
+   "pains": [],
+   "tox": {
+    "ok": true,
+    "mode": "knn_readacross",
+    "k": 15,
+    "max_similarity": 0.373,
+    "neighbors": [
+     {
+      "smiles": "Cc1ccc(-c2ncc(Cl)cc2-c2ccc(S(C)(=O)=O)cc2)cn1",
+      "similarity": 0.373
+     },
+     {
+      "smiles": "Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+      "similarity": 0.297
+     },
+     {
+      "smiles": "Cc1cnc(NS(=O)(=O)c2ccc(N)cc2)nc1",
+      "similarity": 0.281
+     },
+     {
+      "smiles": "CS(=O)(=O)c1ccc(Cl)cc1",
+      "similarity": 0.271
+     },
+     {
+      "smiles": "Nc1ccc2cc(S(=O)(=O)[O-])cc(O)c2c1/N=N/c1ccccc1C(F)(F)F",
+      "similarity": 0.264
+     }
+    ],
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.186,
+     "NR-ER-LBD": 0.098,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.083,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pfpi4k_activity": "UNKNOWN - no published PfPI4K measurement found; do not treat as a lead"
+  }
+ ],
+ "literature_values": [
+  {
+   "claim": "MMV390048 P. falciparum NF54 IC50 28 nM, IC90 40 nM; PRR 2.7 log10 per 48 h cycle",
+   "source": "Paquet et al. 2017 Sci Transl Med 9(387):eaad9735, PMID 28446690"
+  },
+  {
+   "claim": "MMV390048 gametocyte (late-stage IV-V) IC50 285 nM; SCID mouse ED90 0.57 mg/kg (day 7)",
+   "source": "Paquet et al. 2017, PMID 28446690"
+  },
+  {
+   "claim": "PfPI4K resistance mutations H1484Y IC50 62.8 nM, S1320L 57.7 nM vs Dd2 parent 22.7 nM",
+   "source": "Paquet et al. 2017, PMID 28446690"
+  },
+  {
+   "claim": "No binding to human PI4KA (P42356) / PI4KB (Q9UBF8); human PIP4K2C similar affinity to PfPI4K; ATM/TNIK low affinity",
+   "source": "Paquet et al. 2017, PMID 28446690"
+  },
+  {
+   "claim": "Phase 1: single oral dose up to 120 mg generally well tolerated; long half-life; IBSM recrudescence at subtherapeutic 20 mg",
+   "source": "Barnes et al. 2020 Antimicrob Agents Chemother, PMID 31932368"
+  },
+  {
+   "claim": "Phase 2a Ethiopia (P. vivax): single 120 mg, 8/8 ACPR day 14; asexual cleared by 66 h, gametocytes by 78 h; study not completed (operational reasons + emerging teratotoxicity data)",
+   "source": "Am J Trop Med Hyg 2023, PMID 36509063"
+  },
+  {
+   "claim": "Malarial PI4K inhibitor induced diaphragmatic hernias in rat; potential link with mammalian kinase inhibition",
+   "source": "Birth Defects Res 2022, PMID 35416431"
+  }
+ ]
+}

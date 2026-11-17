@@ -1,0 +1,464 @@
+{
+  "ok": true,
+  "topic": "HP-080",
+  "date": "2026-11-17",
+  "target": {
+    "uniprot": "P52699",
+    "protein": "Metallo-beta-lactamase IMP-1",
+    "organism": "Serratia marcescens",
+    "chembl_target": "CHEMBL4105964"
+  },
+  "compounds": [
+    {
+      "label": "d-captopril",
+      "smiles": "C[C@H](CS)C(=O)N1CCC[C@@H]1C(=O)O",
+      "cip": "(R,S)",
+      "ic50_uM": 7.2,
+      "source": "Brem et al. 2016 AAC 60:142-150 Table 1",
+      "rank": 1,
+      "descriptors": {
+        "mw": 217.29,
+        "logp": 0.63,
+        "hbd": 2,
+        "hba": 3,
+        "tpsa": 57.61,
+        "rotatable": 3,
+        "lipinski_violations": 0,
+        "lipinski_pass": true,
+        "veber_pass": true,
+        "formula": "C9H15NO3S"
+      },
+      "pains": [],
+      "tox": {
+        "mode": "measured",
+        "max_similarity": 1.0,
+        "assays": {
+          "NR-AR": null,
+          "NR-AR-LBD": null,
+          "NR-AhR": null,
+          "NR-Aromatase": null,
+          "NR-ER": null,
+          "NR-ER-LBD": null,
+          "NR-PPAR-gamma": null,
+          "SR-ARE": 0,
+          "SR-ATAD5": null,
+          "SR-HSE": 0,
+          "SR-MMP": null,
+          "SR-p53": null
+        }
+      },
+      "lead_score": 100.0,
+      "score_detail": {
+        "similarity_40": 40.0,
+        "lipinski_20": 20,
+        "veber_10": 10,
+        "pains_clean_10": 10,
+        "tox_low_20": 20.0
+      }
+    },
+    {
+      "label": "epi-d-captopril",
+      "smiles": "C[C@@H](CS)C(=O)N1CCC[C@@H]1C(=O)O",
+      "cip": "(R,R)",
+      "ic50_uM": 173.2,
+      "source": "Brem et al. 2016 AAC 60:142-150 Table 1",
+      "rank": 2,
+      "descriptors": {
+        "mw": 217.29,
+        "logp": 0.63,
+        "hbd": 2,
+        "hba": 3,
+        "tpsa": 57.61,
+        "rotatable": 3,
+        "lipinski_violations": 0,
+        "lipinski_pass": true,
+        "veber_pass": true,
+        "formula": "C9H15NO3S"
+      },
+      "pains": [],
+      "tox": {
+        "mode": "measured",
+        "max_similarity": 1.0,
+        "assays": {
+          "NR-AR": null,
+          "NR-AR-LBD": null,
+          "NR-AhR": null,
+          "NR-Aromatase": null,
+          "NR-ER": null,
+          "NR-ER-LBD": null,
+          "NR-PPAR-gamma": null,
+          "SR-ARE": 0,
+          "SR-ATAD5": null,
+          "SR-HSE": 0,
+          "SR-MMP": null,
+          "SR-p53": null
+        }
+      },
+      "lead_score": 100.0,
+      "score_detail": {
+        "similarity_40": 40.0,
+        "lipinski_20": 20,
+        "veber_10": 10,
+        "pains_clean_10": 10,
+        "tox_low_20": 20.0
+      }
+    },
+    {
+      "label": "l-captopril",
+      "smiles": "C[C@H](CS)C(=O)N1CCC[C@H]1C(=O)O",
+      "cip": "(S,S)",
+      "ic50_uM": 23.3,
+      "source": "Brem et al. 2016 AAC 60:142-150 Table 1",
+      "rank": 3,
+      "descriptors": {
+        "mw": 217.29,
+        "logp": 0.63,
+        "hbd": 2,
+        "hba": 3,
+        "tpsa": 57.61,
+        "rotatable": 3,
+        "lipinski_violations": 0,
+        "lipinski_pass": true,
+        "veber_pass": true,
+        "formula": "C9H15NO3S"
+      },
+      "pains": [],
+      "tox": {
+        "mode": "measured",
+        "max_similarity": 1.0,
+        "assays": {
+          "NR-AR": null,
+          "NR-AR-LBD": null,
+          "NR-AhR": null,
+          "NR-Aromatase": null,
+          "NR-ER": null,
+          "NR-ER-LBD": null,
+          "NR-PPAR-gamma": null,
+          "SR-ARE": 0,
+          "SR-ATAD5": null,
+          "SR-HSE": 0,
+          "SR-MMP": null,
+          "SR-p53": null
+        }
+      },
+      "lead_score": 100.0,
+      "score_detail": {
+        "similarity_40": 40.0,
+        "lipinski_20": 20,
+        "veber_10": 10,
+        "pains_clean_10": 10,
+        "tox_low_20": 20.0
+      }
+    },
+    {
+      "label": "epi-l-captopril",
+      "smiles": "C[C@@H](CS)C(=O)N1CCC[C@H]1C(=O)O",
+      "cip": "(S,R)",
+      "ic50_uM": 436.0,
+      "source": "Brem et al. 2016 AAC 60:142-150 Table 1",
+      "rank": 4,
+      "descriptors": {
+        "mw": 217.29,
+        "logp": 0.63,
+        "hbd": 2,
+        "hba": 3,
+        "tpsa": 57.61,
+        "rotatable": 3,
+        "lipinski_violations": 0,
+        "lipinski_pass": true,
+        "veber_pass": true,
+        "formula": "C9H15NO3S"
+      },
+      "pains": [],
+      "tox": {
+        "mode": "measured",
+        "max_similarity": 1.0,
+        "assays": {
+          "NR-AR": null,
+          "NR-AR-LBD": null,
+          "NR-AhR": null,
+          "NR-Aromatase": null,
+          "NR-ER": null,
+          "NR-ER-LBD": null,
+          "NR-PPAR-gamma": null,
+          "SR-ARE": 0,
+          "SR-ATAD5": null,
+          "SR-HSE": 0,
+          "SR-MMP": null,
+          "SR-p53": null
+        }
+      },
+      "lead_score": 100.0,
+      "score_detail": {
+        "similarity_40": 40.0,
+        "lipinski_20": 20,
+        "veber_10": 10,
+        "pains_clean_10": 10,
+        "tox_low_20": 20.0
+      }
+    },
+    {
+      "label": "CHEMBL4068259 (3AP-DPA)",
+      "smiles": "Nc1cccc(-c2cc(C(=O)O)nc(C(=O)O)c2)c1",
+      "cip": null,
+      "ic50_uM": 0.24,
+      "source": "ChEMBL CHEMBL4105964 IC50 240 nM",
+      "rank": 5,
+      "descriptors": {
+        "mw": 258.23,
+        "logp": 1.73,
+        "hbd": 3,
+        "hba": 4,
+        "tpsa": 113.51,
+        "rotatable": 3,
+        "lipinski_violations": 0,
+        "lipinski_pass": true,
+        "veber_pass": true,
+        "formula": "C13H10N2O4"
+      },
+      "pains": [],
+      "tox": {
+        "mode": "knn_readacross",
+        "max_similarity": 0.5,
+        "assays": {
+          "NR-AR": 0.0,
+          "NR-AR-LBD": 0.0,
+          "NR-AhR": 0.094,
+          "NR-Aromatase": 0.0,
+          "NR-ER": 0.147,
+          "NR-ER-LBD": 0.062,
+          "NR-PPAR-gamma": 0.067,
+          "SR-ARE": 0.0,
+          "SR-ATAD5": 0.0,
+          "SR-HSE": 0.0,
+          "SR-MMP": 0.086,
+          "SR-p53": 0.0
+        }
+      },
+      "lead_score": 99.2,
+      "score_detail": {
+        "similarity_40": 40.0,
+        "lipinski_20": 20,
+        "veber_10": 10,
+        "pains_clean_10": 10,
+        "tox_low_20": 19.2
+      }
+    },
+    {
+      "label": "CHEMBL284104 (DPA)",
+      "smiles": "O=C(O)c1cccc(C(=O)O)n1",
+      "cip": null,
+      "ic50_uM": 3.03,
+      "source": "ChEMBL CHEMBL4105964 IC50 3030 nM",
+      "rank": 6,
+      "descriptors": {
+        "mw": 167.12,
+        "logp": 0.48,
+        "hbd": 2,
+        "hba": 3,
+        "tpsa": 87.49,
+        "rotatable": 2,
+        "lipinski_violations": 0,
+        "lipinski_pass": true,
+        "veber_pass": true,
+        "formula": "C7H5NO4"
+      },
+      "pains": [],
+      "tox": {
+        "mode": "measured",
+        "max_similarity": 1.0,
+        "assays": {
+          "NR-AR": 0,
+          "NR-AR-LBD": 0,
+          "NR-AhR": 0,
+          "NR-Aromatase": 0,
+          "NR-ER": 0,
+          "NR-ER-LBD": 0,
+          "NR-PPAR-gamma": 0,
+          "SR-ARE": null,
+          "SR-ATAD5": 0,
+          "SR-HSE": 0,
+          "SR-MMP": 0,
+          "SR-p53": 0
+        }
+      },
+      "lead_score": 100.0,
+      "score_detail": {
+        "similarity_40": 40.0,
+        "lipinski_20": 20,
+        "veber_10": 10,
+        "pains_clean_10": 10,
+        "tox_low_20": 20.0
+      }
+    }
+  ],
+  "pipeline_pick": {
+    "pdb_id": "6JED",
+    "resolution": 1.57,
+    "center": [
+      16.0876,
+      -9.169933333333335,
+      24.875133333333334
+    ]
+  },
+  "dock_4C1G": {
+    "pdb_id": "4C1G",
+    "resolution": 1.71,
+    "center": [
+      12.76,
+      -8.33,
+      -17.59
+    ],
+    "results": [
+      {
+        "ok": true,
+        "affinity_kcal_mol": -7.42,
+        "poses": [
+          -7.42,
+          -7.39,
+          -7.37
+        ],
+        "pdb_id": "4C1G",
+        "label": "CHEMBL4068259 (3AP-DPA)"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -6.5,
+        "poses": [
+          -6.5,
+          -6.47,
+          -5.86
+        ],
+        "pdb_id": "4C1G",
+        "label": "CHEMBL284104 (DPA)"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.98,
+        "poses": [
+          -5.98,
+          -5.93,
+          -5.72
+        ],
+        "pdb_id": "4C1G",
+        "label": "epi-l-captopril"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.97,
+        "poses": [
+          -5.97,
+          -5.93,
+          -5.87
+        ],
+        "pdb_id": "4C1G",
+        "label": "d-captopril"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.93,
+        "poses": [
+          -5.93,
+          -5.82,
+          -5.56
+        ],
+        "pdb_id": "4C1G",
+        "label": "l-captopril"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.9,
+        "poses": [
+          -5.9,
+          -5.7,
+          -5.66
+        ],
+        "pdb_id": "4C1G",
+        "label": "epi-d-captopril"
+      }
+    ]
+  },
+  "dock_pipeline_pick": {
+    "pdb_id": "6JED",
+    "resolution": 1.57,
+    "center": [
+      16.09,
+      -9.17,
+      24.88
+    ],
+    "results": [
+      {
+        "ok": true,
+        "affinity_kcal_mol": -7.12,
+        "poses": [
+          -7.12,
+          -7.08,
+          -7.0
+        ],
+        "pdb_id": "6JED",
+        "label": "CHEMBL4068259 (3AP-DPA)"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -6.05,
+        "poses": [
+          -6.05,
+          -6.05,
+          -5.79
+        ],
+        "pdb_id": "6JED",
+        "label": "CHEMBL284104 (DPA)"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.93,
+        "poses": [
+          -5.93,
+          -5.63,
+          -5.6
+        ],
+        "pdb_id": "6JED",
+        "label": "epi-l-captopril"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.68,
+        "poses": [
+          -5.68,
+          -5.62,
+          -5.58
+        ],
+        "pdb_id": "6JED",
+        "label": "d-captopril"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.67,
+        "poses": [
+          -5.67,
+          -5.65,
+          -5.53
+        ],
+        "pdb_id": "6JED",
+        "label": "l-captopril"
+      },
+      {
+        "ok": true,
+        "affinity_kcal_mol": -5.66,
+        "poses": [
+          -5.66,
+          -5.45,
+          -5.02
+        ],
+        "pdb_id": "6JED",
+        "label": "epi-d-captopril"
+      }
+    ]
+  },
+  "spearman_rho_4C1G": -0.6571428571428571,
+  "notes": [
+    "Receptor prep keeps ATOM records only: the two catalytic Zn(II) ions are stripped, so Vina scores metal-chelating inhibitors on shape alone.",
+    "4C1G is the IMP-1/d-captopril complex (Brem et al. 2016); d-captopril re-dock is the control.",
+    "IC50s: captopril stereoisomers Brem et al. 2016 AAC 60:142-150 Table 1; 3AP-DPA/DPA ChEMBL CHEMBL4105964 (240 nM / 3030 nM)."
+  ]
+}
