@@ -1,15 +1,17 @@
-# Multi-target computational triage of known bioactive chemical space against seven disease targets (week of 2-8 Nov 2026)
+# Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking (week of 2–8 Nov 2026)
 
 **AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification.**
 
 **Author:** Zubair Ali, Pharm-D student, SMBBMU Larkana, Pakistan · **Drafting assistant:** Lapis (AI)
 
+## Week of 2026-11-02 → 2026-11-08 (7 daily targets)
 
-**DRAFT ONLY — not submitted anywhere. Journal submission is the user's action under his name.**
+**STATUS: DRAFT ONLY — never submit. Journal submission is Zubair's action under his own name.**
 
-## Title (working)
+---
 
-Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking
+## Proposed title (placeholder)
+"Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking"
 
 ## Abstract
 
@@ -51,7 +53,6 @@ The week's strongest single result is CHEMBL5816906 against menin: a scaffold-di
 - LeadForge pipeline: run_pipeline + dock_leads (centre-fix audit, Nov 2026). Individual daily reports: `leadforge-daily-{FLT3,PfATP4,LpxC,AChE,IDH1,BTK,MEN1}-2026-11-0{2..8}.md`.
 
 *DRAFT ONLY — compiled 2026-11-08 from the week's seven daily LeadForge reports. Not submitted anywhere. Computational triage only; no cure or treatment claims.*
-
 
 ---
 
