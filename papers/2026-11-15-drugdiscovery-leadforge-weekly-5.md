@@ -1,15 +1,17 @@
-# Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking (week of 9-15 Nov 2026)
+# Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking (week of 9–15 Nov 2026)
 
 **AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification.**
 
 **Author:** Zubair Ali, Pharm-D student, SMBBMU Larkana, Pakistan · **Drafting assistant:** Lapis (AI)
 
+## Week of 2026-11-09 → 2026-11-15 (7 daily targets)
 
-**DRAFT ONLY — not submitted anywhere. Journal submission is the user's action under his name.**
+**STATUS: DRAFT ONLY — never submit. Journal submission is Zubair's action under his own name.**
 
-## Title (working)
+---
 
-Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking
+## Proposed title (placeholder)
+"Multi-target computational triage of known bioactive chemical space against seven disease targets: similarity screening, ADMET/toxicity read-across and AutoDock Vina docking"
 
 ## Abstract
 
