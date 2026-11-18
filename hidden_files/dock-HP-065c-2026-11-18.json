@@ -1,0 +1,78 @@
+{
+ "ok": true,
+ "pdb_id": "5BS8",
+ "resolution": 2.4,
+ "pdb_title": "Crystal structure and stability of gyrase-fluoroquinolone cleaved complexes from Mycobacterium tuberculosis",
+ "co_crystallised_ligand": "MFX (moxifloxacin)",
+ "center": [
+  40.101615384615386,
+  2.9225576923076924,
+  22.414576923076922
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Corrected centre: centroid of co-crystallised moxifloxacin in 5BS8. Pipeline first docked on 3M4I (GyrB TOPRIM domain fragment) \u2014 wrong site for a fluoroquinolone; those scores are discarded. Mg2+ ions dropped by receptor prep; DNA chains retained (ATOM records).",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.87,
+   "poses": [
+    -10.87,
+    -10.66,
+    -10.63
+   ],
+   "pdb_id": "5BS8",
+   "label": "CHEMBL4250651",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.68,
+   "poses": [
+    -10.68,
+    -10.49,
+    -10.24
+   ],
+   "pdb_id": "5BS8",
+   "label": "CHEMBL4238919",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.41,
+   "poses": [
+    -10.41,
+    -10.13,
+    -9.84
+   ],
+   "pdb_id": "5BS8",
+   "label": "CHEMBL3286436",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.37,
+   "poses": [
+    -10.37,
+    -9.95,
+    -9.91
+   ],
+   "pdb_id": "5BS8",
+   "label": "CHEMBL3403255",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.38,
+   "poses": [
+    -9.38,
+    -9.03,
+    -9.0
+   ],
+   "pdb_id": "5BS8",
+   "label": "QUERY",
+   "rank": 1
+  }
+ ]
+}

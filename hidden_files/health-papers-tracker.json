@@ -882,6 +882,66 @@
    "status": "drafted",
    "draft_url": null,
    "note": "Subagent-written. Target verified: CHEMBL2111348 (sGC complex). First pipeline run FAILED docking on 4NI2 (ligand-free catalytic domain, no_ligand_site); first corrected-driver run KILLED by runtime SIGTERM at ~43 min before writing JSON (no checkpointing) \u2014 re-run by subagent with per-dock checkpointing. Corrected dock on 7D9R 3.7 A cryo-EM at GZO (riociguat) centroid [110.71, 116.48, 123.08]. Riociguat re-dock -9.96; leads -10.97 to -8.59; rho -0.41 (n=5, standard Spearman, verified). Two leads (CHEMBL4113635, CHEMBL3906941) failed first dock, succeeded on retry (-9.12, -8.59). Two 3 nM compounds score 2.38 kcal/mol apart (best/worst of five). Pack validates (abstract 1683 chars, 9 keywords). ChemRxiv draft NOT attempted today (Turnstile block hardened; 3 consecutive total failures) \u2014 retry tomorrow."
+  },
+  {
+   "date": "2026-11-18",
+   "topic_id": "HP-065",
+   "topic": "M. tuberculosis DNA gyrase \u2014 fluoroquinolone alternatives for MDR-TB",
+   "title": "Four Nanomolar Gyrase Inhibitors Out-Score Moxifloxacin at the M. tuberculosis Cleavage Site \u2014 but the Margin Is Inside Vina Noise and the D94G Test Is Still Missing",
+   "file": "files/2026-11-18-health-mtb-gyrase-moxifloxacin.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "note": "Pipeline first docked on 3M4I (GyrB TOPRIM fragment, wrong site) \u2014 DISCARDED; corrected re-dock on 5BS8 (moxifloxacin cleavage complex, 2.4 A) at MFX centroid [40.10, 2.92, 22.41]. Leads -10.87 to -10.37 vs moxifloxacin -9.38; margins 0.99-1.49 inside Vina noise; docking order contradicts measured IC50 order (5/10/65/780 nM) \u2014 honest negative result. Mg2+ dropped by prep (limitation stated). Pack validates (abstract 1630 chars, 8 keywords). ChemRxiv draft pending. ChemRxiv draft FAILED 2026-11-18 ~15:38-15:50 PKT: Cloudflare Turnstile verify-then-reset loop (4 rounds, 2 browser sessions), blocked before sign-in; no draft URL, nothing uploaded, nothing submitted. Retry tomorrow; do not loop today."
+  },
+  {
+   "date": "2026-11-18",
+   "topic_id": "HP-062",
+   "topic": "FXR agonism for metabolic dysfunction-associated steatohepatitis (MASH)",
+   "title": "Sub-Nanomolar FXR Agonists Out-Dock Obeticholic Acid on the CDCA-Bound FXR Structure \u2014 but All Four Are Lipinski Failures and the Pruritus\u2013LDL Trade-Off Is a Class Problem, Not a Potency Problem",
+   "file": "files/2026-11-18-health-fxr-mash-obeticholic-acid.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "note": "Structure audit passed: 6HL1 is the FXR LBD with CDCA bound (1.6 A) \u2014 correct site, no correction needed. Leads -10.42 to -8.88 vs OCA -8.39; measured EC50 0.09-0.251 nM; but 3/4 fail Lipinski twice (logP 6.4-8.4, MW >600); CHEMBL5559067 3rd pose +8.90; CHEMBL5559957 pose spread 2.49. No PAINS in 26 leads. Pack validates (abstract 1756 chars, 8 keywords). ChemRxiv draft NOT attempted (Turnstile block failed Paper #75 draft today; retry tomorrow)."
+  },
+  {
+   "date": "2026-11-18",
+   "topic_id": "HP-068",
+   "topic": "Trypanosoma brucei N-myristoyltransferase \u2014 sleeping-sickness drug target",
+   "title": "No Structure to Dock On: Five Single-Digit-Nanomolar TbNMT Inhibitors Share One Scaffold, and the Blood\u2013Brain Barrier \u2014 Not Potency \u2014 Decides Whether Any of Them Treats Stage-2 Sleeping Sickness",
+   "file": "files/2026-11-18-health-tbnmt-ddd85646-sleeping-sickness.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "note": "DOCKING SKIPPED honestly: no T. brucei NMT structure in PDB (verified; only LmNMT 5AG4-5AG7/5AGE + AfNMT 4UWI/4UWJ). First run failed UniProt on \"(TbNMT)\" parenthetical \u2014 retried with clean name, Q388H8 found, CHEMBL3988596, 60 bioactivities. Five 1-4 nM leads, all TPSA 92.15 (one scaffold). Pack validates (abstract 1841 chars). ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
+  },
+  {
+   "date": "2026-11-18",
+   "topic_id": "HP-066",
+   "topic": "M. tuberculosis pantothenate synthetase (PanC) \u2014 a target with no approved drug",
+   "title": "A Target With No Approved Drug: Four PanC Inhibitors Dock at \u221210.64 to \u22127.66 kcal/mol on the 1.5 \u00c5 Fragment Structure \u2014 but the 90 nM Inhibitor Was Never Docked, and the Reference Drug Could Not Be Docked at All",
+   "file": "files/2026-11-18-health-panc-mtb-no-approved-drug.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "note": "Structure audit passed: 3IUB is Mtb PanC + fragment indole-carboxamide inhibitor (1.5 A), correct site. Actinomycin D (only named resolvable literature PanC inhibitor, IC50 22.44 uM) could NOT be docked \u2014 Vina 30-min timeout on 1,255 Da ligand; no reference benchmark. Leads -10.64 to -7.66; most potent ChEMBL PanC inhibitor CHEMBL428787 (90 nM) ranked 17th by similarity, never docked \u2014 selection-bias audit in paper. No PAINS in 26. Pack validates (abstract 1853 chars, 8 keywords). ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
+  },
+  {
+   "date": "2026-11-18",
+   "topic_id": "HP-078",
+   "topic": "Naegleria fowleri (primary amoebic meningoencephalitis, Karachi cases) \u2014 CYP51 as a drug target",
+   "title": "Posaconazole and Itraconazole Dock Best on the Naegleria CYP51 Structure \u2014 and the Ranking Matches the Published Potencies \u2014 but Karachi's Brain-Eating Amoeba Kills in Days, and No Azole Has a Measured Brain Exposure in PAM",
+   "file": "files/2026-11-18-health-naegleria-cyp51-posaconazole.md",
+   "field": "health",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "draft_url": null,
+   "note": "PIPELINE WRONG-TARGET FAILURE (audited): no ChEMBL target exists for NfCYP51 A0A2H4A2U9; pipeline silently used CHEMBL2074 (human maltase-glucoamylase) \u2014 its 4 leads were alpha-glucosidase inhibitors, scores DISCARDED. Corrected set: 5 published conazoles docked on 5TL8 (NfCYP51-posaconazole, 1.71 A): itra -11.59, posa -10.91 (reproduces pipeline -10.84), keto -10.21, isavu -8.96, fluco -7.01; Spearman rho 0.95 vs published EC50s (verified). PAINS alerts on posa/itra/keto (approved drugs \u2014 filter limit, stated). First redock script failed on PubChem property-key names (CanonicalSMILES not returned); fixed to ConnectivitySMILES. Pack validates. ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
   }
  ],
  "used_topic_ids": [
@@ -955,6 +1015,11 @@
   "HP-073",
   "HP-072",
   "HP-080",
-  "HP-075"
+  "HP-075",
+  "HP-065",
+  "HP-062",
+  "HP-068",
+  "HP-066",
+  "HP-078"
  ]
 }

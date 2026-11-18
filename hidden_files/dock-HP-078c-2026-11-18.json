@@ -1,0 +1,83 @@
+{
+ "ok": true,
+ "pdb_id": "5TL8",
+ "resolution": 1.71,
+ "pdb_title": "Naegleria fowleri CYP51-posaconazole complex",
+ "co_crystallised_ligand": "X2N (posaconazole)",
+ "center": [
+  6.25,
+  19.98,
+  47.66
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "vina": "1.2.7",
+ "note": "Corrected ligand set: pipeline ChEMBL target was CHEMBL2074 (human maltase-glucoamylase) \u2014 wrong target, no ChEMBL target exists for NfCYP51 (A0A2H4A2U9). Its 'leads' were alpha-glucosidase inhibitors; their scores are discarded. This file docks the five published conazoles instead, at the co-crystallised posaconazole centroid.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.59,
+   "poses": [
+    -11.59,
+    -11.34,
+    -9.99
+   ],
+   "pdb_id": "5TL8",
+   "label": "itraconazole",
+   "pubchem_cid": 55283,
+   "published_ec50": "0.01 uM"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.91,
+   "poses": [
+    -10.91,
+    -10.4,
+    -10.2
+   ],
+   "pdb_id": "5TL8",
+   "label": "posaconazole",
+   "pubchem_cid": 468595,
+   "published_ec50": "0.01 uM"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.21,
+   "poses": [
+    -10.21,
+    -10.12,
+    -9.46
+   ],
+   "pdb_id": "5TL8",
+   "label": "ketoconazole",
+   "pubchem_cid": 47576,
+   "published_ec50": "equipotent to amphotericin B (Debnath 2017)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.96,
+   "poses": [
+    -8.96,
+    -8.83,
+    -8.71
+   ],
+   "pdb_id": "5TL8",
+   "label": "isavuconazole",
+   "pubchem_cid": 6918485,
+   "published_ec50": "equipotent to amphotericin B (Debnath 2017)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.01,
+   "poses": [
+    -7.01,
+    -6.96,
+    -6.55
+   ],
+   "pdb_id": "5TL8",
+   "label": "fluconazole",
+   "pubchem_cid": 3365,
+   "published_ec50": "13.9 uM"
+  }
+ ]
+}
