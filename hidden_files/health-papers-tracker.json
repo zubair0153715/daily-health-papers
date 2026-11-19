@@ -942,6 +942,51 @@
    "status": "drafted",
    "draft_url": null,
    "note": "PIPELINE WRONG-TARGET FAILURE (audited): no ChEMBL target exists for NfCYP51 A0A2H4A2U9; pipeline silently used CHEMBL2074 (human maltase-glucoamylase) \u2014 its 4 leads were alpha-glucosidase inhibitors, scores DISCARDED. Corrected set: 5 published conazoles docked on 5TL8 (NfCYP51-posaconazole, 1.71 A): itra -11.59, posa -10.91 (reproduces pipeline -10.84), keto -10.21, isavu -8.96, fluco -7.01; Spearman rho 0.95 vs published EC50s (verified). PAINS alerts on posa/itra/keto (approved drugs \u2014 filter limit, stated). First redock script failed on PubChem property-key names (CanonicalSMILES not returned); fixed to ConnectivitySMILES. Pack validates. ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
+  },
+  {
+   "id": "HP-085",
+   "date": "2026-11-19",
+   "number": 80,
+   "title": "Two Sub-Nanomolar MDM2 Ligands Out-Dock Idasanutlin on the 1.13 \u00c5 HDM2 Structure \u2014 but the Margin Is Inside Vina Noise and the Most Potent Measured Compound Docks Worst",
+   "file": "files/2026-11-19-health-mdm2-idasanutlin.md",
+   "status": "drafted",
+   "draft_url": ""
+  },
+  {
+   "id": "HP-087",
+   "date": "2026-11-19",
+   "number": 81,
+   "title": "Baloxavir Acid Re-Docks at \u22126.62 kcal/mol on the Influenza PA Endonuclease Fragment Structure \u2014 but the ChEMBL Ligand Set Is Undockable and the Older Inhibitor L-742,001 Scores Better",
+   "file": "files/2026-11-19-health-influenza-pa-baloxavir.md",
+   "status": "drafted",
+   "draft_url": ""
+  },
+  {
+   "id": "HP-091",
+   "date": "2026-11-19",
+   "number": 82,
+   "title": "Avibactam and Durlobactam Tie at \u22126.5 kcal/mol on OXA-23 \u2014 but the Scores Are Non-Covalent Only, and the Only Sub-Nanomolar ChEMBL Ligand Is a Boronate Vina Cannot Score",
+   "file": "files/2026-11-19-health-oxa23-avibactam.md",
+   "status": "drafted",
+   "draft_url": ""
+  },
+  {
+   "id": "HP-101",
+   "date": "2026-11-19",
+   "number": 83,
+   "title": "Four Sub-Nanomolar RIPK1 Ligands Bind the Allosteric Pocket at \u22128.6 to \u22129.9 kcal/mol \u2014 but They Are One Chemotype, and the Drug Already Failed in Rheumatoid Arthritis",
+   "file": "files/2026-11-19-health-ripk1-gsk2982772.md",
+   "status": "drafted",
+   "draft_url": ""
+  },
+  {
+   "id": "HP-076",
+   "date": "2026-11-19",
+   "number": 84,
+   "title": "Three Nanomolar NLRP3 Ligands Dock at \u22128.4 to \u22128.9 kcal/mol Behind MCC950 \u2014 but None Beats It, and MCC950 Itself Failed on Liver Toxicity",
+   "file": "files/2026-11-19-health-nlrp3-mcc950.md",
+   "status": "drafted",
+   "draft_url": ""
   }
  ],
  "used_topic_ids": [
@@ -1020,6 +1065,11 @@
   "HP-062",
   "HP-068",
   "HP-066",
-  "HP-078"
+  "HP-078",
+  "HP-085",
+  "HP-087",
+  "HP-091",
+  "HP-101",
+  "HP-076"
  ]
 }

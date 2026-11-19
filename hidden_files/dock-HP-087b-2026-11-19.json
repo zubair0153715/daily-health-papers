@@ -1,0 +1,38 @@
+{
+ "pdb_id": "5IEQ",
+ "center": [
+  -29.61,
+  -45.19,
+  62.49
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.17,
+   "poses": [
+    -7.17,
+    -6.88,
+    -6.73
+   ],
+   "pdb_id": "5IEQ",
+   "label": "L-742,001",
+   "smiles": "C1CN(CCC1(CC2=CC=C(C=C2)Cl)C(=O)/C=C(/C(=O)O)\\O)CC3=CC=CC=C3",
+   "formula": "C23H25Cl2NO4"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -5.55,
+   "poses": [
+    -5.55,
+    -5.54,
+    -5.54
+   ],
+   "pdb_id": "5IEQ",
+   "label": "1-(4-chlorophenyl)-1H-imidazole",
+   "smiles": "C1=CC(=CC=C1N2C=CN=C2)Cl",
+   "formula": "C9H7ClN2"
+  }
+ ]
+}

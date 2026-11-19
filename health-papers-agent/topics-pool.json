@@ -731,8 +731,206 @@
    "reference_drug": "pemigatinib",
    "angle": "Dock FGFR inhibitors vs pemigatinib; note FGFR1-3 selectivity and the hyperphosphataemia class effect",
    "status": "unused"
+  },
+  {
+   "id": "HP-081",
+   "area": "oncology",
+   "problem": "KRAS G12C — sotorasib alternatives in NSCLC",
+   "target": "KRAS G12C (GDP-bound, switch-II pocket)",
+   "reference_drug": "sotorasib",
+   "angle": "Dock KRAS G12C inhibitors vs sotorasib; state the covalent cysteine chemistry honestly — report non-covalent docking only",
+   "status": "unused"
+  },
+  {
+   "id": "HP-082",
+   "area": "oncology",
+   "problem": "BCL-2 — venetoclax alternatives in haematological cancers",
+   "target": "B-cell lymphoma 2 (BCL-2)",
+   "reference_drug": "venetoclax",
+   "angle": "Dock BCL-2 inhibitors vs venetoclax on the BH3 groove; note protein-protein-interface difficulty",
+   "status": "unused"
+  },
+  {
+   "id": "HP-083",
+   "area": "oncology",
+   "problem": "HIF-2alpha — belzutifan alternatives in VHL disease and renal cancer",
+   "target": "Hypoxia-inducible factor 2-alpha (HIF-2alpha, PAS-B pocket)",
+   "reference_drug": "belzutifan",
+   "angle": "Dock HIF-2alpha PAS-B binders vs belzutifan; note the pocket is small and hydrophobic",
+   "status": "unused"
+  },
+  {
+   "id": "HP-084",
+   "area": "oncology",
+   "problem": "c-MET — capmatinib alternatives in MET exon-14 NSCLC",
+   "target": "c-MET kinase",
+   "reference_drug": "capmatinib",
+   "angle": "Dock MET kinase inhibitors vs capmatinib; compare type I vs type II binding",
+   "status": "unused"
+  },
+  {
+   "id": "HP-085",
+   "area": "oncology",
+   "problem": "MDM2-p53 — idasanutlin-era antagonists in wild-type p53 cancers",
+   "target": "MDM2 (p53-binding pocket)",
+   "reference_drug": "idasanutlin (investigational, reference only)",
+   "angle": "Dock MDM2 antagonists vs idasanutlin; state no approved MDM2 drug exists",
+   "status": "unused"
+  },
+  {
+   "id": "HP-086",
+   "area": "oncology",
+   "problem": "RET kinase — selpercatinib alternatives in RET-fusion cancers",
+   "target": "RET kinase",
+   "reference_drug": "selpercatinib",
+   "angle": "Dock RET inhibitors vs selpercatinib; note gatekeeper V804 resistance mutations",
+   "status": "unused"
+  },
+  {
+   "id": "HP-087",
+   "area": "antiviral",
+   "problem": "Influenza PA endonuclease — baloxavir alternatives",
+   "target": "Influenza A polymerase acidic (PA) endonuclease",
+   "reference_drug": "baloxavir marboxil",
+   "angle": "Dock PA endonuclease inhibitors vs baloxavir acid; note the two-metal active site",
+   "status": "unused"
+  },
+  {
+   "id": "HP-088",
+   "area": "antiviral",
+   "problem": "HIV-1 reverse transcriptase — doravirine alternatives",
+   "target": "HIV-1 reverse transcriptase (NNRTI pocket)",
+   "reference_drug": "doravirine",
+   "angle": "Dock NNRTIs vs doravirine on the NNRTI pocket; note resistance mutations K103N/Y181C",
+   "status": "unused"
+  },
+  {
+   "id": "HP-089",
+   "area": "antiviral",
+   "problem": "HBV polymerase — tenofovir alternatives",
+   "target": "Hepatitis B virus polymerase (reverse transcriptase domain)",
+   "reference_drug": "tenofovir disoproxil fumarate",
+   "angle": "Dock HBV polymerase inhibitors vs tenofovir; note no experimental HBV polymerase structure — docking is homology-model based, state this plainly",
+   "status": "unused"
+  },
+  {
+   "id": "HP-090",
+   "area": "antimicrobial-resistance",
+   "problem": "Staphylococcus aureus FtsZ — PC190723-era cell-division inhibitors",
+   "target": "S. aureus FtsZ (cell-division protein)",
+   "reference_drug": "PC190723 (investigational, reference only)",
+   "angle": "Dock FtsZ inhibitors vs PC190723; note the interdomain cleft and the Gram-positive selectivity question",
+   "status": "unused"
+  },
+  {
+   "id": "HP-091",
+   "area": "antimicrobial-resistance",
+   "problem": "Acinetobacter baumannii OXA-23 carbapenemase — inhibitor benchmarking",
+   "target": "OXA-23 beta-lactamase",
+   "reference_drug": "avibactam (as part of ceftazidime-avibactam)",
+   "angle": "Dock beta-lactamase inhibitors vs avibactam on OXA-23; note avibactam is covalent — report non-covalent docking honestly",
+   "status": "unused"
+  },
+  {
+   "id": "HP-092",
+   "area": "antimicrobial-resistance",
+   "problem": "Escherichia coli MurA — fosfomycin alternatives",
+   "target": "E. coli UDP-N-acetylglucosamine enolpyruvyl transferase (MurA)",
+   "reference_drug": "fosfomycin",
+   "angle": "Dock MurA inhibitors vs fosfomycin; note fosfomycin is covalent (Cys115) — report non-covalent docking honestly",
+   "status": "unused"
+  },
+  {
+   "id": "HP-093",
+   "area": "tuberculosis",
+   "problem": "M. tuberculosis KasA — isoniazid-independent mycolic-acid target",
+   "target": "M. tuberculosis beta-ketoacyl-ACP synthase (KasA)",
+   "reference_drug": "thiolactomycin (investigational, reference only)",
+   "angle": "Dock KasA inhibitors vs thiolactomycin; state no approved KasA drug exists",
+   "status": "unused"
+  },
+  {
+   "id": "HP-094",
+   "area": "tuberculosis",
+   "problem": "M. tuberculosis Pks13 — a target with no approved drug",
+   "target": "M. tuberculosis polyketide synthase 13 (Pks13)",
+   "reference_drug": "TAM16 (investigational, reference only)",
+   "angle": "Dock Pks13 inhibitors vs TAM16; state the no-approved-drug gap plainly",
+   "status": "unused"
+  },
+  {
+   "id": "HP-095",
+   "area": "malaria-parasitic",
+   "problem": "P. falciparum DHODH — DSM265-era antimalarials",
+   "target": "Plasmodium falciparum dihydroorotate dehydrogenase (PfDHODH)",
+   "reference_drug": "DSM265 (investigational, reference only)",
+   "angle": "Dock PfDHODH inhibitors vs DSM265; note species selectivity vs human DHODH",
+   "status": "unused"
+  },
+  {
+   "id": "HP-096",
+   "area": "malaria-parasitic",
+   "problem": "P. falciparum cytochrome bc1 — atovaquone resistance",
+   "target": "Plasmodium falciparum cytochrome bc1 (Qo site)",
+   "reference_drug": "atovaquone",
+   "angle": "Dock bc1 Qo-site inhibitors vs atovaquone; note the Y268 resistance mutation",
+   "status": "unused"
+  },
+  {
+   "id": "HP-097",
+   "area": "diabetes-metabolic",
+   "problem": "GPR40/FFAR1 — free-fatty-acid receptor agonism after fasiglifam",
+   "target": "Free fatty acid receptor 1 (GPR40/FFAR1)",
+   "reference_drug": "fasiglifam (TAK-875, discontinued, reference only)",
+   "angle": "Dock FFAR1 agonists vs fasiglifam; state the hepatotoxicity failure plainly — no approved FFAR1 drug",
+   "status": "unused"
+  },
+  {
+   "id": "HP-098",
+   "area": "cardiovascular-renal",
+   "problem": "Factor XIa — asundexian-era anticoagulation without bleeding",
+   "target": "Coagulation factor XIa",
+   "reference_drug": "asundexian (investigational, reference only)",
+   "angle": "Dock FXIa inhibitors vs asundexian; state no approved FXIa drug exists",
+   "status": "unused"
+  },
+  {
+   "id": "HP-099",
+   "area": "cardiovascular-renal",
+   "problem": "Renin — aliskiren alternatives for hypertension",
+   "target": "Renin (aspartic protease)",
+   "reference_drug": "aliskiren",
+   "angle": "Dock renin inhibitors vs aliskiren; note the large active-site cleft",
+   "status": "unused"
+  },
+  {
+   "id": "HP-100",
+   "area": "inflammation-pain",
+   "problem": "TYK2 JH2 pseudokinase — deucravacitinib alternatives",
+   "target": "TYK2 JH2 pseudokinase domain",
+   "reference_drug": "deucravacitinib",
+   "angle": "Dock TYK2 JH2 binders vs deucravacitinib on the JH2 structure (6NZH) — NOT the JH1 ATP site; state the domain distinction",
+   "status": "unused"
+  },
+  {
+   "id": "HP-101",
+   "area": "inflammation-pain",
+   "problem": "RIPK1 — necroptosis inhibition in inflammatory disease",
+   "target": "Receptor-interacting protein kinase 1 (RIPK1)",
+   "reference_drug": "GSK2982772 (investigational, reference only)",
+   "angle": "Dock RIPK1 inhibitors vs GSK2982772; state no approved RIPK1 drug exists",
+   "status": "unused"
+  },
+  {
+   "id": "HP-102",
+   "area": "oncology",
+   "problem": "Aurora kinase A — alisertib alternatives in solid tumours",
+   "target": "Aurora kinase A (AURKA)",
+   "reference_drug": "alisertib (investigational, reference only)",
+   "angle": "Dock AURKA inhibitors vs alisertib; state no approved AURKA drug exists",
+   "status": "unused"
   }
  ],
- "updated": "2026-11-15",
+ "updated": "2026-11-19",
  "version": 2
 }

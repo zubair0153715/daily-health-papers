@@ -1,0 +1,72 @@
+{
+ "pdb_id": "7FD0",
+ "center": [
+  -7.668722222222223,
+  -14.942888888888888,
+  24.290166666666668
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.9,
+   "poses": [
+    -9.9,
+    -9.07,
+    -8.66
+   ],
+   "pdb_id": "7FD0",
+   "label": "CHEMBL4071864",
+   "rank": 2
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.8,
+   "poses": [
+    -9.8,
+    -8.91,
+    -8.42
+   ],
+   "pdb_id": "7FD0",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.7,
+   "poses": [
+    -9.7,
+    -8.53,
+    -8.35
+   ],
+   "pdb_id": "7FD0",
+   "label": "CHEMBL4088857",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.6,
+   "poses": [
+    -9.6,
+    -8.4,
+    -8.3
+   ],
+   "pdb_id": "7FD0",
+   "label": "CHEMBL4099004",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.57,
+   "poses": [
+    -8.57,
+    -8.33,
+    -7.97
+   ],
+   "pdb_id": "7FD0",
+   "label": "CHEMBL3785482",
+   "rank": 4
+  }
+ ]
+}
