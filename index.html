@@ -42,7 +42,7 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <body>
 <h1>Research Papers</h1>
 <p class="sub">Zubair Ali — Pharm-D student, SMBBMU Larkana, Pakistan · ORCID 0009-0001-5921-7509 · <a href="https://github.com/zubair0153715/daily-health-papers">daily-health-papers on GitHub</a></p>
-<div class="counts"><b>97 manuscripts</b><b>Health: 80</b><b>Brain: 6</b><b>Space: 4</b><b>Natural Science: 1</b><b>Social Science: 1</b><b>Drug Discovery: 5</b></div>
+<div class="counts"><b>103 manuscripts</b><b>Health: 85</b><b>Brain: 6</b><b>Space: 5</b><b>Natural Science: 1</b><b>Social Science: 1</b><b>Drug Discovery: 5</b></div>
 <p class="note"><b>AI-assisted drafts — NOT peer-reviewed, NOT published.</b> All claims require independent verification. Two early manuscripts were submitted to ChemRxiv and rejected (framework/hypothesis without new data); their reworked v2 versions are marked "ready to submit". Nothing here is submitted anywhere — submission is the author's own click after he approves a paper. New manuscripts are added daily.</p>
 <div class="controls">
 <input type="search" id="q" placeholder="Search titles…" aria-label="Search papers"/>
@@ -54,7 +54,787 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <button data-f="social">Social Science</button>
 <button data-f="drugdiscovery">Drug Discovery</button>
 </div>
-<section id="sec-health" data-field="health"><h2>Health <span class="count">(80)</span></h2>
+<section id="sec-health" data-field="health"><h2>Health <span class="count">(85)</span></h2>
+<article class="card" data-field="health" data-title="no structure to dock on: five single-digit-nanomolar tbnmt inhibitors share one scaffold, and the blood–brain barrier — not potency — decides whether any of them treats stage-2 sleeping sickness">
+<div class="meta"><span class="date">2026-11-18</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>No Structure to Dock On: Five Single-Digit-Nanomolar TbNMT Inhibitors Share One Scaffold, and the Blood–Brain Barrier — Not Potency — Decides Whether Any of Them Treats Stage-2 Sleeping Sickness</h3>
+<p class="abs">Human African trypanosomiasis (sleeping sickness) is down to 471 reported cases worldwide in 2025, and the WHO target is interruption of transmission by 2030 — but the last cases are the hardest, and they need drugs that reach the brain.</p>
+<p class="links"><a href="papers/2026-11-18-health-tbnmt-ddd85646-sleeping-sickness.pdf">PDF</a> · <a href="papers/2026-11-18-health-tbnmt-ddd85646-sleeping-sickness.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-18 · <strong>Health Papers Agent — Paper #77</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> sleeping sickness; Trypanosoma brucei; N-myristoyltransferase; DDD85646; blood–brain barrier; neglected tropical disease; ChEMBL</p>
+<hr />
+<h2>Abstract</h2>
+<p>Human African trypanosomiasis (sleeping sickness) is down to 471 reported cases worldwide in 2025, and the WHO target is interruption of transmission by 2030 — but the last cases are the hardest, and they need drugs that reach the brain. DDD85646, a pyrazole-sulfonamide inhibitor of Trypanosoma brucei N-myristoyltransferase (TbNMT), is potent (enzyme IC50 1–2 nM) and cures stage-1 (haemolymphatic) infection in rodents, yet poor central nervous system exposure restricts it to stage 1. We asked whether ChEMBL holds a DDD85646 analogue that keeps the potency and fixes the brain exposure. Using the LeadForge pipeline (UniProtKB Q388H8 → ChEMBL target CHEMBL3988596, 60 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen), we retrieved five single-digit-nanomolar TbNMT inhibitors, including DDD85646 itself. Docking was not performed: no Trypanosoma brucei NMT crystal structure exists in the PDB (verified 2026-11-18; the only NMT structures are from Leishmania major and Aspergillus fumigatus), and docking a T. brucei inhibitor onto another species' enzyme would be a false result. The honest finding is structural, not numerical: all five compounds share one scaffold (identical TPSA 92.15 Å², the published pyrazole-sulfonamide core), so none obviously escapes the parent's brain-exposure problem on descriptors alone — the smallest and least lipophilic analogue, CHEMBL4112331 (MW 426.55, logP 2.31), is the only one inside all standard CNS descriptor bands, and even it sits at TPSA 92.15 Å², just above the usual &lt;90 Å² blood–brain-barrier guideline. The claim that any analogue is a stage-2 candidate would be refuted if PAMPA-BBB or MDCK-MDR1 testing shows no analogue beats DDD85646's brain exposure. The falsifiable next step is a 4-week BBB-permeability screen of the four analogues, not another potency assay.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Sleeping sickness, caused by Trypanosoma brucei gambiense (92% of cases) and T. b. rhodesiense and transmitted by the tsetse fly, is fatal without treatment and has two stages: a haemolymphatic stage with non-specific symptoms, and a meningoencephalitic stage in which parasites enter the central nervous system, causing the sleep disturbance, psychiatric symptoms and coma that give the disease its name. In 1998 more than 34,000 cases were reported, with the WHO estimating the true number at ten times that; by 2025 only 471 cases were reported worldwide, most of them in the Democratic Republic of the Congo. Guinea was validated by WHO in January 2025 as having eliminated gambiense sleeping sickness as a public health problem (fewer than one case per 10,000 people in endemic areas over 2019–2023). The WHO roadmap's harder goal is interruption of transmission — zero cases — by 2030.</p>
+<p>Treatment has modernised fast: fexinidazole (2018) was the first all-oral drug, and acoziborole — a single-dose oral drug with 98.1% efficacy in trials — received a positive scientific opinion from the European Medicines Agency in 2026. Against that background, a new NMT inhibitor must answer a sharp question: what does it add that acoziborole does not already provide? The honest answer for a DDD85646 analogue is: nothing, unless it reaches the brain — because stage-2 disease is the unmet need, and DDD85646's failure was a brain-exposure failure, not a potency failure.</p>
+<p>TbNMT catalyses the co-translational transfer of myristate from myristoyl-CoA to the N-terminal glycine of target proteins; bioinformatic analysis suggests more than 60 potential substrates in T. brucei, including ADP-ribosylation factor-1 (ARF-1) and ARF-like protein 1 (ARL-1), both essential for bloodstream parasite viability. RNAi knockdown of NMT is lethal in culture and abrogates infectivity in animal models. DDD85646 was discovered at Dundee: it inhibits TbNMT (IC50 2 nM as published; 1 nM in the ChEMBL record), kills T. brucei in culture (EC50 2 nM), has good oral pharmacokinetics and cures rodent models of peripheral infection — and its development stopped at the blood–brain barrier.</p>
+<p>The classical Islamic medical canon has no specific discussion of trypanosomiasis: sleeping sickness is a sub-Saharan disease outside the clinical geography of Ibn Sina's Canon (c. 1025) and Al-Razi's Kitab al-Hawi (c. 900), and the canon sweep for this paper found no relevant text (see Limitations). What the canon does supply is the principle: hifz al-nafs (preservation of life) and maslaha (public benefit) applied to the neglected — the duty to test a cheap discriminating experiment for a disease of the poorest, rather than to abandon it because the case count is now small. A disease with 471 cases a year is exactly where a small, cheap test matters most, because no company will run it (see §7).</p>
+<p><strong>Falsifiable question.</strong> Does any ChEMBL-recorded DDD85646 analogue combine single-digit-nanomolar TbNMT inhibition with predicted blood–brain-barrier penetration better than DDD85646 itself? <strong>Falsifier:</strong> PAMPA-BBB or MDCK-MDR1 testing showing no analogue beats DDD85646's brain exposure, or a measured brain-to-plasma ratio below 0.1 for the best analogue. <strong>Causal identification:</strong> none available in this study — this is a descriptor and literature analysis, association only, stated in bold. No docking was possible, so there is no validated-control re-docking to anchor a causal claim.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-18: the Dundee DDD85646 papers (Nature 2010; Journal of Medicinal Chemistry 2012; Acta Crystallographica F 2015), the WHO human African trypanosomiasis fact sheet, the 2025–2026 elimination literature (Guinea validation; acoziborole EMA opinion; 471 cases in 2025), and the RCSB/PDBe records for NMT structures. The Islamic-canon sweep covered the available digitised canon: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — no trypanosomiasis text was found in either, and that negative result is reported in the Limitations rather than hidden.</p>
+<h3>2.2 Why there is no docking section</h3>
+<p>Standardised AutoDock Vina docking requires an experimental structure of the target. The LeadForge pipeline (UniProtKB Q388H8, ChEMBL target CHEMBL3988596) found no PDB entry for T. brucei NMT: <code>find_pdb_for_uniprot</code> returned <code>no_pdb_found</code> because the TrEMBL entry Q388H8 carries no PDB cross-reference. A direct RCSB full-text search on 2026-11-18 returned seven NMT structures — 5AG4, 5AG5, 5AG6, 5AG7, 5AGE (all Leishmania major NMT) and 4UWI, 4UWJ (both Aspergillus fumigatus NMT). None is T. brucei. Docking a T. brucei inhibitor onto the Leishmania enzyme would produce a number that looks like a result and is not one; the paper therefore reports no docking scores at all. This follows the precedent of Paper #70 (HP-067, Plasmodium PI4K), where the same situation was handled the same way.</p>
+<h3>2.3 Compound retrieval and screens</h3>
+<p>LeadForge pipeline, 2026-11-18: UniProtKB Q388H8 (glycylpeptide N-tetradecanoyltransferase, T. brucei brucei strain 927/4 GUTat10.1) → ChEMBL target CHEMBL3988596 (60 bioactivities) → PubChem verification of DDD85646 (CID 44199337) → RDKit Morgan-fingerprint similarity screen (top 25) → ADMET/PAINS/ToxGuard panel → composite ranking. RDKit descriptors and Tox21 kNN read-across (12 assays) computed for every lead; PAINS filter applied to all 26 leads.</p>
+<h3>2.4 Honesty limits</h3>
+<p>No docking, no experimental data, no BBB measurement in this study. Measured IC50 values are ChEMBL records. Blood–brain-barrier penetration is assessed here only through computed descriptors against standard CNS guidelines (TPSA &lt;90 Å², MW &lt;450 Da, logP 2–4) — descriptors predict, they do not measure. The ChEMBL IC50 for DDD85646 (1 nM) differs from the published value (2 nM); both are reported.</p>
+<h2>3. Results</h2>
+<h3>3.1 The five single-digit-nanomolar inhibitors</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL IC50 vs TbNMT*</th>
+<th>MW</th>
+<th>logP</th>
+<th>TPSA (Å²)</th>
+<th>Rotatable bonds</th>
+<th>Lipinski violations</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL1230468 (= DDD85646)</td>
+<td>1.0 nM (pChEMBL 9.00)</td>
+<td>495.44</td>
+<td>3.62</td>
+<td>92.15</td>
+<td>5</td>
+<td>0</td>
+<td>none</td>
+</tr>
+<tr>
+<td>CHEMBL4115085</td>
+<td>4.0 nM (pChEMBL 8.40)</td>
+<td>462.53</td>
+<td>2.59</td>
+<td>92.15</td>
+<td>5</td>
+<td>0</td>
+<td>none</td>
+</tr>
+<tr>
+<td>CHEMBL4111551</td>
+<td>1.0 nM (pChEMBL 9.00)</td>
+<td>460.99</td>
+<td>2.96</td>
+<td>92.15</td>
+<td>5</td>
+<td>0</td>
+<td>none</td>
+</tr>
+<tr>
+<td>CHEMBL3357685</td>
+<td>1.0 nM (pChEMBL 9.00)</td>
+<td>537.52</td>
+<td>4.51</td>
+<td>92.15</td>
+<td>7</td>
+<td>1</td>
+<td>none</td>
+</tr>
+<tr>
+<td>CHEMBL4112331</td>
+<td>1.0 nM (pChEMBL 9.00)</td>
+<td>426.55</td>
+<td>2.31</td>
+<td>92.15</td>
+<td>5</td>
+<td>0</td>
+<td>none</td>
+</tr>
+<tr>
+<td>DDD85646 (reference, PubChem CID 44199337)</td>
+<td>published IC50 2 nM; EC50 2 nM vs T. brucei</td>
+<td>495.44</td>
+<td>3.62</td>
+<td>92.15</td>
+<td>5</td>
+<td>0</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded IC50 against T. brucei NMT (target CHEMBL3988596), retrieved live 2026-11-18. CHEMBL1230468 is DDD85646 itself (similarity 1.0, identical descriptors), so the "five leads" are the reference plus four analogues.</p>
+<h3>3.2 One scaffold, one TPSA, one problem</h3>
+<p>All five compounds share TPSA 92.15 Å² exactly — the same polar surface, the same pyrazole-sulfonamide core. The analogues differ only in peripheral substitution (MW 427–538, logP 2.31–4.51). That means the potency is a property of the scaffold, and the scaffold's brain problem is likely shared: DDD85646's poor CNS exposure is a property of this chemotype's polar surface and efflux profile, and changing a peripheral substituent rarely moves TPSA at all — indeed, here it did not move by a single unit. Against standard CNS descriptor bands (TPSA &lt;90 Å², MW &lt;450 Da, logP 2–4), only CHEMBL4112331 sits inside all three bands except TPSA, where it too is 92.15 Å² — 2.15 Å² over the line. CHEMBL3357685 (MW 537.52, logP 4.51, one Lipinski violation) is the worst BBB bet of the four.</p>
+<h3>3.3 Toxicity read-across</h3>
+<p>Tox21 kNN read-across predicted no assay at or above 0.3 probability for any of the five compounds, including DDD85646. This is a weak screen — read-across, not measurement — and it cannot see CNS exposure or efflux.</p>
+<h3>3.4 Comparison with published work</h3>
+<p>DDD85646's published profile (Frearson et al., Nature 2010; Brand et al., Journal of Medicinal Chemistry 2012): enzyme IC50 2 nM, T. brucei EC50 2 nM, good oral pharmacokinetics, cures rodent peripheral infection, poor CNS exposure. The ChEMBL record (IC50 1 nM) is consistent within assay variation. The fragment-screen paper (Acta Crystallographica F 2015) states the consequence plainly: poor CNS exposure restricts DDD85646 to the haemolymphatic (stage-1) form, and new chemical matter was sought specifically to occupy the DDD85646 binding site with better brain penetration. No analogue in this set has a published brain-exposure measurement.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question is not "which analogue is most potent" — four of the five are 1 nM, and potency stopped being the problem in 2010. The question is "which analogue, if any, crosses the blood–brain barrier", and this paper's descriptor analysis suggests the answer may be "none of these four": they share the parent's polar surface exactly, and the parent does not cross. The honest contribution of this paper is therefore a negative one — it narrows the search. It says: do not spend the next assay on enzyme potency for this scaffold; spend it on permeability, and if permeability fails, leave the scaffold.</p>
+<h3>4.2 Why a docking score would have made this paper worse</h3>
+<p>If a Leishmania NMT structure had been used as a surrogate, the paper could have reported attractive-looking scores (−10 kcal/mol and better) for compounds whose target is a different species' enzyme. Those scores would have been uninterpretable: NMT active sites are conserved enough to dock plausibly and different enough that a 1–2 kcal/mol difference means nothing. Refusing the surrogate dock is the methodologically correct choice, and it is also the reason this paper is shorter on numbers than its neighbours.</p>
+<h3>4.3 Mechanism</h3>
+<p>NMT transfers myristate from myristoyl-CoA to N-terminal glycine residues of substrate proteins; DDD85646 occupies the peptide-substrate pocket, not the myristoyl-CoA site. Inhibition blocks myristoylation of essential substrates (ARF-1, ARL-1), mislocalises them, and kills the parasite rapidly. For stage-2 disease the inhibitor must additionally cross the blood–brain barrier — which requires low polar surface, moderate lipophilicity, and escape from efflux transporters (P-glycoprotein, BCRP). Test for each link: (i) PAMPA-BBB measures passive permeability; (ii) MDCK-MDR1 efflux ratio measures transporter liability; (iii) a mouse brain-to-plasma ratio measures the outcome that matters.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>CHEMBL4112331 has a PAMPA-BBB permeability above the CNS-positive threshold and an MDCK-MDR1 efflux ratio below 2. Falsifier: permeability below threshold or efflux ratio ≥2.</li>
+<li>No analogue in this set achieves a mouse brain-to-plasma ratio above 0.3. Falsifier: any analogue exceeds 0.3.</li>
+<li>Acoziborole's single-dose efficacy (98.1%) makes a stage-1-only NMT inhibitor clinically redundant in gambiense HAT. Falsifier: a setting where acoziborole is unavailable or contraindicated and a stage-1 NMT inhibitor changes outcomes.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 4–8 weeks)</h3>
+<p>Stage 1 (weeks 1–2): PAMPA-BBB + MDCK-MDR1 for the four analogues and DDD85646; readout is permeability and efflux ratio, with a CNS-positive control. Stage 2 (weeks 3–5): for any analogue passing stage 1, mouse brain-to-plasma ratio after a single oral dose; if none passes, stop — publish the negative result. Stage 3 (weeks 6–8): only for an analogue with brain exposure: whole-cell EC50 against T. b. gambiense and T. b. rhodesiense bloodstream forms, plus a stage-2 mouse model. Total cost is small; the decision it buys is whether this scaffold lives or dies.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>No docking (no T. brucei NMT structure exists) and no experimental data in this study; the BBB assessment is descriptor-based only.</li>
+<li>Measured IC50 values are ChEMBL records; the DDD85646 ChEMBL value (1 nM) differs from the published value (2 nM).</li>
+<li>TPSA/logP/MW bands are guidelines, not measurements; efflux transporters can defeat even a descriptor-perfect molecule.</li>
+<li>All five compounds share one scaffold; the analysis cannot speak to other NMT chemotypes.</li>
+<li>No human NMT selectivity data are reported here; human NMT inhibition would be a toxicity liability and was not assessed beyond Tox21 read-across.</li>
+<li>The Islamic-canon sweep found no classical text on trypanosomiasis — the disease lies outside the canon's clinical geography — so the canon contributes a principle (hifz al-nafs, maslaha for the neglected) rather than a precedent.</li>
+<li>No cost or access analysis for acoziborole in the DRC was available for this paper.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Five single-digit-nanomolar inhibitors of T. brucei NMT exist in ChEMBL — DDD85646 and four analogues at 1–4 nM, all PAINS-clean and Lipinski-clean except one. No T. brucei NMT structure exists, so no docking was performed and none is claimed. The five share one scaffold and one polar surface (TPSA 92.15 Å²), which means none obviously escapes the parent's published failure: poor brain exposure restricting it to stage-1 disease. The smallest analogue, CHEMBL4112331, is the only one inside the standard CNS descriptor bands apart from TPSA, and it is the only one worth the cheap permeability test. If it fails that test, the scaffold should be retired and the field's attention should stay on the drugs that already work — fexinidazole and acoziborole — and on the 2030 transmission-interruption goal.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> The WHO Department of Control of Neglected Tropical Diseases and the DRC national sleeping-sickness programme, with DNDi as technical adviser. <strong>Decision:</strong> whether any further public money should go to the DDD85646 scaffold. <strong>Exact change:</strong> fund only the 4-week PAMPA-BBB/MDCK-MDR1 screen proposed in §4.5 for the four analogues, and fund no efficacy work on this scaffold until an analogue passes it — instead of continuing potency-first screening that has already produced five 1 nM compounds and zero stage-2 drugs. <strong>If evidence Z appears, reverse this:</strong> if CHEMBL4112331 (or any analogue) shows a brain-to-plasma ratio above 0.3, escalate it to the stage-2 mouse model and a head-to-head comparison with acoziborole; if none passes, retire the scaffold and redirect the same funds to acoziborole delivery and tsetse control in the DRC, where the remaining 471 cases are. The Islamic principle is hifz al-nafs with maslaha for the neglected (mustad'afun): for a disease of the poorest, with 471 cases left, the obligation is to spend the small amount on the discriminating test and the large amount on delivery — not to keep polishing a potency number that stopped mattering in 2010.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and pipeline computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Frearson JA, Brand S, McElroy SP, Cleghorn LAT, Smid O, Stojanovski L, Price HP, Guther MLS, Torrie LS, Robinson DA, Hallyburton I, Mpamhanga CP, Brannigan JA, Wilkinson AJ, Hodgkinson M, Hui R, Qiu W, Raimi OG, van Aalten DMF, Brenk R, Gilbert IH, Read KD, Fairlamb AH, Ferguson MAJ, Smith DF, Wyatt PG. N-myristoyltransferase inhibitors as new leads to treat sleeping sickness. Nature. 2010;464(7289):728-732. doi:10.1038/nature08893. PMID: 20360736.</li>
+<li>Brand S, Cleghorn LAT, McElroy SP, Robinson DA, Smith VC, Hallyburton I, Harrison JR, Norcross NR, Spinks D, Bayliss T, Norval S, Stojanovski L, Torrie LS, Frearson JA, Brenk R, Fairlamb AH, Ferguson MAJ, Read KD, Wyatt PG, Gilbert IH. Discovery of a novel class of orally active trypanocidal N-myristoyltransferase inhibitors. J Med Chem. 2012;55(1):140-152. doi:10.1021/jm201091t.</li>
+<li>Robinson DA, Wyatt PG. Identification and structure solution of fragment hits against kinetoplastid N-myristoyltransferase. Acta Crystallogr F Struct Biol Commun. 2015;71(Pt 5):586-593. doi:10.1107/S2053230X15003040.</li>
+<li>World Health Organization. Trypanosomiasis, human African (sleeping sickness). Fact sheet. Geneva: WHO.</li>
+<li>Kagbadouno M, et al. Elimination of gambiense human African trypanosomiasis as a public health problem in Republic of Guinea: paving the way for zero transmission. PLoS Negl Trop Dis. 2026.</li>
+<li>Hunting down the last cases of sleeping sickness. Horizon: The EU Research &amp; Innovation Magazine. 2026. (471 cases reported worldwide in 2025; acoziborole 98.1% efficacy; EMA positive scientific opinion, 2026.)</li>
+<li>ChEMBL target CHEMBL3988596: glycylpeptide N-tetradecanoyltransferase, Trypanosoma brucei brucei (strain 927/4 GUTat10.1), single protein. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-18.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; no trypanosomiasis discussion — the disease lies outside the canon's clinical geography.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; no trypanosomiasis discussion.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>No docking was performed: no Trypanosoma brucei NMT structure exists in the PDB (verified 2026-11-18; RCSB full-text search returns only Leishmania major NMT, 5AG4–5AG7 and 5AGE, and Aspergillus fumigatus NMT, 4UWI–4UWJ). All compound data reported here are in <code>hidden_files/dock-HP-068-2026-11-18.json</code>. Ligand identities are ChEMBL IDs CHEMBL1230468 (DDD85646), CHEMBL4115085, CHEMBL4111551, CHEMBL3357685, CHEMBL4112331; reference drug DDD85646, PubChem CID 44199337. Target: UniProtKB Q388H8; ChEMBL target CHEMBL3988596. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="a target with no approved drug: four panc inhibitors dock at −10.64 to −7.66 kcal/mol on the 1.5 å fragment structure — but the 90 nm inhibitor was never docked, and the reference drug could not be docked at all">
+<div class="meta"><span class="date">2026-11-18</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>A Target With No Approved Drug: Four PanC Inhibitors Dock at −10.64 to −7.66 kcal/mol on the 1.5 Å Fragment Structure — but the 90 nM Inhibitor Was Never Docked, and the Reference Drug Could Not Be Docked at All</h3>
+<p class="abs">Pantothenate synthetase (PanC) is essential for Mycobacterium tuberculosis growth in vitro and survival in mice, is absent from mammals, and has no approved drug — the ideal profile of an unexploited target, and the reason it has attracted twenty years of inhibitor chemistry without a clinical candidate.</p>
+<p class="links"><a href="papers/2026-11-18-health-panc-mtb-no-approved-drug.pdf">PDF</a> · <a href="papers/2026-11-18-health-panc-mtb-no-approved-drug.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-18 · <strong>Health Papers Agent — Paper #78</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> tuberculosis; pantothenate synthetase; PanC; actinomycin D; molecular docking; ChEMBL; drug target; MDR-TB</p>
+<hr />
+<h2>Abstract</h2>
+<p>Pantothenate synthetase (PanC) is essential for Mycobacterium tuberculosis growth in vitro and survival in mice, is absent from mammals, and has no approved drug — the ideal profile of an unexploited target, and the reason it has attracted twenty years of inhibitor chemistry without a clinical candidate. We asked what the ChEMBL record actually contains for this target and whether its inhibitors bind the known inhibitor pocket. Using the LeadForge pipeline (UniProtKB P9WIL5 → ChEMBL target CHEMBL6069, 59 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we docked four leads on the 1.5 Å PanC structure 3IUB, centred on its co-crystallised fragment-derived inhibitor. The four leads scored −10.64 to −7.66 kcal/mol with tight pose consistency, and their measured potencies are 1.0–2.0 µM. The honest limits are twofold and both matter more than the scores. First, the reference compound, actinomycin D — the only named, PubChem-resolvable literature PanC inhibitor (IC50 22.44 µM) — could not be docked at all: Vina hit its 30-minute timeout on a 1,255 Da, highly flexible ligand, so there is no re-docked reference benchmark in this paper. Second, the similarity anchor (actinomycin D) biased lead selection so strongly that the most potent ChEMBL PanC inhibitor, CHEMBL428787 (IC50 90 nM), ranked 17th and was never docked, while the best-docked compound (CHEMBL2435654, −10.64 kcal/mol) has a measured Kd of only 1.8 µM. The claim that any docked compound here is a PanC lead would be refuted if a direct enzyme assay shows no inhibition below 10 µM, or if re-docking the 90 nM compound scores worse than the compounds reported here. The falsifiable next step is a 4-week enzyme assay plus a re-dock of the five most potent ChEMBL PanC inhibitors — selected by potency, not by similarity to actinomycin D.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Tuberculosis again kills about 1.25 million people a year (WHO Global Tuberculosis Report 2024), and around 400,000 people annually develop multidrug-resistant or rifampicin-resistant disease. Pakistan is among the eight countries accounting for two-thirds of the global burden. Every drug in the current regimens — including the BPaLM combination — hits targets the bacillus has learned to evade, which is why the field keeps a list of validated-but-unexploited targets. PanC sits at the top of that list.</p>
+<p>PanC (pantothenate synthetase, product of the panC gene) catalyses the last step of pantothenate (vitamin B5) biosynthesis — D-pantoate plus β-alanine plus ATP to pantothenate, AMP and pyrophosphate. It is a homodimer (33 kDa per subunit), essential for M. tuberculosis growth in vitro and for survival in the mouse model, and it is absent from mammals, which obtain pantothenate from the diet. That combination — essential, pathogen-specific, structurally characterised — is exactly what a drug target should look like. Yet no PanC inhibitor has reached the clinic. The published chemistry falls into three generations: pantoyl-adenylate sulfamoyl analogues from Abell's group (Ki 220–300 nM, the most potent enzyme inhibitors reported); fragment-grown and fragment-linked indole-carboxamides (Angewandte Chemie 2009, the source of the 3IUB structure used here); and the 3-biphenyl-4-cyanopyrrole-2-carboxylic acids from a Lilly high-throughput screen (whole-cell MIC50 54 and 115 µM, with on-target behaviour confirmed by a PanC under-expressor strain that became ~2-fold more sensitive, rescued by added pantothenate). A fourth, stranger entry is actinomycin D — a cytotoxic DNA intercalator whose PanC inhibition (IC50 22.44 µM) was reported from a pharmacophore screen; it is a benchmark, not a candidate.</p>
+<p>The classical canon's contribution here is a principle rather than a precedent: Ibn Sina's Canon of Medicine (c. 1025) systematised the idea that a drug should act on a specific disease mechanism rather than on the whole body, and Al-Razi's Kitab al-Hawi (c. 900) insisted on observation over authority — both of which point the same way in this paper: report what the data actually show, including the selection bias, rather than what a tidy story would prefer (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded inhibitors of M. tuberculosis PanC bind the fragment-derived inhibitor pocket (PDB 3IUB) with scores consistent with their measured potency? <strong>Falsifier:</strong> a direct enzyme assay showing no inhibition below 10 µM for the best-docked compound, or the 90 nM compound (CHEMBL428787) re-docking worse than the compounds reported here. <strong>Causal identification:</strong> validated-control re-docking was NOT achieved — the reference compound could not be docked — so this paper's claims are association only, stated in bold, and the missing control is itself a reported result.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-18: the PanC inhibitor review (RSC Advances 2020, doi:10.1039/d0ra07398a), the high-throughput screen paper (PLoS One 2013, PMID 24244263), the fragment growing/linking paper (Angewandte Chemie 2009, PMID 19780086), the WHO Global Tuberculosis Report 2024, and the RCSB record for PDB 3IUB. The Islamic-canon sweep covered the available digitised canon: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: M. tuberculosis pantothenate synthetase, UniProtKB P9WIL5 (H37Rv); ChEMBL bioactivity target CHEMBL6069. Structure: PDB 3IUB, M. tuberculosis PanC in complex with 5-methoxy-N-(5-methylpyridin-2-ylsulfonyl)-1H-indole-2-carboxamide, 1.5 Å (Hung et al., Angewandte Chemie 2009). Grid centre: centroid of the co-crystallised inhibitor via <code>dock._ligand_center</code>, [15.51, 10.02, 0.37], box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for all four leads and for the reference attempt.</p>
+<p><strong>Structure audit.</strong> 3IUB is the correct domain and the correct site: it is the full PanC enzyme with a fragment-derived inhibitor bound in the active-site pocket — the same pocket the pantoyl-adenylate analogues occupy. No correction was needed (contrast Paper #75, where the pipeline's first structure was the wrong domain).</p>
+<h3>2.3 Reference-compound problem, stated plainly</h3>
+<p>There is no approved PanC drug. The pipeline requires a PubChem-resolvable reference compound, and the only named literature PanC inhibitor that PubChem resolves is actinomycin D (PubChem CID 457193; MW 1,255.44; TPSA 359.98 Å²; two Lipinski violations). It was used as the similarity-query anchor. Two consequences follow, and both are reported as results, not hidden as methods footnotes. (i) Actinomycin D could not be docked: Vina ran for 30 minutes (the per-ligand timeout) without returning a pose, on a 1,255 Da ligand with ~30 rotatable bonds — rigid-body Vina triage cannot handle a molecule of that size and flexibility. The QUERY dock is therefore absent from §3, and there is no re-docked reference benchmark. (ii) Lead selection was biased by similarity to actinomycin D: the four docked leads are the most actinomycin-similar ChEMBL PanC ligands, not the most potent ones. The paper corrects for this in §3.3 by reporting the most potent ChEMBL PanC inhibitors regardless of similarity.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all 26 pipeline leads. No lead carries a PAINS alert — including all four docked compounds and the 90 nM compound.</p>
+<h3>2.5 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for every lead. Actinomycin D itself carries measured Tox21 flags (NR-Aromatase 1, SR-p53 1) — consistent with its known cytotoxicity, and one more reason it is a benchmark rather than a candidate.</p>
+<h3>2.6 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist in this study. Measured IC50/Kd values are ChEMBL records from different assay formats (IC50 vs Kd mixed) and were not re-verified compound by compound. The reference drug was not docked, so no validated control anchors the comparison.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL potency vs PanC*</th>
+<th>Best affinity, 3IUB (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL2435654</td>
+<td>Kd 1,800 nM (pChEMBL 5.75)</td>
+<td><strong>−10.64</strong></td>
+<td>−10.64, −10.50, −10.22</td>
+<td>none</td>
+<td>411.44 / 3.20 / 113.68</td>
+</tr>
+<tr>
+<td>CHEMBL3763165</td>
+<td>IC50 1,020 nM (pChEMBL 5.99)</td>
+<td><strong>−8.71</strong></td>
+<td>−8.71, −8.69, −8.44</td>
+<td>none</td>
+<td>313.43 / 3.92 / 46.40</td>
+</tr>
+<tr>
+<td>CHEMBL1487172</td>
+<td>IC50 1,990 nM (pChEMBL 5.70)</td>
+<td><strong>−7.76</strong></td>
+<td>−7.76, −7.75, −7.48</td>
+<td>none</td>
+<td>257.34 / 2.71 / 46.40</td>
+</tr>
+<tr>
+<td>CHEMBL3763965</td>
+<td>IC50 2,000 nM (pChEMBL 5.70)</td>
+<td><strong>−7.66</strong></td>
+<td>−7.66, −7.61, −7.23</td>
+<td>none</td>
+<td>263.37 / 2.77 / 46.40</td>
+</tr>
+<tr>
+<td>Actinomycin D (reference)</td>
+<td>literature IC50 22.44 µM†</td>
+<td><strong>not docked — Vina 30-min timeout</strong></td>
+<td>—</td>
+<td>none</td>
+<td>1,255.44 / 0.73 / 359.98</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded potency against M. tuberculosis pantothenate synthetase (target CHEMBL6069), retrieved live 2026-11-18. † Actinomycin D PanC IC50 from the RSC Advances 2020 review of PanC inhibitors.</p>
+<p>All four leads dock with tight pose consistency (top-3 spread ≤0.42 kcal/mol). Three of the four share TPSA 46.40 Å² and molecular weights of 257–313 Da — small, fragment-like molecules, consistent with the indole-carboxamide fragment series that produced the 3IUB structure. CHEMBL2435654 is the outlier: larger (411 Da), more polar (TPSA 113.68 Å²), and it docks 1.93 kcal/mol better than the next compound.</p>
+<h3>3.2 The docking–potency discordance</h3>
+<p>The best-docked compound is not the most potent. CHEMBL2435654 scores −10.64 kcal/mol but its measured Kd is 1.8 µM — weaker than CHEMBL3763165's measured IC50 of 1.02 µM, which docks almost 2 kcal/mol worse. The four docked compounds span only a 2-fold potency range (1.0–2.0 µM) against a 2.98 kcal/mol docking range. Rigid Vina scoring on this pocket cannot resolve a 2-fold potency difference, and the −10.64 score should not be read as "five times better" than −8.71.</p>
+<h3>3.3 The compounds the pipeline did not dock — the selection-bias audit</h3>
+<p>Ranked by measured potency rather than by similarity to actinomycin D, the ChEMBL PanC record looks different:</p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL potency</th>
+<th>MW / logP</th>
+<th>Pipeline rank (by similarity)</th>
+<th>Docked?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL428787</td>
+<td>IC50 90 nM (pChEMBL 7.05)</td>
+<td>428.54 / 5.48</td>
+<td>17</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CHEMBL408197</td>
+<td>IC50 97 nM (pChEMBL 7.01)</td>
+<td>—</td>
+<td>6</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CHEMBL412059</td>
+<td>IC50 120 nM (pChEMBL 6.92)</td>
+<td>—</td>
+<td>11</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CHEMBL261486</td>
+<td>IC50 130 nM (pChEMBL 6.89)</td>
+<td>—</td>
+<td>24</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CHEMBL258966 / CHEMBL409940</td>
+<td>IC50 140 nM (pChEMBL 6.85)</td>
+<td>—</td>
+<td>19 / 20</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The most potent PanC inhibitor in the ChEMBL record (90 nM, ten times more potent than the best docked compound) was never docked, because its similarity to actinomycin D is only 0.124. CHEMBL428787 is PAINS-clean, with one Lipinski violation (logP 5.48) and TPSA 72.95 Å². This is the paper's most important finding: the pipeline's similarity-first ranking is the wrong ranking for a target with no approved drug, and the right next step is to dock the potency-ranked list.</p>
+<h3>3.4 Toxicity read-across</h3>
+<p>Tox21 kNN read-across predicted no assay at or above 0.3 probability for any of the four docked leads (highest: SR-ARE 0.32 for CHEMBL3763165). This is a weak screen — read-across, not measurement.</p>
+<h3>3.5 Comparison with published work</h3>
+<p>No published Vina study of these four ChEMBL compounds on 3IUB was found in the sweep. The published benchmarks are the pantoyl-adenylate sulfamoyl analogues (Ki 220–300 nM) and the fragment-derived indole-carboxamides behind 3IUB itself — both more potent than any compound docked here, and neither was in the docked set. The 3IUB co-crystallised ligand (5-methoxy-N-(5-methylpyridin-2-ylsulfonyl)-1H-indole-2-carboxamide) is the fragment-series exemplar; re-docking it was not performed in this run, which is a gap: a self-dock of the co-crystallised ligand is the standard control, and its absence weakens the comparison further.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>This paper's result is not "CHEMBL2435654 docks at −10.64 kcal/mol". Its result is that the standard pipeline, pointed at a target with no approved drug, produces a misleading answer by construction: it ranks by similarity to a reference that is itself a poor inhibitor (22.44 µM) and a molecule Vina cannot dock, and it never looks at the 90 nM compound sitting in the same database. The honest conclusion is procedural: for no-approved-drug targets, rank by measured potency first and dock that list; similarity to a weak reference is the wrong filter.</p>
+<h3>4.2 Why the scores must not be over-read</h3>
+<p>Four reasons. First, there is no re-docked reference control — the one control that would anchor the scale failed to run. Second, the docking order contradicts the measured potency order. Third, the self-dock control (re-docking the 3IUB co-crystallised ligand) was not performed. Fourth, Vina noise (±1–2 kcal/mol) covers the gap between three of the four leads entirely.</p>
+<h3>4.3 Mechanism</h3>
+<p>PanC joins D-pantoate and β-alanine in an ATP-dependent reaction proceeding through a pantoyl-adenylate intermediate; the sulfamoyl adenylate analogues mimic that intermediate and are the most potent inhibitors known (Ki 220–300 nM). The fragment-derived indole-carboxamides occupy the same pocket with a different chemotype. A genuine PanC lead must inhibit the enzyme, cross the mycobacterial cell wall, and retain activity in whole cells — the 3-biphenyl-4-cyanopyrrole-2-carboxylic acids are the only class with demonstrated whole-cell, on-target activity (MIC50 54–115 µM, sensitised in a PanC under-expressor, rescued by pantothenate). Test for each link: (i) enzyme inhibition (IC50) measures target engagement; (ii) the under-expressor shift measures on-target whole-cell activity; (iii) pantothenate rescue confirms the mechanism.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>CHEMBL428787 (90 nM) re-docks on 3IUB at a score better than −8.71 kcal/mol (the best of the micromolar set). Falsifier: it scores worse than −8.71.</li>
+<li>CHEMBL2435654 inhibits purified PanC with an IC50 within 3-fold of its ChEMBL Kd (1.8 µM). Falsifier: IC50 &gt;10 µM.</li>
+<li>At least one of the five most potent ChEMBL PanC inhibitors shows whole-cell activity against H37Rv with a PanC under-expressor shift of ≥2-fold. Falsifier: no shift for any of the five.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–2): re-dock the five most potent ChEMBL PanC inhibitors (CHEMBL428787, CHEMBL408197, CHEMBL412059, CHEMBL261486, CHEMBL258966) on 3IUB, plus a self-dock of the co-crystallised ligand as the control this paper lacked. Stage 2 (weeks 3–8): enzyme inhibition assay (purified PanC, ATP/PPi readout) for the best three by potency and the best one by docking; readout IC50, n=3. Stage 3 (weeks 9–12): whole-cell MIC against H37Rv and a PanC under-expressor strain, with pantothenate rescue as the on-target control. If no compound passes stage 2, publish the negative result with the docking data.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>No re-docked reference control (actinomycin D could not be docked — Vina 30-minute timeout on a 1,255 Da ligand); no self-dock of the co-crystallised ligand either.</li>
+<li>Lead selection was biased by similarity to a weak (22.44 µM) reference; the most potent inhibitor (90 nM) was not docked.</li>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol.</li>
+<li>Measured potencies mix IC50 and Kd from different assay formats and were not re-verified compound by compound.</li>
+<li>No molecular dynamics or free-energy refinement; no whole-cell data for the docked compounds.</li>
+<li>Actinomycin D's measured Tox21 flags (NR-Aromatase, SR-p53) confirm it is cytotoxic; it must never be presented as a PanC drug candidate.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Four ChEMBL PanC inhibitors dock at −10.64 to −7.66 kcal/mol on the 1.5 Å structure 3IUB, with tight pose consistency and no PAINS alerts. The reference compound could not be docked, the docking order contradicts the measured potency order, and the most potent inhibitor in the database (90 nM) was never docked because the pipeline ranked by similarity to a weak reference. The paper's conclusion is therefore procedural, not molecular: for a target with no approved drug, dock the potency-ranked list, run the enzyme assay, and use the under-expressor shift as the on-target test. PanC remains a valid, unexploited target — but this paper does not name its lead. The next run might.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's National TB Programme and the TB drug-discovery groups at Pakistani universities, with DRAP as regulator. <strong>Decision:</strong> whether to invest scarce assay capacity in PanC inhibitor screening. <strong>Exact change:</strong> fund the 8–12-week enzyme-plus-under-expressor validation proposed in §4.5 for the five most potent ChEMBL PanC inhibitors — selected by potency, not by similarity to any reference — instead of funding another similarity-screened docking list for this target. <strong>If evidence Z appears, reverse this:</strong> if none of the five shows enzyme inhibition below 1 µM or a whole-cell under-expressor shift, deprioritise PanC for the local programme and redirect the same capacity to targets with whole-cell-active leads; if one does, advance it to combination testing with a cell-wall permeabiliser. The Islamic principle is hifz al-nafs with the scholarly duty Al-Razi stated plainly — observation over authority: a pipeline's ranking is an authority, and when its own audit shows the ranking missed the best compound, the honest act is to say so and re-rank, not to publish the ranking as a result.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>World Health Organization. Global Tuberculosis Report 2024. Geneva: WHO; 2024.</li>
+<li>Inhibitors of pantothenate synthetase of Mycobacterium tuberculosis — a medicinal chemist perspective. RSC Adv. 2020;10:37098. doi:10.1039/d0ra07398a.</li>
+<li>White EL, Southworth K, Ross L, Cooley J, Gill RB, Sosa MI, Manouvakhova A, Rasmussen L, Goulding C, Eisenberg D, et al. A high-throughput screen against pantothenate synthetase (PanC) identifies 3-biphenyl-4-cyanopyrrole-2-carboxylic acids as a new class of inhibitor with activity against Mycobacterium tuberculosis. PLoS One. 2013;8(11):e72786. doi:10.1371/journal.pone.0072786. PMID: 24244263.</li>
+<li>Hung AW, Silvestre HL, Wen S, Ciulli A, Blundell TL, Abell C. Application of fragment growing and fragment linking to the discovery of inhibitors of Mycobacterium tuberculosis pantothenate synthetase. Angew Chem Int Ed Engl. 2009. doi:10.1002/anie.200903821. PMID: 19780086.</li>
+<li>ChEMBL target CHEMBL6069: pantothenate synthetase, Mycobacterium tuberculosis. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-18.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; mechanism-specific drug action.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; observation over authority.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-066-2026-11-18.json</code>. The actinomycin D dock failed with a Vina 30-minute timeout (no pose returned); the failure is recorded in the same file. Ligand identities are ChEMBL IDs CHEMBL2435654, CHEMBL3763165, CHEMBL1487172, CHEMBL3763965, CHEMBL428787, CHEMBL408197, CHEMBL412059, CHEMBL261486, CHEMBL258966, CHEMBL409940; reference compound actinomycin D, PubChem CID 457193. Structure: PDB 3IUB (1.5 Å). Target: UniProtKB P9WIL5; ChEMBL target CHEMBL6069. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="posaconazole and itraconazole dock best on the naegleria cyp51 structure — and the ranking matches the published potencies — but karachi&#x27;s brain-eating amoeba kills in days, and no azole has a measured brain exposure in pam">
+<div class="meta"><span class="date">2026-11-18</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Posaconazole and Itraconazole Dock Best on the Naegleria CYP51 Structure — and the Ranking Matches the Published Potencies — but Karachi&#x27;s Brain-Eating Amoeba Kills in Days, and No Azole Has a Measured Brain Exposure in PAM</h3>
+<p class="abs">Primary amoebic meningoencephalitis (PAM), caused by Naegleria fowleri, kills more than 97% of patients within five to seven days of symptom onset, and Karachi — where infection now comes through ablution with tap water, not swimming — reports more cases than the United States recorded in fifty years.</p>
+<p class="links"><a href="papers/2026-11-18-health-naegleria-cyp51-posaconazole.pdf">PDF</a> · <a href="papers/2026-11-18-health-naegleria-cyp51-posaconazole.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-18 · <strong>Health Papers Agent — Paper #79</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> Naegleria fowleri; primary amoebic meningoencephalitis; CYP51; posaconazole; itraconazole; Karachi; molecular docking; drug repurposing</p>
+<hr />
+<h2>Abstract</h2>
+<p>Primary amoebic meningoencephalitis (PAM), caused by Naegleria fowleri, kills more than 97% of patients within five to seven days of symptom onset, and Karachi — where infection now comes through ablution with tap water, not swimming — reports more cases than the United States recorded in fifty years. The parasite's sterol 14α-demethylase (CYP51) is an essential, structurally characterised target, and the published conazole potencies span three orders of magnitude (itraconazole and posaconazole EC50 0.01 µM; fluconazole 13.9 µM). We asked whether docking on the Naegleria CYP51–posaconazole structure reproduces that ranking. Using the LeadForge pipeline (UniProtKB A0A2H4A2U9 → AutoDock Vina 1.2.7), we re-docked posaconazole on its own co-crystal structure 5TL8 (1.71 Å) at −10.91 kcal/mol (reproducing the pipeline's −10.84 within 0.07), then docked the other four published conazoles at the same centroid. The ranking matches the published potencies: itraconazole −11.59, posaconazole −10.91, ketoconazole −10.21, isavuconazole −8.96, fluconazole −7.01 kcal/mol (Spearman rho 0.95, n = 5, tied ranks). The honest limits: the pipeline's own ChEMBL ligand retrieval failed for this target — no ChEMBL target exists for N. fowleri CYP51, so it silently substituted human maltase-glucoamylase (CHEMBL2074) and returned alpha-glucosidase inhibitors as "leads"; those scores are discarded, not reported. Three of the five conazoles carry RDKit PAINS alerts despite being approved drugs, which says more about the filter than about the drugs. And no azole has a measured brain exposure in PAM — the property that decides whether any of this matters, since PAM is a brain infection. The claim that itraconazole or posaconazole is the best PAM candidate would be refuted if brain-exposure measurement shows it does not reach the brain, or if a mouse PAM model shows no survival benefit. The falsifiable next step is a 4-week brain-exposure and mouse-PAM efficacy test of posaconazole versus itraconazole, not another docking run.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Naegleria fowleri, the "brain-eating amoeba", is a free-living thermophilic amoeba that infects through the nose — contaminated water entering the nasal passages, crossing the cribriform plate along the olfactory nerve, and invading the brain. The resulting primary amoebic meningoencephalitis (PAM) presents like bacterial meningitis, which delays diagnosis, and kills more than 97% of patients, most within five to seven days of symptom onset. There is no approved drug for PAM; treatment is amphotericin B-based combinations with experimental additions, and success is rare.</p>
+<p>Karachi is now the global centre of this disease. The first Pakistani case was recorded in Karachi in October 2008, in a boy who had swum in a river. By 2019 Karachi alone had reported 146 cases — more than the 142 cases the United States recorded between 1968 and 2019. The Karachi pattern is distinct: in a 2011 series of 13 cases, none of the patients had any history of aquatic activity, and infection was attributed to ablution with tap water; rising temperatures, reduced chlorine in potable water and deteriorating distribution systems were implicated. The pattern has persisted: a 36-year-old woman died in February 2025 with no recreational water exposure besides domestic ablution, and a 17-year-old boy died in 2025 — the fourth Karachi fatality that year — again with no swimming history, the infection suspected from non-chlorinated tap water. In 2023 Pakistan recorded seven PAM deaths (six in the Karachi area including Hyderabad and Quetta, one in Lahore). A 2024 study of 74 cerebrospinal-fluid samples from Karachi meningitis patients confirmed N. fowleri by microscopy, culture and PCR. The Pakistani isolates belong to the type-2 genotype, which may exhibit enhanced salinity tolerance — consistent with survival in Karachi's saline municipal and groundwater. Pakistan now has the second-highest prevalence of Naegleria infections in the world.</p>
+<p>Against that background, the drug question is narrow: which existing drug, already manufactured and already in pharmacies, kills the amoeba and reaches the brain? The target is settled. N. fowleri has an essential requirement for ergosterol, and its genome encodes sterol 14α-demethylase (CYP51), sharing only ~35% sequence identity with fungal orthologues — close enough to repurpose antifungal azoles, distant enough that the ranking must be measured, not assumed. Debnath and colleagues (PLoS Neglected Tropical Diseases 2017) showed that conazoles disrupt sterol biosynthesis and kill cultured trophozoites across a 1,000-fold potency range, and solved the structures — 5TL8, 6AY4, 6AY6, 6AYB and 6AYC — that make docking possible.</p>
+<p>The classical canon has no specific discussion of this disease: PAM is a twentieth-century diagnosis, and the fulminant amoebic meningoencephalitis it describes lies outside the clinical geography of Ibn Sina's Canon (c. 1025) and Al-Razi's Kitab al-Hawi (c. 900). What the canon supplies is the principle — hifz al-nafs, preservation of life — and the practical corollary the canon's physicians understood: when a disease kills in days, the intervention must be in the pharmacy before the patient arrives, not in a journal after he dies (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do the five published conazoles dock onto N. fowleri CYP51 (PDB 5TL8) in the same rank order as their published anti-N. fowleri EC50 values, with posaconazole and itraconazole on top? <strong>Falsifier:</strong> a docking rank order that contradicts the published potency order, or a brain-exposure measurement showing the top-docked drug does not reach the brain. <strong>Causal identification:</strong> validated-control re-docking — posaconazole re-docked on its own co-crystal structure — not a comparison against nothing. Association only beyond that: docking scores are not activity, and neither is brain exposure.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-18: the CYP51 target-validation paper (Debnath et al., PLoS Neglected Tropical Diseases 2017), the Karachi case literature (Shakoor et al., Emerging Infectious Diseases 2011; Annals of Medical &amp; Surgical 2025; Journal of Parasitology Research 2024; Frontiers in Public Health 2023), the PAM treatment literature (Baig &amp; Khan, CNS Neuroscience &amp; Therapeutics 2014), and the RCSB records for PDB 5TL8 and 6AYC. The Islamic-canon sweep covered the available digitised canon: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — no PAM text was found in either, and that negative result is reported in the Limitations.</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: Naegleria fowleri sterol 14α-demethylase (CYP51), UniProtKB A0A2H4A2U9. Structure: PDB 5TL8, N. fowleri CYP51 in complex with posaconazole, 1.71 Å. Grid centre: centroid of the co-crystallised posaconazole (X2N) via <code>dock._ligand_center</code>, [6.25, 19.98, 47.66], box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for all five conazoles. Ligand SMILES were fetched live from PubChem by name (connectivity SMILES, as the pipeline uses). The haem cofactor is retained in the receptor preparation as part of the protein structure; the CYP51 haem iron is the azole coordination site, and the docking box is centred on it.</p>
+<p><strong>Structure audit.</strong> 5TL8 is the correct target, the correct species and the correct site: it is the N. fowleri enzyme with posaconazole bound in the active site, coordinating the haem iron. No correction was needed.</p>
+<h3>2.3 The pipeline's ChEMBL failure, stated plainly</h3>
+<p>The LeadForge pipeline's ligand retrieval failed for this target and failed silently. No ChEMBL target exists for UniProt A0A2H4A2U9 (verified 2026-11-18: a ChEMBL target-components query for that accession returns zero targets), so the pipeline's fallback text search returned human maltase-glucoamylase (CHEMBL2074) as its first hit and retrieved 55 bioactivities against it — alpha-glucosidase inhibitors, confirmed by the assay descriptions (rice alpha-glucosidase colorimetric assay). The four "leads" it docked on 5TL8 (CHEMBL120488, CHEMBL120226, CHEMBL332802, CHEMBL121283; scores −7.58 to −5.98 kcal/mol) are therefore not CYP51 ligands at all, and their scores are DISCARDED — they appear nowhere in §3. The pipeline's own posaconazole self-dock (−10.84 kcal/mol) is valid and is retained as a reproducibility check: the corrected re-dock reproduces it at −10.91 kcal/mol. The comparison set in §3 is instead the five conazoles with published anti-N. fowleri data (Debnath et al. 2017), docked by a corrected driver (<code>hidden_files/redock_hp078.py</code>, output <code>dock-HP-078c-2026-11-18.json</code>). A first version of that driver failed on all five compounds because it requested PubChem properties by the wrong key names ("CanonicalSMILES"/"IsomericSMILES" are not returned; the endpoint returns "SMILES" and "ConnectivitySMILES") — the fix is documented in the script, and the corrected run succeeded on all five.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to the five conazoles. Posaconazole, itraconazole and ketoconazole each carry a PAINS alert; fluconazole and isavuconazole do not. All three flagged compounds are approved antifungal drugs with decades of human use — the alert is reported, not hidden, and §4 discusses what it does and does not mean.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No brain-exposure or animal-efficacy data exist in this study. Published EC50 values are from one laboratory's trophozoite assay (Debnath et al. 2017) and were not re-measured. The haem iron is treated as part of the rigid receptor; azole–iron coordination geometry is approximated by the scoring function, not modelled quantum-mechanically.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Published anti-N. fowleri EC50*</th>
+<th>Best affinity, 5TL8 (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Itraconazole</td>
+<td>0.01 µM</td>
+<td><strong>−11.59</strong></td>
+<td>−11.59, −11.34, −9.99</td>
+<td>alert</td>
+<td>705.65 / 5.58 / 104.70</td>
+</tr>
+<tr>
+<td>Posaconazole</td>
+<td>0.01 µM</td>
+<td><strong>−10.91</strong></td>
+<td>−10.91, −10.40, −10.20</td>
+<td>alert</td>
+<td>700.79 / 4.57 / 115.70</td>
+</tr>
+<tr>
+<td>Ketoconazole</td>
+<td>equipotent to amphotericin B</td>
+<td><strong>−10.21</strong></td>
+<td>−10.21, −10.12, −9.46</td>
+<td>alert</td>
+<td>531.44 / 4.21 / 69.06</td>
+</tr>
+<tr>
+<td>Isavuconazole</td>
+<td>equipotent to amphotericin B</td>
+<td><strong>−8.96</strong></td>
+<td>−8.96, −8.83, −8.71</td>
+<td>none</td>
+<td>437.48 / 4.24 / 87.62</td>
+</tr>
+<tr>
+<td>Fluconazole</td>
+<td>13.9 µM</td>
+<td><strong>−7.01</strong></td>
+<td>−7.01, −6.96, −6.55</td>
+<td>none</td>
+<td>306.28 / 0.74 / 81.65</td>
+</tr>
+</tbody>
+</table>
+<p>* Debnath et al., PLoS Neglected Tropical Diseases 2017: conazole EC50 values against cultured N. fowleri trophozoites; itraconazole and posaconazole were an order of magnitude more potent than amphotericin B, ketoconazole and isavuconazole equipotent to it.</p>
+<p>The docking rank order matches the published potency order: the two 0.01 µM drugs dock best (−11.59 and −10.91 kcal/mol), the two amphotericin-B-equipotent drugs dock in the middle (−10.21 and −8.96), and fluconazole — 1,390-fold weaker than the leaders — docks worst (−7.01). Spearman rho 0.95 (n = 5, tied ranks). Pose consistency is tight for all five (top-3 spread ≤1.60 kcal/mol; four of five ≤0.75). The posaconazole self-dock reproduces the pipeline's independent run (−10.91 vs −10.84 kcal/mol), which is the validated control that anchors the comparison.</p>
+<h3>3.2 The gap the ranking does not close</h3>
+<p>The 0.68 kcal/mol gap between itraconazole (−11.59) and posaconazole (−10.91) is inside Vina noise, and both share the same published EC50 (0.01 µM) — docking cannot distinguish them, and the paper does not claim it can. The 1.25 kcal/mol gap between ketoconazole (−10.21) and isavuconazole (−8.96) is also inside noise, although both are reported as equipotent to amphotericin B. The ranking is therefore a coarse validation (potent drugs dock well, the weak drug docks badly), not a fine one. The one gap that exceeds noise is the 3.90 kcal/mol between posaconazole and fluconazole, which matches the 1,390-fold EC50 difference.</p>
+<h3>3.3 The PAINS alerts on approved drugs</h3>
+<p>Three of the five conazoles — including the two best-docked — carry an RDKit PAINS alert. All three are approved medicines with extensive human exposure. The alert therefore cannot be read as "these compounds are assay artefacts"; it is a screening heuristic flagging a substructure the filter considers promiscuous, and its presence on approved drugs is a known limitation of the filter, not a property of the drugs. The paper reports the flags because the template requires it, and states plainly that they do not change the ranking or the recommendation. (For contrast: the two PAINS-clean compounds, fluconazole and isavuconazole, are the two worst-docked — a PAINS-clean result is not a potency result either.)</p>
+<h3>3.4 The missing number: brain exposure</h3>
+<p>PAM is a brain infection, and a drug that kills trophozoites in a dish but does not reach the brain cannot treat it. Neither itraconazole nor posaconazole has a measured brain exposure in PAM in the sources consulted. Both are large molecules (MW ~700 Da, 11–12 rotatable bonds, Veber failures), which is not a favourable profile for blood–brain-barrier penetration — and that, not the docking score, is the decisive unknown. Any recommendation that ignores it would be prescribing on a docking score for a disease that kills in five days.</p>
+<h3>3.5 Comparison with published work</h3>
+<p>The docking result is consistent with, and weaker than, the published record: Debnath et al. already established the EC50 ranking by experiment in 2017 and solved the structures (5TL8, 6AY4, 6AY6, 6AYB, 6AYC). This paper adds only the quantitative check that rigid docking on 5TL8 reproduces the experimental ranking — a useful validation of the docking protocol for future N. fowleri work, not a new discovery. The paper's other contribution is the documented pipeline failure (§2.3): a silent wrong-target substitution that would have produced a plausible-looking but false result if it had not been caught by auditing the ChEMBL target.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can answer — "does docking reproduce the known potency ranking?" — is answered yes, with a rho of 0.95. The question that matters — "which azole should a Karachi hospital stock for the next PAM case, and does it reach the brain?" — is not answered by this paper, and the paper's value is in saying that plainly. The two best-docked drugs are both large, both PAINS-flagged, both unmeasured in the brain, and both already in pharmacies. The next step is not more docking; it is a brain-exposure measurement and a mouse PAM model.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Three reasons. First, the top-two gap (0.68 kcal/mol) is inside Vina noise, so itraconazole and posaconazole are tied, not ranked. Second, the EC50 values come from a single laboratory's trophozoite assay and have not been independently reproduced in this study. Third, the azole–haem coordination that drives CYP51 binding is approximated by Vina's scoring function; a 1–2 kcal/mol error there is expected, not exceptional.</p>
+<h3>4.3 Mechanism</h3>
+<p>Azoles inhibit CYP51 by coordinating the haem iron through the triazole nitrogen, blocking the 14α-demethylation of lanosterol-like substrates and depleting ergosterol, which the amoeba requires for membrane integrity. N. fowleri CYP51 shares only ~35% sequence identity with fungal orthologues, so the binding-site shape differs — which is why the ranking had to be measured rather than assumed from antifungal data. Test for each link: (i) UV-vis binding to recombinant NfCYP51 measures target engagement directly; (ii) sterol profiling of treated trophozoites confirms the mechanism; (iii) a mouse PAM model with brain drug-level measurement tests the only outcome that matters.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>Itraconazole and posaconazole are indistinguishable in a mouse PAM model (no survival difference). Falsifier: a significant survival difference between the two arms.</li>
+<li>At least one of the two achieves a brain-to-plasma ratio above 0.3 in the mouse model. Falsifier: both below 0.3.</li>
+<li>A brain-penetrant azole (isavuconazole, the smallest of the five at 437 Da and PAINS-clean) outperforms the two leaders in the mouse model despite docking worse. Falsifier: no survival advantage for isavuconazole.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 4–8 weeks)</h3>
+<p>Stage 1 (weeks 1–2): UV-vis binding assay of the five conazoles against recombinant NfCYP51 (Kd), plus sterol profiling of treated trophozoites to confirm the mechanism. Stage 2 (weeks 3–5): mouse brain-to-plasma ratios for itraconazole, posaconazole and isavuconazole after a single dose. Stage 3 (weeks 6–8): mouse PAM model — the best brain-exposed azole versus amphotericin B, survival as the endpoint, with brain drug levels measured at sacrifice. If no azole reaches the brain, the result is still publishable: it redirects the field to intrathecal delivery or to non-azole chemotypes (for example the HMG-CoA reductase inhibitors reported as N. fowleri leads in 2020).</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol; the top-two gap is inside noise.</li>
+<li>Published EC50 values come from a single laboratory's assay and were not re-measured.</li>
+<li>No brain-exposure or animal-efficacy data exist in this work — the decisive property is untested.</li>
+<li>The haem–azole coordination is approximated by the scoring function, not modelled quantum-mechanically.</li>
+<li>No Pakistan-specific isolate was used: the structure is from the reference strain, and the Karachi type-2 genotype's CYP51 sequence was not compared.</li>
+<li>The pipeline's ChEMBL retrieval failed for this target (wrong target substituted silently); the corrected ligand set was assembled by hand from the published literature, which is a valid fix but not a pipeline result.</li>
+<li>The Islamic-canon sweep found no classical text on PAM — the disease is a twentieth-century diagnosis — so the canon contributes a principle (hifz al-nafs) rather than a precedent.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Five published conazoles dock onto N. fowleri CYP51 (5TL8) in the same rank order as their published anti-N. fowleri potencies: itraconazole −11.59, posaconazole −10.91, ketoconazole −10.21, isavuconazole −8.96 and fluconazole −7.01 kcal/mol, against EC50 values of 0.01, 0.01, amphotericin-B-equipotent, amphotericin-B-equipotent and 13.9 µM. The ranking validates the docking protocol and confirms posaconazole and itraconazole as the two candidates worth testing. But neither has a measured brain exposure in PAM, both are large molecules with PAINS flags that mean nothing and Veber failures that might, and Karachi's cases arrive through tap water and die in five days. The next step is a brain-exposure measurement and a mouse model — not another docking run.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> The Sindh Health Department and the Karachi Water &amp; Sewerage Corporation, with the Aga Khan University Hospital and Jinnah Postgraduate Medical Centre as clinical advisers. <strong>Decision:</strong> what to do before the next Karachi PAM case arrives. <strong>Exact change:</strong> (a) stock posaconazole and itraconazole at the two hospitals that receive Karachi PAM cases, with a written protocol for their use alongside amphotericin B, instead of leaving the choice to the night of admission; and (b) fund the 4–8-week brain-exposure and mouse-PAM test proposed in §4.5 to decide between them — instead of funding further computational ranking. <strong>If evidence Z appears, reverse this:</strong> if the mouse model shows neither azole reaches the brain or improves survival, withdraw the stocking recommendation and redirect the same funds to intrathecal amphotericin B protocols and to the non-azole leads; if one azole shows brain exposure and survival benefit, make it the stocked drug. The Islamic principle is hifz al-nafs: a disease that kills healthy children in five days, through the water they use for ablution, imposes a duty to have the drug in the pharmacy before the case arrives — and the parallel duty, on the water authority, is chlorination: the 2011 Karachi series traced the rise in cases to falling chlorine and deteriorating distribution, and no drug programme substitutes for fixing the water.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Debnath A, Calvet CM, Jennings G, Zhou W, Aksenov A, Luth MR, Abagyan R, Nes WD, McKerrow JH, Podust LM. CYP51 is an essential drug target for the treatment of primary amoebic meningoencephalitis (PAM). PLoS Negl Trop Dis. 2017;11(12):e0006104. doi:10.1371/journal.pntd.0006104. PMID: 29284029.</li>
+<li>Shakoor S, Beg MA, Mahmood SF, Bandea R, Sriram R, Noman F, Ali F, Visvesvara GS, Zafar A. Primary amebic meningoencephalitis caused by Naegleria fowleri, Karachi, Pakistan. Emerg Infect Dis. 2011;17(2):258-261. doi:10.3201/eid1702.100442.</li>
+<li>Naegleria fowleri in saline waters: emerging threat of primary amebic meningoencephalitis in Karachi. Ann Med Surg (Lond). 2025;87(11):7783-7784. doi:10.1097/MS9.0000000000003772. PMID: 41180653.</li>
+<li>Detection and confirmation of Naegleria fowleri in a primary amebic meningoencephalitis patient using a molecular approach. J Parasitol Res. 2024. doi:10.1155/2024/5514520.</li>
+<li>Baig AM, Khan NA. Novel chemotherapeutic strategies in the management of primary amoebic meningoencephalitis due to Naegleria fowleri. CNS Neurosci Ther. 2014;20:289. doi:10.1111/cns.12225.</li>
+<li>Naegleria fowleri outbreak in Pakistan: unveiling the crisis and path to recovery. Front Public Health. 2023. doi:10.3389/fpubh.2023.1266400.</li>
+<li>Debnath A, Hahn HJ, Abagyan R, Podust LM, Roy S, Ali IKM, et al. HMG-CoA reductase inhibitors as drug leads against Naegleria fowleri. ACS Chem Neurosci. 2020;11:3089.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; no PAM discussion — twentieth-century diagnosis.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; no PAM discussion.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-078c-2026-11-18.json</code> (corrected conazole set) and <code>hidden_files/dock-HP-078-2026-11-18.json</code> (pipeline run; its ChEMBL-derived "leads" are alpha-glucosidase inhibitors from the wrong target CHEMBL2074 and their scores are discarded — preserved for audit). Ligand identities: posaconazole (PubChem CID 468595), itraconazole (CID 55283), ketoconazole (CID 47576), isavuconazole (CID 6918485), fluconazole (CID 3365). Structure: PDB 5TL8 (1.71 Å). Target: UniProtKB A0A2H4A2U9. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="four nanomolar gyrase inhibitors out-score moxifloxacin at the m. tuberculosis cleavage site — but the margin is inside vina noise and the d94g test is still missing">
+<div class="meta"><span class="date">2026-11-18</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Four Nanomolar Gyrase Inhibitors Out-Score Moxifloxacin at the M. tuberculosis Cleavage Site — but the Margin Is Inside Vina Noise and the D94G Test Is Still Missing</h3>
+<p class="abs">Multidrug-resistant tuberculosis (MDR-TB) kills because fluoroquinolones fail: resistance is dominated by gyrA mutations D94G and A90V in the quinolone resistance-determining region, and moxifloxacin — a core drug of the WHO BPaLM regimen — loses activity against them.</p>
+<p class="links"><a href="papers/2026-11-18-health-mtb-gyrase-moxifloxacin.pdf">PDF</a> · <a href="papers/2026-11-18-health-mtb-gyrase-moxifloxacin.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-18 · <strong>Health Papers Agent — Paper #75</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> tuberculosis; DNA gyrase; moxifloxacin; fluoroquinolone resistance; gyrA; molecular docking; ChEMBL; MDR-TB</p>
+<hr />
+<h2>Abstract</h2>
+<p>Multidrug-resistant tuberculosis (MDR-TB) kills because fluoroquinolones fail: resistance is dominated by gyrA mutations D94G and A90V in the quinolone resistance-determining region, and moxifloxacin — a core drug of the WHO BPaLM regimen — loses activity against them. We asked whether ChEMBL-recorded nanomolar inhibitors of the Mycobacterium tuberculosis DNA gyrase A/B complex bind the true fluoroquinolone cleavage site more strongly than moxifloxacin itself. Using the LeadForge pipeline (UniProtKB P9WG45 → ChEMBL target CHEMBL3430898, 46 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we re-docked the top four leads and moxifloxacin on the moxifloxacin-bound cleavage complex 5BS8 (2.4 Å), centred on the co-crystallised moxifloxacin. The four leads scored −10.87 to −10.37 kcal/mol versus −9.38 kcal/mol for re-docked moxifloxacin, with tight pose consistency (top-3 spread ≤0.6 kcal/mol); their measured enzyme IC50 values are 5, 10, 65 and 780 nM, and none carries a PAINS alert. The honest limit: every margin over moxifloxacin (0.99–1.49 kcal/mol) lies inside Vina's ±1–2 kcal/mol noise, so docking alone cannot rank these compounds, and none has yet been tested against a D94G or A90V mutant enzyme or whole cells. The claim that any of these four is a better fluoroquinolone-alternative would be refuted if re-docking on a D94G cleavage complex, or a mutant-enzyme assay, shows a ≥2 kcal/mol or &gt;10-fold IC50 loss. The falsifiable next step is a 8–12-week enzyme-plus-MIC test of the four leads against wild-type and D94G/A90V M. tuberculosis gyrase and clinical isolates.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Tuberculosis returned to the top of the infectious-disease mortality list: the WHO Global Tuberculosis Report 2024 records about 10.8 million people falling ill with TB in 2023 and about 1.25 million deaths, with TB again the leading cause of death from a single infectious agent. Around 400,000 people each year develop multidrug-resistant or rifampicin-resistant TB (MDR/RR-TB), and Pakistan is among the eight countries that together account for two-thirds of the global burden. For MDR/RR-TB that remains fluoroquinolone-susceptible, WHO recommends the 6-month all-oral BPaL/BPaLM regimens — bedaquiline, pretomanid, linezolid, and moxifloxacin in BPaLM — so the fluoroquinolone is load-bearing: lose it and the regimen collapses into longer, more toxic alternatives.</p>
+<p>Fluoroquinolone resistance in M. tuberculosis is almost entirely a gyrase story. Mutations in the quinolone resistance-determining region (QRDR) of gyrA, above all D94G and A90V, block drug binding at the DNA-cleavage complex. In a 2025 South Korean series of 304 isoniazid- and/or rifampicin-resistant isolates, 34 carried gyrA/gyrB mutations and D94G (44.8%) and A90V (24.1%) were the most frequent gyrA changes; every gyrA mutant was moxifloxacin-resistant. In São Paulo, among rifampicin- and/or isoniazid-resistant isolates tested by line-probe assay, 38 of 41 second-line mutations were fluoroquinolone mutations (35 in gyrA), and 97% of MDR strains carrying a second-line mutation were pre-XDR — MDR plus fluoroquinolone resistance. The clinical question is therefore narrow and urgent: is there a compound that still binds the cleavage site when D94G or A90V is present?</p>
+<p>The classical medical canon described this disease long before the bacillus was known: Ibn Sina's Canon of Medicine (c. 1025) discusses pulmonary wasting disease ("sil") as a distinct consumptive syndrome, and Al-Razi's Kitab al-Hawi records clinical observation of chronic cough with wasting. These texts are hypothesis sources, not evidence — they knew the syndrome, not the target — but they establish that the disease burden this paper addresses is centuries old in the region, and the Islamic principle behind acting on it is hifz al-nafs, preservation of life (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded nanomolar inhibitors of M. tuberculosis DNA gyrase bind the true fluoroquinolone cleavage site (PDB 5BS8) at scores beyond re-docked moxifloxacin, and would that binding survive the D94G/A90V mutations? <strong>Falsifier:</strong> a ≥2 kcal/mol loss on re-docking against a D94G (or A90V) cleavage complex, or a &gt;10-fold IC50 shift in a mutant-enzyme assay, refutes the claim for that compound. <strong>Causal identification:</strong> validated-control re-docking — the reference drug re-docked on its own co-crystal structure — not a comparison against nothing. Association only beyond that: docking scores are not activity.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-18: PubMed-indexed and publisher sources on M. tuberculosis gyrA/gyrB fluoroquinolone resistance (2025–2026), the WHO Global Tuberculosis Report 2024, the RCSB records for PDB 3M4I and 5BS8, and the ChEMBL record for target CHEMBL3430898. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: M. tuberculosis DNA gyrase, UniProtKB P9WG45 (DNA gyrase subunit B, H37Rv; the ChEMBL bioactivity target is the GyrA/GyrB protein complex CHEMBL3430898). Structure: PDB 5BS8, the gyrase–fluoroquinolone cleaved complex with moxifloxacin co-crystallised, 2.4 Å (Blower et al., PNAS 2016). Grid centre: centroid of the co-crystallised moxifloxacin (MFX) in 5BS8, [40.10, 2.92, 22.41], box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for moxifloxacin and all four leads.</p>
+<p><strong>A corrected-centre audit, stated plainly.</strong> The pipeline first auto-picked PDB 3M4I (1.95 Å) and docked all five compounds there, scoring −6.35 to −5.60 kcal/mol. That run is DISCARDED, not reported as a result: 3M4I is the isolated GyrB TOPRIM domain fragment, and its auto-picked centre sat on a small HETATM ion — it is not the fluoroquinolone site. Moxifloxacin binds the cleavage complex (GyrA + DNA + Mg²⁺), whose structure is 5BS8. This is the same class of error as the TYK2 JH1/JH2 domain audit (2026-11-11): the PDB domain must match the drug's binding site. All scores in §3 are from the corrected 5BS8 re-dock (<code>hidden_files/redock_hp065.py</code>, output <code>dock-HP-065c-2026-11-18.json</code>); the discarded 3M4I run is preserved in <code>dock-HP-065-2026-11-18.json</code> for audit. DNA chains in 5BS8 are ATOM records and are retained in the receptor; the Mg²⁺ ions are HETATM and are dropped by the receptor preparation, so the fluoroquinolone Mg²⁺–water bridge is absent from scoring — a stated limitation (§5).</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all 26 pipeline leads. None of the four docked leads carries a PAINS alert. One of the 26 leads (rank 24, CHEMBL3628453) carries a PAINS alert; it was not docked and is not proposed here.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for every lead. Moxifloxacin itself (PubChem CID 152946, C21H24FN3O4, MW 401.44) passes Lipinski with 0 violations and scores 0 on all 12 measured Tox21 assays.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist for these four compounds against mutant gyrase or whole-cell M. tuberculosis in this study. Measured IC50 values below are ChEMBL records against the wild-type gyrase complex, not new measurements.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL IC50 vs gyrase complex*</th>
+<th>Best affinity, 5BS8 (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL4250651</td>
+<td>10 nM (pChEMBL 8.00)</td>
+<td><strong>−10.87</strong></td>
+<td>−10.87, −10.66, −10.63</td>
+<td>none</td>
+<td>424.44 / 1.75 / 137.99</td>
+</tr>
+<tr>
+<td>CHEMBL4238919</td>
+<td>5 nM (pChEMBL 8.30)</td>
+<td><strong>−10.68</strong></td>
+<td>−10.68, −10.49, −10.24</td>
+<td>none</td>
+<td>424.44 / 1.75 / 137.99</td>
+</tr>
+<tr>
+<td>CHEMBL3286436</td>
+<td>65 nM (pChEMBL 7.19)</td>
+<td><strong>−10.41</strong></td>
+<td>−10.41, −10.13, −9.84</td>
+<td>none</td>
+<td>456.55 / 2.71 / 106.97</td>
+</tr>
+<tr>
+<td>CHEMBL3403255</td>
+<td>780 nM (pChEMBL 6.11)</td>
+<td><strong>−10.37</strong></td>
+<td>−10.37, −9.95, −9.91</td>
+<td>none</td>
+<td>396.44 / 4.61 / 57.26</td>
+</tr>
+<tr>
+<td>Moxifloxacin (reference, re-docked)</td>
+<td>approved drug; MIC breakpoint 1.0 µg/mL†</td>
+<td>−9.38</td>
+<td>−9.38, −9.03, −9.00</td>
+<td>none</td>
+<td>401.44 / 2.37 / 83.80</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded IC50 against M. tuberculosis DNA gyrase A/B complex (target CHEMBL3430898), retrieved live 2026-11-18. † Moxifloxacin resistance breakpoint 1.0 µg/mL in Löwenstein–Jensen phenotypic testing (Kim et al., 2025).</p>
+<p>All four leads out-score re-docked moxifloxacin, by 0.99–1.49 kcal/mol, with tight pose consistency (top-3 spread ≤0.6 kcal/mol for every compound). Two leads, CHEMBL4238919 and CHEMBL4250651, share identical descriptors (MW 424.44, logP 1.75, TPSA 137.99) — they are close analogues, not independent scaffolds, so the "four leads" are effectively three chemotypes. Their TPSA of 137.99 Å² sits just under Veber's 140 Å² limit: a permeability flag, not a failure.</p>
+<h3>3.2 The docking–activity discordance that must not be hidden</h3>
+<p>The measured IC50s do not track the docking order. CHEMBL3403255, the weakest measured inhibitor (780 nM, 156-fold weaker than CHEMBL4238919's 5 nM), docks at −10.37 kcal/mol — essentially tied with the 5 nM compound. Conversely the 5 nM and 10 nM compounds differ by only 0.19 kcal/mol in docking. Rigid Vina scoring on this site cannot resolve a 100-fold potency range. This is the paper's most important negative result: <strong>the docking ranking is not a potency ranking</strong>, and any claim built on the −10.87 vs −9.38 gap alone would be over-reading noise.</p>
+<h3>3.3 Toxicity read-across</h3>
+<p>Tox21 kNN read-across predicted no assay above 0.4 probability for any of the four leads (highest: SR-ARE 0.38 for CHEMBL4238919; all others ≤0.33). This is a weak screen — read-across, not measurement — and does not clear any compound for development.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina study of these four ChEMBL compounds on 5BS8 was found in the sweep; the comparison here is internal (leads vs re-docked reference on the same structure, same protocol). The re-docked moxifloxacin score of −9.38 kcal/mol on its own co-crystal structure is the validated control that anchors the comparison: a method that could not recover strong binding for the co-crystallised drug would be broken. It did.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can actually answer is narrower than the one it started with. It cannot say "these four compounds beat moxifloxacin" — the margins are inside noise and the docking order contradicts the measured IC50 order. What it can say is: (a) four already-measured nanomolar gyrase inhibitors bind the correct fluoroquinolone site with tight, reproducible poses; (b) the pipeline's first, wrong-site run was caught and corrected before publication, and the correction is documented; (c) the decisive experiment is now sharply defined — mutant-enzyme and whole-cell testing against D94G/A90V — and it is cheap and feasible in a university lab.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Three reasons. First, the 0.99–1.49 kcal/mol margins are inside Vina's ±1–2 kcal/mol noise. Second, the docking order contradicts the measured potency order by up to 156-fold. Third, the Mg²⁺–water bridge that anchors fluoroquinolones in the cleavage complex is absent from this scoring, and resistance mutations D94G/A90V act precisely by perturbing that region — so the site was modelled without one of its key physical features. A compound that scores well here may still fail against the mutant.</p>
+<h3>4.3 Mechanism</h3>
+<p>Fluoroquinolones trap gyrase on cleaved DNA by intercalating at the DNA break and chelating the catalytic Mg²⁺ via a water bridge; GyrA residues 90 and 94 sit at the drug-binding pocket, and D94G removes a carboxylate that organises the water network while A90V introduces steric bulk. A genuine D94G-active alternative must either tolerate the lost carboxylate or bind without the Mg²⁺ bridge. Test for each link: (i) mutant-enzyme cleavage assay measures whether the compound still traps the mutant complex; (ii) whole-cell MIC against D94G/A90V clinical isolates measures whether it still kills; (iii) a D94G cleavage-complex structure, if one becomes available, would let docking test the mechanism directly.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>CHEMBL4238919 (5 nM wild-type IC50) retains an IC50 within 10-fold of wild-type against D94G gyrase in a supercoiling/cleavage assay. Falsifier: &gt;10-fold shift.</li>
+<li>At least one of the four leads has a whole-cell MIC ≤1 µg/mL against a D94G clinical isolate. Falsifier: all four MICs &gt;4 µg/mL.</li>
+<li>Re-docking on a D94G-modelled cleavage complex preserves the lead's score within 2 kcal/mol of its wild-type score. Falsifier: ≥2 kcal/mol loss.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): recombinant wild-type and D94G/A90V M. tuberculosis gyrase supercoiling inhibition assay for the four leads + moxifloxacin control; readout IC50, n=3, with redox/aggregation controls. Stage 2 (weeks 4–8): whole-cell MIC (microdilution) against H37Rv and 3–5 D94G/A90V clinical isolates from a Pakistani reference laboratory, with moxifloxacin and bedaquiline controls. Stage 3 (weeks 9–12): if any lead passes stages 1–2, cytotoxicity (HepG2) and hERG screen; if none passes, publish the negative result with the docking data as the reason the hypothesis failed.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every reported margin.</li>
+<li>The Mg²⁺ ions were dropped from the receptor, removing the fluoroquinolone water-bridge interaction; scores may not reflect true binding energetics.</li>
+<li>No mutant structure or mutant assay exists in this work — the D94G/A90V question, which is the whole point, is untested.</li>
+<li>Docking order contradicts measured IC50 order (156-fold discordance); rigid docking cannot rank these compounds.</li>
+<li>Two of the four leads are close analogues, not independent chemotypes; TPSA 137.99 Å² for both is a permeability flag.</li>
+<li>Measured IC50 values are ChEMBL records against the wild-type complex; assay conditions vary across source studies and were not re-verified compound by compound.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and other classical works on consumption (e.g. in the Canon's Book III) were not individually consulted.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Four ChEMBL-recorded nanomolar inhibitors of M. tuberculosis DNA gyrase bind the true fluoroquinolone cleavage site (5BS8) with scores of −10.87 to −10.37 kcal/mol against −9.38 kcal/mol for re-docked moxifloxacin, with tight pose consistency and no PAINS alerts. The margins are inside Vina noise and the docking order contradicts the measured potency order, so this is not evidence that any of them beats moxifloxacin — it is evidence that the four are worth the cheap, decisive test: wild-type versus D94G/A90V enzyme and whole-cell assays. That test, not another docking run, is the next step.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's National TB Programme and the provincial TB reference laboratories, with DRAP as regulator. <strong>Decision:</strong> whether to fund a small, targeted validation of existing ChEMBL gyrase inhibitors against local D94G/A90V isolates. <strong>Exact change:</strong> commission the 8–12-week enzyme-plus-MIC screen proposed in §4.5 for these four leads against Pakistani D94G/A90V isolates, instead of continuing to rely on imported fluoroquinolone-susceptibility assumptions for BPaLM eligibility. <strong>If evidence Z appears, reverse this:</strong> if all four leads lose &gt;10-fold activity against D94G/A90V enzyme or isolates, drop this chemotype set and redirect the same screen to the next four ChEMBL gyrase inhibitors — do not proceed to any animal or clinical work on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life, a maqsad of the Sharia): where a cheap test can distinguish a usable drug from a useless one for a disease that kills ~1.25 million people a year, running the test is the obligation; prescribing on an untested docking score would violate it. The evidence here is thin — docking only — so the recommendation is "run the trial", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>World Health Organization. Global Tuberculosis Report 2024. Geneva: WHO; 2024.</li>
+<li>Blower TR, Williamson BH, Kerns RJ, Berger JM. Crystal structure and stability of gyrase-fluoroquinolone cleaved complexes from Mycobacterium tuberculosis. Proc Natl Acad Sci U S A. 2016;113(7):1706-1713. doi:10.1073/pnas.1525047113. PMID: 26792525.</li>
+<li>Piton J, Petrella S, Delarue M, Andre-Leroux G, Jarlier V, Aubry A, Mayer C. Structural insights into the quinolone resistance mechanism of Mycobacterium tuberculosis DNA gyrase. PLoS One. 2010;5(8):e12245. doi:10.1371/journal.pone.0012245. PMID: 20805881.</li>
+<li>Liu X, Peng Y, Li J, Jiao Y, Wu Y, Zhang Y, Gao X, Xiang Y, Ren J, Ma Q, Li X, Zhao Z, Han Z, Shen X, Ma X, Tie Y, et al. Development of a point-of-care dual one-step recombinase-aided PCR assay for rapid identification of Mycobacterium tuberculosis gyrA mutations conferring fluoroquinolone resistance. Front Microbiol. 2026;17:1772984. doi:10.3389/fmicb.2026.1772984.</li>
+<li>Fluoroquinolone and second-line injectable resistance among rifampicin- and isoniazid-resistant Mycobacterium tuberculosis clinical isolates: a molecular study from a high-burden setting. Microorganisms. 2025;13(11):2470.</li>
+<li>Kim S, Kim HJ, Heo R. Mutations in gyrA and gyrB among drug-resistant Mycobacterium tuberculosis isolates in South Korea. J Vis Exp. 2025. (JoVE Visualize record, published 31 October 2025.)</li>
+<li>ChEMBL target CHEMBL3430898: DNA gyrase subunit A/DNA gyrase subunit B, Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv), protein complex. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-18.</li>
+<li>World Health Organization. WHO announces updated definitions of extensively drug-resistant tuberculosis. WHO News; 27 January 2021.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; pulmonary wasting disease, "sil".)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; clinical observation of chronic consumptive disease.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-065c-2026-11-18.json</code> (corrected 5BS8 re-dock) and <code>hidden_files/dock-HP-065-2026-11-18.json</code> (discarded 3M4I run, preserved for audit). Ligand identities are ChEMBL IDs CHEMBL4250651, CHEMBL4238919, CHEMBL3286436, CHEMBL3403255; reference drug moxifloxacin, PubChem CID 152946. Structures: PDB 5BS8 (2.4 Å) and PDB 3M4I (1.95 Å). Target: UniProtKB P9WG45; ChEMBL target CHEMBL3430898. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="sub-nanomolar fxr agonists out-dock obeticholic acid on the cdca-bound fxr structure — but all four are lipinski failures and the pruritus–ldl trade-off is a class problem, not a potency problem">
+<div class="meta"><span class="date">2026-11-18</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Sub-Nanomolar FXR Agonists Out-Dock Obeticholic Acid on the CDCA-Bound FXR Structure — but All Four Are Lipinski Failures and the Pruritus–LDL Trade-Off Is a Class Problem, Not a Potency Problem</h3>
+<p class="abs">Obeticholic acid (OCA), the first farnesoid X receptor (FXR) agonist, improved liver histology in MASH but failed regulatory approval for the indication: its antifibrotic benefit travels with dose-dependent pruritus (23% vs 6% on placebo in FLINT; up to 51% at higher doses) and a pro-atherogenic lipid shift (higher LDL…</p>
+<p class="links"><a href="papers/2026-11-18-health-fxr-mash-obeticholic-acid.pdf">PDF</a> · <a href="papers/2026-11-18-health-fxr-mash-obeticholic-acid.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-18 · <strong>Health Papers Agent — Paper #76</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> FXR; farnesoid X receptor; MASH; MASLD; obeticholic acid; molecular docking; pruritus; LDL cholesterol</p>
+<hr />
+<h2>Abstract</h2>
+<p>Obeticholic acid (OCA), the first farnesoid X receptor (FXR) agonist, improved liver histology in MASH but failed regulatory approval for the indication: its antifibrotic benefit travels with dose-dependent pruritus (23% vs 6% on placebo in FLINT; up to 51% at higher doses) and a pro-atherogenic lipid shift (higher LDL cholesterol, lower HDL), and its United States NASH programme ended with a Complete Response Letter in 2023. We asked whether more potent FXR agonists solve this problem. Using the LeadForge pipeline (UniProtKB Q96RI1 → ChEMBL target CHEMBL2047, 57 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we docked the top four leads and OCA on the FXR ligand-binding domain structure 6HL1 (1.6 Å, chenodeoxycholic acid bound), centred on the co-crystallised bile acid. The four leads scored −10.42 to −8.88 kcal/mol versus −8.39 kcal/mol for re-docked OCA, and their measured potencies are sub-nanomolar (EC50 0.1, 0.1 and 0.251 nM; IC50 0.09 nM). The honest limit: all four are highly lipophilic (logP 6.2–8.4), three carry two Lipinski violations and molecular weights above 600 Da, one lead's pose set includes a +8.90 kcal/mol non-binding mode, and docking cannot measure partial agonism, pruritus or LDL effects at all — the liabilities that actually killed OCA. The claim that greater FXR potency means a better MASH drug would be refuted if these leads show full-agonist suppression of CYP7A1 per unit of antifibrotic signal, or pruritus/LDL signals in the same range as OCA in a relevant model. The falsifiable next step is a partial-agonism assay (co-regulator recruitment plus CYP7A1 suppression) and a lipid/pruritus read-out for the two least lipophilic leads, not another affinity screen.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Metabolic dysfunction-associated steatotic liver disease (MASLD) is the most prevalent chronic liver disease worldwide, affecting roughly one in three adults, and its progressive inflammatory form, metabolic dysfunction-associated steatohepatitis (MASH), can advance to fibrosis, cirrhosis and hepatocellular carcinoma. About 20% of people with MASLD have MASH. Pakistan carries a rising burden of the metabolic syndrome that drives MASLD — diabetes, obesity and dyslipidaemia — yet has almost no local MASH trial or registry infrastructure, so treatment decisions are imported from trials run elsewhere.</p>
+<p>FXR is a nuclear bile-acid sensor that regulates bile-acid homeostasis, lipid metabolism, inflammation and fibrosis, and it was for a decade the most clinically advanced MASH target. OCA, a semi-synthetic derivative of chenodeoxycholic acid (6-ethyl-CDCA, INT-747), is the first and still the only FXR agonist approved for clinical use — conditionally, for primary biliary cholangitis (PBC) in 2016. In MASH it showed real antifibrotic signal: in the FLINT phase 2 trial (283 patients, OCA 25 mg daily for 72 weeks), 45% of OCA patients improved histologically versus 21% on placebo (relative risk 2.2, 95% CI 1.4–3.3; p = 0.0002), and REGENERATE showed ≥1-stage fibrosis improvement without worsening of MASH. But the benefit came with the liabilities that define the class: pruritus in 23% of OCA patients versus 6% on placebo in FLINT (up to 51% at higher doses), higher LDL and total cholesterol, lower HDL, higher alkaline phosphatase and rising insulin/HOMA. The US NASH application received a Complete Response Letter in 2023, Intercept discontinued NASH-directed investment, and EU commercialisation of OCA was discontinued in 2024. Meanwhile the field moved on: resmetirom, a liver-directed thyroid-hormone-receptor-β agonist, received accelerated US approval in 2024 after biopsy-based phase 3 data, and semaglutide 2.4 mg received accelerated US approval for MASH in 2025. Second-generation FXR agonists — cilofexor, tropifexor, vonafexor, EDP-305, nidufexor — mostly stalled in phase 2 or were discontinued.</p>
+<p>The classical canon knew the liver as the seat of metabolic disease: Ibn Sina's Canon of Medicine (c. 1025), Book III, discusses diseases of the liver ("kabid") and their systemic effects, and Al-Razi's Kitab al-Hawi records clinical observation of jaundice and hepatic wasting. These texts described the syndrome without any concept of steatohepatitis or nuclear receptors; they are hypothesis sources, not evidence. The Islamic principle behind acting on MASH is hifz al-nafs (preservation of life) with maslaha (public benefit): a disease affecting a third of adults, with no approved FXR therapy, is exactly the kind of burden where a cheap, discriminating test beats another round of untested claims (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do sub-nanomolar FXR agonists bind the bile-acid pocket of FXR more strongly than obeticholic acid, and does stronger binding predict a better efficacy–liability profile for MASH? <strong>Falsifier:</strong> if the leads behave as full agonists (CYP7A1 suppression per unit of antifibrotic signal no better than OCA) or carry pruritus/LDL signals in the same range as OCA in a relevant model, the potency claim is refuted. <strong>Causal identification:</strong> validated-control re-docking — OCA re-docked on a bile-acid-bound FXR structure — not a comparison against nothing. Association only beyond that: docking scores are not activity, and affinity is not partial agonism.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-18: 2025–2026 reviews and primary sources on FXR agonists in liver disease (Pharmaceuticals 2025; Frontiers in Pharmacology 2026; World Journal of Hepatology 2026), the FLINT and REGENERATE results, the resmetirom and semaglutide approvals, and the RCSB record for PDB 6HL1. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025), Book III (liver); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: human farnesoid X receptor (NR1H4), UniProtKB Q96RI1; ChEMBL bioactivity target CHEMBL2047 ("bile acid receptor", Homo sapiens). Structure: PDB 6HL1, the FXR ligand-binding domain with chenodeoxycholic acid (CDCA) bound and an NCoA-2 co-activator peptide, 1.6 Å ("Molecular tuning of farnesoid X receptor partial agonism", Nature Communications 2019). Grid centre: centroid of the co-crystallised CDCA via <code>dock._ligand_center</code>, [11.31, −14.17, 12.48], box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for OCA and all four leads.</p>
+<p><strong>Structure audit.</strong> 6HL1 is the correct domain and the correct site: it is the FXR ligand-binding domain with the endogenous bile-acid agonist CDCA in the pocket — the same pocket OCA occupies as a CDCA derivative. No correction was needed (contrast Paper #75, where the pipeline's first structure was the wrong domain and was discarded). CDCA is not a cofactor, glycan, lipid or modified residue, so the centre picker lands on the drug site.</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all 26 pipeline leads. No lead carries a PAINS alert — including all four docked compounds.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for every lead. OCA itself (PubChem CID 447715, C26H44O4, MW 420.63) carries one Lipinski violation (logP 5.11) and passes Veber.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No partial-agonism, co-regulator-recruitment, lipid or pruritus assay exists in this study — and those are the measurements that decide whether an FXR agonist is usable. Measured EC50/IC50 values below are ChEMBL records, not new measurements, and come from different assay formats.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL potency vs FXR*</th>
+<th>Best affinity, 6HL1 (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / Lipinski violations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL5559957</td>
+<td>EC50 0.1 nM (pChEMBL 10.00)</td>
+<td><strong>−10.42</strong></td>
+<td>−10.42, −8.96, −7.93</td>
+<td>none</td>
+<td>608.57 / 8.41 / 2</td>
+</tr>
+<tr>
+<td>CHEMBL5559067</td>
+<td>EC50 0.1 nM (pChEMBL 10.00)</td>
+<td><strong>−10.20</strong></td>
+<td>−10.20, −9.84, <strong>+8.90</strong></td>
+<td>none</td>
+<td>623.67 / 8.00 / 2</td>
+</tr>
+<tr>
+<td>CHEMBL5912129</td>
+<td>EC50 0.251 nM (pChEMBL 9.60)</td>
+<td><strong>−9.58</strong></td>
+<td>−9.58, −9.46, −8.26</td>
+<td>none</td>
+<td>496.97 / 6.20 / 1</td>
+</tr>
+<tr>
+<td>CHEMBL4783777</td>
+<td>IC50 0.09 nM (pChEMBL 10.05)</td>
+<td><strong>−8.88</strong></td>
+<td>−8.88, −7.94, −6.87</td>
+<td>none</td>
+<td>615.68 / 6.44 / 2</td>
+</tr>
+<tr>
+<td>Obeticholic acid (reference, re-docked)</td>
+<td>approved FXR agonist (PBC); failed for MASH</td>
+<td>−8.39</td>
+<td>−8.39, −7.27, −7.18</td>
+<td>none</td>
+<td>420.63 / 5.11 / 1</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded potency against human bile-acid receptor FXR (target CHEMBL2047), retrieved live 2026-11-18. None of the four leads has a preferred name or any clinical phase in ChEMBL (max_phase: none) — all are preclinical chemotypes.</p>
+<p>Three of the four leads out-score re-docked OCA, by 1.19–2.03 kcal/mol; the fourth (CHEMBL4783777) beats it by only 0.49 kcal/mol, inside noise. But the pose table carries two warnings. CHEMBL5559957's top-3 poses spread 2.49 kcal/mol (−10.42 to −7.93), poor consistency for a supposedly sub-nanomolar binder. CHEMBL5559067's third pose is +8.90 kcal/mol — a non-binding mode, meaning Vina found the ligand clashing in one of three runs. The headline −10.42 and −10.20 scores are the best of inconsistent sets, not reproducible minima.</p>
+<h3>3.2 The potency–druggability inversion</h3>
+<p>The measured potencies are extraordinary — EC50 0.09–0.251 nM, roughly three orders of magnitude more potent than a typical nanomolar lead — and that is precisely the problem. Every lead is extremely lipophilic (logP 6.2–8.4); three carry two Lipinski violations with molecular weights of 609–624 Da. These are greasy, oversized molecules: the kind that bind tightly in a hydrophobic nuclear-receptor pocket, accumulate in liver, and carry exactly the off-target and distribution liabilities that make FXR agonists hard to dose. OCA itself, at logP 5.11 and MW 421, already sits at the edge of drug-likeness and still produced pruritus in a quarter of patients and a pro-atherogenic lipid shift. Making the molecule greasier and 1,000-fold more potent does not address either liability; if anything it concentrates exposure where the liabilities live.</p>
+<h3>3.3 Toxicity read-across</h3>
+<p>Tox21 kNN read-across predicted no assay above 0.4 probability for any of the four leads (highest: NR-AhR 0.37 for CHEMBL5912129; SR-ARE 0.33 for CHEMBL4783777; none ≥0.3 for the two most potent leads). This is a weak screen — read-across, not measurement — and it cannot see pruritus (a sensory-neuronal, bile-acid-driven phenotype) or LDL elevation at all.</p>
+<h3>3.4 Comparison with published work</h3>
+<p>No published Vina study of these four ChEMBL compounds on 6HL1 was found in the sweep; the comparison here is internal (leads vs re-docked reference on the same structure, same protocol). The re-docked OCA score of −8.39 kcal/mol is the validated control: OCA is a CDCA derivative docked into the CDCA pocket, so a method that could not recover strong binding would be broken. The 6HL1 source paper itself (Nature Communications 2019) is about tuning partial agonism — the property this paper cannot measure — which is the right frame: the field's question is not "who binds tightest" but "who activates least while still working".</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The FXR story has already answered the potency question: sub-nanomolar agonists exist (tropifexor EC50 0.2 nM; these four leads at 0.09–0.251 nM), and the class still failed in MASH. OCA's failure was not a failure of affinity — it was a failure of efficacy–liability separation. This paper's docking result therefore reframes the target: the next FXR candidate for MASH must be judged on partial agonism and tissue selectivity, not on beating OCA's −8.39 kcal/mol. A compound that scores −10.42 but behaves as a full agonist is a worse drug than one that scores −8.50 and behaves as a partial agonist.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Four reasons. First, two of the four margins over OCA are large but the pose sets are inconsistent (2.49 kcal/mol spread; a +8.90 kcal/mol mode), so the best scores are not reproducible minima. Second, three leads fail Lipinski twice over — they are unlikely to become oral drugs without major rework. Third, docking measures affinity for one static pocket; FXR signalling depends on which co-regulators the ligand recruits, and Vina cannot see that. Fourth, pruritus and LDL elevation — the two liabilities that ended OCA's MASH programme — are invisible to every screen in this pipeline.</p>
+<h3>4.3 Mechanism</h3>
+<p>FXR activation in hepatocytes induces SHP, which suppresses CYP7A1 and bile-acid synthesis, and modulates lipid and inflammatory signalling via AMPK, MAPK and PI3K/AKT pathways; in ileal enterocytes it drives FGF19. The antifibrotic benefit and the lipid liability both flow from the same receptor, so separation must come from partial agonism (recruiting a subset of co-regulators), tissue-selective distribution (gut-restricted or liver-targeted), or combination with a lipid-lowering partner — not from more affinity. Test for each link: (i) co-regulator recruitment profiling distinguishes full from partial agonists; (ii) CYP7A1 suppression per unit of antifibrotic gene signal quantifies the separation; (iii) a lipid panel in a diet-induced MASH model measures the LDL cost directly.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>CHEMBL5912129 (the least lipophilic lead, logP 6.2, 1 violation) shows partial-agonist behaviour: ≤50% of OCA's maximal co-activator recruitment at saturating concentration. Falsifier: recruitment ≥80% of OCA's maximum.</li>
+<li>At least one of the four leads suppresses CYP7A1 less per unit of antifibrotic signal (e.g. SHP induction) than OCA in primary human hepatocytes. Falsifier: no lead separates the two read-outs by ≥2-fold.</li>
+<li>No lead's docking advantage survives a drug-likeness filter: the two most potent leads cannot be reformulated below logP 6 without losing &gt;10-fold potency. Falsifier: a sub-600 Da, logP &lt;5 analogue retains EC50 &lt;1 nM.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): FXR co-regulator recruitment assay (TR-FRET) for the four leads + OCA control, reporting Emax and EC50; readout distinguishes full from partial agonists. Stage 2 (weeks 4–8): primary human hepatocyte assay — CYP7A1 suppression versus SHP/antifibrotic gene induction, with lipid-output read-out (ApoB secretion as an LDL proxy). Stage 3 (weeks 9–12): the single best-separated lead goes to a diet-induced MASH mouse model for liver fat, fibrosis markers and plasma lipids; if no lead separates efficacy from liability, publish the negative result — it confirms that potency is not the bottleneck.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol; two leads have inconsistent pose sets.</li>
+<li>No partial-agonism, co-regulator, lipid or pruritus measurement exists in this work — the decisive properties are untested.</li>
+<li>Measured EC50/IC50 values are ChEMBL records from different assay formats (EC50 vs IC50 mixed); they are not directly comparable across compounds.</li>
+<li>Three leads fail Lipinski twice over (logP 6.4–8.4, MW &gt;600 Da); drug-likeness is a major, unaddressed problem.</li>
+<li>No molecular dynamics or free-energy refinement; the FXR pocket is flexible and co-regulator-dependent.</li>
+<li>No Pakistan-specific MASH epidemiology or local patient data were available for this analysis.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon (Book III, liver) and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and other classical works on liver disease were not individually consulted.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Four sub-nanomolar FXR agonists dock at −10.42 to −8.88 kcal/mol on the CDCA-bound FXR structure 6HL1, against −8.39 kcal/mol for re-docked obeticholic acid, with no PAINS alerts. The result does not make any of them a better MASH drug: all four are highly lipophilic, three are Lipinski failures, two have inconsistent pose sets, and docking cannot measure the partial agonism, pruritus or LDL effects that actually decided OCA's fate. The value of this paper is the negative framing it forces — the FXR field does not need a tighter binder; it needs a partial agonist that separates antifibrotic efficacy from lipid and itch liabilities, and the cheap test for that is a co-regulator recruitment assay, not another affinity screen.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's drug regulator (DRAP) and the National Institute of Health, with the Pakistan Society for the Study of Liver Diseases as clinical adviser. <strong>Decision:</strong> whether any FXR agonist programme deserves scarce public research funding for MASH in Pakistan. <strong>Exact change:</strong> fund the 8–12-week partial-agonism screen proposed in §4.5 for the two least lipophilic leads (CHEMBL5912129 and CHEMBL4783777) before any proposal for animal efficacy work or clinical translation of an FXR agonist, and require every future FXR proposal to report a co-regulator-recruitment Emax and a lipid read-out alongside affinity — instead of accepting docking scores or EC50 values as evidence of a usable drug. <strong>If evidence Z appears, reverse this:</strong> if a lead shows partial-agonist behaviour with a ≥2-fold efficacy–liability separation, escalate it to the diet-induced MASH model; if none separates, drop FXR agonism for MASH in the local programme and redirect the same funds to the approved mechanisms (resmetirom-class THR-β agonism or GLP-1-based therapy) rather than chasing a tighter binder. The Islamic principle is hifz al-nafs with maslaha: public money for a disease affecting a third of adults must buy a discriminating test, not another untested potency claim; funding a full agonist on affinity alone would spend the community's resources on a known failure mode.</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Obeticholic acid and other farnesoid-X-receptor (FXR) agonists in the treatment of liver disorders. Pharmaceuticals. 2025;18(9):1424. doi:10.3390/ph18091424.</li>
+<li>Obeticholic acid as an index farnesoid X receptor scaffold in metabolic dysfunction-associated steatohepatitis: a testable model for efficacy-liability separation and biomarker interpretation. Front Pharmacol. 2026. doi:10.3389/fphar.2026.1879097.</li>
+<li>Molecular tuning of farnesoid X receptor partial agonism. Nat Commun. 2019. doi:10.1038/s41467-019-10853-2. PMID: 31266946.</li>
+<li>Sanyal AJ, Lopez P, Lawitz EJ, Lucas KJ, Loeffler J, Kim W, Goh GB, Huang JF, Serra C, Andreone P, et al. Tropifexor for nonalcoholic steatohepatitis: an adaptive, randomized, placebo-controlled phase 2a/b trial. Nat Med. 2023;29:392-400.</li>
+<li>Patel K, Harrison SA, Elkhashab M, Trotter JF, Herring R, Rojter SE, Kayali Z, Wong VWS, Greenbloom S, Jayakumar S, et al. Cilofexor, a nonsteroidal FXR agonist, in patients with noncirrhotic NASH: a phase 2 randomized controlled trial. Hepatology. 2020;72:58-71.</li>
+<li>Rinella ME, Neuschwander-Tetri BA, Siddiqui MS, Abdelmalek MF, Caldwell S, Barb D, Kleiner DE, Loomba R. AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease. Hepatology. 2023.</li>
+<li>Harrison SA, Bedossa P, Guy CD, Schattenberg JM, Loomba R, Taub R, Labriola D, Moussa SE, Neff GW, Rinella ME, et al. A phase 3, randomized, controlled trial of resmetirom in NASH with liver fibrosis. N Engl J Med. 2024.</li>
+<li>ChEMBL target CHEMBL2047: bile acid receptor (farnesoid X receptor, NR1H4), Homo sapiens. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-18.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; diseases of the liver, Book III.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; clinical observation of hepatic disease.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-062-2026-11-18.json</code>. Ligand identities are ChEMBL IDs CHEMBL5559957, CHEMBL5559067, CHEMBL5912129, CHEMBL4783777; reference drug obeticholic acid, PubChem CID 447715. Structure: PDB 6HL1 (1.6 Å). Target: UniProtKB Q96RI1; ChEMBL target CHEMBL2047. No additional data were generated.</p></div></details>
+</article>
 <article class="card" data-field="health" data-title="riociguat re-docks at −9.96 kcal/mol on the cryo-em sgc structure 7d9r, but two 3 nm stimulators score 2.38 kcal/mol apart">
 <div class="meta"><span class="date">2026-11-17</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
 <h3>Riociguat Re-Docks at −9.96 kcal/mol on the Cryo-EM sGC Structure 7D9R, but Two 3 nM Stimulators Score 2.38 kcal/mol Apart</h3>
@@ -13718,7 +14498,189 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 </ul></div></details>
 </article>
 </section>
-<section id="sec-space" data-field="space"><h2>Space <span class="count">(4)</span></h2>
+<section id="sec-space" data-field="space"><h2>Space <span class="count">(5)</span></h2>
+<article class="card" data-field="space" data-title="one hydrogen atom in thirty-one: the deuterium ladder of interstellar comets and a two-population test for the rubin era">
+<div class="meta"><span class="date">2026-11-19</span> <span class="badge space">Space</span> <span class="status">Draft — not submitted</span></div>
+<h3>One Hydrogen Atom in Thirty-One: The Deuterium Ladder of Interstellar Comets and a Two-Population Test for the Rubin Era</h3>
+<p class="abs">Three interstellar objects have now passed through the Solar System — 1I/&#x27;Oumuamua (2017), 2I/Borisov (2019) and 3I/ATLAS (2025) — and the third has finally given us isotopes.</p>
+<p class="links"><a href="papers/2026-11-19-space-3i-atlas-deuterium-ladder.pdf">PDF</a> · <a href="papers/2026-11-19-space-3i-atlas-deuterium-ladder.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent verification.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, SMBBMU Larkana, Pakistan — ORCID 0009-0001-5921-7509
+<strong>Drafting assistant:</strong> Lapis (AI)</p>
+<p><strong>Date:</strong> 2026-11-19
+<strong>Field:</strong> Space (astronomy / planetary science)
+<strong>Paper №:</strong> Space #5 in the 5-field daily rotation (Health → Brain → Space → Natural Science → Social Science)</p>
+<hr />
+<h2>Abstract</h2>
+<p>Three interstellar objects have now passed through the Solar System — 1I/'Oumuamua (2017), 2I/Borisov (2019) and 3I/ATLAS (2025) — and the third has finally given us isotopes. JWST/NIRSpec spectra of 3I/ATLAS (22–23 December 2025, r_H ≈ 2.4 au) measured a methane D/H ratio of (3.18 ± 0.30)% — the highest methane D/H ever measured anywhere, 13 ± 2 times the Rosetta value at comet 67P — and a water D/H of (0.98 ± 0.06)%, more than an order of magnitude above any known comet, with ¹²C/¹³C ratios of 141–191 (CO₂) and 123–172 (CO). We compile the complete isotopic record of all three interstellar objects against the Solar System comet baseline and derive four new numbers: 3I/ATLAS water is 63× Vienna Standard Mean Ocean Water (VSMOW) and 18.5× the water of 67P; its methane is 204× VSMOW; its CH₄/H₂O D/H ratio (3.24) matches 67P's (4.6) within a factor of 1.4, implying the same deuteration mechanism operating ~13–18× harder; and on every measured axis — D/H, ¹²C/¹³C, CO/H₂O — both active interstellar comets sit outside the entire Solar System comet range. <strong>Falsifiable claim:</strong> interstellar comets fall into two formation populations — a Cold-Core population (water D/H ≥ 0.3%, ¹²C/¹³C &gt; 120) and a Warm-Disk population (water D/H ≤ 0.05%, ¹²C/¹³C &lt; 100) — with almost no objects in between. <strong>Falsifier:</strong> a single future measurement of an interstellar comet's water D/H inside the 0.05–0.3% gap band, or a cold-band D/H paired with ¹²C/¹³C &lt; 100, kills the two-population model. <strong>Causal identification: association only</strong> — this is a comparative synthesis of published observations, not an experiment; the mechanism is physico-chemical (H₂D⁺ ion–molecule deuteration at T ≲ 30 K; ¹³C as a secondary nucleosynthesis product whose Galactic abundance grows with time). At the Rubin Observatory's expected discovery rate (0.9–1.9 interstellar objects per year), the test is decidable by the very next cometary interstellar object with a measured water D/H. <strong>The memorable number: 3.18%</strong> — one hydrogen atom in every thirty-one in 3I/ATLAS's methane is deuterium.</p>
+<p><strong>Keywords:</strong> interstellar comets; 3I/ATLAS; deuterium; isotopic ratios; JWST; Rubin Observatory; planet formation; Galactic chemical evolution</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>For most of human history, the only planetary building blocks anyone could touch were the ones that formed around our own Sun. That changed in 2017. Since then, exactly three macroscopic objects from other planetary systems have been caught passing through ours: 1I/'Oumuamua (2017), 2I/Borisov (2019) and 3I/ATLAS (2025). The first was dry and enigmatic — no coma was ever detected, though its trajectory showed a non-gravitational acceleration at 30σ significance consistent with outgassing (Micheli et al. 2018). The second was a recognisable comet, but a chemically strange one: its coma held at least 1.7 times as much carbon monoxide as water (Bodewits et al. 2020), more than three times the CO/H₂O ratio of any comet previously measured inside 2.5 au, where Solar System comets show 0.2–23% (Bockelée-Morvan &amp; Biver 2017). The third is the first for which isotopes — the fingerprints that record where and when ice formed — have been measured at all.</p>
+<p>3I/ATLAS (C/2025 N1) was discovered on 1 July 2025 by the ATLAS survey telescope at Río Hurtado, Chile, and designated by the Minor Planet Center in MPEC 2025-N12. It is the fastest interstellar object yet seen: eccentricity e = 6.14, hyperbolic excess velocity v∞ ≈ 58 km s⁻¹, perihelion 1.356 au on 29 October 2025. Its Galactic velocity components place it in the Milky Way's thick disk, and kinematic modelling gives an age of 7.6–14 Gyr at 68% confidence (Hopkins et al. 2025) — older than the Solar System itself. It is also the most spectroscopically productive of the three: high gas production rates around perihelion enabled JWST, Hubble, ALMA and ground-based facilities to measure its coma in detail, including — for the first time for any interstellar object — the isotopic composition of its ices.</p>
+<p>Two papers published in 2026 report those isotope measurements, both from JWST/NIRSpec spectra taken on 22–23 December 2025, when the comet was 2.4 au from the Sun and receding. Cordiner et al. (2026, <em>Nature</em> 655, 870–874) measured water D/H = (0.98 ± 0.06)% and ¹²C/¹³C = 141–191 in CO₂ and 123–172 in CO, and inferred formation at T ≲ 30 K in a metal-poor environment, with Galactic chemical-evolution models implying accretion as long ago as ~12 Gyr. Roth et al. (2026, <em>Nature Astronomy</em>) measured methane D/H = (3.18 ± 0.30)% — the highest methane D/H measured anywhere in the Solar System or beyond, 13 ± 2 times the Rosetta value at 67P — and concluded the ices are consistent with a cold, low-metallicity interstellar or protostellar environment under high cosmic-ray irradiation, while noting it is uncertain whether current star-formation or disk-chemistry models can reproduce the number at all. A third study, Protopapa et al. (2026, <em>ApJL</em>), found the comet's water ice is carried in sub-micron grains thickly mixed with refractory dust — unlike the cleaner ice grains of Solar System comets — in spectra spanning 3.31 au inbound to 5.65 au outbound.</p>
+<p>Each of those papers is, rightly, about one object. This paper asks the question none of them could ask alone: <strong>what do the three objects, taken together against the Solar System baseline, say about the population they come from — and what would prove that picture wrong?</strong> Our contribution is a synthesis with new arithmetic: enrichment factors computed from the published ratios, a cross-species comparison (CH₄ vs H₂O deuteration in the same comet), and a quantitative, falsifiable two-population model with a named test for the Rubin Observatory era.</p>
+<p>The method ancestor of this work is older than the telescope. Ibn al-Haytham's <em>Kitab al-Manazir</em> (Book of Optics, c. 1011–1021) established the experimental method itself — that claims about light, and by extension about nature, must be settled by controlled observation rather than authority. Al-Biruni's <em>Al-Qanun al-Mas'udi</em> (c. 1030s) measured the Earth's circumference to within ~1% by combining geometry with a single careful observation, the same move this paper makes: one precise ratio, correctly interpreted, constrains a whole history. Al-Battani's <em>Kitab al-Zij</em> (c. 900) fixed the solar year to within ~2 minutes. The Qur'an's invitation to observe the heavens (51:47; 67:3–5) and its question "Are those who know equal to those who do not know?" (39:9) frame, in the Islamic tradition, the same duty that drives this measurement: knowledge is sought because it is a trust, not a trophy. The policy implications in §7 are drawn under that principle — <em>hifz al-'aql</em>, preservation of the intellect — and are stated as falsifiable recommendations, not as certainties.</p>
+<h2>2. Methods</h2>
+<p><strong>Design.</strong> Comparative synthesis of published observations. <strong>Causal identification: association only.</strong> No experiment was performed, no new observation was taken, and no causal effect is estimated. The paper's claims are of the form "objects with property X also show property Y", with a mechanism proposed (Section 5) and a falsifier stated (Section 1 and Section 6). This is stated in bold because the method brief requires it wherever causality cannot be supported.</p>
+<p><strong>Analysis plan (stated before results).</strong> Before computing anything, the plan was: (1) tabulate every published isotope ratio for the three interstellar objects and the Solar System comet baseline, with uncertainties, from peer-reviewed sources only; (2) compute enrichment factors of each 3I/ATLAS ratio relative to VSMOW (D/H = 1.5576 × 10⁻⁴) and relative to comet 67P, the best-measured Solar System comet; (3) compute the within-comet CH₄/H₂O D/H ratio for 3I/ATLAS and for 67P and compare them; (4) test whether the interstellar objects fall inside or outside the Solar System range on each axis; (5) define the two-population bands from the observed gap and state the falsifier. No post-hoc redefinition of the bands was performed after seeing the numbers: the gap band (0.05–0.3% water D/H) is the interval between the top of the measured Solar System comet range (0.053%) and one-third of the 3I/ATLAS value (0.33%), rounded to one significant figure.</p>
+<p><strong>Literature sweep.</strong> (a) Modern literature: targeted searches of arXiv (astro-ph.EP), <em>Nature</em>, <em>Nature Astronomy</em> and <em>ApJL</em> for 3I/ATLAS isotope results published October–November 2026, plus the Rubin Observatory interstellar-object discovery-rate literature (Hoover et al. 2022; Marceta &amp; Seligman 2023; and a September 2026 <em>A&amp;A</em> study, arXiv:2609.25488). The daily research digest (last available 14 November 2026) is bio/health-focused and contained no space items; the space literature was therefore swept directly. (b) Islamic canon: Ibn al-Haytham, <em>Kitab al-Manazir</em>; Al-Biruni, <em>Al-Qanun al-Mas'udi</em> and <em>Kitab al-Hind</em>; Al-Battani, <em>Kitab al-Zij</em>; Al-Tusi, <em>Tadhkira fi 'Ilm al-Hay'a</em> — consulted through the programme's verified literature map, not read in full (see Limitations). (c) Method standard: the policy-shaping professors' checklist (Banerjee &amp; Duflo; Acemoglu, Johnson &amp; Robinson; Chetty; Thaler &amp; Sunstein; Heckman; Hanushek; Rodrik; Deaton; Haynes &amp; Gawande; Pacala &amp; Socolow; Allen) — one falsifiable claim, named falsifier, mechanism, effect size with uncertainty, comparison against the strongest incumbent, one memorable number.</p>
+<p><strong>Research agents.</strong> None of the four installed agents was usable in this run: Mimosa's litellm patch is verified working but its smoke test stalled in November 2026 and the user declined further monitoring; Co-Scientist is blocked on authentication (the stored Gemini key reaches Google only as a URL <code>?key=</code> surrogate, and Co-Scientist needs it in the Authorization header); Denario is GUI-only on localhost; EvoScientist needs the user's interactive onboarding. The synthesis below was therefore done directly from the primary sources. No key was requested from the user and none was invented.</p>
+<p><strong>Reproducibility.</strong> Every number in Section 4 is arithmetic on the published ratios in Table 1, computed in Python and re-checked by hand. No unpublished data, no model fitting, no hidden parameters.</p>
+<h2>3. Results</h2>
+<h3>3.1 The complete isotopic record of the three interstellar objects</h3>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Species</th>
+<th>Ratio</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3I/ATLAS</td>
+<td>CH₄ D/H</td>
+<td>(3.18 ± 0.30)%</td>
+<td>Highest methane D/H ever measured; 13 ± 2× 67P</td>
+<td>Roth et al. 2026</td>
+</tr>
+<tr>
+<td>3I/ATLAS</td>
+<td>H₂O D/H</td>
+<td>(0.98 ± 0.06)%</td>
+<td>&gt;10× any known comet</td>
+<td>Cordiner et al. 2026</td>
+</tr>
+<tr>
+<td>3I/ATLAS</td>
+<td>¹²C/¹³C in CO₂</td>
+<td>141–191</td>
+<td>1.6–2.1× solar (89)</td>
+<td>Cordiner et al. 2026</td>
+</tr>
+<tr>
+<td>3I/ATLAS</td>
+<td>¹²C/¹³C in CO</td>
+<td>123–172</td>
+<td>1.4–1.9× solar (89)</td>
+<td>Cordiner et al. 2026</td>
+</tr>
+<tr>
+<td>3I/ATLAS</td>
+<td>CO/H₂O (Dec 2025)</td>
+<td>2.40 ± 0.07</td>
+<td>CO-dominated coma</td>
+<td>Cordiner et al. 2026</td>
+</tr>
+<tr>
+<td>3I/ATLAS</td>
+<td>CO₂/H₂O (Dec 2025)</td>
+<td>1.08 ± 0.03</td>
+<td>Fell ×7 since Aug 2025</td>
+<td>Cordiner et al. 2026</td>
+</tr>
+<tr>
+<td>2I/Borisov</td>
+<td>CO/H₂O</td>
+<td>≥ 1.73</td>
+<td>&gt;3× any inner Solar System comet</td>
+<td>Bodewits et al. 2020</td>
+</tr>
+<tr>
+<td>1I/'Oumuamua</td>
+<td>—</td>
+<td>No coma detected</td>
+<td>Non-gravitational acceleration at 30σ</td>
+<td>Micheli et al. 2018</td>
+</tr>
+<tr>
+<td>67P (baseline)</td>
+<td>H₂O D/H</td>
+<td>(5.3 ± 0.7) × 10⁻⁴</td>
+<td>Rosetta</td>
+<td>Altwegg et al. 2015</td>
+</tr>
+<tr>
+<td>103P/Hartley 2 (baseline)</td>
+<td>H₂O D/H</td>
+<td>≈ 1.6 × 10⁻⁴</td>
+<td>≈ VSMOW</td>
+<td>Hartogh et al. 2011</td>
+</tr>
+<tr>
+<td>Solar System comets</td>
+<td>CO/H₂O</td>
+<td>0.002–0.23</td>
+<td>Inner-system range</td>
+<td>Bockelée-Morvan &amp; Biver 2017</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1. All published isotope and mixing ratios used in this paper. VSMOW D/H = 1.5576 × 10⁻⁴; solar ¹²C/¹³C ≈ 89.</p>
+<h3>3.2 Four derived numbers</h3>
+<p><strong>1. The deuterium ladder.</strong> 3I/ATLAS water D/H (0.98%) is <strong>62.9× VSMOW</strong> and <strong>18.5× the water of comet 67P</strong> (5.3 × 10⁻⁴). Its methane D/H (3.18%) is <strong>204× VSMOW</strong>. The entire measured Solar System comet water D/H range spans only 0.016–0.053% (103P/Hartley 2 to 67P); 3I/ATLAS sits 18.5× above the top of that range. There is no measured comet anywhere between 0.053% and 0.98% — a gap of a factor of 18.5 with zero occupants.</p>
+<p><strong>2. The same mechanism, running harder.</strong> Within 3I/ATLAS itself, methane is 3.24× more deuterated than water (3.18% / 0.98%). At 67P the same ratio is 4.62 (derived: 67P CH₄ D/H ≈ 0.24% from Roth et al.'s factor of 13 ± 2, divided by 67P water D/H of 0.053%). The two ratios agree within a factor of 1.4. This matters: whatever enriched 3I/ATLAS's ices enriched methane and water together, in the same proportion as in an ordinary Solar System comet — the process is the same, the magnitude is ~13–18× larger. Any model of 3I/ATLAS must explain both the absolute enrichment and the preserved CH₄/H₂O ratio; a model that produces the D/H values but the wrong ratio is falsified.</p>
+<p><strong>3. The carbon clock agrees with the deuterium thermometer.</strong> The ¹²C/¹³C ratios in 3I/ATLAS (123–191) exceed the solar value (~89) by 1.4–2.1×. Because ¹³C is a secondary nucleosynthesis product — it is made from pre-existing ¹²C in stars, so its Galactic abundance grows with time — a high ¹²C/¹³C ratio means formation when the Galaxy was younger and less enriched. This is an independent clock from the D/H thermometer, and it points the same way: Cordiner et al.'s Galactic chemical-evolution interpretation gives accretion as long ago as ~12 Gyr, and the independent kinematic estimate (thick-disk membership) gives 7.6–14 Gyr at 68% confidence (Hopkins et al. 2025). Two independent methods, one answer: this ice is roughly twice the age of the Solar System. The age is a model-dependent inference, not a measurement — see Limitations.</p>
+<p><strong>4. Two out of two active interstellar comets are CO-super-rich.</strong> 3I/ATLAS's December 2025 CO/H₂O ratio (2.40 ± 0.07) and Borisov's (≥1.73) both exceed the entire Solar System comet range (0.002–0.23) by an order of magnitude. The coma of 3I/ATLAS also evolved dramatically during its passage: CO₂/H₂O fell by a factor of ~7 between August and December 2025, while CO/CO₂ rose by a factor of ~10 — a CO₂-dominated coma becoming a CO-dominated one, with a likely H₂O-dominated phase around perihelion. The pattern is consistent with ices that formed beyond the CO snowline and were never thermally processed — the same cold story the isotopes tell.</p>
+<h3>3.3 The two-population model and its test</h3>
+<p>The observations define two bands in water D/H:</p>
+<ul>
+<li><strong>Cold-Core population:</strong> water D/H ≥ 0.3%, ¹²C/¹³C &gt; 120. Ices formed at T ≲ 30 K in a prestellar core or the cold outer reaches of a metal-poor disk, then ejected with their fractionation intact. 3I/ATLAS is the sole member so far.</li>
+<li><strong>Warm-Disk population:</strong> water D/H ≤ 0.05%, ¹²C/¹³C &lt; 100. Ices formed in a warmer disk where deuteration was modest — the Solar System comets, and, by hypothesis, interstellar comets ejected from similar disks. No interstellar member has yet been measured in this band.</li>
+</ul>
+<p>Between them lies the <strong>gap band, 0.05–0.3% water D/H</strong>, which contains no measured comet of any origin. The model predicts it will stay nearly empty: the physics of deuteration is steep in temperature (H₂D⁺ chemistry switches on below ~30 K and the enrichment grows by orders of magnitude across a narrow temperature range), so a comet's ice either formed cold enough to be strongly enriched or it did not; intermediate values require a finely tuned formation temperature that disks rarely provide.</p>
+<p><strong>The test.</strong> The Vera Rubin Observatory's Legacy Survey of Space and Time is expected to discover 0.9–1.9 interstellar objects per year (Hoover et al. 2022) — roughly 5–10 by 2031 — with a September 2026 study estimating 0–8 cometary 3I-like objects in ten years. The next cometary interstellar object with a measured water D/H will either land in one of the two bands (model survives) or inside the 0.05–0.3% gap (model dies). Because the falsifier is a single measurement, the test is decidable by the very next object — it does not need a large sample. A secondary, joint test: a cold-band D/H (≥0.3%) must be accompanied by ¹²C/¹³C &gt; 120; a cold-band D/H with ¹²C/¹³C &lt; 100 would also kill the model, because it would break the link between the deuterium thermometer and the carbon clock.</p>
+<h2>4. Discussion</h2>
+<p><strong>Comparison against the strongest incumbent.</strong> The incumbent explanation is the null: 3I/ATLAS is a single unusual object, and Solar System comets are representative of interstellar comets in general. That null is now strained on three independent axes at once. D/H: 18.5× above the Solar System range. ¹²C/¹³C: 1.4–2.1× above solar. CO/H₂O: &gt;10× above the Solar System range, in two out of two active interstellar comets. A single outlier can be dismissed on one axis; the same direction of deviation on three axes, in two objects, is a pattern. The second incumbent is the processing hypothesis: that 3I/ATLAS's enrichment was produced after ejection, by cosmic-ray irradiation during billions of years in interstellar space, rather than at formation. Roth et al. themselves include high cosmic-ray irradiation in their interpretation, and irradiation certainly contributes — but irradiation alone, without cold formation, has no published model that reaches 3.18% methane D/H; the authors state explicitly that it is uncertain whether current models of either star formation or disk chemistry can reproduce the number. The processing hypothesis therefore remains open but unquantified, and it makes a different prediction: if irradiation dominates, D/H should correlate with time spent in interstellar space (kinematic age) rather than with formation environment — a test the next few objects can run.</p>
+<p><strong>Mechanism.</strong> Deuterium fractionation is driven by the ion–molecule reaction H₃⁺ + HD ⇌ H₂D⁺ + H₂, which is exothermic by ~230 K and therefore runs strongly forward only below ~30 K, enriching the gas in H₂D⁺ and, through subsequent chemistry, the ices that condense from it. Methane, which forms through a different chemical pathway from water, inherits a larger enrichment — hence CH₄ D/H exceeding H₂O D/H by a factor of ~3–5 in both 67P and 3I/ATLAS. Carbon isotopes work the other way: ¹²C is primary (made directly in stars), ¹³C is secondary (made from ¹²C), so the Galactic ¹²C/¹³C ratio falls with cosmic time as ¹³C accumulates. A comet with ¹²C/¹³C of 123–191 formed when that ratio was higher — earlier — than when the Sun formed (~89). The two mechanisms are independent, which is what makes their agreement informative.</p>
+<p><strong>Why this matters beyond one comet.</strong> Interstellar objects are the only direct samples of planet-forming material from other stars. If the Cold-Core population dominates — if most interstellar comets carry ices formed at ≲30 K in metal-poor environments — then the typical planetary system in the Galaxy formed from colder, older material than ours did, and the Solar System's relatively warm, well-mixed chemistry is the exception rather than the rule. That changes the priors for exoplanet atmosphere models, for the delivery of volatiles to young planets, and for the abundance of the prebiotic feedstock (deuterated organics) available to nascent biospheres.</p>
+<h2>5. Limitations</h2>
+<p>These limitations bite, and they are stated before any policy recommendation is drawn.</p>
+<ol>
+<li><strong>n = 3 objects, n = 1 with water D/H.</strong> The entire two-population model rests on one measured interstellar water D/H and one measured interstellar methane D/H. The gap band could be a sampling artefact: the next object could land in it, and the model would fall. That is the point of stating the falsifier, not a reason to hide it.</li>
+<li><strong>Single-epoch, single-instrument isotope measurements.</strong> The Roth et al. methane D/H rests on JWST/NIRSpec spectra from 22–23 December 2025; two of five background exposures failed because of field stars, so the spectra were extracted without background subtraction. The authors released their spectra and modelling scripts publicly, which mitigates this — but no independent repeat of the CH₃D measurement exists.</li>
+<li><strong>The age is model-dependent.</strong> "As long ago as ~12 Gyr" (Cordiner et al.) and "7.6–14 Gyr" (Hopkins et al.) are inferences from Galactic chemical-evolution and kinematic population models, not measurements. The models depend on incomplete knowledge of star-formation history, gas flows and stellar yields, and the ¹²C/¹³C ratio also varies with distance from the Galactic centre. The comet's exact birthplace remains unknown, and its path cannot be traced back over billions of years.</li>
+<li><strong>Selection bias.</strong> Only bright, active interstellar objects are detected. 1I/'Oumuamua showed no coma at all; if a large fraction of interstellar objects are dry and rocky, the cometary sample is biased toward the cold, volatile-rich end — exactly the population this paper calls "Cold-Core". The model describes interstellar <em>comets</em>, not interstellar objects in general, and the paper does not claim otherwise.</li>
+<li><strong>The Islamic canon was not read in full.</strong> The classical works cited (Ibn al-Haytham's <em>Kitab al-Manazir</em>, Al-Biruni's <em>Al-Qanun al-Mas'udi</em>, Al-Battani's <em>Kitab al-Zij</em>, Al-Tusi's <em>Tadhkira</em>) were consulted through the programme's verified literature map, which records their dates, contents and availability; the full texts were not read for this paper. <em>Al-Qanun al-Mas'udi</em> has no complete modern English translation, and <em>Kitab al-Zij</em> survives in Arabic and Latin editions with only partial modern translations. Many classical Arabic astronomical manuscripts remain undigitised in libraries (Süleymaniye, Istanbul; Dar al-Kutub, Cairo; the British Library) with no online copy — the gap the programme's map names, and this paper names again. No claim is made to have read "every book"; the claim is to have used the relevant available canon and to have named what was not available.</li>
+<li><strong>The bands are drawn from two data points.</strong> The Cold-Core/Warm-Disk boundary values (0.3% and 0.05%) are set by the observed gap, not derived from a physical model of disk chemistry. A quantitative disk-chemistry model that predicts the band edges from first principles is the obvious next step and is not attempted here.</li>
+</ol>
+<h2>6. Policy implications</h2>
+<p><strong>Decision-maker 1 — ESA and NASA (Comet Interceptor, launch 2029).</strong> Comet Interceptor will wait at the Sun–Earth L2 point for a dynamically new comet or an interstellar object, then fly by it. <em>Exact change:</em> the mission's target-selection criteria should explicitly prioritise an interstellar target over a dynamically new Solar System comet when one is available, and its payload operations plan should include an isotope-measurement mode (mass-spectrometer D/H and ¹²C/¹³C) as a Level-1 science requirement, not an opportunistic add-on. <em>Why:</em> a single flyby D/H measurement decides the two-population test years before Rubin accumulates a sample. <em>Falsifier:</em> if the flyby measures a gap-band D/H, the two-population model is abandoned and the mission's isotope requirement is downgraded. <em>Islamic principle:</em> <em>hifz al-'aql</em> — preservation of the intellect; the Qur'an asks "Are those who know equal to those who do not know?" (39:9), and seeking knowledge of the heavens is presented as a duty, not a luxury (51:47; 67:3–5).</p>
+<p><strong>Decision-maker 2 — SUPARCO and Pakistan's Ministry of Science &amp; Technology.</strong> Pakistan has no interstellar-object follow-up capacity. <em>Exact change:</em> (a) subscribe the national space agency to the Rubin Observatory alert stream and designate one astronomer as the interstellar-object duty scientist; (b) fund one PhD studentship in planetary science (spectroscopy of small bodies) at a Pakistani university, with the thesis topic fixed to interstellar-object follow-up. Cost: one studentship and one alert-stream subscription — orders of magnitude cheaper than a telescope. <em>Why:</em> the test in this paper will be decided in the 2030s by whoever measures the next objects; a country that only reads the results is a spectator. <em>Falsifier:</em> if the two-population model is killed by a gap-band measurement, the studentship's topic pivots to the replacement model — the capacity, not the hypothesis, is the investment.</p>
+<p><strong>Decision-maker 3 — the JWST and Hubble time-allocation committees.</strong> 3I/ATLAS is receding and fading; its three JWST epochs may remain the most detailed look at its ice for years. <em>Exact change:</em> approve Director's Discretionary Time for rapid-response NIRSpec follow-up of the next interstellar comet within two weeks of discovery, before perihelion, so that inbound (cold, unprocessed) ices are measured rather than only outbound ones. <em>Why:</em> the August 2025 (inbound, 3.32 au) and December 2025 (outbound, 2.4 au) spectra of 3I/ATLAS already show the coma changing by factors of 7–10; inbound data are the cleaner record of formation conditions.</p>
+<h2>7. Conclusion</h2>
+<p>3I/ATLAS gave us the first isotopes ever measured in material from another planetary system, and they are extreme: methane D/H of (3.18 ± 0.30)%, water D/H of (0.98 ± 0.06)%, ¹²C/¹³C of 123–191. Our synthesis adds four numbers — 63× VSMOW, 18.5× 67P, a CH₄/H₂O D/H ratio of 3.24 that matches 67P's within a factor of 1.4, and a CO/H₂O ratio above the entire Solar System range in two out of two active interstellar comets — and one testable claim: interstellar comets come in two formation populations, Cold-Core and Warm-Disk, separated by an empty gap band in water D/H (0.05–0.3%). The next cometary interstellar object with a measured water D/H will confirm the model or kill it with a single number. That is the standard this programme holds itself to: a paper is finished when a telescope can prove it wrong. The Rubin Observatory, discovering roughly one to two interstellar objects a year, will run that test within the decade — and the observatories, agencies and countries that prepare for it now will be the ones that read the answer first.</p>
+<p><strong>The memorable number: 3.18% — one hydrogen atom in every thirty-one in the methane of 3I/ATLAS is deuterium, the highest methane D/H ever measured.</strong></p>
+<h2>8. Data availability</h2>
+<p>All data used are published measurements, listed with full citations in Table 1 and the References. Derived numbers (enrichment factors, ratios, gap-band boundaries) are arithmetic on those published values and are reproducible from the numbers printed in this paper; the Python calculation is retained in the run log. JWST spectra and modelling scripts for the Roth et al. measurement are publicly released through the Mikulski Archive for Space Telescopes and Zenodo, as reported by the authors. No new observations, no proprietary data, no unpublished results.</p>
+<h2>References</h2>
+<ol>
+<li>Cordiner, M., Roth, N. X., Micheli, M., et al. (2026). Isotopic evidence for a cold and distant origin of the interstellar object 3I/ATLAS. <em>Nature</em> 655, 870–874. https://doi.org/10.1038/s41586-026-10771-6</li>
+<li>Roth, N. X., Cordiner, M., Milam, S., et al. (2026). An enriched methane D/H ratio in the interstellar object 3I/ATLAS. <em>Nature Astronomy</em>. https://doi.org/10.1038/s41550-026-03002-5 (arXiv:2603.20445)</li>
+<li>Protopapa, S., et al. (2026). JWST reveals refractory-rich water ice in interstellar comet 3I/ATLAS: evidence for a continuum of grain properties across protoplanetary disks. <em>The Astrophysical Journal Letters</em>. https://doi.org/10.3847/2041-8213/aea60d</li>
+<li>Bodewits, D., Noonan, J. W., Feldman, P. D., et al. (2020). The carbon monoxide-rich interstellar comet 2I/Borisov. <em>Nature Astronomy</em>. https://doi.org/10.1038/s41550-020-1095-2 (arXiv:2004.08972)</li>
+<li>Cordiner, M. A., et al. (2020). Unusually high CO abundance of the first active interstellar comet. <em>Nature Astronomy</em>. https://doi.org/10.1038/s41550-020-1087-2</li>
+<li>Micheli, M., Farnocchia, D., Meech, K. J., et al. (2018). Non-gravitational acceleration in the trajectory of 1I/2017 U1 ('Oumuamua). <em>Nature</em> 559, 223–226. https://doi.org/10.1038/s41586-018-0254-4</li>
+<li>Hopkins, M. J., Dorsey, R. C., Forbes, J. C., Bannister, M. T., Lintott, C. J., &amp; Leicester, B. (2025). From a different star: 3I/ATLAS in the context of the Ōtautahi–Oxford interstellar object population model. <em>The Astrophysical Journal Letters</em> 990, L30. https://doi.org/10.3847/2041-8213/adfbf4 (arXiv:2507.05318)</li>
+<li>Altwegg, K., Balsiger, H., Bar-Nun, A., et al. (2015). 67P/Churyumov–Gerasimenko, a Jupiter family comet with a high D/H ratio. <em>Science</em> 347, 1261952. https://doi.org/10.1126/science.1261952</li>
+<li>Hartogh, P., Lis, D. C., Bockelée-Morvan, D., et al. (2011). Ocean-like water in the Jupiter-family comet 103P/Hartley 2. <em>Nature</em> 478, 218–220. https://doi.org/10.1038/nature10519</li>
+<li>Bockelée-Morvan, D., &amp; Biver, N. (2017). The composition of cometary volatiles. <em>Philosophical Transactions of the Royal Society A</em> 375, 20160252. https://doi.org/10.1098/rsta.2016.0252</li>
+<li>Hoover, D. J., Seligman, D. Z., &amp; Payne, M. J. (2022). The population of interstellar objects as inferred from 1I/'Oumuamua and 2I/Borisov, and the discovery rate of the Rubin Observatory. <em>The Planetary Science Journal</em>. (Rate of 0.9–1.9 interstellar objects per year, as summarised in Marceta &amp; Seligman 2023.)</li>
+<li>Marceta, D., &amp; Seligman, D. Z. (2023). Synthetic detections of interstellar objects with the Rubin Observatory Legacy Survey of Space and Time. <em>The Planetary Science Journal</em> 4, 230. https://doi.org/10.3847/PSJ/ad08c1 (arXiv:2310.17575)</li>
+<li>Constraining 1I/'Oumuamua-like objects' size distribution with older, current and future surveys. (2026). <em>Astronomy &amp; Astrophysics</em> (manuscript, 23 September 2026). arXiv:2609.25488. (LSST: ~0.2–100 interstellar objects yr⁻¹; ~0–8 cometary 3I-like objects in 10 years.)</li>
+<li>Minor Planet Center. (2025). MPEC 2025-N12: 3I/ATLAS (C/2025 N1).</li>
+<li>Ibn al-Haytham (c. 1011–1021). <em>Kitab al-Manazir</em> (Book of Optics), 7 vols. — the experimental method; consulted via the programme's Islamic-thought literature map, not read in full (see Limitations).</li>
+<li>Al-Biruni (c. 1030s). <em>Al-Qanun al-Mas'udi</em>; <em>Kitab al-Hind</em> (c. 1030). — geodesy and astronomy; consulted via the literature map, not read in full; <em>Al-Qanun al-Mas'udi</em> has no complete modern English translation.</li>
+<li>Al-Battani (c. 900). <em>Kitab al-Zij</em> (astronomical tables). — consulted via the literature map.</li>
+<li>Al-Tusi, Nasir al-Din (13th c.). <em>Tadhkira fi 'Ilm al-Hay'a</em>. — the Tusi couple; consulted via the literature map.</li>
+<li>The Qur'an 51:47; 67:3–5; 39:9. (Cited by surah and ayah; translations per Sahih International.)</li>
+</ol>
+<hr />
+<p><em>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent verification. Never submit or publish anywhere without the author's full read-through and approval. The Harvard / MIT / Oxford scholars named in the method brief are the standard, not co-authors; no endorsement is claimed.</em></p></div></details>
+</article>
 <article class="card" data-field="space" data-title="pinning the cosmic shoreline with jwst: ltt 1445 a b and c are airless above the line, lhs 1140 b keeps its helium below it">
 <div class="meta"><span class="date">2026-11-14</span> <span class="badge space">Space</span> <span class="status">Draft — not submitted</span></div>
 <h3>Pinning the Cosmic Shoreline with JWST: LTT 1445 A b and c Are Airless Above the Line, LHS 1140 b Keeps Its Helium Below It</h3>
@@ -15852,7 +16814,7 @@ Weekly raw data archived in hidden_files/.</em></p>
 <p><em>Source: LeadForge AI weekly paper draft (<code>leadforge-weekly-paper-2026-10-18.md</code>), LeadForge drug-discovery pipeline. Weekly papers are compiled from the daily LeadForge runs.</em></p></div></details>
 </article>
 </section>
-<footer>Updated 18 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
+<footer>Updated 19 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
 <script>
 const q=document.getElementById('q');
 const btns=[...document.querySelectorAll('.controls button')];
