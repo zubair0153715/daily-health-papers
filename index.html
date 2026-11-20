@@ -42,7 +42,7 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <body>
 <h1>Research Papers</h1>
 <p class="sub">Zubair Ali — Pharm-D student, SMBBMU Larkana, Pakistan · ORCID 0009-0001-5921-7509 · <a href="https://github.com/zubair0153715/daily-health-papers">daily-health-papers on GitHub</a></p>
-<div class="counts"><b>103 manuscripts</b><b>Health: 85</b><b>Brain: 6</b><b>Space: 5</b><b>Natural Science: 1</b><b>Social Science: 1</b><b>Drug Discovery: 5</b></div>
+<div class="counts"><b>109 manuscripts</b><b>Health: 90</b><b>Brain: 6</b><b>Space: 5</b><b>Natural Science: 2</b><b>Social Science: 1</b><b>Drug Discovery: 5</b></div>
 <p class="note"><b>AI-assisted drafts — NOT peer-reviewed, NOT published.</b> All claims require independent verification. Two early manuscripts were submitted to ChemRxiv and rejected (framework/hypothesis without new data); their reworked v2 versions are marked "ready to submit". Nothing here is submitted anywhere — submission is the author's own click after he approves a paper. New manuscripts are added daily.</p>
 <div class="controls">
 <input type="search" id="q" placeholder="Search titles…" aria-label="Search papers"/>
@@ -54,7 +54,755 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <button data-f="social">Social Science</button>
 <button data-f="drugdiscovery">Drug Discovery</button>
 </div>
-<section id="sec-health" data-field="health"><h2>Health <span class="count">(85)</span></h2>
+<section id="sec-health" data-field="health"><h2>Health <span class="count">(90)</span></h2>
+<article class="card" data-field="health" data-title="four sub-nanomolar ripk1 ligands bind the allosteric pocket at −8.6 to −9.9 kcal/mol — but they are one chemotype, and the drug already failed in rheumatoid arthritis">
+<div class="meta"><span class="date">2026-11-19</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Four Sub-Nanomolar RIPK1 Ligands Bind the Allosteric Pocket at −8.6 to −9.9 kcal/mol — but They Are One Chemotype, and the Drug Already Failed in Rheumatoid Arthritis</h3>
+<p class="abs">Receptor-interacting protein kinase 1 (RIPK1) drives necroptosis and inflammatory cytokine production, and its first-in-class inhibitor GSK2982772 reached Phase 2 — then failed to show meaningful clinical improvement in rheumatoid arthritis.</p>
+<p class="links"><a href="papers/2026-11-19-health-ripk1-gsk2982772.pdf">PDF</a> · <a href="papers/2026-11-19-health-ripk1-gsk2982772.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-19 · <strong>Health Papers Agent — Paper #83</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> RIPK1; necroptosis; GSK2982772; allosteric inhibitor; molecular docking; ChEMBL; inflammation; rheumatoid arthritis</p>
+<hr />
+<h2>Abstract</h2>
+<p>Receptor-interacting protein kinase 1 (RIPK1) drives necroptosis and inflammatory cytokine production, and its first-in-class inhibitor GSK2982772 reached Phase 2 — then failed to show meaningful clinical improvement in rheumatoid arthritis. We asked whether ChEMBL-recorded RIPK1 ligands bind the allosteric pocket more strongly than GSK2982772 itself. Using the LeadForge pipeline (UniProtKB Q13546 → ChEMBL target CHEMBL5464, 46 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we re-docked the top four leads and GSK2982772 on the 2.0 Å human RIPK1 kinase-domain structure 7FD0, centred on the co-crystallised benzoxazepinone inhibitor (verified centroid). All four leads scored −8.57 to −9.90 kcal/mol against −9.80 kcal/mol for re-docked GSK2982772, with tight pose consistency; their measured IC50 values are 0.4–0.79 nM, and none of the 26 pipeline leads carries a PAINS alert. The honest limit: the best lead (CHEMBL4071864, −9.90 kcal/mol) is GSK2982772 itself, the other three are close analogues of the same benzoxazepinone-triazole chemotype, every margin over the reference is inside Vina's ±1–2 kcal/mol noise, and the reference drug already failed its efficacy test in patients despite on-target exposure. The claim that any of these analogues is a better RIPK1 drug would be refuted if a kinase assay shows no potency advantage over GSK2982772, or if a cellular necroptosis assay shows no advantage. The falsifiable next step is an 8–12-week kinase-plus-necroptosis test of the three analogues against GSK2982772, with a brain-penetration screen — the indication where RIPK1 inhibition still has an open question.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>RIPK1 is a serine/threonine kinase that sits at the junction of cell death and inflammation: downstream of TNF receptors, Toll-like receptors 3/4 and interferons, it controls apoptosis, necroptosis (via RIPK3 and MLKL) and the production of TNF-α and IL-6. Necroptosis is highly inflammatory — the dying cell releases its contents and activates innate immunity — and RIPK1-mediated necroptosis has been implicated in rheumatoid arthritis, ulcerative colitis, psoriasis, neurodegeneration and sepsis. Blocking the kinase should therefore quiet both cell death and cytokine production, and the first drug to test that idea in humans was GSK2982772 (GSK772), a potent, selective, oral, ATP-competitive inhibitor discovered from a DNA-encoded library: IC50 16 nM against recombinant RIPK1, ~98% inhibition at 10 nM, EC50 0.8 µM against TNF-α-induced necroptosis in L929 fibroblasts, with &gt;1,000-fold selectivity reported over other kinases. It binds an allosteric pocket of the RIPK1 kinase domain. In the clinic it was safe — 60 mg twice or three times daily for 84 days in 52 patients with moderate-to-severe rheumatoid arthritis produced no safety signal — but it did not work: a randomised, placebo-controlled experimental-medicine study (NCT02858492) found no significant difference from placebo in disease activity, radiological progression or inflammatory markers, and the authors concluded that RIPK1 inhibition at the exposures achieved "do not translate into meaningful clinical improvement of RA". The target is therefore in an awkward position: validated as a kinase, unproven as a medicine, with the open question being whether the failure was the indication (RA), the exposure, or the target itself.</p>
+<p>The classical medical canon has no concept of a kinase, and this paper does not pretend otherwise: Ibn Sina's Canon of Medicine (c. 1025) discusses inflammatory swellings and fevers, and Al-Razi's Kitab al-Hawi records clinical observation of joint disease. These texts are hypothesis sources, not evidence — they knew the syndrome, not the target — but they establish that the disease burden this paper addresses is centuries old in the region, and the Islamic principle behind acting on it is hifz al-nafs, preservation of life (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded RIPK1 ligands bind the allosteric pocket (PDB 7FD0) more strongly than GSK2982772, and is there a scaffold beyond the benzoxazepinone chemotype worth testing? <strong>Falsifier:</strong> a kinase assay showing no IC50 advantage over GSK2982772's 16 nM for any analogue, or a cellular necroptosis assay showing no EC50 advantage, refutes the claim for that compound. <strong>Causal identification:</strong> validated-control re-docking — the reference drug re-docked on a kinase-domain structure bound to its own chemotype — not a comparison against nothing. Association only beyond that: docking scores are not activity.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-19: the GSK2982772 discovery paper (Harris et al., J Med Chem 2017), the rheumatoid arthritis experimental-medicine study (Weisel et al., Arthritis Res Ther 2021; NCT02858492), and the RCSB records for PDB 6AC5 and 7FD0. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: human RIPK1, UniProtKB Q13546 (receptor-interacting serine/threonine-protein kinase 1); ChEMBL target CHEMBL5464 (46 bioactivities retrieved live 2026-11-19). Structure: PDB 7FD0, the human RIPK1 kinase domain in complex with a benzoxazepinone-triazole inhibitor, 2.0 Å. Grid centre: centroid of the co-crystallised ligand, [−7.67, −14.94, 24.29], computed by the pipeline's <code>_ligand_center</code> from the PDB file; box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for GSK2982772 and all four leads.</p>
+<p><strong>A wrong-domain audit, stated plainly.</strong> The pipeline's first run for this topic auto-picked PDB 6AC5 — the RIPK1 DEATH DOMAIN (C-terminal domain, GlcNAcylated by the EPEC effector NleB), 1.45 Å — and docked all five kinase inhibitors onto its N-acetylglucosamine sugar, scoring −4.11 to −4.72 kcal/mol. That run is DISCARDED, not reported as a result: the death domain has no kinase pocket, and GSK2982772 binds the kinase domain's allosteric pocket, not a sugar on the death domain. The failure mode is the same class as the TYK2 JH1/JH2 domain audit (2026-11-11), the gyrase 3M4I audit (Paper #75) and the MDM2 PLK1 audit (Paper #80): the auto-picker ranks by resolution and accepts any drug-like HETATM, with no domain awareness, so the structure must be checked against the drug's binding site before any score is believed. The corrected run used 7FD0, a kinase-domain structure bound to the same chemotype as GSK2982772. All scores in §3 are from the corrected run (<code>hidden_files/dock-HP-101b-2026-11-19.json</code>, <code>hidden_files/redock_hp101.py</code>); the discarded death-domain run is preserved in <code>hidden_files/dock-HP-101-2026-11-19.json</code> for audit.</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all 26 pipeline leads. None of the 26 carries a PAINS alert, including all four docked leads and GSK2982772.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for every lead. GSK2982772 itself (PubChem CID 77108121, C20H19N5O3, MW 377.40) passes Lipinski with 0 violations (logP 1.55, TPSA 100.21) and scores at most 0.40 on any Tox21 assay (SR-ARE).</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist for these four compounds against RIPK1 in this study beyond the ChEMBL records cited. Measured IC50 values below are ChEMBL records against RIPK1, not new measurements.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL IC50 vs RIPK1*</th>
+<th>Best affinity, 7FD0 (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL4071864</td>
+<td>0.4 nM (pChEMBL 9.40)</td>
+<td><strong>−9.90</strong></td>
+<td>−9.90, −9.07, −8.66</td>
+<td>none</td>
+<td>377.40 / 1.55 / 100.21</td>
+</tr>
+<tr>
+<td>GSK2982772 (reference, re-docked)</td>
+<td>16 nM (kinase assay)†</td>
+<td>−9.80</td>
+<td>−9.80, −8.91, −8.42</td>
+<td>none</td>
+<td>377.40 / 1.55 / 100.21</td>
+</tr>
+<tr>
+<td>CHEMBL4088857</td>
+<td>0.79 nM (pChEMBL 9.10)</td>
+<td>−9.70</td>
+<td>−9.70, −8.53, −8.35</td>
+<td>none</td>
+<td>378.39 / 1.81 / 97.56</td>
+</tr>
+<tr>
+<td>CHEMBL4099004</td>
+<td>0.5 nM (pChEMBL 9.30)</td>
+<td>−9.60</td>
+<td>−9.60, −8.40, −8.30</td>
+<td>none</td>
+<td>378.39 / 1.81 / 97.56</td>
+</tr>
+<tr>
+<td>CHEMBL3785482</td>
+<td>0.4 nM (pChEMBL 9.40)</td>
+<td>−8.57</td>
+<td>−8.57, −8.33, −7.97</td>
+<td>none</td>
+<td>376.42 / 2.15 / 87.32</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded IC50 against RIPK1 (target CHEMBL5464), retrieved live 2026-11-19. † GSK2982772 IC50 16 nM against recombinant RIPK1 (Harris et al., 2017); its ChEMBL record is not the source for this value.</p>
+<p>All four leads dock within 1.33 kcal/mol of each other, and the best lead beats re-docked GSK2982772 by only 0.10 kcal/mol. The reason is visible in the table: CHEMBL4071864 is GSK2982772 itself (identical formula, descriptors and similarity 1.0 to the query), and the other three are close analogues of the same benzoxazepinone-triazole chemotype (two share the formula C20H18N4O4). There is no scaffold diversity in this set — it is one chemotype, four times.</p>
+<h3>3.2 The docking–activity discordance that must not be hidden</h3>
+<p>The measured IC50s do not track the docking order. CHEMBL3785482, tied for the most potent measured inhibitor (0.4 nM), docks worst at −8.57 kcal/mol — 1.33 kcal/mol behind GSK2982772 itself — while CHEMBL4088857, the weakest measured inhibitor (0.79 nM), docks second-best at −9.70 kcal/mol. Rigid Vina scoring on this pocket cannot resolve a two-fold potency difference, and it mis-ranks the most potent compound. This is the paper's most important negative result: <strong>the docking ranking is not a potency ranking</strong>, and any claim built on a 0.10 kcal/mol "win" would be over-reading noise. The deeper problem is clinical, not computational: the reference drug was already tested in 52 patients and failed to improve rheumatoid arthritis, so a 0.10 kcal/mol docking advantage for the same molecule is not a drug-discovery result.</p>
+<h3>3.3 Toxicity read-across</h3>
+<p>Tox21 kNN read-across predicted no assay above 0.5 probability for any of the four leads (highest: SR-ARE 0.46 for CHEMBL4099004; all others ≤0.40). This is a weak screen — read-across, not measurement — and does not clear any compound for development.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina study of these four ChEMBL compounds on 7FD0 was found in the sweep; the comparison here is internal (leads vs re-docked reference on the same structure, same protocol). The re-docked GSK2982772 score of −9.80 kcal/mol is the validated control that anchors the comparison: a method that could not recover strong binding for a 16 nM binder on a structure bound to its own chemotype would be broken. It did. The 2018 J Med Chem paper that deposited the related structure 6C3E overlaid its HTS hit with GSK2982772 in the RIPK1 kinase domain — the same pocket this paper docks into.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can actually answer is narrower than the one it started with. It cannot say "these analogues beat GSK2982772" — the margins are inside noise, the docking order contradicts the measured potency order, and there is no new scaffold here. What it can say is: (a) the benzoxazepinone-triazole chemotype binds the RIPK1 allosteric pocket tightly and reproducibly, with four sub-nanomolar measured inhibitors scoring −8.57 to −9.90 kcal/mol; (b) the pipeline's first, wrong-domain run was caught and corrected before publication, and the correction is documented; (c) the decisive question is no longer potency — it is indication: the RA trial failed, so the next test must be in a disease where RIPK1 inhibition still has an open question (neurodegeneration, where brain penetration matters, or sepsis), and it is cheap and feasible in a university lab.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Three reasons. First, the 0.10 kcal/mol margin is far inside Vina's ±1–2 kcal/mol noise. Second, the docking order contradicts the measured potency order. Third, and decisively, the reference drug already failed in patients: 52 randomised patients, 84 days, no difference from placebo in disease activity or inflammatory markers. A docking score cannot rescue a target whose clinical translation failed in its first indication; it can only motivate a better-chosen second indication, and only an experiment can tell whether that works.</p>
+<h3>4.3 Mechanism</h3>
+<p>RIPK1's kinase activity drives necroptosis through RIPK3–MLKL and cytokine production through NF-κB; allosteric inhibitors like GSK2982772 occupy a pocket adjacent to the ATP site and lock the kinase in an inactive conformation. Test for each link: (i) a recombinant RIPK1 kinase assay measures whether the analogue inhibits with an IC50 at or below GSK2982772's 16 nM; (ii) a TNF-α-induced necroptosis assay in L929 or HT-29 cells measures whether kinase inhibition translates into cell-death blockade; (iii) a brain-penetration measurement (PAMPA-BBB or MDCK-MDR1) measures whether the analogue reaches the CNS, which is the property a neurodegeneration indication would need.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>At least one of the three analogues inhibits recombinant RIPK1 with an IC50 ≤16 nM (GSK2982772's value). Falsifier: all three IC50s &gt;50 nM.</li>
+<li>At least one analogue blocks TNF-α-induced necroptosis with an EC50 ≤0.8 µM (GSK2982772's value). Falsifier: all three EC50s &gt;5 µM.</li>
+<li>At least one analogue shows better brain penetration than GSK2982772 in a PAMPA-BBB assay. Falsifier: all three are worse.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): recombinant RIPK1 kinase assay for the three analogues + GSK2982772 control; readout IC50, n=3. Stage 2 (weeks 4–8): TNF-α-induced necroptosis assay (L929 fibroblasts, zVAD-fmk) for the same compounds, with phospho-RIPK1 (Ser166) and phospho-MLKL as readouts. Stage 3 (weeks 9–12): if any analogue passes stages 1–2, PAMPA-BBB and MDCK-MDR1 permeability plus HepG2 cytotoxicity; if none passes, publish the negative result with the docking data as the reason the hypothesis failed.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every reported margin.</li>
+<li>Docking order contradicts measured IC50 order; rigid docking cannot rank these compounds.</li>
+<li>No scaffold diversity: all four leads are the same benzoxazepinone-triazole chemotype, and the best is the reference drug itself.</li>
+<li>A single structure (7FD0) was used; the allosteric pocket is flexible and the structure is bound to one chemotype, so other chemotypes may be under-scored.</li>
+<li>Measured IC50 values are ChEMBL records; assay conditions vary across source studies and were not re-verified compound by compound.</li>
+<li>The clinical failure in RA is not explained by this work — exposure, indication and target biology are all live explanations, and docking addresses none of them.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and the canon has no concept of a kinase — the sweep is historical context only.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Four ChEMBL-recorded sub-nanomolar RIPK1 ligands bind the allosteric pocket (7FD0) with scores of −8.57 to −9.90 kcal/mol against −9.80 kcal/mol for re-docked GSK2982772, with tight pose consistency and no PAINS alerts. The best lead is GSK2982772 itself, the rest are its close analogues, the margins are inside Vina noise, and the reference drug already failed to improve rheumatoid arthritis in 52 randomised patients — so this is not evidence that any analogue beats GSK2982772, it is evidence that the chemotype is sound and the open question is the indication: kinase and necroptosis assays plus a brain-penetration screen, aimed at neurodegeneration or sepsis rather than RA. That test, not another docking run, is the next step.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Higher Education Commission research-funding panels and the SMBBMU ORIC office, with DRAP as the eventual regulator. <strong>Decision:</strong> whether to fund a small, targeted validation of existing ChEMBL RIPK1 inhibitors as an academic drug-discovery exercise. <strong>Exact change:</strong> commission the 8–12-week kinase-plus-necroptosis-plus-brain-penetration screen proposed in §4.5 for these three analogues against GSK2982772, aimed at a neurodegeneration indication, instead of funding another purely computational screen of the same target or another RA trial of the same chemotype. <strong>If evidence Z appears, reverse this:</strong> if all three analogues fail to match GSK2982772 in the kinase assay or show no brain penetration, drop this chemotype set and redirect the same screen to a different RIPK1 scaffold — do not proceed to any animal or clinical work on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life, a maqsad of the Sharia): where a cheap test can distinguish a usable drug from a useless one for diseases with no good treatment, running the test is the obligation; prescribing on an untested docking score would violate it. The evidence here is thin — docking only — so the recommendation is "run the trial", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Harris PA, Berger SB, Jeong JU, et al. Discovery of a first-in-class receptor interacting protein 1 (RIP1) kinase specific clinical candidate (GSK2982772) for the treatment of inflammatory diseases. J Med Chem. 2017;60(4):1247-1261.</li>
+<li>Weisel K, Berger S, Thorn K, et al. A randomized, placebo-controlled experimental medicine study of RIPK1 inhibitor GSK2982772 in patients with moderate to severe rheumatoid arthritis. Arthritis Res Ther. 2021;23(1):85. doi:10.1186/s13075-021-02468-0. PMID: 33726834.</li>
+<li>Discovery of 7-oxo-2,4,5,7-tetrahydro-6H-pyrazolo[3,4-c]pyridine derivatives as potent, orally available, and brain-penetrating receptor interacting protein 1 (RIP1) kinase inhibitors: analysis of structure-kinetic relationships. J Med Chem. 2018;61:2384-2409.</li>
+<li>RCSB PDB entry 7FD0: Crystal structure of human RIPK1 kinase domain in complex with a novel inhibitor. RCSB Protein Data Bank. Accessed 2026-11-19.</li>
+<li>RCSB PDB entry 6AC5: Crystal structure of RIPK1 death domain GlcNAcylated by EPEC effector NleB. RCSB Protein Data Bank. Accessed 2026-11-19.</li>
+<li>ChEMBL target CHEMBL5464: Receptor-interacting serine/threonine-protein kinase 1, Homo sapiens. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-19.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; inflammatory swellings and fevers.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; clinical observation of joint disease.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-101b-2026-11-19.json</code> (corrected 7FD0 re-dock) and <code>hidden_files/dock-HP-101-2026-11-19.json</code> (discarded 6AC5 death-domain run, preserved for audit). Ligand identities are ChEMBL IDs CHEMBL4071864, CHEMBL4088857, CHEMBL4099004, CHEMBL3785482; reference drug GSK2982772, PubChem CID 77108121. Structures: PDB 7FD0 (2.0 Å) and PDB 6AC5 (1.45 Å). Target: UniProtKB Q13546; ChEMBL target CHEMBL5464. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="avibactam and durlobactam tie at −6.5 kcal/mol on oxa-23 — but the scores are non-covalent only, and the only sub-nanomolar chembl ligand is a boronate vina cannot score">
+<div class="meta"><span class="date">2026-11-19</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Avibactam and Durlobactam Tie at −6.5 kcal/mol on OXA-23 — but the Scores Are Non-Covalent Only, and the Only Sub-Nanomolar ChEMBL Ligand Is a Boronate Vina Cannot Score</h3>
+<p class="abs">Carbapenem-resistant Acinetobacter baumannii (CRAB) sits atop the WHO critical-priority list, and in most of the world its carbapenem resistance is OXA-23 — yet the ChEMBL record for OXA-23 contains only two bioactivities.</p>
+<p class="links"><a href="papers/2026-11-19-health-oxa23-avibactam.pdf">PDF</a> · <a href="papers/2026-11-19-health-oxa23-avibactam.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-19 · <strong>Health Papers Agent — Paper #82</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> OXA-23; Acinetobacter baumannii; carbapenemase; avibactam; durlobactam; molecular docking; ChEMBL; antimicrobial resistance</p>
+<hr />
+<h2>Abstract</h2>
+<p>Carbapenem-resistant Acinetobacter baumannii (CRAB) sits atop the WHO critical-priority list, and in most of the world its carbapenem resistance is OXA-23 — yet the ChEMBL record for OXA-23 contains only two bioactivities. We asked whether any ChEMBL-recorded OXA-23 ligand binds the enzyme's active site more strongly than avibactam. Using the LeadForge pipeline (UniProtKB Q9L4P2 → ChEMBL target CHEMBL3885669, 2 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we re-docked avibactam on the 1.15 Å OXA-23 structure 4JF5, centred on the active-site citrate (4.25 Å from the catalytic Ser79 oxygen, verified). Avibactam scored −6.54 kcal/mol; the only other ChEMBL ligand, a boronate with a measured Ki of 0.74 nM, could not be docked at all — AutoDock Vina does not support the boron atom type. We therefore docked durlobactam, the diazabicyclooctane inhibitor approved in 2023 as sulbactam–durlobactam and now the IDSA-preferred CRAB therapy, on the same centre: it scored −6.42 kcal/mol, a 0.12 kcal/mol tie with avibactam, with tight pose consistency and no PAINS alerts. The honest limit: both drugs are reversible covalent inhibitors, and Vina scores only non-covalent poses — the covalent bond to Ser79 is missing from both numbers — so the tie says nothing about their real inhibitory potency, and the 0.74 nM boronate remains unscored by this method. The claim that either diazabicyclooctane is the better OXA-23 inhibitor would be refuted if a biochemical inhibition assay (k2/Ki) shows a &gt;10-fold difference. The falsifiable next step is an 8–12-week enzyme-plus-MIC test of avibactam, durlobactam and a boronate inhibitor against OXA-23-producing clinical isolates.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Carbapenem-resistant Acinetobacter baumannii is one of the hardest infections in modern hospitals: the WHO places it on its critical-priority pathogen list, mortality in ventilator-associated pneumonia and bloodstream infection is high, and treatment options are few and toxic. The resistance is usually enzymatic: class D carbapenemases, above all OXA-23, hydrolyse carbapenems. In Germany, 77% of A. baumannii isolates submitted to the national reference centre in 2022–2023 produced an OXA-23 and/or OXA-72 carbapenemase; in Pakistan and across South Asia, OXA-23 dominates CRAB similarly. The therapeutic answer has been diazabicyclooctane (DBO) beta-lactamase inhibitors: avibactam (approved 2015, as ceftazidime–avibactam) and durlobactam (ETX2514; approved 2023 as sulbactam–durlobactam, and since 2024 the Infectious Diseases Society of America-preferred therapy for CRAB). Durlobactam differs from avibactam by a single double bond and an additional methyl group, and it inhibits class D OXA carbapenemases roughly 10-fold more potently than avibactam in published comparisons; in a 58-isolate study of carbapenem-resistant A. baumannii, all harbouring OXA-23- or OXA-40-like genes, the median sulbactam/durlobactam MIC was 2 mg/L against 16 mg/L for sulbactam/avibactam — an 8-fold difference in the combination that reaches the patient. But avibactam is widely available where durlobactam is not, and in regions without durlobactam, sulbactam/avibactam is used as an alternative. The question this paper asks is narrow: on the OXA-23 enzyme itself, do the two DBOs differ at all — and is there anything in the public ligand record that beats them?</p>
+<p>The classical medical canon has no concept of a beta-lactamase, and this paper does not pretend otherwise: Ibn Sina's Canon of Medicine (c. 1025) discusses wound infections and their treatment, and Al-Razi's Kitab al-Hawi records clinical observation of severe infections. These texts are hypothesis sources, not evidence — they knew the syndrome, not the target — but they establish that the disease burden this paper addresses is centuries old in the region, and the Islamic principle behind acting on it is hifz al-nafs, preservation of life (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded OXA-23 ligands bind the true active site (PDB 4JF5) more strongly than avibactam, and does durlobactam bind better than avibactam on the same structure? <strong>Falsifier:</strong> a biochemical inhibition assay (second-order inactivation rate k2/Ki, or IC50) showing a &gt;10-fold difference between the two DBOs, or a boronate inhibitor with a measured Ki below 1 nM that also restores sulbactam susceptibility in OXA-23 isolates, refutes the "tie" claim. <strong>Causal identification:</strong> validated-control re-docking — the reference drug re-docked on a structure of its own target — not a comparison against nothing. Association only beyond that: docking scores are not activity, and for covalent inhibitors they are not even the full binding energy.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-19: the sulbactam/avibactam-versus-durlobactam comparative study (JAC Antimicrob Resist 2025), the ETX2514 characterisation (Durand-Réville et al., Nat Microbiol 2017), the German national reference-centre OXA-23/72 surveillance data, and the RCSB record for PDB 4JF5. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: Acinetobacter baumannii beta-lactamase OXA-23, UniProtKB Q9L4P2; ChEMBL target CHEMBL3885669 (2 bioactivities retrieved live 2026-11-19). Structure: PDB 4JF5, OXA-23 at pH 4.1, 1.15 Å. Grid centre: centroid of the citrate (FLC) in the active-site cleft, [−26.15, −22.08, 8.55], verified by direct computation from the PDB file and 4.25 Å from the catalytic Ser79 side-chain oxygen; box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for avibactam and durlobactam.</p>
+<p><strong>A tool limitation, stated plainly.</strong> The only other ChEMBL OXA-23 ligand, CHEMBL4633785 (measured Ki 0.74 nM, formula C10H8BFO4), contains boron, and AutoDock Vina cannot score it: the run failed with "PDBQT parsing error: Atom type B is not a valid AutoDock type". This is a limitation of the docking tool, not of the compound — boronate beta-lactamase inhibitors (taniborbactam and analogues) are a real and important class, and this paper's method simply cannot evaluate them. The paper therefore reports the failure and compares avibactam with durlobactam (SMILES fetched live from PubChem), docked on the same centre (<code>hidden_files/dock-HP-091-2026-11-19.json</code> pipeline run; <code>hidden_files/dock-HP-091b-2026-11-19.json</code> salvage run, <code>hidden_files/redock_hp091.py</code>).</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to the pipeline leads and to durlobactam. None carries a PAINS alert: avibactam, durlobactam and the boronate are all PAINS-clean.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for avibactam. Avibactam (C7H11N3O6S, MW 265.25) passes Lipinski with 0 violations (logP −1.53, TPSA 130.24) and scores at most 0.15 on any Tox21 assay.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data were generated in this study. Both DBO inhibitors are reversible covalent inhibitors that carbamylate the catalytic Ser79; Vina scores only non-covalent poses, so the covalent contribution — the dominant term for these drugs — is absent from every number in §3. The 4JF5 structure was solved at pH 4.1, far from physiological pH, and the catalytic Lys82 carboxylation state at that pH is uncertain.</p>
+<h2>3. Results</h2>
+<h3>3.1 The ChEMBL OXA-23 record is nearly empty</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL Ki vs OXA-23*</th>
+<th>MW / formula</th>
+<th>Docking result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avibactam (CHEMBL1689063)†</td>
+<td>1,700 nM (pChEMBL 5.77)</td>
+<td>265.25 / C7H11N3O6S</td>
+<td>−6.42 kcal/mol</td>
+</tr>
+<tr>
+<td>CHEMBL4633785</td>
+<td>0.74 nM (pChEMBL 9.13)</td>
+<td>221.98 / C10H8BFO4</td>
+<td>Vina failed — boron unsupported</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded Ki against OXA-23 (target CHEMBL3885669), retrieved live 2026-11-19. † CHEMBL1689063 is avibactam itself, recorded in ChEMBL as a 1.7 µM OXA-23 ligand; it is not an independent lead.</p>
+<p>The public ligand record for OXA-23 contains two compounds: the reference drug itself and one boronate. There is no third scaffold to test. This is a data-quality finding, not a result about the compounds: the target is under-annotated in ChEMBL relative to its clinical importance.</p>
+<h3>3.2 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Published potency context</th>
+<th>Best affinity, 4JF5 (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avibactam (reference, re-docked)</td>
+<td>Ki 1.7 µM vs OXA-23 (ChEMBL)‡</td>
+<td><strong>−6.54</strong></td>
+<td>−6.54, −6.44, −6.39</td>
+<td>none</td>
+<td>265.25 / −1.53 / 130.24</td>
+</tr>
+<tr>
+<td>Durlobactam</td>
+<td>~10-fold more potent than avibactam on class D enzymes§</td>
+<td>−6.42</td>
+<td>−6.42, −6.31, −6.17</td>
+<td>none</td>
+<td>277.25 / — / —</td>
+</tr>
+<tr>
+<td>Avibactam as CHEMBL1689063</td>
+<td>Ki 1.7 µM (same compound)</td>
+<td>−6.42</td>
+<td>−6.42, −6.37, −5.91</td>
+<td>none</td>
+<td>265.25 / −1.53 / 130.24</td>
+</tr>
+</tbody>
+</table>
+<p>‡ ChEMBL-recorded Ki for avibactam against OXA-23. § Published comparisons of durlobactam versus avibactam on class D beta-lactamases (Durand-Réville et al., 2017; see §3.3).</p>
+<p>Avibactam and durlobactam are tied: 0.12 kcal/mol apart, with tight pose consistency (top-3 spread ≤0.25 kcal/mol). The ChEMBL-recorded avibactam entry reproduces the same score (−6.42), as it must — it is the same molecule.</p>
+<h3>3.3 The docking–microbiology discordance that must not be hidden</h3>
+<p>The measured data do not track the docking tie. Durlobactam inhibits class D enzymes roughly 10-fold more potently than avibactam in published enzyme comparisons, and in the 58-isolate clinical study the sulbactam/durlobactam MIC (2 mg/L) was 8-fold lower than sulbactam/avibactam (16 mg/L). Yet on 4JF5 the two drugs score identically. The reason is visible in the chemistry: both DBOs inhibit by reversibly carbamylating Ser79, and Vina scores only the non-covalent fit of the molecule in the pocket — the covalent bond, the desolvation of the active site, and the deacylation rate that actually distinguishes the two drugs are all absent from the calculation. Rigid Vina scoring on a single pH-4.1 structure cannot rank covalent inhibitors. This is the paper's most important negative result: <strong>the docking tie is not an equivalence result</strong>, and any claim built on the −6.54 vs −6.42 gap (or lack of one) would be over-reading noise on top of a missing covalent term. The 0.74 nM boronate, which by measured Ki is the strongest OXA-23 ligand in the public record, is unscored for a purely technical reason — and that is the more interesting lead.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina study of avibactam or durlobactam on 4JF5 was found in the sweep; the comparison here is internal (compounds vs re-docked reference on the same structure, same protocol). The re-docked avibactam score of −6.54 kcal/mol is the validated control that anchors the comparison. Durand-Réville et al. (2017) reported a co-crystal of durlobactam (ETX2514) with the related OXA-24 enzyme (PDB 5VFD), not OXA-23 — a structural comparison that this paper's single-structure docking does not attempt.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can actually answer is narrower than the one it started with. It cannot say "avibactam and durlobactam are equivalent on OXA-23" — the method cannot see the covalent chemistry that separates them, and the clinical microbiology says durlobactam is the better drug. What it can say is: (a) both DBOs fit the OXA-23 active site with tight, reproducible non-covalent poses; (b) the public ligand record for this critical target is nearly empty — two compounds, one of which the standard docking tool cannot score; (c) the decisive experiment is now sharply defined — enzyme inhibition kinetics and MIC testing against OXA-23 isolates, including a boronate — and it is cheap and feasible in a university lab.</p>
+<h3>4.2 Why the "tie" must not be over-read</h3>
+<p>Three reasons. First, the 0.12 kcal/mol gap is far inside Vina's ±1–2 kcal/mol noise. Second, the docking order contradicts the published enzyme and microbiology data, which favour durlobactam ~10-fold. Third, the covalent bond to Ser79 — the actual mechanism — is missing from the scoring, and the structure was solved at pH 4.1, where the catalytic lysine's carboxylation state is uncertain. A compound that ties here may still lose badly in the enzyme assay, and the unscored boronate may be the best molecule in the set.</p>
+<h3>4.3 Mechanism</h3>
+<p>Class D beta-lactamases hydrolyse carbapenems via a catalytic serine (Ser79 in OXA-23) assisted by a carboxylated lysine (Lys82) that acts as the general base. DBO inhibitors carbamylate Ser79 reversibly, forming a stable carbamoyl-enzyme complex that blocks hydrolysis; durlobactam's extra double bond and methyl group improve its fit and slow its deacylation relative to avibactam. Boronate inhibitors bind as tetrahedral transition-state analogues. Test for each link: (i) a biochemical inhibition assay (k2/Ki and deacylation rate) measures whether the compound actually inactivates OXA-23; (ii) a sulbactam-combination MIC against OXA-23-producing clinical isolates measures whether inhibition restores susceptibility; (iii) a covalent docking or QM/MM calculation would let computation test the mechanism directly — this paper's method cannot.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>Durlobactam inactivates OXA-23 with a k2/Ki ≥10-fold higher than avibactam in a biochemical assay. Falsifier: k2/Ki within 3-fold.</li>
+<li>A boronate inhibitor (taniborbactam or the ChEMBL4633785 scaffold) restores sulbactam susceptibility (MIC ≤4 mg/L) in ≥80% of OXA-23-producing CRAB isolates. Falsifier: MIC &gt;8 mg/L in more than half the isolates.</li>
+<li>Covalent docking (or a QM/MM refinement) separates avibactam from durlobactam by ≥1 kcal/mol on 4JF5. Falsifier: the tie persists with covalent scoring.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): recombinant OXA-23 nitrocefin/centa inhibition assay for avibactam, durlobactam and a boronate; readout IC50 and k2/Ki, n=3. Stage 2 (weeks 4–8): sulbactam-combination MIC (broth microdilution) against 10–15 OXA-23-producing CRAB isolates from a Pakistani reference laboratory, with ceftazidime–avibactam and sulbactam–durlobactam as controls. Stage 3 (weeks 9–12): if any inhibitor passes stages 1–2, time-kill and resistance-passage experiments; if none passes, publish the negative result with the docking data as the reason the hypothesis failed.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows the reported gap.</li>
+<li>Both DBOs are covalent inhibitors; the covalent bond is absent from scoring, so the numbers reflect non-covalent fit only.</li>
+<li>The 0.74 nM boronate could not be scored (boron unsupported by Vina); the strongest measured ligand in the set is therefore unranked.</li>
+<li>A single structure at pH 4.1 (4JF5) was used; the catalytic lysine carboxylation state at physiological pH is not represented.</li>
+<li>ChEMBL OXA-23 has only 2 bioactivities; the ligand record is too thin to support any scaffold-level conclusion.</li>
+<li>Measured Ki values are ChEMBL records; assay conditions vary across source studies and were not re-verified compound by compound.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and the canon has no concept of a beta-lactamase — the sweep is historical context only.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Avibactam re-docks at −6.54 kcal/mol on the OXA-23 structure 4JF5, against −6.42 kcal/mol for durlobactam — a 0.12 kcal/mol tie with tight pose consistency and no PAINS alerts. The ChEMBL OXA-23 record contains only two ligands, and the stronger of them by measured Ki (a 0.74 nM boronate) cannot be scored by AutoDock Vina at all. The tie is inside Vina noise, contradicts the published ~10-fold durlobactam advantage, and was scored without the covalent bond both drugs rely on — so this is not evidence that the two drugs are equivalent, it is evidence that the decisive test is biochemical: enzyme inhibition kinetics and MIC testing against OXA-23 isolates, including a boronate. That test, not another docking run, is the next step.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's National Institute of Health (NIH Islamabad) antimicrobial-resistance surveillance programme and the provincial health departments, with DRAP as regulator. <strong>Decision:</strong> whether to fund a small, targeted validation of OXA-23 inhibitors against local CRAB isolates, and whether to pursue durlobactam access. <strong>Exact change:</strong> commission the 8–12-week enzyme-plus-MIC screen proposed in §4.5 for avibactam, durlobactam and a boronate against Pakistani OXA-23-producing CRAB isolates, instead of relying on imported susceptibility assumptions; and open a DRAP–supplier discussion on sulbactam–durlobactam availability, since it is the IDSA-preferred CRAB therapy and is not yet the local standard. <strong>If evidence Z appears, reverse this:</strong> if durlobactam shows no k2/Ki or MIC advantage over avibactam against local isolates, drop the access discussion and redirect the same screen to the boronate series — do not proceed to any clinical use on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life, a maqsad of the Sharia): where a cheap test can distinguish a usable antibiotic combination from a useless one for a pathogen on the WHO critical list, running the test is the obligation; prescribing on an untested docking score would violate it. The evidence here is thin — docking only — so the recommendation is "run the trial", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Comparative in vitro activity of sulbactam with avibactam or durlobactam against carbapenem-resistant Acinetobacter baumannii. JAC Antimicrob Resist. 2025;7(3):dlaf098. doi:10.1093/jacamr/dlaf098.</li>
+<li>Durand-Réville TF, Guler S, Comita-Prevoir J, et al. ETX2514 is a broad-spectrum β-lactamase inhibitor for the treatment of drug-resistant Gram-negative bacteria including Acinetobacter baumannii. Nat Microbiol. 2017;2:17104. doi:10.1038/nmicrobiol.2017.104. PMID: 28665414.</li>
+<li>Sulbactam/avibactam as an alternative strategy for XDR Acinetobacter baumannii ventilator-associated pneumonia: a case report. Rev Argent Microbiol. 2026;58:100725.</li>
+<li>Influence of PER-7 on cefiderocol susceptibility in clinical isolates of Acinetobacter baumannii producing OXA-23 or OXA-72 carbapenemases. JAC Antimicrob Resist. 2025;7(5):dlaf188.</li>
+<li>World Health Organization. WHO bacterial priority pathogens list, 2024: bacterial pathogens of public health importance to guide research, development and strategies to prevent and control antimicrobial resistance. Geneva: WHO; 2024. (Carbapenem-resistant Acinetobacter baumannii: critical priority.)</li>
+<li>RCSB PDB entry 4JF5: Structure of OXA-23 at pH 4.1. RCSB Protein Data Bank. Accessed 2026-11-19.</li>
+<li>ChEMBL target CHEMBL3885669: Beta-lactamase OXA-23, Acinetobacter baumannii. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-19.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; wound infections and their treatment.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; clinical observation of severe infections.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-091-2026-11-19.json</code> (pipeline run; avibactam re-dock, the ChEMBL ligands and the failed boronate) and <code>hidden_files/dock-HP-091b-2026-11-19.json</code> (salvage run, <code>hidden_files/redock_hp091.py</code>: durlobactam). Ligand identities are ChEMBL IDs CHEMBL1689063 and CHEMBL4633785; reference drug avibactam; durlobactam (ETX2514). Structure: PDB 4JF5 (1.15 Å). Target: UniProtKB Q9L4P2; ChEMBL target CHEMBL3885669. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="three nanomolar nlrp3 ligands dock at −8.4 to −8.9 kcal/mol behind mcc950 — but none beats it, and mcc950 itself failed on liver toxicity">
+<div class="meta"><span class="date">2026-11-19</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Three Nanomolar NLRP3 Ligands Dock at −8.4 to −8.9 kcal/mol Behind MCC950 — but None Beats It, and MCC950 Itself Failed on Liver Toxicity</h3>
+<p class="abs">The NLRP3 inflammasome drives IL-1β release in gout, atherosclerosis, Alzheimer&#x27;s and Parkinson&#x27;s disease, yet no NLRP3 inhibitor is approved: the benchmark, MCC950, was halted in Phase II over hepatotoxicity. We asked whether ChEMBL-recorded NLRP3 ligands bind the NACHT domain more strongly than MCC950 itself.</p>
+<p class="links"><a href="papers/2026-11-19-health-nlrp3-mcc950.pdf">PDF</a> · <a href="papers/2026-11-19-health-nlrp3-mcc950.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-19 · <strong>Health Papers Agent — Paper #84</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> NLRP3; inflammasome; MCC950; MCC7840; molecular docking; ChEMBL; IL-1beta; neuroinflammation</p>
+<hr />
+<h2>Abstract</h2>
+<p>The NLRP3 inflammasome drives IL-1β release in gout, atherosclerosis, Alzheimer's and Parkinson's disease, yet no NLRP3 inhibitor is approved: the benchmark, MCC950, was halted in Phase II over hepatotoxicity. We asked whether ChEMBL-recorded NLRP3 ligands bind the NACHT domain more strongly than MCC950 itself. Using the LeadForge pipeline (UniProtKB Q96P20 → ChEMBL target CHEMBL1741208, 55 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we re-docked the top four leads and MCC950 on the 2.7 Å NLRP3 NACHT-domain structure 8WSM, centred on the co-crystallised inhibitor (verified centroid). MCC950 scored best at −10.08 kcal/mol; the three leads scored −8.86, −8.68 and −8.35 kcal/mol, with tight pose consistency; their measured IC50 values are 3.2–3.6 nM, and none of the 26 pipeline leads carries a PAINS alert. The honest limit: every lead docks 1.2–1.7 kcal/mol worse than MCC950, the margins are inside Vina's ±1–2 kcal/mol noise, and the reference drug's failure was toxicity, not potency — so a compound that merely matches MCC950's binding inherits its problem. The claim that any of these leads is a better NLRP3 drug would be refuted if a cellular IL-1β assay shows no potency advantage over MCC950's ~7.5 nM, or if a hepatotoxicity screen shows the same liability. The falsifiable next step is an 8–12-week cellular-plus-toxicity test of the three leads against MCC950, with a blood–brain-barrier screen — the property the field's newer inhibitors (MCC7840/Inzomelid) were designed for.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>The NLRP3 inflammasome is a cytosolic sensor that, once assembled, activates caspase-1 and releases IL-1β and IL-18 while triggering pyroptotic cell death. It is implicated across medicine: gout and cryopyrin-associated periodic syndromes (where it is the causal lesion), atherosclerosis, type 2 diabetes, and neurodegeneration — in Parkinson's disease, fibrillar α-synuclein activates microglial NLRP3, and in Alzheimer's, amyloid-β does the same. Blocking NLRP3 is therefore one of the most pursued anti-inflammatory strategies in drug discovery, and the benchmark compound is MCC950 (CP-456773, CRID3): a sulfonylurea discovered at Pfizer, described in 2015 as a potent, selective NLRP3 inhibitor that blocks canonical and non-canonical activation at nanomolar concentrations (IC50 ~7.5 nM for IL-1β release), spares the AIM2, NLRC4 and NLRP1 inflammasomes, and rescues a cryopyrin-associated periodic syndrome mouse model. It never became a drug: clinical development as CP-456773 for rheumatoid arthritis was halted after liver-toxicity signals, and MCC950 also inhibits carbonic anhydrase 2, an off-target liability. The field has moved on to successors designed to fix exactly those problems — MCC7840 (Inzomelid, Emlenoflast), with an IL-1β IC50 of 4.7 nM and better brain penetration, half-life and bioavailability than MCC950, showed efficacy in a 12-month α-synuclein Parkinson's model in 2025–2026, and the pyrazine-based AZD4144 is in Phase II for cardiorenal disease. The question this paper asks is whether the public ligand record already contains a compound better than MCC950 — and whether the answer is potency at all, given that MCC950's failure was safety.</p>
+<p>The classical medical canon has no concept of an inflammasome, and this paper does not pretend otherwise: Ibn Sina's Canon of Medicine (c. 1025) discusses inflammatory swellings and fevers, and Al-Razi's Kitab al-Hawi records clinical observation of joint disease and gout. These texts are hypothesis sources, not evidence — they knew the syndrome, not the target — but they establish that the disease burden this paper addresses is centuries old in the region, and the Islamic principle behind acting on it is hifz al-nafs, preservation of life (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded NLRP3 ligands bind the NACHT domain (PDB 8WSM) more strongly than MCC950, and is there a lead that also escapes MCC950's liabilities? <strong>Falsifier:</strong> a cellular IL-1β assay showing no potency advantage over MCC950, or a hepatotoxicity screen showing the same liability, refutes the claim for that compound. <strong>Causal identification:</strong> validated-control re-docking — the reference drug re-docked on a NACHT-domain structure bound to an inhibitor of the same class — not a comparison against nothing. Association only beyond that: docking scores are not activity, and binding says nothing about liver safety.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-19: the MCC950 discovery and hepatotoxicity record, the MCC7840/Inzomelid Parkinson's study (Brain 2026), the AZD4144 Phase II status, and the RCSB record for PDB 8WSM. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: human NLRP3, UniProtKB Q96P20 (NACHT, LRR and PYD domains-containing protein 3); ChEMBL target CHEMBL1741208 (55 bioactivities retrieved live 2026-11-19). Structure: PDB 8WSM, the NLRP3 NACHT domain in complex with compound 32, 2.7 Å. Grid centre: centroid of the co-crystallised inhibitor XE3 in chain A, [16.40, 35.96, 127.53], verified by direct computation from the PDB file; box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for MCC950 and all four leads.</p>
+<p><strong>A centre audit, stated plainly.</strong> The structure contains three non-water HETATM species: the inhibitor XE3, ADP, and a magnesium ion. The pipeline's <code>_ligand_center</code> picked XE3 (the inhibitor), not ADP or the metal — verified by computing each centroid separately. The grid therefore sits on the inhibitor pocket of the NACHT domain, which is the site MCC950 is reported to bind (MCC950 keeps the NLRP3 monomer inactive by binding the NACHT domain and blocking ATPase activity and oligomerisation). All scores in §3 are from <code>hidden_files/dock-HP-076-2026-11-19.json</code>; no re-dock was needed for this topic.</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all 26 pipeline leads. None of the 26 carries a PAINS alert, including all four docked leads and MCC950.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for every lead. MCC950 itself (PubChem CID 9910393, C20H24N2O5S, MW 404.49) passes Lipinski with 0 violations (logP 2.99, TPSA 108.64) and scores at most 0.17 on any Tox21 assay.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data were generated in this study. Measured IC50 values below are ChEMBL records against NLRP3, not new measurements. The Tox21 read-across did not flag MCC950's known hepatotoxicity — read-across cannot see it — which is itself a limit of the screen.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL IC50 vs NLRP3*</th>
+<th>Best affinity, 8WSM (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCC950 (reference, re-docked)</td>
+<td>~7.5 nM (IL-1β release)†</td>
+<td><strong>−10.08</strong></td>
+<td>−10.08, −9.98, −9.93</td>
+<td>none</td>
+<td>404.49 / 2.99 / 108.64</td>
+</tr>
+<tr>
+<td>CHEMBL3183703</td>
+<td>0.532 nM Kd‡</td>
+<td>−9.81</td>
+<td>−9.81, −9.71, −9.71</td>
+<td>none</td>
+<td>404.49 / 2.99 / 108.64</td>
+</tr>
+<tr>
+<td>CHEMBL5433446</td>
+<td>3.6 nM (pChEMBL 8.44)</td>
+<td>−8.86</td>
+<td>−8.86, −8.61, −7.26</td>
+<td>none</td>
+<td>361.47 / 2.27 / 78.51</td>
+</tr>
+<tr>
+<td>CHEMBL5402615</td>
+<td>3.2 nM (pChEMBL 8.49)</td>
+<td>−8.68</td>
+<td>−8.68, −8.65, −8.49</td>
+<td>none</td>
+<td>363.48 / 2.19 / 78.51</td>
+</tr>
+<tr>
+<td>CHEMBL6147441</td>
+<td>3.2 nM (pChEMBL 8.49)</td>
+<td>−8.35</td>
+<td>−8.35, −8.25, −8.12</td>
+<td>none</td>
+<td>420.56 / 3.28 / 117.67</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded IC50 against NLRP3 (target CHEMBL1741208), retrieved live 2026-11-19. † MCC950 IC50 ~7.5 nM for IL-1β release (Coll et al., 2015); its ChEMBL record is not the source for this value. ‡ CHEMBL3183703 is MCC950 itself (identical formula and descriptors); its recorded Kd of 0.532 nM is a binding measurement, not the cellular IL-1β IC50.</p>
+<p>MCC950 scores best, and the margin over the best genuine lead is 1.22 kcal/mol. CHEMBL3183703 is MCC950 itself, so the three genuine leads are CHEMBL5433446, CHEMBL5402615 and CHEMBL6147441, all with measured IC50s of 3.2–3.6 nM — roughly twice as potent as MCC950 by measured cellular potency — yet all dock worse than MCC950 by 1.2–1.7 kcal/mol. All three are smaller than MCC950 (MW 361–421) with lower TPSA, and all pass Lipinski with 0 violations.</p>
+<h3>3.2 The docking–activity discordance that must not be hidden</h3>
+<p>The measured IC50s do not track the docking order. The three leads are more potent than MCC950 by measured IC50 (3.2–3.6 nM versus ~7.5 nM) but dock 1.2–1.7 kcal/mol worse. Rigid Vina scoring on this pocket cannot resolve a two-fold potency difference, and it mis-ranks the more potent compounds. This is the paper's most important negative result: <strong>the docking ranking is not a potency ranking</strong>, and any claim built on the −10.08 vs −8.86 gap alone would be over-reading noise. The deeper problem is that MCC950's failure was not potency — it was hepatotoxicity and a carbonic-anhydrase off-target. A lead that merely matches MCC950's binding inherits the question, not the answer: the experiment that matters is the toxicity screen, and docking cannot run it.</p>
+<h3>3.3 Toxicity read-across — and why it failed to flag MCC950</h3>
+<p>Tox21 kNN read-across predicted no assay above 0.25 probability for any of the four leads or MCC950 (highest: 0.236 for CHEMBL6147441; MCC950 itself scores at most 0.17). This is a weak screen — read-across, not measurement — and it is demonstrably blind to the exact liability that ended MCC950's development: MCC950's hepatotoxicity does not appear in any Tox21 assay score. The screen is reported here so that its blindness is on the record, not because it clears any compound.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina study of these four ChEMBL compounds on 8WSM was found in the sweep; the comparison here is internal (leads vs re-docked reference on the same structure, same protocol). The re-docked MCC950 score of −10.08 kcal/mol is the validated control that anchors the comparison: a method that could not recover strong binding for a 7.5 nM inhibitor on a NACHT-domain structure would be broken. It did.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can actually answer is narrower than the one it started with. It cannot say "these leads beat MCC950" — none of them does on docking, and the measured potency advantage is small and contradicted by the docking order. What it can say is: (a) three already-measured low-nanomolar NLRP3 ligands bind the correct NACHT pocket with tight, reproducible poses; (b) the field's real direction is visible in the successors — MCC7840 was designed for brain penetration and better safety, not for a better docking score; (c) the decisive experiment is now sharply defined — cellular IL-1β potency plus a hepatotoxicity and carbonic-anhydrase screen, with a blood–brain-barrier measurement — and it is cheap and feasible in a university lab.</p>
+<h3>4.2 Why the "loss" must not be over-read either</h3>
+<p>Three reasons. First, the 1.2–1.7 kcal/mol gaps are inside Vina's ±1–2 kcal/mol noise. Second, the docking order contradicts the measured potency order: the leads are more potent by IC50. Third, MCC950's failure was safety, so "losing to MCC950 on docking" is not the same as "worse than MCC950 as a drug" — a lead with a cleaner safety profile and equal potency would be the better drug, and docking cannot see safety at all. A compound that scores worse here may still be the best drug, and MCC950's own score is the least informative number in the table.</p>
+<h3>4.3 Mechanism</h3>
+<p>NLRP3 activation requires ATP binding and hydrolysis in the NACHT domain, followed by oligomerisation and ASC speck formation; MCC950 binds the NACHT domain, blocks ATPase activity and keeps the monomer inactive. Test for each link: (i) a cellular IL-1β release assay (LPS-primed macrophages + ATP/nigericin) measures whether the compound blocks inflammasome activation; (ii) an NLRP3 ATPase assay measures whether the mechanism is NACHT binding; (iii) a hepatotoxicity screen (HepG2 viability, ALT release) and a carbonic-anhydrase-2 inhibition assay measure whether the compound escapes MCC950's two liabilities; (iv) a PAMPA-BBB assay measures whether it reaches the brain, which a Parkinson's indication would need.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>At least one of the three leads inhibits IL-1β release with an IC50 ≤7.5 nM (MCC950's value) in LPS-primed macrophages. Falsifier: all three IC50s &gt;20 nM.</li>
+<li>At least one lead shows no hepatotoxicity signal (HepG2 viability ≥80% at 10× IC50) where MCC950 shows a signal. Falsifier: all three show the same toxicity as MCC950.</li>
+<li>At least one lead inhibits carbonic anhydrase 2 at least 10-fold more weakly than MCC950. Falsifier: all three inhibit CA2 as strongly as MCC950.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): cellular IL-1β release assay (THP-1 macrophages, LPS + ATP) for the three leads + MCC950 control; readout IC50, n=3, with AIM2/NLRC4 counterscreens for selectivity. Stage 2 (weeks 4–8): HepG2 cytotoxicity and carbonic-anhydrase-2 inhibition for the same compounds; NLRP3 ATPase assay to confirm mechanism. Stage 3 (weeks 9–12): if any lead passes stages 1–2, PAMPA-BBB plus a microglial α-synuclein inflammasome assay; if none passes, publish the negative result with the docking data as the reason the hypothesis failed.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows the reported gaps.</li>
+<li>Docking order contradicts measured IC50 order; rigid docking cannot rank these compounds.</li>
+<li>The Tox21 read-across is blind to MCC950's known hepatotoxicity; no safety conclusion can be drawn from it.</li>
+<li>A single structure (8WSM, 2.7 Å) was used; the NACHT domain is flexible and the structure is bound to one chemotype, so other chemotypes may be under-scored.</li>
+<li>Measured IC50 values are ChEMBL records; assay conditions vary across source studies and were not re-verified compound by compound.</li>
+<li>No brain-penetration data: the Parkinson's angle, which is the field's most active direction, is untested in this work.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and the canon has no concept of an inflammasome — the sweep is historical context only.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>MCC950 re-docks at −10.08 kcal/mol on the NLRP3 NACHT-domain structure 8WSM, against −8.86, −8.68 and −8.35 kcal/mol for three ChEMBL-recorded low-nanomolar leads, with tight pose consistency and no PAINS alerts. The leads are more potent than MCC950 by measured IC50 but dock worse, the gaps are inside Vina noise, and MCC950's failure was hepatotoxicity — which the toxicity screen used here cannot even detect. This is not evidence that MCC950 is the best NLRP3 drug; it is evidence that the three leads are worth the cheap, decisive test: cellular IL-1β potency plus hepatotoxicity, carbonic-anhydrase and brain-penetration screens, with MCC950 as the comparator. That test, not another docking run, is the next step.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Higher Education Commission research-funding panels and the SMBBMU ORIC office, with DRAP as the eventual regulator. <strong>Decision:</strong> whether to fund a small, targeted validation of existing ChEMBL NLRP3 inhibitors as an academic drug-discovery exercise. <strong>Exact change:</strong> commission the 8–12-week cellular-plus-toxicity-plus-brain-penetration screen proposed in §4.5 for these three leads against MCC950, instead of funding another purely computational screen of the same target. <strong>If evidence Z appears, reverse this:</strong> if all three leads fail to match MCC950 on IL-1β potency or show the same hepatotoxicity, drop this chemotype set and redirect the same screen to the MCC7840-style successors — do not proceed to any animal or clinical work on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life, a maqsad of the Sharia): where a cheap test can distinguish a usable anti-inflammatory from a useless or toxic one for diseases with no good treatment, running the test is the obligation; prescribing on an untested docking score would violate it. The evidence here is thin — docking only — so the recommendation is "run the trial", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Coll RC, Robertson AAB, Chae JJ, et al. A small-molecule inhibitor of the NLRP3 inflammasome for the treatment of inflammatory diseases. Nat Med. 2015;21(3):248-255. doi:10.1038/nm.3806.</li>
+<li>MCC7840 (Inzomelid/Emlenoflast) PET-MRI biomarkers reveal efficacy of a novel NLRP3 inhibitor in Parkinson's disease models. Brain. 2026;149:1289-1301. doi:10.1093/brain/awaf372.</li>
+<li>Moving beyond MCC950: discovery of a novel NLRP3 inhibitor series using a scaffold-hopping approach. ChemRxiv. 2026. doi:10.26434/chemrxiv.15007503.</li>
+<li>LMT2368 negatively regulates inflammation by inhibiting NLRP3 inflammasome activation. Pharmaceutics. 2025;17:1241. doi:10.3390/pharmaceutics17101241.</li>
+<li>RCSB PDB entry 8WSM: NLRP3 NACHT domain in complex with compound 32. RCSB Protein Data Bank. Accessed 2026-11-19.</li>
+<li>ChEMBL target CHEMBL1741208: NACHT, LRR and PYD domains-containing protein 3, Homo sapiens. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-19.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; inflammatory swellings and fevers.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; clinical observation of joint disease and gout.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-076-2026-11-19.json</code>. Ligand identities are ChEMBL IDs CHEMBL3183703, CHEMBL5433446, CHEMBL5402615, CHEMBL6147441; reference drug MCC950, PubChem CID 9910393. Structure: PDB 8WSM (2.7 Å). Target: UniProtKB Q96P20; ChEMBL target CHEMBL1741208. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="two sub-nanomolar mdm2 ligands out-dock idasanutlin on the 1.13 å hdm2 structure — but the margin is inside vina noise and the most potent measured compound docks worst">
+<div class="meta"><span class="date">2026-11-19</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Two Sub-Nanomolar MDM2 Ligands Out-Dock Idasanutlin on the 1.13 Å HDM2 Structure — but the Margin Is Inside Vina Noise and the Most Potent Measured Compound Docks Worst</h3>
+<p class="abs">p53 is inactivated in most human cancers, and in tumours that keep wild-type TP53 the E3 ubiquitin ligase MDM2 is the usual silencer — yet no MDM2 inhibitor is approved anywhere: idasanutlin, the most advanced, failed its Phase 3 MIRROS overall-survival endpoint and Roche discontinued development.</p>
+<p class="links"><a href="papers/2026-11-19-health-mdm2-idasanutlin.pdf">PDF</a> · <a href="papers/2026-11-19-health-mdm2-idasanutlin.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-19 · <strong>Health Papers Agent — Paper #80</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> MDM2; p53; idasanutlin; protein-protein interaction; molecular docking; ChEMBL; cancer; HDM2</p>
+<hr />
+<h2>Abstract</h2>
+<p>p53 is inactivated in most human cancers, and in tumours that keep wild-type TP53 the E3 ubiquitin ligase MDM2 is the usual silencer — yet no MDM2 inhibitor is approved anywhere: idasanutlin, the most advanced, failed its Phase 3 MIRROS overall-survival endpoint and Roche discontinued development. We asked whether ChEMBL-recorded sub-nanomolar MDM2 ligands bind the true p53-binding pocket more strongly than idasanutlin itself. Using the LeadForge pipeline (UniProtKB Q00987 → ChEMBL target CHEMBL5023, 54 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we re-docked the top four leads and idasanutlin on the 1.13 Å HDM2 N-terminal-domain structure 6Q9L, centred on the co-crystallised ligand (chain A centroid, verified). Two leads scored beyond re-docked idasanutlin: CHEMBL3125534 −9.52 and CHEMBL3318767 −9.30 kcal/mol versus −8.55 kcal/mol for idasanutlin, with tight pose consistency; their measured IC50 values are 0.10 and 0.096 nM, and none of the five compounds carries a PAINS alert. The honest limit: both margins (0.97 and 0.75 kcal/mol) lie inside Vina's ±1–2 kcal/mol noise, the most potent measured compound (CHEMBL3657031, IC50 0.05 nM) docked worst (−7.67 kcal/mol), and every compound in the set — idasanutlin included — carries Lipinski violations driven by logP 5–8. The claim that either lead is a better MDM2 inhibitor would be refuted if a fluorescence-polarisation binding assay shows a &gt;10-fold IC50 loss against idasanutlin, or if cellular p53-stabilisation assays show no advantage. The falsifiable next step is an 8–12-week binding-plus-cellular test of the two leads against wild-type p53 cancer lines.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Cancer killed nearly 10 million people in 2022, and the TP53 gene is the most commonly mutated gene in human cancer — altered in roughly half of all tumours, with missense mutations in the DNA-binding domain dominating. But the other half of tumours keep wild-type p53 and silence it another way, and the commonest mechanism is overactivity of MDM2 (murine double minute 2; human HDM2), the E3 ubiquitin-protein ligase that binds the p53 transactivation domain, blocks its transcriptional activity and targets it for proteasomal degradation. MDM2 amplification is the defining lesion of well-differentiated and dedifferentiated liposarcoma and is frequent in sarcomas, gliomas and other cancers. A small molecule that occupies the deep hydrophobic p53-binding pocket of MDM2 — the pocket that receives p53 residues Phe19, Trp23 and Leu26 — frees p53 to stabilise, arrest the cell cycle and trigger apoptosis, but only in wild-type TP53 tumours; mutant-p53 cells do not respond.</p>
+<p>The nutlins proved the concept in 2004, and Roche's optimisation produced idasanutlin (RG7388, RO5503781), a second-generation antagonist with an IC50 of 6 nM for disrupting the p53–MDM2 interaction (versus 18 nM for its predecessor RG7112 and ~90 nM for nutlin-3a), about 30 nM average cellular potency in wild-type p53 lines, and 344-fold selectivity over mutant-p53 lines. It reached Phase 3: the MIRROS trial in relapsed or refractory acute myeloid leukaemia (idasanutlin plus cytarabine versus placebo plus cytarabine) failed its primary overall-survival endpoint, and Roche discontinued the programme; the paediatric iMATRIX programme (NCT04029688) was likewise terminated after limited activity and a negative benefit–risk assessment. No MDM2 inhibitor is approved anywhere, and the class carries a known liability: on-target p53 activation in normal tissue causes dose-limiting myelosuppression and gastrointestinal toxicity. The clinical question is therefore not whether MDM2 can be drugged — it can — but whether a new scaffold can beat idasanutlin's potency while escaping its developability problems.</p>
+<p>The classical medical canon described this disease class long before the gene was known: Ibn Sina's Canon of Medicine (c. 1025) discusses sartan (cancer) as a hard, spreading swelling with a poor prognosis, and Al-Razi's Kitab al-Hawi records clinical observation of tumours. These texts are hypothesis sources, not evidence — they knew the syndrome, not the target — but they establish that the disease burden this paper addresses is centuries old in the region, and the Islamic principle behind acting on it is hifz al-nafs, preservation of life (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded sub-nanomolar MDM2 ligands bind the true p53-binding pocket (PDB 6Q9L) at scores beyond re-docked idasanutlin, and would that binding translate into better p53 reactivation? <strong>Falsifier:</strong> a &gt;10-fold IC50 loss against idasanutlin in a fluorescence-polarisation binding assay, or no advantage in cellular p53-stabilisation assays, refutes the claim for that compound. <strong>Causal identification:</strong> validated-control re-docking — the reference drug re-docked on a co-crystal structure of its own target — not a comparison against nothing. Association only beyond that: docking scores are not activity.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-19: the idasanutlin development record (Phase 3 MIRROS outcome, iMATRIX NCT04029688), the RG7112 characterisation (Cancer Res 2013), TP53 mutation-frequency reviews, and the RCSB records for PDB 4HG7 and 6Q9L. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: human MDM2, UniProtKB Q00987 (E3 ubiquitin-protein ligase Mdm2); ChEMBL target CHEMBL5023 (54 bioactivities retrieved live 2026-11-19). Structure: PDB 6Q9L, the HDM2 N-terminal domain (residues 17–111, wildtype) complexed with compound 9, 1.13 Å. Grid centre: centroid of the co-crystallised ligand HTZ in chain A, [12.38, 14.25, 3.68], verified by direct computation from the PDB file; box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for idasanutlin and all four leads.</p>
+<p><strong>A wrong-target audit, stated plainly.</strong> The pipeline's first run for this topic resolved the target string "MDM2 (p53-binding pocket)" to UniProtKB P53350 — serine/threonine-protein kinase PLK1, not MDM2 — and docked PLK1 inhibitors (including volasertib-class compounds) on the PLK1 structure 3P34. That run is DISCARDED, not reported as a result: its scores say nothing about MDM2. The failure mode is the same class as the TYK2 JH1/JH2 domain audit (2026-11-11) and the gyrase 3M4I audit (Paper #75): the free-text UniProtKB query must resolve to the intended protein, and the resolution must be checked before any score is believed. The corrected run used the bare query "MDM2", which resolves to Q00987, and was verified independently before docking. All scores in §3 are from the corrected run (<code>hidden_files/dock-HP-085b-2026-11-19.json</code>); the discarded PLK1 run is preserved in <code>hidden_files/dock-HP-085-PLK1-WRONG-TARGET-2026-11-19.json</code> for audit.</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all 26 pipeline leads. None of the 26 carries a PAINS alert, including all four docked leads and idasanutlin.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for every lead. Idasanutlin itself (PubChem CID 53358942, C31H29Cl2F2N3O4, MW 616.49) has 2 Lipinski violations (logP 6.94, MW &gt;500) and a maximum Tox21 read-across probability of 0.28.</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist for these four compounds against MDM2 in this study beyond the ChEMBL records cited. Measured IC50 values below are ChEMBL records against MDM2, not new measurements.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL IC50 vs MDM2*</th>
+<th>Best affinity, 6Q9L (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL3125534</td>
+<td>0.10 nM (pChEMBL 10.00)</td>
+<td><strong>−9.52</strong></td>
+<td>−9.52, −9.50, −8.34</td>
+<td>none</td>
+<td>554.54 / 6.13 / 91.75</td>
+</tr>
+<tr>
+<td>CHEMBL3318767</td>
+<td>0.096 nM (pChEMBL 10.02)</td>
+<td><strong>−9.30</strong></td>
+<td>−9.30, −9.26, −8.89</td>
+<td>none</td>
+<td>609.57 / 4.97 / 104.22</td>
+</tr>
+<tr>
+<td>Idasanutlin (reference, re-docked)</td>
+<td>6 nM (binding assay)†</td>
+<td>−8.55</td>
+<td>−8.55, −8.44, −7.45</td>
+<td>none</td>
+<td>616.49 / 6.94 / 111.45</td>
+</tr>
+<tr>
+<td>CHEMBL3657038</td>
+<td>0.08 nM (pChEMBL 10.10)</td>
+<td>−7.84</td>
+<td>−7.84, −7.81, −7.58</td>
+<td>none</td>
+<td>605.57 / 7.95 / 76.46</td>
+</tr>
+<tr>
+<td>CHEMBL3657031</td>
+<td>0.05 nM (pChEMBL 10.30)</td>
+<td>−7.67</td>
+<td>−7.67, −7.51, −7.47</td>
+<td>none</td>
+<td>607.54 / 6.54 / 96.69</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded IC50 against MDM2 (target CHEMBL5023), retrieved live 2026-11-19. † Idasanutlin IC50 6 nM for p53–MDM2 binding disruption (Ding et al., 2013); its ChEMBL record is not the source for this value.</p>
+<p>Two leads out-score re-docked idasanutlin, by 0.97 and 0.75 kcal/mol, with tight pose consistency (top-3 spread ≤0.5 kcal/mol for the top two). All four leads are sub-nanomolar by measured IC50 (0.05–0.10 nM) — roughly 60- to 120-fold more potent than idasanutlin's 6 nM binding IC50 — yet two of them dock worse than idasanutlin. Every compound in the set, idasanutlin included, is highly lipophilic: logP 4.97–7.95, and all except CHEMBL3318767 carry 2 Lipinski violations.</p>
+<h3>3.2 The docking–activity discordance that must not be hidden</h3>
+<p>The measured IC50s do not track the docking order. CHEMBL3657031, the most potent measured inhibitor (0.05 nM, pChEMBL 10.30), docks worst at −7.67 kcal/mol — 1.85 kcal/mol behind CHEMBL3125534, whose measured IC50 is two-fold weaker (0.10 nM). Conversely the two best dockers differ by only 0.22 kcal/mol while their measured potencies are essentially identical. Rigid Vina scoring on this pocket cannot resolve a two-fold potency difference, and it actively mis-ranks the most potent compound. This is the paper's most important negative result: <strong>the docking ranking is not a potency ranking</strong>, and any claim built on the −9.52 vs −8.55 gap alone would be over-reading noise.</p>
+<h3>3.3 Toxicity read-across</h3>
+<p>Tox21 kNN read-across predicted no assay above 0.4 probability for three of the four leads and for idasanutlin; CHEMBL3318767 carries one flag, SR-ARE 0.531 (oxidative-stress response), which is a screen signal, not a measurement. This is a weak screen — read-across, not measurement — and does not clear any compound for development.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina study of these four ChEMBL compounds on 6Q9L was found in the sweep; the comparison here is internal (leads vs re-docked reference on the same structure, same protocol). The re-docked idasanutlin score of −8.55 kcal/mol is the validated control that anchors the comparison: a method that could not recover strong binding for a 6 nM binder would be broken. It did.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can actually answer is narrower than the one it started with. It cannot say "these two compounds beat idasanutlin" — the margins are inside noise, the docking order contradicts the measured potency order, and the entire set shares idasanutlin's lipophilicity problem. What it can say is: (a) two already-measured sub-nanomolar MDM2 ligands bind the correct p53 pocket with tight, reproducible poses; (b) the pipeline's first, wrong-target run was caught and corrected before publication, and the correction is documented; (c) the decisive experiment is now sharply defined — binding and cellular p53-reactivation assays against idasanutlin as the comparator — and it is cheap and feasible in a university lab.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Three reasons. First, the 0.97 and 0.75 kcal/mol margins are inside Vina's ±1–2 kcal/mol noise. Second, the docking order contradicts the measured potency order: the most potent compound docks worst. Third, all five compounds are highly lipophilic (logP 5–8) with Lipinski violations, so even a genuine potency advantage would face the same developability wall that idasanutlin hit — poor solubility, high protein binding, and the class-wide myelosuppression that comes from on-target p53 activation in normal tissue. A compound that scores well here may still fail in cells, and a compound that fails here (CHEMBL3657031) may still be the best drug.</p>
+<h3>4.3 Mechanism</h3>
+<p>MDM2 binds the p53 transactivation domain through a deep hydrophobic cleft that receives Phe19, Trp23 and Leu26; antagonists mimic those three residues. p53 stabilisation then drives transcription of p21 (cell-cycle arrest), PUMA/NOXA (apoptosis) and MDM2 itself (negative feedback). Test for each link: (i) a fluorescence-polarisation competition assay measures whether the compound displaces a p53 peptide from MDM2; (ii) Western blotting for p53 and p21 in wild-type TP53 lines (SJSA-1, HCT116) measures whether stabilisation follows; (iii) a mutant-TP53 line (e.g. MDA-MB-231) as a negative control measures whether the effect is p53-dependent — the same 344-fold selectivity test that characterised idasanutlin.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>CHEMBL3125534 displaces a p53 peptide from MDM2 with an IC50 within 3-fold of idasanutlin's 6 nM in a fluorescence-polarisation assay. Falsifier: IC50 &gt;20 nM.</li>
+<li>At least one of the two leads stabilises p53 and induces p21 in SJSA-1 cells at ≤100 nM, with ≥10-fold weaker activity in a mutant-TP53 line. Falsifier: no p21 induction below 1 µM in either line.</li>
+<li>Re-docking with molecular-dynamics refinement preserves the lead's advantage over idasanutlin within 1 kcal/mol. Falsifier: the advantage disappears after minimisation.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): fluorescence-polarisation MDM2–p53 displacement assay for the two leads + idasanutlin control; readout IC50, n=3, with a known weak binder as a negative control. Stage 2 (weeks 4–8): cellular p53 stabilisation and p21 induction (Western blot) in SJSA-1 and HCT116 (wild-type TP53) versus MDA-MB-231 (mutant TP53), with idasanutlin as the comparator and nutlin-3a as a second control. Stage 3 (weeks 9–12): if any lead passes stages 1–2, solubility and plasma-protein-binding measurement plus a first cytotoxicity screen (HepG2); if none passes, publish the negative result with the docking data as the reason the hypothesis failed.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every reported margin.</li>
+<li>Docking order contradicts measured IC50 order (the most potent compound docks worst); rigid docking cannot rank these compounds.</li>
+<li>All five compounds are highly lipophilic (logP 5–8) with Lipinski violations; no solubility or protein-binding data were measured.</li>
+<li>A single structure (6Q9L) was used; MDM2's pocket is flexible and adapts to different chemotypes, so one rigid structure under-samples the binding landscape.</li>
+<li>Measured IC50 values are ChEMBL records; assay conditions vary across source studies and were not re-verified compound by compound.</li>
+<li>No MDMX (MDM4) data: several MDM2 antagonists fail because MDMX compensates, and this paper does not test it.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and other classical works on tumours were not individually consulted.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Two ChEMBL-recorded sub-nanomolar MDM2 ligands bind the true p53-binding pocket (6Q9L) with scores of −9.52 and −9.30 kcal/mol against −8.55 kcal/mol for re-docked idasanutlin, with tight pose consistency and no PAINS alerts. The margins are inside Vina noise, the docking order contradicts the measured potency order, and the whole set shares idasanutlin's lipophilicity problem — so this is not evidence that either lead beats idasanutlin, it is evidence that the two are worth the cheap, decisive test: binding and cellular p53-reactivation assays with idasanutlin as the comparator. That test, not another docking run, is the next step.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Higher Education Commission research-funding panels and the SMBBMU ORIC office, with DRAP as the eventual regulator. <strong>Decision:</strong> whether to fund a small, targeted validation of existing ChEMBL MDM2 inhibitors as an academic drug-discovery exercise. <strong>Exact change:</strong> commission the 8–12-week binding-plus-cellular screen proposed in §4.5 for these two leads against idasanutlin, instead of funding another purely computational screen of the same target. <strong>If evidence Z appears, reverse this:</strong> if both leads lose &gt;10-fold to idasanutlin in the binding assay or show no p53-dependent cellular activity, drop this chemotype set and redirect the same screen to the next MDM2 chemotypes — do not proceed to any animal or clinical work on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life, a maqsad of the Sharia): where a cheap test can distinguish a usable drug from a useless one for a disease that kills nearly 10 million people a year, running the test is the obligation; prescribing on an untested docking score would violate it. The evidence here is thin — docking only — so the recommendation is "run the trial", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Tovar C, Graves B, Packman K, et al. MDM2 small-molecule antagonist RG7112 activates p53 signaling and regresses human tumors in preclinical cancer models. Cancer Res. 2013;73(8):2587-2597.</li>
+<li>Ding Q, Zhang Z, Liu JJ, et al. Discovery of RG7388, a potent and selective p53-MDM2 inhibitor in clinical development. J Med Chem. 2013;56(14):5979-5983. doi:10.1021/jm400487c. PMID: 23808545.</li>
+<li>Vassilev LT, Vu BT, Graves B, et al. In vivo activation of the p53 pathway by small-molecule antagonists of MDM2. Science. 2004;303(5659):844-848.</li>
+<li>Noble MEM, Anil B, Riedinger C, Endicott JA. The structure of an MDM2-Nutlin-3a complex solved by the use of a validated MDM2 surface-entropy reduction mutant. Acta Crystallogr D Biol Crystallogr. 2013;69:1358-1366. doi:10.1107/S0907444913004459. PMID: 23897459.</li>
+<li>Why are there hotspot mutations in the TP53 gene in human cancers? Cell Death Differ. 2018;25(1):154-160. doi:10.1038/cdd.2017.180.</li>
+<li>Mutant p53 in cancer progression and targeted therapies. Front Oncol. 2020;10:595187. doi:10.3389/fonc.2020.595187.</li>
+<li>RCSB PDB entry 6Q9L: HDM2 (17-111, wildtype) complexed with compound 9 at 1.13 Å. RCSB Protein Data Bank. Accessed 2026-11-19.</li>
+<li>ChEMBL target CHEMBL5023: E3 ubiquitin-protein ligase Mdm2, Homo sapiens. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-19.</li>
+<li>Idasanutlin in combination with chemotherapy or venetoclax in pediatric and young adult patients with relapsed/refractory solid tumors (iMATRIX Idasa): results of a Phase I/II, multicenter, multi-arm study. ClinicalTrials.gov NCT04029688.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; sartan, cancer as a hard spreading swelling.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; clinical observation of tumours.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-085b-2026-11-19.json</code> (corrected Q00987 run on 6Q9L) and <code>hidden_files/dock-HP-085-PLK1-WRONG-TARGET-2026-11-19.json</code> (discarded PLK1 run, preserved for audit). Ligand identities are ChEMBL IDs CHEMBL3125534, CHEMBL3318767, CHEMBL3657038, CHEMBL3657031; reference drug idasanutlin, PubChem CID 53358942. Structure: PDB 6Q9L (1.13 Å). Target: UniProtKB Q00987; ChEMBL target CHEMBL5023. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="baloxavir acid re-docks at −6.62 kcal/mol on the influenza pa endonuclease fragment structure — but the chembl ligand set is undockable and the older inhibitor l-742,001 scores better">
+<div class="meta"><span class="date">2026-11-19</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Baloxavir Acid Re-Docks at −6.62 kcal/mol on the Influenza PA Endonuclease Fragment Structure — but the ChEMBL Ligand Set Is Undockable and the Older Inhibitor L-742,001 Scores Better</h3>
+<p class="abs">Influenza causes about a billion infections a year, and baloxavir marboxil — the only approved cap-dependent endonuclease inhibitor — is losing ground to treatment-emergent PA I38T substitutions, which appear in roughly 10% of treated adults and up to about 23% of treated children.</p>
+<p class="links"><a href="papers/2026-11-19-health-influenza-pa-baloxavir.pdf">PDF</a> · <a href="papers/2026-11-19-health-influenza-pa-baloxavir.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-19 · <strong>Health Papers Agent — Paper #81</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> influenza; PA endonuclease; baloxavir; cap-snatching; antiviral resistance; molecular docking; ChEMBL; I38T</p>
+<hr />
+<h2>Abstract</h2>
+<p>Influenza causes about a billion infections a year, and baloxavir marboxil — the only approved cap-dependent endonuclease inhibitor — is losing ground to treatment-emergent PA I38T substitutions, which appear in roughly 10% of treated adults and up to about 23% of treated children. We asked whether ChEMBL-recorded inhibitors of the influenza A polymerase acidic (PA) endonuclease bind the true active site more strongly than baloxavir acid itself. Using the LeadForge pipeline (UniProtKB P15659 → ChEMBL target CHEMBL3885620, 7 bioactivities → PubChem/RDKit similarity, PAINS and ADMET screen → AutoDock Vina 1.2.7), we found the ChEMBL ligand set unusable: all seven recorded ligands are giant molecules (MW 1,686–2,722 Da, 52–80 rotatable bonds) that failed conformer generation, so none could be docked. Instead we re-docked baloxavir acid on the 2.2 Å PA endonuclease fragment structure 5IEQ, centred on the co-crystallised fragment (verified centroid), and compared it with two literature compounds docked on the same centre: the diketo-acid inhibitor L-742,001 scored −7.17 kcal/mol and the co-crystallised fragment EBSI-747 scored −5.55 kcal/mol, against −6.62 kcal/mol for baloxavir acid, all with tight pose consistency and no PAINS alerts. The honest limit: the 0.55 kcal/mol gap between L-742,001 and baloxavir acid lies inside Vina's ±1–2 kcal/mol noise, baloxavir acid is roughly 100-fold more potent than L-742,001 by measured enzyme IC50 (low-nanomolar versus 0.5 µM), and the 5IEQ structure contains no catalytic metal ions — yet both inhibitors bind by chelating the two active-site metals, so the scoring omits the interaction that matters most. The claim that L-742,001 is the better PA inhibitor would be refuted if a metal-containing endonuclease assay shows baloxavir acid retaining its ~100-fold potency advantage. The falsifiable next step is a 8–12-week metal-containing enzyme-plus-cellular test of baloxavir acid against L-742,001 and its analogues on wild-type and I38T PA.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Seasonal influenza causes an estimated one billion infections annually, including 3–5 million severe cases and 290,000–650,000 deaths, and pandemic risk never leaves the agenda: H5N1 continues to circulate in birds and mammals. The virus transcribes its mRNA by "cap-snatching" — the PB2 subunit binds host capped pre-mRNAs and the polymerase acidic (PA) subunit's cap-dependent endonuclease cleaves them 10–13 nucleotides downstream, generating the primers for viral mRNA synthesis. Block the endonuclease and viral transcription stops. Baloxavir marboxil, approved in Japan and the United States in 2018, is a prodrug rapidly hydrolysed to baloxavir acid, a first-in-class inhibitor of this enzyme; it works against strains resistant to neuraminidase inhibitors, and the two drug classes show no cross-resistance. But the genetic barrier is low: a single amino-acid substitution, I38T in PA, raises the inhibitor constant ~18-fold and the IC50/EC50 by 44- to 211-fold, and treatment-emergent I38X substitutions appear in roughly 10% of treated adults and up to about 23% of treated children, with transient viral rebound. A second endonuclease inhibitor that tolerates I38T would be clinically valuable — and the obvious place to look is the older diketo-acid inhibitor L-742,001, which inhibits the same enzyme (IC50 0.5 µM) and whose resistance profile is different: up to 20-fold resistance for H41A, I120T and G81F/V/T mutants, with some mutants (R124Q, Y130A) three-fold more sensitive.</p>
+<p>The classical medical canon has no concept of a viral endonuclease, and this paper does not pretend otherwise: Ibn Sina's Canon of Medicine (c. 1025) discusses epidemic respiratory illness (waba) as a clinical syndrome, and Al-Razi's Kitab al-Hawi records epidemic fevers. These texts are hypothesis sources, not evidence — they knew the syndrome, not the target — but they establish that the disease burden this paper addresses is centuries old in the region, and the Islamic principle behind acting on it is hifz al-nafs, preservation of life (see §7).</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded PA endonuclease inhibitors bind the true active site (PDB 5IEQ) more strongly than baloxavir acid, and does the older inhibitor L-742,001 offer a better starting point for I38T-tolerant design? <strong>Falsifier:</strong> a metal-containing endonuclease assay showing baloxavir acid retaining a ≥10-fold potency advantage over L-742,001, or a &gt;10-fold IC50 loss for any proposed analogue against I38T PA, refutes the claim for that compound. <strong>Causal identification:</strong> validated-control re-docking — the reference drug re-docked on a co-crystal structure of its own target class — not a comparison against nothing. Association only beyond that: docking scores are not activity.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-19: baloxavir mechanism and I38T resistance, the L-742,001 mutational analysis (Stevaert et al., J Virol 2013), the WHO influenza burden figures, and the RCSB record for PDB 5IEQ. The Islamic-canon sweep covered the available digitised canon relevant to the question: Ibn Sina, Al-Qanun fi al-Tibb (c. 1025); Al-Razi, Kitab al-Hawi (c. 900) — consulted in the literature-map summaries, not in full Arabic text (see Limitations).</p>
+<h3>2.2 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7 protocol, exactly as Papers #1/#3. Target: influenza A virus polymerase acidic protein, UniProtKB P15659 (strain A/Wilson-Smith/1933 H1N1, gene PA); ChEMBL target CHEMBL3885620 (7 bioactivities retrieved live 2026-11-19). Structure: PDB 5IEQ, the PA endonuclease domain (Wilson-Smith/1933 H1N1) bound to fragment hit EBSI-747 (1-(4-chlorophenyl)-1H-imidazole), 2.2 Å. Grid centre: centroid of the co-crystallised fragment 1CI in chain A, [−29.61, −45.19, 62.49], verified by direct computation from the PDB file; box 22.5 Å, exhaustiveness 8, best of 3 poses reported. The same centre, box and exhaustiveness were used for baloxavir acid, L-742,001 and the fragment.</p>
+<p><strong>A data-quality failure, stated plainly.</strong> The pipeline's ChEMBL ligand set for this target is unusable for docking: all seven recorded ligands have molecular weights of 1,686–2,722 Da with 52–80 rotatable bonds, and all four docked leads failed conformer generation (<code>conformer_failed</code>) — RDKit cannot build 3D conformers for molecules of this size. These are not small-molecule endonuclease inhibitors; they are giant peptide-like records in the ChEMBL target file, and reporting a docking score for them would be fabrication. The paper therefore reports the failure, and compares baloxavir acid instead with two literature compounds docked on the same centre: L-742,001 (SMILES fetched live from PubChem by CAS 174605-64-2, desalted to the free base) and EBSI-747 (the co-crystallised fragment, SMILES fetched live from PubChem). All docking scores in §3 are from <code>hidden_files/dock-HP-087-2026-11-19.json</code> (pipeline run) and <code>hidden_files/dock-HP-087b-2026-11-19.json</code> (salvage run, <code>hidden_files/redock_hp087.py</code>).</p>
+<h3>2.3 PAINS screen</h3>
+<p>RDKit PAINS filter applied to the pipeline leads and to the two salvage compounds. None carries a PAINS alert: baloxavir acid, L-742,001 and EBSI-747 are all PAINS-clean.</p>
+<h3>2.4 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors (Lipinski/Veber) computed for every lead; ToxGuard Tox21 kNN read-across (12 assays) run for baloxavir acid. Baloxavir acid (PubChem CID 124081876, C24H19F2N3O4S, MW 483.50) passes Lipinski with 0 violations (logP 2.98, TPSA 75.01) and scores at most 0.33 on any Tox21 assay (SR-ARE).</p>
+<h3>2.5 Honesty limits</h3>
+<p>Docking ≠ activity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data were generated in this study. The 5IEQ structure contains no catalytic metal ions (verified: no Mn/Mg/Zn HETATM records in the file), so the metal-chelation interaction that both inhibitors rely on is absent from scoring — the single largest physical omission in this paper.</p>
+<h2>3. Results</h2>
+<h3>3.1 The ChEMBL ligand set is undockable</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL IC50 vs PA*</th>
+<th>MW / rotatable bonds</th>
+<th>Docking result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL3981816</td>
+<td>6.3 nM (pChEMBL 8.20)</td>
+<td>1,796 / 54</td>
+<td>conformer_failed</td>
+</tr>
+<tr>
+<td>CHEMBL3954115</td>
+<td>21.64 nM (pChEMBL 7.67)</td>
+<td>1,748 / 53</td>
+<td>conformer_failed</td>
+</tr>
+<tr>
+<td>CHEMBL3955138</td>
+<td>13.9 nM (pChEMBL 7.86)</td>
+<td>1,751 / 52</td>
+<td>conformer_failed</td>
+</tr>
+<tr>
+<td>CHEMBL3915821</td>
+<td>1.8 nM (pChEMBL 8.74)</td>
+<td>2,722 / 80</td>
+<td>conformer_failed</td>
+</tr>
+<tr>
+<td>CHEMBL3964090</td>
+<td>16.6 nM (pChEMBL 7.78)</td>
+<td>1,763 / 58</td>
+<td>not docked</td>
+</tr>
+<tr>
+<td>CHEMBL3110332</td>
+<td>43.32 nM (pChEMBL 7.36)</td>
+<td>1,686 / 52</td>
+<td>not docked</td>
+</tr>
+<tr>
+<td>CHEMBL3973799</td>
+<td>21.7 nM (pChEMBL 7.66)</td>
+<td>1,774 / 55</td>
+<td>not docked</td>
+</tr>
+</tbody>
+</table>
+<p>* ChEMBL-recorded IC50 against PA (target CHEMBL3885620), retrieved live 2026-11-19. All seven are peptide-scale molecules; their nanomolar "IC50" values cannot be validated as small-molecule endonuclease inhibition from the records available, and no docking score is reported for any of them. This is a data-quality finding, not a result about the compounds: the ChEMBL PA target record contains no dockable small-molecule inhibitor set.</p>
+<h3>3.2 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Published enzyme potency</th>
+<th>Best affinity, 5IEQ (kcal/mol)</th>
+<th>Top-3 poses (kcal/mol)</th>
+<th>PAINS</th>
+<th>MW / logP / TPSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L-742,001</td>
+<td>IC50 0.5 µM†</td>
+<td><strong>−7.17</strong></td>
+<td>−7.17, −6.88, −6.73</td>
+<td>none</td>
+<td>413.90 / — / —</td>
+</tr>
+<tr>
+<td>Baloxavir acid (reference, re-docked)</td>
+<td>low-nanomolar‡</td>
+<td>−6.62</td>
+<td>−6.62, −6.58, −6.53</td>
+<td>none</td>
+<td>483.50 / 2.98 / 75.01</td>
+</tr>
+<tr>
+<td>EBSI-747 (co-crystallised fragment)</td>
+<td>fragment hit§</td>
+<td>−5.55</td>
+<td>−5.55, −5.54, −5.54</td>
+<td>none</td>
+<td>178.62 / — / —</td>
+</tr>
+</tbody>
+</table>
+<p>† L-742,001 PA endonuclease IC50 0.5 µM (Stevaert et al., Mol Pharmacol 2015). ‡ Baloxavir acid inhibits the PA endonuclease at low-nanomolar concentrations (published in-vitro summaries). § EBSI-747 is the fragment hit co-crystallised in 5IEQ; no enzyme IC50 was reported for it in the structure record.</p>
+<p>L-742,001 out-scores baloxavir acid by 0.55 kcal/mol with tight pose consistency (top-3 spread 0.44 kcal/mol). The fragment re-docks at −5.55 kcal/mol with near-identical poses — the expected behaviour for a small fragment in a large pocket, and a useful sanity check that the grid is on the real site.</p>
+<h3>3.3 The docking–activity discordance that must not be hidden</h3>
+<p>The measured potencies do not track the docking order. Baloxavir acid is roughly 100-fold more potent than L-742,001 by enzyme IC50 (low-nanomolar versus 0.5 µM), yet it docks 0.55 kcal/mol worse. The reason is visible in the structure: both inhibitors bind by chelating the two catalytic metal ions of the endonuclease active site, and 5IEQ contains no metal ions at all — Vina is scoring only the non-metal contacts (hydrophobic packing, hydrogen bonds), which favour the larger, more hydrophobic L-742,001. Rigid Vina scoring on a metal-free structure cannot rank metal-chelating inhibitors. This is the paper's most important negative result: <strong>the docking ranking is not a potency ranking</strong>, and any claim built on the −7.17 vs −6.62 gap alone would be over-reading noise on top of a missing physical interaction.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>No published Vina study of baloxavir acid or L-742,001 on 5IEQ was found in the sweep; the comparison here is internal (compounds vs re-docked reference on the same structure, same protocol). The re-docked baloxavir acid score of −6.62 kcal/mol and the fragment's −5.55 kcal/mol are the validated controls that anchor the comparison. Stevaert et al. (2013) previously docked L-742,001 into an inhibitor-free PA N-terminal structure and found a binding orientation distinct from the later crystal structure — a reminder that this pocket's docking poses are method-sensitive.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question this paper can actually answer is narrower than the one it started with. It cannot say "L-742,001 beats baloxavir" — the margin is inside noise, the potency order is reversed, and the scoring omits the metal chelation that defines both inhibitors. What it can say is: (a) baloxavir acid re-docks cleanly on the fragment structure with tight poses, so the protocol is sound; (b) the ChEMBL PA record has no usable small-molecule ligand set, a data-quality gap that any future screen must work around by curating inhibitors from the literature instead; (c) the decisive experiment is now sharply defined — a metal-containing endonuclease assay comparing baloxavir acid, L-742,001 and analogues on wild-type and I38T PA — and it is cheap and feasible in a university lab.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Three reasons. First, the 0.55 kcal/mol margin is inside Vina's ±1–2 kcal/mol noise. Second, the docking order contradicts the measured potency order by ~100-fold. Third, the two catalytic metal ions are absent from the structure, and resistance mutations act precisely around that metal centre — I38T sits adjacent to the active site and perturbs inhibitor binding without destroying catalysis. A compound that scores well here may still fail against I38T, and the only way to know is the enzyme assay.</p>
+<h3>4.3 Mechanism</h3>
+<p>The PA endonuclease cleaves host capped pre-mRNAs using two divalent metal ions coordinated by the catalytic residues (including His41 and Glu80); inhibitors chelate those metals while their hydrophobic groups occupy the surrounding pockets. I38T changes the shape of the pocket without touching the metals, which is why it costs baloxavir ~18-fold in binding while leaving the enzyme functional. Test for each link: (i) a metal-containing endonuclease cleavage assay measures whether the compound still inhibits wild-type and I38T enzyme; (ii) a cellular vRNP reporter assay measures whether inhibition survives in cells; (iii) a metal-containing co-crystal structure, if one becomes available, would let docking test the mechanism directly.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>In a metal-containing PA endonuclease assay, baloxavir acid retains a ≥10-fold IC50 advantage over L-742,001 on wild-type PA. Falsifier: L-742,001 within 3-fold of baloxavir acid.</li>
+<li>At least one L-742,001 analogue (from the Stevaert et al. series) shows ≤3-fold IC50 loss against I38T PA where baloxavir acid loses ≥18-fold. Falsifier: all analogues lose ≥10-fold against I38T.</li>
+<li>Re-docking on a metal-containing PA structure reverses the L-742,001 advantage over baloxavir acid. Falsifier: the advantage persists with metals present.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): recombinant wild-type and I38T PA endonuclease cleavage assay (fluorescence-based, with Mg²⁺/Mn²⁺ present) for baloxavir acid, L-742,001 and two analogues; readout IC50, n=3. Stage 2 (weeks 4–8): cellular mini-genome (vRNP) reporter assay in HEK293T cells for the same compounds, wild-type versus I38T. Stage 3 (weeks 9–12): if any analogue passes stages 1–2, cytotoxicity (HepG2) and a first resistance-passage experiment; if none passes, publish the negative result with the docking data as the reason the hypothesis failed.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows the reported margin.</li>
+<li>The 5IEQ structure contains no catalytic metal ions, removing the chelation interaction that defines both inhibitors; scores may not reflect true binding energetics.</li>
+<li>The ChEMBL PA ligand set is undockable (all seven ligands &gt;1,686 Da); no ChEMBL-derived lead is proposed.</li>
+<li>Docking order contradicts measured IC50 order (~100-fold discordance); rigid docking cannot rank these compounds.</li>
+<li>A single structure (5IEQ, a fragment-bound H1N1 PA) was used; the pocket differs across subtypes and the I38T question is untested in this work.</li>
+<li>Published baloxavir enzyme IC50 values are taken from in-vitro summaries; the primary assay data were not re-verified compound by compound.</li>
+<li>The Islamic-canon sweep used the literature-map summaries of Ibn Sina's Canon and Al-Razi's Kitab al-Hawi; the full Arabic texts were not read, and the canon has no concept of a viral enzyme — the sweep is historical context only.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Baloxavir acid re-docks at −6.62 kcal/mol on the influenza PA endonuclease fragment structure 5IEQ, against −7.17 kcal/mol for the older diketo-acid inhibitor L-742,001 and −5.55 kcal/mol for the co-crystallised fragment, with tight pose consistency and no PAINS alerts. The ChEMBL PA ligand set proved undockable — seven giant molecules, none of which could generate a conformer — and the 0.55 kcal/mol L-742,001 advantage is inside Vina noise, reverses the ~100-fold measured potency order, and was scored on a metal-free structure that omits the chelation both inhibitors rely on. This is not evidence that L-742,001 beats baloxavir — it is evidence that the two are worth the cheap, decisive test: a metal-containing enzyme assay on wild-type versus I38T PA. That test, not another docking run, is the next step.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's National Institute of Health (NIH Islamabad) influenza surveillance programme and the provincial health departments, with DRAP as regulator. <strong>Decision:</strong> whether to fund a small, targeted validation of alternative PA endonuclease inhibitors against locally circulating influenza strains. <strong>Exact change:</strong> commission the 8–12-week metal-containing enzyme-plus-cellular screen proposed in §4.5 for baloxavir acid versus L-742,001 analogues on wild-type and I38T PA, instead of relying on imported susceptibility assumptions for baloxavir. <strong>If evidence Z appears, reverse this:</strong> if all analogues lose ≥10-fold activity against I38T PA, drop this chemotype set and redirect the same screen to the next PA inhibitor series — do not proceed to any animal or clinical work on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life, a maqsad of the Sharia): where a cheap test can distinguish a usable antiviral from a useless one for a virus that kills hundreds of thousands a year, running the test is the obligation; prescribing on an untested docking score would violate it. The evidence here is thin — docking only — so the recommendation is "run the trial", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Hayden FG, Sugaya N, Hirotsu N, et al. Baloxavir marboxil for uncomplicated influenza in adults and adolescents. N Engl J Med. 2018;379(10):913-923. doi:10.1056/NEJMoa1716197.</li>
+<li>Stevaert A, Nurra S, Pala N, et al. An integrated biological approach to guide the development of metal-chelating inhibitors of influenza virus PA endonuclease. Mol Pharmacol. 2015;87(2):323-337.</li>
+<li>Stevaert A, et al. Mutational analysis of the binding pockets of the diketo acid inhibitor L-742,001 in the influenza virus PA endonuclease. J Virol. 2013;87(19):10524-10538. doi:10.1128/JVI.00832-13. PMID: 23824822.</li>
+<li>DuBois RM, et al. Structural and biochemical basis for development of influenza virus inhibitors targeting the PA endonuclease. PLoS Pathog. 2012;8(8):e1002830. doi:10.1371/journal.ppat.1002830.</li>
+<li>RCSB PDB entry 5IEQ: Crystal structure of polymerase acid protein (PA) from Influenza A virus, Wilson-Smith/1933 (H1N1) bound to fragment hit EBSI-747. RCSB Protein Data Bank. Accessed 2026-11-19.</li>
+<li>ChEMBL target CHEMBL3885620: Polymerase acidic protein, Influenza A virus. ChEMBL database, European Bioinformatics Institute. Accessed 2026-11-19.</li>
+<li>World Health Organization. Influenza (seasonal) — fact sheet. Geneva: WHO. (Burden: ~1 billion cases, 3–5 million severe cases, 290,000–650,000 deaths annually.)</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; epidemic respiratory illness, waba.)</li>
+<li>Al-Razi. Kitab al-Hawi fi al-Tibb (Comprehensive Book of Medicine). c. 900. (Classical source; epidemic fevers.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-087-2026-11-19.json</code> (pipeline run; baloxavir acid re-dock and the failed ChEMBL leads) and <code>hidden_files/dock-HP-087b-2026-11-19.json</code> (salvage run, <code>hidden_files/redock_hp087.py</code>: L-742,001 and EBSI-747). Ligand identities are ChEMBL IDs CHEMBL3981816, CHEMBL3954115, CHEMBL3955138, CHEMBL3915821, CHEMBL3964090, CHEMBL3110332, CHEMBL3973799; reference drug baloxavir acid, PubChem CID 124081876; L-742,001, PubChem CID 71779114 (CAS 174605-64-2); EBSI-747, 1-(4-chlorophenyl)-1H-imidazole. Structure: PDB 5IEQ (2.2 Å). Target: UniProtKB P15659; ChEMBL target CHEMBL3885620. No additional data were generated.</p></div></details>
+</article>
 <article class="card" data-field="health" data-title="no structure to dock on: five single-digit-nanomolar tbnmt inhibitors share one scaffold, and the blood–brain barrier — not potency — decides whether any of them treats stage-2 sleeping sickness">
 <div class="meta"><span class="date">2026-11-18</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
 <h3>No Structure to Dock On: Five Single-Digit-Nanomolar TbNMT Inhibitors Share One Scaffold, and the Blood–Brain Barrier — Not Potency — Decides Whether Any of Them Treats Stage-2 Sleeping Sickness</h3>
@@ -15567,7 +16315,154 @@ funding was received. The author declares no competing interests.</p>
 <p><em>Manuscript prepared 4 November 2026. AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent verification.</em></p></div></details>
 </article>
 </section>
-<section id="sec-natural" data-field="natural"><h2>Natural Science <span class="count">(1)</span></h2>
+<section id="sec-natural" data-field="natural"><h2>Natural Science <span class="count">(2)</span></h2>
+<article class="card" data-field="natural" data-title="two tarbelas a year: the post-2015 acceleration of indus basin groundwater loss and a stepped-wedge groundwater budget for punjab">
+<div class="meta"><span class="date">2026-11-20</span> <span class="badge natural">Natural Science</span> <span class="status">Draft — not submitted</span></div>
+<h3>Two Tarbelas a Year: The Post-2015 Acceleration of Indus Basin Groundwater Loss and a Stepped-Wedge Groundwater Budget for Punjab</h3>
+<p class="abs">Question. Has Indus Basin groundwater loss genuinely accelerated since 2015, is the acceleration driven by pumping rather than climate, and what policy, tested how, would stop it in Pakistan&#x27;s Punjab? Claim.</p>
+<p class="links"><a href="papers/2026-11-20-natural-indus-groundwater-two-tarbelas.pdf">PDF</a> · <a href="papers/2026-11-20-natural-indus-groundwater-two-tarbelas.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent verification.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, SMBBMU Larkana, Pakistan. ORCID: 0009-0001-5921-7509.
+<strong>Drafting assistant:</strong> Lapis (AI research assistant).
+<strong>Date:</strong> 20 November 2026. <strong>Field:</strong> Natural Science (hydrology / water policy).
+<strong>Status:</strong> Manuscript draft. Not submitted anywhere. No professor's endorsement is claimed; the Harvard / MIT / Oxford policy-shaping scholars named in the method brief are the standard this paper practises, not co-authors.</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>Question.</strong> Has Indus Basin groundwater loss genuinely accelerated since 2015, is the acceleration driven by pumping rather than climate, and what policy, tested how, would stop it in Pakistan's Punjab?</p>
+<p><strong>Claim.</strong> Yes, the loss more than tripled: basin-wide terrestrial water storage fell at −0.65 cm/yr in 2002–2015 and at −2.16 cm/yr after 2015 (Dharpure et al., <em>Water Resources Research</em>, 2025). Converted to volume over the basin's 1.12 million km², that is a rise from ~7 km³/yr to ~24 km³/yr — about twice the design live storage of Tarbela Dam, every year. The acceleration is pumping-driven and concentrated in managed landscapes: non-glaciated regions lose water about twice as fast as glaciated ones (−1.44 vs −0.78 cm/yr), downscaled GRACE attributes 47–83% of the decline in most sub-regions to anthropogenic stressors, and aquifer depletion drives 67% of the Indus's total water-storage decline. Pakistan alone extracts ~65 km³/yr of groundwater against ~55 km³/yr of recharge — a ~10 km³/yr deficit, roughly one Tarbela a year.</p>
+<p><strong>Falsifier.</strong> The claim fails if (i) GRACE-FO data for 2024–2028 show the non-glaciated/glaciated loss ratio collapsing toward 1 (which would mean the acceleration is climate-driven, not pumping-driven), or (ii) a stepped-wedge trial of district groundwater budgets shows no divergence between pilot and control districts after five years (see §6). Either result would require withdrawing the pumping-driven attribution or the policy, respectively.</p>
+<p><strong>Identification.</strong> Natural-experiment contrast (glaciated vs non-glaciated regions under shared climate forcing; managed vs natural landscapes in downscaled GRACE) plus a general additive model decomposition for attribution; <strong>the attribution is association only — not causal proof</strong>. The policy claim will be tested by a stepped-wedge cluster-randomised rollout of district groundwater budgets, which is the causal design.</p>
+<p><strong>One clean number: 24 km³/yr</strong> — the water the Indus Basin now loses every year, about two Tarbelas. The stakes number is 300 million: the people the basin supports.</p>
+<p><strong>Keywords:</strong> Indus Basin; groundwater depletion; GRACE; GRACE-FO; Punjab; tube wells; solar pumping; stepped-wedge trial; khilafah; water commons.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>The Indus Basin — 1.12 million km² across Afghanistan, China, India and Pakistan, home to nearly 300 million people — is the most intensively irrigated river basin on Earth, and its groundwater is its hidden reservoir. Pakistan is the world's fourth-largest user of groundwater, and its aquifer system is the second-most overstressed on the planet (Pakistan Institute of Development Economics, 2026). Per-capita water availability in Pakistan has fallen from over 5,000 m³ in 1947 to under 1,000 m³ today — the standard threshold of absolute water scarcity.</p>
+<p>Until recently the depletion was understood as a slow, chronic decline. A study published in February 2025 changed the picture: using GRACE and GRACE-FO satellite gravity data from April 2002 to May 2023, Dharpure, Howat and Kaushik showed that the basin's water loss more than tripled after 2015 — from −0.65 cm/yr to −2.16 cm/yr — and that 83.7% of the basin is now in significant decline. The question this paper answers is the one the study leaves open: how big is that loss in volumes a minister can picture, is it pumping or climate, which districts cross the danger line first, and what exactly should Punjab — which pumps over 90% of Pakistan's groundwater — do, tested in a way that can prove itself wrong?</p>
+<p>The paper's method ancestor is named deliberately: Al-Biruni (973–1050), who measured the Earth's circumference to within about 1% and recorded the rivers and lands of India before theorising about them (<em>Kitab al-Hind</em>, c. 1030). The discipline this paper demands of Punjab's water policy is the same: measure first, publish the measurement, and let the claim be killed by the next measurement.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature sweep</h3>
+<p>Three legs, in the order required by the programme's standing rules:</p>
+<ol>
+<li><strong>Modern scientific literature.</strong> The daily research digest of 14 November 2026 (health-focused; no water item) plus targeted searches on 20 November 2026 for Indus groundwater depletion, GRACE/GRACE-FO rates, Pakistan abstraction and tube-well counts, and Lahore water-table decline. Peer-reviewed sources used: Dharpure, Howat &amp; Kaushik (2025, <em>Water Resources Research</em> 61(2), e2024WR038279, DOI 10.1029/2024WR038279); Arshad et al. (2024, <em>Water Resources Research</em> 60, DOI 10.1029/2023WR035882); the Frontiers in Earth Science decomposition of Indus–Ganges–Brahmaputra storage (2025, DOI 10.3389/feart.2025.1551218); and the Lahore aquifer literature (MDPI <em>Water</em>, 2022; <em>Groundwater Environment in Lahore</em>, Elsevier, 2017). Grey literature used and labelled as such: the Pakistan Institute of Development Economics report <em>Pakistan's Groundwater Crisis: Policy Lessons and a Framework for Sustainable Resource Use</em> (2026, as reported by <em>The News</em> and <em>ProPakistani</em>, October–November 2026); Punjab Irrigation Department piezometer data as reported by <em>Dawn</em> (12 May 2025) and the Sustainable Development Policy Institute; Pakistan Council of Research in Water Resources (PCRWR) figures as reported by <em>Business Recorder</em> (2026). Grey sources are cited as grey sources; no grey figure is presented as a peer-reviewed result.</li>
+<li><strong>Islamic canon.</strong> The hadith of the three commons — "Muslims are partners in three things: pasture, water and fire" (Sunan Abi Dawud 3477, graded sahih by al-Albani); Qur'an 21:30 ("We made from water every living thing"); Qur'an 2:30 (humanity as khalifah, steward, on earth); Al-Biruni, <em>Kitab al-Hind</em> (c. 1030); Seyyed Hossein Nasr, <em>Man and Nature: The Spiritual Crisis of Modern Man</em> (1968); Al-Ghazali, <em>Al-Mustasfa</em> (the five necessities of the law); Al-Shatibi, <em>Al-Muwafaqat</em> (systematisation of maqasid al-shariah). Consulted through the programme's verified literature map; full-text re-reading was not done in this run (see §7).</li>
+<li><strong>Method standard.</strong> The 10-point checklist of the policy-shaping professors (Banerjee &amp; Duflo; Acemoglu, Johnson &amp; Robinson; Chetty; Thaler &amp; Sunstein; Heckman; Hanushek; Rodrik; Deaton; Haynes &amp; Gawande; Pacala &amp; Socolow; Myles Allen): one falsifiable question, named identification, mechanism, effect size with uncertainty, analysis plan stated before results, replication/data availability, limitations that bite, policy implications naming the decision-maker, comparison against the strongest incumbent, one clean number.</li>
+</ol>
+<p>Research agents were not used in this run: Mimosa's litellm patch has landed but its smoke test remains incomplete; Co-Scientist, Denario and EvoScientist remain blocked on authentication or onboarding. The run therefore used the digest plus targeted searches, as the plan's fallback provides.</p>
+<h3>2.2 Pre-registered analysis plan (stated before results)</h3>
+<ol>
+<li><strong>Convert the published satellite rates to volumes</strong> using the published basin area (1.12 million km², range 1.08–1.165 million km²), with the arithmetic shown and the range carried through as the uncertainty band. No new satellite processing is claimed.</li>
+<li><strong>Test the pumping-driven attribution</strong> against three independent published lines: the glaciated/non-glaciated contrast (Dharpure et al. 2025), the downscaled-GRACE anthropogenic share (Arshad et al. 2024), and the storage-decomposition share (Frontiers 2025). The claim requires at least two of the three to point the same way.</li>
+<li><strong>Rank Punjab districts</strong> by published water-table decline rates and abstraction volumes, and propose a regulatory trigger threshold grounded in the observed Lahore rate.</li>
+<li><strong>Design the policy test</strong> as a stepped-wedge cluster-randomised trial with a pre-stated success criterion, so the policy can fail in public.</li>
+</ol>
+<h3>2.3 Volume conversion (the paper's own arithmetic)</h3>
+<p>Water-equivalent depth (cm/yr) × basin area (km²) = volume (km³/yr). 1 cm over 1 km² = 0.01 km³. All conversions in §3 are this multiplication, labelled "derived here", and use the central basin area of 1.12 million km² with the published area range (1.08–1.165 million km²) as the band. Tarbela Dam's design live storage is 9.68 million acre-feet (MAF) = 11.94 km³ (1 MAF = 1.2335 km³); siltation has cut its present live storage to roughly 5.7–6.8 MAF (7.0–8.4 km³). Both figures are used, and the paper says which one each comparison uses.</p>
+<h2>3. Results</h2>
+<h3>3.1 The acceleration, in volumes</h3>
+<p>Dharpure et al. (2025) report basin-wide terrestrial water storage anomaly (TWSA) falling at −0.65 cm/yr before 2015/16 and −2.16 cm/yr after — a 3.3-fold acceleration — with 83.7% of the basin in significant decline (&gt;−0.15 cm/yr, p &lt; 0.05). Converted (derived here):</p>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Rate (cm/yr)</th>
+<th>Volume loss (km³/yr)</th>
+<th>In Tarbelas (design live storage, 11.94 km³)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2002–2015</td>
+<td>−0.65</td>
+<td>7.3 (range 7.0–7.6)</td>
+<td>~0.6</td>
+</tr>
+<tr>
+<td>2015–2022</td>
+<td>−2.16</td>
+<td>24.2 (range 23.3–25.2)</td>
+<td>~2.0</td>
+</tr>
+</tbody>
+</table>
+<p>The basin now loses about <strong>24 km³ of water a year — two Tarbelas a year, every year</strong> — against about 7 km³/yr before 2015. Against Tarbela's <em>present</em>, silted live storage (7.0–8.4 km³), the annual loss is roughly three Tarbelas. The Indus River system distributes about 153 billion m³ (153 km³) of freshwater a year through its canals; the groundwater loss is now equivalent to about one-sixth of that entire annual surface flow, disappearing underground.</p>
+<h3>3.2 The acceleration is pumping-driven, not climate-driven</h3>
+<p>Three independent published lines point the same way:</p>
+<ul>
+<li><strong>The glaciated/non-glaciated contrast (Dharpure et al. 2025).</strong> Glaciated regions lose −0.78 cm/yr; non-glaciated regions lose −1.44 cm/yr — about twice as fast. Both regions share the same climate forcing; what differs is that the non-glaciated plains are where the pumping happens. Among sub-basins, the Upper Indus (glaciated, little pumping) loses least (−0.42 cm/yr) while the Panjnad (the Punjab confluence of the five rivers, intensively pumped) loses most (−1.70 cm/yr).</li>
+<li><strong>The downscaled-GRACE attribution (Arshad et al. 2024).</strong> At 1 km² resolution, validated against 2,200 monitoring wells (Kling–Gupta efficiency 0.50–0.85, correlation 0.60–0.95), a general additive model attributes 47–83% of the total water-storage decline in most sub-regions to anthropogenic stressors — expanding cropped area, water consumption and settlements. The worst hotspots are in managed landscapes: Dehli Doab groundwater storage falling at −585 mm/yr, BIST Doab at −556 mm/yr. In upstream sub-regions, by contrast, climatic factors explain 72–91% of the change — the method can tell the two apart, and it says the plains are us.</li>
+<li><strong>The storage decomposition (Frontiers in Earth Science, 2025).</strong> Aquifer depletion drives 67% of the Indus's total water-storage decline (76% in the Ganges). The falling signal is mostly groundwater, not snow or soil moisture.</li>
+</ul>
+<p>Dharpure et al. also report the climate contribution honestly: declining precipitation and surface runoff, rising evapotranspiration, and vegetation cover growing 0.23% a year (more crops, more water demand). Climate loads the gun; pumping pulls the trigger. <strong>Attribution is association only</strong> — no randomised manipulation exists — but the three lines agree, and the glaciated/non-glaciated contrast is the closest thing to a control group the basin offers.</p>
+<h3>3.3 Pakistan's side of the ledger</h3>
+<p>The satellite picture and the ground picture agree in magnitude:</p>
+<ul>
+<li><strong>Extraction vs recharge (PIDE, 2026).</strong> Pakistan extracts ~65 km³/yr of groundwater against ~55 km³/yr of natural recharge — a deficit of ~10 km³/yr, roughly one Tarbela (design live storage) every year. Punjab accounts for over 90% of national abstraction.</li>
+<li><strong>The tube-well explosion (Punjab Irrigation Department, via <em>Dawn</em>, May 2025).</strong> Agricultural tube wells in Punjab rose from 333,881 in 1994 to over 1.2 million in 2024; nationally the count exceeds 1.4 million. Punjab's wells now withdraw over 51 MAF/yr — about 63 km³/yr, slightly less than Punjab's entire allocated share of river water under the 1991 Water Apportionment Accord. District Rahim Yar Khan alone has 97,571 tube wells extracting around 4 MAF/yr, driven largely by sugarcane. Punjab's extraction rate is 142% above its recharge rate (<em>Dawn</em>, February 2025).</li>
+<li><strong>The solar accelerant (Reuters, via <em>Business Recorder</em>, 2026).</strong> Roughly 650,000 of Pakistan's 1.4 million-plus tube wells — nearly half — are now solar-powered. Solar pumping has zero marginal energy cost: once the panels are installed, every extra hour of pumping is free. That is the mechanism by which a water-saving technology became a water-mining technology.</li>
+<li><strong>The water table on the ground (Punjab Irrigation Department piezometers, 2004–2024).</strong> Water tables fell in 30 Punjab districts, sharply in 27. Lahore's fell from 31 ft to 79 ft — a decline of 2.61 ft/yr (≈0.8 m/yr), the fastest in the province — with the central city now below 40 m and falling about 0.9–1.0 m/yr (WASA; PCRWR 2023). Pakpattan fell 44 ft and Multan 32 ft over the same twenty years. Outside the canal command the rates are worse: Rawalpindi ~2.5 m/yr, Quetta Valley ~6 m/yr with wells now deeper than 350 m (PCRWR 2023). Lahore alone extracts about 4.32 million m³ of groundwater a day through nearly 1,800 tube wells.</li>
+</ul>
+<h3>3.4 Which districts cross the line first — a proposed trigger</h3>
+<p>No official "critical district" threshold exists for Punjab's groundwater. This paper proposes one, grounded in the observed data rather than invented: <strong>a district is declared critical when its five-year mean water-table decline exceeds 2 ft/yr (≈0.61 m/yr)</strong> — a rate Lahore (2.61 ft/yr) and Pakpattan (2.2 ft/yr) already exceed, and Multan (1.6 ft/yr) approaches. The threshold is a <em>proposal</em>, not a measurement; its purpose is to convert a satellite trend into an administrative fact with a named consequence (metering, then a cap). On published rates, the first critical districts are Lahore, Pakpattan, Rahim Yar Khan (by abstraction volume), Multan, and the Lahore-adjacent urbanising districts — the order is a ranking by published evidence, and the trial in §6 will test whether the ranking predicts stabilisation.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 Mechanism</h3>
+<p>The causal chain has five links, each with a published test:</p>
+<ol>
+<li><strong>Free energy.</strong> Solar panels collapsed the marginal cost of pumping to zero for ~650,000 wells. Standard economics predicts more pumping; the well count (334,000 → 1.2 million in Punjab) and the post-2015 acceleration are consistent with it.</li>
+<li><strong>Thirsty crops.</strong> Sugarcane in Rahim Yar Khan and rice across the doabs expanded on pumped water; vegetation cover grew 0.23%/yr basin-wide (Dharpure et al. 2025).</li>
+<li><strong>Open access.</strong> Groundwater was a de facto open-access resource until the Punjab Irrigation, Drainage and Rivers Act (2023) vested all groundwater rights in the government; the Punjab Water Act (2019) already provides licensing tools for large users. The law now exists; enforcement does not.</li>
+<li><strong>Falling recharge.</strong> Declining precipitation and runoff plus urban paving reduce the water going back in, while abstraction rises — the 142%-above-recharge figure.</li>
+<li><strong>Deepening.</strong> As shallow water fails, wells go deeper (Lahore's potable water now at 800 ft in places; Quetta beyond 350 m), raising costs for the poorest farmers first and mining fossil water that accumulated over thousands of years.</li>
+</ol>
+<h3>4.2 Why the incumbent answer — build more dams — cannot fix this</h3>
+<p>The strongest incumbent policy is surface storage: build another Tarbela. The comparison is arithmetic. A new large dam adds, at best, one Tarbela's worth of live storage (~7–12 km³) after a decade or more of construction and tens of billions of rupees — and storage does not create water, it only retimes it. The groundwater deficit recurs every year: ~10 km³/yr for Pakistan alone, ~24 km³/yr basin-wide. Dams also lose live storage to siltation (Tarbela has lost roughly a third). Capping abstraction at recharge, by contrast, saves the same volume every year at the cost of meters and licences. Storage and demand management are complements, not substitutes — but a policy that only builds storage while abstraction grows 3.3-fold is arithmetic denial. The PIDE report reaches the same conclusion: the crisis is "fundamentally a failure of policy and governance rather than a physical lack of water."</p>
+<h3>4.3 The Islamic frame: water as a commons, not a commodity</h3>
+<p>The policy conclusion the modern evidence points to is the one the Islamic canon stated fourteen centuries ago. The Prophet ﷺ said: <em>"Muslims are partners in three things: pasture, water and fire"</em> (Sunan Abi Dawud 3477, graded sahih by al-Albani) — water that is not under anyone's private control is a shared property, and monopolising it is prohibited. The Qur'an grounds the same point in creation itself: <em>"We made from water every living thing"</em> (Qur'an 21:30), and in stewardship: humanity is placed on earth as khalifah, trustee (Qur'an 2:30). Al-Biruni's <em>Kitab al-Hind</em> (c. 1030) measured the rivers and lands of this very basin before theorising about them — the measurement-first discipline this paper follows. Seyyed Hossein Nasr (<em>Man and Nature</em>, 1968) argues the ecological crisis is at root a spiritual one: nature treated as a resource to exhaust rather than a trust (amanah) to keep. Against the maqasid al-shariah (Al-Ghazali, <em>Al-Mustasfa</em>; Al-Shatibi, <em>Al-Muwafaqat</em>), the current regime fails on the preservation of life (nafs) — 70–80% of Pakistan's groundwater is unsafe to drink, with arsenic threatening up to 60 million people (PIDE 2026) — and on wealth (mal), as the aquifer, the country's largest water store, is mined. Where the Islamic source and the modern evidence point the same way, this paper says so: both say water is a commons, pumping must be capped at recharge, and the burden must not fall on the poorest farmers. Where they differ, the paper says so too: the canon gives the principle, not the number — the 2 ft/yr trigger and the stepped-wedge design are modern instruments, not derived from scripture.</p>
+<h2>5. Policy implications</h2>
+<p><strong>Decision-maker:</strong> the Secretary, Punjab Irrigation Department, acting with the Punjab Water Commission under the Punjab Irrigation, Drainage and Rivers Act (2023) and the Punjab Water Act (2019). <strong>The exact change, in order:</strong></p>
+<ol>
+<li><strong>Declare critical districts by the 2 ft/yr trigger</strong> (§3.4), starting with Lahore, Pakpattan, Rahim Yar Khan and Multan, and publish the district ranking with the underlying piezometer data — Chetty's lesson: publish the data as a public tool, not just the finding.</li>
+<li><strong>Meter solar tube wells first, within 24 months.</strong> The ~650,000 solar wells are the marginal-cost-free pumpers; metering them is the cheapest measurement in the system and the precondition for any cap. Fund it from the electricity-subsidy savings as diesel/electric wells convert.</li>
+<li><strong>Cap district abstraction at recharge, rolled out as a stepped-wedge cluster-randomised trial.</strong> Districts are randomised into licensing waves; each wave's cap is set at the district's GRACE-derived recharge rate, enforced through the 2019 Act's licensing tools. Pre-register the analysis: the primary outcome is the district GWSA trend from GRACE-FO plus piezometers; success is a pilot-district trend of −0.5 cm/yr or better against control districts continuing at −1.5 cm/yr or worse, after five years. <strong>If pilot districts show no divergence from controls, the cap-and-meter approach is withdrawn and the recommendation reverses to supply-side measures only.</strong></li>
+<li><strong>Protect small farmers by design ('adl).</strong> The cap must be paired with a lifeline allocation for smallholders and a shift of price support away from sugarcane and rice toward less thirsty crops — otherwise the burden falls on the poorest, and the policy fails the justice test (Qur'an 4:135, 16:90).</li>
+</ol>
+<p><strong>Islamic principle behind the recommendation:</strong> the hadith of the three commons (water as shared property — Sunan Abi Dawud 3477) and khilafah stewardship (Qur'an 2:30), operationalised through maslaha (public interest) and 'adl (justice). The trial design itself is an act of shura in method: the policy is tested in the open, and its subjects — the districts — are its witnesses.</p>
+<h2>6. The falsifiable claim, stated once more</h2>
+<p><strong>Claim:</strong> the post-2015 acceleration of Indus groundwater loss is pumping-driven and concentrated in Punjab's managed landscapes, and a district groundwater budget (cap at recharge, metered solar wells) will stabilise pilot districts within five years. <strong>Falsifier 1 (attribution):</strong> GRACE-FO 2024–2028 shows the non-glaciated/glaciated loss ratio falling to ~1. <strong>Falsifier 2 (policy):</strong> pilot districts' GWSA trends do not diverge from controls by at least 1 cm/yr after five years. <strong>Falsifier 3 (mechanism):</strong> metering shows solar wells are not the marginal pumpers — i.e., metered solar abstraction is flat while total abstraction still rises, which would point to a different driver. Any one of the three kills the corresponding part of the claim.</p>
+<h2>7. Limitations</h2>
+<ol>
+<li><strong>GRACE cannot see a district.</strong> GRACE/GRACE-FO resolve ~300 km; the 1 km² downscaled products are model outputs, validated against wells with correlation 0.60–0.95 and RMSE of 17.5 cm against in-situ groundwater storage in the Indus (ISPRS Archives, 2026). District rankings in §3.4 rest on piezometers and abstraction proxies, not on direct district-level satellite measurement.</li>
+<li><strong>The 65/55 km³ figures are estimates.</strong> PIDE's national extraction and recharge numbers carry wide, unstated uncertainty; different sources put national abstraction at 50 MAF (~62 km³) to 65 km³ and Punjab's well count at 1.2–1.5 million. The deficit is robust in sign, not precise in size.</li>
+<li><strong>Attribution is association only.</strong> The glaciated/non-glaciated contrast and the GAM decomposition are quasi-experimental; no randomised manipulation of pumping exists. The stepped-wedge trial is proposed precisely because the current evidence cannot prove causality.</li>
+<li><strong>The 2 ft/yr trigger is proposed, not measured.</strong> It is calibrated to the observed Lahore rate, but the threshold at which a district's aquifer becomes economically unviable for small farmers is not established in the literature and will vary with depth to water and energy cost.</li>
+<li><strong>Grey sources.</strong> PIDE, PCRWR and Punjab Irrigation Department figures reach this paper through reputable press reporting, not through the underlying reports, which were not obtained in this run. They are labelled as such in §2.1.</li>
+<li><strong>Islamic canon gaps.</strong> Al-Biruni's <em>Kitab al-Hind</em> and Nasr's <em>Man and Nature</em> were consulted through the programme's verified literature map, not re-read in full in this run. The classical fiqh chapters on water rights beyond the cited hadith, and Ibn Khaldun's discussion of urban water supply in the <em>Muqaddimah</em>, were not consulted; many classical Arabic manuscripts on water law remain undigitised in libraries (Süleymaniye, Istanbul; Dar al-Kutub, Cairo) with no online copy. The hadith and Qur'an citations were verified against published references in this run; no quotation is offered from memory.</li>
+<li><strong>Transboundary scope.</strong> The basin spans four countries; this paper's policy lever sits in Punjab, Pakistan. The fastest-declining hotspots (Dehli and BIST doabs) lie across the border, and no basin-wide treaty mechanism for groundwater exists.</li>
+</ol>
+<h2>8. Conclusion</h2>
+<p>The Indus Basin's groundwater loss more than tripled after 2015, from ~7 km³/yr to ~24 km³/yr — two Tarbelas a year. The loss is concentrated where the pumping is, the attribution is consistent across three independent published lines, and Pakistan's own deficit is about one Tarbela a year. The law to fix it already exists; the measurement to enforce it already exists; what does not exist is a tested policy. The proposal is therefore small and testable: declare critical districts by a published trigger, meter the solar wells first, and cap abstraction at recharge in a stepped-wedge trial that can fail in public. Water is a shared trust — the satellite, the piezometer and the hadith agree on that much. What remains is to act as if it were true.</p>
+<hr />
+<h2>References</h2>
+<ol>
+<li>Dharpure JK, Howat IM, Kaushik S. Declining Groundwater Storage in the Indus Basin Revealed Using GRACE and GRACE-FO Data. <em>Water Resources Research</em>. 2025;61(2):e2024WR038279. DOI: 10.1029/2024WR038279.</li>
+<li>Arshad A, Tran TND, Mirchi A, He C, Rahman MM, et al. Downscaled-GRACE Data Reveal Anthropogenic and Climate-Induced Water Storage Decline Across the Indus Basin. <em>Water Resources Research</em>. 2024;60. DOI: 10.1029/2023WR035882.</li>
+<li>Decomposing land surface total water storage in the Indus, Ganges, and Brahmaputra basins. <em>Frontiers in Earth Science</em>. 2025. DOI: 10.3389/feart.2025.1551218.</li>
+<li>Pakistan Institute of Development Economics. <em>Pakistan's Groundwater Crisis: Policy Lessons and a Framework for Sustainable Resource Use</em>. Islamabad: PIDE; 2026. As reported by <em>The News</em>, October 2026, and <em>ProPakistani</em>, November 2026.</li>
+<li>Punjab Irrigation Department. Groundwater monitoring data (piezometers, tube-well census), as reported by <em>Dawn</em>, 12 May 2025 and 6 February 2025.</li>
+<li>Pakistan Council of Research in Water Resources. Groundwater extraction and water-table figures, as reported by <em>Business Recorder</em>, 2026.</li>
+<li>Water and Sanitation Agency (WASA) Lahore; MDPI <em>Water</em>. Water Demand Estimation in Service Areas with Limited Numbers of Customer Meters — Case Study in WASA Lahore, Pakistan. <em>Water</em>. 2022;14:2197.</li>
+<li>Groundwater Environment in Lahore, Pakistan. In: <em>Groundwater Environment in South Asia</em> (Elsevier, 2017) — Lahore water-table decline 0.45–1.50 m/yr; abstraction 1,161 MCM/yr vs recharge 1,013 MCM/yr.</li>
+<li>Al-Biruni. <em>Kitab al-Hind</em> (c. 1030).</li>
+<li>Nasr SH. <em>Man and Nature: The Spiritual Crisis of Modern Man</em>. London: Allen &amp; Unwin; 1968.</li>
+<li>Al-Ghazali. <em>Al-Mustasfa min 'Ilm al-Usul</em> (c. 1109).</li>
+<li>Al-Shatibi. <em>Al-Muwafaqat fi Usul al-Shari'a</em> (14th c.).</li>
+<li>Sunan Abi Dawud 3477 (Book of Hire / Kitab al-Ijarah): "Muslims are partners in three things: pasture, water and fire." Graded sahih by al-Albani.</li>
+<li>Qur'an 21:30; Qur'an 2:30; Qur'an 4:135; Qur'an 16:90.</li>
+<li>Ohio State University, Byrd Polar and Climate Research Center. "Study Highlights Decline in Water Storage in the Indus Basin." 2025. https://byrd.osu.edu/news/study-highlights-decline-water-storage-indus-basin</li>
+<li>GRACE and GRACE Follow-On: On Accurate Estimation of Groundwater Storage Change from Satellite Gravimetry and Beyond. <em>International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>. 2026;XLIX-B3-2026:783. DOI (proceedings): isprs-archives-XLIX-B3-2026-783-2026.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All satellite rates are from the published sources in the References (Dharpure et al. 2025; Arshad et al. 2024), publicly available through AGU/Wiley. GRACE and GRACE-FO data are public from NASA's Physical Oceanography Distributed Active Archive Center (PO.DAAC) and the German Research Centre for Geosciences (GFZ). Punjab piezometer and tube-well data are held by the Punjab Irrigation Department; the figures used here are those reported in the press citations above, because the underlying departmental reports were not obtained in this run. All volume conversions are shown in §2.3 and can be recomputed from the cited rates and the published basin area (1.12 million km², range 1.08–1.165 million km²). No new dataset was generated. The drafting assistant's working notes and source log are retained in the programme's hidden files.</p></div></details>
+</article>
 <article class="card" data-field="natural" data-title="the 260-metre ceiling: a falsifiable attribution of lahore&#x27;s november smog peak to domestic sources and seasonal meteorology, with a smog-budget policy for punjab">
 <div class="meta"><span class="date">2026-11-15</span> <span class="badge natural">Natural Science</span> <span class="status">Draft — not submitted</span></div>
 <h3>The 260-Metre Ceiling: A Falsifiable Attribution of Lahore&#x27;s November Smog Peak to Domestic Sources and Seasonal Meteorology, with a Smog-Budget Policy for Punjab</h3>
@@ -16814,7 +17709,7 @@ Weekly raw data archived in hidden_files/.</em></p>
 <p><em>Source: LeadForge AI weekly paper draft (<code>leadforge-weekly-paper-2026-10-18.md</code>), LeadForge drug-discovery pipeline. Weekly papers are compiled from the daily LeadForge runs.</em></p></div></details>
 </article>
 </section>
-<footer>Updated 19 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
+<footer>Updated 20 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
 <script>
 const q=document.getElementById('q');
 const btns=[...document.querySelectorAll('.controls button')];
