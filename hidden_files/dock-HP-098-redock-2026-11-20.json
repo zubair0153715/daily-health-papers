@@ -1,0 +1,75 @@
+{
+ "pdb_id": "7MBO",
+ "center": [
+  -1.0585,
+  9.923787878787879,
+  -17.79771212121212
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.03,
+   "poses": [
+    -10.03,
+    -8.99,
+    -8.89
+   ],
+   "pdb_id": "7MBO",
+   "label": "PubChem-135205642",
+   "formula": "C24H19Cl2FN6O4",
+   "mw": "545.3"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.88,
+   "poses": [
+    -9.88,
+    -9.33,
+    -9.16
+   ],
+   "pdb_id": "7MBO",
+   "label": "PubChem-135205940",
+   "formula": "C25H19ClF4N6O4",
+   "mw": "578.9"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.19,
+   "poses": [
+    -9.19,
+    -9.09,
+    -8.66
+   ],
+   "pdb_id": "7MBO",
+   "label": "PubChem-135205866",
+   "formula": "C27H24ClF3N6O4",
+   "mw": "589.0"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.99,
+   "poses": [
+    -8.99,
+    -8.73,
+    -8.65
+   ],
+   "pdb_id": "7MBO",
+   "label": "PubChem-135205878",
+   "formula": "C26H25ClFN7O4",
+   "mw": "554.0"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.83,
+   "poses": [
+    -7.83,
+    -7.46,
+    -6.8
+   ],
+   "pdb_id": "7MBO",
+   "label": "milvexian (co-crystallised ligand, Ki 0.11 nM)",
+   "formula": "C28H23Cl2F2N9O2",
+   "mw": "626.4"
+  }
+ ]
+}

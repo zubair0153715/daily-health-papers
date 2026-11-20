@@ -1,0 +1,327 @@
+{
+ "ok": true,
+ "target": {
+  "uniprot": {
+   "accession": "O14965",
+   "gene": "AURKA",
+   "protein": "Aurora kinase A",
+   "organism": "Homo sapiens"
+  },
+  "chembl": "activity endpoint HTTP 500 on 2026-11-20 (EBI outage); comparison set from PubChem fastsimilarity_2d + literature inhibitors"
+ },
+ "structure": {
+  "pdb_id": "6C2R",
+  "resolution": 1.96,
+  "ligand": "EG7 (LY3295668) in ATP pocket",
+  "center": [
+   110.14,
+   -17.65,
+   5.8
+  ],
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "audit": "centre = EG7 centroid via dock._ligand_center; 7.9 A from Ala213 CA, min atom-hinge distance 1.88 A"
+ },
+ "discarded_run": "hidden_files/dock-HP-102-2026-11-20-WRONG-SITE.json (6VPM, centre on R74 covalent activation-loop fragment, ~34 A from ATP site)",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.2,
+   "poses": [
+    -9.2,
+    -8.64,
+    -8.57
+   ],
+   "pdb_id": "6C2R",
+   "label": "PubChem CID 92044531",
+   "kind": "pubchem-analogue",
+   "cid": 92044531,
+   "tanimoto_vs_alisertib": 0.811
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.95,
+   "poses": [
+    -8.95,
+    -8.91,
+    -8.49
+   ],
+   "pdb_id": "6C2R",
+   "label": "LY3295668",
+   "kind": "literature-inhibitor",
+   "cid": 121333423
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.87,
+   "poses": [
+    -8.87,
+    -8.3,
+    -8.18
+   ],
+   "pdb_id": "6C2R",
+   "label": "Alisertib (reference, re-docked)",
+   "kind": "reference",
+   "cid": 24771867
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.77,
+   "poses": [
+    -8.77,
+    -8.64,
+    -8.22
+   ],
+   "pdb_id": "6C2R",
+   "label": "PubChem CID 11712649",
+   "kind": "pubchem-analogue",
+   "cid": 11712649,
+   "tanimoto_vs_alisertib": 0.699
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.74,
+   "poses": [
+    -8.74,
+    -8.35,
+    -8.29
+   ],
+   "pdb_id": "6C2R",
+   "label": "PubChem CID 11526006",
+   "kind": "pubchem-analogue",
+   "cid": 11526006,
+   "tanimoto_vs_alisertib": 0.833
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.51,
+   "poses": [
+    -8.51,
+    -7.81,
+    -7.73
+   ],
+   "pdb_id": "6C2R",
+   "label": "danusertib",
+   "kind": "literature-inhibitor",
+   "cid": 11442891
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.3,
+   "poses": [
+    -8.3,
+    -8.12,
+    -8.09
+   ],
+   "pdb_id": "6C2R",
+   "label": "PubChem CID 66819785",
+   "kind": "pubchem-analogue",
+   "cid": 66819785,
+   "tanimoto_vs_alisertib": 0.863,
+   "note": "desalted (largest fragment)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.28,
+   "poses": [
+    -8.28,
+    -8.09,
+    -8.04
+   ],
+   "pdb_id": "6C2R",
+   "label": "PubChem CID 56843791",
+   "kind": "pubchem-analogue",
+   "cid": 56843791,
+   "tanimoto_vs_alisertib": 0.851,
+   "note": "desalted (largest fragment)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.19,
+   "poses": [
+    -8.19,
+    -7.93,
+    -7.68
+   ],
+   "pdb_id": "6C2R",
+   "label": "MK-5108",
+   "kind": "literature-inhibitor",
+   "cid": 24748204
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.79,
+   "poses": [
+    -7.79,
+    -7.69,
+    -7.6
+   ],
+   "pdb_id": "6C2R",
+   "label": "ENMD-2076",
+   "kind": "literature-inhibitor",
+   "cid": 16041424
+  }
+ ],
+ "analogues_ranked": [
+  {
+   "cid": 66819785,
+   "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C=C(C=C4)Cl)NC5=CC(=C(C=C5)C(=O)[O-])OC.[Na+]",
+   "name": "sodium 4-[[9-chloro-7-(2-fluoro-6-methoxyphenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]-2-methoxybenzoate",
+   "formula": "C27H19ClFN4NaO4",
+   "mw": 540.91,
+   "logp": 1.42,
+   "hbd": 1,
+   "hba": 8,
+   "tpsa": 108.76,
+   "rotatable": 6,
+   "lipinski_violations": 1,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/66819785",
+   "tanimoto_vs_alisertib": 0.863
+  },
+  {
+   "cid": 56843791,
+   "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C=C(C=C4)Cl)NC5=CC(=C(C=C5)C(=O)[O-])OC.O.[Na+]",
+   "name": "sodium;4-[[9-chloro-7-(2-fluoro-6-methoxyphenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]-2-methoxybenzoate;hydrate",
+   "formula": "C27H21ClFN4NaO5",
+   "mw": 558.93,
+   "logp": 0.59,
+   "hbd": 1,
+   "hba": 8,
+   "tpsa": 140.26,
+   "rotatable": 6,
+   "lipinski_violations": 1,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/56843791",
+   "tanimoto_vs_alisertib": 0.851
+  },
+  {
+   "cid": 11526006,
+   "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C=C(C=C4)Cl)NC5=CC=C(C=C5)C(=O)O",
+   "name": "4-[[9-chloro-7-(2-fluoro-6-methoxyphenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]benzoic acid",
+   "formula": "C26H18ClFN4O3",
+   "mw": 488.91,
+   "logp": 5.74,
+   "hbd": 2,
+   "hba": 6,
+   "tpsa": 96.7,
+   "rotatable": 5,
+   "lipinski_violations": 1,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/11526006",
+   "tanimoto_vs_alisertib": 0.833
+  },
+  {
+   "cid": 92044531,
+   "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C(=CC=C4)Cl)NC5=CC(=C(C=C5)C(=O)O)OC",
+   "name": "4-[[8-chloro-7-(2-fluoro-6-methoxyphenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]-2-methoxybenzoic acid",
+   "formula": "C27H20ClFN4O4",
+   "mw": 518.93,
+   "logp": 5.75,
+   "hbd": 2,
+   "hba": 7,
+   "tpsa": 105.93,
+   "rotatable": 6,
+   "lipinski_violations": 2,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/92044531",
+   "tanimoto_vs_alisertib": 0.811
+  },
+  {
+   "cid": 11712649,
+   "smiles": "C1C2=CN=C(N=C2C3=C(C=C(C=C3)Cl)C(=N1)C4=C(C=CC=C4F)F)NC5=CC=C(C=C5)C(=O)O",
+   "name": "4-[[9-chloro-7-(2,6-difluorophenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]benzoic acid",
+   "formula": "C25H15ClF2N4O2",
+   "mw": 476.87,
+   "logp": 5.87,
+   "hbd": 2,
+   "hba": 5,
+   "tpsa": 87.47,
+   "rotatable": 4,
+   "lipinski_violations": 1,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/11712649",
+   "tanimoto_vs_alisertib": 0.699
+  },
+  {
+   "cid": 72199464,
+   "smiles": "C1C2=CN=C(N=C2C3=C(C=C(C=C3)Cl)C(=N1)C4=C(C=CC=C4F)F)NC5=CC=C(C=C5)C(=O)[O-]",
+   "name": "4-[[9-chloro-7-(2,6-difluorophenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]benzoate",
+   "formula": "C25H14ClF2N4O2-",
+   "mw": 475.86,
+   "logp": 4.53,
+   "hbd": 1,
+   "hba": 6,
+   "tpsa": 90.3,
+   "rotatable": 4,
+   "lipinski_violations": 0,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/72199464",
+   "tanimoto_vs_alisertib": 0.645
+  },
+  {
+   "cid": 11655501,
+   "smiles": "C1C2=CN=C(N=C2C3=C(C=C(C=C3)Cl)C(=N1)C4=CC=CC=C4F)NC5=CC=C(C=C5)C(=O)O",
+   "name": "4-[[9-chloro-7-(2-fluorophenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]benzoic acid",
+   "formula": "C25H16ClFN4O2",
+   "mw": 458.88,
+   "logp": 5.73,
+   "hbd": 2,
+   "hba": 5,
+   "tpsa": 87.47,
+   "rotatable": 4,
+   "lipinski_violations": 1,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/11655501",
+   "tanimoto_vs_alisertib": 0.61
+  },
+  {
+   "cid": 153835264,
+   "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C=C(C=C4)Cl)NC5=CC(=C(C=C5)C(=O)NCCOCCOCCNC(=O)COC6=CC=CC7=C6C(=O)N(C7=O)C8CCC(=O)NC8=O)OC",
+   "name": "4-[[9-chloro-7-(2-fluoro-6-methoxyphenyl)-5H-pyrimido[5,4-d][2]benzazepin-2-yl]amino]-N-[2-[2-[2-[[2-[2-(2,6-dioxopiperidin-3-yl)-1,3-dioxoisoindol-4-yl]oxyacetyl]amino]ethoxy]ethoxy]ethyl]-2-methoxybenzamide",
+   "formula": "C48H44ClFN8O11",
+   "mw": 963.38,
+   "logp": 4.41,
+   "hbd": 4,
+   "hba": 15,
+   "tpsa": 238.07,
+   "rotatable": 19,
+   "lipinski_violations": 2,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/153835264",
+   "tanimoto_vs_alisertib": 0.573
+  },
+  {
+   "cid": 78225124,
+   "smiles": "C1C2=CN=C(N=C2C3=C(C=C(C=C3)Cl)C([NH2+]1)C4=C(C=CC=C4F)F)NC5=CC=C(C=C5)C(=O)O",
+   "name": "4-[[9-chloro-7-(2,6-difluorophenyl)-6,7-dihydro-5H-pyrimido[5,4-d][2]benzazepin-6-ium-2-yl]amino]benzoic acid",
+   "formula": "C25H18ClF2N4O2+",
+   "mw": 479.89,
+   "logp": 4.68,
+   "hbd": 3,
+   "hba": 4,
+   "tpsa": 91.72,
+   "rotatable": 4,
+   "lipinski_violations": 0,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/78225124",
+   "tanimoto_vs_alisertib": 0.477
+  },
+  {
+   "cid": 56946582,
+   "smiles": "COC1=CC=CC(=C1)NC2=NC=C3CC(=O)NC4=C(C3=N2)C=CC(=C4)Cl",
+   "name": "9-chloro-2-(3-methoxyanilino)-5,7-dihydropyrimido[5,4-d][1]benzazepin-6-one",
+   "formula": "C19H15ClN4O2",
+   "mw": 366.81,
+   "logp": 4.04,
+   "hbd": 2,
+   "hba": 5,
+   "tpsa": 76.14,
+   "rotatable": 3,
+   "lipinski_violations": 0,
+   "pains": [],
+   "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/56946582",
+   "tanimoto_vs_alisertib": 0.435
+  }
+ ]
+}

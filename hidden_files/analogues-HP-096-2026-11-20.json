@@ -1,0 +1,106 @@
+{
+ "method": "PubChem fastsimilarity_2d, Threshold=80, MaxRecords=30, query=atovaquone SMILES; top 10 hits screened; the five retaining the 4-hydroxy-1,2-naphthoquinone core profiled with RDKit. No measured potency is attached to any analogue.",
+ "reference": {
+  "cid": 74989,
+  "name": "atovaquone",
+  "mw": 366.84,
+  "logp": 5.35,
+  "hbd": 1,
+  "hba": 3,
+  "tpsa": 54.37,
+  "rotatable": 2,
+  "lipinski_violations": 1,
+  "pains": [
+   "PAINS_A:imine_one_A(321)",
+   "PAINS_C:quinone_D(2)"
+  ]
+ },
+ "analogues": [
+  {
+   "cid": 6755,
+   "iupac": "4-hydroxynaphthalene-1,2-dione",
+   "pubchem_xlogp": 0.9,
+   "smiles": "C1=CC=C2C(=C1)C(=CC(=O)C2=O)O",
+   "mw": 174.15,
+   "logp": 1.35,
+   "hbd": 1,
+   "hba": 3,
+   "tpsa": 54.37,
+   "rotatable": 0,
+   "lipinski_violations": 0,
+   "pains": [
+    "PAINS_A:imine_one_A(321)",
+    "PAINS_C:quinone_D(2)"
+   ]
+  },
+  {
+   "cid": 3884,
+   "iupac": "4-hydroxy-3-(3-methylbut-2-enyl)naphthalene-1,2-dione",
+   "pubchem_xlogp": 2.8,
+   "smiles": "CC(=CCC1=C(C2=CC=CC=C2C(=O)C1=O)O)C",
+   "mw": 242.27,
+   "logp": 3.08,
+   "hbd": 1,
+   "hba": 3,
+   "tpsa": 54.37,
+   "rotatable": 2,
+   "lipinski_violations": 0,
+   "pains": [
+    "PAINS_A:imine_one_A(321)",
+    "PAINS_C:quinone_D(2)"
+   ]
+  },
+  {
+   "cid": 73711,
+   "iupac": "3-chloro-4-hydroxynaphthalene-1,2-dione",
+   "pubchem_xlogp": 1.7,
+   "smiles": "C1=CC=C2C(=C1)C(=C(C(=O)C2=O)Cl)O",
+   "mw": 208.6,
+   "logp": 1.92,
+   "hbd": 1,
+   "hba": 3,
+   "tpsa": 54.37,
+   "rotatable": 0,
+   "lipinski_violations": 0,
+   "pains": [
+    "PAINS_A:imine_one_A(321)",
+    "PAINS_B:ene_one_hal(17)",
+    "PAINS_C:quinone_D(2)"
+   ]
+  },
+  {
+   "cid": 14672776,
+   "iupac": "3-dodecyl-4-hydroxynaphthalene-1,2-dione",
+   "pubchem_xlogp": 7.1,
+   "smiles": "CCCCCCCCCCCCC1=C(C2=CC=CC=C2C(=O)C1=O)O",
+   "mw": 342.48,
+   "logp": 6.03,
+   "hbd": 1,
+   "hba": 3,
+   "tpsa": 54.37,
+   "rotatable": 11,
+   "lipinski_violations": 1,
+   "pains": [
+    "PAINS_A:imine_one_A(321)",
+    "PAINS_C:quinone_D(2)"
+   ]
+  },
+  {
+   "cid": 71768,
+   "iupac": "3-[(4-tert-butylcyclohexyl)methyl]-4-hydroxynaphthalene-1,2-dione",
+   "pubchem_xlogp": 5.3,
+   "smiles": "CC(C)(C)C1CCC(CC1)CC2=C(C3=CC=CC=C3C(=O)C2=O)O",
+   "mw": 326.44,
+   "logp": 4.96,
+   "hbd": 1,
+   "hba": 3,
+   "tpsa": 54.37,
+   "rotatable": 2,
+   "lipinski_violations": 0,
+   "pains": [
+    "PAINS_A:imine_one_A(321)",
+    "PAINS_C:quinone_D(2)"
+   ]
+  }
+ ]
+}

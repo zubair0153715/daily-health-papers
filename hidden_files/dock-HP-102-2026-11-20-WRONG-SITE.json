@@ -1,0 +1,148 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Aurora kinase A",
+  "uniprot": {
+   "accession": "O14965",
+   "entry": null,
+   "gene": "AURKA",
+   "protein": "Aurora kinase A",
+   "organism": "Homo sapiens",
+   "length": 403,
+   "function": "Mitotic serine/threonine kinase that contributes to the regulation of cell cycle progression (PubMed:11039908, PubMed:12390251, PubMed:17125279, PubMed:17360485, PubMed:18615013, PubMed:26246606). Associates with the centrosome and the spindle microtubules during mitosis and plays a critical role in various mitotic events including the establishment of mitotic spindle, centrosome duplication, centrosome separation as well as maturation, chromosomal alignment, spindle assembly checkpoint, and cytokinesis (PubMed:14523000, PubMed:26246606). Required for normal spindle positioning during mitosis and for the localization of NUMA1 and DCTN1 to the cell cortex during metaphase (PubMed:27335426). Required for initial activation of CDK1 at centrosomes (PubMed:13678582, PubMed:15128871). Phosphoryl",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/O14965/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "COC1=C(C(=CC=C1)F)C2=NCC3=CN=C(N=C3C4=C2C=C(C=C4)Cl)NC5=CC(=C(C=C5)C(=O)O)OC",
+   "similarity": 1.0,
+   "score": 77.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.0
+   },
+   "descriptors": {
+    "mw": 518.93,
+    "logp": 5.75,
+    "hbd": 2,
+    "hba": 7,
+    "tpsa": 105.93,
+    "rotatable": 6,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C27H20ClFN4O4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.318,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.11,
+     "NR-AhR": 0.224,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.11,
+     "SR-ARE": 0.267,
+     "SR-ATAD5": 0.288,
+     "SR-HSE": 0.091,
+     "SR-MMP": 0.385,
+     "SR-p53": 0.302
+    }
+   },
+   "pubchem": {
+    "cid": 24771867,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/24771867"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "6VPM",
+  "resolution": 1.58,
+  "center": [
+   -4.65,
+   -7.62,
+   -29.1
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.36,
+    "poses": [
+     -8.36,
+     -8.04,
+     -7.62
+    ],
+    "pdb_id": "6VPM",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Aurora kinase A",
+  "reference": "alisertib"
+ }
+}

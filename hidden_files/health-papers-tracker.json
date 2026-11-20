@@ -987,6 +987,53 @@
    "file": "files/2026-11-19-health-nlrp3-mcc950.md",
    "status": "drafted",
    "draft_url": ""
+  },
+  {
+   "date": "2026-11-20",
+   "draft_note": "ChemRxiv draft not yet attempted (queued after HP-096/HP-092 drafts).",
+   "draft_url": "",
+   "file": "files/2026-11-20-health-fxia-asundexian-benchmark.md",
+   "id": "HP-098",
+   "number": 85,
+   "status": "drafted",
+   "title": "Asundexian Re-Docks at \u22129.05 kcal/mol on the Milvexian-Bound Factor XIa Structure \u2014 but the First Approved FXIa Inhibitor Still Leaves the Decisive Question Open",
+   "topic": "Factor XIa / asundexian (cardiovascular-renal)"
+  },
+  {
+   "date": "2026-11-20",
+   "draft_url": "",
+   "file": "files/2026-11-20-health-ret-selpercatinib-benchmark.md",
+   "id": "HP-086",
+   "number": 86,
+   "status": "drafted",
+   "title": "Cabozantinib Out-Docks Selpercatinib on Wild-Type RET (7DUA) by 0.65 kcal/mol \u2014 a Margin Inside Vina Noise That Contradicts a 27-Fold Measured Potency Gap"
+  },
+  {
+   "date": "2026-11-20",
+   "draft_url": "",
+   "file": "files/2026-11-20-health-aurka-alisertib-benchmark.md",
+   "id": "HP-102",
+   "number": 87,
+   "status": "drafted",
+   "title": "The 8-Chloro Isomer of Alisertib Out-Docks Alisertib on the 1.96 \u00c5 Aurora A Structure \u2014 but the 0.33 kcal/mol Margin Is Inside Vina Noise and the Most Potent Measured Inhibitor Docks Ninth"
+  },
+  {
+   "date": "2026-11-20",
+   "draft_url": "",
+   "file": "files/2026-11-20-health-pfbc1-atovaquone-benchmark.md",
+   "id": "HP-096",
+   "number": 88,
+   "status": "drafted",
+   "title": "No Parasite Structure for Atovaquone's Qo Site: the Y268S Resistance Gap, a PubChem Analogue Set, and the Qi-Site Escape Route"
+  },
+  {
+   "date": "2026-11-20",
+   "draft_url": "",
+   "file": "files/2026-11-20-health-mura-fosfomycin-benchmark.md",
+   "id": "HP-092",
+   "number": 89,
+   "status": "drafted",
+   "title": "The Fosfomycin Benchmark Is Broken: Non-Covalent Docking Cannot Rank MurA Inhibitors When the Reference Drug Is Covalent"
   }
  ],
  "used_topic_ids": [
@@ -1070,6 +1117,11 @@
   "HP-087",
   "HP-091",
   "HP-101",
-  "HP-076"
+  "HP-076",
+  "HP-098",
+  "HP-086",
+  "HP-102",
+  "HP-092",
+  "HP-096"
  ]
 }

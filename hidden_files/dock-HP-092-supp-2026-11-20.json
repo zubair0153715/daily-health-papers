@@ -1,0 +1,232 @@
+{
+ "pdb_id": "3KQJ",
+ "center": [
+  60.69,
+  -44.29,
+  115.28
+ ],
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.87,
+   "poses": [
+    -10.87,
+    -10.73,
+    -10.64
+   ],
+   "pdb_id": "3KQJ",
+   "label": "CHEMBL5219133",
+   "source": "ChEMBL IC50 4800 nM vs MurA (CHEMBL1984)",
+   "known_activity": "IC50 4.8 uM",
+   "smiles": "CCOC(=O)C1=C(O)C(=O)N(c2nc3ccc(C)cc3s2)C1c1ccc(-c2ccc(C(F)(F)F)cc2Cl)o1",
+   "descriptors": {
+    "mw": 562.95,
+    "logp": 7.0,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 92.87,
+    "rotatable": 5,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C26H18ClF3N2O5S"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.02,
+   "poses": [
+    -10.02,
+    -9.83,
+    -8.69
+   ],
+   "pdb_id": "3KQJ",
+   "label": "CHEMBL5219390",
+   "source": "ChEMBL IC50 4500 nM vs MurA (CHEMBL1984)",
+   "known_activity": "IC50 4.5 uM",
+   "smiles": "CC(C)(C)OC(=O)C1=C(O)C(=O)N(c2nc3ccccc3s2)C1c1ccc(-c2ccc(Cl)cc2)o1",
+   "descriptors": {
+    "mw": 508.98,
+    "logp": 6.45,
+    "hbd": 1,
+    "hba": 7,
+    "tpsa": 92.87,
+    "rotatable": 4,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C26H21ClN2O5S"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.99,
+   "poses": [
+    -8.99,
+    -8.96,
+    -8.79
+   ],
+   "pdb_id": "3KQJ",
+   "label": "quercetin",
+   "source": "ACS Omega 2023 flavonoid MurA inhibitor",
+   "known_activity": "MurA inhibitor (flavonoid library)",
+   "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+   "descriptors": {
+    "mw": 302.24,
+    "logp": 1.99,
+    "hbd": 5,
+    "hba": 7,
+    "tpsa": 131.36,
+    "rotatable": 1,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C15H10O7"
+   },
+   "pains": [
+    "PAINS alert"
+   ]
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.65,
+   "poses": [
+    -8.65,
+    -8.07,
+    -8.01
+   ],
+   "pdb_id": "3KQJ",
+   "label": "ampelopsin",
+   "source": "ACS Omega 2023 flavonoid MurA inhibitor (most potent of 13)",
+   "known_activity": "MurA IC50 range 480 nM-57 uM (most potent)",
+   "smiles": "C1=C(C=C(C(=C1O)O)O)C2C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+   "descriptors": {
+    "mw": 320.25,
+    "logp": 0.89,
+    "hbd": 6,
+    "hba": 8,
+    "tpsa": 147.68,
+    "rotatable": 1,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C15H12O8"
+   },
+   "pains": [
+    "PAINS alert"
+   ]
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.72,
+   "poses": [
+    -7.72,
+    -7.7,
+    -7.59
+   ],
+   "pdb_id": "3KQJ",
+   "label": "diflunisal",
+   "source": "Antibiotics 2022, 11:528 - MIC 0.0625 mg/mL vs E. coli",
+   "known_activity": "MIC 0.0625 mg/mL vs E. coli",
+   "smiles": "C1=CC(=C(C=C1C2=C(C=C(C=C2)F)F)C(=O)O)O",
+   "descriptors": {
+    "mw": 250.2,
+    "logp": 3.04,
+    "hbd": 2,
+    "hba": 2,
+    "tpsa": 57.53,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C13H8F2O3"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.01,
+   "poses": [
+    -7.01,
+    -6.95,
+    -6.85
+   ],
+   "pdb_id": "3KQJ",
+   "label": "albendazole",
+   "source": "Antibiotics 2022, 11:528 - MIC 0.0625 mg/mL vs E. coli",
+   "known_activity": "MIC 0.0625 mg/mL vs E. coli",
+   "smiles": "CCCSC1=CC2=C(C=C1)N=C(N2)NC(=O)OC",
+   "descriptors": {
+    "mw": 265.34,
+    "logp": 3.24,
+    "hbd": 2,
+    "hba": 4,
+    "tpsa": 67.01,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C12H15N3O2S"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.32,
+   "poses": [
+    -6.32,
+    -6.31,
+    -5.95
+   ],
+   "pdb_id": "3KQJ",
+   "label": "CHEMBL2335230",
+   "source": "ChEMBL IC50 2800 nM vs MurA (CHEMBL1984)",
+   "known_activity": "IC50 2.8 uM",
+   "smiles": "O=[N+]([O-])/C(Br)=C/c1ccc(Br)o1",
+   "descriptors": {
+    "mw": 296.9,
+    "logp": 3.01,
+    "hbd": 0,
+    "hba": 3,
+    "tpsa": 56.28,
+    "rotatable": 2,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C6H3Br2NO3"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -3.79,
+   "poses": [
+    -3.79,
+    -3.67,
+    -2.85
+   ],
+   "pdb_id": "3KQJ",
+   "label": "CHEMBL2335229",
+   "source": "ChEMBL IC50 4600 nM vs MurA (CHEMBL1984)",
+   "known_activity": "IC50 4.6 uM",
+   "smiles": "O=[N+]([O-])CBr",
+   "descriptors": {
+    "mw": 139.94,
+    "logp": 0.62,
+    "hbd": 0,
+    "hba": 2,
+    "tpsa": 43.14,
+    "rotatable": 1,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "CH2BrNO2"
+   },
+   "pains": []
+  }
+ ]
+}

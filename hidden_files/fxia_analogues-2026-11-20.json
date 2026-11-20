@@ -1,0 +1,27 @@
+{
+ "135205642": {
+  "smiles": "CC(C(=O)NC1=CC(=C(C=C1)C(=O)N)F)N2C=C(C(=CC2=O)C3=C(C=CC(=C3)Cl)N4C=C(N=N4)Cl)OC",
+  "formula": "C24H19Cl2FN6O4",
+  "mw": "545.3"
+ },
+ "135205940": {
+  "smiles": "CC(C(=O)NC1=CC(=C(C=C1)C(=O)N)F)N2C=C(C(=CC2=O)C3=C(C=CC(=C3)Cl)N4C=C(N=N4)C(F)(F)F)OC",
+  "formula": "C25H19ClF4N6O4",
+  "mw": "578.9"
+ },
+ "135205866": {
+  "smiles": "CCCC(C(=O)NC1=CC(=C(C=C1)C(=O)N)F)N2C=C(C(=CC2=O)C3=C(C=CC(=C3)Cl)N4C=C(N=N4)C(F)F)OC",
+  "formula": "C27H24ClF3N6O4",
+  "mw": "589.0"
+ },
+ "135205878": {
+  "smiles": "CCCCC(C(=O)NC1=CC(=C(C=C1)C(=O)N)F)N2C=C(C(=CC2=O)C3=C(C=CC(=C3)Cl)N4C=NN=N4)OC",
+  "formula": "C26H25ClFN7O4",
+  "mw": "554.0"
+ },
+ "135206011": {
+  "smiles": "CCC(C(=O)NC1=CC(=C(C=C1)C(=O)N)F)N2C=C(C(=CC2=O)C3=C(C=CC(=C3)Cl)N4C=C(N=N4)C(F)(F)F)OC",
+  "formula": "C26H21ClF4N6O4",
+  "mw": "592.9"
+ }
+}

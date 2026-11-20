@@ -1,0 +1,10 @@
+REUSED: selpercatinib -10.11
+PUBCHEM: pralsetinib CID 129073603 MW 533.6
+  DOCK: pralsetinib -9.98 [-9.98, -9.72, -9.59] True None
+PUBCHEM: cabozantinib CID 25102847 MW 501.5
+  DOCK: cabozantinib -10.76 [-10.76, -10.59, -10.32] True None
+PUBCHEM: vandetanib CID 3081361 MW 475.4
+  DOCK: vandetanib -9.55 [-9.55, -9.43, -9.17] True None
+HJ0 SMILES: CC1C[C@H](N[C@H](O)[C@H]2CN(C3(C)CC3)C3NCNC(N)C32)NN1
+  DOCK: HJ0 -8.11 [-8.11, -7.89, -7.79] True None
+RAW_SAVED: ../hidden_files/dock-HP-086c-2026-11-20.json

@@ -1,0 +1,138 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL1777 (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Plasmodium falciparum cytochrome bc1",
+  "uniprot": {
+   "accession": "Q02768",
+   "entry": null,
+   "gene": "MT-CYB",
+   "protein": "Cytochrome b",
+   "organism": "Plasmodium falciparum",
+   "length": 376,
+   "function": "Component of the ubiquinol-cytochrome c reductase complex (complex III or cytochrome b-c1 complex) that is part of the mitochondrial respiratory chain. The b-c1 complex mediates electron transfer from ubiquinol to cytochrome c. Contributes to the generation of a proton gradient across the mitochondrial membrane that is then used for ATP synthesis",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q02768/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [],
+  "chembl_target": {
+   "chembl_id": "CHEMBL1777",
+   "name": "Cytochrome b",
+   "type": "SINGLE PROTEIN",
+   "organism": "Plasmodium falciparum",
+   "components": 1
+  }
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "C1CC(CCC1C2=CC=C(C=C2)Cl)C3=C(C4=CC=CC=C4C(=O)C3=O)O",
+   "similarity": 1.0,
+   "score": 85.0,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 0,
+    "tox_low_20": 15.0
+   },
+   "descriptors": {
+    "mw": 366.84,
+    "logp": 5.35,
+    "hbd": 1,
+    "hba": 3,
+    "tpsa": 54.37,
+    "rotatable": 2,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H19ClO3"
+   },
+   "pains": [
+    "PAINS alert"
+   ],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.816,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.768,
+     "NR-Aromatase": 0.102,
+     "NR-ER": 0.126,
+     "NR-ER-LBD": 0.15,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.585,
+     "SR-ATAD5": 0.072,
+     "SR-HSE": 0.075,
+     "SR-MMP": 0.874,
+     "SR-p53": 0.27
+    }
+   },
+   "pubchem": {
+    "cid": 74989,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/74989"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": false,
+  "error": "no_pdb_found",
+  "results": []
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Plasmodium falciparum cytochrome bc1",
+  "reference": "atovaquone"
+ }
+}

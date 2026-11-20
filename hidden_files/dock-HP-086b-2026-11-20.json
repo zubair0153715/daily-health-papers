@@ -1,0 +1,163 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL2041 (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "RET kinase",
+  "uniprot": {
+   "accession": "P07949",
+   "entry": null,
+   "gene": "RET",
+   "protein": "Proto-oncogene tyrosine-protein kinase receptor Ret",
+   "organism": "Homo sapiens",
+   "length": 1114,
+   "function": "Receptor tyrosine-protein kinase involved in numerous cellular mechanisms including cell proliferation, neuronal navigation, cell migration, and cell differentiation in response to glia cell line-derived growth family factors (GDNF, NRTN, ARTN, PSPN and GDF15) (PubMed:20064382, PubMed:20616503, PubMed:20702524, PubMed:21357690, PubMed:21454698, PubMed:24560924, PubMed:28846097, PubMed:28846099, PubMed:28953886, PubMed:31118272). In contrast to most receptor tyrosine kinases, RET requires not only its cognate ligands but also coreceptors, for activation (PubMed:21994944, PubMed:23333276, PubMed:28846097, PubMed:28846099, PubMed:28953886). GDNF ligands (GDNF, NRTN, ARTN, PSPN and GDF15) first bind their corresponding GDNFR coreceptors (GFRA1, GFRA2, GFRA3, GFRA4 and GFRAL, respectively), tri",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P07949/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [],
+  "chembl_target": {
+   "chembl_id": "CHEMBL2041",
+   "name": "Proto-oncogene tyrosine-protein kinase receptor Ret",
+   "type": "SINGLE PROTEIN",
+   "organism": "Homo sapiens",
+   "components": 1
+  }
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CC(C)(COC1=CN2C(=C(C=N2)C#N)C(=C1)C3=CN=C(C=C3)N4CC5CC(C4)N5CC6=CN=C(C=C6)OC)O",
+   "similarity": 1.0,
+   "score": 97.6,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.6
+   },
+   "descriptors": {
+    "mw": 525.61,
+    "logp": 3.28,
+    "hbd": 1,
+    "hba": 9,
+    "tpsa": 112.04,
+    "rotatable": 8,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C29H31N7O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.233,
+    "assays": {
+     "NR-AR": 0.077,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.188,
+     "NR-Aromatase": 0.17,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.08,
+     "NR-PPAR-gamma": 0.107,
+     "SR-ARE": 0.269,
+     "SR-ATAD5": 0.091,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.35,
+     "SR-p53": 0.093
+    }
+   },
+   "pubchem": {
+    "cid": 134436906,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/134436906"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "7DUA",
+  "resolution": 1.64,
+  "center": [
+   7.69,
+   0.53,
+   -2.52
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.19,
+    "poses": [
+     -10.19,
+     -9.81,
+     -9.41
+    ],
+    "pdb_id": "7DUA",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "RET kinase",
+  "reference": "selpercatinib"
+ },
+ "target_correction": {
+  "wrong_target_first_run": "CHEMBL2074 Maltase-glucoamylase",
+  "correct_target": "CHEMBL2041 Proto-oncogene tyrosine-protein kinase receptor Ret",
+  "evidence": [
+   "UniProt P07949 DR line ChEMBL CHEMBL2041",
+   "ChEMBL target report card CHEMBL2041"
+  ]
+ }
+}

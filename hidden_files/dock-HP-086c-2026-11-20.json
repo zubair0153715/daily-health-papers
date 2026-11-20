@@ -1,0 +1,152 @@
+{
+ "ok": true,
+ "topic": {
+  "target": "RET kinase",
+  "reference": "selpercatinib"
+ },
+ "method": "literature-known inhibitors fallback (ChEMBL activity endpoint HTTP 500 on 2026-11-20; no ChEMBL ligands retrievable). Selpercatinib value from the first literature attempt (killed by external SIGTERM after its dock completed): -10.11 [-10.11, -9.75, -9.29]; independent pipeline re-docks -10.09 and -10.19.",
+ "pdb_id": "7DUA",
+ "resolution": 1.64,
+ "center": [
+  7.69,
+  0.53,
+  -2.52
+ ],
+ "center_basis": "centroid of co-crystallised ligand HJ0, chain A (independently verified from the PDB file)",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.76,
+   "poses": [
+    -10.76,
+    -10.59,
+    -10.32
+   ],
+   "pdb_id": "7DUA",
+   "label": "cabozantinib",
+   "cid": 25102847,
+   "smiles": "COC1=CC2=C(C=CN=C2C=C1OC)OC3=CC=C(C=C3)NC(=O)C4(CC4)C(=O)NC5=CC=C(C=C5)F",
+   "descriptors": {
+    "mw": 501.51,
+    "logp": 5.54,
+    "hbd": 2,
+    "hba": 6,
+    "tpsa": 98.78,
+    "rotatable": 8,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C28H24FN3O5"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.27,
+   "poses": [
+    -10.27,
+    -9.06,
+    -8.82
+   ],
+   "pdb_id": "7DUA",
+   "label": "HJ0 (7DUA native ligand)",
+   "cid": 132247154,
+   "smiles": "CC1=CC(=NN1)NC(=O)C2=CN(C3=NC=NC(=C23)N)C4(CC4)C",
+   "descriptors": {
+    "mw": 311.35,
+    "logp": 1.81,
+    "hbd": 3,
+    "hba": 5,
+    "tpsa": 114.51,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C15H17N7O"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.11,
+   "poses": [
+    -10.11,
+    -9.75,
+    -9.29
+   ],
+   "pdb_id": "7DUA",
+   "label": "selpercatinib",
+   "cid": 134436906,
+   "smiles": "CC(C)(COC1=CN2C(=C(C=N2)C#N)C(=C1)C3=CN=C(C=C3)N4CC5CC(C4)N5CC6=CN=C(C=C6)OC)O",
+   "descriptors": {
+    "mw": 525.61,
+    "logp": 3.28,
+    "hbd": 1,
+    "hba": 9,
+    "tpsa": 112.04,
+    "rotatable": 8,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C29H31N7O3"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.98,
+   "poses": [
+    -9.98,
+    -9.72,
+    -9.59
+   ],
+   "pdb_id": "7DUA",
+   "label": "pralsetinib",
+   "cid": 129073603,
+   "smiles": "CC1=CC(=NN1)NC2=NC(=NC(=C2)C)C3CCC(CC3)(C(=O)NC(C)C4=CN=C(C=C4)N5C=C(C=N5)F)OC",
+   "descriptors": {
+    "mw": 533.61,
+    "logp": 4.2,
+    "hbd": 3,
+    "hba": 8,
+    "tpsa": 135.53,
+    "rotatable": 8,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C27H32FN9O2"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.55,
+   "poses": [
+    -9.55,
+    -9.43,
+    -9.17
+   ],
+   "pdb_id": "7DUA",
+   "label": "vandetanib",
+   "cid": 3081361,
+   "smiles": "CN1CCC(CC1)COC2=C(C=C3C(=C2)N=CN=C3NC4=C(C=C(C=C4)Br)F)OC",
+   "descriptors": {
+    "mw": 475.36,
+    "logp": 5.0,
+    "hbd": 1,
+    "hba": 6,
+    "tpsa": 59.51,
+    "rotatable": 6,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C22H24BrFN4O2"
+   },
+   "pains": []
+  }
+ ],
+ "hj0_correction": {
+  "discarded": "PDB-derived SMILES dock -8.11: RDKit MolFromPDBBlock bond-order perception produced a structure that is not HJ0 (wrong formula/aromaticity); score invalid, not used.",
+  "correct": "PubChem CID 132247154 via RCSB InChIKey VKNSWNWSJODLGL-UHFFFAOYSA-N; C15H17N7O, MW 311.34; IUPAC name matches the 7DUA title compound exactly."
+ }
+}
