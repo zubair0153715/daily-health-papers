@@ -1,0 +1,67 @@
+{
+ "pdb_id": "6NZP",
+ "center": [
+  14.039471698113207,
+  -3.483547169811321,
+  28.628075471698114
+ ],
+ "resolution": 2.35,
+ "note": "6NZH->6NZP: 6NZP is TYK2 JH2 + deucravacitinib (compound-11, LB7); centre = LB7 centroid via dock._ligand_center",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.19,
+   "poses": [
+    -10.19,
+    -9.25,
+    -9.02
+   ],
+   "pdb_id": "6NZP",
+   "label": "deucravacitinib (reference)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.46,
+   "poses": [
+    -10.46,
+    -9.55,
+    -9.1
+   ],
+   "pdb_id": "6NZP",
+   "label": "CHEMBL4435170 (Ki 0.02 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.62,
+   "poses": [
+    -10.62,
+    -10.4,
+    -9.44
+   ],
+   "pdb_id": "6NZP",
+   "label": "CHEMBL5419627 (Kd 0.028 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.5,
+   "poses": [
+    -10.5,
+    -10.01,
+    -9.01
+   ],
+   "pdb_id": "6NZP",
+   "label": "CHEMBL4789639 (Ki 0.02 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.23,
+   "poses": [
+    -9.23,
+    -9.17,
+    -9.14
+   ],
+   "pdb_id": "6NZP",
+   "label": "CHEMBL5424497 (Kd 0.019 nM)"
+  }
+ ]
+}

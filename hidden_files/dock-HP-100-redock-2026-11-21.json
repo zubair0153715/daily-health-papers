@@ -1,0 +1,67 @@
+{
+ "pdb_id": "6NZH",
+ "center": [
+  13.305595744680852,
+  -2.7754042553191485,
+  29.741042553191487
+ ],
+ "resolution": 2.73,
+ "note": "6NZH TYK2 JH2 + compound_40 (L9A); centre = L9A centroid via dock._ligand_center; deucravacitinib cross-docked (no public deucravacitinib-bound TYK2 structure exists)",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.38,
+   "poses": [
+    -10.38,
+    -9.14,
+    -8.57
+   ],
+   "pdb_id": "6NZH",
+   "label": "deucravacitinib (reference)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.62,
+   "poses": [
+    -8.62,
+    -8.41,
+    -8.25
+   ],
+   "pdb_id": "6NZH",
+   "label": "CHEMBL4435170 (Ki 0.02 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.29,
+   "poses": [
+    -9.29,
+    -8.61,
+    -8.4
+   ],
+   "pdb_id": "6NZH",
+   "label": "CHEMBL5419627 (Kd 0.028 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.05,
+   "poses": [
+    -10.05,
+    -9.26,
+    -8.54
+   ],
+   "pdb_id": "6NZH",
+   "label": "CHEMBL4789639 (Ki 0.02 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.09,
+   "poses": [
+    -9.09,
+    -8.79,
+    -8.7
+   ],
+   "pdb_id": "6NZH",
+   "label": "CHEMBL5424497 (Kd 0.019 nM)"
+  }
+ ]
+}

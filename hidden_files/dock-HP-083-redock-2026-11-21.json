@@ -1,0 +1,67 @@
+{
+ "pdb_id": "7W80",
+ "center": [
+  -13.027269230769232,
+  -22.76523076923077,
+  21.719923076923074
+ ],
+ "resolution": 2.75,
+ "note": "7W80 mouse HIF-2alpha-ARNT + belzutifan; centre = 72Q centroid via dock._ligand_center",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.94,
+   "poses": [
+    -10.94,
+    -9.37,
+    -4.41
+   ],
+   "pdb_id": "7W80",
+   "label": "belzutifan (reference; ChEMBL4585668, IC50 9.0 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.4,
+   "poses": [
+    -11.4,
+    -9.58,
+    -5.2
+   ],
+   "pdb_id": "7W80",
+   "label": "CHEMBL5723338 (IC50 16.0 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.22,
+   "poses": [
+    -11.22,
+    -9.63,
+    -4.0
+   ],
+   "pdb_id": "7W80",
+   "label": "CHEMBL4453227 (EC50 4.0 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.76,
+   "poses": [
+    -10.76,
+    -9.7,
+    -6.13
+   ],
+   "pdb_id": "7W80",
+   "label": "CHEMBL4173075 (IC50 8.5 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.82,
+   "poses": [
+    -10.82,
+    -9.31,
+    -6.16
+   ],
+   "pdb_id": "7W80",
+   "label": "CHEMBL5764181 (IC50 11.0 nM)"
+  }
+ ]
+}

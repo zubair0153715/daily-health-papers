@@ -1,0 +1,34 @@
+{
+ "pdb_id": "9SXJ",
+ "center": [
+  -18.568820512820512,
+  1.3592564102564104,
+  -13.247948717948717
+ ],
+ "resolution": null,
+ "note": "9SXJ wild-type c-MET + capmatinib (Russell 2026, PMID 41847658); CIF converted to PDB locally; centre = A1JRF centroid via dock._ligand_center",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.11,
+   "poses": [
+    -12.11,
+    -10.0,
+    -9.38
+   ],
+   "pdb_id": "9SXJ",
+   "label": "capmatinib (reference; ChEMBL3188267, IC50 0.13 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.48,
+   "poses": [
+    -12.48,
+    -10.05,
+    -9.62
+   ],
+   "pdb_id": "9SXJ",
+   "label": "CHEMBL3582305 (IC50 0.13 nM)"
+  }
+ ]
+}
