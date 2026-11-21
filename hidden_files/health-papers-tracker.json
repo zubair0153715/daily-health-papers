@@ -73,8 +73,8 @@
    "file": "files/2026-11-04-health-ecoli-dhfr-trimethoprim.md",
    "platform": "ChemRxiv",
    "status": "draft-ready",
-   "title": "Five Trimethoprim Analogues Dock Within Noise of Trimethoprim on E. coli DHFR \u2014 and None Addresses the dfrA Resistance Route",
-   "topic": "E. coli DHFR \u2014 trimethoprim resistance",
+   "title": "Five Trimethoprim Analogues Dock Within Noise of Trimethoprim on E. coli DHFR — and None Addresses the dfrA Resistance Route",
+   "topic": "E. coli DHFR — trimethoprim resistance",
    "topic_id": "HP-014"
   },
   {
@@ -85,7 +85,7 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "Five Triazole-Thioether NDM-1 Inhibitors Docked With the Catalytic Zinc Retained: The Best Compound Is Found, the Ranking Is Not",
-   "topic": "NDM-1 metallo-beta-lactamase \u2014 carbapenem resistance",
+   "topic": "NDM-1 metallo-beta-lactamase — carbapenem resistance",
    "topic_id": "HP-011"
   },
   {
@@ -96,14 +96,14 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "Vemurafenib Still Docks Best: Five Sub-nanomolar BRAF V600E Inhibitors Dock Worse Than the Drug They Outperform by ~300-Fold",
-   "topic": "BRAF V600E melanoma \u2014 vemurafenib resistance",
+   "topic": "BRAF V600E melanoma — vemurafenib resistance",
    "topic_id": "HP-029"
   },
   {
    "date": "2026-11-05",
    "topic_id": "HP-018",
-   "topic": "InhA \u2014 isoniazid resistance in Mycobacterium tuberculosis",
-   "title": "Direct InhA Inhibitors Dock 3.5\u20134.4 kcal/mol Better Than Free Isoniazid on Mycobacterium tuberculosis InhA: A Standardised Vina Benchmark at the INH\u2013NAD Adduct Site",
+   "topic": "InhA — isoniazid resistance in Mycobacterium tuberculosis",
+   "title": "Direct InhA Inhibitors Dock 3.5–4.4 kcal/mol Better Than Free Isoniazid on Mycobacterium tuberculosis InhA: A Standardised Vina Benchmark at the INH–NAD Adduct Site",
    "file": "files/2026-11-05-health-inha-isoniazid-direct-inhibitors.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -114,8 +114,8 @@
   {
    "date": "2026-11-05",
    "topic_id": "HP-052",
-   "topic": "Cutaneous leishmaniasis \u2014 oral alternatives to antimonials (L. infantum TR surrogate; no L. major ChEMBL target/structure)",
-   "title": "Five Triazolium Trypanothione Reductase Inhibitors Dock at \u22126.3 to \u22127.8 kcal/mol on Leishmania infantum TR: A Vina Benchmark, a Species Surrogate, and Two Pipeline Faults Caught",
+   "topic": "Cutaneous leishmaniasis — oral alternatives to antimonials (L. infantum TR surrogate; no L. major ChEMBL target/structure)",
+   "title": "Five Triazolium Trypanothione Reductase Inhibitors Dock at −6.3 to −7.8 kcal/mol on Leishmania infantum TR: A Vina Benchmark, a Species Surrogate, and Two Pipeline Faults Caught",
    "file": "files/2026-11-05-health-trypanothione-reductase-leishmania.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -125,7 +125,7 @@
   {
    "date": "2026-11-05",
    "topic_id": "HP-057",
-   "topic": "MEK1/2 \u2014 BRAF-mutant combination therapy (MAP2K1)",
+   "topic": "MEK1/2 — BRAF-mutant combination therapy (MAP2K1)",
    "title": "Trametinib Beats Itself by 1.75 kcal/mol: A Vina Benchmark of MEK1 Inhibitors on 7B7R and the Conformer-Sampling Error Hiding Inside Every Docking Score",
    "file": "files/2026-11-05-health-mek1-trametinib-benchmark.md",
    "field": "health",
@@ -137,7 +137,7 @@
    "date": "2026-11-05",
    "topic_id": "HP-043",
    "topic": "Neprilysin inhibition for heart failure (sacubitrilat)",
-   "title": "Four Known Neprilysin Inhibitors Dock at \u22127.1 to \u22129.9 kcal/mol on the Omapatrilat Site: A Vina Benchmark, a 37.9 \u00c5 Grid Error, and the Zinc That Vina Cannot See",
+   "title": "Four Known Neprilysin Inhibitors Dock at −7.1 to −9.9 kcal/mol on the Omapatrilat Site: A Vina Benchmark, a 37.9 Å Grid Error, and the Zinc That Vina Cannot See",
    "file": "files/2026-11-05-health-neprilysin-sacubitrilat-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -153,12 +153,12 @@
    "status": "draft-ready",
    "draft_url": "https://chemrxiv.org/doc/9a7b5d17-6c85-4621-ab09-1cd6bb455285",
    "notes": "First run discarded: target resolved to A8T677 monkey + CHEMBL2074 maltase. Corrected: Q8NBP7/CHEMBL2929, 7S5H 1.27A. Centre re-docked at full cyclic-peptide centroid (4.05A from Z50 fragment centre, shifts <=0.28). Scores -6.04 to -6.48; EC50s are cellular expression (HepG2 ELISA), not binding. 20 macrocyclic peptides undockable (MW 894-1738). Evolocumab antibody not dockable.",
-   "draft_note": "COMPLETED 2026-11-06 16:38-16:51 PKT (retry): title+abstract verified verbatim, all 8 keywords, subject Biological and Medicinal Chemistry set in editor, Working Paper, CC BY 4.0, Ethics Not relevant, Conflicts No \u2014 all confirmed on Summary page via submit wizard (Cancel clicked, NOT submitted). Affiliation auto-extracted (Affiliations menu greyed out, Faculty of Pharmacy not added). Cloudflare loop cleared after browser environment replacement."
+   "draft_note": "COMPLETED 2026-11-06 16:38-16:51 PKT (retry): title+abstract verified verbatim, all 8 keywords, subject Biological and Medicinal Chemistry set in editor, Working Paper, CC BY 4.0, Ethics Not relevant, Conflicts No — all confirmed on Summary page via submit wizard (Cancel clicked, NOT submitted). Affiliation auto-extracted (Affiliations menu greyed out, Faculty of Pharmacy not added). Cloudflare loop cleared after browser environment replacement."
   },
   {
    "date": "2026-11-06",
    "topic_id": "HP-033",
-   "topic": "ALK-positive NSCLC \u2014 next-generation inhibitors (alectinib)",
+   "topic": "ALK-positive NSCLC — next-generation inhibitors (alectinib)",
    "title": "No ALK Inhibitor in This Set Beats Alectinib Beyond Vina Noise: A Benchmark Docking of Known ALK Inhibitors on PDB 4Z55",
    "file": "files/2026-11-06-health-alk-alectinib-benchmark.md",
    "field": "health",
@@ -171,7 +171,7 @@
   {
    "date": "2026-11-06",
    "topic_id": "HP-019",
-   "topic": "DprE1 \u2014 next-generation TB drugs (macozinone)",
+   "topic": "DprE1 — next-generation TB drugs (macozinone)",
    "title": "Two Leads \"Beat\" Macozinone by Docking and Lose by 1.23 kcal/mol of Noise: A Vina Benchmark of DprE1 Inhibitors on 4P8N and the Covalent Binding Vina Cannot See",
    "file": "files/2026-11-06-health-dpre1-macozinone-benchmark.md",
    "field": "health",
@@ -183,7 +183,7 @@
   {
    "date": "2026-11-06",
    "topic_id": "HP-009",
-   "topic": "Xanthine oxidase inhibition for gout \u2014 safer than allopurinol in CKD (febuxostat)",
+   "topic": "Xanthine oxidase inhibition for gout — safer than allopurinol in CKD (febuxostat)",
    "title": "Febuxostat Beats Itself by 0.03 kcal/mol: A Vina Benchmark of Xanthine Oxidase Inhibitors on 2E1Q, and the Selenium Ligands the Pipeline Cannot Dock",
    "file": "files/2026-11-06-health-xanthine-oxidase-febuxostat-benchmark.md",
    "field": "health",
@@ -197,7 +197,7 @@
    "date": "2026-11-06",
    "topic_id": "HP-008",
    "topic": "11beta-HSD1 inhibition for metabolic syndrome (INCB13739)",
-   "title": "INCB13739 Still Leads by 1.05 kcal/mol \u2014 Inside the Noise: A Vina Benchmark of 11\u03b2-HSD1 Inhibitors on 4C7K and the Wrong-Target Run That Had to Be Discarded",
+   "title": "INCB13739 Still Leads by 1.05 kcal/mol — Inside the Noise: A Vina Benchmark of 11β-HSD1 Inhibitors on 4C7K and the Wrong-Target Run That Had to Be Discarded",
    "file": "files/2026-11-06-health-hsd11b1-incb13739-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -209,14 +209,14 @@
   {
    "date": "2026-11-06",
    "topic_id": "HP-045",
-   "topic": "HIF prolyl-hydroxylase \u2014 anaemia of chronic kidney disease (roxadustat)",
+   "topic": "HIF prolyl-hydroxylase — anaemia of chronic kidney disease (roxadustat)",
    "title": "No Lead Beats Roxadustat Beyond Noise: A Vina Benchmark of PHD2/EGLN1 Inhibitors on 6QGV and the Missing Metal Ion",
    "file": "files/2026-11-06-health-hif-ph-roxadustat-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-partial",
    "draft_url": "https://chemrxiv.org/doc/b1a205ee-90f5-4722-bb54-195d1b8328e4",
-   "draft_note": "PARTIAL 2026-11-06 16:12-16:26 PKT: PDF uploaded, draft V1 created, title+abstract auto-extracted verbatim (abstract rendering note: \"scored-7.54\" missing space), all 8 keywords present. Metadata NOT filled: editor iframe blocked by Cloudflare loop (Ray IDs a563ba3d2900436f, a563bba7ee95436f, a563bc9c9e6e436f). Subject/licence/type/ethics/conflicts still to complete \u2014 retry tomorrow. | RETRY FAILED 2026-11-07 18:40-18:44 PKT: Cloudflare verify-then-reset loop at sign-in (Ray IDs a56cb2d0c6dce65b, a56cc1298f71e65b, a56cc3597fe9e65b, a56cc44a4ef9e65b); sign-in page never reached, nothing changed. Retry tomorrow."
+   "draft_note": "PARTIAL 2026-11-06 16:12-16:26 PKT: PDF uploaded, draft V1 created, title+abstract auto-extracted verbatim (abstract rendering note: \"scored-7.54\" missing space), all 8 keywords present. Metadata NOT filled: editor iframe blocked by Cloudflare loop (Ray IDs a563ba3d2900436f, a563bba7ee95436f, a563bc9c9e6e436f). Subject/licence/type/ethics/conflicts still to complete — retry tomorrow. | RETRY FAILED 2026-11-07 18:40-18:44 PKT: Cloudflare verify-then-reset loop at sign-in (Ray IDs a56cb2d0c6dce65b, a56cc1298f71e65b, a56cc3597fe9e65b, a56cc44a4ef9e65b); sign-in page never reached, nothing changed. Retry tomorrow."
   },
   {
    "date": "2026-11-07",
@@ -226,7 +226,7 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "Two Dietary Flavonoids \"Beat\" Acarbose by Docking and Lose by ~1 kcal/mol of Noise: A Vina Benchmark of Human Pancreatic Alpha-Amylase Inhibitors on 1XCX",
-   "topic": "Pancreatic alpha-amylase inhibition \u2014 dietary adjuncts for diabetes",
+   "topic": "Pancreatic alpha-amylase inhibition — dietary adjuncts for diabetes",
    "topic_id": "HP-005",
    "draft_note": "DRAFT-READY 2026-11-07 16:26-17:13 PKT: PDF uploaded, title+abstract verbatim, all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Stopped at Summary, NOT submitted. Cloudflare loop cleared after browser environment replacement. Affiliation auto-extracted (Faculty of Pharmacy not shown)."
   },
@@ -238,7 +238,7 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "No Lead Beats Bedaquiline on Its Own Site: A Vina Benchmark of Five ATP Synthase Inhibitors on the M. tuberculosis Fo Structure 8J57",
-   "topic": "Mtb ATP synthase \u2014 bedaquiline resistance",
+   "topic": "Mtb ATP synthase — bedaquiline resistance",
    "topic_id": "HP-020",
    "draft_note": "DRAFT-READY 2026-11-07 18:05-18:35 PKT: PDF uploaded, title+abstract verbatim (11 non-ASCII auto-extract chars corrected to ASCII), all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Stopped at Summary, NOT submitted. Cloudflare loop on sign-in cleared after browser environment replacement + re-sign-in. Affiliation auto-extracted (Faculty of Pharmacy not shown)."
   },
@@ -250,7 +250,7 @@
    "platform": "ChemRxiv",
    "status": "drafted",
    "title": "Posaconazole \"Beats\" Four CYP51 Binders by Docking but the Target Itself Is in Doubt: A Vina Benchmark of Mycobacterium tuberculosis CYP51 on 2CIB and the Repurposing Limits of Azole Anti-TB Activity",
-   "topic": "Mtb CYP51 \u2014 sterol biosynthesis as a TB target",
+   "topic": "Mtb CYP51 — sterol biosynthesis as a TB target",
    "topic_id": "HP-021",
    "draft_failed": "2026-11-07",
    "draft_note": "ChemRxiv draft FAILED 2026-11-07 18:35-18:40 PKT: Cloudflare verify-then-reset loop at login (Ray IDs a56cbe0bae4de65b, a56cb96e0ef2e65b, a56cbadd3e70e65b, a56cbbce9880e65b); session had not carried over, sign-in page never reached, no upload. Retry tomorrow per rule; never loop same run."
@@ -263,7 +263,7 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "No Pocket to Dock: A Negative Computational Result for Small-Molecule Targeting of BCL11A in Beta-Thalassaemia",
-   "topic": "Beta-thalassaemia \u2014 fetal haemoglobin induction (BCL11A)",
+   "topic": "Beta-thalassaemia — fetal haemoglobin induction (BCL11A)",
    "topic_id": "HP-055",
    "draft_note": "DRAFT-READY 2026-11-07 17:50-18:05 PKT: PDF uploaded, title+abstract verbatim, all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Stopped at Summary, NOT submitted. Cloudflare loop on sign-in cleared after browser environment replacement + re-sign-in. Affiliation auto-extracted (Faculty of Pharmacy not shown)."
   },
@@ -275,7 +275,7 @@
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "title": "Vebicorvir \"Beats\" Bersacapavir by Docking and Loses by 1.10 kcal/mol of Noise: A Vina Benchmark of HBV Capsid Assembly Modulators on 5WRE and the Functional-Cure Gap",
-   "topic": "HBV capsid assembly \u2014 functional cure angle",
+   "topic": "HBV capsid assembly — functional cure angle",
    "topic_id": "HP-059",
    "draft_note": "DRAFT-READY 2026-11-07 17:13-17:50 PKT: PDF uploaded, title+abstract verbatim (non-ASCII auto-extract chars corrected to ASCII), all 8 keywords, Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Stopped at Summary, NOT submitted. Cloudflare loop on sign-in cleared after browser environment replacement + re-sign-in. Affiliation auto-extracted (Faculty of Pharmacy not shown)."
   },
@@ -286,14 +286,14 @@
    "file": "files/2026-11-08-health-kpc2-avibactam-benchmark.md",
    "platform": "ChemRxiv",
    "status": "draft-ready",
-   "title": "Three Diazabicyclooctanes \"Beat\" Avibactam by Docking and Lose by Less Than 1 kcal/mol of Noise: A Vina Benchmark of KPC-2 Inhibitors on 6TD0 \u2014 and the Boronate Blind Spot",
-   "topic": "KPC-2 carbapenemase \u2014 avibactam alternatives",
+   "title": "Three Diazabicyclooctanes \"Beat\" Avibactam by Docking and Lose by Less Than 1 kcal/mol of Noise: A Vina Benchmark of KPC-2 Inhibitors on 6TD0 — and the Boronate Blind Spot",
+   "topic": "KPC-2 carbapenemase — avibactam alternatives",
    "topic_id": "HP-012"
   },
   {
    "date": "2026-11-08",
    "topic_id": "HP-056",
-   "topic": "Aromatase inhibition \u2014 breast cancer endocrine therapy",
+   "topic": "Aromatase inhibition — breast cancer endocrine therapy",
    "title": "No Lead Beats Letrozole Beyond Noise: A Vina Benchmark of Five Aromatase Inhibitors on the Human CYP19A1 Structure 3S79",
    "file": "files/2026-11-08-health-aromatase-letrozole-benchmark.md",
    "platform": "ChemRxiv",
@@ -304,7 +304,7 @@
   {
    "date": "2026-11-08",
    "topic_id": "HP-053",
-   "topic": "Hepatitis C \u2014 affordable NS5A inhibition",
+   "topic": "Hepatitis C — affordable NS5A inhibition",
    "title": "Daclatasvir-Class NS5A Inhibitors Are All Picomolar and All Beyond the Rule of Five: A Corrected Ligand Screen, and Why Docking Was Skipped",
    "file": "files/2026-11-08-health-hcv-ns5a-daclatasvir.md",
    "platform": "ChemRxiv",
@@ -315,7 +315,7 @@
   {
    "date": "2026-11-08",
    "topic_id": "HP-010",
-   "topic": "HMG-CoA reductase \u2014 statin alternatives for statin-intolerant patients",
+   "topic": "HMG-CoA reductase — statin alternatives for statin-intolerant patients",
    "title": "No Statin Beats Atorvastatin Beyond Noise: A Vina Benchmark of Four HMG-CoA Reductase Inhibitors on 2R4F, and the Non-Statin Scaffold the Screen Did Not Find",
    "file": "files/2026-11-08-health-hmgcr-atorvastatin-benchmark.md",
    "platform": "ChemRxiv",
@@ -326,8 +326,8 @@
   {
    "date": "2026-11-08",
    "topic_id": "HP-026",
-   "topic": "Schistosomiasis \u2014 new targets beyond praziquantel",
-   "title": "Two Furoxan Analogues Out-Dock Praziquantel on Schistosoma TGR \u2014 But Praziquantel Does Not Target TGR: A Corrected Vina Benchmark on 8PDD",
+   "topic": "Schistosomiasis — new targets beyond praziquantel",
+   "title": "Two Furoxan Analogues Out-Dock Praziquantel on Schistosoma TGR — But Praziquantel Does Not Target TGR: A Corrected Vina Benchmark on 8PDD",
    "file": "files/2026-11-08-health-schistosoma-tgr-praziquantel.md",
    "platform": "ChemRxiv",
    "field": "health",
@@ -337,8 +337,8 @@
   {
    "date": "2026-11-08",
    "topic_id": "HP-038",
-   "topic": "Influenza \u2014 neuraminidase inhibitors and resistance",
-   "title": "Oseltamivir Scores Worst on Its Own Wildtype Site \u2014 and Better on the Resistant Mutant: A Vina Benchmark on 3TI6 and 3CL0 That Fails to Reproduce H274Y Resistance",
+   "topic": "Influenza — neuraminidase inhibitors and resistance",
+   "title": "Oseltamivir Scores Worst on Its Own Wildtype Site — and Better on the Resistant Mutant: A Vina Benchmark on 3TI6 and 3CL0 That Fails to Reproduce H274Y Resistance",
    "file": "files/2026-11-08-health-influenza-na-oseltamivir-h274y.md",
    "platform": "ChemRxiv",
    "field": "health",
@@ -352,14 +352,14 @@
    "file": "files/2026-11-09-health-pfdhodh-dsm265-benchmark.md",
    "platform": "ChemRxiv",
    "status": "draft-ready",
-   "title": "Five DSM265 Analogues Out-Dock DSM265 on Plasmodium falciparum DHODH \u2014 and the Best-Scoring One Is Not the Best Backup: A Centre-Audited Vina Benchmark on 7L01",
-   "topic": "P. falciparum DHODH \u2014 DSM265 backup analogues",
+   "title": "Five DSM265 Analogues Out-Dock DSM265 on Plasmodium falciparum DHODH — and the Best-Scoring One Is Not the Best Backup: A Centre-Audited Vina Benchmark on 7L01",
+   "topic": "P. falciparum DHODH — DSM265 backup analogues",
    "topic_id": "HP-060"
   },
   {
    "date": "2026-11-09",
    "topic_id": "HP-025",
-   "topic": "T. cruzi CYP51 \u2014 Chagas disease",
+   "topic": "T. cruzi CYP51 — Chagas disease",
    "title": "Posaconazole Still Leads, and the Most Potent Measured Inhibitor Scores Worst: A Vina Benchmark of Trypanosoma cruzi CYP51 Inhibitors on 4C27 That Fails to Reproduce the Potency Order",
    "file": "files/2026-11-09-health-tcruzi-cyp51-posaconazole.md",
    "field": "health",
@@ -371,7 +371,7 @@
   {
    "date": "2026-11-09",
    "topic_id": "HP-015",
-   "topic": "DNA gyrase \u2014 fluoroquinolone resistance in Gram-negatives (E. coli GyrB)",
+   "topic": "DNA gyrase — fluoroquinolone resistance in Gram-negatives (E. coli GyrB)",
    "title": "No Lead Beats Novobiocin Beyond Noise on Escherichia coli GyrB: A Corrected Vina Benchmark on 7P2M and the Wrong-Site Comparator Problem",
    "file": "files/2026-11-09-health-ecoli-gyrb-novobiocin-benchmark.md",
    "field": "health",
@@ -383,32 +383,32 @@
   {
    "date": "2026-11-09",
    "topic_id": "HP-007",
-   "topic": "Glucokinase (GCK) \u2014 dorzagliatin benchmark",
-   "title": "The Only Approved Drug Scores Worst: Dorzagliatin Binds Weakest on Human Glucokinase 3F9M While Four Nanomolar Activators Lead \u2014 A Vina Benchmark That Separates Affinity from Activation",
+   "topic": "Glucokinase (GCK) — dorzagliatin benchmark",
+   "title": "The Only Approved Drug Scores Worst: Dorzagliatin Binds Weakest on Human Glucokinase 3F9M While Four Nanomolar Activators Lead — A Vina Benchmark That Separates Affinity from Activation",
    "file": "files/2026-11-09-health-gck-dorzagliatin-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "notes": "Target P35557/CHEMBL3820 verified. PDB 3F9M 1.5 A; centre audit 0.01 A from MRK activator centroid, glucose 19.63 A away (allosteric site, not glucose site). Dorzagliatin -6.82 worst of 5; CHEMBL3217925 -8.47 best (Kd 2.16 nM); gap 1.65 inside Vina noise; Spearman rho 0.35 (n=4). Pipeline step-7 label said 'skipped' but docking object populated (5 compounds x 3 poses) \u2014 logging quirk only. ChemRxiv draft FAILED 2026-11-09 ~16:39 PKT: Cloudflare verify-then-reset loop at ACS CONNECT/OAuth authorize page before sign-in (Ray a57c853dbce5edb1, a57c85ee8a74edb1, a57c873ebbb3f972, a57c88294bd18014). No draft created, nothing submitted. Retry tomorrow per standing rule."
+   "notes": "Target P35557/CHEMBL3820 verified. PDB 3F9M 1.5 A; centre audit 0.01 A from MRK activator centroid, glucose 19.63 A away (allosteric site, not glucose site). Dorzagliatin -6.82 worst of 5; CHEMBL3217925 -8.47 best (Kd 2.16 nM); gap 1.65 inside Vina noise; Spearman rho 0.35 (n=4). Pipeline step-7 label said 'skipped' but docking object populated (5 compounds x 3 poses) — logging quirk only. ChemRxiv draft FAILED 2026-11-09 ~16:39 PKT: Cloudflare verify-then-reset loop at ACS CONNECT/OAuth authorize page before sign-in (Ray a57c853dbce5edb1, a57c85ee8a74edb1, a57c873ebbb3f972, a57c88294bd18014). No draft created, nothing submitted. Retry tomorrow per standing rule."
   },
   {
    "date": "2026-11-09",
    "topic_id": "HP-048",
-   "topic": "TNF-alpha \u2014 etanercept / small-molecule trimer inhibitors",
+   "topic": "TNF-alpha — etanercept / small-molecule trimer inhibitors",
    "title": "Five Sub-Nanomolar Binders, No Winner: A Corrected Vina Benchmark of Small-Molecule TNF-alpha Trimer Inhibitors on 2AZ5, and Why the Biologic Reference Cannot Be Docked",
    "file": "files/2026-11-09-health-tnfa-ucb-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "notes": "First run DISCARDED: pipeline picked 5UUI (spin-labelled TNF MONOMER, grid on MTN spin label, 16.85 A from monomer centroid); scores -6.38 to -7.26, rho 0.075. Raw JSON kept as dock-HP-048-WRONG-CENTRE-2026-11-09.json. Corrected re-dock on 2AZ5 (SPD304 trimer pocket, centre 0.24 A from oligomer centroid): -8.83 to -9.67, rho 0.73, spread 0.84 inside noise. Etanercept (150 kDa biologic) not dockable \u2014 clinical reference only. ChemRxiv draft FAILED 2026-11-09 ~16:51 PKT: Cloudflare verify-then-reset loop + env replacement; ORCID sign-in accepted but return to chemrxiv.org blocked (Ray a57c90178a1cb213; earlier a57c89a9de708014, a57c8a498d018014, a57c8c1c9cca8014, a57c8e46a8db1dfb). Session survival unconfirmed. No draft created, nothing submitted. Retry tomorrow per standing rule."
+   "notes": "First run DISCARDED: pipeline picked 5UUI (spin-labelled TNF MONOMER, grid on MTN spin label, 16.85 A from monomer centroid); scores -6.38 to -7.26, rho 0.075. Raw JSON kept as dock-HP-048-WRONG-CENTRE-2026-11-09.json. Corrected re-dock on 2AZ5 (SPD304 trimer pocket, centre 0.24 A from oligomer centroid): -8.83 to -9.67, rho 0.73, spread 0.84 inside noise. Etanercept (150 kDa biologic) not dockable — clinical reference only. ChemRxiv draft FAILED 2026-11-09 ~16:51 PKT: Cloudflare verify-then-reset loop + env replacement; ORCID sign-in accepted but return to chemrxiv.org blocked (Ray a57c90178a1cb213; earlier a57c89a9de708014, a57c8a498d018014, a57c8c1c9cca8014, a57c8e46a8db1dfb). Session survival unconfirmed. No draft created, nothing submitted. Retry tomorrow per standing rule."
   },
   {
    "date": "2026-11-09",
    "topic_id": "HP-023",
-   "topic": "Plasmodium falciparum DHFR \u2014 pyrimethamine / quadruple mutant",
-   "title": "Pyrimethamine Docks Worst on Its Own Resistant Mutant \u2014 And That Is the Correct Answer: A Vina Benchmark on Quadruple-Mutant PfDHFR-TS 1J3K",
+   "topic": "Plasmodium falciparum DHFR — pyrimethamine / quadruple mutant",
+   "title": "Pyrimethamine Docks Worst on Its Own Resistant Mutant — And That Is the Correct Answer: A Vina Benchmark on Quadruple-Mutant PfDHFR-TS 1J3K",
    "file": "files/2026-11-09-health-pfdhfr-pyrimethamine-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -419,19 +419,19 @@
   {
    "date": "2026-11-10",
    "topic_id": "HP-031",
-   "topic": "VEGFR2 \u2014 anti-angiogenic scaffolds",
+   "topic": "VEGFR2 — anti-angiogenic scaffolds",
    "title": "Vina Ranks the Weakest Binder First: A Centre-Audited Benchmark of VEGFR2 Inhibitors on 2XIR Shows Docking Scores Do Not Recover the Measured Potency Order Against Sorafenib",
    "file": "files/2026-11-10-health-vegfr2-sorafenib-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "draft_url": "https://chemrxiv.org/doc/42311f9d-a5fe-4aa4-8044-17e63fe51158",
-   "notes": "Target P35968/CHEMBL279 verified; 37 bioactivities, 26 leads. PDB 2XIR 1.5 A; grid centre exactly on co-crystallised 00J centroid (0.00 A). CHEMBL3586072 -11.93, CHEMBL5186748 -11.43, CHEMBL1254007 -11.28 vs sorafenib -11.16; all margins inside Vina noise; Spearman rho -1.0 (n=4) vs pChEMBL \u2014 ranking exactly reversed. CHEMBL1336 is sorafenib itself (duplicate dock reproduces to 0.01). First two runs failed: ChEMBL API HTTP 500, zero ligands; discarded, kept as dock-HP-031-2026-11-10-THIN-ONLY-QUERY.json. ChemRxiv DRAFT created 2026-11-10 ~16:02 PKT, stopped at Summary page, NOT submitted. Subject Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Affiliation auto-extracted as \"Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU, Larkana, Pakistan\" (missing closing paren, no Faculty of Pharmacy dept \u2014 editor Authors/Affiliations menu greyed out); author to check/correct before submitting. Cloudflare verifications cleared (Ray a58470119c5a5c6c etc.); one env replacement early, no work lost."
+   "notes": "Target P35968/CHEMBL279 verified; 37 bioactivities, 26 leads. PDB 2XIR 1.5 A; grid centre exactly on co-crystallised 00J centroid (0.00 A). CHEMBL3586072 -11.93, CHEMBL5186748 -11.43, CHEMBL1254007 -11.28 vs sorafenib -11.16; all margins inside Vina noise; Spearman rho -1.0 (n=4) vs pChEMBL — ranking exactly reversed. CHEMBL1336 is sorafenib itself (duplicate dock reproduces to 0.01). First two runs failed: ChEMBL API HTTP 500, zero ligands; discarded, kept as dock-HP-031-2026-11-10-THIN-ONLY-QUERY.json. ChemRxiv DRAFT created 2026-11-10 ~16:02 PKT, stopped at Summary page, NOT submitted. Subject Biological and Medicinal Chemistry, CC BY 4.0, Working Paper, Ethics Not relevant, Conflicts No. Affiliation auto-extracted as \"Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU, Larkana, Pakistan\" (missing closing paren, no Faculty of Pharmacy dept — editor Authors/Affiliations menu greyed out); author to check/correct before submitting. Cloudflare verifications cleared (Ray a58470119c5a5c6c etc.); one env replacement early, no work lost."
   },
   {
    "date": "2026-11-10",
    "topic_id": "HP-050",
-   "topic": "PDE5 \u2014 pulmonary hypertension",
+   "topic": "PDE5 — pulmonary hypertension",
    "title": "Potency Is Solved, Selectivity Is Not: A Centre-Audited PDE5 Benchmark on 1TBF, Sildenafil as the Outlier, and the PDE6 Question",
    "file": "files/2026-11-10-health-pde5-sildenafil-benchmark.md",
    "field": "health",
@@ -444,7 +444,7 @@
    "date": "2026-11-10",
    "topic_id": "HP-004",
    "topic": "Alpha-glucosidase inhibition for postprandial glucose control",
-   "title": "The Weakest Drug Scores Best: Acarbose Out-Docks Three Nanomolar Iminosugars on ntMGAM 3L4Y \u2014 and the Most Potent Lead Class Could Not Be Docked at All",
+   "title": "The Weakest Drug Scores Best: Acarbose Out-Docks Three Nanomolar Iminosugars on ntMGAM 3L4Y — and the Most Potent Lead Class Could Not Be Docked at All",
    "file": "files/2026-11-10-health-alpha-glucosidase-acarbose-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -484,7 +484,7 @@
    "platform": "ChemRxiv",
    "status": "drafted",
    "title": "No Structure to Dock On: A ChEMBL Potency Analysis of PfATP4 Inhibitors Against Cipargamin, and Why the Best Number Is a 3D7-Only Number",
-   "topic": "PfATP4 \u2014 next-generation antimalarials beyond artemisinin",
+   "topic": "PfATP4 — next-generation antimalarials beyond artemisinin",
    "topic_id": "HP-022",
    "draft_note": "ChemRxiv draft FAILED 2026-11-11 ~16:11 PKT: Cloudflare verify-then-reset loop (Ray 0f36a0d26cefc4d1 / a58cda7dac40e97b); no sign-in, no draft created. Retry tomorrow."
   },
@@ -508,7 +508,7 @@
    "platform": "ChemRxiv",
    "status": "drafted",
    "title": "Vina Ranks the Proven Inhibitor Last: A Centre-Audited Benchmark of 6-Methylidene Penem Inhibitors Against Enterobacter cloacae AmpC on 1RGZ Versus the Hydrolysed Substrate Ceftazidime",
-   "topic": "AmpC beta-lactamase \u2014 cephalosporin resistance",
+   "topic": "AmpC beta-lactamase — cephalosporin resistance",
    "topic_id": "HP-016"
   },
   {
@@ -529,15 +529,15 @@
    "file": "files/2026-11-11-health-dengue-ns2b-ns3-protease.md",
    "platform": "ChemRxiv",
    "status": "drafted",
-   "title": "No Approved Dengue Drug, No Docking Winner: NSC135618 and ARDP0006 Are Indistinguishable by Vina on the DENV NS2B\u2013NS3 Protease Allosteric and Active-Site Structures",
-   "topic": "Dengue NS2B-NS3 protease \u2014 no approved dengue drug",
+   "title": "No Approved Dengue Drug, No Docking Winner: NSC135618 and ARDP0006 Are Indistinguishable by Vina on the DENV NS2B–NS3 Protease Allosteric and Active-Site Structures",
+   "topic": "Dengue NS2B-NS3 protease — no approved dengue drug",
    "topic_id": "HP-041"
   },
   {
    "date": "2026-11-12",
    "topic_id": "HP-036",
-   "topic": "Androgen receptor \u2014 enzalutamide resistance in prostate cancer",
-   "title": "Four Sub-Nanomolar Androgen Receptor Ligands Dock in Exact Measured-Potency Order on 8E1A \u2014 While Enzalutamide Itself Fails to Dock",
+   "topic": "Androgen receptor — enzalutamide resistance in prostate cancer",
+   "title": "Four Sub-Nanomolar Androgen Receptor Ligands Dock in Exact Measured-Potency Order on 8E1A — While Enzalutamide Itself Fails to Dock",
    "file": "files/2026-11-12-health-ar-enzalutamide-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -547,7 +547,7 @@
   {
    "date": "2026-11-12",
    "topic_id": "HP-042",
-   "topic": "ACE inhibition \u2014 cough-free alternatives",
+   "topic": "ACE inhibition — cough-free alternatives",
    "title": "Vina Ranks Lisinopril Last on ACE: A Centre-Audited Benchmark of Enalaprilat and Two ChEMBL Leads Against Lisinopril on the C-Domain Structure 6H5W",
    "file": "files/2026-11-12-health-ace-lisinopril-benchmark.md",
    "field": "health",
@@ -558,7 +558,7 @@
   {
    "date": "2026-11-12",
    "topic_id": "HP-003",
-   "topic": "PTP1B inhibition for insulin resistance \u2014 no approved drug yet",
+   "topic": "PTP1B inhibition for insulin resistance — no approved drug yet",
    "title": "No Rank Correlation on the True PTP1B Active Site: A Centre-Audited Re-Dock of Four ChEMBL Leads Against Ertiprotafib on 2F71, After the Pipeline Docked the Wrong Protein",
    "file": "files/2026-11-12-health-ptp1b-ertiprotafib-benchmark.md",
    "field": "health",
@@ -569,7 +569,7 @@
   {
    "date": "2026-11-12",
    "topic_id": "HP-034",
-   "topic": "CDK4/6 inhibition in breast cancer \u2014 palbociclib benchmark",
+   "topic": "CDK4/6 inhibition in breast cancer — palbociclib benchmark",
    "title": "The Weakest Measured Binder Docks Best on CDK6: A Centre-Audited Benchmark of Four ChEMBL Leads Against Palbociclib on 6OQO",
    "file": "files/2026-11-12-health-cdk6-palbociclib-benchmark.md",
    "field": "health",
@@ -580,8 +580,8 @@
   {
    "date": "2026-11-12",
    "topic_id": "HP-051",
-   "topic": "XDR typhoid \u2014 S. Typhi DNA gyrase vs azithromycin",
-   "title": "Four Whole-Cell-Active Compounds Dock Into S. Typhi GyrB at \u22128.39 to \u22129.41 kcal/mol, But Azithromycin Cannot Be Docked and the Potencies Are Phenotypic, Not Gyrase Binding",
+   "topic": "XDR typhoid — S. Typhi DNA gyrase vs azithromycin",
+   "title": "Four Whole-Cell-Active Compounds Dock Into S. Typhi GyrB at −8.39 to −9.41 kcal/mol, But Azithromycin Cannot Be Docked and the Potencies Are Phenotypic, Not Gyrase Binding",
    "file": "files/2026-11-12-health-typhoid-gyrase-azithromycin-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -646,8 +646,8 @@
   {
    "date": "2026-11-14",
    "topic_id": "HP-032",
-   "topic": "BCR-ABL T315I \u2014 imatinib resistance in CML",
-   "title": "Ponatinib Scores \u221214.36 kcal/mol on BCR-ABL1 T315I and Imatinib Scores the Same on Wild Type and Mutant: Rigid Docking Fails the Gatekeeper Negative Control",
+   "topic": "BCR-ABL T315I — imatinib resistance in CML",
+   "title": "Ponatinib Scores −14.36 kcal/mol on BCR-ABL1 T315I and Imatinib Scores the Same on Wild Type and Mutant: Rigid Docking Fails the Gatekeeper Negative Control",
    "file": "files/2026-11-14-health-bcr-abl-t315i-ponatinib.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -657,8 +657,8 @@
   {
    "date": "2026-11-14",
    "topic_id": "HP-054",
-   "topic": "Sorbitol dehydrogenase (SORD) \u2014 second polyol-pathway step, diabetic neuropathy",
-   "title": "Sorbitol Dehydrogenase Inhibitors Show No Rank Correlation on Three Docking Centres \u2014 and SORD Inhibition Already Failed to Help Diabetic Nerves in Rats",
+   "topic": "Sorbitol dehydrogenase (SORD) — second polyol-pathway step, diabetic neuropathy",
+   "title": "Sorbitol Dehydrogenase Inhibitors Show No Rank Correlation on Three Docking Centres — and SORD Inhibition Already Failed to Help Diabetic Nerves in Rats",
    "file": "files/2026-11-14-health-sorbitol-dehydrogenase-sord.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -668,7 +668,7 @@
   {
    "date": "2026-11-14",
    "topic_id": "HP-024",
-   "topic": "Leishmania trypanothione reductase \u2014 visceral leishmaniasis",
+   "topic": "Leishmania trypanothione reductase — visceral leishmaniasis",
    "title": "Rigid Docking Separates Genuine Trypanothione Reductase Inhibitors from Miltefosine but Ranks the Series Backwards",
    "file": "files/2026-11-14-health-leishmania-trypanothione-reductase.md",
    "field": "health",
@@ -679,8 +679,8 @@
   {
    "date": "2026-11-14",
    "topic_id": "HP-058",
-   "topic": "mTOR kinase domain \u2014 ATP-competitive inhibitors vs everolimus",
-   "title": "ATP-Competitive mTOR Inhibitors Are All Sub-Nanomolar but Docking Spreads Them Over 1.78 kcal/mol \u2014 and Ranks Them Backwards",
+   "topic": "mTOR kinase domain — ATP-competitive inhibitors vs everolimus",
+   "title": "ATP-Competitive mTOR Inhibitors Are All Sub-Nanomolar but Docking Spreads Them Over 1.78 kcal/mol — and Ranks Them Backwards",
    "file": "files/2026-11-14-health-mtor-kinase-inhibitors.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -690,7 +690,7 @@
   {
    "date": "2026-11-14",
    "topic_id": "HP-037",
-   "topic": "SARS-CoV-2 main protease Mpro \u2014 nirmatrelvir analogues",
+   "topic": "SARS-CoV-2 main protease Mpro — nirmatrelvir analogues",
    "title": "Rigid Docking Gets the Extremes Right on SARS-CoV-2 Mpro: the 0.04 nM Analogue Scores Best and Nirmatrelvir Ties for Last",
    "file": "files/2026-11-14-health-sars-cov-2-mpro-nirmatrelvir.md",
    "field": "health",
@@ -701,8 +701,8 @@
   {
    "date": "2026-11-15",
    "topic_id": "HP-071",
-   "topic": "BTK inhibition beyond ibrutinib \u2014 covalent vs non-covalent comparators",
-   "title": "Ibrutinib Re-Docks at \u221210.86 kcal/mol on Its Own BTK Structure, but Four Sub-Nanomolar Covalent Inhibitors Score Worse: Rigid Docking Cannot Price the Cys481 Bond",
+   "topic": "BTK inhibition beyond ibrutinib — covalent vs non-covalent comparators",
+   "title": "Ibrutinib Re-Docks at −10.86 kcal/mol on Its Own BTK Structure, but Four Sub-Nanomolar Covalent Inhibitors Score Worse: Rigid Docking Cannot Price the Cys481 Bond",
    "file": "files/2026-11-15-health-btk-ibrutinib-covalent-docking.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -712,8 +712,8 @@
   {
    "date": "2026-11-15",
    "topic_id": "HP-069",
-   "topic": "KRAS G12D \u2014 the commonest KRAS allele, still largely undrugged",
-   "title": "MRTX1133 Re-Docks at \u221212.71 kcal/mol on the KRAS G12D Switch-II Pocket and Sotorasib Scores Worst: A Corrected Docking Benchmark After a Wrong-Target Pipeline Run",
+   "topic": "KRAS G12D — the commonest KRAS allele, still largely undrugged",
+   "title": "MRTX1133 Re-Docks at −12.71 kcal/mol on the KRAS G12D Switch-II Pocket and Sotorasib Scores Worst: A Corrected Docking Benchmark After a Wrong-Target Pipeline Run",
    "file": "files/2026-11-15-health-kras-g12d-mrtx1133.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -752,13 +752,13 @@
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": "https://chemrxiv.org/doc/5e74dbca-999e-45fd-ae3a-bb7ae3b6175a",
-   "note": "Draft created (DRAFT V1, PDF+title+abstract uploaded) but metadata editor loaded blank \u2014 keywords/subject area/licence NOT set, Summary page not reached. Complete metadata in EDIT before submitting; do not re-create the draft."
+   "note": "Draft created (DRAFT V1, PDF+title+abstract uploaded) but metadata editor loaded blank — keywords/subject area/licence NOT set, Summary page not reached. Complete metadata in EDIT before submitting; do not re-create the draft."
   },
   {
    "date": "2026-11-16",
    "topic_id": "HP-035",
-   "topic": "PARP1 \u2014 synthetic lethality in BRCA-mutant cancers",
-   "title": "Olaparib Re-Docks at \u221211.24 kcal/mol on PARP1, but Rigid Docking Ranks Rucaparib Last and Cannot Reproduce the PARP-Trapping Order",
+   "topic": "PARP1 — synthetic lethality in BRCA-mutant cancers",
+   "title": "Olaparib Re-Docks at −11.24 kcal/mol on PARP1, but Rigid Docking Ranks Rucaparib Last and Cannot Reproduce the PARP-Trapping Order",
    "file": "files/2026-11-16-health-parp1-olaparib-trapping.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -768,20 +768,20 @@
   {
    "date": "2026-11-16",
    "topic_id": "HP-061",
-   "topic": "GLP-1 receptor small-molecule agonism for type 2 diabetes and obesity \u2014 beyond peptides",
-   "title": "Orforglipron Re-Docks at \u221210.8 kcal/mol in Its Own GLP-1R Pocket but Only \u22127.66 on the Pipeline's Extracellular-Domain Structure \u2014 and a ChEMBL Lead Out-Scores It There",
+   "topic": "GLP-1 receptor small-molecule agonism for type 2 diabetes and obesity — beyond peptides",
+   "title": "Orforglipron Re-Docks at −10.8 kcal/mol in Its Own GLP-1R Pocket but Only −7.66 on the Pipeline's Extracellular-Domain Structure — and a ChEMBL Lead Out-Scores It There",
    "file": "files/2026-11-16-health-glp1r-orforglipron-small-molecule.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "draft_url": "https://chemrxiv.org/doc/c0325794-88ce-4dc2-a981-357243678e45",
-   "note": "draft created; metadata editor failed to load \u2014 keywords/subject area/licence/type/ethics/conflicts/department not set; author to fill in EDIT before submit"
+   "note": "draft created; metadata editor failed to load — keywords/subject area/licence/type/ethics/conflicts/department not set; author to fill in EDIT before submit"
   },
   {
    "date": "2026-11-16",
    "topic_id": "HP-070",
    "topic": "Mutant IDH1 (R132H) inhibition in glioma and AML",
-   "title": "Ivosidenib Scores \u22128.25 kcal/mol on Wild-Type IDH1 but \u22129.35 on the R132H Mutant \u2014 and the Pipeline Picked the Wild Type",
+   "title": "Ivosidenib Scores −8.25 kcal/mol on Wild-Type IDH1 but −9.35 on the R132H Mutant — and the Pipeline Picked the Wild Type",
    "file": "files/2026-11-16-health-idh1-r132h-ivosidenib.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -792,7 +792,7 @@
    "date": "2026-11-16",
    "topic_id": "HP-074",
    "topic": "Mineralocorticoid receptor antagonism in diabetic kidney disease",
-   "title": "Finerenone Scores \u22123.41 kcal/mol on the Pipeline\u2019s 1.1 \u00c5 MR Structure but \u22126.83 on a 3.0 \u00c5 One \u2014 and Eplerenone Out-Scores It on Both",
+   "title": "Finerenone Scores −3.41 kcal/mol on the Pipeline’s 1.1 Å MR Structure but −6.83 on a 3.0 Å One — and Eplerenone Out-Scores It on Both",
    "file": "files/2026-11-16-health-mr-finerenone-steroidal-nonsteroidal.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -803,43 +803,43 @@
    "date": "2026-11-16",
    "topic_id": "HP-006",
    "topic": "SGLT2 inhibition in diabetes and kidney disease",
-   "title": "Dapagliflozin Re-Docks at \u221211.00 kcal/mol on Its Own Cryo-EM Structure \u2014 but the Screen Ranks the Most Potent Lead Last",
+   "title": "Dapagliflozin Re-Docks at −11.00 kcal/mol on Its Own Cryo-EM Structure — but the Screen Ranks the Most Potent Lead Last",
    "file": "files/2026-11-16-health-sglt2-dapagliflozin-novel-scaffold.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "draft_url": "https://chemrxiv.org/doc/6497da26-dbcb-428f-a69d-42f717ca46a4",
-   "note": "draft created; metadata editor failed to load (Cloudflare on editor subdomain, no control to click) \u2014 keywords/subject area/licence/type/ethics/conflicts not set; author to fill in EDIT before submit; retry tomorrow if still blocked"
+   "note": "draft created; metadata editor failed to load (Cloudflare on editor subdomain, no control to click) — keywords/subject area/licence/type/ethics/conflicts not set; author to fill in EDIT before submit; retry tomorrow if still blocked"
   },
   {
    "date": "2026-11-17",
    "topic_id": null,
-   "topic": "IMP-1 metallo-beta-lactamase \u2014 captopril stereoisomers (off-pool topic; no pool ID)",
+   "topic": "IMP-1 metallo-beta-lactamase — captopril stereoisomers (off-pool topic; no pool ID)",
    "title": "Rigid Docking Gets the Dicarboxylates Right on IMP-1 but Collapses Four Captopril Stereoisomers into 0.08 kcal/mol for a 60-Fold Potency Range",
    "file": "files/2026-11-17-health-imp1-captopril-stereoisomers.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-partial",
    "draft_url": "https://chemrxiv.org/doc/673ab65b-53e9-4b96-9902-dac33ad73430",
-   "note": "Adopted from an earlier 2026-11-17 run (06:47 PKT) that left no tracker entry and mislabelled the topic HP-080 (HP-080 is FGFR2). Label corrected 2026-11-17 ~16:35 PKT; dock files renamed dock-HP-080-2026-11-17*.json -> dock-IMP1-2026-11-17*.json; PDF regenerated; pack entry validates (abstract 2076 chars, 10 keywords). ChemRxiv draft still to create. ChemRxiv draft PARTIAL 2026-11-17 ~16:31 PKT: PDF uploaded, title/abstract/10 keywords verified, affiliation auto-extracted (Faculty of Pharmacy, SMBBMU, Larkana, Pakistan). Metadata editor BLOCKED by Cloudflare Turnstile loop (editor https://chemrxiv.org/dpub/editor/673ab65b-53e9-4b96-9902-dac33ad73430; Ray IDs a5be6381fdf2eb8f etc.) \u2014 subject/licence/type/ethics/conflicts NOT set, Summary page not reached. NOT submitted. Author to finish via EDIT in a normal browser, or retry tomorrow."
+   "note": "Adopted from an earlier 2026-11-17 run (06:47 PKT) that left no tracker entry and mislabelled the topic HP-080 (HP-080 is FGFR2). Label corrected 2026-11-17 ~16:35 PKT; dock files renamed dock-HP-080-2026-11-17*.json -> dock-IMP1-2026-11-17*.json; PDF regenerated; pack entry validates (abstract 2076 chars, 10 keywords). ChemRxiv draft still to create. ChemRxiv draft PARTIAL 2026-11-17 ~16:31 PKT: PDF uploaded, title/abstract/10 keywords verified, affiliation auto-extracted (Faculty of Pharmacy, SMBBMU, Larkana, Pakistan). Metadata editor BLOCKED by Cloudflare Turnstile loop (editor https://chemrxiv.org/dpub/editor/673ab65b-53e9-4b96-9902-dac33ad73430; Ray IDs a5be6381fdf2eb8f etc.) — subject/licence/type/ethics/conflicts NOT set, Summary page not reached. NOT submitted. Author to finish via EDIT in a normal browser, or retry tomorrow."
   },
   {
    "date": "2026-11-17",
    "topic_id": "HP-067",
-   "topic": "Plasmodium falciparum PI4K \u2014 next-generation antimalarial target",
+   "topic": "Plasmodium falciparum PI4K — next-generation antimalarial target",
    "title": "No Structure to Dock On: MMV390048 and the Plasmodium PI4K Target That ChEMBL and the PDB Do Not Contain",
    "file": "files/2026-11-17-health-pfpi4k-mmv390048.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "draft-ready",
    "draft_url": "https://chemrxiv.org/doc/3e24aedb-206a-47ec-b846-9626b7e6533d",
-   "note": "Docking SKIPPED honestly: no ChEMBL target for Q8I406, no PDB structure. First pipeline run DISCARDED (resolved to CHEMBL2074 human maltase, 26 maltase leads; kept as dock-HP-067-2026-11-17-WRONG-TARGET.json). Corrected computation: MMV390048 descriptors/PAINS/ToxGuard + 4 PubChem analogues (T 0.72-0.79) + human PI4KA/B counts. Pack validates (abstract 1725 chars, 8 keywords). ChemRxiv draft still to create. ChemRxiv draft READY 2026-11-17 ~16:46 PKT: editor loaded, subject Biological and Medicinal Chemistry, Working Paper, ethics Not relevant, conflicts No, licence CC-BY 4.0, department added; Summary page reached and verified. NOT submitted \u2014 author submits himself."
+   "note": "Docking SKIPPED honestly: no ChEMBL target for Q8I406, no PDB structure. First pipeline run DISCARDED (resolved to CHEMBL2074 human maltase, 26 maltase leads; kept as dock-HP-067-2026-11-17-WRONG-TARGET.json). Corrected computation: MMV390048 descriptors/PAINS/ToxGuard + 4 PubChem analogues (T 0.72-0.79) + human PI4KA/B counts. Pack validates (abstract 1725 chars, 8 keywords). ChemRxiv draft still to create. ChemRxiv draft READY 2026-11-17 ~16:46 PKT: editor loaded, subject Biological and Medicinal Chemistry, Working Paper, ethics Not relevant, conflicts No, licence CC-BY 4.0, department added; Summary page reached and verified. NOT submitted — author submits himself."
   },
   {
    "date": "2026-11-17",
    "topic_id": "HP-080",
    "topic": "FGFR2 inhibition in cholangiocarcinoma and other FGFR-driven cancers",
-   "title": "Pemigatinib Re-Docks at \u22128.83 kcal/mol on FGFR2 2PVF, but the Most Potent Measured Inhibitor Scores Worst and the Most Potent Lead Was Never Docked",
+   "title": "Pemigatinib Re-Docks at −8.83 kcal/mol on FGFR2 2PVF, but the Most Potent Measured Inhibitor Scores Worst and the Most Potent Lead Was Never Docked",
    "file": "files/2026-11-17-health-fgfr2-pemigatinib-benchmark.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -850,8 +850,8 @@
   {
    "date": "2026-11-17",
    "topic_id": "HP-073",
-   "topic": "SARS-CoV-2 papain-like protease (PLpro) \u2014 the underexploited second protease",
-   "title": "Rigid Docking Cannot Rank the GRL0617 Series on SARS-CoV-2 PLpro: the 2.67 \u00b5M Reference Scores Best and the 42 \u00b5M Compound Beats Both Leads",
+   "topic": "SARS-CoV-2 papain-like protease (PLpro) — the underexploited second protease",
+   "title": "Rigid Docking Cannot Rank the GRL0617 Series on SARS-CoV-2 PLpro: the 2.67 µM Reference Scores Best and the 42 µM Compound Beats Both Leads",
    "file": "files/2026-11-17-health-plpro-grl0617.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -862,8 +862,8 @@
   {
    "date": "2026-11-17",
    "topic_id": "HP-072",
-   "topic": "RSV fusion protein \u2014 presatovir and the prefusion F pocket",
-   "title": "Presatovir Scores \u22126.15 kcal/mol on Prefusion RSV F (5KWW), but Rigid Docking Cannot Rank RSV Fusion Inhibitors",
+   "topic": "RSV fusion protein — presatovir and the prefusion F pocket",
+   "title": "Presatovir Scores −6.15 kcal/mol on Prefusion RSV F (5KWW), but Rigid Docking Cannot Rank RSV Fusion Inhibitors",
    "file": "files/2026-11-17-health-rsv-fusion-presatovir.md",
    "field": "health",
    "platform": "ChemRxiv",
@@ -875,79 +875,79 @@
    "date": "2026-11-17",
    "topic_id": "HP-075",
    "topic": "Soluble guanylate cyclase (sGC) stimulation in pulmonary hypertension and heart failure",
-   "title": "Riociguat Re-Docks at \u22129.96 kcal/mol on the Cryo-EM sGC Structure 7D9R, but Two 3 nM Stimulators Score 2.38 kcal/mol Apart",
+   "title": "Riociguat Re-Docks at −9.96 kcal/mol on the Cryo-EM sGC Structure 7D9R, but Two 3 nM Stimulators Score 2.38 kcal/mol Apart",
    "file": "files/2026-11-17-health-sgc-riociguat.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "note": "Subagent-written. Target verified: CHEMBL2111348 (sGC complex). First pipeline run FAILED docking on 4NI2 (ligand-free catalytic domain, no_ligand_site); first corrected-driver run KILLED by runtime SIGTERM at ~43 min before writing JSON (no checkpointing) \u2014 re-run by subagent with per-dock checkpointing. Corrected dock on 7D9R 3.7 A cryo-EM at GZO (riociguat) centroid [110.71, 116.48, 123.08]. Riociguat re-dock -9.96; leads -10.97 to -8.59; rho -0.41 (n=5, standard Spearman, verified). Two leads (CHEMBL4113635, CHEMBL3906941) failed first dock, succeeded on retry (-9.12, -8.59). Two 3 nM compounds score 2.38 kcal/mol apart (best/worst of five). Pack validates (abstract 1683 chars, 9 keywords). ChemRxiv draft NOT attempted today (Turnstile block hardened; 3 consecutive total failures) \u2014 retry tomorrow."
+   "note": "Subagent-written. Target verified: CHEMBL2111348 (sGC complex). First pipeline run FAILED docking on 4NI2 (ligand-free catalytic domain, no_ligand_site); first corrected-driver run KILLED by runtime SIGTERM at ~43 min before writing JSON (no checkpointing) — re-run by subagent with per-dock checkpointing. Corrected dock on 7D9R 3.7 A cryo-EM at GZO (riociguat) centroid [110.71, 116.48, 123.08]. Riociguat re-dock -9.96; leads -10.97 to -8.59; rho -0.41 (n=5, standard Spearman, verified). Two leads (CHEMBL4113635, CHEMBL3906941) failed first dock, succeeded on retry (-9.12, -8.59). Two 3 nM compounds score 2.38 kcal/mol apart (best/worst of five). Pack validates (abstract 1683 chars, 9 keywords). ChemRxiv draft NOT attempted today (Turnstile block hardened; 3 consecutive total failures) — retry tomorrow."
   },
   {
    "date": "2026-11-18",
    "topic_id": "HP-065",
-   "topic": "M. tuberculosis DNA gyrase \u2014 fluoroquinolone alternatives for MDR-TB",
-   "title": "Four Nanomolar Gyrase Inhibitors Out-Score Moxifloxacin at the M. tuberculosis Cleavage Site \u2014 but the Margin Is Inside Vina Noise and the D94G Test Is Still Missing",
+   "topic": "M. tuberculosis DNA gyrase — fluoroquinolone alternatives for MDR-TB",
+   "title": "Four Nanomolar Gyrase Inhibitors Out-Score Moxifloxacin at the M. tuberculosis Cleavage Site — but the Margin Is Inside Vina Noise and the D94G Test Is Still Missing",
    "file": "files/2026-11-18-health-mtb-gyrase-moxifloxacin.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "note": "Pipeline first docked on 3M4I (GyrB TOPRIM fragment, wrong site) \u2014 DISCARDED; corrected re-dock on 5BS8 (moxifloxacin cleavage complex, 2.4 A) at MFX centroid [40.10, 2.92, 22.41]. Leads -10.87 to -10.37 vs moxifloxacin -9.38; margins 0.99-1.49 inside Vina noise; docking order contradicts measured IC50 order (5/10/65/780 nM) \u2014 honest negative result. Mg2+ dropped by prep (limitation stated). Pack validates (abstract 1630 chars, 8 keywords). ChemRxiv draft pending. ChemRxiv draft FAILED 2026-11-18 ~15:38-15:50 PKT: Cloudflare Turnstile verify-then-reset loop (4 rounds, 2 browser sessions), blocked before sign-in; no draft URL, nothing uploaded, nothing submitted. Retry tomorrow; do not loop today."
+   "note": "Pipeline first docked on 3M4I (GyrB TOPRIM fragment, wrong site) — DISCARDED; corrected re-dock on 5BS8 (moxifloxacin cleavage complex, 2.4 A) at MFX centroid [40.10, 2.92, 22.41]. Leads -10.87 to -10.37 vs moxifloxacin -9.38; margins 0.99-1.49 inside Vina noise; docking order contradicts measured IC50 order (5/10/65/780 nM) — honest negative result. Mg2+ dropped by prep (limitation stated). Pack validates (abstract 1630 chars, 8 keywords). ChemRxiv draft pending. ChemRxiv draft FAILED 2026-11-18 ~15:38-15:50 PKT: Cloudflare Turnstile verify-then-reset loop (4 rounds, 2 browser sessions), blocked before sign-in; no draft URL, nothing uploaded, nothing submitted. Retry tomorrow; do not loop today."
   },
   {
    "date": "2026-11-18",
    "topic_id": "HP-062",
    "topic": "FXR agonism for metabolic dysfunction-associated steatohepatitis (MASH)",
-   "title": "Sub-Nanomolar FXR Agonists Out-Dock Obeticholic Acid on the CDCA-Bound FXR Structure \u2014 but All Four Are Lipinski Failures and the Pruritus\u2013LDL Trade-Off Is a Class Problem, Not a Potency Problem",
+   "title": "Sub-Nanomolar FXR Agonists Out-Dock Obeticholic Acid on the CDCA-Bound FXR Structure — but All Four Are Lipinski Failures and the Pruritus–LDL Trade-Off Is a Class Problem, Not a Potency Problem",
    "file": "files/2026-11-18-health-fxr-mash-obeticholic-acid.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "note": "Structure audit passed: 6HL1 is the FXR LBD with CDCA bound (1.6 A) \u2014 correct site, no correction needed. Leads -10.42 to -8.88 vs OCA -8.39; measured EC50 0.09-0.251 nM; but 3/4 fail Lipinski twice (logP 6.4-8.4, MW >600); CHEMBL5559067 3rd pose +8.90; CHEMBL5559957 pose spread 2.49. No PAINS in 26 leads. Pack validates (abstract 1756 chars, 8 keywords). ChemRxiv draft NOT attempted (Turnstile block failed Paper #75 draft today; retry tomorrow)."
+   "note": "Structure audit passed: 6HL1 is the FXR LBD with CDCA bound (1.6 A) — correct site, no correction needed. Leads -10.42 to -8.88 vs OCA -8.39; measured EC50 0.09-0.251 nM; but 3/4 fail Lipinski twice (logP 6.4-8.4, MW >600); CHEMBL5559067 3rd pose +8.90; CHEMBL5559957 pose spread 2.49. No PAINS in 26 leads. Pack validates (abstract 1756 chars, 8 keywords). ChemRxiv draft NOT attempted (Turnstile block failed Paper #75 draft today; retry tomorrow)."
   },
   {
    "date": "2026-11-18",
    "topic_id": "HP-068",
-   "topic": "Trypanosoma brucei N-myristoyltransferase \u2014 sleeping-sickness drug target",
-   "title": "No Structure to Dock On: Five Single-Digit-Nanomolar TbNMT Inhibitors Share One Scaffold, and the Blood\u2013Brain Barrier \u2014 Not Potency \u2014 Decides Whether Any of Them Treats Stage-2 Sleeping Sickness",
+   "topic": "Trypanosoma brucei N-myristoyltransferase — sleeping-sickness drug target",
+   "title": "No Structure to Dock On: Five Single-Digit-Nanomolar TbNMT Inhibitors Share One Scaffold, and the Blood–Brain Barrier — Not Potency — Decides Whether Any of Them Treats Stage-2 Sleeping Sickness",
    "file": "files/2026-11-18-health-tbnmt-ddd85646-sleeping-sickness.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "note": "DOCKING SKIPPED honestly: no T. brucei NMT structure in PDB (verified; only LmNMT 5AG4-5AG7/5AGE + AfNMT 4UWI/4UWJ). First run failed UniProt on \"(TbNMT)\" parenthetical \u2014 retried with clean name, Q388H8 found, CHEMBL3988596, 60 bioactivities. Five 1-4 nM leads, all TPSA 92.15 (one scaffold). Pack validates (abstract 1841 chars). ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
+   "note": "DOCKING SKIPPED honestly: no T. brucei NMT structure in PDB (verified; only LmNMT 5AG4-5AG7/5AGE + AfNMT 4UWI/4UWJ). First run failed UniProt on \"(TbNMT)\" parenthetical — retried with clean name, Q388H8 found, CHEMBL3988596, 60 bioactivities. Five 1-4 nM leads, all TPSA 92.15 (one scaffold). Pack validates (abstract 1841 chars). ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
   },
   {
    "date": "2026-11-18",
    "topic_id": "HP-066",
-   "topic": "M. tuberculosis pantothenate synthetase (PanC) \u2014 a target with no approved drug",
-   "title": "A Target With No Approved Drug: Four PanC Inhibitors Dock at \u221210.64 to \u22127.66 kcal/mol on the 1.5 \u00c5 Fragment Structure \u2014 but the 90 nM Inhibitor Was Never Docked, and the Reference Drug Could Not Be Docked at All",
+   "topic": "M. tuberculosis pantothenate synthetase (PanC) — a target with no approved drug",
+   "title": "A Target With No Approved Drug: Four PanC Inhibitors Dock at −10.64 to −7.66 kcal/mol on the 1.5 Å Fragment Structure — but the 90 nM Inhibitor Was Never Docked, and the Reference Drug Could Not Be Docked at All",
    "file": "files/2026-11-18-health-panc-mtb-no-approved-drug.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "note": "Structure audit passed: 3IUB is Mtb PanC + fragment indole-carboxamide inhibitor (1.5 A), correct site. Actinomycin D (only named resolvable literature PanC inhibitor, IC50 22.44 uM) could NOT be docked \u2014 Vina 30-min timeout on 1,255 Da ligand; no reference benchmark. Leads -10.64 to -7.66; most potent ChEMBL PanC inhibitor CHEMBL428787 (90 nM) ranked 17th by similarity, never docked \u2014 selection-bias audit in paper. No PAINS in 26. Pack validates (abstract 1853 chars, 8 keywords). ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
+   "note": "Structure audit passed: 3IUB is Mtb PanC + fragment indole-carboxamide inhibitor (1.5 A), correct site. Actinomycin D (only named resolvable literature PanC inhibitor, IC50 22.44 uM) could NOT be docked — Vina 30-min timeout on 1,255 Da ligand; no reference benchmark. Leads -10.64 to -7.66; most potent ChEMBL PanC inhibitor CHEMBL428787 (90 nM) ranked 17th by similarity, never docked — selection-bias audit in paper. No PAINS in 26. Pack validates (abstract 1853 chars, 8 keywords). ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
   },
   {
    "date": "2026-11-18",
    "topic_id": "HP-078",
-   "topic": "Naegleria fowleri (primary amoebic meningoencephalitis, Karachi cases) \u2014 CYP51 as a drug target",
-   "title": "Posaconazole and Itraconazole Dock Best on the Naegleria CYP51 Structure \u2014 and the Ranking Matches the Published Potencies \u2014 but Karachi's Brain-Eating Amoeba Kills in Days, and No Azole Has a Measured Brain Exposure in PAM",
+   "topic": "Naegleria fowleri (primary amoebic meningoencephalitis, Karachi cases) — CYP51 as a drug target",
+   "title": "Posaconazole and Itraconazole Dock Best on the Naegleria CYP51 Structure — and the Ranking Matches the Published Potencies — but Karachi's Brain-Eating Amoeba Kills in Days, and No Azole Has a Measured Brain Exposure in PAM",
    "file": "files/2026-11-18-health-naegleria-cyp51-posaconazole.md",
    "field": "health",
    "platform": "ChemRxiv",
    "status": "drafted",
    "draft_url": null,
-   "note": "PIPELINE WRONG-TARGET FAILURE (audited): no ChEMBL target exists for NfCYP51 A0A2H4A2U9; pipeline silently used CHEMBL2074 (human maltase-glucoamylase) \u2014 its 4 leads were alpha-glucosidase inhibitors, scores DISCARDED. Corrected set: 5 published conazoles docked on 5TL8 (NfCYP51-posaconazole, 1.71 A): itra -11.59, posa -10.91 (reproduces pipeline -10.84), keto -10.21, isavu -8.96, fluco -7.01; Spearman rho 0.95 vs published EC50s (verified). PAINS alerts on posa/itra/keto (approved drugs \u2014 filter limit, stated). First redock script failed on PubChem property-key names (CanonicalSMILES not returned); fixed to ConnectivitySMILES. Pack validates. ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
+   "note": "PIPELINE WRONG-TARGET FAILURE (audited): no ChEMBL target exists for NfCYP51 A0A2H4A2U9; pipeline silently used CHEMBL2074 (human maltase-glucoamylase) — its 4 leads were alpha-glucosidase inhibitors, scores DISCARDED. Corrected set: 5 published conazoles docked on 5TL8 (NfCYP51-posaconazole, 1.71 A): itra -11.59, posa -10.91 (reproduces pipeline -10.84), keto -10.21, isavu -8.96, fluco -7.01; Spearman rho 0.95 vs published EC50s (verified). PAINS alerts on posa/itra/keto (approved drugs — filter limit, stated). First redock script failed on PubChem property-key names (CanonicalSMILES not returned); fixed to ConnectivitySMILES. Pack validates. ChemRxiv draft NOT attempted (Turnstile block; retry tomorrow)."
   },
   {
    "id": "HP-085",
    "date": "2026-11-19",
    "number": 80,
-   "title": "Two Sub-Nanomolar MDM2 Ligands Out-Dock Idasanutlin on the 1.13 \u00c5 HDM2 Structure \u2014 but the Margin Is Inside Vina Noise and the Most Potent Measured Compound Docks Worst",
+   "title": "Two Sub-Nanomolar MDM2 Ligands Out-Dock Idasanutlin on the 1.13 Å HDM2 Structure — but the Margin Is Inside Vina Noise and the Most Potent Measured Compound Docks Worst",
    "file": "files/2026-11-19-health-mdm2-idasanutlin.md",
    "status": "drafted",
    "draft_url": ""
@@ -956,7 +956,7 @@
    "id": "HP-087",
    "date": "2026-11-19",
    "number": 81,
-   "title": "Baloxavir Acid Re-Docks at \u22126.62 kcal/mol on the Influenza PA Endonuclease Fragment Structure \u2014 but the ChEMBL Ligand Set Is Undockable and the Older Inhibitor L-742,001 Scores Better",
+   "title": "Baloxavir Acid Re-Docks at −6.62 kcal/mol on the Influenza PA Endonuclease Fragment Structure — but the ChEMBL Ligand Set Is Undockable and the Older Inhibitor L-742,001 Scores Better",
    "file": "files/2026-11-19-health-influenza-pa-baloxavir.md",
    "status": "drafted",
    "draft_url": ""
@@ -965,7 +965,7 @@
    "id": "HP-091",
    "date": "2026-11-19",
    "number": 82,
-   "title": "Avibactam and Durlobactam Tie at \u22126.5 kcal/mol on OXA-23 \u2014 but the Scores Are Non-Covalent Only, and the Only Sub-Nanomolar ChEMBL Ligand Is a Boronate Vina Cannot Score",
+   "title": "Avibactam and Durlobactam Tie at −6.5 kcal/mol on OXA-23 — but the Scores Are Non-Covalent Only, and the Only Sub-Nanomolar ChEMBL Ligand Is a Boronate Vina Cannot Score",
    "file": "files/2026-11-19-health-oxa23-avibactam.md",
    "status": "drafted",
    "draft_url": ""
@@ -974,7 +974,7 @@
    "id": "HP-101",
    "date": "2026-11-19",
    "number": 83,
-   "title": "Four Sub-Nanomolar RIPK1 Ligands Bind the Allosteric Pocket at \u22128.6 to \u22129.9 kcal/mol \u2014 but They Are One Chemotype, and the Drug Already Failed in Rheumatoid Arthritis",
+   "title": "Four Sub-Nanomolar RIPK1 Ligands Bind the Allosteric Pocket at −8.6 to −9.9 kcal/mol — but They Are One Chemotype, and the Drug Already Failed in Rheumatoid Arthritis",
    "file": "files/2026-11-19-health-ripk1-gsk2982772.md",
    "status": "drafted",
    "draft_url": ""
@@ -983,7 +983,7 @@
    "id": "HP-076",
    "date": "2026-11-19",
    "number": 84,
-   "title": "Three Nanomolar NLRP3 Ligands Dock at \u22128.4 to \u22128.9 kcal/mol Behind MCC950 \u2014 but None Beats It, and MCC950 Itself Failed on Liver Toxicity",
+   "title": "Three Nanomolar NLRP3 Ligands Dock at −8.4 to −8.9 kcal/mol Behind MCC950 — but None Beats It, and MCC950 Itself Failed on Liver Toxicity",
    "file": "files/2026-11-19-health-nlrp3-mcc950.md",
    "status": "drafted",
    "draft_url": ""
@@ -996,7 +996,7 @@
    "id": "HP-098",
    "number": 85,
    "status": "drafted",
-   "title": "Asundexian Re-Docks at \u22129.05 kcal/mol on the Milvexian-Bound Factor XIa Structure \u2014 but the First Approved FXIa Inhibitor Still Leaves the Decisive Question Open",
+   "title": "Asundexian Re-Docks at −9.05 kcal/mol on the Milvexian-Bound Factor XIa Structure — but the First Approved FXIa Inhibitor Still Leaves the Decisive Question Open",
    "topic": "Factor XIa / asundexian (cardiovascular-renal)"
   },
   {
@@ -1006,7 +1006,7 @@
    "id": "HP-086",
    "number": 86,
    "status": "drafted",
-   "title": "Cabozantinib Out-Docks Selpercatinib on Wild-Type RET (7DUA) by 0.65 kcal/mol \u2014 a Margin Inside Vina Noise That Contradicts a 27-Fold Measured Potency Gap",
+   "title": "Cabozantinib Out-Docks Selpercatinib on Wild-Type RET (7DUA) by 0.65 kcal/mol — a Margin Inside Vina Noise That Contradicts a 27-Fold Measured Potency Gap",
    "draft_note": "ChemRxiv draft BLOCKED 2026-11-20 17:24-17:32 PKT (7 min): Cloudflare Turnstile verify-then-reset loop (1 checkbox attempt + fresh-browser move + 1 attempt, still blocked). Ray IDs: 91a8b7b6e7c9e25d, a5d77701899999ba, a5d77814487399ba. No sign-in attempted, no draft created, no draft URL. Retry tomorrow."
   },
   {
@@ -1016,7 +1016,7 @@
    "id": "HP-102",
    "number": 87,
    "status": "drafted",
-   "title": "The 8-Chloro Isomer of Alisertib Out-Docks Alisertib on the 1.96 \u00c5 Aurora A Structure \u2014 but the 0.33 kcal/mol Margin Is Inside Vina Noise and the Most Potent Measured Inhibitor Docks Ninth"
+   "title": "The 8-Chloro Isomer of Alisertib Out-Docks Alisertib on the 1.96 Å Aurora A Structure — but the 0.33 kcal/mol Margin Is Inside Vina Noise and the Most Potent Measured Inhibitor Docks Ninth"
   },
   {
    "date": "2026-11-20",
@@ -1037,6 +1037,56 @@
    "status": "drafted",
    "title": "The Fosfomycin Benchmark Is Broken: Non-Covalent Docking Cannot Rank MurA Inhibitors When the Reference Drug Is Covalent",
    "draft_note": "ChemRxiv draft BLOCKED 2026-11-20 17:07-17:10 PKT (3 min): Cloudflare Turnstile verify-then-reset loop (3 checkbox attempts + fresh-browser move + 1 final attempt, still blocked). Ray IDs: a5d75617fc4a934e, a5d756fa5f99934e, a5d7579f6b43934e, a5d75880de56934e, a5d758e3798a7417, a5d759c35eea965e. No sign-in attempted, no draft created, no draft URL. Retry tomorrow."
+  },
+  {
+   "date": "2026-11-21",
+   "draft_url": "",
+   "file": "files/2026-11-21-health-hif2a-belzutifan-benchmark.md",
+   "id": "HP-083",
+   "number": 90,
+   "status": "drafted",
+   "title": "Belzutifan Re-Docks at −10.94 kcal/mol on the Belzutifan-Bound HIF-2α Structure — but Two Analogues Lead by Less Than Vina Noise and the Least Potent Compound Docks Best",
+   "draft_note": "ChemRxiv draft not yet attempted (2026-11-21 run in progress)."
+  },
+  {
+   "date": "2026-11-21",
+   "draft_url": "",
+   "file": "files/2026-11-21-health-cmet-capmatinib-benchmark.md",
+   "id": "HP-084",
+   "number": 91,
+   "status": "drafted",
+   "title": "Capmatinib Re-Docks at −12.11 kcal/mol on Its Own c-MET Structure — but No Analogue Beats It Beyond Vina Noise, and the Same Molecule Scores 0.38 kcal/mol Apart by Encoding Alone",
+   "draft_note": "ChemRxiv draft not yet attempted (2026-11-21 run in progress)."
+  },
+  {
+   "date": "2026-11-21",
+   "draft_url": "",
+   "file": "files/2026-11-21-health-tyk2-deucravacitinib-benchmark.md",
+   "id": "HP-100",
+   "number": 92,
+   "status": "drafted",
+   "title": "Deucravacitinib Re-Docks at −10.19 kcal/mol on Its Own TYK2 JH2 Structure — but the Pipeline First Docked the Wrong Domain, and Three Analogues Lead by Less Than Vina Noise",
+   "draft_note": "ChemRxiv draft not yet attempted (2026-11-21 run in progress)."
+  },
+  {
+   "date": "2026-11-21",
+   "draft_url": "",
+   "file": "files/2026-11-21-health-pks13-tam16-benchmark.md",
+   "id": "HP-094",
+   "number": 93,
+   "status": "drafted",
+   "title": "TAM16 Re-Docks at −9.82 kcal/mol on the Pks13 Thioesterase Domain — but the Pipeline First Docked the Wrong Domain, Every Compound Carries a PAINS Alert, and the Most Potent Analogue Docks Worst",
+   "draft_note": "ChemRxiv draft not yet attempted (2026-11-21 run in progress)."
+  },
+  {
+   "date": "2026-11-21",
+   "draft_url": "",
+   "file": "files/2026-11-21-health-gpr40-fasiglifam-benchmark.md",
+   "id": "HP-097",
+   "number": 94,
+   "status": "drafted",
+   "title": "Fasiglifam Re-Docks at −10.23 kcal/mol on the GPR40–MK-8666 Structure — but One Analogue Leads by 1.71 kcal/mol, the Most Potent Analogue Docks Worst, and Every Analogue Is More Lipophilic Than the Drug That Failed on Liver Safety",
+   "draft_note": "ChemRxiv draft not yet attempted (2026-11-21 run in progress)."
   }
  ],
  "used_topic_ids": [
@@ -1125,6 +1175,11 @@
   "HP-086",
   "HP-102",
   "HP-092",
-  "HP-096"
+  "HP-096",
+  "HP-083",
+  "HP-084",
+  "HP-100",
+  "HP-094",
+  "HP-097"
  ]
 }

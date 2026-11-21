@@ -1,0 +1,67 @@
+{
+ "pdb_id": "5V3Y",
+ "center": [
+  4.796571428571428,
+  26.285714285714285,
+  7.4812142857142865
+ ],
+ "resolution": 1.98,
+ "note": "5V3Y Mtb Pks13 TE domain + TAM16 (5V8); centre = 5V8 centroid via dock._ligand_center; all 5 compounds carry a PAINS alert (Mannich-base motif)",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.82,
+   "poses": [
+    -9.82,
+    -8.46,
+    -8.25
+   ],
+   "pdb_id": "5V3Y",
+   "label": "TAM16 (reference; ChEMBL4443524, IC50 190 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.07,
+   "poses": [
+    -10.07,
+    -8.73,
+    -8.65
+   ],
+   "pdb_id": "5V3Y",
+   "label": "CHEMBL4443524 (TAM16 in ChEMBL, IC50 190 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.68,
+   "poses": [
+    -9.68,
+    -8.44,
+    -8.21
+   ],
+   "pdb_id": "5V3Y",
+   "label": "CHEMBL5070158 (IC50 330 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.69,
+   "poses": [
+    -8.69,
+    -8.0,
+    -7.96
+   ],
+   "pdb_id": "5V3Y",
+   "label": "CHEMBL5074531 (IC50 180 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.98,
+   "poses": [
+    -8.98,
+    -8.53,
+    -8.43
+   ],
+   "pdb_id": "5V3Y",
+   "label": "CHEMBL5270146 (IC50 290 nM)"
+  }
+ ]
+}
