@@ -1,0 +1,307 @@
+{
+ "target": "CHEMBL613497 Hepatitis B virus (ORGANISM)",
+ "n_activities_with_pchembl": 3659,
+ "n_molecules": 2513,
+ "top30": [
+  {
+   "molecule_chembl_id": "CHEMBL5314362",
+   "standard_type": "IC50",
+   "standard_value": "0.06",
+   "standard_units": "nM",
+   "pchembl": 10.22,
+   "assay_chembl_id": "CHEMBL4269044",
+   "assay_description": "Antiviral activity against Hepatitis B virus infected in human dHepaRG cells assessed as reduction in extracellular viral DNA levels after 6 days by qPCR/TaqMan",
+   "activity_id": 18775795
+  },
+  {
+   "molecule_chembl_id": "CHEMBL483",
+   "standard_type": "EC50",
+   "standard_value": "0.064",
+   "standard_units": "nM",
+   "pchembl": 10.19,
+   "assay_chembl_id": "CHEMBL4606644",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in viral DNA levels incubated for 6 days by PCR analysis",
+   "activity_id": 20613339
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5285547",
+   "standard_type": "EC50",
+   "standard_value": "0.1",
+   "standard_units": "nM",
+   "pchembl": 10.0,
+   "assay_chembl_id": "CHEMBL5246443",
+   "assay_description": "Antiviral activity against Hepatitis B virus infected in HepG2.2.15 cells",
+   "activity_id": 25046679
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4875146",
+   "standard_type": "EC50",
+   "standard_value": "0.2",
+   "standard_units": "nM",
+   "pchembl": 9.7,
+   "assay_chembl_id": "CHEMBL4841965",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2-hNTCP cells assessed as reduction in HBV DNA incubated for day 1 followed by compound washout and fresh c",
+   "activity_id": 23300512
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5206918",
+   "standard_type": "IC50",
+   "standard_value": "0.2",
+   "standard_units": "nM",
+   "pchembl": 9.7,
+   "assay_chembl_id": "CHEMBL5140686",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in HBsAg level in cellular supernatant by luminescence based microplate ",
+   "activity_id": 24823535
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5180441",
+   "standard_type": "IC50",
+   "standard_value": "0.2",
+   "standard_units": "nM",
+   "pchembl": 9.7,
+   "assay_chembl_id": "CHEMBL5140686",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in HBsAg level in cellular supernatant by luminescence based microplate ",
+   "activity_id": 24823546
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4647919",
+   "standard_type": "EC50",
+   "standard_value": "0.25",
+   "standard_units": "nM",
+   "pchembl": 9.6,
+   "assay_chembl_id": "CHEMBL4606642",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.A64 cells containing reverse transcriptase L180M/T184L/M204V mutant assessed as reduction in viral replic",
+   "activity_id": 20613351
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4859319",
+   "standard_type": "EC50",
+   "standard_value": "0.27",
+   "standard_units": "nM",
+   "pchembl": 9.57,
+   "assay_chembl_id": "CHEMBL4841965",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2-hNTCP cells assessed as reduction in HBV DNA incubated for day 1 followed by compound washout and fresh c",
+   "activity_id": 23300521
+  },
+  {
+   "molecule_chembl_id": "CHEMBL473882",
+   "standard_type": "IC50",
+   "standard_value": "0.43",
+   "standard_units": "nM",
+   "pchembl": 9.37,
+   "assay_chembl_id": "CHEMBL1033990",
+   "assay_description": "Antiviral activity against Hepatitis B virus",
+   "activity_id": 2602000
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5420544",
+   "standard_type": "EC50",
+   "standard_value": "0.45",
+   "standard_units": "nM",
+   "pchembl": 9.35,
+   "assay_chembl_id": "CHEMBL5338635",
+   "assay_description": "Antiviral activity against genotype D HBV infected in sodium taurocholate co-transporting polypeptide receptor-expressing stable HepG2 cell line assessed as sup",
+   "activity_id": 25525335
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5185557",
+   "standard_type": "IC50",
+   "standard_value": "0.5",
+   "standard_units": "nM",
+   "pchembl": 9.3,
+   "assay_chembl_id": "CHEMBL5140688",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in intracellular core HBV DNA level incubated for 6 days by qPCR analysi",
+   "activity_id": 24823635
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5286347",
+   "standard_type": "EC50",
+   "standard_value": "0.5",
+   "standard_units": "nM",
+   "pchembl": 9.3,
+   "assay_chembl_id": "CHEMBL5224885",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 assessed as HBV DNA reduction by by qPCR method",
+   "activity_id": 24977097
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5273098",
+   "standard_type": "EC50",
+   "standard_value": "0.5",
+   "standard_units": "nM",
+   "pchembl": 9.3,
+   "assay_chembl_id": "CHEMBL5224885",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 assessed as HBV DNA reduction by by qPCR method",
+   "activity_id": 24977098
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5556235",
+   "standard_type": "IC50",
+   "standard_value": "0.5",
+   "standard_units": "nM",
+   "pchembl": 9.3,
+   "assay_chembl_id": "CHEMBL5500685",
+   "assay_description": "Antiviral activity against Hepatitis B virus assessed as inhibition of HBV DNA production",
+   "activity_id": 25829213
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4105541",
+   "standard_type": "EC50",
+   "standard_value": "0.6",
+   "standard_units": "nM",
+   "pchembl": 9.22,
+   "assay_chembl_id": "CHEMBL4011428",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2(2.2.15) cells assessed as decrease in HBV genome replication after 5 days by qPCR method",
+   "activity_id": 18050938
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4081156",
+   "standard_type": "EC50",
+   "standard_value": "0.6",
+   "standard_units": "nM",
+   "pchembl": 9.22,
+   "assay_chembl_id": "CHEMBL4011428",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2(2.2.15) cells assessed as decrease in HBV genome replication after 5 days by qPCR method",
+   "activity_id": 18050942
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4878556",
+   "standard_type": "EC50",
+   "standard_value": "0.6",
+   "standard_units": "nM",
+   "pchembl": 9.22,
+   "assay_chembl_id": "CHEMBL4841965",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2-hNTCP cells assessed as reduction in HBV DNA incubated for day 1 followed by compound washout and fresh c",
+   "activity_id": 23300509
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5193379",
+   "standard_type": "EC50",
+   "standard_value": "0.6",
+   "standard_units": "nM",
+   "pchembl": 9.22,
+   "assay_chembl_id": "CHEMBL5140688",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in intracellular core HBV DNA level incubated for 6 days by qPCR analysi",
+   "activity_id": 24823605
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5203441",
+   "standard_type": "IC50",
+   "standard_value": "0.6",
+   "standard_units": "nM",
+   "pchembl": 9.22,
+   "assay_chembl_id": "CHEMBL5140688",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in intracellular core HBV DNA level incubated for 6 days by qPCR analysi",
+   "activity_id": 24823607
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5517947",
+   "standard_type": "IC50",
+   "standard_value": "0.6",
+   "standard_units": "nM",
+   "pchembl": 9.22,
+   "assay_chembl_id": "CHEMBL5500683",
+   "assay_description": "Antiviral activity against Hepatitis B virus assessed as inhibition of HbsAg level",
+   "activity_id": 25829161
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4079751",
+   "standard_type": "EC50",
+   "standard_value": "0.7",
+   "standard_units": "nM",
+   "pchembl": 9.15,
+   "assay_chembl_id": "CHEMBL4011428",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2(2.2.15) cells assessed as decrease in HBV genome replication after 5 days by qPCR method",
+   "activity_id": 18050940
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4102215",
+   "standard_type": "EC50",
+   "standard_value": "0.7",
+   "standard_units": "nM",
+   "pchembl": 9.15,
+   "assay_chembl_id": "CHEMBL4011428",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2(2.2.15) cells assessed as decrease in HBV genome replication after 5 days by qPCR method",
+   "activity_id": 18050946
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4869422",
+   "standard_type": "EC50",
+   "standard_value": "0.7",
+   "standard_units": "nM",
+   "pchembl": 9.15,
+   "assay_chembl_id": "CHEMBL4841965",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2-hNTCP cells assessed as reduction in HBV DNA incubated for day 1 followed by compound washout and fresh c",
+   "activity_id": 23300513
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5402059",
+   "standard_type": "EC50",
+   "standard_value": "0.78",
+   "standard_units": "nM",
+   "pchembl": 9.11,
+   "assay_chembl_id": "CHEMBL5338635",
+   "assay_description": "Antiviral activity against genotype D HBV infected in sodium taurocholate co-transporting polypeptide receptor-expressing stable HepG2 cell line assessed as sup",
+   "activity_id": 25525336
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4076600",
+   "standard_type": "EC50",
+   "standard_value": "0.8",
+   "standard_units": "nM",
+   "pchembl": 9.1,
+   "assay_chembl_id": "CHEMBL4011428",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2(2.2.15) cells assessed as decrease in HBV genome replication after 5 days by qPCR method",
+   "activity_id": 18050777
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5169583",
+   "standard_type": "EC50",
+   "standard_value": "0.8",
+   "standard_units": "nM",
+   "pchembl": 9.1,
+   "assay_chembl_id": "CHEMBL5140686",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 cells assessed as reduction in HBsAg level in cellular supernatant by luminescence based microplate ",
+   "activity_id": 24823537
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5276144",
+   "standard_type": "EC50",
+   "standard_value": "0.8",
+   "standard_units": "nM",
+   "pchembl": 9.1,
+   "assay_chembl_id": "CHEMBL5224885",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 assessed as HBV DNA reduction by by qPCR method",
+   "activity_id": 24977087
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4283853",
+   "standard_type": "EC50",
+   "standard_value": "0.8",
+   "standard_units": "nM",
+   "pchembl": 9.1,
+   "assay_chembl_id": "CHEMBL5224885",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2.2.15 assessed as HBV DNA reduction by by qPCR method",
+   "activity_id": 24977088
+  },
+  {
+   "molecule_chembl_id": "CHEMBL5440037",
+   "standard_type": "EC50",
+   "standard_value": "0.97",
+   "standard_units": "nM",
+   "pchembl": 9.01,
+   "assay_chembl_id": "CHEMBL5338635",
+   "assay_description": "Antiviral activity against genotype D HBV infected in sodium taurocholate co-transporting polypeptide receptor-expressing stable HepG2 cell line assessed as sup",
+   "activity_id": 25525332
+  },
+  {
+   "molecule_chembl_id": "CHEMBL4095407",
+   "standard_type": "EC50",
+   "standard_value": "1.0",
+   "standard_units": "nM",
+   "pchembl": 9.0,
+   "assay_chembl_id": "CHEMBL4011428",
+   "assay_description": "Antiviral activity against HBV infected in human HepG2(2.2.15) cells assessed as decrease in HBV genome replication after 5 days by qPCR method",
+   "activity_id": 18050783
+  }
+ ]
+}

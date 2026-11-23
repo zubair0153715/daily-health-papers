@@ -1,0 +1,31 @@
+{
+ "pdb_id": "2WGE",
+ "resolution_A": 1.8,
+ "center": [
+  38.098,
+  0.9988571428571429,
+  -6.776000000000001
+ ],
+ "discarded_pipeline_structure": {
+  "pdb_id": "6P9K",
+  "reason": "KasA in complex with O6G (JSF-3285), not thiolactomycin; pipeline score -6.11 kcal/mol is a docking into the JSF-3285 pocket, not thiolactomycin's own pocket",
+  "reference": "Inoyama et al., Cell Chem Biol 2020;27:560; PMID 32197094"
+ },
+ "discarded_chembl_target": {
+  "chembl_id": "CHEMBL2074",
+  "reason": "human maltase-glucoamylase, not M. tuberculosis KasA; zero bioactivities returned (same fallback ID as HP-090)"
+ },
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.92,
+   "poses": [
+    -6.92,
+    -6.88,
+    -5.79
+   ],
+   "pdb_id": "2WGE",
+   "label": "thiolactomycin (reference)"
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL1287604 (live)",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 2
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "OXA-48 beta-lactamase",
+  "uniprot": {
+   "accession": "Q6XEC0",
+   "entry": null,
+   "gene": "OXA-48",
+   "protein": "Beta-lactamase OXA-48",
+   "organism": "Klebsiella pneumoniae",
+   "length": 265,
+   "function": "Class D beta-lactamase which confers resistance to the beta-lactam antibiotics, including amoxicillin, and moderate resistance to cephalosporins and carbapenems such as cephalothin and imipenem; in the DH10B strain of E.coli (PubMed:14693513). Acts via hydrolysis of the beta-lactam ring (PubMed:14693513, PubMed:19477418, PubMed:27073009, PubMed:38161376). Has oxacillin-, cephalothin- and imipenem-hydrolyzing activities (PubMed:14693513, PubMed:19477418, PubMed:27073009, PubMed:38161376)",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q6XEC0/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [],
+  "chembl_target": {
+   "chembl_id": "CHEMBL1287604",
+   "name": "Beta-lactamase OXA-48",
+   "type": "SINGLE PROTEIN",
+   "organism": "Klebsiella pneumoniae",
+   "components": 1
+  }
+ },
+ "ligands_found": 1,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "C1CC(N2CC1N(C2=O)OS(=O)(=O)O)C(=O)N",
+   "similarity": 1.0,
+   "score": 99.8,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.8
+   },
+   "descriptors": {
+    "mw": 265.25,
+    "logp": -1.53,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 130.24,
+    "rotatable": 3,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C7H11N3O6S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.22,
+    "assays": {
+     "NR-AR": 0.148,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 9835049,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9835049"
+   },
+   "known_activity": null
+  },
+  {
+   "rank": 2,
+   "label": "CHEMBL127",
+   "smiles": "C[C@@H](O)[C@H]1C(=O)N2C(C(=O)O)=C(S[C@@H]3CN[C@H](C(=O)N(C)C)C3)[C@H](C)[C@H]12",
+   "similarity": 0.103,
+   "score": 64.1,
+   "score_detail": {
+    "similarity_40": 4.1,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 20.0
+   },
+   "descriptors": {
+    "mw": 383.47,
+    "logp": -0.31,
+    "hbd": 3,
+    "hba": 6,
+    "tpsa": 110.18,
+    "rotatable": 5,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C17H25N3O5S"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "measured",
+    "assays": {
+     "NR-AR": 0,
+     "NR-AR-LBD": 0,
+     "NR-AhR": 0,
+     "NR-Aromatase": 0,
+     "NR-ER": 0,
+     "NR-ER-LBD": 0,
+     "NR-PPAR-gamma": 0,
+     "SR-ARE": 0,
+     "SR-ATAD5": 0,
+     "SR-HSE": 0,
+     "SR-MMP": null,
+     "SR-p53": 0
+    }
+   },
+   "known_activity": {
+    "pchembl": "6.07",
+    "activity": "Kd 850.0 nM"
+   }
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "8PEB",
+  "resolution": 1.17,
+  "center": [
+   -6.64,
+   6.02,
+   10.26
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.29,
+    "poses": [
+     -7.29,
+     -6.9,
+     -6.75
+    ],
+    "pdb_id": "8PEB",
+    "label": "CHEMBL127",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.27,
+    "poses": [
+     -6.27,
+     -6.24,
+     -5.18
+    ],
+    "pdb_id": "8PEB",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "OXA-48 beta-lactamase",
+  "reference": "avibactam"
+ }
+}

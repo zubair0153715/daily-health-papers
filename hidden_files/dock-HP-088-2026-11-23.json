@@ -1,0 +1,155 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL5823 (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "HIV-1 reverse transcriptase (NNRTI pocket)",
+  "uniprot": {
+   "accession": "P03366",
+   "entry": null,
+   "gene": "gag-pol",
+   "protein": "Gag-Pol polyprotein",
+   "organism": "Human immunodeficiency virus type 1 group M subtype B (isolate BH10)",
+   "length": 1447,
+   "function": "Mediates, with Gag polyprotein, the essential events in virion assembly, including binding the plasma membrane, making the protein-protein interactions necessary to create spherical particles, recruiting the viral Env proteins, and packaging the genomic RNA via direct interactions with the RNA packaging sequence (Psi). Gag-Pol polyprotein may regulate its own translation, by the binding genomic RNA in the 5'-UTR. At low concentration, the polyprotein would promote translation, whereas at high concentration, the polyprotein would encapsidate genomic RNA and then shut off translation",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P03366/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [],
+  "chembl_target": {
+   "chembl_id": "CHEMBL5823",
+   "name": "Gag-Pol polyprotein",
+   "type": "SINGLE PROTEIN",
+   "organism": "Human immunodeficiency virus type 1 group M subtype B (isolate BH10)(HIV-1)",
+   "components": 1
+  }
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CN1C(=NNC1=O)CN2C=CC(=C(C2=O)OC3=CC(=CC(=C3)C#N)Cl)C(F)(F)F",
+   "similarity": 1.0,
+   "score": 97.5,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 17.5
+   },
+   "descriptors": {
+    "mw": 425.75,
+    "logp": 2.65,
+    "hbd": 1,
+    "hba": 5,
+    "tpsa": 105.7,
+    "rotatable": 4,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C17H11ClF3N5O3"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.241,
+    "assays": {
+     "NR-AR": 0.063,
+     "NR-AR-LBD": 0.095,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.225,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.203,
+     "SR-ARE": 0.328,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.101,
+     "SR-MMP": 0.289,
+     "SR-p53": 0.21
+    }
+   },
+   "pubchem": {
+    "cid": 58460047,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/58460047"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "2HS1",
+  "resolution": 0.84,
+  "center": [
+   1.46,
+   8.12,
+   37.66
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.3,
+    "poses": [
+     -9.3,
+     -9.14,
+     -9.03
+    ],
+    "pdb_id": "2HS1",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "HIV-1 reverse transcriptase (NNRTI pocket)",
+  "reference": "doravirine"
+ }
+}

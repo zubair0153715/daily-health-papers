@@ -1,0 +1,31 @@
+{
+ "pdb_id": "4DXD",
+ "resolution_A": 2.0,
+ "center": [
+  -13.756130434782609,
+  41.85,
+  18.238608695652175
+ ],
+ "discarded_pipeline_structure": {
+  "pdb_id": "3VOA",
+  "reason": "GDP-form SaFtsZ; centre used was the GDP nucleotide site, not the PC190723 interdomain cleft; pipeline score -8.83 kcal/mol is a docking into the wrong site",
+  "reference": "Matsui et al., Acta Crystallogr D Biol Crystallogr 2012;68:1175-1188; PMID 22948918"
+ },
+ "discarded_chembl_target": {
+  "chembl_id": "CHEMBL2074",
+  "reason": "human maltase-glucoamylase, not S. aureus FtsZ; zero bioactivities returned"
+ },
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.43,
+   "poses": [
+    -9.43,
+    -9.37,
+    -9.16
+   ],
+   "pdb_id": "4DXD",
+   "label": "PC190723 (reference)"
+  }
+ ]
+}

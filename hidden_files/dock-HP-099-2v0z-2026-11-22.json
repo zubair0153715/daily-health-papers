@@ -1,0 +1,45 @@
+{
+ "pdb_id": "2V0Z",
+ "center": [
+  7.621051282051282,
+  46.19471794871795,
+  69.09007692307692
+ ],
+ "resolution": 2.2,
+ "note": "2V0Z human renin + aliskiren, 2.2 A; centre = aliskiren centroid via dock._ligand_center; aliskiren is the self-dock control on its own structure",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.78,
+   "poses": [
+    -8.78,
+    -8.54,
+    -8.11
+   ],
+   "pdb_id": "2V0Z",
+   "label": "aliskiren (reference)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -8.79,
+   "poses": [
+    -8.79,
+    -8.74,
+    -8.45
+   ],
+   "pdb_id": "2V0Z",
+   "label": "CHEMBL3907708 (IC50 0.039 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.01,
+   "poses": [
+    -10.01,
+    -9.45,
+    -9.43
+   ],
+   "pdb_id": "2V0Z",
+   "label": "CHEMBL1276275 (IC50 0.039 nM)"
+  }
+ ]
+}

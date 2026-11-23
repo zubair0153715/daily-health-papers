@@ -1,0 +1,67 @@
+{
+ "pdb_id": "4RX0",
+ "center": [
+  -26.363614285714284,
+  -11.7034,
+  -16.464100000000002
+ ],
+ "resolution": 2.25,
+ "note": "4RX0 PfDHODH + DSM265, 2.25 A; centre = DSM265 centroid via dock._ligand_center; DSM265 is the self-dock control on its own structure",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.7,
+   "poses": [
+    -10.7,
+    -7.84,
+    -7.72
+   ],
+   "pdb_id": "4RX0",
+   "label": "DSM265 (reference)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.37,
+   "poses": [
+    -10.37,
+    -7.92,
+    -7.17
+   ],
+   "pdb_id": "4RX0",
+   "label": "CHEMBL1956285 (IC50 27.0 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.78,
+   "poses": [
+    -10.78,
+    -9.33,
+    -8.16
+   ],
+   "pdb_id": "4RX0",
+   "label": "CHEMBL1956283 (IC50 28.0 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.86,
+   "poses": [
+    -11.86,
+    -9.5,
+    -8.67
+   ],
+   "pdb_id": "4RX0",
+   "label": "CHEMBL1738786 (IC50 38.0 nM)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.16,
+   "poses": [
+    -12.16,
+    -9.12,
+    -9.0
+   ],
+   "pdb_id": "4RX0",
+   "label": "CHEMBL3289670 (IC50 35.0 nM)"
+  }
+ ]
+}

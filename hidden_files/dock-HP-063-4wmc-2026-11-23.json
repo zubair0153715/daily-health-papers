@@ -1,0 +1,38 @@
+{
+ "pdb_id": "4WMC",
+ "resolution_A": 2.3,
+ "center": [
+  42.21070588235294,
+  34.64288235294117,
+  52.55705882352942
+ ],
+ "discarded_pipeline_structure": {
+  "pdb_id": "8PEB",
+  "reason": "OXA-48_Q5 quintuple mutant, apo structure centred on a malonate buffer ion; pipeline scores avibactam -6.27 and meropenem -7.29 are dockings into a mutant enzyme, not wild-type OXA-48",
+  "reference": "Frohlich et al., Nat Catal 2024;7:499-509; PMID 38828429"
+ },
+ "covalent_caveat": "avibactam acylates Ser70 covalently; non-covalent Vina scores are an encounter-complex proxy only and cannot rank covalent DBO inhibitors",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.73,
+   "poses": [
+    -6.73,
+    -6.23
+   ],
+   "pdb_id": "4WMC",
+   "label": "avibactam (reference, covalent inhibitor)"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.95,
+   "poses": [
+    -7.95,
+    -7.48,
+    -6.87
+   ],
+   "pdb_id": "4WMC",
+   "label": "CHEMBL127 (meropenem, carbapenem substrate; Kd 850 nM)"
+  }
+ ]
+}

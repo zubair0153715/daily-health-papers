@@ -1,0 +1,27 @@
+{
+ "pdb_id": "7Z2G",
+ "resolution_A": 3.65,
+ "center": [
+  72.10068965517242,
+  82.05403448275862,
+  65.5753448275862
+ ],
+ "discarded_pipeline_structure": {
+  "pdb_id": "2HS1",
+  "reason": "HIV-1 protease (V32I) + darunavir, not reverse transcriptase; pipeline score -9.3 kcal/mol on 2HS1 is invalid for the RT question",
+  "reference": "Kovalevsky et al., J Mol Biol 2006;363:161-173; PMID 16962136"
+ },
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.85,
+   "poses": [
+    -11.85,
+    -11.68,
+    -8.16
+   ],
+   "pdb_id": "7Z2G",
+   "label": "doravirine (reference)"
+  }
+ ]
+}
