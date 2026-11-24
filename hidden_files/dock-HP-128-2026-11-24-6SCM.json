@@ -1,0 +1,96 @@
+{
+ "topic": {
+  "target": "Son of sevenless homolog 1 (SOS1)",
+  "reference": "BI-3406",
+  "topic_id": "HP-128",
+  "date": "2026-11-24"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "6SCM",
+  "resolution": 1.87,
+  "center": [
+   1.31,
+   -31.24,
+   -44.42
+  ],
+  "center_note": "co-crystallised BI-3406 (L7H) centroid, chain A \u2014 verified by dock._ligand_center",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline docked BI-3406 (-8.88) on 6V9M, but the centre audit shows 6V9M's largest drug-like HETATM group is GNP, a GTP analogue bound to KRAS chain A \u2014 the drug was docked into the KRAS GTP pocket, not SOS1. That score is DISCARDED. 6SCM is BI-3406's own co-crystal; this run docks BI-3406 + MRTX0902 + BAY-293 on it. BI-3406 itself never entered the clinic; clinical data belong to analogue BI 1701963.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.07,
+    "poses": [
+     -9.07,
+     -9.01,
+     -8.36
+    ],
+    "pdb_id": "6SCM",
+    "label": "BI-3406 (QUERY, reference)",
+    "note": "preclinical SOS1::KRAS PPI inhibitor; clinical analogue BI 1701963",
+    "descriptors": {
+     "mw": 462.47,
+     "logp": 4.89,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 91.52,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C23H25F3N4O3"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.11,
+    "poses": [
+     -8.11,
+     -8.09,
+     -7.47
+    ],
+    "pdb_id": "6SCM",
+    "label": "BAY-293",
+    "note": "Bayer SOS1 tool inhibitor; research use",
+    "descriptors": {
+     "mw": 448.59,
+     "logp": 5.58,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 68.3,
+     "rotatable": 8,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C25H28N4O2S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.1,
+    "poses": [
+     -8.1,
+     -7.63,
+     -7.32
+    ],
+    "pdb_id": "6SCM",
+    "label": "MRTX0902",
+    "note": "brain-penetrant SOS1 inhibitor; Phase 1 NCT05578092",
+    "descriptors": {
+     "mw": 388.48,
+     "logp": 3.52,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 86.96,
+     "rotatable": 4,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C22H24N6O"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

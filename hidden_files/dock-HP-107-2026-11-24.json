@@ -1,0 +1,148 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Glucagon receptor (GCGR)",
+  "uniprot": {
+   "accession": "P47871",
+   "entry": null,
+   "gene": "GCGR",
+   "protein": "Glucagon receptor",
+   "organism": "Homo sapiens",
+   "length": 477,
+   "function": "G protein-coupled receptor for glucagon that plays a central role in the regulation of blood glucose levels and glucose homeostasis. Regulates the rate of hepatic glucose production by promoting glycogen hydrolysis and gluconeogenesis. Plays an important role in mediating the responses to fasting. Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of down-stream effectors, such as adenylate cyclase (PubMed:32193322, PubMed:38346960). Promotes activation of adenylate cyclase. Besides, plays a role in signaling via a phosphatidylinositol-calcium second messenger system",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/P47871/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CC1=CC(=CC(=C1C2=CC=C(C=C2)C(C)(C)C)C)OC(CCC(F)(F)F)C3=CC=C(C=C3)C(=O)NCCC(=O)O",
+   "similarity": 1.0,
+   "score": 79.7,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 0,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 19.7
+   },
+   "descriptors": {
+    "mw": 555.64,
+    "logp": 7.94,
+    "hbd": 2,
+    "hba": 3,
+    "tpsa": 75.63,
+    "rotatable": 10,
+    "lipinski_violations": 2,
+    "lipinski_pass": false,
+    "veber_pass": true,
+    "formula": "C32H36F3NO4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.35,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.0,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.096,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.094,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.0,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 91933867,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/91933867"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "5EE7",
+  "resolution": 2.5,
+  "center": [
+   -30.4,
+   1.77,
+   -36.73
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.2,
+    "poses": [
+     -8.2,
+     -7.83,
+     -7.63
+    ],
+    "pdb_id": "5EE7",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Glucagon receptor (GCGR)",
+  "reference": "LY2409021"
+ }
+}

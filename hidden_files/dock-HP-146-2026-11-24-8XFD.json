@@ -1,0 +1,96 @@
+{
+ "topic": {
+  "target": "Red-cell pyruvate kinase (PKR/PKLR)",
+  "reference": "mitapivat",
+  "topic_id": "HP-146",
+  "date": "2026-11-24"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "8XFD",
+  "resolution": 2.1,
+  "center": [
+   9.1,
+   11.33,
+   23.79
+  ],
+  "center_note": "co-crystallised mitapivat (WV2) centroid, chain B \u2014 verified by dock._ligand_center; FBP (20 atoms) correctly not picked",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline docked only mitapivat (-12.02) on 7FS3 (LIVER pyruvate kinase, PKL, with modulator 15) because ChEMBL ligand retrieval returned no_data. 7FS3 is the same PKLR gene but the wrong isoform for a red-cell paper; this run uses 8XFD, erythrocyte PK with mitapivat itself bound, and adds etavopivat + tebapivat. The 7FS3 score is retained only as a cross-isoform sensitivity check.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.15,
+    "poses": [
+     -11.15,
+     -10.85,
+     -10.11
+    ],
+    "pdb_id": "8XFD",
+    "label": "etavopivat",
+    "note": "investigational PKR activator; HIBISCUS Phase 2/3, NDA filed Nov 2026",
+    "descriptors": {
+     "mw": 457.51,
+     "logp": 0.77,
+     "hbd": 1,
+     "hba": 7,
+     "tpsa": 109.27,
+     "rotatable": 5,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C22H23N3O6S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.06,
+    "poses": [
+     -11.06,
+     -10.97,
+     -10.96
+    ],
+    "pdb_id": "8XFD",
+    "label": "mitapivat (QUERY, reference)",
+    "note": "approved PKR activator (FDA 2022 PK deficiency; Dec 2025 thalassaemia)",
+    "descriptors": {
+     "mw": 450.56,
+     "logp": 3.2,
+     "hbd": 1,
+     "hba": 5,
+     "tpsa": 82.61,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C24H26N4O3S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.32,
+    "poses": [
+     -8.32,
+     -8.27,
+     -8.21
+    ],
+    "pdb_id": "8XFD",
+    "label": "tebapivat (AG-946)",
+    "note": "investigational PKR activator; SCD programme stopped Jul 2026",
+    "descriptors": {
+     "mw": 392.45,
+     "logp": 1.68,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 120.3,
+     "rotatable": 4,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C18H16N8OS"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

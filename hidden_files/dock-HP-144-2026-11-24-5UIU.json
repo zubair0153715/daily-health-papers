@@ -1,0 +1,120 @@
+{
+ "topic": {
+  "target": "Interleukin-1 receptor-associated kinase 4 (IRAK4)",
+  "reference": "PF-06650833",
+  "topic_id": "HP-144",
+  "date": "2026-11-24"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "5UIU",
+  "resolution": 2.02,
+  "center": [
+   -25.84,
+   -39.43,
+   10.3
+  ],
+  "center_note": "co-crystallised PF-06650833 (8CG) centroid, chain A \u2014 verified by dock._ligand_center; phospho-residues TPO/SEP correctly excluded",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Primary template is 5UIU, PF-06650833's own co-crystal (Lee et al. J Med Chem 2017; ligand 8CG verified as PF-06650833, C18H20FN3O4). The 6EGE run is retained as a cross-structure sensitivity check. Zimlovisertib was NOT added: it is the same compound as PF-06650833.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.78,
+    "poses": [
+     -10.78,
+     -10.34,
+     -10.24
+    ],
+    "pdb_id": "5UIU",
+    "label": "emavusertib (CA-4948)",
+    "note": "IRAK4/FLT3 inhibitor; clinical in MDS/AML, lymphoma",
+    "descriptors": {
+     "mw": 491.51,
+     "logp": 2.24,
+     "hbd": 2,
+     "hba": 11,
+     "tpsa": 142.88,
+     "rotatable": 5,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C24H25N7O5"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.81,
+    "poses": [
+     -9.81,
+     -9.75,
+     -9.23
+    ],
+    "pdb_id": "5UIU",
+    "label": "BAY-1834845",
+    "note": "Bayer IRAK4 inhibitor; preclinical/clinical-stage",
+    "descriptors": {
+     "mw": 470.47,
+     "logp": 2.97,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 114.18,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C20H21F3N4O4S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.43,
+    "poses": [
+     -9.43,
+     -9.32,
+     -9.12
+    ],
+    "pdb_id": "5UIU",
+    "label": "PF-06650833 (QUERY, reference)",
+    "note": "Pfizer IRAK4 inhibitor; also named zimlovisertib \u2014 same compound",
+    "descriptors": {
+     "mw": 361.37,
+     "logp": 1.58,
+     "hbd": 2,
+     "hba": 5,
+     "tpsa": 103.54,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C18H20FN3O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.23,
+    "poses": [
+     -9.23,
+     -9.23,
+     -9.07
+    ],
+    "pdb_id": "5UIU",
+    "label": "ND-2158",
+    "note": "Nimbus IRAK4 inhibitor; preclinical",
+    "descriptors": {
+     "mw": 446.57,
+     "logp": 1.98,
+     "hbd": 2,
+     "hba": 8,
+     "tpsa": 110.8,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C22H30N4O4S"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

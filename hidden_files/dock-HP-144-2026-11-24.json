@@ -1,0 +1,148 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for n/a (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Interleukin-1 receptor-associated kinase 4 (IRAK4)",
+  "uniprot": {
+   "accession": "Q9NWZ3",
+   "entry": null,
+   "gene": "IRAK4",
+   "protein": "Interleukin-1 receptor-associated kinase 4",
+   "organism": "Homo sapiens",
+   "length": 460,
+   "function": "Serine/threonine-protein kinase that plays a critical role in initiating innate immune response against foreign pathogens. Involved in Toll-like receptor (TLR) and IL-1R signaling pathways (PubMed:17878374). Is rapidly recruited by MYD88 to the receptor-signaling complex upon TLR activation to form the Myddosome together with IRAK2. Phosphorylates initially IRAK1, thus stimulating the kinase activity and intensive autophosphorylation of IRAK1. Phosphorylates E3 ubiquitin ligases Pellino proteins (PELI1, PELI2 and PELI3) to promote pellino-mediated polyubiquitination of IRAK1. Then, the ubiquitin-binding domain of IKBKG/NEMO binds to polyubiquitinated IRAK1 bringing together the IRAK1-MAP3K7/TAK1-TRAF6 complex and the NEMO-IKKA-IKKB complex. In turn, MAP3K7/TAK1 activates IKKs (CHUK/IKKA an",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q9NWZ3/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": []
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCC1C(NC(=O)C1F)COC2=NC=CC3=CC(=C(C=C32)OC)C(=O)N",
+   "similarity": 1.0,
+   "score": 98.3,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 10,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.3
+   },
+   "descriptors": {
+    "mw": 361.37,
+    "logp": 1.58,
+    "hbd": 2,
+    "hba": 5,
+    "tpsa": 103.54,
+    "rotatable": 6,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": true,
+    "formula": "C18H20FN3O4"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.309,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.0,
+     "NR-AhR": 0.512,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.0,
+     "NR-ER-LBD": 0.0,
+     "NR-PPAR-gamma": 0.0,
+     "SR-ARE": 0.346,
+     "SR-ATAD5": 0.0,
+     "SR-HSE": 0.083,
+     "SR-MMP": 0.085,
+     "SR-p53": 0.0
+    }
+   },
+   "pubchem": {
+    "cid": 118414016,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/118414016"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": true,
+  "pdb_id": "6EGE",
+  "resolution": 1.4,
+  "center": [
+   -13.32,
+   -12.0,
+   -6.41
+  ],
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.72,
+    "poses": [
+     -9.72,
+     -9.31,
+     -9.16
+    ],
+    "pdb_id": "6EGE",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Interleukin-1 receptor-associated kinase 4 (IRAK4)",
+  "reference": "PF-06650833"
+ }
+}

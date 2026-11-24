@@ -929,6 +929,438 @@
    "reference_drug": "alisertib (investigational, reference only)",
    "angle": "Dock AURKA inhibitors vs alisertib; state no approved AURKA drug exists",
    "status": "unused"
+  },
+  {
+   "angle": "Dock leads vs SGLT1; compare vs sotagliflozin; note SGLT1 vs SGLT2 selectivity honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-103",
+   "problem": "SGLT1 inhibition for postprandial glucose control — gut + renal dual role",
+   "reference_drug": "sotagliflozin",
+   "status": "unused",
+   "target": "Sodium-glucose cotransporter 1 (SGLT1)"
+  },
+  {
+   "angle": "Dock leads vs ACC; compare vs firsocostat; state liver-targeting limits honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-104",
+   "problem": "Acetyl-CoA carboxylase (ACC) inhibition for MASLD / type 2 diabetes",
+   "reference_drug": "firsocostat (investigational, reference only)",
+   "status": "unused",
+   "target": "Acetyl-CoA carboxylase 1/2 (ACC1/2)"
+  },
+  {
+   "angle": "Dock leads vs SCD1; compare vs aramchol; note skin/eye on-target risks honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-105",
+   "problem": "Stearoyl-CoA desaturase 1 (SCD1) inhibition for metabolic disease",
+   "reference_drug": "aramchol (investigational, reference only)",
+   "status": "unused",
+   "target": "Stearoyl-CoA desaturase 1 (SCD1)"
+  },
+  {
+   "angle": "Dock leads vs DGAT1; compare vs pradigastat; state GI-tolerability limits honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-106",
+   "problem": "DGAT1 inhibition for obesity / postprandial triglycerides",
+   "reference_drug": "pradigastat (discontinued, reference only)",
+   "status": "unused",
+   "target": "Diacylglycerol O-acyltransferase 1 (DGAT1)"
+  },
+  {
+   "angle": "Dock leads vs GCGR; compare vs LY2409021; note LDL/hepatic-steatosis signals honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-107",
+   "problem": "Glucagon receptor (GCGR) antagonism for fasting hyperglycaemia",
+   "reference_drug": "LY2409021 (discontinued, reference only)",
+   "status": "unused",
+   "target": "Glucagon receptor (GCGR)"
+  },
+  {
+   "angle": "Dock leads vs FBP1; compare vs MB06322; state lactic-acidosis caution honestly",
+   "area": "diabetes-metabolic",
+   "id": "HP-108",
+   "problem": "Fructose-1,6-bisphosphatase (FBPase) inhibition for hepatic glucose output",
+   "reference_drug": "MB06322 (CS-917, discontinued, reference only)",
+   "status": "unused",
+   "target": "Fructose-1,6-bisphosphatase 1 (FBP1)"
+  },
+  {
+   "angle": "Dock leads vs CTX-M-15; compare vs avibactam acylation site",
+   "area": "antimicrobial-resistance",
+   "id": "HP-109",
+   "problem": "CTX-M-15 extended-spectrum beta-lactamase in E. coli",
+   "reference_drug": "avibactam (as part of ceftazidime-avibactam)",
+   "status": "unused",
+   "target": "CTX-M-15 beta-lactamase"
+  },
+  {
+   "angle": "Dock leads vs IMP-1; compare vs taniborbactam; note zinc-chelation PAINS honestly",
+   "area": "antimicrobial-resistance",
+   "id": "HP-110",
+   "problem": "IMP-1 metallo-beta-lactamase — no approved inhibitor",
+   "reference_drug": "taniborbactam (investigational, reference only)",
+   "status": "unused",
+   "target": "Imipenemase 1 (IMP-1) metallo-beta-lactamase"
+  },
+  {
+   "angle": "Dock leads vs LasR ligand pocket; compare vs literature antagonists; anti-virulence framing",
+   "area": "antimicrobial-resistance",
+   "id": "HP-111",
+   "problem": "P. aeruginosa LasR quorum sensing — anti-virulence, not killing",
+   "reference_drug": "none approved (honest — compare vs literature LasR antagonists)",
+   "status": "unused",
+   "target": "Pseudomonas aeruginosa LasR quorum-sensing regulator"
+  },
+  {
+   "angle": "Dock leads vs S. aureus DHFR; compare vs iclaprim; note human-DHFR selectivity honestly",
+   "area": "antimicrobial-resistance",
+   "id": "HP-112",
+   "problem": "S. aureus dihydrofolate reductase — MRSA folate pathway",
+   "reference_drug": "iclaprim (investigational, reference only)",
+   "status": "unused",
+   "target": "Staphylococcus aureus dihydrofolate reductase (DHFR)"
+  },
+  {
+   "angle": "Dock leads vs SrtA active site; compare vs literature inhibitors; anti-virulence framing",
+   "area": "antimicrobial-resistance",
+   "id": "HP-113",
+   "problem": "S. aureus sortase A — anti-virulence cell-wall anchoring",
+   "reference_drug": "none approved (honest — compare vs literature SrtA inhibitors)",
+   "status": "unused",
+   "target": "Staphylococcus aureus sortase A (SrtA)"
+  },
+  {
+   "angle": "Dock leads vs PBP3; compare vs ceftazidime; note efflux/porin limits honestly",
+   "area": "antimicrobial-resistance",
+   "id": "HP-114",
+   "problem": "P. aeruginosa PBP3 — beta-lactam target in a hard pathogen",
+   "reference_drug": "ceftazidime",
+   "status": "unused",
+   "target": "Pseudomonas aeruginosa penicillin-binding protein 3 (PBP3)"
+  },
+  {
+   "angle": "Dock leads vs MmpL3; compare vs SQ109; note proton-motive-force liabilities honestly",
+   "area": "tuberculosis",
+   "id": "HP-115",
+   "problem": "M. tuberculosis MmpL3 — mycolic-acid transporter",
+   "reference_drug": "SQ109 (investigational, reference only)",
+   "status": "unused",
+   "target": "M. tuberculosis MmpL3 mycolic-acid transporter"
+  },
+  {
+   "angle": "Dock leads vs EmbB; compare vs ethambutol; note ethambutol-resistance mutations honestly",
+   "area": "tuberculosis",
+   "id": "HP-116",
+   "problem": "M. tuberculosis EmbB arabinosyltransferase — ethambutol target",
+   "reference_drug": "ethambutol",
+   "status": "unused",
+   "target": "M. tuberculosis arabinosyltransferase EmbB"
+  },
+  {
+   "angle": "Dock leads vs EthR; compare vs literature inhibitors; ethionamide-booster framing",
+   "area": "tuberculosis",
+   "id": "HP-117",
+   "problem": "M. tuberculosis EthR — transcriptional repressor, ethionamide booster target",
+   "reference_drug": "none approved (honest — compare vs literature EthR inhibitors)",
+   "status": "unused",
+   "target": "M. tuberculosis EthR transcriptional regulator"
+  },
+  {
+   "angle": "Dock leads vs GlgE; compare vs literature inhibitors; note suicide-substrate mechanism honestly",
+   "area": "tuberculosis",
+   "id": "HP-118",
+   "problem": "M. tuberculosis GlgE — maltose-1-phosphate pathway, suicide-substrate angle",
+   "reference_drug": "none approved (honest — compare vs literature GlgE inhibitors)",
+   "status": "unused",
+   "target": "M. tuberculosis maltosyltransferase GlgE"
+  },
+  {
+   "angle": "Dock leads vs PfPKG; compare vs ML10; note human-PKG selectivity honestly",
+   "area": "malaria-parasitic",
+   "id": "HP-119",
+   "problem": "P. falciparum cGMP-dependent protein kinase (PfPKG) — transmission-blocking",
+   "reference_drug": "ML10 (investigational, reference only)",
+   "status": "unused",
+   "target": "Plasmodium falciparum cGMP-dependent protein kinase (PfPKG)"
+  },
+  {
+   "angle": "Dock leads vs PfCRT; chloroquine as the failing comparator; chemosensitiser framing",
+   "area": "malaria-parasitic",
+   "id": "HP-120",
+   "problem": "P. falciparum chloroquine resistance transporter (PfCRT) — reversing chloroquine failure",
+   "reference_drug": "chloroquine (failing drug — shows the gap)",
+   "status": "unused",
+   "target": "Plasmodium falciparum chloroquine resistance transporter (PfCRT)"
+  },
+  {
+   "angle": "Dock leads vs PTR1; compare vs methotrexate; note DHFR+PTR1 dual-inhibition logic honestly",
+   "area": "malaria-parasitic",
+   "id": "HP-121",
+   "problem": "T. brucei pteridine reductase 1 (PTR1) — antifolate resistance bypass",
+   "reference_drug": "methotrexate (repurposed comparator)",
+   "status": "unused",
+   "target": "Trypanosoma brucei pteridine reductase 1 (PTR1)"
+  },
+  {
+   "angle": "Dock leads vs SmHDAC8; compare vs literature inhibitors; note human-HDAC selectivity honestly",
+   "area": "malaria-parasitic",
+   "id": "HP-122",
+   "problem": "S. mansoni histone deacetylase 8 (SmHDAC8) — new schistosomiasis target",
+   "reference_drug": "none approved (honest — compare vs literature SmHDAC8 inhibitors)",
+   "status": "unused",
+   "target": "Schistosoma mansoni histone deacetylase 8 (SmHDAC8)"
+  },
+  {
+   "angle": "Dock leads vs falcipain-2; compare vs literature inhibitors; note cysteine-protease PAINS honestly",
+   "area": "malaria-parasitic",
+   "id": "HP-123",
+   "problem": "P. falciparum falcipain-2 — haemoglobin-degrading cysteine protease",
+   "reference_drug": "none approved (honest — compare vs literature falcipain inhibitors)",
+   "status": "unused",
+   "target": "Plasmodium falciparum falcipain-2"
+  },
+  {
+   "angle": "Dock leads vs Wee1; compare vs adavosertib; note myelosuppression limits honestly",
+   "area": "oncology",
+   "id": "HP-124",
+   "problem": "Wee1 kinase inhibition — G2/M checkpoint, synthetic lethality",
+   "reference_drug": "adavosertib (investigational, reference only)",
+   "status": "unused",
+   "target": "Wee1 kinase (WEE1)"
+  },
+  {
+   "angle": "Dock leads vs ATR; compare vs berzosertib; note ATR/ATM selectivity honestly",
+   "area": "oncology",
+   "id": "HP-125",
+   "problem": "ATR kinase inhibition — replication-stress cancers",
+   "reference_drug": "berzosertib (investigational, reference only)",
+   "status": "unused",
+   "target": "Ataxia telangiectasia and Rad3-related kinase (ATR)"
+  },
+  {
+   "angle": "Dock leads vs SHP2 allosteric pocket; compare vs TNO155; note phosphatase-selectivity honestly",
+   "area": "oncology",
+   "id": "HP-126",
+   "problem": "SHP2 (PTPN11) allosteric inhibition — RAS-pathway cancers",
+   "reference_drug": "TNO155 (investigational, reference only)",
+   "status": "unused",
+   "target": "Src homology 2 domain-containing phosphatase 2 (SHP2/PTPN11)"
+  },
+  {
+   "angle": "Dock leads vs EZH2 SET domain; compare vs tazemetostat; note resistance mutations honestly",
+   "area": "oncology",
+   "id": "HP-127",
+   "problem": "EZH2 inhibition — epigenetic therapy for lymphoma and solid tumours",
+   "reference_drug": "tazemetostat",
+   "status": "unused",
+   "target": "Enhancer of zeste homolog 2 (EZH2)"
+  },
+  {
+   "angle": "Dock leads vs SOS1; compare vs BI-3406; note KRAS-mutant combination logic honestly",
+   "area": "oncology",
+   "id": "HP-128",
+   "problem": "SOS1 inhibition — KRAS-pathway, GDP/GTP exchange blockade",
+   "reference_drug": "BI-3406 (investigational, reference only)",
+   "status": "unused",
+   "target": "Son of sevenless homolog 1 (SOS1)"
+  },
+  {
+   "angle": "Dock leads vs c-KIT; compare vs imatinib; note exon-17 resistance mutations honestly",
+   "area": "oncology",
+   "id": "HP-129",
+   "problem": "c-KIT inhibition — GIST and mast-cell disease",
+   "reference_drug": "imatinib",
+   "status": "unused",
+   "target": "KIT proto-oncogene receptor tyrosine kinase (c-KIT)"
+  },
+  {
+   "angle": "Dock leads vs FGFR1; compare vs erdafitinib; note FGFR-family selectivity honestly",
+   "area": "oncology",
+   "id": "HP-130",
+   "problem": "FGFR1 inhibition — FGFR1-amplified squamous and breast cancers",
+   "reference_drug": "erdafitinib",
+   "status": "unused",
+   "target": "Fibroblast growth factor receptor 1 (FGFR1)"
+  },
+  {
+   "angle": "Dock leads vs DOT1L; compare vs pinometostat; note SAM-competitive vs allosteric honestly",
+   "area": "oncology",
+   "id": "HP-150",
+   "problem": "DOT1L inhibition — MLL-rearranged leukaemia epigenetics",
+   "reference_drug": "pinometostat (investigational, reference only)",
+   "status": "unused",
+   "target": "DOT1L histone methyltransferase"
+  },
+  {
+   "angle": "Dock leads vs HIV-1 protease; compare vs darunavir; note resistance mutations honestly",
+   "area": "antiviral",
+   "id": "HP-131",
+   "problem": "HIV-1 protease — darunavir-era benchmarking for new scaffolds",
+   "reference_drug": "darunavir",
+   "status": "unused",
+   "target": "HIV-1 protease"
+  },
+  {
+   "angle": "Dock leads vs HCV NS3/4A; compare vs glecaprevir; note genotype coverage honestly",
+   "area": "antiviral",
+   "id": "HP-132",
+   "problem": "HCV NS3/4A protease — glecaprevir-era benchmarking",
+   "reference_drug": "glecaprevir",
+   "status": "unused",
+   "target": "Hepatitis C virus NS3/4A protease"
+  },
+  {
+   "angle": "Dock leads vs M2 channel; amantadine as the largely-failed comparator; state resistance honestly",
+   "area": "antiviral",
+   "id": "HP-133",
+   "problem": "Influenza A M2 proton channel — amantadine-resistant strains",
+   "reference_drug": "amantadine",
+   "status": "unused",
+   "target": "Influenza A M2 proton channel"
+  },
+  {
+   "angle": "Dock leads vs NSP13; compare vs literature inhibitors; note ATPase-site selectivity honestly",
+   "area": "antiviral",
+   "id": "HP-134",
+   "problem": "SARS-CoV-2 NSP13 helicase — conserved coronavirus target",
+   "reference_drug": "none approved (honest — compare vs literature NSP13 inhibitors)",
+   "status": "unused",
+   "target": "SARS-CoV-2 NSP13 helicase"
+  },
+  {
+   "angle": "Dock leads vs Zika NS2B-NS3; compare vs literature inhibitors; note dengue cross-activity honestly",
+   "area": "antiviral",
+   "id": "HP-135",
+   "problem": "Zika virus NS2B-NS3 protease — flavivirus protease family",
+   "reference_drug": "none approved (honest — compare vs literature flavivirus protease inhibitors)",
+   "status": "unused",
+   "target": "Zika virus NS2B-NS3 protease"
+  },
+  {
+   "angle": "Dock leads vs HRV 3C; compare vs rupintrivir; note picornavirus-family coverage honestly",
+   "area": "antiviral",
+   "id": "HP-136",
+   "problem": "Human rhinovirus 3C protease — common-cold drug target",
+   "reference_drug": "rupintrivir (investigational, reference only)",
+   "status": "unused",
+   "target": "Human rhinovirus 3C protease"
+  },
+  {
+   "angle": "Dock leads vs AT1R; compare vs losartan; note AT1/AT2 selectivity honestly",
+   "area": "cardiovascular-renal",
+   "id": "HP-137",
+   "problem": "AT1 receptor blockade — new scaffolds beyond sartans",
+   "reference_drug": "losartan",
+   "status": "unused",
+   "target": "Angiotensin II type 1 receptor (AT1R)"
+  },
+  {
+   "angle": "Dock leads vs P2Y12; compare vs ticagrelor; note bleeding-risk framing honestly",
+   "area": "cardiovascular-renal",
+   "id": "HP-138",
+   "problem": "P2Y12 receptor — antiplatelet scaffolds beyond thienopyridines",
+   "reference_drug": "ticagrelor",
+   "status": "unused",
+   "target": "P2Y12 ADP receptor"
+  },
+  {
+   "angle": "Dock leads vs V2R; compare vs tolvaptan; note hepatotoxicity caution honestly",
+   "area": "cardiovascular-renal",
+   "id": "HP-139",
+   "problem": "Vasopressin V2 receptor — hyponatraemia / ADPKD angle",
+   "reference_drug": "tolvaptan",
+   "status": "unused",
+   "target": "Vasopressin V2 receptor (AVPR2)"
+  },
+  {
+   "angle": "Dock leads vs ETA; compare vs ambrisentan; note ETA/ETB selectivity honestly",
+   "area": "cardiovascular-renal",
+   "id": "HP-140",
+   "problem": "Endothelin A receptor — pulmonary hypertension scaffolds",
+   "reference_drug": "ambrisentan",
+   "status": "unused",
+   "target": "Endothelin receptor type A (ETA)"
+  },
+  {
+   "angle": "Dock leads vs NHE3; compare vs tenapanor; note gut-restricted framing honestly",
+   "area": "cardiovascular-renal",
+   "id": "HP-148",
+   "problem": "NHE3 inhibition — gut sodium, CKD / hypertension angle",
+   "reference_drug": "tenapanor",
+   "status": "unused",
+   "target": "Sodium-hydrogen exchanger 3 (NHE3)"
+  },
+  {
+   "angle": "Dock leads vs 5-LOX; compare vs zileuton; note hepatotoxicity caution honestly",
+   "area": "inflammation-pain",
+   "id": "HP-141",
+   "problem": "5-lipoxygenase (5-LOX) inhibition — leukotriene pathway, asthma",
+   "reference_drug": "zileuton",
+   "status": "unused",
+   "target": "5-lipoxygenase (ALOX5)"
+  },
+  {
+   "angle": "Dock leads vs mPGES-1; compare vs literature inhibitors; note COX-sparing rationale honestly",
+   "area": "inflammation-pain",
+   "id": "HP-142",
+   "problem": "mPGES-1 inhibition — prostaglandin E2 without COX blockade",
+   "reference_drug": "none approved (honest — compare vs literature mPGES-1 inhibitors)",
+   "status": "unused",
+   "target": "Microsomal prostaglandin E synthase-1 (mPGES-1)"
+  },
+  {
+   "angle": "Dock leads vs SYK; compare vs fostamatinib; note hypertension/diarrhoea limits honestly",
+   "area": "inflammation-pain",
+   "id": "HP-143",
+   "problem": "SYK kinase inhibition — B-cell / mast-cell signalling",
+   "reference_drug": "fostamatinib",
+   "status": "unused",
+   "target": "Spleen tyrosine kinase (SYK)"
+  },
+  {
+   "angle": "Dock leads vs IRAK4; compare vs PF-06650833; note infection-risk framing honestly",
+   "area": "inflammation-pain",
+   "id": "HP-144",
+   "problem": "IRAK4 inhibition — IL-1/TLR signalling, autoimmune angle",
+   "reference_drug": "PF-06650833 (investigational, reference only)",
+   "status": "unused",
+   "target": "Interleukin-1 receptor-associated kinase 4 (IRAK4)"
+  },
+  {
+   "angle": "Dock leads vs TRPV1; capsaicin as topical comparator; note hyperthermia risk honestly",
+   "area": "inflammation-pain",
+   "id": "HP-149",
+   "problem": "TRPV1 modulation — chronic pain without opioid liability",
+   "reference_drug": "capsaicin (topical comparator — state this)",
+   "status": "unused",
+   "target": "Transient receptor potential vanilloid 1 (TRPV1)"
+  },
+  {
+   "angle": "Dock leads vs dengue NS5 MTase; compare vs literature inhibitors; note serotype coverage honestly",
+   "area": "pakistan-burden",
+   "id": "HP-145",
+   "problem": "Dengue NS5 methyltransferase — dengue drug target for Pakistan's outbreaks",
+   "reference_drug": "none approved (honest — compare vs literature NS5 inhibitors)",
+   "status": "unused",
+   "target": "Dengue virus NS5 methyltransferase"
+  },
+  {
+   "angle": "Dock leads vs PKR allosteric site; compare vs mitapivat; note thalassaemia relevance for Pakistan honestly",
+   "area": "pakistan-burden",
+   "id": "HP-146",
+   "problem": "Pyruvate kinase (PKR) activation — beta-thalassaemia / sickle-cell angle",
+   "reference_drug": "mitapivat",
+   "status": "unused",
+   "target": "Red-cell pyruvate kinase (PKR/PKLR)"
+  },
+  {
+   "angle": "Dock leads vs EhTrxR; metronidazole as regimen comparator; note nitroimidazole-resistance honestly",
+   "area": "pakistan-burden",
+   "id": "HP-147",
+   "problem": "E. histolytica thioredoxin reductase — amoebiasis drug target",
+   "reference_drug": "metronidazole (regimen drug, not a TrxR inhibitor — state this)",
+   "status": "unused",
+   "target": "Entamoeba histolytica thioredoxin reductase (EhTrxR)"
   }
  ],
  "updated": "2026-11-19",

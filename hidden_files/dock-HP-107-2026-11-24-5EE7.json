@@ -1,0 +1,120 @@
+{
+ "topic": {
+  "target": "Glucagon receptor (GCGR)",
+  "reference": "LY2409021",
+  "topic_id": "HP-107",
+  "date": "2026-11-24"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "5EE7",
+  "resolution": 2.5,
+  "center": [
+   -30.4,
+   1.77,
+   -36.73
+  ],
+  "center_note": "co-crystallised MK-0893 (5MV) centroid, chain A \u2014 verified by dock._ligand_center; matches the pipeline centre exactly",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline docked only LY2409021 (-8.20) because ChEMBL ligand retrieval returned no_data. 5EE7 is the correct antagonist-bound GCGR structure; this run adds MK-0893 (self-dock control), PF-06291874 and LGD-6972 on the identical centre/box. No LY2409021-GCGR co-crystal exists.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.32,
+    "poses": [
+     -8.32,
+     -8.25,
+     -8.24
+    ],
+    "pdb_id": "5EE7",
+    "label": "MK-0893",
+    "note": "co-crystallised ligand in 5EE7; discontinued Phase 2 (LDL/ALT)",
+    "descriptors": {
+     "mw": 588.49,
+     "logp": 7.5,
+     "hbd": 2,
+     "hba": 4,
+     "tpsa": 93.45,
+     "rotatable": 9,
+     "lipinski_violations": 2,
+     "lipinski_pass": false,
+     "formula": "C32H27Cl2N3O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.12,
+    "poses": [
+     -8.12,
+     -7.72,
+     -7.5
+    ],
+    "pdb_id": "5EE7",
+    "label": "LY2409021 (QUERY, reference)",
+    "note": "discontinued Phase 2 GCGR antagonist; reference drug",
+    "descriptors": {
+     "mw": 555.64,
+     "logp": 7.94,
+     "hbd": 2,
+     "hba": 3,
+     "tpsa": 75.63,
+     "rotatable": 10,
+     "lipinski_violations": 2,
+     "lipinski_pass": false,
+     "formula": "C32H36F3NO4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.84,
+    "poses": [
+     -7.84,
+     -7.77,
+     -7.57
+    ],
+    "pdb_id": "5EE7",
+    "label": "LGD-6972",
+    "note": "Ligand oral allosteric GCGR antagonist; status unclear",
+    "descriptors": {
+     "mw": 702.92,
+     "logp": 8.83,
+     "hbd": 3,
+     "hba": 4,
+     "tpsa": 112.57,
+     "rotatable": 11,
+     "lipinski_violations": 2,
+     "lipinski_pass": false,
+     "formula": "C43H46N2O5S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.46,
+    "poses": [
+     -7.46,
+     -7.46,
+     -7.45
+    ],
+    "pdb_id": "5EE7",
+    "label": "PF-06291874",
+    "note": "Pfizer Phase 2a GCGR antagonist; development stopped",
+    "descriptors": {
+     "mw": 503.52,
+     "logp": 5.63,
+     "hbd": 2,
+     "hba": 4,
+     "tpsa": 93.45,
+     "rotatable": 10,
+     "lipinski_violations": 2,
+     "lipinski_pass": false,
+     "formula": "C26H28F3N3O4"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

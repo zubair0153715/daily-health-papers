@@ -1,0 +1,144 @@
+{
+ "topic": {
+  "target": "Endothelin receptor type A (ETA)",
+  "reference": "ambrisentan",
+  "topic_id": "HP-140",
+  "date": "2026-11-24"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "8HCQ",
+  "resolution": 3.0,
+  "center": [
+   122.27,
+   115.66,
+   128.27
+  ],
+  "center_note": "centroid of ET-1 residues 16-21 (chain L) \u2014 the deep orthosteric site where the peptide C-terminus sits; computed from PDB coordinates. ET-1 is a peptide chain, not a HETATM ligand, so dock._ligand_center cannot pick it.",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline found no PDB for ETA and skipped docking. No ETA-antagonist structure exists; 8HCQ is the first ETA structure (cryo-EM, ET-1-bound ETAR-Gq, Ji et al. Nat Commun 2023) \u2014 an ACTIVE conformation, not an antagonist-bound one. ET-1 chain L was stripped from the receptor before docking so the pocket is empty; the cached 8HCQ_rec.pdbqt is the stripped receptor. Scores are a pocket-occupancy screen, not antagonist affinity, and must be read with that limit.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.72,
+    "poses": [
+     -8.72,
+     -8.54,
+     -8.43
+    ],
+    "pdb_id": "8HCQ",
+    "label": "bosentan",
+    "note": "first ERA, dual ETA/ETB (FDA 2001)",
+    "descriptors": {
+     "mw": 551.63,
+     "logp": 4.2,
+     "hbd": 2,
+     "hba": 10,
+     "tpsa": 145.65,
+     "rotatable": 10,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C27H29N5O6S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.46,
+    "poses": [
+     -8.46,
+     -8.4,
+     -8.05
+    ],
+    "pdb_id": "8HCQ",
+    "label": "sitaxentan",
+    "note": "ETA-selective; withdrawn 2010 (fatal hepatotoxicity)",
+    "descriptors": {
+     "mw": 454.91,
+     "logp": 3.96,
+     "hbd": 1,
+     "hba": 8,
+     "tpsa": 107.73,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C18H15ClN2O6S2"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.34,
+    "poses": [
+     -8.34,
+     -8.16,
+     -7.97
+    ],
+    "pdb_id": "8HCQ",
+    "label": "zibotentan",
+    "note": "ETA-selective; investigated in oncology/CKD, not PAH-approved",
+    "descriptors": {
+     "mw": 424.44,
+     "logp": 2.71,
+     "hbd": 1,
+     "hba": 9,
+     "tpsa": 132.99,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C19H16N6O4S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.57,
+    "poses": [
+     -7.57,
+     -7.54,
+     -7.47
+    ],
+    "pdb_id": "8HCQ",
+    "label": "macitentan",
+    "note": "dual ERA (FDA 2013); SERAPHIN 45% morbidity-mortality reduction",
+    "descriptors": {
+     "mw": 588.28,
+     "logp": 3.57,
+     "hbd": 2,
+     "hba": 8,
+     "tpsa": 128.22,
+     "rotatable": 11,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C19H20Br2N6O4S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.37,
+    "poses": [
+     -7.37,
+     -7.36,
+     -7.36
+    ],
+    "pdb_id": "8HCQ",
+    "label": "ambrisentan (QUERY, reference)",
+    "note": "approved ETA-selective ERA (FDA 2007); reference drug",
+    "descriptors": {
+     "mw": 378.43,
+     "logp": 3.52,
+     "hbd": 1,
+     "hba": 5,
+     "tpsa": 81.54,
+     "rotatable": 7,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C22H22N2O4"
+    },
+    "pains": []
+   }
+  ]
+ }
+}
