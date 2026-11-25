@@ -1,0 +1,102 @@
+{
+ "topic": {
+  "target": "Enhancer of zeste homolog 2 (EZH2)",
+  "reference": "tazemetostat",
+  "topic_id": "HP-127",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "5IJ7",
+  "resolution": 2.62,
+  "center": [
+   30.9,
+   4.98,
+   205.18
+  ],
+  "center_note": "6BN pyridone inhibitor (chain A) centroid via dock._ligand_center \u2014 EZH2 SET-domain SAM pocket, human PRC2 + pyridone inhibitor, 2.62 A (Brooun et al., Nat Commun 2016;7:11384)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Cross-check moved from 5HYN (receptor prep failed: RDKit pdb parse failed on the M3L-containing file) to 5IJ7, a better template: higher resolution and inhibitor-bound.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -13.74,
+    "poses": [
+     -13.74,
+     -13.72,
+     -13.3
+    ],
+    "pdb_id": "5IJ7",
+    "label": "CHEMBL5562984",
+    "rank": 4,
+    "chembl_id": null,
+    "similarity": 0.562,
+    "descriptors": {
+     "mw": 681.88,
+     "logp": 4.65,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 115.68,
+     "rotatable": 8,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C39H51N7O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -12.12,
+    "poses": [
+     -12.12,
+     -11.74,
+     -10.96
+    ],
+    "pdb_id": "5IJ7",
+    "label": "QUERY",
+    "rank": 1,
+    "chembl_id": null,
+    "similarity": 1.0,
+    "descriptors": {
+     "mw": 572.75,
+     "logp": 4.73,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 86.9,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C34H44N4O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.92,
+    "poses": [
+     -10.92,
+     -9.95,
+     -9.75
+    ],
+    "pdb_id": "5IJ7",
+    "label": "CHEMBL5188577",
+    "rank": 3,
+    "chembl_id": null,
+    "similarity": 0.613,
+    "descriptors": {
+     "mw": 614.79,
+     "logp": 4.92,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 96.13,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C36H46N4O5"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

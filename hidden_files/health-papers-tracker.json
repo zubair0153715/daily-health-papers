@@ -1247,6 +1247,56 @@
    "title": "Emavusertib Beats Zimlovisertib by 1.35 kcal/mol on Its Own Co-Crystal 5UIU — but Loses to BAY-1834845 on 6EGE, So the IRAK4 Ranking Is Structure-Dependent",
    "topic": "IRAK4 inhibition — autoimmune / inflammatory diseases",
    "topic_id": "HP-144"
+  },
+  {
+   "date": "2026-11-25",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-25-health-hrv3c-rupintrivir-inhibitors.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "AG7404 Beats Rupintrivir on Both HRV 3C Structures — by 0.24 and 0.53 kcal/mol, Inside Vina Noise — and the Covalent Bond Is What the Score Cannot See",
+   "topic_id": "HP-136"
+  },
+  {
+   "date": "2026-11-25",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-25-health-ezh2-tazemetostat-inhibitors.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "One ChEMBL EZH2 Inhibitor Beats Tazemetostat on Two PRC2 Structures by 1.06 and 1.62 kcal/mol — but Tazemetostat Was Withdrawn in March 2026, So the Win Is a Lead, Not a Successor",
+   "topic_id": "HP-127"
+  },
+  {
+   "date": "2026-11-25",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-25-health-trpv1-capsaicin-modulators.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "AMG-517 Beats Capsaicin by 2.19 kcal/mol in the Human TRPV1 Vanilloid Pocket — but It Is the Antagonist That Failed in Phase I for Hyperthermia Past 40 °C",
+   "topic_id": "HP-149"
+  },
+  {
+   "date": "2026-11-25",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-25-health-ptr1-methotrexate-inhibitors.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "NMT-C0003 Out-Scores Methotrexate by 0.64 kcal/mol on TbPTR1's 2X9G Structure — but Vina Ranks Pyrimethamine, the Most Potent Measured Inhibitor, Below the Weak Control Cycloguanil",
+   "topic_id": "HP-121"
+  },
+  {
+   "date": "2026-11-25",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-25-health-m2-amantadine-inhibitors.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "M2WJ332 Beats Amantadine by 2.74 kcal/mol on the S31N Mutant Channel — but Amantadine's Own 0.49 kcal/mol Drop Cannot Explain Its Resistance",
+   "topic_id": "HP-133"
   }
  ],
  "used_topic_ids": [
@@ -1355,6 +1405,11 @@
   "HP-146",
   "HP-128",
   "HP-140",
-  "HP-144"
+  "HP-144",
+  "HP-136",
+  "HP-127",
+  "HP-149",
+  "HP-121",
+  "HP-133"
  ]
 }

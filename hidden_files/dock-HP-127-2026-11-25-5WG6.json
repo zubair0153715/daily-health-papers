@@ -1,0 +1,186 @@
+{
+ "topic": {
+  "target": "Enhancer of zeste homolog 2 (EZH2)",
+  "reference": "tazemetostat",
+  "topic_id": "HP-127",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "5WG6",
+  "center": [
+   -81.71,
+   2.47,
+   -54.66
+  ],
+  "center_note": "GSK126 (A9G, chain A) centroid via dock._ligand_center \u2014 EZH2 SET-domain SAM pocket, human PRC2 + GSK126, 3.90 A (Bratkowski et al., Sci Rep 2018;8:9092)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -12.58,
+    "poses": [
+     -12.58,
+     -12.02,
+     -11.44
+    ],
+    "pdb_id": "5WG6",
+    "label": "CHEMBL5562984",
+    "rank": 4,
+    "chembl_id": null,
+    "similarity": 0.562,
+    "descriptors": {
+     "mw": 681.88,
+     "logp": 4.65,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 115.68,
+     "rotatable": 8,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C39H51N7O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.52,
+    "poses": [
+     -11.52,
+     -11.23,
+     -10.74
+    ],
+    "pdb_id": "5WG6",
+    "label": "QUERY",
+    "rank": 1,
+    "chembl_id": null,
+    "similarity": 1.0,
+    "descriptors": {
+     "mw": 572.75,
+     "logp": 4.73,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 86.9,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C34H44N4O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.36,
+    "poses": [
+     -11.36,
+     -11.26,
+     -11.01
+    ],
+    "pdb_id": "5WG6",
+    "label": "CHEMBL3414621",
+    "rank": 2,
+    "chembl_id": null,
+    "similarity": 1.0,
+    "descriptors": {
+     "mw": 572.75,
+     "logp": 4.73,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 86.9,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C34H44N4O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.3,
+    "poses": [
+     -11.3,
+     -11.09,
+     -10.8
+    ],
+    "pdb_id": "5WG6",
+    "label": "CHEMBL5188577",
+    "rank": 3,
+    "chembl_id": null,
+    "similarity": 0.613,
+    "descriptors": {
+     "mw": 614.79,
+     "logp": 4.92,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 96.13,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C36H46N4O5"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.96,
+    "poses": [
+     -10.96,
+     -10.79,
+     -10.7
+    ],
+    "pdb_id": "5WG6",
+    "label": "CHEMBL4792256",
+    "rank": 5,
+    "chembl_id": null,
+    "similarity": 0.426,
+    "descriptors": {
+     "mw": 511.67,
+     "logp": 4.84,
+     "hbd": 3,
+     "hba": 4,
+     "tpsa": 82.16,
+     "rotatable": 6,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C31H37N5O2"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.8,
+    "poses": [
+     -9.8,
+     -9.63,
+     -9.44
+    ],
+    "pdb_id": "5WG6",
+    "label": "CHEMBL5868146",
+    "rank": 6,
+    "chembl_id": null,
+    "similarity": 0.392,
+    "descriptors": {
+     "mw": 439.51,
+     "logp": 3.29,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 96.8,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C24H29N3O5"
+    },
+    "pains": []
+   }
+  ],
+  "topic": {
+   "target": "Enhancer of zeste homolog 2 (EZH2)",
+   "reference": "tazemetostat",
+   "topic_id": "HP-127",
+   "date": "2026-11-25"
+  },
+  "resolution": 3.9,
+  "correction_note": "Auto-pick 5U5T was EED, not EZH2 \u2014 killed before saving. 5WG6 is the inhibitor-bound human PRC2 structure; GSK126 is a SAM-competitive pyridone of the same class as tazemetostat."
+ }
+}

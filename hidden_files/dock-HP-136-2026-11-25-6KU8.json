@@ -1,0 +1,96 @@
+{
+ "topic": {
+  "target": "Human rhinovirus 3C protease",
+  "reference": "rupintrivir (AG7088)",
+  "topic_id": "HP-136",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "6KU8",
+  "resolution": 2.05,
+  "center": [
+   5.244405405405406,
+   26.50135135135135,
+   -5.262824324324325
+  ],
+  "center_note": "co-crystallised rupintrivir centroid \u2014 verified by dock._ligand_center; HRV-C15 3C protease + rupintrivir, Yuan et al., Virol Sin 2020",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline resolved the target to human IFIH1/MDA5 (Q9BYX4) and auto-picked 3GA3 (human MDA5 C-terminal domain, Zn only) \u2014 wrong protein entirely; dock_leads failed no_ligand_site. This run uses the real viral 3C structures. COVALENT LIMIT: rupintrivir/AG7404 bind the catalytic Cys irreversibly; Vina scores non-covalent complementarity only, so the reference score underestimates true binding.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.96,
+    "poses": [
+     -7.96,
+     -7.71,
+     -7.67
+    ],
+    "pdb_id": "6KU8",
+    "label": "AG7404",
+    "note": "Modified rupintrivir derivative; oral; HRV-B14 3C IC50 0.046 uM (Lee et al., IUCrJ 2026)",
+    "descriptors": {
+     "mw": 523.55,
+     "logp": 1.09,
+     "hbd": 3,
+     "hba": 8,
+     "tpsa": 161.63,
+     "rotatable": 11,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C26H29N5O7"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.75,
+    "poses": [
+     -7.75,
+     -7.49,
+     -7.48
+    ],
+    "pdb_id": "6KU8",
+    "label": "SG85",
+    "note": "Enterovirus 3C inhibitor; blocks rhinovirus replication, NOT cross-resistant with rupintrivir (AAC 2015)",
+    "descriptors": {
+     "mw": 650.77,
+     "logp": 2.95,
+     "hbd": 4,
+     "hba": 8,
+     "tpsa": 161.16,
+     "rotatable": 16,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C35H46N4O8"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.43,
+    "poses": [
+     -7.43,
+     -7.28,
+     -7.26
+    ],
+    "pdb_id": "6KU8",
+    "label": "rupintrivir (QUERY, reference)",
+    "note": "Reference drug; irreversible HRV 3C inhibitor (AG7088); clinical development stopped after natural-infection trials failed",
+    "descriptors": {
+     "mw": 598.67,
+     "logp": 2.82,
+     "hbd": 3,
+     "hba": 8,
+     "tpsa": 156.7,
+     "rotatable": 15,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C31H39FN4O7"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "step": 1,
+   "name": "Target identification",
+   "source": "UniProtKB + ChEMBL (live)",
+   "status": "ok"
+  },
+  {
+   "step": 2,
+   "name": "Known ligand retrieval",
+   "source": "ChEMBL bioactivities for CHEMBL4739862 (live)",
+   "status": "no_data",
+   "count": 0
+  },
+  {
+   "step": 3,
+   "name": "Query compound verification",
+   "source": "PubChem PUG REST (live)",
+   "status": "ok"
+  },
+  {
+   "step": 4,
+   "name": "Similarity screen vs known actives",
+   "source": "RDKit Morgan fingerprints, Tanimoto",
+   "status": "skipped",
+   "count": 0
+  },
+  {
+   "step": 5,
+   "name": "ADMET + safety panel",
+   "source": "RDKit (Lipinski/Veber/PAINS) + ToxGuard Tox21 kNN (12 assays)",
+   "status": "ok"
+  },
+  {
+   "step": 6,
+   "name": "Lead ranking",
+   "source": "composite score: similarity\u00d740 + Lipinski\u00d720 + Veber\u00d710 + PAINS\u00d710 + tox\u00d720",
+   "status": "ok",
+   "count": 1
+  },
+  {
+   "step": 7,
+   "name": "Molecular docking",
+   "source": "AutoDock Vina vs PDB structure (RCSB, live)",
+   "status": "skipped",
+   "pdb_id": null
+  }
+ ],
+ "target": {
+  "query": "Human rhinovirus 3C protease",
+  "uniprot": {
+   "accession": "Q9BYX4",
+   "entry": null,
+   "gene": "IFIH1",
+   "protein": "Interferon-induced helicase C domain-containing protein 1",
+   "organism": "Homo sapiens",
+   "length": 1025,
+   "function": "Innate immune receptor which acts as a cytoplasmic sensor of viral nucleic acids and plays a major role in sensing viral infection and in the activation of a cascade of antiviral responses including the induction of type I interferons and pro-inflammatory cytokines (PubMed:14645903, PubMed:19211564, PubMed:19656871, PubMed:21742966, PubMed:23273991, PubMed:28594402, PubMed:29117565, PubMed:29395326, PubMed:32169843, PubMed:33727702). Its ligands include mRNA lacking 2'-O-methylation at their 5' cap and long double-stranded RNAs (>1 kb in length) (PubMed:19656871, PubMed:21217758, PubMed:21245900, PubMed:22160685, PubMed:23273991, PubMed:29395326). Upon ligand binding it associates with mitochondria antiviral signaling protein (MAVS/IPS1) which activates the IKK-related kinases: TBK1 and IK",
+   "uniprot_url": "https://www.uniprot.org/uniprotkb/Q9BYX4/entry"
+  },
+  "uniprot_error": null,
+  "chembl_targets": [
+   {
+    "chembl_id": "CHEMBL2074",
+    "name": "Maltase-glucoamylase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1971",
+    "name": "ATP-binding cassette sub-family C member 9",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1859",
+    "name": "Voltage-dependent T-type calcium channel subunit alpha-1H",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1884",
+    "name": "Nicotinic acetylcholine receptor alpha subunit",
+    "type": "SINGLE PROTEIN",
+    "organism": "Ascaris suum",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL202",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1809",
+    "name": "Dihydrofolate reductase",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "type": "SINGLE PROTEIN",
+    "organism": "Homo sapiens",
+    "components": 1
+   },
+   {
+    "chembl_id": "CHEMBL1852",
+    "name": "DNA-directed RNA polymerase subunit beta",
+    "type": "SINGLE PROTEIN",
+    "organism": "Escherichia coli K-12",
+    "components": 1
+   }
+  ],
+  "chembl_target": {
+   "chembl_id": "CHEMBL4739862",
+   "name": "Interferon-induced helicase C domain-containing protein 1",
+   "type": "SINGLE PROTEIN",
+   "organism": "Homo sapiens",
+   "components": 1
+  }
+ },
+ "ligands_found": 0,
+ "leads": [
+  {
+   "rank": 1,
+   "label": "QUERY",
+   "smiles": "CCOC(=O)C=CC(CC1CCNC1=O)NC(=O)C(CC2=CC=C(C=C2)F)CC(=O)C(C(C)C)NC(=O)C3=NOC(=C3)C",
+   "similarity": 1.0,
+   "score": 88.7,
+   "score_detail": {
+    "similarity_40": 40.0,
+    "lipinski_20": 20,
+    "veber_10": 0,
+    "pains_clean_10": 10,
+    "tox_low_20": 18.7
+   },
+   "descriptors": {
+    "mw": 598.67,
+    "logp": 2.82,
+    "hbd": 3,
+    "hba": 8,
+    "tpsa": 156.7,
+    "rotatable": 15,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C31H39FN4O7"
+   },
+   "pains": [],
+   "tox": {
+    "mode": "knn_readacross",
+    "max_similarity": 0.25,
+    "assays": {
+     "NR-AR": 0.0,
+     "NR-AR-LBD": 0.086,
+     "NR-AhR": 0.096,
+     "NR-Aromatase": 0.0,
+     "NR-ER": 0.199,
+     "NR-ER-LBD": 0.074,
+     "NR-PPAR-gamma": 0.078,
+     "SR-ARE": 0.0,
+     "SR-ATAD5": 0.079,
+     "SR-HSE": 0.105,
+     "SR-MMP": 0.0,
+     "SR-p53": 0.079
+    }
+   },
+   "pubchem": {
+    "cid": 6440352,
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6440352"
+   },
+   "known_activity": null
+  }
+ ],
+ "docking": {
+  "ok": false,
+  "error": "no_ligand_site",
+  "pdb_id": "3GA3",
+  "results": []
+ },
+ "disclaimer": "Computational research only. Scores are triage heuristics, not efficacy or safety proof. Wet-lab validation required. Not medical advice.",
+ "topic": {
+  "target": "Human rhinovirus 3C protease",
+  "reference": "rupintrivir"
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "topic": {
+  "target": "Influenza A M2 proton channel",
+  "reference": "amantadine",
+  "topic_id": "HP-133",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "3C9J",
+  "center": [
+   -14.94,
+   13.97,
+   -4.63
+  ],
+  "center_note": "3.5 A X-ray, M2 TM + amantadine (residue 308, HETNAM-confirmed), Stouffer et al. Nature 2008 PMID 18235504; G34A mutant construct",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline ChEMBL lookup mismatched to CHEMBL2074 (maltase-glucoamylase); its 55 ligands are glucosidase inhibitors, not M2 ligands. Auto-picked 5TTC had no ligand site, so pipeline docking was skipped. This run docks the literature set (PubChem-verified SMILES) on the amantadine-bound WT structure and the M2WJ332-bound S31N structure.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.98,
+    "poses": [
+     -7.98,
+     -7.85,
+     -7.78
+    ],
+    "pdb_id": "3C9J",
+    "label": "M2WJ332",
+    "note": "PubChem CID 70680222, C18H22N2OS; S31N inhibitor, PNAS 2013 PMID 23302696",
+    "descriptors": {
+     "mw": 314.45,
+     "logp": 4.46,
+     "hbd": 1,
+     "hba": 4,
+     "tpsa": 38.06,
+     "rotatable": 4,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C18H22N2OS"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.66,
+    "poses": [
+     -6.66,
+     -6.64,
+     -6.58
+    ],
+    "pdb_id": "3C9J",
+    "label": "rimantadine",
+    "note": "PubChem CID 5071, C12H21N; WT-active, S31N-resistant; approved 1993",
+    "descriptors": {
+     "mw": 179.31,
+     "logp": 2.55,
+     "hbd": 1,
+     "hba": 1,
+     "tpsa": 26.02,
+     "rotatable": 1,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C12H21N"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.27,
+    "poses": [
+     -6.27,
+     -6.25,
+     -6.22
+    ],
+    "pdb_id": "3C9J",
+    "label": "amantadine (QUERY, reference)",
+    "note": "PubChem CID 2130, C10H17N; WT-active, S31N-resistant; approved 1966",
+    "descriptors": {
+     "mw": 151.25,
+     "logp": 1.91,
+     "hbd": 1,
+     "hba": 1,
+     "tpsa": 26.02,
+     "rotatable": 0,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C10H17N"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

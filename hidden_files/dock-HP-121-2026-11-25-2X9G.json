@@ -1,0 +1,168 @@
+{
+ "topic": {
+  "target": "Trypanosoma brucei pteridine reductase 1 (PTR1)",
+  "reference": "methotrexate",
+  "topic_id": "HP-121",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "2X9G",
+  "resolution": 1.1,
+  "center": [
+   6.4,
+   -15.43,
+   18.53
+  ],
+  "center_note": "co-crystallised pemetrexed (LYA, chain A) centroid \u2014 verified by dock._ligand_center; NOT the NADP+ cofactor centroid [13.62, -7.64, 12.2]",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline ChEMBL retrieval mis-mapped the target to human maltase-glucoamylase (CHEMBL2074); its docked 'leads' were iminosugars/hydrazone, not PTR1 inhibitors. This run docks genuine TbPTR1 inhibitors from the literature on the identical centre/box. Pipeline methotrexate score -9.05 on 2X9G is reproduced here in the same run.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.74,
+    "poses": [
+     -9.74,
+     -9.6,
+     -9.23
+    ],
+    "pdb_id": "2X9G",
+    "label": "NMT-C0003 (compound 1b, Pohner 2022)",
+    "note": "Apparent picomolar TbPTR1 inhibition; 6RX5 co-crystal ligand; PubChem CID 23629645, C22H26N8O3",
+    "descriptors": {
+     "mw": 450.5,
+     "logp": 1.25,
+     "hbd": 2,
+     "hba": 10,
+     "tpsa": 153.45,
+     "rotatable": 5,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C22H26N8O3"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.69,
+    "poses": [
+     -9.69,
+     -9.52,
+     -9.41
+    ],
+    "pdb_id": "2X9G",
+    "label": "pemetrexed",
+    "note": "2X9G co-crystal ligand \u2014 self-dock control; PubChem CID 135410875, C20H21N5O6",
+    "descriptors": {
+     "mw": 427.42,
+     "logp": 0.67,
+     "hbd": 6,
+     "hba": 6,
+     "tpsa": 191.26,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C20H21N5O6"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.1,
+    "poses": [
+     -9.1,
+     -8.76,
+     -8.7
+    ],
+    "pdb_id": "2X9G",
+    "label": "methotrexate (QUERY, reference)",
+    "note": "Reference antifolate; TbPTR1 IC50 0.793 uM, TbDHFR-TS IC50 0.040 uM, hDHFR 0.014 uM (Tassone 2021, Table 1); 2C7V co-crystal",
+    "descriptors": {
+     "mw": 454.45,
+     "logp": 0.27,
+     "hbd": 5,
+     "hba": 10,
+     "tpsa": 210.54,
+     "rotatable": 9,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C20H22N8O5"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.56,
+    "poses": [
+     -7.56,
+     -7.46,
+     -7.36
+    ],
+    "pdb_id": "2X9G",
+    "label": "cycloguanil",
+    "note": "WEAK-inhibitor negative control; TbPTR1 IC50 31.6 uM (Tassone 2021, Table 1); PubChem CID 9049",
+    "descriptors": {
+     "mw": 251.72,
+     "logp": 1.53,
+     "hbd": 2,
+     "hba": 5,
+     "tpsa": 80.0,
+     "rotatable": 1,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C11H14ClN5"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.15,
+    "poses": [
+     -7.15,
+     -6.98,
+     -6.66
+    ],
+    "pdb_id": "2X9G",
+    "label": "pyrimethamine",
+    "note": "TbPTR1 IC50 0.090 uM, TbDHFR Ki 0.024 uM, hDHFR Ki 0.47 uM (Tassone 2021, Table 1); PubChem CID 4993",
+    "descriptors": {
+     "mw": 248.72,
+     "logp": 2.52,
+     "hbd": 2,
+     "hba": 4,
+     "tpsa": 77.82,
+     "rotatable": 2,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C12H13ClN4"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.92,
+    "poses": [
+     -6.92,
+     -6.71,
+     -6.55
+    ],
+    "pdb_id": "2X9G",
+    "label": "LIB_66 (4-(benzyloxy)pyrimidine-2,6-diamine)",
+    "note": "Linciano 2020 LIBRA hit; scaffold TbPTR1 IC50 0.7-4.0 uM; PubChem CID 10130617, C11H12N4O",
+    "descriptors": {
+     "mw": 216.24,
+     "logp": 1.22,
+     "hbd": 2,
+     "hba": 5,
+     "tpsa": 87.05,
+     "rotatable": 3,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C11H12N4O"
+    },
+    "pains": []
+   }
+  ]
+ }
+}

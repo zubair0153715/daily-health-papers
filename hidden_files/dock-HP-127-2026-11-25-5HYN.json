@@ -1,0 +1,90 @@
+{
+ "topic": {
+  "target": "Enhancer of zeste homolog 2 (EZH2)",
+  "reference": "tazemetostat",
+  "topic_id": "HP-127",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "5HYN",
+  "center": [
+   81.25,
+   -98.86,
+   2.65
+  ],
+  "center_note": "SAH chain A centroid (SAM pocket), computed directly from the PDB file \u2014 dock._ligand_center(5HYN) returns the M3L trimethyllysine in EED's pocket, ~28 A away, and is WRONG for a SAM-competitive inhibitor",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "results": [
+   {
+    "ok": false,
+    "error": "pdb parse failed",
+    "label": "QUERY",
+    "rank": 1,
+    "chembl_id": null,
+    "similarity": 1.0,
+    "descriptors": {
+     "mw": 572.75,
+     "logp": 4.73,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 86.9,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C34H44N4O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": false,
+    "error": "pdb parse failed",
+    "label": "CHEMBL3414621",
+    "rank": 2,
+    "chembl_id": null,
+    "similarity": 1.0,
+    "descriptors": {
+     "mw": 572.75,
+     "logp": 4.73,
+     "hbd": 2,
+     "hba": 6,
+     "tpsa": 86.9,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C34H44N4O4"
+    },
+    "pains": []
+   },
+   {
+    "ok": false,
+    "error": "pdb parse failed",
+    "label": "CHEMBL5188577",
+    "rank": 3,
+    "chembl_id": null,
+    "similarity": 0.613,
+    "descriptors": {
+     "mw": 614.79,
+     "logp": 4.92,
+     "hbd": 2,
+     "hba": 7,
+     "tpsa": 96.13,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C36H46N4O5"
+    },
+    "pains": []
+   }
+  ],
+  "topic": {
+   "target": "Enhancer of zeste homolog 2 (EZH2)",
+   "reference": "tazemetostat",
+   "topic_id": "HP-127",
+   "date": "2026-11-25"
+  },
+  "resolution": 2.95,
+  "correction_note": "Cross-check on the higher-resolution active PRC2 (2.95 A). Centre is SAH, not the _ligand_center M3L pick."
+ }
+}

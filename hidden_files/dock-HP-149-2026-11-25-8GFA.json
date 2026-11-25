@@ -1,0 +1,259 @@
+{
+ "topic": {
+  "target": "Transient receptor potential vanilloid 1 (TRPV1)",
+  "reference": "capsaicin",
+  "topic_id": "HP-149",
+  "date": "2026-11-25"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "8GFA",
+  "resolution": 2.29,
+  "center": [
+   105.36,
+   80.97,
+   88.36
+  ],
+  "center_note": "co-crystallised antagonist SB-366791 (residue ZEI, chain A, seqnum 1202) centroid, computed directly from the PDB file. dock._ligand_center returns the WRONG centre here ([92.49, 85.19, 76.00] = POV A 1201 phospholipid, ~18.4 A from the pocket) because POV is not in dock._LIPIDS and is larger than the drug (134 vs 34 atoms).",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline run_docking.py reported no_pdb_found: find_pdb_for_uniprot accepts only X-ray structures <3.0 A, and all TRPV1 structures are cryo-EM. 8GFA is the best-resolution human TRPV1 structure (2.29 A) with an antagonist in the vanilloid pocket. 8GFA is the antagonist-bound closed conformation, which may favour antagonists over agonists; scores compare pocket fit only, never analgesic potency.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.45,
+    "poses": [
+     -10.45,
+     -9.61,
+     -9.49
+    ],
+    "pdb_id": "8GFA",
+    "label": "AMG-517 (known antagonist, Phase I \u2014 hyperthermia)",
+    "note": "Amgen antagonist; IC50 <10 nM; Phase I stopped for hyperthermia (>40 C); PubChem CID 16007367",
+    "descriptors": {
+     "mw": 430.41,
+     "logp": 5.52,
+     "hbd": 1,
+     "hba": 6,
+     "tpsa": 77.0,
+     "rotatable": 4,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C20H13F3N4O2S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.91,
+    "poses": [
+     -9.91,
+     -9.66
+    ],
+    "pdb_id": "8GFA",
+    "label": "SB-705498 (known antagonist, Phase II)",
+    "note": "GSK antagonist; pKi 7.6 human TRPV1; IC50 3 nM (capsaicin mode); Phase II completed; PubChem CID 9910486",
+    "descriptors": {
+     "mw": 429.24,
+     "logp": 4.26,
+     "hbd": 2,
+     "hba": 3,
+     "tpsa": 57.26,
+     "rotatable": 3,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C17H16BrF3N4O"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.73,
+    "poses": [
+     -9.73,
+     -9.7,
+     -9.57
+    ],
+    "pdb_id": "8GFA",
+    "label": "CHEMBL3407765 (pipeline lead #5)",
+    "note": "Pipeline similarity lead vs ChEMBL TRPV1 actives",
+    "descriptors": {
+     "mw": 519.97,
+     "logp": 4.62,
+     "hbd": 2,
+     "hba": 5,
+     "tpsa": 97.39,
+     "rotatable": 9,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C22H25ClF3N3O4S"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.67,
+    "poses": [
+     -9.67,
+     -9.54,
+     -9.52
+    ],
+    "pdb_id": "8GFA",
+    "label": "CHEMBL4242293 (pipeline lead #4)",
+    "note": "Pipeline similarity lead vs ChEMBL TRPV1 actives",
+    "descriptors": {
+     "mw": 475.34,
+     "logp": 5.08,
+     "hbd": 2,
+     "hba": 4,
+     "tpsa": 71.25,
+     "rotatable": 5,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C21H23Cl2F3N4O"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.65,
+    "poses": [
+     -9.65,
+     -7.85,
+     -2.36
+    ],
+    "pdb_id": "8GFA",
+    "label": "CHEMBL228451 (pipeline lead #3)",
+    "note": "Pipeline similarity lead vs ChEMBL TRPV1 actives",
+    "descriptors": {
+     "mw": 405.59,
+     "logp": 3.52,
+     "hbd": 3,
+     "hba": 3,
+     "tpsa": 70.23,
+     "rotatable": 6,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C20H27N3O2S2"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.36,
+    "poses": [
+     -9.36,
+     -8.67,
+     -8.63
+    ],
+    "pdb_id": "8GFA",
+    "label": "SB-366791 (co-crystallised antagonist \u2014 self-dock control)",
+    "note": "Antagonist bound in 8GFA (residue ZEI); PubChem CID 667594; ChEMBL CHEMBL122413",
+    "descriptors": {
+     "mw": 287.75,
+     "logp": 4.0,
+     "hbd": 1,
+     "hba": 2,
+     "tpsa": 38.33,
+     "rotatable": 4,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C16H14ClNO2"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.26,
+    "poses": [
+     -8.26,
+     -8.12,
+     -7.8
+    ],
+    "pdb_id": "8GFA",
+    "label": "capsaicin (QUERY, reference \u2014 topical agonist)",
+    "note": "Reference drug; topical 8% patch (Qutenza); EC50 ~700 nM on TRPV1; NOT an oral systemic drug",
+    "descriptors": {
+     "mw": 305.42,
+     "logp": 3.79,
+     "hbd": 2,
+     "hba": 3,
+     "tpsa": 58.56,
+     "rotatable": 9,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C18H27NO3"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.16,
+    "poses": [
+     -8.16,
+     -7.97,
+     -7.91
+    ],
+    "pdb_id": "8GFA",
+    "label": "CHEMBL3681230 (pipeline lead #1)",
+    "note": "Top pipeline similarity lead vs ChEMBL TRPV1 actives",
+    "descriptors": {
+     "mw": 516.36,
+     "logp": 4.67,
+     "hbd": 2,
+     "hba": 5,
+     "tpsa": 74.69,
+     "rotatable": 6,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C22H25BrF3N3O3"
+    },
+    "pains": []
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -6.74,
+    "poses": [
+     -6.74,
+     -6.7,
+     -6.66
+    ],
+    "pdb_id": "8GFA",
+    "label": "capsazepine (first TRPV1 antagonist, preclinical)",
+    "note": "First identified TRPV1 antagonist; never reached clinic; PubChem CID 2733484",
+    "descriptors": {
+     "mw": 376.91,
+     "logp": 3.62,
+     "hbd": 3,
+     "hba": 3,
+     "tpsa": 55.73,
+     "rotatable": 3,
+     "lipinski_violations": 0,
+     "lipinski_pass": true,
+     "formula": "C19H21ClN2O2S"
+    },
+    "pains": [
+     "catechol_A(92)"
+    ]
+   },
+   {
+    "ok": false,
+    "error": "Command '['/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/vina', '--receptor', '/home/hatch/workspace/clinic-demo/app/discovery/data/pdb_cache/8GFA_rec.pdbqt', '--ligand', '/home/hatch",
+    "label": "resiniferatoxin (pipeline lead #2, CHEMBL17976)",
+    "note": "Ultra-potent TRPV1 agonist, several thousand-fold more potent than capsaicin; same compound as CHEMBL17976, docked once",
+    "descriptors": {
+     "mw": 628.72,
+     "logp": 4.74,
+     "hbd": 2,
+     "hba": 9,
+     "tpsa": 120.75,
+     "rotatable": 8,
+     "lipinski_violations": 1,
+     "lipinski_pass": false,
+     "formula": "C37H40O9"
+    },
+    "pains": []
+   }
+  ]
+ }
+}
