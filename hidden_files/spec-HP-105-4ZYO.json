@@ -1,0 +1,25 @@
+{
+ "pdb_id": "4ZYO",
+ "ligands": [
+  {
+   "label": "aramchol",
+   "smiles": "CCCCCCCCCCCCCCCCCCCC(=O)NC1CCC2(C(C1)CC(C3C2CC(C4(C3CCC4C(C)CCC(=O)O)C)O)O)C"
+  },
+  {
+   "label": "CHEMBL594289",
+   "smiles": "O=C(NCC(O)c1ccccc1)c1ccc(N2CCC3(CCc4ccccc4O3)CC2)nn1"
+  },
+  {
+   "label": "CHEMBL595247",
+   "smiles": "O=C(NCC(O)c1ccccc1)c1ccc(N2CCC3(CC2)CC(O)c2ccccc2O3)nn1"
+  },
+  {
+   "label": "CHEMBL594084",
+   "smiles": "O=C(NCC(O)c1ccccc1)c1ccc(N2CCC3(CC2)Oc2ccccc2CC3O)nn1"
+  },
+  {
+   "label": "A939572",
+   "smiles": "CNC(=O)C1=CC(=CC=C1)NC(=O)N2CCC(CC2)OC3=CC=CC=C3Cl"
+  }
+ ]
+}

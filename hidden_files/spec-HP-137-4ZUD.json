@@ -1,0 +1,29 @@
+{
+ "pdb_id": "4ZUD",
+ "ligands": [
+  {
+   "label": "losartan",
+   "smiles": "CCCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)CO)Cl"
+  },
+  {
+   "label": "EXP3174",
+   "smiles": "CCCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)C(=O)O)Cl"
+  },
+  {
+   "label": "candesartan",
+   "smiles": "CCOC1=NC2=CC=CC(=C2N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NNN=N5)C(=O)O"
+  },
+  {
+   "label": "telmisartan",
+   "smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C"
+  },
+  {
+   "label": "valsartan",
+   "smiles": "CCCCC(=O)N(CC1=CC=C(C=C1)C2=CC=CC=C2C3=NNN=N3)[C@@H](C(C)C)C(=O)O"
+  },
+  {
+   "label": "olmesartan",
+   "smiles": "CCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)C(=O)O)C(C)(C)O"
+  }
+ ]
+}

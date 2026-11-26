@@ -1,0 +1,67 @@
+{
+ "ok": true,
+ "partial": false,
+ "pdb_id": "4ZYO",
+ "center": [
+  16.41,
+  71.43,
+  49.17
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -11.02,
+   "poses": [
+    -11.02,
+    -10.4,
+    -9.14
+   ],
+   "pdb_id": "4ZYO",
+   "label": "CHEMBL594289"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.86,
+   "poses": [
+    -10.86,
+    -10.76,
+    -8.9
+   ],
+   "pdb_id": "4ZYO",
+   "label": "CHEMBL595247"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.66,
+   "poses": [
+    -10.66,
+    -8.81,
+    4.96
+   ],
+   "pdb_id": "4ZYO",
+   "label": "CHEMBL594084"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.94,
+   "poses": [
+    -9.94,
+    -9.84,
+    -9.68
+   ],
+   "pdb_id": "4ZYO",
+   "label": "A939572"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.15,
+   "poses": [
+    -7.15,
+    -6.96,
+    -6.67
+   ],
+   "pdb_id": "4ZYO",
+   "label": "aramchol"
+  }
+ ]
+}

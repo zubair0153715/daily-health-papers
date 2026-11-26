@@ -1,0 +1,67 @@
+{
+ "ok": true,
+ "partial": false,
+ "pdb_id": "4LL3",
+ "center": [
+  -9.81,
+  15.2,
+  26.96
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.74,
+   "poses": [
+    -10.74,
+    -10.73,
+    -10.5
+   ],
+   "pdb_id": "4LL3",
+   "label": "saquinavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.27,
+   "poses": [
+    -10.27,
+    -10.14,
+    -10.14
+   ],
+   "pdb_id": "4LL3",
+   "label": "lopinavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.13,
+   "poses": [
+    -10.13,
+    -9.97,
+    -9.88
+   ],
+   "pdb_id": "4LL3",
+   "label": "atazanavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.94,
+   "poses": [
+    -9.94,
+    -9.86,
+    -9.85
+   ],
+   "pdb_id": "4LL3",
+   "label": "tipranavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.83,
+   "poses": [
+    -9.83,
+    -9.72,
+    -9.65
+   ],
+   "pdb_id": "4LL3",
+   "label": "darunavir"
+  }
+ ]
+}

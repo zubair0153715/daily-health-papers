@@ -1,0 +1,67 @@
+{
+ "ok": true,
+ "partial": false,
+ "pdb_id": "5EW8",
+ "center": [
+  86.79,
+  1.85,
+  12.55
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.53,
+   "poses": [
+    -10.53,
+    -10.5,
+    -9.08
+   ],
+   "pdb_id": "5EW8",
+   "label": "pemigatinib"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.88,
+   "poses": [
+    -9.88,
+    -8.91,
+    -8.81
+   ],
+   "pdb_id": "5EW8",
+   "label": "CHEMBL5799893"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.59,
+   "poses": [
+    -9.59,
+    -9.51,
+    -9.48
+   ],
+   "pdb_id": "5EW8",
+   "label": "CHEMBL3980069"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.14,
+   "poses": [
+    -9.14,
+    -8.99,
+    -8.93
+   ],
+   "pdb_id": "5EW8",
+   "label": "CHEMBL5182360"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.0,
+   "poses": [
+    -9.0,
+    -8.83,
+    -8.44
+   ],
+   "pdb_id": "5EW8",
+   "label": "erdafitinib"
+  }
+ ]
+}

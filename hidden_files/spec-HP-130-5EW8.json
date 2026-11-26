@@ -1,0 +1,25 @@
+{
+ "pdb_id": "5EW8",
+ "ligands": [
+  {
+   "label": "erdafitinib",
+   "smiles": "CC(C)NCCN(C1=CC2=NC(=CN=C2C=C1)C3=CN(N=C3)C)C4=CC(=CC(=C4)OC)OC"
+  },
+  {
+   "label": "CHEMBL3980069",
+   "smiles": "COc1cc(OC)cc(N(CCNC(C)C)c2ccc3ncc(-c4cnn(C5CCNCC5)c4)nc3c2)c1"
+  },
+  {
+   "label": "CHEMBL5182360",
+   "smiles": "COc1cc(OC)cc(N(CCNC(C)C)c2ccc3ncc(-c4cnn(CCC(=O)NO)c4)nc3c2)c1"
+  },
+  {
+   "label": "CHEMBL5799893",
+   "smiles": "COc1cc(OC)cc(N(Cc2c[nH]cn2)c2ccc3ncc(-c4cnn(C)c4)cc3n2)c1"
+  },
+  {
+   "label": "pemigatinib",
+   "smiles": "CCN1C2=C3C=C(NC3=NC=C2CN(C1=O)C4=C(C(=CC(=C4F)OC)OC)F)CN5CCOCC5"
+  }
+ ]
+}

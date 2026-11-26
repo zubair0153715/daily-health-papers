@@ -1,0 +1,67 @@
+{
+ "ok": true,
+ "partial": false,
+ "pdb_id": "6DH6",
+ "center": [
+  70.94,
+  57.25,
+  16.89
+ ],
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.71,
+   "poses": [
+    -10.71,
+    -10.6,
+    -10.29
+   ],
+   "pdb_id": "6DH6",
+   "label": "saquinavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.35,
+   "poses": [
+    -10.35,
+    -10.33,
+    -10.1
+   ],
+   "pdb_id": "6DH6",
+   "label": "tipranavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.15,
+   "poses": [
+    -10.15,
+    -9.17,
+    -9.04
+   ],
+   "pdb_id": "6DH6",
+   "label": "lopinavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.06,
+   "poses": [
+    -10.06,
+    -9.86,
+    -9.85
+   ],
+   "pdb_id": "6DH6",
+   "label": "atazanavir"
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.52,
+   "poses": [
+    -9.52,
+    -9.27,
+    -9.03
+   ],
+   "pdb_id": "6DH6",
+   "label": "darunavir"
+  }
+ ]
+}
