@@ -1352,6 +1352,67 @@
    "title": "Direct SCD1 Inhibitors Out-Score Aramchol by 3.87 kcal/mol in the SCD1 Tunnel \u2014 the Day's Only Docking Win Beyond Noise, and the Skin-Eye Risk Still Decides Whether It Matters",
    "topic": "SCD1 inhibition \u2014 aramchol vs direct inhibitors",
    "topic_id": "HP-105"
+  },
+  {
+   "date": "2026-11-27",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-27-health-thrb-resmetirom-docking-negative.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "No ChEMBL Agonist Out-Scores Resmetirom in the THR-\u03b2 Pocket \u2014 and Docking Cannot Rank a 510-Fold Potency Spread",
+   "topic": "THR-beta / resmetirom vs ChEMBL agonists (negative docking result)",
+   "topic_id": "HP-123"
+  },
+  {
+   "date": "2026-11-27",
+   "topic_id": "HP-113",
+   "field": "health",
+   "title": "A Tideglusib Analogue Out-Docks Berberine on Sortase A by 0.60 kcal/mol \u2014 but Vina Cannot Rank the Measured Potencies",
+   "file": "files/2026-11-27-health-sortase-a-berberine.md",
+   "status": "drafted",
+   "platform": "ChemRxiv",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-27",
+   "topic_id": "HP-129",
+   "field": "health",
+   "title": "A 0.20 nM Kinome Hit Out-Docks Imatinib on c-KIT by 1.65 kcal/mol \u2014 but Docking Shuffles Four Near-Identical Binders",
+   "file": "files/2026-11-27-health-ckit-imatinib.md",
+   "status": "drafted",
+   "platform": "ChemRxiv",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-27",
+   "topic_id": "HP-124",
+   "field": "health",
+   "title": "Nothing Beats Adavosertib on Wee1 Docking: the Top Five Sit Inside One Molecule's 0.44 kcal/mol Reproducibility Gap",
+   "file": "files/2026-11-27-health-wee1-adavosertib.md",
+   "status": "drafted",
+   "platform": "ChemRxiv",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-27",
+   "topic_id": "HP-145",
+   "field": "health",
+   "title": "Docking Cannot Distinguish Sinefungin from Its Own Cofactor on Dengue NS5 MTase \u2014 a 0.14 kcal/mol Spread Against a 60-Fold Potency Gap",
+   "file": "files/2026-11-27-health-dengue-ns5-sinefungin.md",
+   "status": "drafted",
+   "platform": "ChemRxiv",
+   "draft_url": null
+  },
+  {
+   "date": "2026-11-27",
+   "topic_id": "HP-118",
+   "field": "health",
+   "title": "Docking Cannot Distinguish the Only Known GlgE Inhibitor from Its Own Substrate \u2014 a 0.59 kcal/mol Spread on the Emulated M. tuberculosis Site",
+   "file": "files/2026-11-27-health-glge-mcp.md",
+   "status": "drafted",
+   "platform": "ChemRxiv",
+   "draft_url": null
   }
  ],
  "used_topic_ids": [
@@ -1470,6 +1531,11 @@
   "HP-137",
   "HP-131",
   "HP-130",
-  "HP-105"
+  "HP-105",
+  "HP-113",
+  "HP-129",
+  "HP-124",
+  "HP-145",
+  "HP-118"
  ]
 }

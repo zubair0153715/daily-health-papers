@@ -1,0 +1,89 @@
+{
+ "ok": true,
+ "pdb_id": "1L9K",
+ "resolution": 2.4,
+ "center": [
+  15.28,
+  -42.04,
+  0.78
+ ],
+ "center_basis": "centroid of co-crystallised SAH (26 atoms) in 1L9K via dock._ligand_center; 1L9K is the DENV2 NS5 MTase domain + SAH (Egloff et al., EMBO J 2002)",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "excluded": "All four pipeline leads (CHEMBL4862353, CHEMBL5092085, CHEMBL5075993, CHEMBL5081752): ChEMBL target CHEMBL5980 is the genome polyprotein, and the top lead is an NS3-protease inhibitor, not an MTase inhibitor. Docking on 7K93 (DENV2 NS1 + antibody scFv) is invalid for the MTase question.",
+ "note": "1L9K is the DENV2 MTase domain (residues 1-296 of NS5); the SAM site is where sinefungin, SAH and SAM bind. Serotype coverage: the MTase domain is conserved across DENV1-4, but this docking is DENV2 only.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.95,
+   "poses": [
+    -7.95,
+    -7.84,
+    -7.67
+   ],
+   "pdb_id": "1L9K",
+   "label": "SINEFUNGIN",
+   "descriptors": {
+    "mw": 381.39,
+    "logp": -2.06,
+    "hbd": 6,
+    "hba": 10,
+    "tpsa": 208.65,
+    "rotatable": 7,
+    "lipinski_violations": 1,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C15H23N7O5"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.84,
+   "poses": [
+    -7.84,
+    -7.82,
+    -7.51
+   ],
+   "pdb_id": "1L9K",
+   "label": "SAH",
+   "descriptors": {
+    "mw": 384.42,
+    "logp": -1.44,
+    "hbd": 5,
+    "hba": 10,
+    "tpsa": 182.63,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C14H20N6O5S"
+   },
+   "pains": []
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.81,
+   "poses": [
+    -7.81,
+    -7.71,
+    -7.53
+   ],
+   "pdb_id": "1L9K",
+   "label": "SAM",
+   "descriptors": {
+    "mw": 398.45,
+    "logp": -3.26,
+    "hbd": 4,
+    "hba": 10,
+    "tpsa": 185.46,
+    "rotatable": 7,
+    "lipinski_violations": 0,
+    "lipinski_pass": true,
+    "veber_pass": false,
+    "formula": "C15H22N6O5S"
+   },
+   "pains": []
+  }
+ ]
+}

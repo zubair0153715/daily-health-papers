@@ -1,0 +1,76 @@
+{
+ "ok": true,
+ "pdb_id": "1T2O",
+ "resolution": 2.3,
+ "center": [
+  -39.89,
+  -18.59,
+  -0.79
+ ],
+ "center_basis": "centroid of catalytic triad His120/Ala184(Cys184->Ala)/Arg197, chain A, 1T2O (26 atoms); 22.1 A from the erroneous MSE141 centroid used by run_docking.py",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "note": "1T2O is the C184A mutant (catalytic Cys replaced by Ala); no inhibitor-bound SrtA structure exists, so the apo active site is used.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -7.36,
+   "poses": [
+    -7.36,
+    -7.24,
+    -7.04
+   ],
+   "pdb_id": "1T2O",
+   "label": "CHEMBL4646173",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.76,
+   "poses": [
+    -6.76,
+    -6.73,
+    -6.36
+   ],
+   "pdb_id": "1T2O",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.67,
+   "poses": [
+    -6.67,
+    -6.58,
+    -6.52
+   ],
+   "pdb_id": "1T2O",
+   "label": "CHEMBL5269466",
+   "rank": 3
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.35,
+   "poses": [
+    -6.35,
+    -6.23,
+    -6.23
+   ],
+   "pdb_id": "1T2O",
+   "label": "CHEMBL4645185",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -6.07,
+   "poses": [
+    -6.07,
+    -6.02,
+    -6.0
+   ],
+   "pdb_id": "1T2O",
+   "label": "CHEMBL4637697",
+   "rank": 2
+  }
+ ]
+}

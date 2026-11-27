@@ -1,0 +1,77 @@
+{
+ "ok": true,
+ "pdb_id": "1T46",
+ "resolution": 1.6,
+ "center": [
+  26.18,
+  26.06,
+  40.36
+ ],
+ "center_basis": "centroid of co-crystallised imatinib (STI, 37 atoms) in 1T46 via dock._ligand_center; 1T46 is the c-Kit kinase domain + STI-571 complex (Mol et al. 2004)",
+ "box_size": 22.5,
+ "exhaustiveness": 8,
+ "excluded": "CHEMBL5416410 (rank 2): SMILES has 2 fragments (salt), RDKit ligand prep refuses it; replaced by rank-6 CHEMBL272938",
+ "note": "1T46 is the DFG-out inactive conformation with the juxtamembrane domain displaced; imatinib is a type-II inhibitor. Docking cannot test exon-17/D816V resistance \u2014 that mutant is DFG-in and imatinib cannot bind it at all.",
+ "results": [
+  {
+   "ok": true,
+   "affinity_kcal_mol": -12.04,
+   "poses": [
+    -12.04,
+    -11.32,
+    -11.06
+   ],
+   "pdb_id": "1T46",
+   "label": "CHEMBL273187",
+   "rank": 5
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.78,
+   "poses": [
+    -10.78,
+    -10.32,
+    -9.43
+   ],
+   "pdb_id": "1T46",
+   "label": "CHEMBL272938",
+   "rank": 6
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -10.39,
+   "poses": [
+    -10.39,
+    -10.38,
+    -10.35
+   ],
+   "pdb_id": "1T46",
+   "label": "QUERY",
+   "rank": 1
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.96,
+   "poses": [
+    -9.96,
+    -9.88,
+    -9.76
+   ],
+   "pdb_id": "1T46",
+   "label": "CHEMBL402846",
+   "rank": 4
+  },
+  {
+   "ok": true,
+   "affinity_kcal_mol": -9.91,
+   "poses": [
+    -9.91,
+    -9.67,
+    -9.58
+   ],
+   "pdb_id": "1T46",
+   "label": "CHEMBL404366",
+   "rank": 3
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+  "target": "GlgE (Sco GlgEI-V279S emulating Mtb GlgE M1P site)",
+  "uniprot_mtb": "P9WQ17",
+  "pdb": "4U31",
+  "pdb_title": "Sco GlgEI-V279S in Complex with maltose-C-phosphonate",
+  "resolution_A": 1.85,
+  "centre": [
+    24.835,
+    -31.255,
+    281.437
+  ],
+  "centre_source": "GPM (MCP) centroid, chain C, residue 1, 4U31",
+  "box_A": 22.5,
+  "caveat": "Sco GlgE V279S, not Mtb GlgE: scores are site-emulation, not Mtb-native",
+  "ligands": [
+    {
+      "key": "M1P_substrate",
+      "name": "maltose-1-phosphate (substrate)",
+      "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@@H]2[C@H](O[C@@H]([C@@H]([C@H]2O)O)OP(=O)(O)O)CO)O)O)O)O",
+      "measured": "substrate of GlgE (donor); no IC50 (not an inhibitor)",
+      "descriptors": {
+        "mw": 422.28,
+        "logp": -5.28,
+        "hbd": 9,
+        "hba": 12,
+        "tpsa": 236.06,
+        "rotatable": 6,
+        "lipinski_violations": 2,
+        "lipinski_pass": false,
+        "veber_pass": false,
+        "formula": "C12H23O14P"
+      },
+      "pains": [],
+      "vina_kcal_mol": -7.13,
+      "vina_all": [
+        -7.13,
+        -6.94,
+        -6.73
+      ],
+      "dock_ok": true,
+      "dock_error": null
+    },
+    {
+      "key": "MCP",
+      "name": "alpha-maltose-C-phosphonate (MCP, Veleti 13)",
+      "smiles": "OC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](CP(=O)(O)O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "measured": "IC50 230 +/- 24 uM vs Mtb GlgE (Veleti et al. 2014)",
+      "descriptors": {
+        "mw": 420.3,
+        "logp": -5.17,
+        "hbd": 9,
+        "hba": 11,
+        "tpsa": 226.83,
+        "rotatable": 6,
+        "lipinski_violations": 2,
+        "lipinski_pass": false,
+        "veber_pass": false,
+        "formula": "C13H25O13P"
+      },
+      "pains": [],
+      "vina_kcal_mol": -7.56,
+      "vina_all": [
+        -7.56,
+        -7.29,
+        -6.47
+      ],
+      "dock_ok": true,
+      "dock_error": null
+    },
+    {
+      "key": "DDGIM",
+      "name": "DDGIM (oxocarbenium mimic, Lindenberger et al. 2015)",
+      "smiles": "OC[C@H]1N[C@H](CO)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H]1O",
+      "measured": "structural mimic only; no published IC50 found",
+      "descriptors": {
+        "mw": 325.31,
+        "logp": -5.14,
+        "hbd": 8,
+        "hba": 10,
+        "tpsa": 172.1,
+        "rotatable": 5,
+        "lipinski_violations": 1,
+        "lipinski_pass": true,
+        "veber_pass": false,
+        "formula": "C12H23NO9"
+      },
+      "pains": [],
+      "vina_kcal_mol": -7.72,
+      "vina_all": [
+        -7.72,
+        -7.5,
+        -6.81
+      ],
+      "dock_ok": true,
+      "dock_error": null
+    }
+  ]
+}
