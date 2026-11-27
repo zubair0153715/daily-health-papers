@@ -176,6 +176,10 @@ def main():
                 if src.exists():
                     shutil.copy2(src, out_dir / "papers" / fname)
         print(f"copied {total} md + pdf pairs into {out_dir / 'papers'}")
+        og_src = HERE / "og-image.png"
+        if og_src.exists():
+            shutil.copy2(og_src, out_dir / "og-image.png")
+            print("copied og-image.png")
 
     sections = []
     for field in FIELDS:
@@ -194,6 +198,18 @@ def main():
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Research Papers — Zubair Ali</title>
+<meta name="description" content="{total} AI drug-discovery and research manuscripts by Zubair Ali, Pharm-D student, SMBBMU Larkana — open, with full text and PDFs."/>
+<meta property="og:title" content="Research Papers — Zubair Ali"/>
+<meta property="og:description" content="{total} AI drug-discovery and research manuscripts by Zubair Ali, Pharm-D student, SMBBMU Larkana — open, with full text and PDFs."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://zubair0153715.github.io/daily-health-papers/"/>
+<meta property="og:image" content="https://zubair0153715.github.io/daily-health-papers/og-image.png"/>
+<meta property="og:image:width" content="1600"/>
+<meta property="og:image:height" content="900"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Research Papers — Zubair Ali"/>
+<meta name="twitter:description" content="{total} AI drug-discovery and research manuscripts by Zubair Ali, Pharm-D student, SMBBMU Larkana — open, with full text and PDFs."/>
+<meta name="twitter:image" content="https://zubair0153715.github.io/daily-health-papers/og-image.png"/>
 <style>
 *{{box-sizing:border-box}}
 body{{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:920px;margin:0 auto;padding:24px 16px;color:#1c1c1c;line-height:1.55}}
