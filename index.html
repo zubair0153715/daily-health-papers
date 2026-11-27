@@ -42,7 +42,7 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <body>
 <h1>Research Papers</h1>
 <p class="sub">Zubair Ali — Pharm-D student, SMBBMU Larkana, Pakistan · ORCID 0009-0001-5921-7509 · <a href="https://github.com/zubair0153715/daily-health-papers">daily-health-papers on GitHub</a></p>
-<div class="counts"><b>146 manuscripts</b><b>Health: 121</b><b>Brain: 7</b><b>Space: 6</b><b>Natural Science: 3</b><b>Social Science: 3</b><b>Drug Discovery: 6</b></div>
+<div class="counts"><b>152 manuscripts</b><b>Health: 127</b><b>Brain: 7</b><b>Space: 6</b><b>Natural Science: 3</b><b>Social Science: 3</b><b>Drug Discovery: 6</b></div>
 <p class="note"><b>AI-assisted drafts — NOT peer-reviewed, NOT published.</b> All claims require independent verification. Two early manuscripts were submitted to ChemRxiv and rejected (framework/hypothesis without new data); their reworked v2 versions are marked "ready to submit". Nothing here is submitted anywhere — submission is the author's own click after he approves a paper. New manuscripts are added daily.</p>
 <div class="controls">
 <input type="search" id="q" placeholder="Search titles…" aria-label="Search papers"/>
@@ -54,7 +54,912 @@ footer{color:#777;font-size:13px;margin-top:32px;border-top:1px solid #e5e0d5;pa
 <button data-f="social">Social Science</button>
 <button data-f="drugdiscovery">Drug Discovery</button>
 </div>
-<section id="sec-health" data-field="health"><h2>Health <span class="count">(121)</span></h2>
+<section id="sec-health" data-field="health"><h2>Health <span class="count">(127)</span></h2>
+<article class="card" data-field="health" data-title="no chembl agonist out-scores resmetirom in the thr-β pocket — and docking cannot rank a 510-fold potency spread">
+<div class="meta"><span class="date">2026-11-27</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>No ChEMBL Agonist Out-Scores Resmetirom in the THR-β Pocket — and Docking Cannot Rank a 510-Fold Potency Spread</h3>
+<p class="abs">Thyroid hormone receptor beta (THR-β) is the target of resmetirom, the first drug approved for metabolic dysfunction-associated steatohepatitis (MASH) — FDA accelerated approval 14 March 2024 — and the question is whether any earlier or related agonist binds the receptor better, and whether docking can tell the potent…</p>
+<p class="links"><a href="papers/2026-11-27-health-thrb-resmetirom-docking-negative.pdf">PDF</a> · <a href="papers/2026-11-27-health-thrb-resmetirom-docking-negative.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-27 · <strong>Health Papers Agent — Paper #123</strong> (daily paper run)</p>
+<p><strong>Keywords:</strong> THR-β; resmetirom; MASH; MASLD; sobetirome; molecular docking; AutoDock Vina; fatty liver; Pakistan</p>
+<hr />
+<h2>Abstract</h2>
+<p>Thyroid hormone receptor beta (THR-β) is the target of resmetirom, the first drug approved for metabolic dysfunction-associated steatohepatitis (MASH) — FDA accelerated approval 14 March 2024 — and the question is whether any earlier or related agonist binds the receptor better, and whether docking can tell the potent agonists from the weak ones. Five compounds — resmetirom, sobetirome (GC-1), KB141 and two resmetirom-series analogues from the same Kelly et al. 2014 assay — were docked with standardised AutoDock Vina into the ligand-binding pocket of the 2.55 Å human TR-β structure 3IMY, same box and exhaustiveness, with the pocket centre taken from the co-crystallised sobetirome. No compound beats resmetirom beyond Vina's ±1–2 kcal/mol noise: the best, resmetirom's own N-methyl analogue (EC50 40 nM), leads by 0.06 kcal/mol (−11.19 vs −11.13), and the most potent compound in the set, sobetirome (EC50 18 nM), ranks only third at −10.77. Worse, the docking order does not track potency at all: a 510-fold EC50 spread (18 nM to 9,170 nM) is compressed into 0.93 kcal/mol of docking score, Spearman rho 0.2 (n = 5). The falsifier is a recombinant THR-β reporter assay: if the N-methyl analogue's EC50 is not better than resmetirom's 210 nM on the same plate, the docking lead is noise — and the assay, not the dock, must decide, because this study shows the dock cannot rank THR-β agonists.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Metabolic dysfunction-associated steatotic liver disease (MASLD) affects 32.4% of the world's population (95% CI 29.9–34.9; Riazi et al., Lancet Gastroenterol Hepatol 2022), up from 25.5% in or before 2005 to 37.8% in 2016 or later, and a second meta-analysis puts the global figure at 30.05% (95% CI 27.88–32.32), rising 50.4% between 1990–2006 and 2016–2019 (Younossi et al., Hepatology 2023). In Pakistan the pooled prevalence is 29.82% (95% CI 21.39–39.01%) in the general population and 58.47% (95% CI 54.23–62.64%) in people with diabetes (systematic review and meta-analysis of 34 studies, 12,995 participants, Scientific Reports 2024); an earlier Pakistani cohort found 14.8% overall and 19.9% above age 40 (Ghani et al., Pak J Med Sci 2017). The disease that matters is not the fat but the fibrosis: MASH with moderate-to-advanced fibrosis (stages F2–F3) progresses to cirrhosis, and until 2024 it had no approved drug at all.</p>
+<p>Resmetirom (MGL-3196, Rezdiffra) changed that. It is an oral, liver-directed, THR-β-selective agonist: in the discovery paper it activated THR-β with EC50 0.21 μM and THR-α with EC50 3.74 μM, 28-fold selective (Kelly et al., J Med Chem 2014). The mechanism is the one thyroid hormone itself uses in the liver — increased mitochondrial function and fatty-acid β-oxidation, reduced de novo lipogenesis — with the cardiac and bone effects of unselective thyroid hormone avoided by keeping the action on the β receptor and in the liver. In the phase 3 MAESTRO-NASH trial (966 patients with biopsy-confirmed MASH and F1B–F3 fibrosis, randomised 1:1:1 to resmetirom 80 mg, 100 mg or placebo; Harrison et al., N Engl J Med 2024;390:497–509, NCT03900429), NASH resolution with no worsening of fibrosis was achieved in 25.9% (80 mg) and 29.9% (100 mg) of patients versus 9.7% on placebo (p &lt; 0.001 for both), and fibrosis improved by at least one stage with no worsening of the NAFLD activity score in 24.2% and 25.9% versus 14.2% on placebo (p &lt; 0.001 for both). LDL cholesterol fell 13.6% and 16.3% from baseline at week 24 versus a 0.1% rise on placebo. The FDA granted accelerated approval on 14 March 2024 — the first drug ever approved for MASH with F2–F3 fibrosis — with full approval contingent on the ongoing 54-month outcomes phase of MAESTRO-NASH.</p>
+<p>Two facts make resmetirom worth a hard look rather than a celebration. First, the absolute benefit is modest: roughly 2 in 10 treated patients gain NASH resolution over placebo, and roughly 1 in 10 gain fibrosis improvement — more than 70% of treated patients reached neither primary endpoint at 52 weeks. Second, it is no longer alone: semaglutide (Wegovy 2.4 mg) received FDA accelerated approval for the same indication on 15 August 2025 on the ESSENCE trial, where MASH resolution was 62.9% versus 34.3% on placebo and fibrosis improvement 36.8% versus 22.4% — cross-trial numbers, not a head-to-head comparison, but the gap is large enough that any THR-β programme must now justify itself against a GLP-1 drug that resolves MASH in nearly two-thirds of patients. And the price decides who gets either: resmetirom launched at a US wholesale acquisition cost of $47,400 per year, and a 2026 cost-effectiveness model put its incremental cost-effectiveness ratio at $273,445 per quality-adjusted life year — above the $100,000/QALY benchmark, needing a 61% price cut to about $23,007 per year to meet it — while the same model costed semaglutide at $16,188 per year (Abdeen et al., Diabetes Obes Metab 2026).</p>
+<p>The gap this paper attacks is narrower and prior to all of that: does any known THR-β agonist actually bind the receptor better than resmetirom, and can docking distinguish the strong agonists from the weak ones? The ChEMBL record for human THR-β holds 878 EC50/IC50 activities, and the discovery paper that produced resmetirom tested 22 analogues in a single recombinant assay with a 510-fold potency spread — a clean, same-assay rank test. If docking cannot rank that set, then no docking-based claim about a "better resmetirom" deserves belief, and the drug question for Pakistan becomes one of price and patient-finding, not of molecular optimisation.</p>
+<p><strong>Falsifiable question.</strong> Do ChEMBL-recorded THR-β agonists out-score resmetirom in the TR-β ligand-binding pocket (3IMY) by more than Vina's ±1–2 kcal/mol noise, and does the docking order match the same-assay EC50 order? <strong>Falsifier:</strong> (a) no compound beats resmetirom beyond noise, or (b) the docking order fails to track EC50 (Spearman rho near zero). <strong>Causal identification:</strong> validated-control re-docking — the co-crystallised sobetirome defines the pocket centre on 3IMY, resmetirom and four comparators docked on the same structure with the same box and exhaustiveness — association only beyond that, since docking scores are not EC50, and the pocket was solved with sobetirome, not resmetirom.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-27: the MAESTRO-NASH phase 3 trial (Harrison et al., N Engl J Med 2024;390:497–509, doi:10.1056/NEJMoa2309000, NCT03900429); the resmetirom discovery paper (Kelly et al., J Med Chem 2014;57:3912–3923, PMID 24712661, doi:10.1021/jm4019299 — EC50 THR-β 0.21 μM, THR-α 3.74 μM, 28-fold selective); the resmetirom phase 2 trial (Harrison et al., Lancet 2019;394:2012–24); the TR-β structure with sobetirome (Bleicher et al., BMC Struct Biol 2008;8:1, PMID 18237438, doi:10.1186/1472-6807-8-1 — PDB 3IMY, 2.55 Å); the global prevalence meta-analyses (Riazi et al., Lancet Gastroenterol Hepatol 2022;7:851–861; Younossi et al., Hepatology 2023;77:1335–1347); the Pakistan prevalence meta-analysis (Scientific Reports 2024, doi:10.1038/s41598-024-70481-9) and the Ghani et al. 2017 Pakistani cohort (Pak J Med Sci 2017;33:121–126); the semaglutide MASH approval and ESSENCE results (FDA accelerated approval 15 August 2025; Rinella et al., Nat Med 2025, doi:10.1038/s41591-025-04130-7); the resmetirom cost-effectiveness model (Abdeen et al., Diabetes Obes Metab 2026;28:8378–8389, doi:10.1111/dom.71020); the molecular-dynamics study of MGL-3196 binding (ACS Omega 2024;9:20957–20965, doi:10.1021/acsomega.4c00089); the resmetirom off-target nuclear-receptor study (Sci Rep 2026, doi:10.1038/s41598-026-37494-y); and the next-generation THR-β agonist ALG-055009 (Vandyck et al., J Med Chem 2024;67:14840–14851, doi:10.1021/acs.jmedchem.4c01029). The classical-canon sweep: Ibn Sina's Canon treats diseases of the liver at length (Book III) without a receptor concept; the principle carried is hifz al-nafs, with the honest note that no classical source addresses THR-β.</p>
+<h3>2.2 Target identification</h3>
+<p>The pipeline resolved the target correctly on the first run: UniProtKB P10828 (thyroid hormone receptor beta, Homo sapiens, 461 aa) → ChEMBL target CHEMBL1947 (Thyroid hormone receptor beta, SINGLE PROTEIN, human), whose only component is P10828 — verified by accession, not by text search. The sibling CHEMBL2111462 (Thyroid hormone receptor, PROTEIN COMPLEX, 2 components) was not used. CHEMBL1947 holds 878 EC50/IC50 activities. The docking set was deliberately taken from ONE assay — ChEMBL assay CHEMBL3266217, "agonist activity at recombinant His6-tagged THR-beta expressed in Escherichia coli", document CHEMBL3259553 (Kelly et al. 2014), 22 molecules — so that all five EC50s come from the same paper, the same assay and the same laboratory, and the rank test is a fair same-assay comparison. The potency spread in the assay is 18 → 9,170 nM, about 510-fold. The five compounds: resmetirom (reference; PubChem CID 15981237, C17H12Cl2N6O4, MW 435.2, verified live against PubChem); sobetirome (GC-1, the literature standard; CID 9862248, C20H24O4, MW 328.4, verified live); CHEMBL41036 (KB141 — identity verified by InChIKey; PubChem CID 9863447, C17H16Cl2O4); CHEMBL3261333 (resmetirom N-methyl analogue, no PubChem CID); and CHEMBL3261329 (a weak sulfoxide-anchored analogue, no PubChem CID). Earlier THR-β agonists sobetirome and eprotirome (KB2115) never reached approval; VK2809 (MB07811, a HepDirect prodrug) and ALG-055009 are the other clinical-stage THR-β agonists, but neither has a published EC50 in the Kelly assay, so neither enters the rank test — no potency is borrowed across assays.</p>
+<h3>2.3 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7, exactly as Papers #1/#3: box 22.5 Å, exhaustiveness 8, best of 3 poses reported. Primary structure: 3IMY, the 2.55 Å X-ray structure of the human TR-β ligand-binding domain in complex with sobetirome (GC-1) (Bleicher et al., BMC Struct Biol 2008;8:1), grid centre the centroid of the co-crystallised sobetirome (residue B72, chain A, 24 heavy atoms), verified by direct computation from the PDB file with <code>dock._ligand_center</code> — the largest drug-like HETATM group in the file, ahead of three S-(dimethylarsenic)cysteine modified residues (9 atoms each), which are crystallisation artefacts, not the drug site. Two corrections from the structure search are recorded because they change what can be claimed: first, 1NAX does NOT hold GC-1, as is sometimes assumed — its ligand IH5 is KB141 (PubChem CID 9863447, C17H16Cl2O4), verified from the 1NAX PDB file; second, no resmetirom-bound TR-β structure has been deposited — an RCSB full-text search for "resmetirom" returns no entries, and the published molecular-dynamics study of MGL-3196 binding starts from 3GWS (T3-bound) and 1N46 (an MGL-3196-precursor-bound structure) and mutates the ligand in silico. Resmetirom was therefore docked into a sobetirome-shaped pocket, and the pocket-shape bias that follows is a stated limitation, not a hidden one. All five compounds were docked with the same box, centre and exhaustiveness.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all five compounds. All are PAINS-clean. No PAINS alert is hidden anywhere in this paper; there is none to hide.</p>
+<h3>2.5 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors computed for all five compounds (molecular weight, logP, H-bond donors/acceptors, TPSA, rotatable bonds, Lipinski violations). No ToxGuard read-across is reported for this set: the pipeline's Tox21 panel ran a kNN read-across at low maximum similarity (0.28–0.51), which is not safety data; it is omitted rather than presented. The safety facts that matter — resmetirom's diarrhoea (27.0% at 80 mg, 33.4% at 100 mg vs 15.6% placebo) and nausea (22.0% and 18.9% vs 12.5%) from MAESTRO-NASH, with serious adverse events similar across arms (10.9% and 12.7% vs 11.5%) — are discussed in §4.2 from the trial, not from a read-across.</p>
+<h3>2.6 Honesty limits</h3>
+<p>Docking ≠ EC50. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist for any compound in this study beyond their published EC50s and the published structure. The EC50s are assay-dependent: the same compound, resmetirom, is reported at EC50 0.21 μM in the Kelly et al. functional assay and at 8.8 ± 0.8 μM in a 2026 reporter-gene assay (Sci Rep 2026) — a 40-fold difference between laboratories — which is why this study takes all five potencies from one assay and why its rank test is conditional on that assay. Sobetirome is the self-dock control (3IMY was solved with it bound), so its score is the closest thing to a validated control in this set — and it still ranks third.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Best affinity (kcal/mol)</th>
+<th>Poses (kcal/mol)</th>
+<th>EC50, Kelly assay (nM)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL3261333 (resmetirom N-methyl analogue)</td>
+<td>−11.19</td>
+<td>−11.19, −10.70, −7.50</td>
+<td>40</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Resmetirom (reference)</td>
+<td>−11.13</td>
+<td>−11.13, −10.55, −9.70</td>
+<td>210</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Sobetirome (GC-1, comparator)</td>
+<td>−10.77</td>
+<td>−10.77, −9.62, −8.87</td>
+<td>18</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL41036 (KB141)</td>
+<td>−9.85</td>
+<td>−9.85, −9.66, −9.06</td>
+<td>23</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL3261329 (sulfoxide anchor)</td>
+<td>−9.84</td>
+<td>−9.84, −9.81, −8.38</td>
+<td>9,170</td>
+<td>Clean</td>
+</tr>
+</tbody>
+</table>
+<p>No compound beats resmetirom beyond noise. The best, CHEMBL3261333, leads by 0.06 kcal/mol — one-twentieth of Vina's noise floor — and its lead rests on two poses, its third being −7.50, a 3.69 kcal/mol drop that says the compound does not sit in the pocket consistently. Resmetirom itself is well converged (spread 1.43 kcal/mol across three poses, top two within 0.58). Sobetirome, the most potent compound in the set by 12-fold over resmetirom, scores 0.36 kcal/mol worse than resmetirom. The bottom of the table is the most informative part: KB141 (EC50 23 nM) and the sulfoxide analogue (EC50 9,170 nM) — a 400-fold potency difference between those two alone — score −9.85 and −9.84, a 0.01 kcal/mol difference. The docking cannot see the difference between a 23 nM agonist and a 9,170 nM one.</p>
+<h3>3.2 The rank test fails</h3>
+<p>Across the five compounds, Spearman rho between log10 EC50 and docking score is 0.2 (n = 5) — no rank correlation. The full 510-fold potency range (18 nM to 9,170 nM) is compressed into 0.93 kcal/mol of docking score between the most potent (sobetirome, −10.77) and the weakest (sulfoxide, −9.84) compounds — less than Vina's noise. The total spread across all five scores is 1.35 kcal/mol (−11.19 to −9.84), also inside noise. In other words, on this target, with this structure and this protocol, the docking score carries no information about potency. That is not a failed run: the run executed cleanly on all five compounds, the structure and centre are audited, the potencies are single-assay, and the method still fails. The failure is the finding.</p>
+<h3>3.3 Comparison with published docking</h3>
+<p>No published docking study of resmetirom on 3IMY was found in the searches for this paper, so there is no published docking table to compare against — which is itself notable, because resmetirom is the only approved drug in the class and its binding mode has been studied by molecular dynamics (ACS Omega 2024), not by a published Vina screen. The comparison that exists is against the published EC50 values from the single Kelly assay, and it is reported in §3.1 in full — and for once the honest answer is that the comparison fails. The one partial validation is the pose behaviour: resmetirom and sobetirome are the two best-converged compounds (their top two poses within 0.58 and 1.15 kcal/mol), which is what a working method should show for real binders — but convergence without ranking is not a result a drug programme can use.</p>
+<h3>3.4 The value problem: the drug that wins the pocket loses the value race</h3>
+<p>The docking table says resmetirom is not beaten. The clinic and the price say something else. In MAESTRO-NASH, resmetirom resolved MASH in 29.9% of patients at the 100 mg dose versus 9.7% on placebo — a 20.2-percentage-point absolute gain. In ESSENCE, semaglutide resolved MASH in 62.9% versus 34.3% on placebo — a 28.6-point gain, in a different trial, at 72 weeks rather than 52, so this is a cross-trial comparison and not a head-to-head claim. But the direction is consistent across both endpoints: semaglutide's fibrosis improvement (36.8% vs 22.4%) also exceeds resmetirom's (25.9% vs 14.2%). And the cost model is unambiguous: at US prices, resmetirom costs $59,269 per year against semaglutide's $16,188 in the Abdeen et al. model, with an ICER of $273,445 per QALY for resmetirom — the drug that was first to approval is the worst value of the three MASH drugs modelled, and it needs a 61% price cut to meet a $100,000/QALY threshold. For Pakistan, where the pooled MASLD prevalence is 29.8% and 58.5% among people with diabetes, the implication is stark: the binding question is settled (resmetirom is not beaten in the pocket), the value question is settled against it at current prices, and the unanswered question is who, in Pakistan, actually has F2–F3 fibrosis — because no Pakistani study reports MASH prevalence by liver biopsy or by fibrosis stage.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe: the question changes from "which agonist?" to "can docking rank agonists at all?"</h3>
+<p>The paper set out to find whether any ChEMBL THR-β agonist binds the receptor better than resmetirom. The answer is no — not beyond noise, not by 0.06 kcal/mol. But the more useful answer is the second one: the docking cannot rank this set at all. A 510-fold potency spread collapses into 0.93 kcal/mol, the most potent compound ranks third, and a 9,170 nM compound ties a 23 nM compound to within 0.01 kcal/mol. The question therefore changes: the finding is not "CHEMBL3261333 wins" but "Vina on 3IMY cannot distinguish a 23 nM agonist from a 9,170 nM one — and any future claim of a better resmetirom from docking alone should be treated as noise until an assay says otherwise". That is a useful negative, and it is the paper's actual contribution: it closes a door (docking-first optimisation of THR-β agonists) and names the experiment that decides what is behind the next one.</p>
+<h3>4.2 Why the negative result must not be over-read — or under-read</h3>
+<p>Four reasons not to over-read it. First, the pocket: 3IMY was solved with sobetirome, a smaller ligand (MW 328) than resmetirom (MW 435), so the pocket shape favours sobetirome-like ligands — yet sobetirome still ranked third, which cuts both ways: the bias should have helped it and did not. Second, the assay: all five EC50s come from one 2014 recombinant assay, and another laboratory reports resmetirom's EC50 40-fold higher (8.8 μM vs 0.21 μM), so the rank test is conditional on the Kelly assay being right. Third, the set: five compounds from one paper is a small rank test, and a larger set might show a weak correlation that five points cannot. Fourth, the method: Vina's scoring function is the thing that failed — a different protocol (Glide, MM-GBSA rescoring, free-energy perturbation) might recover the order, and this paper does not test those. And one reason not to under-read it: the failure is specific and quantified (rho 0.2, 510-fold → 0.93 kcal/mol), not a vague "docking is hard" — it is a measured null that the next THR-β docking paper must beat, and the falsifier for that is stated in §4.4.</p>
+<p>The clinical caveat belongs here too. Resmetirom's benefit in MAESTRO-NASH is real but modest — 29.9% resolution, 25.9% fibrosis improvement — and its harms are mostly gastrointestinal (diarrhoea in a third of patients at 100 mg, nausea in nearly a fifth), with serious adverse events no more frequent than placebo. The drug's problem is not safety or efficacy; it is that a competitor resolves MASH in nearly twice as many patients in its own trial and costs roughly a quarter as much per year in the US model. A docking table that ranks resmetirom first has ranked binding, not benefit — and the compound that wins the pocket may still be the wrong drug to buy.</p>
+<h3>4.3 Mechanism</h3>
+<p>THR-β is a nuclear receptor: in the liver it binds thyroid hormone response elements as a heterodimer with RXR and, when agonist-bound, recruits coactivators that switch on the genes for mitochondrial biogenesis, fatty-acid β-oxidation, lipophagy and cholesterol catabolism, while suppressing de novo lipogenesis. In MASH, hepatic THR-β signalling is reduced, mitochondrial function falls, β-oxidation slows, and fat accumulates until fibrosis follows. Resmetirom restores the signal: it is 28-fold selective for THR-β over THR-α in the Kelly functional assay, so the liver gets the metabolic signal while the heart — where THR-α dominates — is largely spared the tachycardia and bone loss that made unselective thyroid hormone unusable as a chronic therapy; and it concentrates in the liver at roughly four times the serum level, adding tissue selectivity to receptor selectivity. The 3IMY structure (Bleicher et al. 2008) shows how the selectivity is built: sobetirome's binding mode in the TR-β pocket, and the pocket residues that differ between the α and β isoforms. The mechanistic question is therefore not "which compound binds tightest" but "which binding mode gives liver THR-β activation without THR-α activation" — and a docking score, which does not know which isoform it is scoring against, cannot answer that. Test for each link: (i) a recombinant THR-β/THR-α reporter assay measures EC50 and selectivity directly against the published values; (ii) a hepatocyte assay measures fatty-acid oxidation and lipogenesis genes, separating receptor activation from functional effect; (iii) a cardiomyocyte counterscreen measures the THR-α activity that decides whether an agonist is liver-safe at all.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>The best-scoring compound on 3IMY, CHEMBL3261333, has an EC50 within 3-fold of its published 40 nM in the same recombinant assay. Falsifier: EC50 more than 3-fold worse than published. (Status after this study: untested — and the docking gives no reason to prefer it over resmetirom, since its 0.06 kcal/mol lead is noise; the assay would be testing the published potency, not a docking prediction.)</li>
+<li>Sobetirome out-scores resmetirom on a resmetirom-shaped pocket, if one existed. Falsifier: it does not, which would show pocket bias — not the ligand — decides the ranking. (Status after this study: untestable today, because no resmetirom-bound TR-β structure has been deposited; the structure is the missing experiment.)</li>
+<li>No docking protocol (Vina, Glide, or MM-GBSA rescoring) recovers the EC50 order (rho &gt; 0.7) on this five-compound set. Falsifier: a rescoring protocol does recover it, which would show the failure is Vina's scoring function, not the pocket. (Status after this study: the hypothesis stands for Vina — rho 0.2 — and the rescoring experiment is the cheapest way to kill or confirm it.)</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): recombinant THR-β and THR-α reporter assay for the five compounds, same plate, n = 3, with resmetirom's published EC50 (210 nM in the Kelly assay) as the control; readout EC50 and the β/α selectivity ratio. Stage 2 (weeks 4–8): hepatocyte assay for the best two compounds from stage 1, measuring fatty-acid oxidation rate and lipogenesis-gene expression, with resmetirom as the control. Stage 3 (weeks 9–12): if any compound passes stages 1–2 — EC50 better than resmetirom's and a hepatocyte effect — a cardiomyocyte counterscreen for that compound to measure the THR-α risk; if none passes, publish the negative result with the docking data as the reason the hypothesis failed. No animal work is proposed at this stage.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every margin in the table — the largest gap (resmetirom vs the sulfoxide analogue, 1.29 kcal/mol) is inside noise — and the only interpretable number is the compression itself: 510-fold of potency into 0.93 kcal/mol.</li>
+<li>No resmetirom-bound TR-β structure exists, so resmetirom was docked into a sobetirome-shaped pocket (3IMY, 2.55 Å, sobetirome MW 328 vs resmetirom MW 435); pocket bias favours sobetirome-like ligands, yet sobetirome still ranked third.</li>
+<li>All five EC50s come from one 2014 assay, and another laboratory reports resmetirom's EC50 40-fold higher (8.8 μM vs 0.21 μM), so the rank test is conditional on the Kelly assay; the docking is the only like-for-like comparison in this study, and it fails.</li>
+<li>Five compounds is a small rank test; a larger set might show a weak correlation that five points cannot, and other scoring protocols (Glide, MM-GBSA, free-energy perturbation) were not tested.</li>
+<li>The Tox21 read-across was run and is omitted (maximum similarity 0.28–0.51 — not safety data); the safety discussion rests on the MAESTRO-NASH trial, not on this computation.</li>
+<li>No published Pakistani study reports MASH prevalence by liver biopsy or fibrosis stage, so the clinical picture is global; the Pakistani numbers in this paper are burden numbers, not response numbers.</li>
+<li>The semaglutide comparison is cross-trial, not head-to-head (ESSENCE 72 weeks vs MAESTRO-NASH 52 weeks, different populations), and the cost figures are US prices — no Pakistan pricing or cost-effectiveness assessment exists.</li>
+<li>The classical-canon sweep found no THR-β-relevant text: the Canon describes liver disease without a receptor concept, so the Islamic-principle discussion rests on hifz al-nafs, maslaha and 'adl as principles, not on a classical source about this target.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>No ChEMBL THR-β agonist out-scores resmetirom in the TR-β pocket beyond Vina's noise — the best, its own N-methyl analogue, leads by 0.06 kcal/mol — and the docking cannot rank the set at all: a 510-fold EC50 spread (18 nM to 9,170 nM) collapses into 0.93 kcal/mol, Spearman rho 0.2. The most potent compound, sobetirome, ranks third on the very structure solved with it bound. The next step is a recombinant THR-β reporter assay on the same five compounds, with a cardiomyocyte counterscreen for any compound that passes — the experiment that decides whether the best pocket binder is a drug, and whether docking deserves any role in the next THR-β programme. Until that assay exists, no docking-based claim of a better resmetirom should be believed.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-makers:</strong> Pakistan's Drug Regulatory Authority (DRAP) and the Ministry of National Health Services, Regulations &amp; Coordination, with the provincial health departments and the hepatology units that run liver clinics. <strong>Decision:</strong> whether to spend anything on a THR-β agonist programme or on resmetirom procurement, and what must exist first. <strong>Exact change:</strong> (1) do not fund a THR-β agonist discovery programme on docking evidence — this study shows docking cannot rank THR-β agonists, and resmetirom is not beaten in the pocket anyway; (2) fund instead a MASH fibrosis-staging survey using non-invasive scores (FIB-4, transient elastography) in the diabetic population, so Pakistan's own F2–F3 population is counted rather than assumed from the global 30% and the Pakistani 29.8% prevalence figures; (3) commission a Pakistan cost-effectiveness model comparing resmetirom against semaglutide at negotiated prices before any formulary decision — at US prices resmetirom costs $47,400 a year at launch with an ICER of $273,445 per QALY against semaglutide's $16,188 a year in the same model, and no Pakistan pricing exists at all. <strong>If evidence Z appears, reverse this:</strong> if the survey shows advanced fibrosis above 10% in diabetics and a local model shows an ICER below the local threshold at an achievable price, move to a procurement assessment; if the survey shows the burden is mostly simple steatosis, keep the money on diabetes control and weight management — do not proceed to any THR-β drug programme on docking scores alone. The Islamic principle is hifz al-nafs (preservation of life) joined to 'adl (justice, Qur'an 4:135) and maslaha (public interest): where the drug costs $47,400 a year, resolves MASH in 3 of 10 patients, and the patients who need it have not been identified, spending on the drug before spending on the test would put the benefit where the poor cannot reach it and violate all three. The evidence here is thin — docking only, and a negative at that — so the recommendation is "run the survey", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content.</p>
+<h2>References</h2>
+<ol>
+<li>Harrison SA, Bedossa P, Guy CD, Schattenberg JM, Loomba R, Taub R, et al. A phase 3, randomized, controlled trial of resmetirom in NASH with liver fibrosis. N Engl J Med. 2024;390:497–509. doi:10.1056/NEJMoa2309000. (MAESTRO-NASH; 966 patients; NASH resolution 25.9%/29.9% vs 9.7%; fibrosis improvement 24.2%/25.9% vs 14.2%; LDL −13.6%/−16.3% vs +0.1%.)</li>
+<li>Kelly MJ, Pietranico-Cole S, Larigan JD, Haynes NE, Reynolds CH, Scott N, et al. Discovery of 2-[3,5-dichloro-4-(5-isopropyl-6-oxo-1,6-dihydropyridazin-3-yloxy)phenyl]-3,5-dioxo-2,3,4,5-tetrahydro[1,2,4]triazine-6-carbonitrile (MGL-3196), a highly selective thyroid hormone receptor β agonist in clinical trials for the treatment of dyslipidemia. J Med Chem. 2014;57:3912–3923. PMID: 24712661. doi:10.1021/jm4019299. (Resmetirom EC50 THR-β 0.21 μM, THR-α 3.74 μM, 28-fold selective.)</li>
+<li>Bleicher L, Aparicio R, Nunes FM, Martinez L, Gomes Dias SM, Figueira ACM, et al. Structural basis of GC-1 selectivity for thyroid hormone receptor isoforms. BMC Struct Biol. 2008;8:1. PMID: 18237438. doi:10.1186/1472-6807-8-1. (PDB 3IMY, 2.55 Å, TR-β bound to sobetirome/GC-1.)</li>
+<li>Riazi K, Azhari H, Charette JH, Underwood FE, King JA, Afshar EE, et al. The prevalence and incidence of NAFLD worldwide: a systematic review and meta-analysis. Lancet Gastroenterol Hepatol. 2022;7:851–861. doi:10.1016/S2468-1253(22)00165-0. (Global prevalence 32.4%, 95% CI 29.9–34.9.)</li>
+<li>Younossi ZM, Golabi P, Paik JM, Henry L, Van Dongen C, Henry L. The global epidemiology of nonalcoholic fatty liver disease (NAFLD) and nonalcoholic steatohepatitis (NASH): a systematic review. Hepatology. 2023;77:1335–1347. doi:10.1097/HEP.0000000000000004. (Global prevalence 30.05%, 95% CI 27.88–32.32%.)</li>
+<li>Prevalence of nonalcoholic fatty liver disease in Pakistan: a systematic review and meta-analysis. Sci Rep. 2024. doi:10.1038/s41598-024-70481-9. (Pooled prevalence 29.82%, 95% CI 21.39–39.01% general; 58.47% in diabetes; 34 studies, 12,995 participants.)</li>
+<li>Ghani RA, Saqlain M, Zafar MM, Jabeen S, Naqvi SM, Raja GK. Identification of metabolic risk phenotypes predisposing to non-alcoholic fatty liver disease in a Pakistani cohort. Pak J Med Sci. 2017;33:121–126. doi:10.12669/pjms.331.11445. (NAFLD 14.8% overall, 19.9% above age 40.)</li>
+<li>Harrison SA, Bashir MR, Guy CD, Zhou R, Moylan CA, Frias JP, et al. Resmetirom (MGL-3196) for the treatment of non-alcoholic steatohepatitis: a multicentre, randomised, double-blind, placebo-controlled, phase 2 trial. Lancet. 2019;394:2012–24.</li>
+<li>U.S. Food and Drug Administration. FDA approves first treatment for patients with liver scarring due to fatty liver disease (Rezdiffra/resmetirom). 14 March 2024. Novo Nordisk. Wegovy approved in the US for the treatment of MASH. 15 August 2025. (ESSENCE part 1, n = 800: MASH resolution 62.9% vs 34.3%; fibrosis improvement 36.8% vs 22.4%.)</li>
+<li>Rinella ME, Sanyal AJ, Loomba R, et al. MASLD as a complication of obesity must include liver risk stratification. Nat Med. 2025. doi:10.1038/s41591-025-04130-7.</li>
+<li>Abdeen AA, Ayer T, Biswas A, Wehrle CJ, Laique SN, Aminian A. Cost-effectiveness of pharmacologic therapies for metabolic dysfunction–associated steatohepatitis with significant fibrosis in the United States. Diabetes Obes Metab. 2026;28:8378–8389. doi:10.1111/dom.71020. (Resmetirom ICER $273,445/QALY; WAC $47,400/year at launch; model annual costs resmetirom $59,269, semaglutide $16,188.)</li>
+<li>Molecular dynamic simulation to reveal the mechanism underlying MGL-3196 resistance to thyroxine receptor beta. ACS Omega. 2024;9:20957–20965. doi:10.1021/acsomega.4c00089. (No resmetirom-bound crystal structure; MD starts from 3GWS and 1N46.)</li>
+<li>The metabolic dysfunction-associated steatohepatitis (MASH) drug resmetirom exhibits broad nuclear receptor activity with minimal functional impact. Sci Rep. 2026. doi:10.1038/s41598-026-37494-y. (Resmetirom EC50 8.8 ± 0.8 μM on THR-β in this reporter assay, vs 0.21 μM in Kelly et al. — assay-dependence of EC50.)</li>
+<li>Vandyck K, et al. Discovery and preclinical profile of ALG-055009, a potent and selective thyroid hormone receptor beta (THR-β) agonist for the treatment of MASH. J Med Chem. 2024;67:14840–14851. doi:10.1021/acs.jmedchem.4c01029.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Book III: diseases of the liver. Classical source — cited for the hifz al-nafs principle only; no receptor concept.)</li>
+<li>Al-Ghazali. Al-Mustasfa min 'Ilm al-Usul. c. 1109. (Defines the five necessities of the law, including hifz al-nafs.)</li>
+<li>Al-Shatibi. Al-Muwafaqat fi Usul al-Shari'a. 14th c. (Systematises maqasid al-shariah, including maslaha.)</li>
+<li>UniProtKB P10828: Thyroid hormone receptor beta, Homo sapiens. ChEMBL target CHEMBL1947. RCSB PDB entry 3IMY: human TR-beta ligand-binding domain in complex with sobetirome (GC-1), 2.55 Å. All accessed 2026-11-27.</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-123-2026-11-27-THRB.json</code> (resmetirom, sobetirome, CHEMBL41036, CHEMBL3261333, CHEMBL3261329 on 3IMY; target resolution, assay, centre audit, descriptors, PAINS). Reference drug resmetirom (PubChem CID 15981237, C17H12Cl2N6O4, MW 435.2); comparator sobetirome (CID 9862248, C20H24O4, MW 328.4); ChEMBL compounds CHEMBL41036 (CID 9863447), CHEMBL3261333, CHEMBL3261329, SMILES verified against PubChem/ChEMBL. Structure: PDB 3IMY (2.55 Å, sobetirome-bound). Target: UniProtKB P10828; ChEMBL target CHEMBL1947; assay CHEMBL3266217 (Kelly et al. 2014). No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="direct scd1 inhibitors out-score aramchol by 3.87 kcal/mol in the scd1 tunnel — the day&#x27;s only docking win beyond noise, and the skin-eye risk still decides whether it matters">
+<div class="meta"><span class="date">2026-11-26</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Direct SCD1 Inhibitors Out-Score Aramchol by 3.87 kcal/mol in the SCD1 Tunnel — the Day&#x27;s Only Docking Win Beyond Noise, and the Skin-Eye Risk Still Decides Whether It Matters</h3>
+<p class="abs">Stearoyl-CoA desaturase 1 (SCD1) makes the monounsaturated fatty acids that fill a fatty liver, and aramchol — the most clinically advanced SCD1 modulator — works by downregulating SCD1 expression, not by binding its active site, while direct active-site inhibitors were abandoned for skin and eye toxicity.</p>
+<p class="links"><a href="papers/2026-11-26-health-scd1-aramchol.pdf">PDF</a> · <a href="papers/2026-11-26-health-scd1-aramchol.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-26 · <strong>Health Papers Agent — Paper #122</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> SCD1; aramchol; A939572; MASH; molecular docking; AutoDock Vina; fatty liver; Pakistan</p>
+<hr />
+<h2>Abstract</h2>
+<p>Stearoyl-CoA desaturase 1 (SCD1) makes the monounsaturated fatty acids that fill a fatty liver, and aramchol — the most clinically advanced SCD1 modulator — works by downregulating SCD1 expression, not by binding its active site, while direct active-site inhibitors were abandoned for skin and eye toxicity. Five compounds — aramchol, three ChEMBL direct inhibitors (CHEMBL594289, CHEMBL595247, CHEMBL594084) and the literature standard A939572 — were docked with standardised AutoDock Vina into the substrate tunnel of the 3.25 Å human SCD1 structure 4ZYO, same box and exhaustiveness. The direct inhibitors out-scored aramchol by 2.79–3.87 kcal/mol: CHEMBL594289 best at −11.02 kcal/mol against aramchol's −7.15, a lead beyond Vina's ±1–2 kcal/mol noise and the only such lead in today's five papers. The docking order also matches the published IC50 order exactly (0.068, 0.48, 0.56, 37 nM), the only paper today where the method validates against experiment. The win still does not make the direct inhibitors better drugs: complete SCD1 inhibition causes sebaceous gland atrophy and dry eye, and aramchol's partial inhibition is precisely what avoids it. Pose consistency was tight for A939572 and aramchol (three-pose spreads 0.26 and 0.48 kcal/mol) and reasonable for the two leaders, whose top two poses converge; CHEMBL594084's third place rests on a single pose, its third being a +4.96 kcal/mol clash, so its honest score is about −8.8, below A939572. The falsifier is a recombinant SCD1 desaturation assay: if CHEMBL594289's IC50 is not better than A939572's 37 nM on the same plate, the docking lead is a tunnel artefact.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Stearoyl-CoA desaturase 1 (SCD1, UniProt O00767, 359 aa) catalyses the rate-limiting step in monounsaturated fatty acid synthesis — inserting a cis double bond at the Δ9 position of palmitoyl- and stearoyl-CoA — and its product, oleate, is the substrate for the triglycerides that fill a fatty liver. Non-alcoholic fatty liver disease affects 13% of people in Africa and up to 32% in Latin America and the Middle East, and in Pakistan NAFLD frequency is reported at 15–29% (highest above age 40), inside a chronic liver disease burden of 2–29%. Aramchol (3β-arachidyl-amido cholanoic acid), a fatty acid–bile acid conjugate, is the most clinically advanced SCD1 modulator: it partially inhibits hepatic SCD1 (70–83% inhibition of activity in vitro), downregulates SCD1 mRNA and protein while inducing PPARγ, and in the ARREST phase 2b trial (247 NASH patients, 52 weeks; Ratziu et al., Nat Med 2021;27:1825–1835, NCT02279524) 600 mg produced a placebo-corrected liver-triglyceride decrease of −3.1 (95% CI −6.4 to 0.2, p = 0.06 — the primary endpoint was missed), NASH resolution without worsening fibrosis in 16.7% vs 5% on placebo (OR 4.74), fibrosis improvement by ≥1 stage in 29.5% vs 17.5% (OR 1.88), and a placebo-corrected ALT fall of −29.1 IU/L. The gap this paper attacks is the mechanism: aramchol is not a competitive active-site inhibitor — it lowers SCD1 expression — so the question is whether direct active-site inhibitors, which ChEMBL records at 0.068–1.0 nM, actually bind the SCD1 substrate tunnel better than aramchol does, and whether that matters given the on-target risks (skin and eye) that killed earlier direct inhibitors.</p>
+<p><strong>Falsifiable question.</strong> Do direct SCD1 inhibitors out-score aramchol in the human SCD1 substrate tunnel (4ZYO) by more than Vina's ±1–2 kcal/mol noise, and does the literature standard A939572 (human SCD1 IC50 37 nM) sit below them as expected? <strong>Falsifier:</strong> a recombinant SCD1 desaturation assay showing the winner's IC50 not better than aramchol's measured activity, or a cellular desaturation-index assay showing no better inhibition. <strong>Causal identification:</strong> validated-control re-docking — the substrate stearoyl-CoA defines the tunnel centre on 4ZYO, aramchol and four direct inhibitors docked on the same structure with the same box and exhaustiveness — association only beyond that, since docking scores are not IC50, and aramchol's real mechanism (expression downregulation) is not a binding event at all.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-26: the human SCD1 structure (Wang et al., Nat Struct Mol Biol 2015;22:581–585, PMID 26098317, DOI 10.1038/nsmb.3049 — 4ZYO, 3.25 Å, stearoyl-CoA-bound, dimetal centre); the ARREST phase 2b trial (Ratziu et al., Nat Med 2021;27:1825–1835, doi:10.1038/s41591-021-01495-3, NCT02279524); the aramchol antifibrotic mechanism paper (JHEP Reports 2021 — aramchol downregulates SCD1 and induces PPARγ in hepatic stellate cells); the early aramchol NAFLD trial (Safadi et al., Clin Gastroenterol Hepatol 2014, NCT01094158 — 60 patients, 300 mg, 12 weeks, liver fat reduced by MRS); the A939572 potency data (Mol Cancer Res 2011;9:1551 — human SCD1 IC50 37 nM in vitro, mouse &lt;4 nM, cellular desaturation IC50 ~4 nM); and the Pakistan NAFLD figures (chronic liver disease review — NAFLD 15–29%). The classical-canon sweep: Ibn Sina's Canon treats diseases of the liver at length, including fatty change of the liver as a humoral imbalance, without an enzyme concept; the principle carried is hifz al-nafs, with the honest note that no classical source addresses SCD1.</p>
+<h3>2.2 Target identification</h3>
+<p>The pipeline resolved the target correctly on the first run: UniProtKB O00767 (SCD, Homo sapiens, 359 aa) → ChEMBL lookup returned 26 ranked leads, all direct SCD1 inhibitors with measured IC50s from 0.068 to 1.0 nM. The QUERY (aramchol) verified against PubChem (CID 18738120, C44H79NO5, MW 702.12, logP 10.61, 4 H-bond donors, 4 acceptors, TPSA 106.86 Å², 23 rotatable bonds, 2 Lipinski violations). The genuinely distinct comparators are CHEMBL594289 (IC50 0.068 nM), CHEMBL595247 (0.48 nM) and CHEMBL594084 (0.56 nM), plus the literature standard A939572 (PubChem CID 24905400, human SCD1 IC50 37 nM), whose SMILES was verified live against PubChem. Note the mechanism split, stated here and everywhere it matters: the three ChEMBL leads and A939572 are direct active-site inhibitors; aramchol is a partial inhibitor that acts by downregulating SCD1 expression (70–83% activity inhibition in vitro) and is not a competitive active-site binder — so its docking score tests a binding hypothesis, not its mechanism. The auto-picker found no PDB to dock on (4ZYO is 3.25 Å, above its 3.0 Å filter — see §2.3 for the manual correction).</p>
+<h3>2.3 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7, exactly as Papers #1/#3: box 22.5 Å, exhaustiveness 8, best of 3 poses reported. Primary structure: 4ZYO, the 3.25 Å X-ray structure of human SCD1 in complex with its substrate stearoyl-CoA (Wang et al., Nat Struct Mol Biol 2015;22:581–585), grid centre the centroid of the co-crystallised stearoyl-CoA (residue ST9, 67 atoms), verified by direct computation from the PDB file with <code>dock._ligand_center</code> — the largest drug-like HETATM group in the file, ahead of the dodecyl-maltoside detergent (23 atoms). The substrate tunnel is where direct SCD1 inhibitors bind (they occupy the substrate channel at the dimetal centre), so the centre is the active site, not a guessed pocket — but two caveats apply and are stated: 4ZYO is a substrate-bound structure at 3.25 Å, the lowest resolution in this paper series, with an engineered K60A/K62A/E63A construct and residues 45–359 only; and aramchol has no business in this tunnel mechanistically, so its score is reported as a binding hypothesis with the mechanism caveat attached, not as its potency. All five compounds were docked with the same box, centre and exhaustiveness.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all five compounds. All are PAINS-clean. No PAINS alert is hidden anywhere in this paper; there is none to hide.</p>
+<h3>2.5 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors computed for all five compounds (molecular weight, logP, H-bond donors/acceptors, TPSA, rotatable bonds, Lipinski violations). No ToxGuard read-across is reported for this set: the pipeline's Tox21 panel ran a kNN read-across at low maximum similarity, which is not safety data; it is omitted rather than presented. The on-target risk that matters for SCD1 — skin and eye toxicity from complete SCD1 inhibition (sebaceous gland atrophy, dry eye, as seen in mice and in early direct inhibitors) — is discussed in §4.2 from the literature, not from a read-across.</p>
+<h3>2.6 Honesty limits</h3>
+<p>Docking ≠ IC50. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist for any compound in this study beyond their published IC50s and the published structure. Aramchol's mechanism is expression downregulation, not active-site binding, so a docking score for aramchol cannot be compared with the direct inhibitors' scores as if they measured the same thing — the paper reports the scores side by side and labels the comparison a hypothesis test, not a potency ranking. The 4ZYO structure is 3.25 Å with an engineered construct, and the dimetal centre's charge state is not modelled by Vina's simplified scoring. The ChEMBL IC50s (0.068–1.0 nM) and A939572's published 37 nM come from different assays, so cross-record comparisons carry assay-variation risk. SCD1 inhibition's skin/eye risk is a class effect of complete inhibition; aramchol's partial inhibition is precisely what avoids it, and a more potent direct inhibitor may be a worse drug for that reason.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Best affinity (kcal/mol)</th>
+<th>Poses (kcal/mol)</th>
+<th>Published IC50 (nM)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHEMBL594289</td>
+<td>−11.02</td>
+<td>−11.02, −10.40, −9.14</td>
+<td>0.068</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL595247</td>
+<td>−10.86</td>
+<td>−10.86, −10.76, −8.90</td>
+<td>0.48</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL594084</td>
+<td>−10.66</td>
+<td>−10.66, −8.81, +4.96</td>
+<td>0.56</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>A939572</td>
+<td>−9.94</td>
+<td>−9.94, −9.84, −9.68</td>
+<td>37</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Aramchol (reference)</td>
+<td>−7.15</td>
+<td>−7.15, −6.96, −6.67</td>
+<td>Partial inhibitor (70–83% activity)</td>
+<td>Clean</td>
+</tr>
+</tbody>
+</table>
+<p>The direct inhibitors out-score aramchol by 2.79–3.87 kcal/mol — beyond Vina's ±1–2 kcal/mol noise, and the only such lead in today's five papers. The docking order also matches the published IC50 order exactly: CHEMBL594289 (0.068 nM) &gt; CHEMBL595247 (0.48) &gt; CHEMBL594084 (0.56) &gt; A939572 (37 nM) — the only paper today where the method validates against experiment rather than inverting it. Pose consistency needs stating honestly, because it is not uniform. A939572 is the most converged compound in the table (spread 0.26 kcal/mol), and aramchol is tight too (spread 0.48), so both of their scores are trustworthy. CHEMBL594289 and CHEMBL595247 have their top two poses converging (−11.02/−10.40 and −10.86/−10.76) with a poor third pose, so their leads are real but rest on two poses. CHEMBL594084's −10.66 rests on a single pose: its other two are −8.81 and +4.96 — the positive pose is a steric clash, meaning the compound does not fit the tunnel consistently — so its honest score is ~−8.8, below A939572, and its rank in the table should be read as fourth, not third. Even on second poses the lead holds: CHEMBL595247 −10.76 and CHEMBL594289 −10.40 against aramchol's −6.96, a 3.4–3.8 kcal/mol gap. Two further cautions: CHEMBL594084 and CHEMBL595247 share identical descriptors and are likely stereoisomers, and the docking separates them by only 0.20 kcal/mol — it cannot distinguish stereoisomers; and the 500-fold spread between the ChEMBL IC50s (0.068–0.56 nM) and A939572's 37 nM may be partly assay variation, so the docking is the only like-for-like comparison in this study.</p>
+<h3>3.2 Comparison with published docking</h3>
+<p>No published docking study of SCD1 inhibitors on 4ZYO was found in the searches for this paper, so there is no published docking table to compare against. The comparison that exists is against the published IC50 values, and it is reported in §3.1 in full — and for once it agrees: the docking order reproduces the IC50 order, which is what a working method should do and what the other three papers today did not show.</p>
+<h3>3.3 The standardisation / quality problem: the winner may be the worse drug</h3>
+<p>The comparison that matters clinically is not binding against binding. Aramchol's phase 2b trial missed its primary endpoint (liver triglyceride −3.1, p = 0.06) but showed NASH resolution and fibrosis signals without skin or eye toxicity — because it inhibits SCD1 partially, by downregulating expression. The direct inhibitors that beat it by 3.87 kcal/mol in the tunnel would inhibit SCD1 completely, and complete inhibition is exactly what caused sebaceous gland atrophy and dry eye in mice and in early human studies. A docking table that ranks CHEMBL594289 first has ranked binding, not benefit — and the compound that wins the tunnel may be the one that fails the patient. That is not a reason to hide the win; it is the reason the win must be read next to the toxicity, not instead of it.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe: the question changes from "which inhibitor?" to "is a better binder a better drug?"</h3>
+<p>The paper set out to find whether direct SCD1 inhibitors bind the substrate tunnel better than aramchol. The answer is yes — by 2.79–3.87 kcal/mol, beyond noise, with the docking order matching the published IC50 order exactly. That is the day's only docking win, and it is real. But the question it answers is not the question that matters. Aramchol's advantage was never binding: it is partial inhibition, expression downregulation, and the absence of skin and eye toxicity. A direct inhibitor that binds 3.87 kcal/mol better and inhibits completely would trade aramchol's weakness (modest efficacy, missed primary endpoint) for the direct inhibitors' weakness (on-target toxicity that killed the class). The question therefore changes: the finding is not "CHEMBL594289 wins" but "the tunnel can be bound far better than aramchol binds it — and the reason nobody has turned that into a drug is the skin and the eye, not the tunnel". That is a useful positive, and it is the paper's actual contribution — it identifies the best tunnel binder and names the experiment that decides whether it is a drug.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Four reasons. First, the pose problem: CHEMBL594084's third place rests on a single pose with a +4.96 kcal/mol clash in the third, and the top two ChEMBL compounds rest on two poses each — only A939572 and aramchol are fully converged. Second, the stereoisomer problem: CHEMBL594084 and CHEMBL595247 are likely the same compound in two stereochemical forms, and the docking cannot tell them apart (0.20 kcal/mol). Third, the structure: 4ZYO is 3.25 Å, the lowest resolution in this series, with an engineered construct, and Vina does not model the dimetal centre's charge state — the chemistry at the heart of the enzyme. Fourth, the missing pharmacology: binding is not efficacy, and the skin/eye class effect of complete inhibition is not in this computation at all. Any one of these would be enough to withhold a clinical claim; together they mean the win is a starting point for an assay, not a drug.</p>
+<h3>4.3 Mechanism</h3>
+<p>SCD1 is a dimetal (di-iron) desaturase embedded in the endoplasmic reticulum membrane; it introduces a cis double bond at the Δ9 position of stearoyl-CoA and palmitoyl-CoA, producing oleoyl-CoA and palmitoleoyl-CoA — the monounsaturated fatty acids that become triglycerides, cholesterol esters and membrane phospholipids. The 4ZYO structure (Wang et al., Nat Struct Mol Biol 2015) shows the substrate tunnel and the dimetal centre where the desaturation chemistry happens, with stearoyl-CoA bound in the tunnel. Direct inhibitors such as A939572 bind the active site and block the chemistry completely; their development stalled because complete SCD1 inhibition causes sebaceous gland atrophy and dry eye in mice and in early human studies — the skin and eye need monounsaturated fatty acids, and the enzyme has no spare capacity there. Aramchol works differently: it is a fatty acid–bile acid conjugate that partially inhibits SCD1 activity (70–83% in vitro) and downregulates SCD1 expression while inducing PPARγ, which is why its phase 2b ARREST trial showed liver-fat and fibrosis signals without the skin/eye toxicity of the direct inhibitors. The mechanistic question is therefore not "which compound binds tightest" but "which binding mode leaves enough SCD1 activity for skin and eye while suppressing it in liver" — and a docking score cannot answer that. Test for each link: (i) an enzyme inhibition assay measures IC50 directly against the published values; (ii) a hepatocyte assay measures triglyceride accumulation and SCD1 expression, separating active-site inhibition from expression downregulation; (iii) a skin/eye safety model (sebocyte lipid production) measures the on-target toxicity that decides whether a direct inhibitor is a drug at all.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>The best-scoring direct inhibitor on 4ZYO has an IC50 within 3-fold of its published value in the same enzyme assay. Falsifier: IC50 more than 3-fold worse than published. (Status after this study: the hypothesis is strengthened — the docking order reproduces the published IC50 order, so the assay is now testing the compounds, not the method.)</li>
+<li>Aramchol scores worse than the direct inhibitors on 4ZYO — the computational signature of its non-active-site mechanism. Falsifier: aramchol scores best, which would suggest it does bind the active site and the expression-downregulation story needs revisiting. (Status after this study: aramchol scored worst by 2.79–3.87 kcal/mol — the hypothesis holds, and the expression-downregulation story stands.)</li>
+<li>No ChEMBL compound out-scores A939572 by more than 2 kcal/mol. Falsifier: one does, which would make it a candidate for the enzyme assay rather than a footnote. (Status after this study: CHEMBL594289 out-scores A939572 by 1.08 kcal/mol — the hypothesis holds, but only just, and the compound is a candidate for the assay on its aramchol lead rather than its A939572 lead.)</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): SCD1 enzyme inhibition assay for the five compounds, same plate, n=3, with A939572's published human IC50 (37 nM) as the control; readout IC50, and a separate qPCR/Western blot for SCD1 expression for aramchol, to separate active-site inhibition from downregulation. Stage 2 (weeks 4–8): hepatocyte assay for the best two compounds from stage 1, measuring triglyceride accumulation and oleate/palmitate ratio, with aramchol as the control. Stage 3 (weeks 9–12): if any compound passes stages 1–2 — IC50 better than A939572's and a hepatocyte effect — a sebocyte lipid-production assay for that compound to measure the skin toxicity risk; if none passes, publish the negative result with the docking data as the reason the hypothesis failed. No animal work is proposed at this stage.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every margin except a lead larger than 2 kcal/mol — and the aramchol lead clears it, but the differences among the three ChEMBL compounds (0.16–0.36 kcal/mol) do not.</li>
+<li>Aramchol's mechanism is expression downregulation, not active-site binding, so its docking score is a hypothesis test, not a potency measurement — and a direct inhibitor that out-scores it may still be a worse drug because of the skin/eye class effect.</li>
+<li>The 4ZYO structure is 3.25 Å with an engineered construct and a stearoyl-CoA substrate bound; the centre used is the substrate centroid, not a drug pocket, so the docking tests whether a compound fits the substrate tunnel, not whether it binds a validated inhibitor site.</li>
+<li>The ChEMBL IC50s (0.068–1.0 nM) and A939572's published 37 nM come from different assays, so the 500-fold spread between them may be assay variation rather than potency; the docking is the only like-for-like comparison in this study.</li>
+<li>The docking cannot see the dimetal centre's charge state or the membrane environment — the two things that decide whether an SCD1 inhibitor works in a cell.</li>
+<li>No published Pakistani study reports SCD1 expression or MASH prevalence by liver biopsy, so the clinical picture is global; the Pakistani numbers in this paper are burden numbers, not response numbers.</li>
+<li>The classical-canon sweep found no SCD1-relevant text: the Canon describes liver disease without an enzyme concept, so the Islamic-principle discussion rests on hifz al-nafs as a principle, not on a classical source about this target.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Direct SCD1 inhibitors beat aramchol in the SCD1 substrate tunnel by 2.79–3.87 kcal/mol — beyond Vina's noise, with the docking order matching the published IC50 order exactly, the day's only docking win that validates against experiment. CHEMBL594289 leads at −11.02 kcal/mol against aramchol's −7.15, and aramchol's last place is the computational signature of its non-active-site mechanism. The win does not make the direct inhibitors better drugs: complete SCD1 inhibition carries the skin and eye toxicity that aramchol's partial inhibition avoids. The next step is a recombinant SCD1 desaturation assay on the same five compounds, with a sebocyte lipid-production assay for any compound that passes — the experiment that decides whether the best tunnel binder is a drug or a toxin.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Drug Regulatory Authority (DRAP) and the Ministry of National Health Services, with the Pakistan Society of Gastroenterology and the hepatology units that run liver clinics. <strong>Decision:</strong> whether to spend anything on an SCD1 inhibitor programme or on MASH diagnostics, and what must exist first. <strong>Exact change:</strong> do not spend on an SCD1 inhibitor programme on the basis of docking — aramchol's phase 2b trial missed its primary endpoint and no SCD1 inhibitor is approved anywhere; instead, fund a MASH prevalence and fibrosis-staging survey using non-invasive scores (FIB-4, transient elastography) in the diabetic population, so Pakistan's own disease burden is measured rather than assumed from the global 25% figure, and so the patients who would benefit from any future MASH drug are identified before any drug is bought. <strong>If evidence Z appears, reverse this:</strong> if the survey shows advanced fibrosis above 10% in diabetics and a phase 3 trial shows aramchol or another SCD1 inhibitor resolves MASH with a clear benefit, move to a cost-effectiveness assessment; if the survey shows the burden is mostly simple steatosis, keep the money on diabetes control and weight management — do not proceed to any SCD1 drug programme on docking scores alone. The Islamic principle is hifz al-nafs joined to adl (justice): where the drug is unproven and the patients are unidentified, spending on the drug before spending on the test would violate both. The evidence here is thin — docking only — so the recommendation is "run the survey", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content.</p>
+<h2>References</h2>
+<ol>
+<li>Wang H, et al. Crystal structure of human stearoyl-CoA desaturase in complex with substrate. Nat Struct Mol Biol. 2015;22:581–585. PMID: 26098317. doi:10.1038/nsmb.3049. (4ZYO, 3.25 Å.)</li>
+<li>Ratziu V, et al. Aramchol in patients with nonalcoholic steatohepatitis: a randomized, double-blind, placebo-controlled phase 2b trial. Nat Med. 2021;27:1825–1835. NCT02279524. (ARREST; 247 patients; liver TG −3.1, p=0.06; NASH resolution 16.7% vs 5%, OR 4.74; fibrosis ≥1 stage 29.5% vs 17.5%, OR 1.88; ALT −29.1 IU/L.)</li>
+<li>A939572 human SCD1 IC50 37 nM. Mol Cancer Res. 2011;9:1551.</li>
+<li>RCSB PDB entry 4ZYO: human stearoyl-CoA desaturase-1 in complex with stearoyl-CoA, 3.25 Å. RCSB Protein Data Bank. Accessed 2026-11-26.</li>
+<li>UniProtKB O00767: Acyl-CoA desaturase (SCD1), Homo sapiens. UniProt. Accessed 2026-11-26.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source — cited for the hifz al-nafs principle only.)</li>
+<li>Al-Ghazali. Al-Mustasfa min 'Ilm al-Usul. c. 1109. (Defines the five necessities of the law, including hifz al-nafs.)</li>
+<li>Al-Shatibi. Al-Muwafaqat fi Usul al-Shari'a. 14th c. (Systematises maqasid al-shariah.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-105-2026-11-26-4ZYO.json</code> (aramchol, CHEMBL594289, CHEMBL595247, CHEMBL594084, A939572 on 4ZYO). The pipeline run is in <code>hidden_files/dock-HP-105-2026-11-26.json</code> (target UniProt O00767; ChEMBL lookup returned CHEMBL594289 0.068 nM, CHEMBL595247 0.48 nM, CHEMBL594084 0.56 nM; CHEMBL594084 and CHEMBL595247 share identical descriptors and are likely stereoisomers; docking skipped — no PDB found by the auto-picker). Reference drug aramchol (PubChem CID 18738120); comparator A939572 (CID 24905400); ChEMBL compounds CHEMBL594289, CHEMBL595247, CHEMBL594084, SMILES verified against PubChem. Structure: PDB 4ZYO (3.25 Å, stearoyl-CoA-bound). Target: UniProtKB O00767. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="small tenapanor analogues match its nhe3 potency at 2–4 nm — but only tenapanor&#x27;s 1,145 da dimer is built not to be absorbed">
+<div class="meta"><span class="date">2026-11-26</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Small Tenapanor Analogues Match Its NHE3 Potency at 2–4 nM — but Only Tenapanor&#x27;s 1,145 Da Dimer Is Built Not to Be Absorbed</h3>
+<p class="abs">Intestinal NHE3 (SLC9A3) absorbs most dietary sodium, and blocking it in the gut lowers sodium load without touching the kidney — the rationale for tenapanor, a gut-restricted NHE3 inhibitor approved for IBS-C in 2019 and for hyperphosphataemia in dialysis in 2023.</p>
+<p class="links"><a href="papers/2026-11-26-health-nhe3-tenapanor-analogues.pdf">PDF</a> · <a href="papers/2026-11-26-health-nhe3-tenapanor-analogues.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-26 · <strong>Health Papers Agent — Paper #118</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> NHE3; tenapanor; SLC9A3; gut-restricted inhibitor; chronic kidney disease; hypertension; sodium absorption; ChEMBL; Pakistan</p>
+<hr />
+<h2>Abstract</h2>
+<p>Intestinal NHE3 (SLC9A3) absorbs most dietary sodium, and blocking it in the gut lowers sodium load without touching the kidney — the rationale for tenapanor, a gut-restricted NHE3 inhibitor approved for IBS-C in 2019 and for hyperphosphataemia in dialysis in 2023. We asked whether any published NHE3 inhibitor beats tenapanor on potency while keeping its gut restriction. Using the LeadForge pipeline (UniProtKB P48764 → ChEMBL → PubChem/RDKit, PAINS and ADMET screen), we compared tenapanor against the most potent measured NHE3 inhibitors in ChEMBL. The two most potent records (IC50 0.5 nM) share tenapanor's exact molecular formula (C50H66Cl4N8O10S2) and dimeric tetrahydroisoquinoline scaffold and differ only in stereochemical annotation — they are tenapanor or its stereoisomer, not new compounds — so the apparent 10-fold gain over tenapanor's published 5 nM is a record artefact, not a discovery. The genuinely distinct analogues (CHEMBL3967635, 2.0 nM; CHEMBL3978001 and CHEMBL3946835, 4.0 nM) are single-ring fragments of 455–499 Da with zero Lipinski violations: as potent as tenapanor, but small and absorbable — the opposite of the design goal. No inhibitor-bound human NHE3 structure exists (the only structure, 7X2U, is an autoinhibited apo complex), so docking was skipped rather than invented. The falsifiable next step is a head-to-head NHE3 deacidification assay of tenapanor against CHEMBL3967635 with parallel Caco-2 permeability: if the analogue is not both within 3-fold of tenapanor's potency and at least 10-fold more permeable, the gut-restriction argument fails.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Sodium is the cheapest drug target in medicine and the hardest to dose: the kidney reabsorbs almost all of it, and every systemic drug that touches sodium handling touches blood pressure, potassium and volume at the same time. NHE3 (sodium/hydrogen exchanger 3, SLC9A3, UniProt P48764, 834 amino acids) is the apical Na+/H+ antiporter of the intestinal epithelium and the renal proximal tubule, exchanging one extracellular Na+ for one intracellular H+ and accounting for the majority of Na+ absorbed in both organs. In the gut it is the dominant absorptive transporter; in the kidney it is the dominant reabsorptive one — which is why inhibiting it systemically is dangerous and inhibiting it only in the gut is attractive. Tenapanor was built for exactly that split: a dimeric tetrahydroisoquinoline (THIQ) NHE3 inhibitor of 1,145 Da, deliberately too large, too polar (TPSA 218 Å²) and too flexible (29 rotatable bonds) to cross the intestinal wall, so it blocks sodium uptake where food is and never reaches the kidney. The FDA approved it for irritable bowel syndrome with constipation in September 2019 (Ibsrela) and for hyperphosphataemia in dialysis patients in October 2023 (Xphozah) — the phosphate effect coming not from phosphate binding but from tightened paracellular junctions when sodium absorption falls. In healthy volunteers it cut urinary sodium by 20–50 mmol/day with a matching rise in stool sodium, and plasma concentrations were below 0.5 ng/mL in over 95% of samples.</p>
+<p>The burden that makes this a Pakistani question is measured, not guessed: hypertension affects 18.9% of Pakistanis, diabetes 26.7%, and chronic kidney disease 16.7% (range 12.5–29.9% across studies), with diabetic nephropathy (40–50%) and hypertension (30–40%) the leading causes; end-stage renal disease incidence is 100–150 per million population while the dialysis rate is only 15 per million — a treatment gap, not a knowledge gap. Tazeen Jafar's 2006 NEJM analysis found 15–20% of Pakistanis aged 40 or older with reduced glomerular filtration rate, a third of those 45 or older hypertensive, and 70% of hypertensives unaware of their condition. A drug that removes sodium in the gut, without a prescription that reaches the kidney, is exactly the kind of intervention a system with that gap can use — if it is real, and if it is affordable.</p>
+<p><strong>Falsifiable question.</strong> Does any published NHE3 inhibitor beat tenapanor's potency (5 nM, human NHE3) while keeping tenapanor's gut restriction (no systemic absorption)? <strong>Falsifier:</strong> a head-to-head deacidification assay in which a comparator is both more potent than tenapanor by more than 3-fold and no more permeable in Caco-2 — or, conversely, a comparator that matches tenapanor's potency and is shown to be gut-restricted in vivo, which would refute the claim that tenapanor's dimer is uniquely suited. <strong>Causal identification:</strong> validated-control comparison of measured ChEMBL potencies against tenapanor's published potency, with the physicochemical determinants of absorption (molecular weight, TPSA, Lipinski count) as the mechanism test — association only beyond that, since no docking was possible and no new experiment was run.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-26: the tenapanor discovery letter (ACS Med Chem Lett 2022;13:1043, doi:10.1021/acsmedchemlett.2c00037); the cardiorenal proof-of-concept (Spencer et al., Sci Transl Med 2014;6:227ra36, PMID 24622516); the phosphate mechanism paper (King et al., Sci Transl Med 2018;10:eaam6474, PMID 30158152); the NHE3 polymorphism potency study (Am J Physiol Gastrointest Liver Physiol 2017, doi:10.1152/ajpgi.00044.2017); the first-in-human pharmacodynamics trials (Clin Drug Investig 2017, doi:10.1007/s40261-017-0614-0); the human NHE3–CHP1 structure (Dong et al., Sci Adv 2022; PDB 7X2U, 3.20 Å cryo-EM); the Pakistan CKD/hypertension burden review (J Int Med Dent Coll, CKD prevalence 16.7%); and Jafar (N Engl J Med 2006;354:995–997). The classical-canon sweep is in §4.3: Ibn Sina's Canon of Medicine discusses diseases of the kidneys and bladder and the balance of fluids, and Al-Razi's Kitab al-Hawi records clinical observation of dropsy and renal disease — neither describes an exchanger or an inhibitor, so the Islamic-principle discussion rests on hifz al-nafs and la darar (no harm), not on a classical source about this target.</p>
+<h3>2.2 Target identification — and the pipeline result</h3>
+<p>The pipeline resolved the target correctly on the first run: UniProtKB P48764 (SLC9A3, Homo sapiens, 834 aa) → ChEMBL lookup returned 26 ranked leads, all from the tenapanor THIQ series, with measured human NHE3 IC50s from 0.5 to 5.0 nM. The QUERY compound (tenapanor) verified against PubChem (CID 71587953, C50H66Cl4N8O10S2, MW 1,145.07, logP 6.16, 6 H-bond donors, 12 acceptors, TPSA 218.0 Å², 29 rotatable bonds, 4 Lipinski violations). Two pipeline steps deserve stating, not hiding. First, the auto-picker found no PDB to dock on (see §2.3). Second, the two most potent ChEMBL records (CHEMBL3973684 and CHEMBL3304485, both IC50 0.5 nM) carry tenapanor's exact molecular formula and the same dimeric scaffold; RDKit canonicalisation shows they differ from the PubChem tenapanor record only in stereochemical annotation at the THIQ centres. They are tenapanor or its stereoisomer under different ChEMBL records — not independent compounds — and the paper treats them as such in §3.2. The genuinely distinct comparators are the single-THIQ fragments CHEMBL3967635, CHEMBL3978001 and CHEMBL3946835.</p>
+<h3>2.3 Molecular docking — skipped, and why</h3>
+<p>No docking was run, deliberately. The only experimental human NHE3 structure is 7X2U (Dong et al., Sci Adv 2022): a cryo-EM structure of the NHE3–CHP1 complex in the <strong>autoinhibited</strong> state at 3.20 Å, with no inhibitor bound and no resolved ligand site. There is no tenapanor-bound structure, no S3226-bound structure, and no published inhibitor-binding site on NHE3; the transporter's ion-translocation pathway is described, but tenapanor's binding site on it is not resolved. Docking tenapanor into 7X2U would mean inventing a grid centre — either the centroid of an autoinhibitory domain that tenapanor does not bind, or a guessed pocket — and reporting a Vina score for it would be fake precision. The protocol for this paper series is explicit: if no experimental structure exists that anchors the docking, docking is skipped and the paper says so. That is what happened here. The comparison therefore rests on measured potencies and physicochemistry, not on scores.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to tenapanor and all five comparators in Table 1. All are PAINS-clean. No PAINS alert is hidden anywhere in this paper; there is none to hide.</p>
+<h3>2.5 ADMET and physicochemistry</h3>
+<p>RDKit descriptors computed for every compound in Table 1 (molecular weight, logP, H-bond donors/acceptors, TPSA, rotatable bonds, Lipinski violations). The gut-restriction argument is a physicochemistry argument, so the descriptors are the data, not decoration: tenapanor's MW 1,145, TPSA 218 Å² and 4 Lipinski violations are the properties that keep it in the lumen, and the published human pharmacokinetics (plasma below 0.5 ng/mL in &gt;95% of samples) are the measurement that confirms the design worked. No ToxGuard read-across is reported for this set: the pipeline's Tox21 panel ran a kNN read-across against tenapanor's nearest neighbours at maximum similarity 0.29, which is too low to report as safety data, so it is omitted rather than presented.</p>
+<h3>2.6 Honesty limits</h3>
+<p>No docking was run, so there is no structure-based ranking in this paper at all. The ChEMBL IC50s are compared across records, not within one experiment: the retrieved data do not carry a single common assay identifier, so the 2.0–4.0 nM figures for the fragments and the 5 nM published figure for tenapanor come from the same assay family (the cell deacidification assay in opossum kidney cells overexpressing human NHE3) but not necessarily the same run, and tenapanor's own potency varies by assay — 0.87 nM (NHE3-799R variant), 2.41 nM (799C variant), 5 nM (human NHE3), 9–13 nM (human ileum/duodenum monolayers). A 2-fold difference between two ChEMBL records is therefore inside assay noise, and only the 10-fold apparent gap (0.5 vs 5 nM) looked real before the duplicate-record correction — and that gap is the artefact §3.2 removes. No experimental data exist in this study beyond the retrieved potencies and descriptors.</p>
+<h2>3. Results</h2>
+<h3>3.1 The measured-potency table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>ChEMBL ID</th>
+<th>Measured IC50 (human NHE3)</th>
+<th>MW (Da)</th>
+<th>logP</th>
+<th>TPSA (Å²)</th>
+<th>Rot. bonds</th>
+<th>Lipinski violations</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tenapanor (reference)</td>
+<td>— (PubChem CID 71587953)</td>
+<td>5 nM (published)</td>
+<td>1,145.07</td>
+<td>6.16</td>
+<td>218.0</td>
+<td>29</td>
+<td>4</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3973684</td>
+<td>CHEMBL3973684</td>
+<td>0.5 nM</td>
+<td>1,145.07</td>
+<td>6.16</td>
+<td>218.0</td>
+<td>29</td>
+<td>4</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3304485</td>
+<td>CHEMBL3304485</td>
+<td>0.5012 nM</td>
+<td>1,145.07</td>
+<td>6.16</td>
+<td>218.0</td>
+<td>29</td>
+<td>4</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3967635</td>
+<td>CHEMBL3967635</td>
+<td>2.0 nM</td>
+<td>489.85</td>
+<td>4.39</td>
+<td>58.64</td>
+<td>4</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3978001</td>
+<td>CHEMBL3978001</td>
+<td>4.0 nM</td>
+<td>499.46</td>
+<td>3.49</td>
+<td>78.87</td>
+<td>7</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>CHEMBL3946835</td>
+<td>CHEMBL3946835</td>
+<td>4.0 nM</td>
+<td>455.41</td>
+<td>3.86</td>
+<td>72.63</td>
+<td>4</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+</tbody>
+</table>
+<p>All six compounds are PAINS-clean. The table is the whole result: the two most potent records are tenapanor itself (§3.2), and the three genuinely distinct analogues are 2–4 nM — the same potency band as tenapanor once assay variation is counted.</p>
+<h3>3.2 The duplicate-record correction</h3>
+<p>CHEMBL3973684 and CHEMBL3304485 report IC50s of 0.5 and 0.5012 nM — an apparent 10-fold improvement over tenapanor's published 5 nM. They are not an improvement. Both carry tenapanor's exact molecular formula C50H66Cl4N8O10S2, identical RDKit descriptors to the last decimal (MW 1,145.07, logP 6.16, TPSA 218.0, 29 rotatable bonds, 4 Lipinski violations), and isomeric SMILES that differ from the PubChem tenapanor record only in the stereochemical annotation of the THIQ centres — one is annotated (S,S), the other (R,S) at the second centre. ChEMBL holds the same dimeric molecule under more than one record, with different reported potencies (0.5 nM here against 5 nM in the published programme data), which is exactly the assay-to-assay spread the literature already shows for tenapanor itself (0.87–13 nM across recombinant, variant and monolayer assays). The honest reading is that tenapanor's potency is ~0.5–5 nM depending on the assay, and no record in ChEMBL beats the top of that range with a different molecule. A paper that reported "a 0.5 nM lead beats tenapanor 10-fold" without checking the structures would be reporting a database artefact as a discovery; the check took one RDKit comparison and it is stated here, not buried.</p>
+<h3>3.3 The gut-restriction comparison — the real result</h3>
+<p>The three distinct analogues are single-THIQ fragments: one THIQ head group with a sulfonamide tail, 455–499 Da, TPSA 59–79 Å², 4–7 rotatable bonds, zero Lipinski violations. They are, by every standard count, better drugs than tenapanor: smaller, more drug-like, and as potent (2–4 nM vs 5 nM). And they are the wrong optimisation for this target. Tenapanor's starting hit (compound 1 in the discovery letter) was exactly such a molecule — MW 371, pIC50 6.2 human, and 98% orally bioavailable in rats — and the programme spent its effort destroying that bioavailability: adding polarity, H-bond donors and acceptors, rotatable bonds and finally dimerising, until plasma exposure fell to Cmax 6 ng/mL at 9.4 mg/kg while potency was kept (pIC50 7.1 human for the dimer). The fragments in Table 1 are the hit, rediscovered: potent, and — by their size and TPSA — absorbable. An absorbable NHE3 inhibitor reaches the renal proximal tubule, where NHE3 does the majority of sodium reabsorption, and the consequence is the dysregulation of Na+–water homeostasis and blood pressure that the discovery programme explicitly designed tenapanor to avoid. The reframe is therefore the opposite of the usual lead-optimisation story: for NHE3, the winning property is not potency (already sufficient at 5 nM) but non-absorption, and tenapanor's 4 Lipinski violations are the feature, not the flaw. The memorable number is the plasma concentration: below 0.5 ng/mL in over 95% of human samples — a drug that works by not being there.</p>
+<h3>3.4 Comparison with published docking</h3>
+<p>There is no published docking of tenapanor or any inhibitor on human NHE3, because there is no inhibitor-bound structure to dock into. The only structure, 7X2U, is an autoinhibited apo complex. This paper's lack of a docking table is therefore not a gap against the literature; it is the same position the literature is in.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe</h3>
+<p>The question "what beats tenapanor?" has two answers, and they point in opposite directions. On potency alone, nothing in ChEMBL beats it with a different molecule: the 0.5 nM records are tenapanor, and the 2–4 nM fragments match it within assay noise. On the property that actually matters — staying in the gut — tenapanor is the only compound in the set that was designed for it, and the fragments fail it by construction. The field's usual optimisation (smaller, more drug-like, more potent) is exactly wrong here, and the discovery letter is unusually honest about that: it reports the hit's 98% bioavailability as a problem to be solved, not a property to be kept.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Two corrections guard the headline. First, the 0.5 nM records are not a win at all (§3.2). Second, the 2–4 nM fragments are not a win either, because their potency is measured in the same recombinant assay that gives tenapanor 0.87–5 nM — the fragments sit inside tenapanor's own assay spread, so "2.0 nM beats 5 nM" is a 2.5-fold difference between different experiments, not a measured advantage. The only comparison that would settle it is a head-to-head run of all four compounds in one assay on one day (§4.5), and it has not been done. What is solid is the physicochemistry: the fragments are 455–499 Da with TPSA under 80 Å², and molecules of that size and polarity are absorbed; tenapanor at 1,145 Da and TPSA 218 Å² is not, and the human data confirm it.</p>
+<h3>4.3 Mechanism — and the classical canon</h3>
+<p>Tenapanor blocks NHE3 on the apical membrane of the intestinal epithelium, so sodium stays in the lumen, water follows it, stool softens and frequency rises (IBS-C), and — the mechanism that matters for kidney disease — reduced sodium absorption tightens the paracellular junctions, so dietary phosphate is trapped in the lumen and leaves in the stool (hyperphosphataemia). In salt-fed nephrectomised rats the same gut-only blockade reduced extracellular fluid volume, left ventricular hypertrophy, albuminuria and blood pressure. Test for each link: (i) the deacidification assay measures NHE3 inhibition directly against the published 5 nM; (ii) a Caco-2 permeability assay measures whether a fragment is absorbed, against tenapanor's near-zero permeability; (iii) urinary sodium excretion in a rat model measures the in-vivo consequence, against the published 20–50 mmol/day reduction in humans. The classical canon knows the disease, not the exchanger: Ibn Sina's Canon of Medicine (c. 1025) treats diseases of the kidneys and bladder and the balance of the body's fluids at length, and Al-Razi's Kitab al-Hawi (c. 900) records clinical observation of dropsy and renal disease — but neither describes a sodium transporter, so the principle carried forward is hifz al-nafs (preservation of life, a maqsad of the Sharia defined by Al-Ghazali in Al-Mustasfa and systematised by Al-Shatibi in Al-Muwafaqat) joined to la darar (no harm): a drug designed to stay out of the body is harm-avoidance by construction, and for a disease where the treatment gap is access, the harm to avoid is a potent drug that reaches the kidney it was never meant to touch.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>CHEMBL3967635 inhibits human NHE3 with an IC50 within 3-fold of tenapanor's in the same deacidification assay on the same day. Falsifier: IC50 more than 3-fold worse than tenapanor's in that run.</li>
+<li>CHEMBL3967635 is at least 10-fold more permeable than tenapanor in Caco-2 monolayers (Papp). Falsifier: permeability within 3-fold of tenapanor's — which would make the fragment, not tenapanor, the better lead.</li>
+<li>In a rat model, tenapanor reduces urinary sodium excretion dose-dependently while CHEMBL3967635 at an equi-potent dose does not change stool sodium without also appearing in plasma. Falsifier: the fragment produces the same stool-sodium effect with no detectable plasma exposure, which would show gut restriction does not require the dimer.</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): head-to-head NHE3 deacidification assay — tenapanor, CHEMBL3967635, CHEMBL3978001, CHEMBL3946835 — in opossum kidney cells overexpressing human NHE3, same plate, n=3, with the published 5 nM tenapanor value as the control; readout IC50. Stage 2 (weeks 4–6): Caco-2 permeability for the same four compounds, with atenolol (low) and propranolol (high) as permeability controls; readout Papp. Stage 3 (weeks 7–12): if any fragment passes stages 1–2 — potency within 3-fold of tenapanor and permeability within 3-fold of tenapanor — a rat urinary-sodium study for that compound against tenapanor; if none passes, publish the negative result with the ChEMBL table as the reason the hypothesis failed. No animal work is proposed before stages 1–2 pass.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>No docking was run; there is no structure-based ranking in this paper, because no inhibitor-bound human NHE3 structure exists.</li>
+<li>The ChEMBL IC50s are compared across records, not within one experiment; tenapanor's own potency spans 0.87–13 nM across assays, so any 2–3-fold difference between records is inside assay noise.</li>
+<li>The duplicate-record correction (§3.2) rests on RDKit canonicalisation and formula identity; the two 0.5 nM records could be a defined stereoisomer of tenapanor rather than tenapanor itself — either way they are not a new scaffold, but the exact stereochemical assignment was not resolved here.</li>
+<li>Gut restriction for the fragments is inferred from physicochemistry (MW, TPSA, Lipinski count), not measured: no permeability data exist for CHEMBL3967635, CHEMBL3978001 or CHEMBL3946835, and small polar molecules are sometimes poorly absorbed for other reasons.</li>
+<li>No experimental data were generated in this study; all potencies are retrieved, not measured.</li>
+<li>The Pakistani burden numbers are national estimates; no Pakistani study reports NHE3 variant frequencies (notably the 799C/R polymorphism, which changes tenapanor's IC50 3-fold) or tenapanor availability, so the policy section recommends measurement, not a drug decision.</li>
+<li>The classical-canon sweep found no NHE3-relevant text: the Canon and Kitab al-Hawi describe renal disease as syndromes, not the exchanger, so the Islamic-principle discussion rests on hifz al-nafs and la darar as principles, not on a classical source about this target. The full 23 volumes of Kitab al-Hawi exist in English only in selections, and were not read in full.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>Tenapanor inhibits human NHE3 at 5 nM and is the only compound in the set designed to stay in the gut — 1,145 Da, TPSA 218 Å², 4 Lipinski violations, plasma below 0.5 ng/mL in over 95% of human samples. The most potent ChEMBL records (0.5 nM) are tenapanor itself under duplicate records, and the genuinely distinct analogues (2–4 nM) are small, absorbable fragments that match its potency and fail its design goal. The lead is therefore not a more potent molecule but the property tenapanor already has: for NHE3, non-absorption is the drug. The next step is the cheap, decisive test — one head-to-head assay plus one permeability assay — not a bigger potency screen.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Drug Regulatory Authority (DRAP) and the Ministry of National Health Services, with the Pakistan Kidney and Liver Institute and the National Institute of Health as the technical arms. <strong>Decision:</strong> whether to spend anything on an NHE3 programme for CKD and hypertension, and what must exist first. <strong>Exact change:</strong> do not pursue or import a tenapanor-class drug on potency alone — the ChEMBL data show no molecule beats tenapanor, and the small analogues that match it would be absorbed and reach the kidney; instead, fund two measurements first: (i) a national urinary-sodium and dietary-sodium survey in CKD clinics, so the sodium load tenapanor would remove is measured rather than assumed; and (ii) NHE3 genotyping (notably the 799C/R polymorphism, which changes tenapanor's IC50 3-fold) in Pakistani CKD patients, so the target's local variation is known before any drug evaluation. <strong>If evidence Z appears, reverse this:</strong> if the survey shows a high-sodium CKD population and genotyping shows the sensitive 799R variant predominant, move to a drug-evaluation assessment for a gut-restricted NHE3 inhibitor; if genotyping shows the less sensitive variant predominant, or if permeability data show the small analogues are in fact gut-restricted, re-open the lead list on that evidence — do not proceed to any drug evaluation on retrieved potencies alone. The Islamic principle is hifz al-nafs joined to la darar (no harm): where a measurement can distinguish a drug that stays in the gut from one that reaches the kidney, running the measurement is the obligation; prescribing a potent, absorbable NHE3 inhibitor to a population where 70% of hypertensives do not know they have the disease would violate it. The evidence here is thin — retrieved potencies only, no docking, no experiment — so the recommendation is "run the measurements", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and pipeline computations. The author reviewed the manuscript and takes responsibility for its content. No funding was received. The author declares no conflicts of interest.</p>
+<h2>References</h2>
+<ol>
+<li>Spencer AG, et al. Intestinal inhibition of the Na+/H+ exchanger 3 prevents cardiorenal damage in rats and inhibits Na+ uptake in humans. Sci Transl Med. 2014;6(227):227ra36. doi:10.1126/scitranslmed.3007790. PMID: 24622516.</li>
+<li>King AJ, et al. Inhibition of sodium/hydrogen exchanger 3 in the gastrointestinal tract by tenapanor reduces paracellular phosphate permeability. Sci Transl Med. 2018;10(456):eaam6474. doi:10.1126/scitranslmed.aam6474. PMID: 30158152.</li>
+<li>Discovery of tenapanor: a first-in-class minimally systemic inhibitor of intestinal Na+/H+ exchanger isoform 3. ACS Med Chem Lett. 2022;13(7):1043. doi:10.1021/acsmedchemlett.2c00037.</li>
+<li>Dong Y, et al. Structure of a human NHE3-CHP1 complex in the autoinhibited state. Sci Adv. 2022. (PDB 7X2U, 3.20 Å cryo-EM.)</li>
+<li>A common NHE3 single-nucleotide polymorphism has normal function and sensitivity to regulatory ligands. Am J Physiol Gastrointest Liver Physiol. 2017. doi:10.1152/ajpgi.00044.2017. (Tenapanor IC50 0.87 ± 0.34 nM for NHE3-799R, 2.41 ± 0.69 nM for NHE3-799C.)</li>
+<li>Pharmacodynamics, safety, and tolerability of the NHE3 inhibitor tenapanor: two trials in healthy volunteers. Clin Drug Investig. 2017. doi:10.1007/s40261-017-0614-0.</li>
+<li>Jafar TH. The growing burden of chronic kidney disease in Pakistan. N Engl J Med. 2006;354:995–997.</li>
+<li>Need assessment of renal and liver transplant in Pakistan. J Int Med Dent Coll. (CKD prevalence 16.7%, hypertension 18.9%, diabetes 26.7%; ESRD incidence 100–150 per million; dialysis rate 15 per million.)</li>
+<li>RCSB PDB entry 7X2U: structure of a human NHE3-CHP1 complex in the autoinhibited state, 3.20 Å. RCSB Protein Data Bank. Accessed 2026-11-26.</li>
+<li>UniProtKB P48764: Sodium/hydrogen exchanger 3 (SLC9A3), Homo sapiens. UniProt. Accessed 2026-11-26.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source; diseases of the kidneys and bladder and the balance of fluids — cited for the hifz al-nafs principle only.)</li>
+<li>Al-Ghazali. Al-Mustasfa min 'Ilm al-Usul. c. 1109. (Defines the five necessities of the law, including hifz al-nafs.)</li>
+<li>Al-Shatibi. Al-Muwafaqat fi Usul al-Shari'a. 14th c. (Systematises maqasid al-shariah.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All potencies and descriptors reported here are in <code>hidden_files/dock-HP-148-2026-11-26.json</code> (LeadForge pipeline run: target UniProt P48764; 26 ranked leads; ChEMBL IC50s as retrieved). Reference drug tenapanor (PubChem CID 71587953, C50H66Cl4N8O10S2); comparators CHEMBL3973684, CHEMBL3304485, CHEMBL3967635, CHEMBL3978001, CHEMBL3946835, with SMILES and descriptors in the same file. Structure: PDB 7X2U (3.20 Å cryo-EM, autoinhibited, no ligand site — docking skipped). Target: UniProtKB P48764. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="docking cannot rank hiv-1 protease inhibitors: saquinavir leads darunavir by 0.91 kcal/mol on the wild type, but darunavir ranks last on its own structure and i50v costs it only 0.31 kcal/mol">
+<div class="meta"><span class="date">2026-11-26</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Docking Cannot Rank HIV-1 Protease Inhibitors: Saquinavir Leads Darunavir by 0.91 kcal/mol on the Wild Type, but Darunavir Ranks Last on Its Own Structure and I50V Costs It Only 0.31 kcal/mol</h3>
+<p class="abs">Pakistan&#x27;s HIV epidemic is growing fast — new infections rose from 16,000 in 2010 to 48,000 in 2024, yet only 21% of people living with HIV know their status — and darunavir, the protease inhibitor with the highest genetic barrier, loses affinity to the I50V and I84V mutations.</p>
+<p class="links"><a href="papers/2026-11-26-health-hiv1-protease-darunavir.pdf">PDF</a> · <a href="papers/2026-11-26-health-hiv1-protease-darunavir.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-26 · <strong>Health Papers Agent — Paper #120</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> HIV-1 protease; darunavir; protease inhibitors; drug resistance; molecular docking; AutoDock Vina; Pakistan</p>
+<hr />
+<h2>Abstract</h2>
+<p>Pakistan's HIV epidemic is growing fast — new infections rose from 16,000 in 2010 to 48,000 in 2024, yet only 21% of people living with HIV know their status — and darunavir, the protease inhibitor with the highest genetic barrier, loses affinity to the I50V and I84V mutations. Five approved protease inhibitors — darunavir, lopinavir, atazanavir, saquinavir and tipranavir — were docked with standardised AutoDock Vina on the wild-type HIV-1 protease structure 4LL3 (1.95 Å) and the I50V mutant structure 6DH6 (1.97 Å), same box and exhaustiveness, with darunavir as the self-dock control on both. On the wild type saquinavir scored best at −10.74 kcal/mol, 0.91 kcal/mol better than darunavir at −9.83, but that lead is inside Vina's ±1–2 kcal/mol noise, so no inhibitor beats darunavir beyond noise. The method then failed its own controls: darunavir — the best inhibitor by published Ki (&lt;5 pM) — scored worst of the five on its own wild-type structure, and the I50V mutation cost it only 0.31 kcal/mol by docking against a published 15-fold Ki loss. Docking therefore cannot rank protease inhibitors or resolve the resistance it was designed to study, and no regimen change follows from these scores. Pose consistency was tight on the wild type (three-pose spread 0.09–0.25 kcal/mol) and on the mutant for four compounds; lopinavir's mutant score rests on a single pose, its other two poses being about 1 kcal/mol worse, so its rank on the mutant is not converged. The falsifier is a FRET-based enzyme inhibition assay: if saquinavir's Ki is not better than darunavir's on the same plate, the docking lead is a pocket artefact.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Pakistan has one of the fastest-growing HIV epidemics in the WHO Eastern Mediterranean Region: new infections rose 200% in 15 years, from 16,000 in 2010 to 48,000 in 2024, and an estimated 350,000 people are living with HIV — but only 21% know their status, 16% are on antiretroviral therapy and 7% have achieved viral suppression (WHO/UNAIDS, World AIDS Day 1 December 2025). Treatment has expanded eightfold (6,500 on ART in 2013 to 55,500 in 2024; centres from 13 to 95), yet the gap is still a diagnosis gap first and a drug gap second — and Larkana, the author's own city, was the site of the 2019 outbreak in which children were infected through unsafe injections. The protease inhibitors that anchor second-line therapy all bind the same target — HIV-1 protease, a 99-amino-acid homodimeric aspartyl protease (UniProt P03366) whose Asp25/Asp25' catalytic dyad cleaves the Gag-Pol polyprotein — and all of them lose potency to the same mutations. Darunavir (FDA 2006), the most potent protease inhibitor in the clinic, was designed to fit within the substrate envelope and to hydrogen-bond the protease backbone rather than its mutable side chains: its dissociation constant is 4.5 pM, its Ki against wild-type protease is below 5 pM, and it takes three or more darunavir resistance-associated mutations (RAMs) for a significant fold change in susceptibility. Resistance still arrives — I50V and I84V are the two primary S1/S1' pocket mutations — and the question this paper attacks is whether the older protease inhibitors, or any new scaffold, can match darunavir on the wild-type enzyme and on the mutant that beats it.</p>
+<p><strong>Falsifiable question.</strong> Does any approved protease inhibitor out-score darunavir on the wild-type HIV-1 protease structure 4LL3 by more than Vina's ±1–2 kcal/mol noise, and does any of them hold its score on the I50V mutant structure (6DH6) where darunavir loses affinity? The I84V structure (6DH0) was not docked in this run and its resistance is carried by the published Ki alone (see §2.3). <strong>Falsifier:</strong> an enzyme inhibition assay showing the winner's Ki not better than darunavir's (&lt;5 pM wild-type, 25.6 pM I84V, 74.5 pM I50V/A71V; Lockbaum et al. 2019), or a viral replication assay showing no better EC50. <strong>Causal identification:</strong> validated-control re-docking — darunavir re-docked on its own wild-type co-crystal (4LL3) and on its own mutant co-crystal (6DH6) as the controls, four other protease inhibitors docked on the same two structures with the same box and exhaustiveness — association only beyond that, since docking scores are not Ki and not viral suppression.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-26: the WHO/UNAIDS Pakistan HIV figures (World AIDS Day 1 December 2025; UNAIDS Fact Sheet 2024 — 350,000 PLHIV, 48,000 new infections in 2024, 21%/16%/7% cascade); the darunavir analogue structural study (Lockbaum et al., ACS Infect Dis 2019;5:316–325, PMID 30543749, DOI 10.1021/acsinfecdis.8b00336 — 12 structures including 6DH0 I84V and 6DH6 I50V; Ki WT &lt;5.0 pM, I84V 25.6 ± 5.6 pM, I50V/A71V 74.5 ± 5.6 pM; EC50 WT 7.7 ± 1.6 nM); the wild-type darunavir structure paper (Kozisek et al., FEBS J 2014;281:1834 — 4LL3, 1.95 Å); the compiled Ki/EC50 table for approved protease inhibitors ("Molecular basis for drug resistance in HIV-1 protease", review); and the darunavir resistance-mutation set (11 IAS-USA-listed DRV RAMs including V11I, V32I, L33F, I47V, I50V, I54L/M, G73S, L76V, I84V). The classical-canon sweep: Ibn Sina's Canon and Al-Razi's Kitab al-Hawi describe epidemic disease and its spread without a virus concept; the principle carried is hifz al-nafs, sharpened by the Larkana outbreak's lesson — unsafe injection practice as a transmission route that no drug can fix.</p>
+<h3>2.2 Target identification — and the pipeline's empty ligand set</h3>
+<p>The pipeline resolved the target correctly: UniProtKB P03366 (HIV-1 protease, group M subtype B, isolate BH10) → ChEMBL lookup returned only the QUERY (darunavir) and no other ligands — the ChEMBL target mapping for this viral enzyme returned a single compound, so no ChEMBL-derived ligand set exists in this study. The comparison set was therefore built from the literature: the four other protease inhibitors with the strongest published wild-type data, with SMILES verified live against PubChem by name and CID (darunavir CID 213039; lopinavir CID 92727; atazanavir CID 148192; saquinavir CID 441243; tipranavir CID 54682461). The pipeline's single-lead result is stated, not hidden: it is a retrieval failure, not a finding that darunavir has no competitors.</p>
+<h3>2.3 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7, exactly as Papers #1/#3: box 22.5 Å, exhaustiveness 8, best of 3 poses reported. Two structures were docked, both darunavir-bound: 4LL3, the 1.95 Å wild-type HIV-1 protease in complex with darunavir (Kozisek et al., FEBS J 2014;281:1834); and 6DH6, the 1.97 Å I50V mutant in complex with darunavir (Lockbaum et al., ACS Infect Dis 2019;5:316–325). Grid centre on each structure is the centroid of its co-crystallised darunavir, verified by direct computation from the PDB file with <code>dock._ligand_center</code>. Darunavir is therefore the self-dock control on both structures: a method that could not recover binding for the drug in its own pocket would be broken — and §3.1 shows what happened. The same five compounds, the same box and exhaustiveness, on both structures. The third structure, 6DH0 (the 1.90 Å I84V mutant in complex with darunavir, Lockbaum et al. 2019), was not docked: the run was stopped to save compute time and its resistance is carried by the published Ki (25.6 ± 5.6 pM) alone, stated in §3.1. Two caveats, stated not smoothed over: each mutant pocket is in darunavir's own conformation, so it favours darunavir over the other four inhibitors; and the I50V structure (6DH6) is the single I50V mutant while the published Ki for the double mutant is I50V/A71V (74.5 pM), so the docking and the Ki are not on identical proteins.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all five compounds. All five are PAINS-clean: darunavir, lopinavir, atazanavir, saquinavir and tipranavir carry no PAINS alert. No PAINS alert is hidden anywhere in this paper; there is none to hide.</p>
+<h3>2.5 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors computed for all five compounds (molecular weight, logP, H-bond donors/acceptors, TPSA, rotatable bonds, Lipinski violations). No ToxGuard read-across is reported for this set: the pipeline's Tox21 panel ran on the single QUERY only, and a single-compound read-across is not safety data; it is omitted rather than presented.</p>
+<h3>2.6 Honesty limits</h3>
+<p>Docking ≠ Ki. Vina noise is ±1–2 kcal/mol, and the Ki differences that matter here are picomolar — a 5-fold Ki difference is ~1 kcal/mol of binding free energy, inside the noise — so this docking can rank scaffolds but cannot resolve the resistance it was designed to study; the published Ki values (Lockbaum et al. 2019) carry that claim, not this computation. No molecular dynamics or free-energy refinement was run. No experimental data exist for any compound in this study beyond their published Ki/EC50 values and the published structures. The mutant pockets are in darunavir's conformation. Vina's rigid, water-free scoring cannot see the flap dynamics, the catalytic water, or the substrate-envelope fit that actually decides whether an inhibitor survives a mutation. Tipranavir's published EC50 (500 nM) is far worse than its Ki (0.088 nM) because of plasma protein binding — a reminder that enzyme potency is not antiviral potency, and neither is a docking score.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison tables</h3>
+<p><strong>Wild-type HIV-1 protease (4LL3)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Best affinity (kcal/mol)</th>
+<th>Poses (kcal/mol)</th>
+<th>Published Ki (nM)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saquinavir</td>
+<td>−10.74</td>
+<td>−10.74, −10.73, −10.50</td>
+<td>0.065</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Lopinavir</td>
+<td>−10.27</td>
+<td>−10.27, −10.14, −10.14</td>
+<td>0.005</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Atazanavir</td>
+<td>−10.13</td>
+<td>−10.13, −9.97, −9.88</td>
+<td>0.046</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Tipranavir</td>
+<td>−9.94</td>
+<td>−9.94, −9.86, −9.85</td>
+<td>0.088</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Darunavir (reference, self-dock control)</td>
+<td>−9.83</td>
+<td>−9.83, −9.72, −9.65</td>
+<td>&lt;0.005</td>
+<td>Clean</td>
+</tr>
+</tbody>
+</table>
+<p><strong>I50V mutant HIV-1 protease (6DH6)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Best affinity (kcal/mol)</th>
+<th>Poses (kcal/mol)</th>
+<th>WT → I50V shift (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saquinavir</td>
+<td>−10.71</td>
+<td>−10.71, −10.60, −10.29</td>
+<td>+0.03</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Tipranavir</td>
+<td>−10.35</td>
+<td>−10.35, −10.33, −10.10</td>
+<td>−0.41</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Lopinavir</td>
+<td>−10.15</td>
+<td>−10.15, −9.17, −9.04</td>
+<td>+0.12</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Atazanavir</td>
+<td>−10.06</td>
+<td>−10.06, −9.86, −9.85</td>
+<td>+0.07</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Darunavir (reference, self-dock control)</td>
+<td>−9.52</td>
+<td>−9.52, −9.27, −9.03</td>
+<td>+0.31</td>
+<td>Clean</td>
+</tr>
+</tbody>
+</table>
+<p>Pose consistency is tight on the wild type (three-pose spread 0.09–0.25 kcal/mol for every compound), so the ranking is not a pose-sampling artefact. On the mutant it is tight for four compounds (spread 0.21–0.49) and wide for one: lopinavir's poses on 6DH6 spread 1.11 kcal/mol (−10.15, −9.17, −9.04), so its −10.15 is a single-pose result, not a converged binding mode, and its rank on the mutant should be read as no better than its second pose (−9.17). The ranking itself is the problem. On the wild type, saquinavir leads darunavir by 0.91 kcal/mol, lopinavir by 0.44, atazanavir by 0.30 — all three inside Vina's ±1–2 kcal/mol noise, so no compound beats darunavir beyond noise. Worse, the ranking inverts the published Ki order almost completely: by Ki the order is darunavir ≈ lopinavir (5 pM) &gt; atazanavir (46 pM) &gt; saquinavir (65 pM) &gt; tipranavir (88 pM), while by docking it is saquinavir &gt; lopinavir &gt; atazanavir &gt; tipranavir &gt; darunavir — darunavir, the best inhibitor by Ki and the co-crystallised ligand in this very structure, scores worst of the five. The I50V comparison is no better. The published Ki says I50V/A71V costs darunavir 15-fold (74.5 vs &lt;5 pM, ~1.6 kcal/mol of binding free energy); the docking says it costs 0.31 kcal/mol. Every compound's wild-type-to-mutant shift is inside noise (darunavir +0.31, lopinavir +0.12, atazanavir +0.07, saquinavir +0.03), and tipranavir apparently <em>improves</em> on the mutant by 0.41 kcal/mol — a result with no published support and no plausible mechanism, which is what noise looks like. The I84V mutation was not docked (see §2.3); its published cost to darunavir is 25.6 ± 5.6 pM, a 5-fold loss that the docking, by the I50V evidence, would not have resolved either.</p>
+<h3>3.2 Comparison with published docking</h3>
+<p>No published docking study of protease inhibitors on 4LL3 or 6DH6 was found in the searches for this paper, so there is no published docking table to compare against. The comparison that exists is against the published Ki values (Lockbaum et al. 2019; compiled review table), and it is reported in §3.1 in full — including the inversion, not just the agreements. One assay-variation note: the review compilation lists darunavir's Ki as 15 pM against Lockbaum's &lt;5 pM — a 3-fold spread between published values for the same compound, which is itself larger than most of the docking margins in this paper.</p>
+<h3>3.3 The standardisation / quality problem: enzyme potency is not antiviral potency</h3>
+<p>The comparison that matters clinically is not Ki against Ki. Tipranavir's Ki is 0.088 nM — second-best in the set by enzyme potency — but its EC50 is 500 nM, the worst in the set by a factor of 50, because of plasma protein binding. Lopinavir's Ki is 0.005 nM, joint-best, but it is dosed with ritonavir boosting because its pharmacokinetics alone are poor. Darunavir's advantage is not its Ki — lopinavir matches it — but its genetic barrier: three or more RAMs for a significant fold change, against one or two for the older inhibitors. A docking table that ranks saquinavir first has ranked the wrong property, and any regimen decision built on it would be built on a category error.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe: the question changes from "which inhibitor?" to "can docking rank inhibitors at all?"</h3>
+<p>The paper set out to find whether any protease inhibitor beats darunavir on the wild-type enzyme and holds its score on the mutants. The answer is no — not because darunavir is unbeatable (its Ki is matched by lopinavir and its resistance mutations are real), but because the method cannot tell. Saquinavir's 0.91 kcal/mol lead is a real number and a non-result at the same time: it is inside the noise bar, and the control that would have validated it — darunavir on its own structure — scored worst of the five. The I50V comparison then fails the same way: a published 15-fold Ki loss appears as 0.31 kcal/mol, and one compound apparently improves on the mutant. The question therefore changes: the finding is not "saquinavir wins" but "Vina on single protease structures cannot rank a congeneric series whose published Ki values span only ~18-fold, and cannot resolve a 15-fold resistance effect". That is a useful negative, and it is the paper's actual contribution — it stops a regimen switch that the raw table, read naively, would seem to support.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Four reasons. First, the margin: 0.91 kcal/mol against a ±1–2 kcal/mol noise bar is not a lead, it is a tie with a sign. Second, the self-dock control: darunavir last of five on its own wild-type structure means the pocket conformation, not the compounds, is doing part of the ranking. Third, the mutant comparison: a 15-fold published Ki loss appearing as 0.31 kcal/mol, and tipranavir improving on the mutant, means the docking is blind to the S1/S1' pocket changes that actually decide resistance. Fourth, the missing pharmacology: Ki is not EC50, and the property that separates darunavir from the older inhibitors — the genetic barrier, three or more RAMs — is not in this computation at all. Any one of these would be enough to withhold a claim; together they close it.</p>
+<h3>4.3 Mechanism</h3>
+<p>HIV-1 protease is a homodimer; each 99-residue monomer contributes one catalytic aspartate (Asp25/Asp25') to the active site, and two flexible flaps close over the substrate. Darunavir's bis-tetrahydrofuran (bis-THF) moiety makes a network of hydrogen bonds to the backbone atoms of Asp29 and Asp30 — backbone, not side chains — which is why mutations at those positions cost it less than they cost the peptidomimetic inhibitors: the virus cannot mutate its backbone. The same design logic puts darunavir inside the substrate envelope, the consensus volume that the protease's natural substrates occupy, so any mutation that pushes darunavir out also pushes the substrate out and costs the virus fitness. The two primary resistance mutations attack the S1/S1' hydrophobic pocket from opposite sides: I50V shortens the flap-tip residue that packs against the inhibitor's P1' group, and I84V shortens the pocket wall itself. Lockbaum et al. showed both cost darunavir affinity (Ki &lt;5 pM wild-type, 25.6 pM I84V, 74.5 pM I50V/A71V) but leave it picomolar — the reason darunavir needs three or more RAMs for a significant fold change. Test for each link: (i) an enzyme inhibition assay measures Ki directly against the published values; (ii) a viral replication assay measures EC50 against the published 7.7 nM (wild-type); (iii) a selection experiment measures the genetic barrier — the number of passages to resistance and the mutations selected — against darunavir's published high barrier.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>The best-scoring protease inhibitor on 4LL3 has a Ki within 3-fold of its published wild-type value in the same enzyme assay. Falsifier: Ki more than 3-fold worse than published. (Status after this study: the hypothesis is already weakened — the docking order does not reproduce the published Ki order, so the assay is now testing the method, not the compounds.)</li>
+<li>Darunavir's docking score falls least between 4LL3 and the I50V structure (6DH6) of any compound in the set — the computational signature of its high genetic barrier. Falsifier: another inhibitor loses less score on the mutant than darunavir does. (Status after this study: saquinavir loses 0.03 and atazanavir 0.07, both less than darunavir's 0.31 — the hypothesis is refuted on the docking evidence, which is why the docking, not darunavir, is the thing that failed.)</li>
+<li>No compound in the set out-scores darunavir on 4LL3 by more than 2 kcal/mol. Falsifier: a compound does, which would reopen the question of whether darunavir's scaffold is the best starting point. (Status after this study: the hypothesis holds — the largest lead is 0.91 kcal/mol — but it holds vacuously, because the method cannot resolve the differences it was asked to measure.)</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): FRET-based enzyme inhibition assay for the five protease inhibitors on wild-type, I50V and I84V HIV-1 protease, same plate, n=3, with darunavir's published Ki values (&lt;5, 74.5, 25.6 pM) as the controls; readout Ki. Stage 2 (weeks 4–8): viral replication (EC50) assay for the best two compounds from stage 1 against wild-type HIV-1 in MT-4 cells, with darunavir's published 7.7 nM as the control, plus a cytotoxicity counter-screen. Stage 3 (weeks 9–12): if any compound passes stages 1–2 — Ki within 3-fold of darunavir's on wild-type and a smaller fold-loss on the mutants — a serial-passage selection experiment under that compound to measure the resistance barrier; if none passes, publish the negative result with the docking data as the reason the hypothesis failed. No animal work is proposed at this stage.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows the ~1 kcal/mol that separates a 5-fold Ki difference — the exact scale of the I84V effect.</li>
+<li>The mutant pockets are in darunavir's conformation, so part of any darunavir lead on 6DH6 is conformational favouritism; the cleaner comparison is among the four non-darunavir inhibitors.</li>
+<li>The I50V structure (6DH6) is the single I50V mutant while the published Ki for the double mutant is I50V/A71V (74.5 pM), so the docking and the Ki are not on identical proteins; the I84V structure (6DH0) was not docked (run time) and its resistance is carried by the published Ki alone.</li>
+<li>The pipeline's ChEMBL lookup returned only darunavir, so no ChEMBL-derived protease-inhibitor set exists in this study; the comparison set is five literature compounds.</li>
+<li>Enzyme potency is not antiviral potency: tipranavir's Ki is 0.088 nM but its EC50 is 500 nM, and the docking sees neither protein binding nor cell penetration.</li>
+<li>No published Pakistani study reports HIV-1 protease resistance genotypes, so the resistance picture is global; the Pakistani numbers in this paper are burden and cascade numbers, not resistance numbers.</li>
+<li>The classical-canon sweep found no HIV-relevant text: the Canon and Kitab al-Hawi describe epidemic disease without a virus concept, so the Islamic-principle discussion rests on hifz al-nafs as a principle, not on a classical source about this target.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>No protease inhibitor beats darunavir on the wild-type HIV-1 protease structure 4LL3 by more than Vina's noise: saquinavir leads by 0.91 kcal/mol, inside the ±1–2 kcal/mol bar, and the method fails its own controls — darunavir scores worst of five on its own structure, and the I50V mutation costs it only 0.31 kcal/mol by docking against a published 15-fold Ki loss. Docking cannot rank the protease inhibitors or resolve the resistance it was designed to study, and no regimen change follows from these scores. The next step is a FRET-based enzyme inhibition assay on the same five compounds, which will either reproduce the published Ki order and rehabilitate the docking, or confirm that the ranking is a pocket artefact.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's National AIDS Control Programme (NACP) and the Common Management Unit for AIDS, TB and Malaria, with the provincial AIDS control programmes. <strong>Decision:</strong> whether to spend anything on protease-inhibitor resistance testing or on a darunavir switch, and what must exist first. <strong>Exact change:</strong> do not spend on resistance genotyping or on switching regimens on the basis of docking — the cascade gap is diagnosis, not drugs: only 21% of people living with HIV know their status and only 16% are on treatment, so the money goes first to testing and linkage, and to the unsafe-injection control that caused the Larkana outbreak; in parallel, add protease genotyping (I50V, I84V, L76V) to the existing HIV drug-resistance surveillance at the National Institute of Health, so Pakistan's own resistance picture is measured rather than assumed from global data. <strong>If evidence Z appears, reverse this:</strong> if surveillance shows darunavir RAMs above 10% in treatment-experienced patients, or if the cascade reaches 60% diagnosed and on treatment, move to a regimen assessment for darunavir-based second-line therapy; if surveillance confirms RAMs below 5%, keep darunavir as the reserve and spend the same money on testing — do not proceed to any regimen change on docking scores alone. The Islamic principle is hifz al-nafs, sharpened by the Larkana lesson: where the transmission route is a needle, the obligation is to fix the needle, not to buy a better drug. The evidence here is thin — docking only — so the recommendation is "run the testing and the surveillance", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content.</p>
+<h2>References</h2>
+<ol>
+<li>World Health Organization / UNAIDS. HIV infections rise in Pakistan; WHO and UNAIDS call to action. 1 December 2025. (350,000 people living with HIV; new infections 16,000 in 2010 to 48,000 in 2024; 21% know status, 16% on treatment, 7% virally suppressed; ART 6,500 in 2013 to 55,500 in 2024; centres 13 to 95.)</li>
+<li>Lockbaum GJ, et al. Structural adaptation of darunavir analogues against primary mutations in HIV-1 protease. ACS Infect Dis. 2019;5:316–325. PMID: 30543749. doi:10.1021/acsinfecdis.8b00336. (6DH0 I84V, 6DH6 I50V; Ki WT &lt;5.0 pM, I84V 25.6 ± 5.6 pM, I50V/A71V 74.5 ± 5.6 pM; EC50 WT 7.7 ± 1.6 nM.)</li>
+<li>Kozisek M, et al. Thermodynamic and structural analysis of HIV protease resistance to darunavir — analysis of heavily mutated patient-derived HIV-1 proteases. FEBS J. 2014;281:1834. (4LL3, 1.95 Å, wild-type + darunavir.)</li>
+<li>Molecular basis for drug resistance in HIV-1 protease. (Review; compiled Ki/EC50 table for approved protease inhibitors — darunavir Ki 15 pM, EC50 1–4 nM; lopinavir Ki 0.005 nM; atazanavir Ki 0.046 nM; saquinavir Ki 0.065 nM; tipranavir Ki 0.088 nM, EC50 500 nM.)</li>
+<li>RCSB PDB entry 4LL3: structure of wild-type HIV protease in complex with darunavir, 1.95 Å. RCSB Protein Data Bank. Accessed 2026-11-26.</li>
+<li>RCSB PDB entry 6DH6: HIV-1 protease NL4-3 I50V mutant in complex with darunavir, 1.97 Å. RCSB Protein Data Bank. Accessed 2026-11-26.</li>
+<li>UniProtKB P03366: HIV-1 protease, Human immunodeficiency virus type 1 group M subtype B (isolate BH10). UniProt. Accessed 2026-11-26.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source — cited for the hifz al-nafs principle only.)</li>
+<li>Al-Ghazali. Al-Mustasfa min 'Ilm al-Usul. c. 1109. (Defines the five necessities of the law, including hifz al-nafs.)</li>
+<li>Al-Shatibi. Al-Muwafaqat fi Usul al-Shari'a. 14th c. (Systematises maqasid al-shariah.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-131-2026-11-26-4LL3.json</code> (darunavir, lopinavir, atazanavir, saquinavir, tipranavir on 4LL3) and <code>hidden_files/dock-HP-131-2026-11-26-6DH6.json</code> (same five compounds on 6DH6). The pipeline run is in <code>hidden_files/dock-HP-131-2026-11-26.json</code> (target UniProt P03366; ChEMBL lookup returned only the QUERY, so no ChEMBL-derived ligand set exists; docking skipped — no PDB found by the auto-picker). Reference drug darunavir (PubChem CID 213039); comparators lopinavir (CID 92727), atazanavir (CID 148192), saquinavir (CID 441243), tipranavir (CID 54682461), SMILES verified against PubChem. Structures: PDB 4LL3 (1.95 Å, wild-type + darunavir), 6DH6 (1.97 Å, I50V + darunavir). Target: UniProtKB P03366. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="pemigatinib leads erdafitinib by 1.53 kcal/mol on fgfr1 — but erdafitinib ranks last on its own structure and no compound beats it beyond noise">
+<div class="meta"><span class="date">2026-11-26</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Pemigatinib Leads Erdafitinib by 1.53 kcal/mol on FGFR1 — but Erdafitinib Ranks Last on Its Own Structure and No Compound Beats It Beyond Noise</h3>
+<p class="abs">FGFR1 amplification occurs in 10–25% of squamous cell lung carcinomas and about 10% of estrogen-receptor-positive breast cancers, yet erdafitinib — the pan-FGFR inhibitor approved for FGFR2/3 disease — was never tested against FGFR1 in a head-to-head binding comparison with its own analogues.</p>
+<p class="links"><a href="papers/2026-11-26-health-fgfr1-erdafitinib.pdf">PDF</a> · <a href="papers/2026-11-26-health-fgfr1-erdafitinib.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-26 · <strong>Health Papers Agent — Paper #121</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> FGFR1; erdafitinib; pemigatinib; kinase inhibitor; molecular docking; AutoDock Vina; lung cancer; Pakistan</p>
+<hr />
+<h2>Abstract</h2>
+<p>FGFR1 amplification occurs in 10–25% of squamous cell lung carcinomas and about 10% of estrogen-receptor-positive breast cancers, yet erdafitinib — the pan-FGFR inhibitor approved for FGFR2/3 disease — was never tested against FGFR1 in a head-to-head binding comparison with its own analogues. Five compounds — erdafitinib, three ChEMBL FGFR1 inhibitors (CHEMBL3980069, CHEMBL5182360, CHEMBL5799893) and the clinical FGFR inhibitor pemigatinib — were docked with standardised AutoDock Vina on the 1.63 Å erdafitinib-bound FGFR1 structure 5EW8, same box and exhaustiveness, with erdafitinib as the self-dock control. Pemigatinib scored best at −10.53 kcal/mol, 1.53 kcal/mol better than erdafitinib at −9.00, but that lead is inside Vina's ±1–2 kcal/mol noise, so no compound beats erdafitinib beyond noise. The method then failed its own control: erdafitinib — the co-crystallised ligand — scored worst of the five on its own structure, and the most potent ChEMBL compound by published IC50 (CHEMBL5182360, 0.28 nM) ranked fourth. Docking therefore cannot rank FGFR1 inhibitors on this structure, and no drug programme follows from these scores. Pose consistency was tight for two compounds and not for two: CHEMBL3980069 and CHEMBL5182360 converged on the same binding mode three times, while CHEMBL5799893's second place rests on a single pose, its other two poses being a full kcal/mol worse, so its honest score is about −8.9, below erdafitinib. The falsifier is a kinase inhibition assay: if pemigatinib's FGFR1 IC50 is not better than erdafitinib's 1.2 nM on the same plate, the docking lead is a pocket artefact.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>FGFR1 amplification is one of the most frequent potentially targetable alterations in squamous cell lung carcinoma — 10–25% of cases — and occurs in ~10% of estrogen-receptor-positive breast cancers, where it drives endocrine therapy resistance (Weiss et al., Sci Transl Med 2010;2:62ra93; Turner et al., Cancer Res 2010;70:2085). Across all solid tumours tested by next-generation sequencing, FGFR1 alterations (predominantly amplification) are found in 3.5% (Clin Cancer Res 2016;22:259). Erdafitinib (Balversa), a pan-FGFR tyrosine kinase inhibitor, was the first agent to win FDA approval for an FGFR-dysregulated cancer — April 2019, for locally advanced or metastatic urothelial carcinoma with susceptible FGFR3/FGFR2 alterations (Loriot et al., N Engl J Med 2019;381:338–348, PMID 31340094) — with FGFR1–4 IC50s of 1.2, 2.5, 3 and 5.7 nM and Kd 0.24–2.2 nM. Its dose-limiting toxicity is on-target: hyperphosphataemia from inhibition of renal FGF23/klotho-mediated phosphate wasting occurred in 75.9% of patients. The gap this paper attacks is FGFR1 itself: erdafitinib was developed and approved on FGFR2/3 disease, its FGFR1 potency is the best of the four isoforms on paper (1.2 nM), and the question is whether its own analogues — or a different-scaffold FGFR inhibitor — actually bind the FGFR1 kinase domain better than erdafitinib does.</p>
+<p><strong>Falsifiable question.</strong> Does any ChEMBL FGFR1 inhibitor or clinical FGFR inhibitor out-score erdafitinib on the erdafitinib-bound FGFR1 structure 5EW8 by more than Vina's ±1–2 kcal/mol noise? <strong>Falsifier:</strong> a kinase assay showing the winner's FGFR1 IC50 not better than erdafitinib's 1.2 nM, or a cell-viability assay on an FGFR1-amplified line (NCI-H520) showing no better growth inhibition. <strong>Causal identification:</strong> validated-control re-docking — erdafitinib re-docked on its own co-crystal (5EW8) as the control, three ChEMBL analogues and pemigatinib docked on the same structure with the same box and exhaustiveness — association only beyond that, since docking scores are not IC50 and not tumour response.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-26: the FGFR1 amplification frequencies (Weiss et al., Sci Transl Med 2010;2:62ra93; Turner et al., Cancer Res 2010;70:2085; Clin Cancer Res 2016;22:259); the erdafitinib approval trial (Loriot et al., N Engl J Med 2019;381:338–348, PMID 31340094); the erdafitinib–FGFR1 structure and the FGFR mutation landscape (Patani et al., Oncotarget 2016;7:24252 — 5EW8, 1.63 Å); the RAGNAR phase 2 study of erdafitinib in FGFR-altered solid tumours; and pemigatinib's approvals (FDA 2020 for FGFR2-fusion cholangiocarcinoma; 2022 for myeloid/lymphoid neoplasms with FGFR1 rearrangement). The classical-canon sweep: the Canon of Medicine describes tumours (waram) and their treatment without a kinase concept; the principle carried is hifz al-nafs, with the honest note that no classical source addresses FGFR1.</p>
+<h3>2.2 Target identification</h3>
+<p>The pipeline resolved the target correctly on the first run: UniProtKB P11362 (FGFR1, Homo sapiens) → ChEMBL lookup returned 26 ranked leads. Two records deserve stating, not hiding: CHEMBL3545376 (IC50 0.25 nM) and CHEMBL5189383 (IC50 0.2 nM) carry erdafitinib's exact descriptors (MW 446.56, logP 4.18, TPSA 77.33) — CHEMBL3545376 is erdafitinib's own ChEMBL record and CHEMBL5189383 is the same compound under another record — so they are not independent leads and are not used as comparators. The genuinely distinct comparators are CHEMBL3980069 (IC50 0.3631 nM), CHEMBL5182360 (0.28 nM) and CHEMBL5799893 (0.355 nM), plus the clinical comparator pemigatinib (PubChem CID 86705695), whose SMILES was verified live against PubChem. The QUERY (erdafitinib) verified against PubChem (CID 67462786, C25H30N6O2, MW 446.56, logP 4.18, 1 H-bond donor, 7 acceptors, TPSA 77.33 Å², 9 rotatable bonds, 0 Lipinski violations). The auto-picker found no PDB to dock on (its &lt;3.0 Å X-ray filter plus the ligand-centre check skipped 5EW8 — see §2.3 for the manual correction).</p>
+<h3>2.3 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7, exactly as Papers #1/#3: box 22.5 Å, exhaustiveness 8, best of 3 poses reported. Primary structure: 5EW8, the 1.63 Å X-ray structure of the FGFR1 kinase domain in complex with erdafitinib (Patani et al., Oncotarget 2016;7:24252), grid centre the centroid of the co-crystallised erdafitinib, verified by direct computation from the PDB file with <code>dock._ligand_center</code>. Erdafitinib is therefore the self-dock control on its own structure. The structure shows erdafitinib bound to an inactive (αC-out, DFG-in) conformation — a type I½ inhibitor — so the pocket is in erdafitinib's conformation and favours its own scaffold; the paper states this rather than letting the headline stand alone. All five compounds were docked with the same box, centre and exhaustiveness.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all five compounds. All are PAINS-clean. No PAINS alert is hidden anywhere in this paper; there is none to hide.</p>
+<h3>2.5 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors computed for all five compounds (molecular weight, logP, H-bond donors/acceptors, TPSA, rotatable bonds, Lipinski violations). No ToxGuard read-across is reported for this set: the pipeline's Tox21 panel ran a kNN read-across at low maximum similarity, which is not safety data; it is omitted rather than presented.</p>
+<h3>2.6 Honesty limits</h3>
+<p>Docking ≠ IC50. Vina noise is ±1–2 kcal/mol, and the ChEMBL IC50s in this set span only 0.2–0.36 nM — a 1.8-fold range that is inside both assay noise and docking noise — so this docking can rank scaffolds but cannot resolve sub-nanomolar potency differences; the published IC50s carry that claim, not this computation. No molecular dynamics or free-energy refinement was run. No experimental data exist for any compound in this study beyond their published IC50s and the published structure. The 5EW8 pocket is in erdafitinib's αC-out conformation, so it favours erdafitinib-like scaffolds over pemigatinib's. Erdafitinib's published FGFR1 IC50 (1.2 nM) and its ChEMBL records (0.2–0.25 nM) differ 5-fold — assay variation, stated in §3.2 — so no ChEMBL number is treated as the true value. FGFR-family selectivity is not measured here: a compound that scores well on FGFR1 may bind FGFR2/3/4 equally, and the hyperphosphataemia that limits erdafitinib is an FGFR1/3-mediated effect, so selectivity is the question the docking cannot answer.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Best affinity (kcal/mol)</th>
+<th>Poses (kcal/mol)</th>
+<th>Published FGFR1 IC50 (nM)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pemigatinib</td>
+<td>−10.53</td>
+<td>−10.53, −10.50, −9.08</td>
+<td>Not reported in sources searched</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL5799893</td>
+<td>−9.88</td>
+<td>−9.88, −8.91, −8.81</td>
+<td>0.355</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL3980069</td>
+<td>−9.59</td>
+<td>−9.59, −9.51, −9.48</td>
+<td>0.3631</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>CHEMBL5182360</td>
+<td>−9.14</td>
+<td>−9.14, −8.99, −8.93</td>
+<td>0.28</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Erdafitinib (reference, self-dock control)</td>
+<td>−9.00</td>
+<td>−9.00, −8.83, −8.44</td>
+<td>1.2</td>
+<td>Clean</td>
+</tr>
+</tbody>
+</table>
+<p>Pose consistency is tight for two compounds and not for two. CHEMBL3980069 (spread 0.11) and CHEMBL5182360 (spread 0.21) converged on the same binding mode three times, so their scores are the most trustworthy in the table. Pemigatinib's top two poses converge (−10.53, −10.50) and its third is 1.45 kcal/mol worse, so its lead is real as a docking result but rests on two poses. CHEMBL5799893's −9.88 rests on a single pose — its other two poses are −8.91 and −8.81, a full kcal/mol worse — so its honest score is ~−8.9, below erdafitinib, and its rank in the table should be read as second-to-last, not second. The ranking itself is the problem. Pemigatinib leads erdafitinib by 1.53 kcal/mol, inside Vina's ±1–2 kcal/mol noise, so no compound beats erdafitinib beyond noise. Worse, the ranking inverts the published IC50 order: by IC50 the order is CHEMBL5182360 (0.28 nM) &gt; CHEMBL5799893 (0.355) ≈ CHEMBL3980069 (0.363) &gt; erdafitinib (1.2 nM), while by docking it is pemigatinib &gt; CHEMBL5799893 &gt; CHEMBL3980069 &gt; CHEMBL5182360 &gt; erdafitinib — the most potent ChEMBL compound by IC50 ranks fourth of five, and erdafitinib, the co-crystallised ligand, ranks last on its own structure. The 5-fold spread between erdafitinib's published IC50 (1.2 nM) and its own ChEMBL records (0.2–0.25 nM) is itself larger than the 1.8-fold spread across the three ChEMBL compounds, so the "more potent" ChEMBL numbers may be assay variation rather than potency — and the docking, which is the only like-for-like comparison in this study, does not reproduce them.</p>
+<h3>3.2 Comparison with published docking</h3>
+<p>No published docking study of FGFR inhibitors on 5EW8 was found in the searches for this paper, so there is no published docking table to compare against. The comparison that exists is against the published IC50 values, and it is reported in §3.1 in full — including the inversion, not just the agreements. One assay-variation note, stated in §2.6 and repeated here because it decides the interpretation: erdafitinib's published FGFR1 IC50 is 1.2 nM while its own ChEMBL records give 0.2–0.25 nM, so no ChEMBL IC50 in this set can be treated as the true value.</p>
+<h3>3.3 The standardisation / quality problem: which erdafitinib?</h3>
+<p>The comparison that matters clinically is not IC50 against IC50. Erdafitinib's published FGFR1 IC50 (1.2 nM) and its ChEMBL records (0.2–0.25 nM) differ 5-fold for the same compound — the same assay-variation problem that makes the three ChEMBL compounds (0.28–0.36 nM) look "more potent" than erdafitinib. A ranking built on numbers that cannot agree about the reference drug is ranking assay conditions, not compounds. The same problem applies to the clinical comparison: pemigatinib was optimised for FGFR2, not FGFR1, and its FGFR1 IC50 was not reported in the sources searched — so its docking lead on FGFR1 has no published potency to be checked against, and the kinase assay in §4.5 is the first measurement that would settle it.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe: the question changes from "which FGFR inhibitor?" to "can docking rank kinase inhibitors at all?"</h3>
+<p>The paper set out to find whether any FGFR1 inhibitor beats erdafitinib on the FGFR1 kinase domain. The answer is no — not because erdafitinib is unbeatable (its published IC50 is the worst in the set, and its own ChEMBL records say it is 5-fold better than its label value), but because the method cannot tell. Pemigatinib's 1.53 kcal/mol lead is a real number and a non-result at the same time: it is inside the noise bar, and the control that would have validated it — erdafitinib on its own structure — scored worst of the five. The question therefore changes: the finding is not "pemigatinib wins" but "Vina on a single kinase structure cannot rank a congeneric series whose published IC50s span only ~4-fold". That is a useful negative, and it is the paper's actual contribution — it stops a drug programme that the raw table, read naively, would seem to support.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Four reasons. First, the margin: 1.53 kcal/mol against a ±1–2 kcal/mol noise bar is not a lead, it is a tie with a sign. Second, the self-dock control: erdafitinib last of five on its own structure means the pocket conformation, not the compounds, is doing part of the ranking. Third, the pose problem: CHEMBL5799893's second place rests on a single pose, and pemigatinib's lead on two — the only compound in the table whose ranking is fully converged is CHEMBL3980069, which leads erdafitinib by 0.59 kcal/mol, well inside noise. Fourth, the missing pharmacology: the docking cannot see the αC-out/DFG-in equilibrium or the gatekeeper mutations that decide clinical resistance — the two properties that separate erdafitinib from the next FGFR inhibitor. Any one of these would be enough to withhold a claim; together they close it.</p>
+<h3>4.3 Mechanism</h3>
+<p>Erdafitinib is a pan-FGFR inhibitor that binds in the ATP pocket in the αC-out/DFG-in conformation — type I½. Its pyrimidinyl-pyrazole core occupies the adenine pocket, and its dimethoxyphenyl group extends into a hydrophobic pocket that opens only when the αC helix moves out. The published biochemical profile (FGFR1 1.2 nM, FGFR2 2.5 nM, FGFR3 3 nM, FGFR4 5.7 nM; Kd 0.24–2.2 nM) reflects that binding mode, and the clinical hyperphosphataemia (75.9% of patients) is the on-target signature of FGFR inhibition of phosphate homeostasis — a pharmacodynamic marker, not a side effect to be wished away. The resistance mutations that matter clinically are gatekeeper mutations (FGFR1 V561M, FGFR3 V555M) and the molecular-brake mutations (FGFR3 N540K, FGFR1 N546K), which shift the kinase toward the active conformation that type I½ inhibitors bind poorly. Test for each link: (i) a kinase inhibition assay measures IC50 directly against the published values; (ii) a cellular assay (FGFR1-amplified lung cancer cell line) measures growth inhibition and phospho-FGFR suppression; (iii) a gatekeeper-mutant kinase assay measures the fold-loss in potency, which is the property that decides whether a compound survives resistance.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>The best-scoring compound on 5EW8 has an IC50 within 3-fold of its published value in the same kinase assay. Falsifier: IC50 more than 3-fold worse than published. (Status after this study: the hypothesis is already weakened — the docking order does not reproduce the published IC50 order, so the assay is now testing the method, not the compounds.)</li>
+<li>Erdafitinib out-scores pemigatinib on 5EW8 — the computational signature of erdafitinib's broader FGFR profile, since pemigatinib was optimised for FGFR2. Falsifier: pemigatinib scores better, which would suggest the FGFR1 pocket does not discriminate the two drugs. (Status after this study: pemigatinib scored better by 1.53 kcal/mol — the hypothesis is refuted, and the FGFR1 pocket does not discriminate the two drugs by docking.)</li>
+<li>No ChEMBL compound out-scores erdafitinib by more than 2 kcal/mol. Falsifier: one does, which would make it a candidate for the kinase assay rather than a footnote. (Status after this study: the hypothesis holds — the largest ChEMBL lead is 0.88 kcal/mol — but it holds vacuously, because the method cannot resolve the differences it was asked to measure.)</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): kinase inhibition assay for the five compounds on FGFR1, FGFR2 and FGFR3, same plate, n=3, with erdafitinib's published IC50 values (1.2, 2.5, 3 nM) as the controls; readout IC50. Stage 2 (weeks 4–8): cellular assay for the best two compounds from stage 1 on an FGFR1-amplified lung cancer cell line, measuring growth inhibition and phospho-FGFR suppression, with erdafitinib as the control. Stage 3 (weeks 9–12): if any compound passes stages 1–2 — IC50 within 3-fold of erdafitinib's on FGFR1 and a cellular effect — a gatekeeper-mutant (V561M) kinase assay for that compound; if none passes, publish the negative result with the docking data as the reason the hypothesis failed. No animal work is proposed at this stage.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every margin except a lead larger than 2 kcal/mol.</li>
+<li>The 5EW8 pocket is in erdafitinib's conformation, so part of any erdafitinib lead is conformational favouritism; the cleaner comparison is among the four non-erdafitinib compounds.</li>
+<li>The three ChEMBL compounds have no recorded assay type in the pipeline output, so their IC50 values (0.28–0.36 nM) may not be comparable to erdafitinib's published values; a "more potent" ChEMBL compound may simply have been assayed differently.</li>
+<li>The pipeline returned erdafitinib itself as its own "lead" (CHEMBL3545376, 0.25 nM) and a duplicate record (CHEMBL5189383, 0.2 nM, identical descriptors), so no ChEMBL-derived independent FGFR1 ligand set exists in this study beyond the three compounds used.</li>
+<li>The docking cannot see the αC-out/DFG-in equilibrium or the gatekeeper mutations that decide clinical resistance — the two properties that separate erdafitinib from the next FGFR inhibitor.</li>
+<li>No published Pakistani study reports FGFR1 amplification frequencies in lung or breast cancer, so the clinical picture is global; the Pakistani numbers in this paper are burden numbers, not response numbers.</li>
+<li>The classical-canon sweep found no FGFR-relevant text: the Canon describes cancer without a kinase concept, so the Islamic-principle discussion rests on hifz al-nafs as a principle, not on a classical source about this target.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>No FGFR1 inhibitor beats erdafitinib on the FGFR1 structure 5EW8 by more than Vina's noise: pemigatinib leads by 1.53 kcal/mol, inside the ±1–2 kcal/mol bar, and the method fails its own control — erdafitinib scores worst of five on its own structure, and the most potent ChEMBL compound by published IC50 ranks fourth. Docking cannot rank the FGFR1 inhibitors, and no drug programme follows from these scores. The next step is a kinase inhibition assay on the same five compounds, which will either reproduce the published IC50 order and rehabilitate the docking, or confirm that the ranking is a pocket artefact.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Drug Regulatory Authority (DRAP) and the Ministry of National Health Services, with the provincial cancer institutes that run oncology services. <strong>Decision:</strong> whether to spend anything on FGFR testing or on an erdafitinib programme, and what must exist first. <strong>Exact change:</strong> do not spend on an erdafitinib programme on the basis of docking — the drug is not on Pakistan's essential medicines list and its cost is far beyond public procurement; instead, fund a molecular-testing survey for FGFR alterations in lung and breast cancer at the provincial cancer institutes, so Pakistan's own alteration frequencies are measured rather than assumed from the global 10–25% figures, and so the patients who would benefit from an FGFR inhibitor are identified before any drug is bought. <strong>If evidence Z appears, reverse this:</strong> if the survey shows FGFR1 amplification above 10% in squamous lung carcinoma and a cost-effectiveness analysis shows an FGFR inhibitor is affordable at a negotiated price, move to a procurement assessment; if the survey shows alteration rates below 5%, keep the money on testing for the commoner targets (EGFR, HER2) — do not proceed to any FGFR drug programme on docking scores alone. The Islamic principle is hifz al-nafs joined to adl (justice): where the drug is unaffordable and the patients are unidentified, spending on the drug before spending on the test would violate both. The evidence here is thin — docking only — so the recommendation is "run the testing survey", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content.</p>
+<h2>References</h2>
+<ol>
+<li>Weiss J, et al. Frequent and focal FGFR1 amplification associates with therapeutically tractable FGFR1 dependency in squamous cell lung cancer. Sci Transl Med. 2010;2:62ra93. (FGFR1 amplification 10–25% in squamous lung carcinoma.)</li>
+<li>Turner N, et al. FGFR1 amplification drives endocrine therapy resistance and is a therapeutic target in breast cancer. Cancer Res. 2010;70:2085. (~10% of ER-positive breast cancers.)</li>
+<li>Loriot Y, et al. Erdafitinib in locally advanced or metastatic urothelial carcinoma. N Engl J Med. 2019;381:338–348. PMID: 31340094. (FDA approval April 2019; hyperphosphataemia 75.9%.)</li>
+<li>Patani H, et al. Landscape of actionability of drug targets in single agents and combination therapy. Oncotarget. 2016;7:24252. (5EW8, 1.63 Å, FGFR1 + erdafitinib.)</li>
+<li>Erdafitinib (Balversa) — FDA label. (FGFR1–4 IC50 1.2, 2.5, 3, 5.7 nM; Kd 0.24–2.2 nM; &gt;99% protein-bound; half-life 59 h.)</li>
+<li>Pemigatinib (Pemazyre) — FDA label. (FDA 2020 for FGFR2-fusion cholangiocarcinoma; 2022 for FGFR1-rearranged myeloid/lymphoid neoplasms.)</li>
+<li>RCSB PDB entry 5EW8: crystal structure of the FGFR1 kinase domain in complex with erdafitinib, 1.63 Å. RCSB Protein Data Bank. Accessed 2026-11-26.</li>
+<li>UniProtKB P11362: Fibroblast growth factor receptor 1 (FGFR1), Homo sapiens. UniProt. Accessed 2026-11-26.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source — cited for the hifz al-nafs principle only.)</li>
+<li>Al-Ghazali. Al-Mustasfa min 'Ilm al-Usul. c. 1109. (Defines the five necessities of the law, including hifz al-nafs.)</li>
+<li>Al-Shatibi. Al-Muwafaqat fi Usul al-Shari'a. 14th c. (Systematises maqasid al-shariah.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-130-2026-11-26-5EW8.json</code> (erdafitinib, CHEMBL3980069, CHEMBL5182360, CHEMBL5799893, pemigatinib on 5EW8). The pipeline run is in <code>hidden_files/dock-HP-130-2026-11-26.json</code> (target UniProt P11362; ChEMBL lookup returned erdafitinib itself as CHEMBL3545376, 0.25 nM, and a duplicate record CHEMBL5189383, 0.2 nM, with identical descriptors; docking skipped — no PDB found by the auto-picker). Reference drug erdafitinib (PubChem CID 67462786); comparator pemigatinib (CID 86705695); ChEMBL compounds CHEMBL3980069, CHEMBL5182360, CHEMBL5799893, SMILES verified against PubChem. Structure: PDB 5EW8 (1.63 Å, erdafitinib-bound). Target: UniProtKB P11362. No additional data were generated.</p></div></details>
+</article>
+<article class="card" data-field="health" data-title="telmisartan leads losartan by 1.52 kcal/mol on at1r — but docking cannot rank the sartans: the self-dock control and the active metabolite both invert the published order">
+<div class="meta"><span class="date">2026-11-26</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
+<h3>Telmisartan Leads Losartan by 1.52 kcal/mol on AT1R — but Docking Cannot Rank the Sartans: the Self-Dock Control and the Active Metabolite Both Invert the Published Order</h3>
+<p class="abs">Hypertension affects 18.9% of Pakistanis and 70% of hypertensives do not know they have it; losartan, the first angiotensin II type 1 receptor (AT1R) blocker, is the weakest binder of its class by published rank order, and the question was whether any sartan beats it on the human AT1R structure.</p>
+<p class="links"><a href="papers/2026-11-26-health-at1r-sartans-losartan.pdf">PDF</a> · <a href="papers/2026-11-26-health-at1r-sartans-losartan.md">Markdown</a></p>
+<details><summary>Read full paper</summary><div class="fulltext"><p><strong>AI-assisted draft — NOT peer-reviewed, NOT published. All claims require independent laboratory verification. Do not cite as established evidence.</strong></p>
+<p><strong>Author:</strong> Zubair Ali, Pharm-D student, Shaheed Mohtarma Benazir Bhutto Medical University (SMBBMU), Larkana, Pakistan
+<strong>Drafting assistant:</strong> Lapis (AI)
+<strong>Date:</strong> 2026-11-26 · <strong>Health Papers Agent — Paper #119</strong> (daily 5-paper run)</p>
+<p><strong>Keywords:</strong> angiotensin II type 1 receptor; sartans; losartan; telmisartan; molecular docking; AutoDock Vina; hypertension; Pakistan</p>
+<hr />
+<h2>Abstract</h2>
+<p>Hypertension affects 18.9% of Pakistanis and 70% of hypertensives do not know they have it; losartan, the first angiotensin II type 1 receptor (AT1R) blocker, is the weakest binder of its class by published rank order, and the question was whether any sartan beats it on the human AT1R structure. Six sartans — losartan, its active metabolite EXP3174, candesartan, telmisartan, valsartan and olmesartan — were docked with standardised AutoDock Vina on the 2.8 Å olmesartan-bound AT1R structure 4ZUD, same box and exhaustiveness, with olmesartan as the self-dock control. Telmisartan scored best at −10.57 kcal/mol, 1.52 kcal/mol better than losartan at −9.05, but that lead is inside Vina's ±1–2 kcal/mol noise, so the answer to the falsifiable question is no: no sartan beats losartan beyond noise. The method then failed its own controls: olmesartan, the co-crystallised ligand, scored only fourth (−8.90), and EXP3174 — 10–40 times more potent than losartan in published assays — scored worse than losartan (−8.68). Docking therefore cannot rank sartans on this structure, and no procurement or prescribing switch follows from these scores. Pose consistency was tight for every compound (three-pose spread 0.12–0.22 kcal/mol), so the ranking is not a sampling artefact; it is a scoring-function failure, and the same failure would apply to any procurement ranking built on these scores. The falsifier is a radioligand binding assay: if telmisartan's Ki is not better than losartan's by more than 3-fold on the same plate, the docking lead is a pocket artefact.</p>
+<hr />
+<h2>1. Introduction</h2>
+<p>Hypertension affects 18.9% of Pakistanis, diabetes 26.7%, and chronic kidney disease 16.7% (range 12.5–29.9%), with hypertension the cause of 30–40% of CKD; end-stage renal disease incidence is 100–150 per million while the dialysis rate is only 15 per million. Tazeen Jafar (N Engl J Med 2006;354:995–997) found 15–20% of Pakistanis aged 40+ with reduced GFR, a third of those 45+ hypertensive, and 70% of hypertensives unaware. The angiotensin II type 1 receptor (AT1R, AGTR1, UniProt P30556, 359 aa) is the GPCR through which angiotensin II raises blood pressure, retains sodium and drives aldosterone — and the sartans (ARBs) that block it are the most prescribed antihypertensive class in the world. Losartan, the first ARB (FDA 1995), is a surmountable, competitive antagonist whose active metabolite EXP3174 is 10–40 times more potent by weight; the FDA label records ~1,000-fold selectivity for AT1 over AT2. The rank order of sartan binding affinity (candesartan 1, telmisartan 10, EXP3174 10, losartan 50, eprosartan 100; PMID 10579749) makes losartan the weakest binder of the class — which is the gap this paper attacks: do newer or unexploited scaffolds actually bind the AT1R pocket better than losartan, on losartan's own terms, i.e. in the same structure with the same protocol?</p>
+<p><strong>Falsifiable question.</strong> Does any sartan or sartan-like scaffold out-score losartan on the human AT1R structure 4ZUD by more than Vina's ±1–2 kcal/mol noise? <strong>Falsifier:</strong> a radioligand binding assay showing the winner's Ki not better than losartan's, or a functional assay showing no greater rightward shift of the angiotensin II dose–response curve. <strong>Causal identification:</strong> validated-control re-docking — olmesartan re-docked on its own co-crystal (4ZUD) as the control, losartan and four other sartans docked on the same structure with the same box and exhaustiveness — association only beyond that, since docking scores are not affinity and not blood pressure.</p>
+<h2>2. Methods</h2>
+<h3>2.1 Literature basis</h3>
+<p>Searched 2026-11-26: the AT1R structures (Zhang et al., Cell 2015;161:833–844, PMID 25913193, DOI 10.1016/j.cell.2015.04.011 — 4YAY, 2.9 Å, ZD7155; and Zhang et al., J Biol Chem 2015;290:29127 — 4ZUD, 2.8 Å, olmesartan); the sartan pharmacology review (PMID 10579749 — rank order of affinities, surmountable vs insurmountable antagonism); the losartan FDA label (1000-fold AT1/AT2 selectivity; EXP3174 10–40× more potent; ~33% bioavailability; CYP2C9/3A4); the Pakistan burden review (CKD 16.7%, hypertension 18.9%); and Jafar (NEJM 2006;354:995–997). The classical-canon sweep: Ibn Sina's Canon treats hypertension's symptoms (headache, palpitation, renal disease) without a receptor concept; the principle carried is hifz al-nafs.</p>
+<h3>2.2 Target identification — and the pipeline failure that had to be corrected</h3>
+<p>The pipeline resolved the target WRONG on the first run: UniProtKB Q9WVK0 (Mus musculus, type-1 angiotensin II receptor-associated protein, AGTRAP, 161 aa) — a negative regulator of AT1R signalling, not the receptor itself — and its ChEMBL lookup returned silicon-containing glucosidase inhibitors, not sartans. The mismatch is stated, not hidden: the pipeline's target search matched "angiotensin II type 1 receptor" to the associated protein, and its 26 ranked "leads" are not used anywhere in this paper. The comparison set was therefore built from the literature: the six sartans with the strongest published AT1R data, with SMILES verified live against PubChem by name and CID (losartan CID 3961; EXP3174 CID 108185; candesartan CID 2541; telmisartan CID 65999; valsartan CID 60846; olmesartan CID 158781). The correct target is human AT1R, UniProt P30556.</p>
+<h3>2.3 Molecular docking</h3>
+<p>Standardised AutoDock Vina 1.2.7, exactly as Papers #1/#3: box 22.5 Å, exhaustiveness 8, best of 3 poses reported. Primary structure: 4ZUD, the 2.8 Å X-ray structure of human AT1R in complex with olmesartan (Zhang et al., J Biol Chem 2015;290:29127), grid centre the centroid of the co-crystallised olmesartan, verified by direct computation from the PDB file with <code>dock._ligand_center</code>. Olmesartan is therefore the self-dock control on its own structure: a method that could not recover binding for the drug in its own pocket would be broken. Losartan has no co-crystal with AT1R, so it is docked into the olmesartan pocket — the standard cross-docking setup, with the caveat stated in §2.6 that the pocket is in olmesartan's conformation and favours its own ligand. All six compounds were docked with the same box, centre and exhaustiveness.</p>
+<h3>2.4 PAINS screen</h3>
+<p>RDKit PAINS filter applied to all six compounds. All six are PAINS-clean: losartan, EXP3174, candesartan, telmisartan, valsartan and olmesartan carry no PAINS alert. No PAINS alert is hidden anywhere in this paper; there is none to hide.</p>
+<h3>2.5 ADMET and toxicity read-across</h3>
+<p>RDKit descriptors computed for all six compounds (molecular weight, logP, H-bond donors/acceptors, TPSA, rotatable bonds, Lipinski violations). No ToxGuard read-across is reported for this set: the pipeline's Tox21 panel ran against the wrong target (AGTRAP), and the values are not a measurement; they are omitted rather than presented as safety data.</p>
+<h3>2.6 Honesty limits</h3>
+<p>Docking ≠ affinity. Vina noise is ±1–2 kcal/mol. No molecular dynamics or free-energy refinement was run. No experimental data exist for any compound in this study beyond their published affinities and the published structure. The 4ZUD pocket is in olmesartan's conformation, so it favours olmesartan over the other five sartans. Vina's rigid, water-free scoring cannot see the GPCR's membrane environment, the sodium ion site, or the receptor's active/inactive conformational equilibrium — the three things that decide whether an antagonist works in a cell. Losartan's measured affinity is the lowest of the class by rank order, but affinity is not blood pressure: losartan's metabolite, its insurmountable-vs-surmountable kinetics and its duration of action are not in this computation.</p>
+<h2>3. Results</h2>
+<h3>3.1 Docking: the comparison table</h3>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Target (PDB)</th>
+<th>Best affinity (kcal/mol)</th>
+<th>Poses (kcal/mol)</th>
+<th>PAINS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Telmisartan</td>
+<td>AT1R (4ZUD)</td>
+<td>−10.57</td>
+<td>−10.57, −10.53, −10.44</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Candesartan</td>
+<td>AT1R (4ZUD)</td>
+<td>−9.53</td>
+<td>−9.53, −9.44, −9.32</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Losartan (reference)</td>
+<td>AT1R (4ZUD)</td>
+<td>−9.05</td>
+<td>−9.05, −9.00, −8.86</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Olmesartan (self-dock control)</td>
+<td>AT1R (4ZUD)</td>
+<td>−8.90</td>
+<td>−8.90, −8.78, −8.68</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>EXP3174 (losartan metabolite)</td>
+<td>AT1R (4ZUD)</td>
+<td>−8.68</td>
+<td>−8.68, −8.52, −8.48</td>
+<td>Clean</td>
+</tr>
+<tr>
+<td>Valsartan</td>
+<td>AT1R (4ZUD)</td>
+<td>−7.79</td>
+<td>−7.79, −7.77, −7.67</td>
+<td>Clean</td>
+</tr>
+</tbody>
+</table>
+<p>Pose consistency is tight for every compound: the spread across the three poses is 0.12–0.22 kcal/mol, so the ranking is not a pose-sampling artefact — each compound converged on the same binding mode three times. The ranking itself is the problem. Telmisartan leads losartan by 1.52 kcal/mol, candesartan by 0.48 kcal/mol, and both margins are inside Vina's ±1–2 kcal/mol noise: neither clears the bar the falsifiable question set. The two controls then fail in opposite directions. Olmesartan — the drug co-crystallised in this very pocket, the self-dock control — scores fourth of six at −8.90, worse than losartan, candesartan and telmisartan; a scoring function that cannot rank its own ligand first cannot be trusted to rank the class. EXP3174 — losartan's active metabolite, 10–40 times more potent than losartan by weight in published assays — scores fifth at −8.68, 0.37 kcal/mol <em>worse</em> than its own parent. The published rank order is candesartan 1, telmisartan 10, EXP3174 10, losartan 50; the docking order is telmisartan 1, candesartan 2, losartan 3, olmesartan 4, EXP3174 5, valsartan 6. The docking reproduces the top two in the right order and then inverts the rest. The honest reading is that Vina on 4ZUD separates the strong binders from the weak ones (valsartan last, −7.79, 1.26 kcal/mol behind losartan) but cannot resolve the differences that matter — the 5-fold gap between candesartan and losartan, and the 10–40-fold gap between EXP3174 and losartan, are both invisible to it.</p>
+<h3>3.2 Comparison with published docking</h3>
+<p>No published docking study of sartans on 4ZUD was found in the searches for this paper, so there is no published docking table to compare against. The comparison that exists is against the published affinity rank order (PMID 10579749), and it is reported in §3.1 in full — including the two inversions, not just the agreements.</p>
+<h3>3.3 The standardisation / quality problem: which losartan?</h3>
+<p>The comparison that matters clinically is not losartan-the-molecule against telmisartan-the-molecule. In a patient, losartan is a prodrug: most of its effect comes from EXP3174, which is 10–40 times more potent. Docking the parent alone therefore understates the drug by an order of magnitude, and docking the metabolite alone overstates nothing — it scores worse than the parent here, which is the opposite of the published pharmacology. Any ranking that treats "losartan" as one molecule is ranking the wrong thing, and any procurement decision built on such a ranking would be built on a category error. The same problem applies to the other sartans in a smaller way: candesartan is dosed as the prodrug candesartan cilexetil, and telmisartan's long half-life (24 h) and high volume of distribution are properties no docking score can see.</p>
+<h2>4. Discussion</h2>
+<h3>4.1 The reframe: the question changes from "which sartan?" to "can docking rank sartans at all?"</h3>
+<p>The paper set out to find whether any sartan beats losartan on AT1R. The answer is no — not because losartan is the best binder (it is not, by published affinity), but because the method cannot tell. Telmisartan's 1.52 kcal/mol lead is a real number and a non-result at the same time: it is inside the noise bar, and the two controls that would have validated it both failed. The question therefore changes: the finding is not "telmisartan wins" but "Vina on a single GPCR structure cannot rank a congeneric series whose published affinities span only ~50-fold". That is a useful negative, and it is the paper's actual contribution — it stops a procurement or prescribing switch that the raw table, read naively, would seem to support.</p>
+<h3>4.2 Why the "win" must not be over-read</h3>
+<p>Four reasons. First, the margin: 1.52 kcal/mol against a ±1–2 kcal/mol noise bar is not a lead, it is a tie with a sign. Second, the self-dock control: olmesartan fourth of six on its own structure means the pocket conformation, not the compounds, is doing part of the ranking. Third, the metabolite inversion: EXP3174 scoring worse than losartan contradicts 10–40-fold published potency, which means the scoring function is blind to the carboxylate interaction that makes the metabolite potent — the very interaction the 4YAY structure shows matters (Arg167). Fourth, the missing pharmacology: affinity is not blood pressure, and the properties that separate losartan from the insurmountable sartans — dissociation kinetics, the active metabolite, duration of action — are not in this computation at all. Any one of these would be enough to withhold a claim; together they close it.</p>
+<h3>4.3 Mechanism</h3>
+<p>Sartans bind the orthosteric pocket of AT1R, where angiotensin II would bind. The 4YAY structure (Zhang et al., Cell 2015) showed the binding mode for the class: the biphenyl-tetrazole moiety sits deep in the pocket, with the tetrazole making an ionic interaction with Arg167, and Trp84 and Tyr35 contributing π–π and hydrogen-bond contacts. Losartan carries the same biphenyl-tetrazole on an imidazole core with a hydroxymethyl group; its active metabolite EXP3174 replaces that group with a carboxylate, which strengthens the ionic interaction — the structural reason EXP3174 is 10–40 times more potent by weight. The pharmacological split that matters clinically is kinetic, not thermodynamic: losartan is a surmountable antagonist (parallel rightward shift of the angiotensin II curve, fast dissociation), while candesartan, telmisartan, irbesartan, valsartan and EXP3174 are insurmountable (they depress the maximal response, slow dissociation). Test for each link: (i) a radioligand binding assay measures Ki directly against the published rank order; (ii) a functional assay (angiotensin II dose–response in rabbit aorta or calcium flux in AT1R-expressing cells) measures surmountable vs insurmountable behaviour; (iii) a washout experiment measures dissociation half-life, which is the property that separates losartan from the rest of the class.</p>
+<h3>4.4 Testable hypotheses</h3>
+<ol>
+<li>The best-scoring sartan on 4ZUD has a Ki within 3-fold of its published rank-order value in the same radioligand binding assay. Falsifier: Ki more than 3-fold worse than published. (Status after this study: the hypothesis is already weakened — the docking order does not reproduce the published order, so the assay is now testing the method, not the compounds.)</li>
+<li>The docking winner's advantage over losartan (if any) survives the functional assay: it produces a greater rightward shift of the angiotensin II dose–response curve than losartan at equal concentration. Falsifier: no greater shift, which would show the docking advantage is a pocket artefact.</li>
+<li>Olmesartan's self-dock score predicts its rank: if olmesartan does not score best or near-best on its own structure, the method — not the compounds — is the problem, and the ranking is discarded. Falsifier: olmesartan scores worst on 4ZUD. (Status after this study: olmesartan scored fourth of six — the hypothesis is refuted, and the ranking is discarded as a potency claim.)</li>
+</ol>
+<h3>4.5 Proposed validation (university-lab feasible, 8–12 weeks)</h3>
+<p>Stage 1 (weeks 1–3): radioligand binding assay for the six sartans on AT1R-expressing membranes, same plate, n=3, with losartan and candesartan as the low/high-affinity anchors; readout Ki. Stage 2 (weeks 4–8): functional calcium-flux assay for the best two compounds from stage 1 against losartan, measuring the angiotensin II dose–response shift and the insurmountable/surmountable pattern; readout EC50 shift and maximal-response depression. Stage 3 (weeks 9–12): if any compound passes stages 1–2 — Ki better than losartan by more than 3-fold and a greater functional shift — a dissociation-kinetics (washout) experiment for that compound; if none passes, publish the negative result with the docking data as the reason the hypothesis failed. No animal work is proposed at this stage.</p>
+<h2>5. Limitations</h2>
+<ol>
+<li>Docking only; no experimental data in this study. Vina noise ±1–2 kcal/mol swallows every margin except a lead larger than 2 kcal/mol.</li>
+<li>The 4ZUD pocket is in olmesartan's conformation, so part of any olmesartan lead is conformational favouritism; the cleaner comparison is among the five non-olmesartan sartans.</li>
+<li>Losartan has no co-crystal with AT1R, so it is cross-docked into the olmesartan pocket — the standard setup, but a cross-dock, not a self-dock.</li>
+<li>The pipeline's target resolution failed (AGTRAP, mouse) and its ligand set was discarded; the comparison set is six literature compounds, and no ChEMBL-derived AT1R ligand set exists in this study.</li>
+<li>Affinity is not blood pressure: the docking cannot see dissociation kinetics, the active metabolite, or duration of action — the three properties that separate losartan from the insurmountable sartans clinically.</li>
+<li>No published Pakistani study reports AT1R variant frequencies or sartan response rates, so the clinical picture is global; the Pakistani numbers in this paper are burden numbers, not response numbers.</li>
+<li>The classical-canon sweep found no AT1R-relevant text: the Canon describes hypertension's symptoms without a receptor concept, so the Islamic-principle discussion rests on hifz al-nafs as a principle, not on a classical source about this target.</li>
+</ol>
+<h2>6. Conclusion</h2>
+<p>No sartan beats losartan on the human AT1R structure 4ZUD by more than Vina's noise: telmisartan leads by 1.52 kcal/mol, inside the ±1–2 kcal/mol bar, and the method fails its own controls — olmesartan scores fourth on its own structure and EXP3174 scores worse than its parent despite being 10–40 times more potent. Docking cannot rank the sartans, and no switch from losartan follows from these scores. The next step is a radioligand binding assay on the same six compounds, which will either reproduce the published rank order and rehabilitate the docking, or confirm that the ranking is a pocket artefact.</p>
+<h2>7. Policy implications</h2>
+<p><strong>Decision-maker:</strong> Pakistan's Drug Regulatory Authority (DRAP) and the Ministry of National Health Services, with the provincial health departments that run primary care. <strong>Decision:</strong> whether to spend anything switching antihypertensive procurement from losartan to a newer sartan, and what must exist first. <strong>Exact change:</strong> do not switch procurement on the basis of affinity rankings — losartan is the cheapest sartan, the most widely available, and the only one whose active metabolite is 10–40 times more potent than the parent, which partly closes its affinity gap in vivo; instead, fund a blood-pressure measurement and control-rate survey in primary care, because the binding question is settled and the delivery question is not — only about a third of Pakistani adults have ever had their blood pressure measured and 70% of hypertensives do not know they have the disease. <strong>If evidence Z appears, reverse this:</strong> if the survey shows control rates above 50% on losartan and a head-to-head trial shows a newer sartan controls blood pressure better by more than 5 mmHg systolic at equal cost, move to a procurement assessment for that sartan; if the survey confirms the measurement gap, keep the money on screening and losartan supply — do not proceed to any drug switch on docking scores alone. The Islamic principle is hifz al-nafs joined to adl (justice): where the effective drug is already cheap and the gap is that people are never measured, spending on the newer drug before spending on measurement would violate both. The evidence here is thin — docking only — so the recommendation is "run the survey", not "do the policy".</p>
+<h2>Acknowledgments</h2>
+<p>This manuscript was prepared with AI assistance (Lapis) for drafting, literature search and docking computations. The author reviewed the manuscript and takes responsibility for its content.</p>
+<h2>References</h2>
+<ol>
+<li>Zhang H, et al. Structure of the angiotensin receptor revealed by serial femtosecond crystallography. Cell. 2015;161:833–844. PMID: 25913193. doi:10.1016/j.cell.2015.04.011. (4YAY, 2.9 Å, ZD7155.)</li>
+<li>Zhang H, et al. Structural basis for ligand recognition and functional selectivity at angiotensin receptor. J Biol Chem. 2015;290:29127. (4ZUD, 2.8 Å, olmesartan.)</li>
+<li>Pharmacological properties of angiotensin II receptor antagonists. PMID: 10579749. (Rank order of sartan affinities; surmountable vs insurmountable antagonism.)</li>
+<li>Losartan potassium tablets, USP — FDA label. (1000-fold AT1/AT2 selectivity; EXP3174 10–40× more potent; ~33% bioavailability; CYP2C9/3A4.)</li>
+<li>Jafar TH. The growing burden of chronic kidney disease in Pakistan. N Engl J Med. 2006;354:995–997.</li>
+<li>Need assessment of renal and liver transplant in Pakistan. J Int Med Dent Coll. (CKD prevalence 16.7%, hypertension 18.9%, diabetes 26.7%.)</li>
+<li>RCSB PDB entry 4ZUD: human angiotensin II type 1 receptor in complex with olmesartan, 2.8 Å. RCSB Protein Data Bank. Accessed 2026-11-26.</li>
+<li>UniProtKB P30556: Type-1 angiotensin II receptor (AGTR1), Homo sapiens. UniProt. Accessed 2026-11-26.</li>
+<li>Ibn Sina. Al-Qanun fi al-Tibb (Canon of Medicine). c. 1025. (Classical source — cited for the hifz al-nafs principle only.)</li>
+<li>Al-Ghazali. Al-Mustasfa min 'Ilm al-Usul. c. 1109. (Defines the five necessities of the law, including hifz al-nafs.)</li>
+<li>Al-Shatibi. Al-Muwafaqat fi Usul al-Shari'a. 14th c. (Systematises maqasid al-shariah.)</li>
+</ol>
+<h2>Data availability</h2>
+<p>All docking scores reported here are in <code>hidden_files/dock-HP-137-2026-11-26-4ZUD.json</code> (losartan, EXP3174, candesartan, telmisartan, valsartan, olmesartan on 4ZUD). The pipeline run is in <code>hidden_files/dock-HP-137-2026-11-26.json</code> (target resolved wrongly to UniProt Q9WVK0 mouse AGTRAP; ChEMBL lookup returned glucosidase inhibitors, so its ligand set is not used; docking skipped — no PDB found for the wrong accession). Reference drug losartan (PubChem CID 3961); comparators EXP3174 (CID 108185), candesartan (CID 2541), telmisartan (CID 65999), valsartan (CID 60846), olmesartan (CID 158781), SMILES verified against PubChem. Structure: PDB 4ZUD (2.8 Å, olmesartan-bound). Target: UniProtKB P30556. No additional data were generated.</p></div></details>
+</article>
 <article class="card" data-field="health" data-title="amg-517 beats capsaicin by 2.19 kcal/mol in the human trpv1 vanilloid pocket — but it is the antagonist that failed in phase i for hyperthermia past 40 °c">
 <div class="meta"><span class="date">2026-11-25</span> <span class="badge health">Health</span> <span class="status">Draft — not submitted</span></div>
 <h3>AMG-517 Beats Capsaicin by 2.19 kcal/mol in the Human TRPV1 Vanilloid Pocket — but It Is the Antagonist That Failed in Phase I for Hyperthermia Past 40 °C</h3>
@@ -23667,7 +24572,7 @@ Weekly raw data archived in hidden_files/.</em></p>
 <p><em>Source: LeadForge AI weekly paper draft (<code>leadforge-weekly-paper-2026-10-18.md</code>), LeadForge drug-discovery pipeline. Weekly papers are compiled from the daily LeadForge runs.</em></p></div></details>
 </article>
 </section>
-<footer>Updated 26 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
+<footer>Updated 27 Nov 2026 · Generated from the manuscripts in files/ by files/papers-website/build-site.py — re-run it after each daily papers run, then update the website. Author: Zubair Ali; drafting assistant: Lapis (AI).</footer>
 <script>
 const q=document.getElementById('q');
 const btns=[...document.querySelectorAll('.controls button')];
