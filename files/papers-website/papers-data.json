@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-27",
+  "field": "health",
+  "title": "No ChEMBL Agonist Out-Scores Resmetirom in the THR-β Pocket — and Docking Cannot Rank a 510-Fold Potency Spread",
+  "abstract": "Thyroid hormone receptor beta (THR-β) is the target of resmetirom, the first drug approved for metabolic dysfunction-associated steatohepatitis (MASH) — FDA accelerated approval 14 March 2024 — and the question is whether any earlier or related agonist binds the receptor better, and whether docking can tell the potent agonists from the weak ones. Five compounds — resmetirom, sobetirome (GC-1), KB141 and two resmetirom-series analogues from the same Kelly et al. 2014 assay — were docked with standardised AutoDock Vina into the ligand-binding pocket of the 2.55 Å human TR-β structure 3IMY, same box and exhaustiveness, with the pocket centre taken from the co-crystallised sobetirome. No compound beats resmetirom beyond Vina's ±1–2 kcal/mol noise: the best, resmetirom's own N-methyl analogue (EC50 40 nM), leads by 0.06 kcal/mol (−11.19 vs −11.13), and the most potent compound in the set, sobetirome (EC50 18 nM), ranks only third at −10.77. Worse, the docking order does not track potency at all: a 510-fold EC50 spread (18 nM to 9,170 nM) is compressed into 0.93 kcal/mol of docking score, Spearman rho 0.2 (n = 5). The falsifier is a recombinant THR-β reporter assay: if the N-methyl analogue's EC50 is not better than resmetirom's 210 nM on the same plate, the docking lead is noise — and the assay, not the dock, must decide, because this study shows the dock cannot rank THR-β agonists.",
+  "md": "2026-11-27-health-thrb-resmetirom-docking-negative.md",
+  "pdf": "2026-11-27-health-thrb-resmetirom-docking-negative.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Thyroid hormone receptor beta (THR-β) is the target of resmetirom, the first drug approved for metabolic dysfunction-associated steatohepatitis (MASH) — FDA accelerated approval 14 March 2024 — and the question is whether any earlier or related agonist binds the receptor better, and whether docking can tell the potent…"
+ },
+ {
   "date": "2026-11-26",
   "field": "social",
   "title": "Conditional or Unconditional? A Pre-Registered Cluster-Randomised Design and Cost-Effectiveness Case for Girls' Secondary Stipends in Sindh, Pakistan",
@@ -8,6 +18,56 @@
   "pdf": "2026-11-26-social-girls-secondary-stipends-sindh-conditional-unconditional.pdf",
   "status": "Draft — not submitted",
   "summary": "Falsifiable claim. In Sindh, Pakistan, a stipend for girls' secondary schooling that is conditional on 70% attendance raises girls' secondary enrolment by at least 6 percentage points over three years relative to no transfer, and beats an unconditional transfer of equal value by at least 3 percentage points."
+ },
+ {
+  "date": "2026-11-26",
+  "field": "health",
+  "title": "Direct SCD1 Inhibitors Out-Score Aramchol by 3.87 kcal/mol in the SCD1 Tunnel — the Day's Only Docking Win Beyond Noise, and the Skin-Eye Risk Still Decides Whether It Matters",
+  "abstract": "Stearoyl-CoA desaturase 1 (SCD1) makes the monounsaturated fatty acids that fill a fatty liver, and aramchol — the most clinically advanced SCD1 modulator — works by downregulating SCD1 expression, not by binding its active site, while direct active-site inhibitors were abandoned for skin and eye toxicity. Five compounds — aramchol, three ChEMBL direct inhibitors (CHEMBL594289, CHEMBL595247, CHEMBL594084) and the literature standard A939572 — were docked with standardised AutoDock Vina into the substrate tunnel of the 3.25 Å human SCD1 structure 4ZYO, same box and exhaustiveness. The direct inhibitors out-scored aramchol by 2.79–3.87 kcal/mol: CHEMBL594289 best at −11.02 kcal/mol against aramchol's −7.15, a lead beyond Vina's ±1–2 kcal/mol noise and the only such lead in today's five papers. The docking order also matches the published IC50 order exactly (0.068, 0.48, 0.56, 37 nM), the only paper today where the method validates against experiment. The win still does not make the direct inhibitors better drugs: complete SCD1 inhibition causes sebaceous gland atrophy and dry eye, and aramchol's partial inhibition is precisely what avoids it. Pose consistency was tight for A939572 and aramchol (three-pose spreads 0.26 and 0.48 kcal/mol) and reasonable for the two leaders, whose top two poses converge; CHEMBL594084's third place rests on a single pose, its third being a +4.96 kcal/mol clash, so its honest score is about −8.8, below A939572. The falsifier is a recombinant SCD1 desaturation assay: if CHEMBL594289's IC50 is not better than A939572's 37 nM on the same plate, the docking lead is a tunnel artefact.",
+  "md": "2026-11-26-health-scd1-aramchol.md",
+  "pdf": "2026-11-26-health-scd1-aramchol.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Stearoyl-CoA desaturase 1 (SCD1) makes the monounsaturated fatty acids that fill a fatty liver, and aramchol — the most clinically advanced SCD1 modulator — works by downregulating SCD1 expression, not by binding its active site, while direct active-site inhibitors were abandoned for skin and eye toxicity."
+ },
+ {
+  "date": "2026-11-26",
+  "field": "health",
+  "title": "Small Tenapanor Analogues Match Its NHE3 Potency at 2–4 nM — but Only Tenapanor's 1,145 Da Dimer Is Built Not to Be Absorbed",
+  "abstract": "Intestinal NHE3 (SLC9A3) absorbs most dietary sodium, and blocking it in the gut lowers sodium load without touching the kidney — the rationale for tenapanor, a gut-restricted NHE3 inhibitor approved for IBS-C in 2019 and for hyperphosphataemia in dialysis in 2023. We asked whether any published NHE3 inhibitor beats tenapanor on potency while keeping its gut restriction. Using the LeadForge pipeline (UniProtKB P48764 → ChEMBL → PubChem/RDKit, PAINS and ADMET screen), we compared tenapanor against the most potent measured NHE3 inhibitors in ChEMBL. The two most potent records (IC50 0.5 nM) share tenapanor's exact molecular formula (C50H66Cl4N8O10S2) and dimeric tetrahydroisoquinoline scaffold and differ only in stereochemical annotation — they are tenapanor or its stereoisomer, not new compounds — so the apparent 10-fold gain over tenapanor's published 5 nM is a record artefact, not a discovery. The genuinely distinct analogues (CHEMBL3967635, 2.0 nM; CHEMBL3978001 and CHEMBL3946835, 4.0 nM) are single-ring fragments of 455–499 Da with zero Lipinski violations: as potent as tenapanor, but small and absorbable — the opposite of the design goal. No inhibitor-bound human NHE3 structure exists (the only structure, 7X2U, is an autoinhibited apo complex), so docking was skipped rather than invented. The falsifiable next step is a head-to-head NHE3 deacidification assay of tenapanor against CHEMBL3967635 with parallel Caco-2 permeability: if the analogue is not both within 3-fold of tenapanor's potency and at least 10-fold more permeable, the gut-restriction argument fails.",
+  "md": "2026-11-26-health-nhe3-tenapanor-analogues.md",
+  "pdf": "2026-11-26-health-nhe3-tenapanor-analogues.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Intestinal NHE3 (SLC9A3) absorbs most dietary sodium, and blocking it in the gut lowers sodium load without touching the kidney — the rationale for tenapanor, a gut-restricted NHE3 inhibitor approved for IBS-C in 2019 and for hyperphosphataemia in dialysis in 2023."
+ },
+ {
+  "date": "2026-11-26",
+  "field": "health",
+  "title": "Docking Cannot Rank HIV-1 Protease Inhibitors: Saquinavir Leads Darunavir by 0.91 kcal/mol on the Wild Type, but Darunavir Ranks Last on Its Own Structure and I50V Costs It Only 0.31 kcal/mol",
+  "abstract": "Pakistan's HIV epidemic is growing fast — new infections rose from 16,000 in 2010 to 48,000 in 2024, yet only 21% of people living with HIV know their status — and darunavir, the protease inhibitor with the highest genetic barrier, loses affinity to the I50V and I84V mutations. Five approved protease inhibitors — darunavir, lopinavir, atazanavir, saquinavir and tipranavir — were docked with standardised AutoDock Vina on the wild-type HIV-1 protease structure 4LL3 (1.95 Å) and the I50V mutant structure 6DH6 (1.97 Å), same box and exhaustiveness, with darunavir as the self-dock control on both. On the wild type saquinavir scored best at −10.74 kcal/mol, 0.91 kcal/mol better than darunavir at −9.83, but that lead is inside Vina's ±1–2 kcal/mol noise, so no inhibitor beats darunavir beyond noise. The method then failed its own controls: darunavir — the best inhibitor by published Ki (<5 pM) — scored worst of the five on its own wild-type structure, and the I50V mutation cost it only 0.31 kcal/mol by docking against a published 15-fold Ki loss. Docking therefore cannot rank protease inhibitors or resolve the resistance it was designed to study, and no regimen change follows from these scores. Pose consistency was tight on the wild type (three-pose spread 0.09–0.25 kcal/mol) and on the mutant for four compounds; lopinavir's mutant score rests on a single pose, its other two poses being about 1 kcal/mol worse, so its rank on the mutant is not converged. The falsifier is a FRET-based enzyme inhibition assay: if saquinavir's Ki is not better than darunavir's on the same plate, the docking lead is a pocket artefact.",
+  "md": "2026-11-26-health-hiv1-protease-darunavir.md",
+  "pdf": "2026-11-26-health-hiv1-protease-darunavir.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Pakistan's HIV epidemic is growing fast — new infections rose from 16,000 in 2010 to 48,000 in 2024, yet only 21% of people living with HIV know their status — and darunavir, the protease inhibitor with the highest genetic barrier, loses affinity to the I50V and I84V mutations."
+ },
+ {
+  "date": "2026-11-26",
+  "field": "health",
+  "title": "Pemigatinib Leads Erdafitinib by 1.53 kcal/mol on FGFR1 — but Erdafitinib Ranks Last on Its Own Structure and No Compound Beats It Beyond Noise",
+  "abstract": "FGFR1 amplification occurs in 10–25% of squamous cell lung carcinomas and about 10% of estrogen-receptor-positive breast cancers, yet erdafitinib — the pan-FGFR inhibitor approved for FGFR2/3 disease — was never tested against FGFR1 in a head-to-head binding comparison with its own analogues. Five compounds — erdafitinib, three ChEMBL FGFR1 inhibitors (CHEMBL3980069, CHEMBL5182360, CHEMBL5799893) and the clinical FGFR inhibitor pemigatinib — were docked with standardised AutoDock Vina on the 1.63 Å erdafitinib-bound FGFR1 structure 5EW8, same box and exhaustiveness, with erdafitinib as the self-dock control. Pemigatinib scored best at −10.53 kcal/mol, 1.53 kcal/mol better than erdafitinib at −9.00, but that lead is inside Vina's ±1–2 kcal/mol noise, so no compound beats erdafitinib beyond noise. The method then failed its own control: erdafitinib — the co-crystallised ligand — scored worst of the five on its own structure, and the most potent ChEMBL compound by published IC50 (CHEMBL5182360, 0.28 nM) ranked fourth. Docking therefore cannot rank FGFR1 inhibitors on this structure, and no drug programme follows from these scores. Pose consistency was tight for two compounds and not for two: CHEMBL3980069 and CHEMBL5182360 converged on the same binding mode three times, while CHEMBL5799893's second place rests on a single pose, its other two poses being a full kcal/mol worse, so its honest score is about −8.9, below erdafitinib. The falsifier is a kinase inhibition assay: if pemigatinib's FGFR1 IC50 is not better than erdafitinib's 1.2 nM on the same plate, the docking lead is a pocket artefact.",
+  "md": "2026-11-26-health-fgfr1-erdafitinib.md",
+  "pdf": "2026-11-26-health-fgfr1-erdafitinib.pdf",
+  "status": "Draft — not submitted",
+  "summary": "FGFR1 amplification occurs in 10–25% of squamous cell lung carcinomas and about 10% of estrogen-receptor-positive breast cancers, yet erdafitinib — the pan-FGFR inhibitor approved for FGFR2/3 disease — was never tested against FGFR1 in a head-to-head binding comparison with its own analogues."
+ },
+ {
+  "date": "2026-11-26",
+  "field": "health",
+  "title": "Telmisartan Leads Losartan by 1.52 kcal/mol on AT1R — but Docking Cannot Rank the Sartans: the Self-Dock Control and the Active Metabolite Both Invert the Published Order",
+  "abstract": "Hypertension affects 18.9% of Pakistanis and 70% of hypertensives do not know they have it; losartan, the first angiotensin II type 1 receptor (AT1R) blocker, is the weakest binder of its class by published rank order, and the question was whether any sartan beats it on the human AT1R structure. Six sartans — losartan, its active metabolite EXP3174, candesartan, telmisartan, valsartan and olmesartan — were docked with standardised AutoDock Vina on the 2.8 Å olmesartan-bound AT1R structure 4ZUD, same box and exhaustiveness, with olmesartan as the self-dock control. Telmisartan scored best at −10.57 kcal/mol, 1.52 kcal/mol better than losartan at −9.05, but that lead is inside Vina's ±1–2 kcal/mol noise, so the answer to the falsifiable question is no: no sartan beats losartan beyond noise. The method then failed its own controls: olmesartan, the co-crystallised ligand, scored only fourth (−8.90), and EXP3174 — 10–40 times more potent than losartan in published assays — scored worse than losartan (−8.68). Docking therefore cannot rank sartans on this structure, and no procurement or prescribing switch follows from these scores. Pose consistency was tight for every compound (three-pose spread 0.12–0.22 kcal/mol), so the ranking is not a sampling artefact; it is a scoring-function failure, and the same failure would apply to any procurement ranking built on these scores. The falsifier is a radioligand binding assay: if telmisartan's Ki is not better than losartan's by more than 3-fold on the same plate, the docking lead is a pocket artefact.",
+  "md": "2026-11-26-health-at1r-sartans-losartan.md",
+  "pdf": "2026-11-26-health-at1r-sartans-losartan.pdf",
+  "status": "Draft — not submitted",
+  "summary": "Hypertension affects 18.9% of Pakistanis and 70% of hypertensives do not know they have it; losartan, the first angiotensin II type 1 receptor (AT1R) blocker, is the weakest binder of its class by published rank order, and the question was whether any sartan beats it on the human AT1R structure."
  },
  {
   "date": "2026-11-25",
