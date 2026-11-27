@@ -136,16 +136,24 @@ def collect():
     return papers
 
 
-def card(p: dict, idx: int) -> str:
+def card(p: dict, idx: int, full: bool = True) -> str:
     summ = html.escape(summary_of(p["abstract"]))
     title = html.escape(p["title"])
     status = html.escape(p["status"])
-    return f"""<article class="card" data-field="{p['field']}" data-title="{html.escape(p['title'].lower())}">
+    anchor = Path(p["md"]).stem
+    if full:
+        fulltext = f'<details><summary>Read full paper</summary><div class="fulltext">{p["body_html"]}</div></details>'
+    else:
+        # Slim listing card (public index.html): no embedded full text, so the
+        # page stays small enough for link-preview scrapers (LinkedIn caps at
+        # 3,145,728 bytes). Full text lives on papers.html at the same anchor.
+        fulltext = f'<p class="links"><a href="papers.html#{anchor}">Read full paper →</a></p>'
+    return f"""<article class="card" id="{anchor}" data-field="{p['field']}" data-title="{html.escape(p['title'].lower())}">
 <div class="meta"><span class="date">{p['date']}</span> <span class="badge {p['field']}">{TRACK_LABEL[p['field']]}</span> <span class="status">{status}</span></div>
 <h3>{title}</h3>
 <p class="abs">{summ}</p>
 <p class="links"><a href="{LINK_BASE}{p['pdf']}">PDF</a> · <a href="{LINK_BASE}{p['md']}">Markdown</a></p>
-<details><summary>Read full paper</summary><div class="fulltext">{p['body_html']}</div></details>
+{fulltext}
 </article>"""
 
 
@@ -192,6 +200,19 @@ def main():
             f'<section id="sec-{field}" data-field="{field}"><h2>{TRACK_LABEL[field]} <span class="count">({len(group)})</span></h2>\n{cards}\n</section>'
         )
     body = "\n".join(sections)
+    slim_body = None
+    if args.pages_dir:
+        slim_sections = []
+        for field in FIELDS:
+            group = [p for p in papers if p["field"] == field]
+            if not group:
+                continue
+            group.sort(key=lambda p: p["date"], reverse=True)
+            cards = "\n".join(card(p, i, full=False) for i, p in enumerate(group))
+            slim_sections.append(
+                f'<section id="sec-{field}" data-field="{field}"><h2>{TRACK_LABEL[field]} <span class="count">({len(group)})</span></h2>\n{cards}\n</section>'
+            )
+        slim_body = "\n".join(slim_sections)
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -284,9 +305,19 @@ btns.forEach(b=>b.addEventListener('click', ()=>{{field=b.dataset.f;btns.forEach
 </body>
 </html>
 """
-    (out_dir / html_name).write_text(page, encoding="utf-8")
-    print(f"wrote {html_name} ({len(page)/1024:.0f} KB) + papers-data.json: {total} papers "
-          f"(health {counts['health']}, brain {counts['brain']}, space {counts['space']})")
+    if args.pages_dir and slim_body is not None:
+        # Full-text page keeps the old single-page experience at papers.html;
+        # index.html is the slim listing so scrapers (LinkedIn, 3 MB cap) can
+        # read the Open Graph tags.
+        (out_dir / "papers.html").write_text(page, encoding="utf-8")
+        slim_page = page.replace(body, slim_body, 1)
+        (out_dir / html_name).write_text(slim_page, encoding="utf-8")
+        print(f"wrote papers.html ({len(page)/1024:.0f} KB) + slim {html_name} ({len(slim_page)/1024:.0f} KB) + papers-data.json: {total} papers "
+              f"(health {counts['health']}, brain {counts['brain']}, space {counts['space']})")
+    else:
+        (out_dir / html_name).write_text(page, encoding="utf-8")
+        print(f"wrote {html_name} ({len(page)/1024:.0f} KB) + papers-data.json: {total} papers "
+              f"(health {counts['health']}, brain {counts['brain']}, space {counts['space']})")
 
 
 if __name__ == "__main__":
