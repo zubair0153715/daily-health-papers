@@ -1,0 +1,84 @@
+{
+ "topic": {
+  "target": "SHP2/PTPN11",
+  "reference": "TNO155",
+  "topic_id": "HP-126",
+  "date": "2026-11-28"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "5EHR",
+  "resolution": 1.7,
+  "center": [
+   22.42,
+   41.19,
+   4.7
+  ],
+  "center_note": "SHP099 allosteric inhibitor centroid via dock._ligand_center \u2014 full-length human SHP2 + SHP099, 1.7 A",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline auto-pick 9EIK was the wrong structure: isolated N-SH2 domain + GAB1 phosphopeptide, no allosteric pocket; TNO155 (11 nM) docked only -5.75 there. Re-docked on 5EHR, the correct allosteric template.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.93,
+    "poses": [
+     -9.93,
+     -9.01,
+     -7.88
+    ],
+    "pdb_id": "5EHR",
+    "label": "CHEMBL4789817",
+    "rank": 4
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.96,
+    "poses": [
+     -8.96,
+     -8.38,
+     -7.62
+    ],
+    "pdb_id": "5EHR",
+    "label": "CHEMBL5882319",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.46,
+    "poses": [
+     -8.46,
+     -7.75,
+     -7.1
+    ],
+    "pdb_id": "5EHR",
+    "label": "CHEMBL4858291",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.92,
+    "poses": [
+     -7.92,
+     -7.67,
+     -7.54
+    ],
+    "pdb_id": "5EHR",
+    "label": "QUERY",
+    "rank": 1
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -7.64,
+    "poses": [
+     -7.64,
+     -7.56,
+     -7.25
+    ],
+    "pdb_id": "5EHR",
+    "label": "CHEMBL5792033",
+    "rank": 5
+   }
+  ]
+ }
+}

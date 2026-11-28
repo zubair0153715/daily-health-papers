@@ -1413,6 +1413,61 @@
    "status": "drafted",
    "platform": "ChemRxiv",
    "draft_url": null
+  },
+  {
+   "date": "2026-11-28",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-28-health-dhfr-iclaprim-diaminopyrimidine.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "A 0.2 nM Diaminopyrimidine Out-Docks Iclaprim on Staphylococcus aureus DHFR by 1.39 kcal/mol \u2014 but the Measured Ki Favours Iclaprim",
+   "topic": "S. aureus dihydrofolate reductase \u2014 MRSA folate pathway",
+   "topic_id": "HP-112"
+  },
+  {
+   "date": "2026-11-28",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-28-health-lasr-psoralen-agonist-trap.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "The Best-Docking LasR Ligand Is an Agonist, Not an Antagonist: Docking Cannot Tell Friend from Foe in Pseudomonas aeruginosa Quorum Sensing",
+   "topic": "P. aeruginosa LasR quorum sensing \u2014 anti-virulence, not killing",
+   "topic_id": "HP-111"
+  },
+  {
+   "date": "2026-11-28",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-28-health-shp2-tno155-wrong-structure.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "A 1.3 nM ChEMBL Ligand Out-Docks TNO155 on SHP2 by 2.01 kcal/mol \u2014 after the Pipeline Docked the Wrong Structure First",
+   "topic": "SHP2 (PTPN11) allosteric inhibition \u2014 RAS-pathway cancers",
+   "topic_id": "HP-126"
+  },
+  {
+   "date": "2026-11-28",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-28-health-p2y12-ticagrelor-wrong-conformation.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "Ticagrelor Scores \u22129.00 on the Right P2Y12 Structure and \u22126.06 on the Wrong One: the Antagonist Pocket Decides the Ranking",
+   "topic": "P2Y12 receptor \u2014 antiplatelet scaffolds beyond thienopyridines",
+   "topic_id": "HP-138"
+  },
+  {
+   "date": "2026-11-28",
+   "draft_url": null,
+   "field": "health",
+   "file": "files/2026-11-28-health-dgat1-pradigastat-lipophilicity.md",
+   "platform": "ChemRxiv",
+   "status": "drafted",
+   "title": "Every DGAT1 Lead Docks Within 1.21 kcal/mol \u2014 and Every One Is Too Lipophilic: the Class Died of Diarrhoea, Not Weak Binding",
+   "topic": "DGAT1 inhibition for obesity / postprandial triglycerides",
+   "topic_id": "HP-106"
   }
  ],
  "used_topic_ids": [
@@ -1536,6 +1591,11 @@
   "HP-129",
   "HP-124",
   "HP-145",
-  "HP-118"
+  "HP-118",
+  "HP-112",
+  "HP-111",
+  "HP-126",
+  "HP-138",
+  "HP-106"
  ]
 }

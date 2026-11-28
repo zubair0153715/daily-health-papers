@@ -1,0 +1,84 @@
+{
+ "topic": {
+  "target": "P2Y12 ADP receptor",
+  "reference": "ticagrelor",
+  "topic_id": "HP-138",
+  "date": "2026-11-28"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "4NTJ",
+  "resolution": 2.62,
+  "center": [
+   16.96,
+   100.82,
+   50.75
+  ],
+  "center_note": "AZD1283 antagonist centroid via dock._ligand_center \u2014 human P2Y12 + AZD1283, 2.62 A",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline auto-pick 4PXZ was the wrong conformation: P2Y12 + 2MeSADP, the agonist-bound active state; ticagrelor scored only -6.06 there and CHEMBL567709 -3.70. Re-docked on 4NTJ, the antagonist-bound template.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.57,
+    "poses": [
+     -9.57,
+     -9.18,
+     -9.01
+    ],
+    "pdb_id": "4NTJ",
+    "label": "CHEMBL249790",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.22,
+    "poses": [
+     -9.22,
+     -9.06,
+     -8.35
+    ],
+    "pdb_id": "4NTJ",
+    "label": "CHEMBL251041",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -9.0,
+    "poses": [
+     -9.0,
+     -8.8,
+     -8.66
+    ],
+    "pdb_id": "4NTJ",
+    "label": "QUERY",
+    "rank": 1
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.87,
+    "poses": [
+     -8.87,
+     -8.67,
+     -8.65
+    ],
+    "pdb_id": "4NTJ",
+    "label": "CHEMBL567709",
+    "rank": 5
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -8.26,
+    "poses": [
+     -8.26,
+     -7.78,
+     -7.35
+    ],
+    "pdb_id": "4NTJ",
+    "label": "CHEMBL5181634",
+    "rank": 4
+   }
+  ]
+ }
+}

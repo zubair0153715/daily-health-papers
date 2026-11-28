@@ -1,0 +1,84 @@
+{
+ "topic": {
+  "target": "DGAT1",
+  "reference": "pradigastat",
+  "topic_id": "HP-106",
+  "date": "2026-11-28"
+ },
+ "docking": {
+  "ok": true,
+  "pdb_id": "8ESM",
+  "resolution": 3.2,
+  "center": [
+   136.01,
+   114.56,
+   100.19
+  ],
+  "center_note": "T863 inhibitor centroid via dock._ligand_center \u2014 human DGAT1 + T863, cryo-EM 3.2 A (Sui et al., Nat Commun 2023)",
+  "box_size": 22.5,
+  "exhaustiveness": 8,
+  "correction_note": "Pipeline reported no_pdb_found for DGAT1; two human DGAT1 cryo-EM structures exist (8ESM, 8ETM) and were missed by its PDB search. Docked on 8ESM, the inhibitor-bound template.",
+  "results": [
+   {
+    "ok": true,
+    "affinity_kcal_mol": -11.34,
+    "poses": [
+     -11.34,
+     -11.05,
+     -10.26
+    ],
+    "pdb_id": "8ESM",
+    "label": "CHEMBL2036730",
+    "rank": 3
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.64,
+    "poses": [
+     -10.64,
+     -9.89,
+     -9.8
+    ],
+    "pdb_id": "8ESM",
+    "label": "CHEMBL3037924",
+    "rank": 2
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.2,
+    "poses": [
+     -10.2,
+     -10.17,
+     -9.76
+    ],
+    "pdb_id": "8ESM",
+    "label": "CHEMBL5864682",
+    "rank": 5
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.17,
+    "poses": [
+     -10.17,
+     -9.57,
+     -9.56
+    ],
+    "pdb_id": "8ESM",
+    "label": "CHEMBL4453443",
+    "rank": 4
+   },
+   {
+    "ok": true,
+    "affinity_kcal_mol": -10.13,
+    "poses": [
+     -10.13,
+     -9.97,
+     -8.12
+    ],
+    "pdb_id": "8ESM",
+    "label": "QUERY",
+    "rank": 1
+   }
+  ]
+ }
+}
