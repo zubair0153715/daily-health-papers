@@ -1,12 +1,1 @@
-{
- "count": {
-  "brain": 7,
-  "health": 8,
-  "natural": 3,
-  "social": 3,
-  "space": 6
- },
- "last_date": "2026-11-27",
- "last_field": "health",
- "last_file": "files/2026-11-27-health-thrb-resmetirom-docking-negative.md"
-}
+{"count":{"brain":8,"health":8,"natural":3,"social":3,"space":7},"last_date":"2026-11-28","last_field":"space","last_file":"files/2026-11-28-space-epsilon-indi-ab-deuterium-budget.md"}
